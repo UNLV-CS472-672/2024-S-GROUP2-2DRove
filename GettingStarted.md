@@ -11,11 +11,13 @@ Downloading Unity:
 
 ![image](https://github.com/UNLV-CS472-672/2024-S-GROUP2-2DRove/assets/55933220/c86f5bab-2f9d-4bdf-b2e4-306639a867ec)
  
-6.	After installation is complete, Head over to “Project” on the left and click “Add.”
+6.	After installation, head to “Project” on the left and click “Add.”
  
 ![image](https://github.com/UNLV-CS472-672/2024-S-GROUP2-2DRove/assets/55933220/ba2d3b1d-8c7a-45e4-b5ea-8efe9f3c5b6c)
 
 7.	Finally, head over to our repo and open this directory, 
-“..\2024-S-GROUP2-2DRove\2DRove." Unity should now open and you are ready!
+“..\2024-S-GROUP2-2DRove\2DRove." Unity should now open.
 
 ![image](https://github.com/UNLV-CS472-672/2024-S-GROUP2-2DRove/assets/55933220/ace70895-0cd2-4237-8238-bc6a3bb97682)
+
+8. Once the project is opened, click on "Scenes" then "Sample Scene" or something similar. Now you are ready to embark on this project!

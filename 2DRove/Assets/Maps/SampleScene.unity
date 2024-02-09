@@ -133,10 +133,10 @@ GameObject:
   m_Component:
   - component: {fileID: 409696409}
   - component: {fileID: 409696408}
-  - component: {fileID: 409696407}
   - component: {fileID: 409696406}
   - component: {fileID: 409696410}
   - component: {fileID: 409696411}
+  - component: {fileID: 409696412}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -171,21 +171,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &409696407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 5269505658825866304, guid: 293f8e78ac061ba4991d2d8ceeaacfcb, type: 3}
-  m_PrefabInstance: {fileID: 4545772957896390668}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409696405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c712dfd589f6bba46bf35fde40667770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInput: {fileID: 409696410}
-  sprintSpeed: 50
-  moveSpeed: 30
 --- !u!212 &409696408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -340,15 +325,15 @@ PolygonCollider2D:
       - {x: 0.59235775, y: 0.1915742}
       - {x: 0.43758178, y: 0.36522642}
       - {x: 0.36327875, y: 0.40192464}
-      - {x: 0.27700418, y: 0.43107978}
-      - {x: 0.20605841, y: 0.48845512}
-      - {x: 0.11087752, y: 0.5252407}
-      - {x: 0.055141695, y: 0.537193}
-      - {x: -0.011782259, y: 0.54551625}
-      - {x: -0.044197112, y: 0.55700445}
-      - {x: -0.06895668, y: 0.5642078}
-      - {x: -0.09719786, y: 0.56732273}
-      - {x: -0.13174331, y: 0.5751808}
+      - {x: 0.29811877, y: 0.45641726}
+      - {x: 0.22295007, y: 0.53068423}
+      - {x: 0.108766064, y: 0.57380426}
+      - {x: 0.06358754, y: 0.5857566}
+      - {x: 0.0072208717, y: 0.60041416}
+      - {x: -0.04842003, y: 0.59923357}
+      - {x: -0.077402525, y: 0.60010254}
+      - {x: -0.107755154, y: 0.5968832}
+      - {x: -0.14018914, y: 0.5878496}
       - {x: -0.1720415, y: 0.56573355}
       - {x: -0.1984706, y: 0.56392354}
       - {x: -0.26046792, y: 0.5443755}
@@ -361,7 +346,7 @@ PolygonCollider2D:
       - {x: -0.5124655, y: 0.4513219}
       - {x: -0.56845284, y: 0.40017244}
       - {x: -0.6246604, y: 0.31638774}
-      - {x: -0.6387551, y: 0.27696514}
+      - {x: -0.63497293, y: 0.27696508}
       - {x: -0.64539045, y: 0.23653308}
       - {x: -0.6510288, y: 0.18018907}
       - {x: -0.65336436, y: 0.1310828}
@@ -389,6 +374,21 @@ PolygonCollider2D:
       - {x: 0.465, y: -1.56}
       - {x: 0.555, y: -1.5}
   m_UseDelaunayMesh: 0
+--- !u!114 &409696412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409696405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc8aa6cbf81f6b4abd640a6196e434c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInput: {fileID: 409696410}
+  sprintSpeed: 50
+  moveSpeed: 30
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

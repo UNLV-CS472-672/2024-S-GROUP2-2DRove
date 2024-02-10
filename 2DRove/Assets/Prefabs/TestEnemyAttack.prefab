@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5764503797663185832}
   - component: {fileID: 8705482107389421570}
   - component: {fileID: 5996331164249037145}
-  - component: {fileID: 8829898946114633483}
-  m_Layer: 0
+  - component: {fileID: 8002633061698704447}
+  m_Layer: 7
   m_Name: TestEnemyAttack
   m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3833847839207358409}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.93, y: -0.04, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -144,12 +144,12 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 384
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8829898946114633483
+--- !u!114 &8002633061698704447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3833847839207358409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa600085f7d5484ab4ac0b8832bc849, type: 3}
+  m_Script: {fileID: 11500000, guid: f7073c8e77611d24786a3ce051a15d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  projectileLifetime: 5
+  velocity: 10
+  damage: 1

@@ -7,21 +7,13 @@ public class GameOverMenu : MonoBehaviour
 {
     public GameObject gameOverMenuUI;
 
-    private void OnEnable(){
-        PlayerStats.OnPlayerDeath += EnableGameOverMenu;
-    }
-
-    private void OnDisable(){
-        PlayerStats.OnPlayerDeath -= EnableGameOverMenu;
-    }
-
     public void EnableGameOverMenu(){
         gameOverMenuUI.SetActive(true);
         
     }
 
     public void RestartLevel(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //This reloads the current level
     }
 
     public void GoToMainMenu(){

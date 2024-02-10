@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7610483236319873343}
   - component: {fileID: 2902167814241644366}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 1321098047387594039}
   - component: {fileID: 5430507036490247282}
   - component: {fileID: 1545625608823368577}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,10 +177,9 @@ GameObject:
   - component: {fileID: 878488624133352400}
   - component: {fileID: 8710239744230377646}
   - component: {fileID: 272362257799738756}
-  - component: {fileID: 3862021271859989447}
-  - component: {fileID: 3913282138032265798}
-  - component: {fileID: 1088839743141154413}
-  m_Layer: 0
+  - component: {fileID: 6402575448138994634}
+  - component: {fileID: -1127995572195980354}
+  m_Layer: 7
   m_Name: EnemyDummy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -197,7 +196,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 44.7, y: -31.1, z: 0}
-  m_LocalScale: {x: 200, y: 200, z: 4}
+  m_LocalScale: {x: 10, y: 10, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3676918177868209009}
@@ -305,7 +304,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -321,7 +320,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.17}
   m_EdgeRadius: 0
---- !u!114 &3862021271859989447
+--- !u!114 &6402575448138994634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -330,49 +329,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 3475996137607520006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 762cd5225e55ef0438c2020e39749ff8, type: 3}
+  m_Script: {fileID: 11500000, guid: 2340b0596d75b2c4196eee2bd11a31ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
-  healthBar: {fileID: 1083481291552137695}
-  healthBarSlider: {fileID: 2902167814241644366}
-  lootDrop: {fileID: 2596187246842623718, guid: 7f48706922184b44595c1402f2d458c5, type: 3}
-  healthPotionDrop: {fileID: 8402850494396068391, guid: f25a4fca3cf1ef84a97d61c81155a47f, type: 3}
---- !u!114 &3913282138032265798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475996137607520006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9471e26aa781a1a46b2c94a37d1653e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectile: {fileID: 3833847839207358409, guid: ccf051f89bda74c45a80c77bc430e62e, type: 3}
-  player: {fileID: 5857836235798462088, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
-  minDamage: 10
-  maxDamage: 20
-  projectileSpeed: 50
-  projectileLifetime: 3
+  moveSpeed: 25
+  changeDirectionInterval: 1
+  rb: {fileID: -1127995572195980354}
+  projectilePrefab: {fileID: 3833847839207358409, guid: ccf051f89bda74c45a80c77bc430e62e, type: 3}
   cooldown: 1
---- !u!114 &1088839743141154413
-MonoBehaviour:
+  player: {fileID: 0}
+  health: 5
+  maxHealth: 5
+  healthBarSlider: {fileID: 2902167814241644366}
+  healthBar: {fileID: 1083481291552137695}
+  coinDrop: {fileID: 2596187246842623718, guid: 7f48706922184b44595c1402f2d458c5, type: 3}
+  healthPotionDrop: {fileID: 8402850494396068391, guid: f25a4fca3cf1ef84a97d61c81155a47f, type: 3}
+--- !u!50 &-1127995572195980354
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3475996137607520006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36f756d9dbe11dd4f83856866934604c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 30
-  changeDirectionInterval: 20
-  movementRange: 10
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 10
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &4951135885874391136
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +382,7 @@ GameObject:
   - component: {fileID: 2532322777309564979}
   - component: {fileID: 4993068130986748323}
   - component: {fileID: 4115029962212798890}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5132978687934426247}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5740284879921908024}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -531,7 +529,7 @@ GameObject:
   - component: {fileID: 5904735019844170611}
   - component: {fileID: 5611038611023981178}
   - component: {fileID: 41329277113117384}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

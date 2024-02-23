@@ -1,0 +1,4591 @@
+fileFormatVersion: 2
+guid: b4bb6366d95b03a4cb5f3ef33277340e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: The Blood King_Frame_80
+    originalName: 
+    pivot: {x: 0.7777778, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 165
+      y: 4
+      width: 108
+      height: 22
+    spriteID: d98b84e140513184c8877f48bc7f7db1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 165, y: 4}
+  - name: The Blood King_Frame_81
+    originalName: 
+    pivot: {x: 0.74336284, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 113
+      height: 22
+    spriteID: 4f8aef30eee96b34d9e3d620d1451b47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
+  - name: The Blood King_Frame_82
+    originalName: 
+    pivot: {x: 0.7181818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 393
+      y: 4
+      width: 110
+      height: 20
+    spriteID: f5549f0ba9637fa4a8a6078a2eaff91a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 393, y: 4}
+  - name: The Blood King_Frame_83
+    originalName: 
+    pivot: {x: 0.6732673, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 34
+      width: 101
+      height: 18
+    spriteID: f5c20e6fa39f60c49b6fb4d87ea3e1c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 34}
+  - name: The Blood King_Frame_84
+    originalName: 
+    pivot: {x: 0.56249994, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 99
+      y: 97
+      width: 80
+      height: 16
+    spriteID: c26de011077c7874fb37a2c81d00746b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 99, y: 97}
+  - name: The Blood King_Frame_95
+    originalName: 
+    pivot: {x: 0.012048208, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 353
+      y: 34
+      width: 83
+      height: 17
+    spriteID: 4c014fb5aaaefcf43a8db40edbdf2b23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 353, y: 34}
+  - name: The Blood King_Frame_96
+    originalName: 
+    pivot: {x: 0.011904776, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 261
+      y: 34
+      width: 84
+      height: 17
+    spriteID: c27c0c557c1869948ad0a535ce44588d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 261, y: 34}
+  - name: The Blood King_Frame_97
+    originalName: 
+    pivot: {x: -0.063291155, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 97
+      width: 79
+      height: 16
+    spriteID: 2ac1913c509538c4293bbde8e8944023
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 97}
+  - name: The Blood King_Frame_103
+    originalName: 
+    pivot: {x: -0.28571427, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 311
+      y: 335
+      width: 28
+      height: 17
+    spriteID: a8250abcba75c5949b06016547fa8ddd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 311, y: 335}
+  - name: The Blood King_Frame_104
+    originalName: 
+    pivot: {x: -0.5384614, y: -0.13043478}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 90
+      width: 26
+      height: 69
+    spriteID: a2a7778df67e6d94fba736bf968f866b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 90}
+  - name: The Blood King_Frame_105
+    originalName: 
+    pivot: {x: -0.52, y: -2.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 274
+      width: 25
+      height: 24
+    spriteID: 3b1c8c86a0758b9448307a1250b42aec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 274}
+  - name: The Blood King_Frame_106
+    originalName: 
+    pivot: {x: -0.32142842, y: -2.5454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 244
+      width: 28
+      height: 22
+    spriteID: 2db20c8815801cd40a07a2c3a47e57f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 376, y: 244}
+  - name: The Blood King_Frame_107
+    originalName: 
+    pivot: {x: -0.23333344, y: -2.590909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 244
+      width: 30
+      height: 22
+    spriteID: 7fd7ec1e90358734594891f09822ca2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 244}
+  - name: The Blood King_Frame_0
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 258
+      y: 362
+      width: 26
+      height: 20
+    spriteID: 6900f14a982b7ed4e9ff43d7e5619932
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 258, y: 362}
+  - name: The Blood King_Frame_1
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 362
+      width: 26
+      height: 20
+    spriteID: b0aed6ab771903646bdc67fcc0207c4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 362}
+  - name: The Blood King_Frame_2
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 326
+      y: 362
+      width: 26
+      height: 20
+    spriteID: 7c145b13093d33344a0c3bcdadcefaeb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 326, y: 362}
+  - name: The Blood King_Frame_3
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 362
+      width: 26
+      height: 20
+    spriteID: 0a837a6bfa5e73446945084df445c3a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 362}
+  - name: The Blood King_Frame_4
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 394
+      y: 362
+      width: 26
+      height: 20
+    spriteID: 979c64c48dd98004aa96f2d46e5b88da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 394, y: 362}
+  - name: The Blood King_Frame_5
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 428
+      y: 362
+      width: 26
+      height: 20
+    spriteID: c7818df842e73494f8affdc9c3face99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 428, y: 362}
+  - name: The Blood King_Frame_6
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 462
+      y: 362
+      width: 26
+      height: 20
+    spriteID: 356d5c2b20be38447ba1907721b9a4fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 462, y: 362}
+  - name: The Blood King_Frame_7
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 106
+      y: 392
+      width: 26
+      height: 20
+    spriteID: 2e842c902dfc33b4fa9612cc5a0f5c6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 106, y: 392}
+  - name: The Blood King_Frame_8
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 392
+      width: 26
+      height: 20
+    spriteID: de8d7e60589e27040bab199056692991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 392}
+  - name: The Blood King_Frame_9
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 392
+      width: 26
+      height: 20
+    spriteID: 5c1f71ddd92e2a743b6312de01945dd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 392}
+  - name: The Blood King_Frame_10
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 392
+      width: 26
+      height: 20
+    spriteID: e9fd2317dc8b11c4e8e3fb0cd4924dbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 392}
+  - name: The Blood King_Frame_11
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 242
+      y: 392
+      width: 26
+      height: 20
+    spriteID: e0c113e0137c31048842a4fce486bbe1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 242, y: 392}
+  - name: The Blood King_Frame_12
+    originalName: 
+    pivot: {x: 1.8846154, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 392
+      width: 26
+      height: 20
+    spriteID: f3b7890b063ea4e45a637d2345d9080a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 276, y: 392}
+  - name: The Blood King_Frame_13
+    originalName: 
+    pivot: {x: 1.6129032, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 298
+      y: 244
+      width: 31
+      height: 20
+    spriteID: 6e08cc5cd88932142a31ca1c30a4e230
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 298, y: 244}
+  - name: The Blood King_Frame_14
+    originalName: 
+    pivot: {x: 1.6666666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 274
+      width: 30
+      height: 20
+    spriteID: c91840a5b3797cf4e9a06f9d954c4a3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 274}
+  - name: The Blood King_Frame_15
+    originalName: 
+    pivot: {x: 1.4411765, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 216
+      width: 34
+      height: 20
+    spriteID: e774207e5202d1641afc40664c8507d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 216}
+  - name: The Blood King_Frame_16
+    originalName: 
+    pivot: {x: 1.3783784, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 174
+      width: 37
+      height: 20
+    spriteID: 73d857104e269a44b9134ef02186afdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 174}
+  - name: The Blood King_Frame_17
+    originalName: 
+    pivot: {x: 1.5757576, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 216
+      width: 33
+      height: 20
+    spriteID: 63b67e039f6ba3240953257e5088ca10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 216}
+  - name: The Blood King_Frame_18
+    originalName: 
+    pivot: {x: 1.5294118, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 216
+      width: 34
+      height: 20
+    spriteID: 6c59bf1307995dc4d81f8013f60fb2c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 216}
+  - name: The Blood King_Frame_19
+    originalName: 
+    pivot: {x: 1.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 330
+      y: 216
+      width: 34
+      height: 20
+    spriteID: bd5aac324453da84c96513816decae6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 330, y: 216}
+  - name: The Blood King_Frame_20
+    originalName: 
+    pivot: {x: 1.4444444, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 216
+      width: 36
+      height: 20
+    spriteID: 1bae099d6bd37084eab3bba08c65aace
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 216}
+  - name: The Blood King_Frame_21
+    originalName: 
+    pivot: {x: 1.6666666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 115
+      y: 274
+      width: 30
+      height: 20
+    spriteID: 1eb453cc62b705146b18e530e61a51ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 115, y: 274}
+  - name: The Blood King_Frame_22
+    originalName: 
+    pivot: {x: 1.6129032, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 337
+      y: 244
+      width: 31
+      height: 20
+    spriteID: 983cfff5cf83b2d498802504f8c02b6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 337, y: 244}
+  - name: The Blood King_Frame_23
+    originalName: 
+    pivot: {x: 1.9166666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 458
+      y: 335
+      width: 24
+      height: 19
+    spriteID: a77dc25799fbd8247a4f46d2db85e2ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 458, y: 335}
+  - name: The Blood King_Frame_24
+    originalName: 
+    pivot: {x: 2.090909, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 310
+      y: 392
+      width: 22
+      height: 23
+    spriteID: fd56f103a68109348b05a4f20c7ba7c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 310, y: 392}
+  - name: The Blood King_Frame_25
+    originalName: 
+    pivot: {x: 1.8076923, y: -0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 309
+      y: 274
+      width: 26
+      height: 22
+    spriteID: 0509fa0004cf06a4a8676a5b3f4d5bf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 309, y: 274}
+  - name: The Blood King_Frame_26
+    originalName: 
+    pivot: {x: 1.7407408, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 377
+      y: 274
+      width: 27
+      height: 21
+    spriteID: c3a3126d98bd49a4a9f9d89588d2106a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 377, y: 274}
+  - name: The Blood King_Frame_27
+    originalName: 
+    pivot: {x: 2.1578946, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 451
+      width: 19
+      height: 19
+    spriteID: 836c3fbaa4341ee4b9b720ee216e9bd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 451}
+  - name: The Blood King_Frame_28
+    originalName: 
+    pivot: {x: 2.4117646, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 121
+      y: 451
+      width: 17
+      height: 23
+    spriteID: 2d90e409e61efb148a0dec96d875464a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 121, y: 451}
+  - name: The Blood King_Frame_29
+    originalName: 
+    pivot: {x: 2, y: -0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 486
+      y: 244
+      width: 21
+      height: 22
+    spriteID: e6309e3708eabc846b3e9476ac74b492
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 486, y: 244}
+  - name: The Blood King_Frame_30
+    originalName: 
+    pivot: {x: 1.9090909, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 486
+      y: 392
+      width: 22
+      height: 21
+    spriteID: 8e4fa56302c4f244cbec7f9498e08b41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 486, y: 392}
+  - name: The Blood King_Frame_31
+    originalName: 
+    pivot: {x: 2.090909, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 392
+      width: 22
+      height: 23
+    spriteID: 4646a82eb7932924d816c4a7e7361199
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 392}
+  - name: The Blood King_Frame_32
+    originalName: 
+    pivot: {x: 2, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 392
+      width: 23
+      height: 23
+    spriteID: 94a381696b0624c41a4f3060f12a5e46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 392}
+  - name: The Blood King_Frame_33
+    originalName: 
+    pivot: {x: 2, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 392
+      width: 23
+      height: 23
+    spriteID: c19c90724172cec4bb8ee43b7d74abe8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 392}
+  - name: The Blood King_Frame_34
+    originalName: 
+    pivot: {x: 1.9166666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 482
+      y: 274
+      width: 24
+      height: 23
+    spriteID: 73f9603c5a8948e4ca09f1be46d01c53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 482, y: 274}
+  - name: The Blood King_Frame_35
+    originalName: 
+    pivot: {x: 1.8076923, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 274
+      width: 26
+      height: 23
+    spriteID: d6fbc0fa2a8fb804b97ed8b774d86265
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 191, y: 274}
+  - name: The Blood King_Frame_36
+    originalName: 
+    pivot: {x: 1.8076923, y: -0.045454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 343
+      y: 274
+      width: 26
+      height: 22
+    spriteID: dab014a13fba0494883f7dd28f6ca84a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 343, y: 274}
+  - name: The Blood King_Frame_37
+    originalName: 
+    pivot: {x: 1.7407408, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 412
+      y: 274
+      width: 27
+      height: 21
+    spriteID: 4979d348a8677af4ab14c46b0a7d1ec0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 412, y: 274}
+  - name: The Blood King_Frame_38
+    originalName: 
+    pivot: {x: 1.7407408, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 447
+      y: 274
+      width: 27
+      height: 21
+    spriteID: a42c7b153423b6d4f9d9f4a6ec1cb4b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 447, y: 274}
+  - name: The Blood King_Frame_39
+    originalName: 
+    pivot: {x: 1.6206896, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 412
+      y: 244
+      width: 29
+      height: 21
+    spriteID: 13328791854fc6d4cb3b54c1a4af06e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 412, y: 244}
+  - name: The Blood King_Frame_40
+    originalName: 
+    pivot: {x: 1.6206896, y: -0.0952381}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 449
+      y: 244
+      width: 29
+      height: 21
+    spriteID: 6a2897fec7c7bc749b28e8d8160bdeba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 449, y: 244}
+  - name: The Blood King_Frame_41
+    originalName: 
+    pivot: {x: 1.6428571, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 347
+      y: 335
+      width: 28
+      height: 17
+    spriteID: 9073e2e0bbde7ff45b45a3d46d972e56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 347, y: 335}
+  - name: The Blood King_Frame_42
+    originalName: 
+    pivot: {x: 1.6428571, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 383
+      y: 335
+      width: 28
+      height: 17
+    spriteID: fa67f4fe435ebf243b9dbabe5a91e8d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 383, y: 335}
+  - name: The Blood King_Frame_43
+    originalName: 
+    pivot: {x: 1.6428571, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 370
+      y: 392
+      width: 28
+      height: 18
+    spriteID: 22cf9403adf395546b259d2735db068e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 370, y: 392}
+  - name: The Blood King_Frame_44
+    originalName: 
+    pivot: {x: 1.8518518, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 362
+      width: 27
+      height: 20
+    spriteID: 365d692d66c87304bb5cb7fe220e4431
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 362}
+  - name: The Blood King_Frame_45
+    originalName: 
+    pivot: {x: 1.8214285, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 147
+      y: 362
+      width: 28
+      height: 19
+    spriteID: 5cf6440f20dd8064d8fe3c04a166f5f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 147, y: 362}
+  - name: The Blood King_Frame_46
+    originalName: 
+    pivot: {x: 1.8214285, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 406
+      y: 392
+      width: 28
+      height: 18
+    spriteID: 9e69faedeb750bc45a1b238b110c3864
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 406, y: 392}
+  - name: The Blood King_Frame_47
+    originalName: 
+    pivot: {x: 1.2380953, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 406
+      y: 97
+      width: 42
+      height: 26
+    spriteID: 1d099c33970336247b45edec2000e02d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 406, y: 97}
+  - name: The Blood King_Frame_48
+    originalName: 
+    pivot: {x: 0.913793, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 60
+      width: 58
+      height: 27
+    spriteID: cdc01118a4c010248ae0e863f9a6e3a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 60}
+  - name: The Blood King_Frame_49
+    originalName: 
+    pivot: {x: 0.7924528, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 60
+      width: 53
+      height: 29
+    spriteID: b12745724e9000d42b8bab4303e96c60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 318, y: 60}
+  - name: The Blood King_Frame_50
+    originalName: 
+    pivot: {x: 0.7213115, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 60
+      width: 61
+      height: 29
+    spriteID: 3fdaa52fc6522d44991aef34d22d5a83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 60}
+  - name: The Blood King_Frame_51
+    originalName: 
+    pivot: {x: 0.703125, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 60
+      width: 64
+      height: 26
+    spriteID: c35abd76f1d29d645be28515e7784380
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 60}
+  - name: The Blood King_Frame_52
+    originalName: 
+    pivot: {x: 0.661017, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 60
+      width: 59
+      height: 28
+    spriteID: 8111a4078dd062e4aa94783c0da605fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 185, y: 60}
+  - name: The Blood King_Frame_53
+    originalName: 
+    pivot: {x: 0.8604651, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 355
+      y: 97
+      width: 43
+      height: 27
+    spriteID: a27e220101735ef4888c6d64269a1f8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 355, y: 97}
+  - name: The Blood King_Frame_54
+    originalName: 
+    pivot: {x: 0.7199999, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 442
+      y: 60
+      width: 50
+      height: 27
+    spriteID: 53997c7aa393a9d4288798e405894e32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 442, y: 60}
+  - name: The Blood King_Frame_55
+    originalName: 
+    pivot: {x: 0.6545454, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 379
+      y: 60
+      width: 55
+      height: 26
+    spriteID: c3dea874b54527749a30537511e5a890
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 379, y: 60}
+  - name: The Blood King_Frame_56
+    originalName: 
+    pivot: {x: 0.6315789, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 444
+      y: 34
+      width: 57
+      height: 18
+    spriteID: 429187cccd84c3c4b9574a6ead33ebac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 444, y: 34}
+  - name: The Blood King_Frame_57
+    originalName: 
+    pivot: {x: 0.6315789, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 221
+      y: 135
+      width: 57
+      height: 18
+    spriteID: cbaeb6544d65bb04a864ceaef60c1703
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 221, y: 135}
+  - name: The Blood King_Frame_58
+    originalName: 
+    pivot: {x: 1.9199998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 483
+      y: 306
+      width: 25
+      height: 20
+    spriteID: bdcb1a2a451f4a545a1c0e3d94f5549b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 483, y: 306}
+  - name: The Blood King_Frame_59
+    originalName: 
+    pivot: {x: 1.8518518, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 362
+      width: 27
+      height: 20
+    spriteID: 9888de6b6429c0e4098f71cdf84c579b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 362}
+  - name: The Blood King_Frame_60
+    originalName: 
+    pivot: {x: 1.7333333, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 274
+      width: 30
+      height: 20
+    spriteID: 0eb06cd5e4219cc4dbf4fcd3f7dfa0e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 274}
+  - name: The Blood King_Frame_61
+    originalName: 
+    pivot: {x: 1.7931035, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 458
+      width: 29
+      height: 23
+    spriteID: 69106479416fb444b93961b921614012
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 458}
+  - name: The Blood King_Frame_62
+    originalName: 
+    pivot: {x: 2.4117646, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 71
+      y: 451
+      width: 17
+      height: 24
+    spriteID: 6ed61fefc2c1ba84fa159f7126df8f7f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 71, y: 451}
+  - name: The Blood King_Frame_63
+    originalName: 
+    pivot: {x: 2.4117646, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 451
+      width: 17
+      height: 24
+    spriteID: 847e8cde816cb4945b165d3eee442eea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 451}
+  - name: The Blood King_Frame_64
+    originalName: 
+    pivot: {x: 1.96, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 362
+      width: 25
+      height: 22
+    spriteID: 6f760aa2b2f52474eb17998a62699199
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 362}
+  - name: The Blood King_Frame_65
+    originalName: 
+    pivot: {x: 1.5526315, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 174
+      width: 38
+      height: 20
+    spriteID: 9ba54b744ba076a4da619b92b7f04bd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 174}
+  - name: The Blood King_Frame_66
+    originalName: 
+    pivot: {x: 1.4186046, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 90
+      y: 174
+      width: 43
+      height: 20
+    spriteID: cec5fb75ff4dcdc44bf00ccb0ea1f142
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 90, y: 174}
+  - name: The Blood King_Frame_67
+    originalName: 
+    pivot: {x: 1.3404255, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 461
+      y: 135
+      width: 47
+      height: 19
+    spriteID: 97442d8c2715f4745b355b5ef326365c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 461, y: 135}
+  - name: The Blood King_Frame_68
+    originalName: 
+    pivot: {x: 1.1636363, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 135
+      width: 55
+      height: 19
+    spriteID: 0a9b09839ffb46c45997deeac5e29547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 135}
+  - name: The Blood King_Frame_69
+    originalName: 
+    pivot: {x: 1.7142859, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 335
+      width: 35
+      height: 14
+    spriteID: 1b38f495e32af2544b38a5c4704aaa06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 335}
+  - name: The Blood King_Frame_70
+    originalName: 
+    pivot: {x: 1.6944443, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 442
+      y: 392
+      width: 36
+      height: 14
+    spriteID: 09e4595c0a9fd0343a2c9b27737f9a6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 442, y: 392}
+  - name: The Blood King_Frame_71
+    originalName: 
+    pivot: {x: 1.7500001, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 306
+      width: 28
+      height: 20
+    spriteID: 0f35feedc616bc445864c31e27e4880a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 318, y: 306}
+  - name: The Blood King_Frame_72
+    originalName: 
+    pivot: {x: 1.7857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 362
+      width: 28
+      height: 19
+    spriteID: d932ced66c8d1e041ba58e36750080a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 362}
+  - name: The Blood King_Frame_73
+    originalName: 
+    pivot: {x: 1.7586206, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 489
+      width: 29
+      height: 19
+    spriteID: f8660337fac14ab408777a378497dd03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 489}
+  - name: The Blood King_Frame_74
+    originalName: 
+    pivot: {x: 1.7727273, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 143
+      y: 216
+      width: 44
+      height: 16
+    spriteID: bc5855b76ee7ccb4893b37b1b8a918d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 143, y: 216}
+  - name: The Blood King_Frame_75
+    originalName: 
+    pivot: {x: 1.7555555, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 408
+      y: 135
+      width: 45
+      height: 21
+    spriteID: 4625208aed4b43540bb066ff78529ef9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 408, y: 135}
+  - name: The Blood King_Frame_76
+    originalName: 
+    pivot: {x: 1.7173914, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 286
+      y: 135
+      width: 46
+      height: 21
+    spriteID: 1a5ff14496883954b9ca6f2c2eb889b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 286, y: 135}
+  - name: The Blood King_Frame_77
+    originalName: 
+    pivot: {x: 1.6734693, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 97
+      width: 49
+      height: 21
+    spriteID: 1432403f115515c4994bbb93b18d46fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 456, y: 97}
+  - name: The Blood King_Frame_78
+    originalName: 
+    pivot: {x: 3.037037, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 306
+      width: 27
+      height: 21
+    spriteID: 9ac6d5172f910df448e5d731be961bbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 306}
+  - name: The Blood King_Frame_79
+    originalName: 
+    pivot: {x: 0.79807687, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 281
+      y: 4
+      width: 104
+      height: 22
+    spriteID: 9a55d0af7a43c2e498325523ad3d0853
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 281, y: 4}
+  - name: The Blood King_Frame_85
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 253
+      y: 244
+      width: 37
+      height: 17
+    spriteID: 8761e1af32764324dbac0b418659f9cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 253, y: 244}
+  - name: The Blood King_Frame_86
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 274
+      width: 39
+      height: 15
+    spriteID: 836929653c0bade44bc333e508be7827
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 274}
+  - name: The Blood King_Frame_87
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 461
+      y: 216
+      width: 43
+      height: 15
+    spriteID: d238a0754571d2c42aa7bd963e5e021c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 461, y: 216}
+  - name: The Blood King_Frame_88
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 88
+      y: 216
+      width: 47
+      height: 15
+    spriteID: fed5840086e71914eae7f6841d421e85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 88, y: 216}
+  - name: The Blood King_Frame_89
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 193
+      width: 48
+      height: 15
+    spriteID: e20908ef03e129c4691900e11d2ab2b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 193}
+  - name: The Blood King_Frame_90
+    originalName: 
+    pivot: {x: 1.7500001, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 354
+      y: 306
+      width: 28
+      height: 20
+    spriteID: 4f85ff33cc1b7fe46a8a4f2971c50be6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 354, y: 306}
+  - name: The Blood King_Frame_91
+    originalName: 
+    pivot: {x: 1.7241379, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 272
+      y: 274
+      width: 29
+      height: 20
+    spriteID: adc6718db70b16a40b158c962938c5d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 272, y: 274}
+  - name: The Blood King_Frame_92
+    originalName: 
+    pivot: {x: 1.7586206, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 335
+      width: 29
+      height: 19
+    spriteID: e47ad79aacc8f58439f470aa1367f4ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 335}
+  - name: The Blood King_Frame_93
+    originalName: 
+    pivot: {x: 0.47, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 34
+      width: 100
+      height: 17
+    spriteID: c6ba9ede88d8da745bad0b49edbfb899
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 34}
+  - name: The Blood King_Frame_94
+    originalName: 
+    pivot: {x: 0.05479452, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 274
+      y: 97
+      width: 73
+      height: 17
+    spriteID: faf925188399fef4f95f444b788b04e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 274, y: 97}
+  - name: The Blood King_Frame_98
+    originalName: 
+    pivot: {x: -0.07547179, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 141
+      y: 174
+      width: 53
+      height: 16
+    spriteID: 3b7dc716706bc1d4aa6cde7ea7a7b0dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 141, y: 174}
+  - name: The Blood King_Frame_99
+    originalName: 
+    pivot: {x: 0.06666666, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 135
+      width: 60
+      height: 16
+    spriteID: 9632a46f7b1c8ad48a3acd8c0bd82d16
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 135}
+  - name: The Blood King_Frame_100
+    originalName: 
+    pivot: {x: 0.1860465, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 195
+      y: 216
+      width: 43
+      height: 16
+    spriteID: ae118cdd191c777499fe83f99ecbd4a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 195, y: 216}
+  - name: The Blood King_Frame_101
+    originalName: 
+    pivot: {x: 0.25531915, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 386
+      y: 174
+      width: 47
+      height: 16
+    spriteID: 6886f2390dbdf7540a53ca2d445de967
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 386, y: 174}
+  - name: The Blood King_Frame_102
+    originalName: 
+    pivot: {x: 0.27083334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 284
+      y: 174
+      width: 48
+      height: 16
+    spriteID: 73ea5c160eb6e554da5dfae60aaf6487
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 284, y: 174}
+  - name: The Blood King_Frame_108
+    originalName: 
+    pivot: {x: -0.062500075, y: -0.012820513}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 32
+      height: 78
+    spriteID: 4b2b8c2bf6b47f7408e3be8ff8881e1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: The Blood King_Frame_109
+    originalName: 
+    pivot: {x: 0.031250037, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 167
+      width: 32
+      height: 45
+    spriteID: 54fb9111e7f35d047b6127e2f23c0984
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 167}
+  - name: The Blood King_Frame_110
+    originalName: 
+    pivot: {x: 0.105263144, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 174
+      width: 38
+      height: 34
+    spriteID: e6904dad46472c04fbc158e0ecd80f91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 174}
+  - name: The Blood King_Frame_111
+    originalName: 
+    pivot: {x: 0.13953494, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 135
+      width: 43
+      height: 31
+    spriteID: 54bf183298a45cb4a9963266a5e9b1e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 135}
+  - name: The Blood King_Frame_112
+    originalName: 
+    pivot: {x: 0.17021276, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 97
+      width: 47
+      height: 30
+    spriteID: 1c7654168c670f3469585a67a2ea6ad0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 97}
+  - name: The Blood King_Frame_113
+    originalName: 
+    pivot: {x: 0.16363637, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 158
+      y: 135
+      width: 55
+      height: 19
+    spriteID: ea68d040f12de9746b8f51390e7d5dce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 158, y: 135}
+  - name: The Blood King_Frame_114
+    originalName: 
+    pivot: {x: 0.14285718, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 335
+      width: 35
+      height: 14
+    spriteID: 471d0dcab5a5253418fcff3193c04081
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 335}
+  - name: The Blood King_Frame_115
+    originalName: 
+    pivot: {x: 0.16666672, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 335
+      width: 36
+      height: 14
+    spriteID: bff02f4d46a9bd84691fcdeab1dc51cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 335}
+  - name: The Blood King_Frame_116
+    originalName: 
+    pivot: {x: 2.1578946, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 173
+      y: 451
+      width: 19
+      height: 19
+    spriteID: 6384b7319310cb6499d5e34b8beb266d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 173, y: 451}
+  - name: The Blood King_Frame_117
+    originalName: 
+    pivot: {x: 2.1578946, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 451
+      width: 19
+      height: 19
+    spriteID: b6bfd444ea61a1d4998d10ca5623bc56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 451}
+  - name: The Blood King_Frame_118
+    originalName: 
+    pivot: {x: 1.5517241, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 335
+      width: 29
+      height: 17
+    spriteID: 640cde582e6dabf4fb91e13a9e33742f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 335}
+  - name: The Blood King_Frame_119
+    originalName: 
+    pivot: {x: 1.4516128, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 362
+      width: 31
+      height: 17
+    spriteID: e121a75c581f611488a9e8585f63e86e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 362}
+  - name: The Blood King_Frame_120
+    originalName: 
+    pivot: {x: 1.1999999, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 372
+      y: 216
+      width: 40
+      height: 17
+    spriteID: 2a273ac7ba9ec504986a398a2cb11549
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 372, y: 216}
+  - name: The Blood King_Frame_121
+    originalName: 
+    pivot: {x: 1.0784314, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 306
+      width: 51
+      height: 11
+    spriteID: fd655a572dec054489019fc290a20549
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 306}
+  - name: The Blood King_Frame_122
+    originalName: 
+    pivot: {x: 1.0363637, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 335
+      width: 55
+      height: 10
+    spriteID: 12b5bdc4c25ac5a4b83580623eace069
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 335}
+  - name: The Blood King_Frame_123
+    originalName: 
+    pivot: {x: 0.9692308, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 244
+      width: 65
+      height: 10
+    spriteID: eb72a24b5bcde19449abd01a53647835
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 244}
+  - name: The Blood King_Frame_124
+    originalName: 
+    pivot: {x: 0.84931505, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 274
+      y: 122
+      width: 73
+      height: 5
+    spriteID: b07b7bba9a4769147976995b21a2b50c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 274, y: 122}
+  - name: The Blood King_Frame_125
+    originalName: 
+    pivot: {x: 0.79518074, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 319
+      width: 83
+      height: 5
+    spriteID: 28e3d32cf737dfa4f910df7ff3e677ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 319}
+  - name: The Blood King_Frame_126
+    originalName: 
+    pivot: {x: 0.77272725, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 469
+      width: 88
+      height: 1
+    spriteID: 7313c2fca6b13544f963cd5d12cd2ca5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 469}
+  - name: The Blood King_Frame_127
+    originalName: 
+    pivot: {x: 0.7752809, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 370
+      y: 451
+      width: 89
+      height: 1
+    spriteID: 31d9a939e0160994cb25ab6006270e4b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 370, y: 451}
+  - name: The Blood King_Frame_128
+    originalName: 
+    pivot: {x: 0.7752809, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 460
+      width: 89
+      height: 1
+    spriteID: 18b4dcbf7849a9e47af480df03d62295
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 460}
+  - name: The Blood King_Frame_129
+    originalName: 
+    pivot: {x: 1.1052631, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 484
+      y: 423
+      width: 19
+      height: 2
+    spriteID: 8ce14e94ded411e4e80fb99787e2e722
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 484, y: 423}
+  - name: The Blood King_Frame_130
+    originalName: 
+    pivot: {x: 1.1052631, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 202
+      width: 19
+      height: 2
+    spriteID: 4249e58dae7ee52448b45d3c82032817
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 202}
+  - name: The Blood King_Frame_131
+    originalName: 
+    pivot: {x: 1.1052631, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 319
+      width: 19
+      height: 5
+    spriteID: 4d7921c4a7fd5204fa5120d85295af79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 319}
+  - name: The Blood King_Frame_132
+    originalName: 
+    pivot: {x: 1.1052631, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 451
+      width: 19
+      height: 24
+    spriteID: e109d367ff2ac77408cc88cd487f6f24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 451}
+  - name: The Blood King_Frame_133
+    originalName: 
+    pivot: {x: 0.9259259, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 416
+      width: 27
+      height: 34
+    spriteID: c5842f6f67596da4eb20428ded2ed14b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 416}
+  - name: The Blood King_Frame_134
+    originalName: 
+    pivot: {x: 0.99999994, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 319
+      width: 25
+      height: 38
+    spriteID: 91555b9ac719ae043b268a0313fe2260
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 319}
+  - name: The Blood King_Frame_135
+    originalName: 
+    pivot: {x: 0.99999994, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 220
+      width: 25
+      height: 39
+    spriteID: c770bc32e5043fe46b128a05774b23eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 220}
+  - name: The Blood King_Frame_136
+    originalName: 
+    pivot: {x: 1, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 365
+      width: 22
+      height: 43
+    spriteID: 0ce9aed0a3daccc41b24ab8b9f3e6d3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 365}
+  - name: The Blood King_Frame_137
+    originalName: 
+    pivot: {x: 1.0454546, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 267
+      width: 22
+      height: 44
+    spriteID: 48c08f29240273649a22cf9241dffb31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 267}
+  - name: The Blood King_Frame_138
+    originalName: 
+    pivot: {x: 1.2499999, y: -0.17647058}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 486
+      y: 174
+      width: 16
+      height: 34
+    spriteID: 70a655675300e4f488258e7e5e6621c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 486, y: 174}
+  - name: The Blood King_Frame_139
+    originalName: 
+    pivot: {x: 0.81081086, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 438
+      y: 306
+      width: 37
+      height: 15
+    spriteID: f23e55ece78cf6d48a164765a7536305
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 438, y: 306}
+  - name: The Blood King_Frame_140
+    originalName: 
+    pivot: {x: 0.6891892, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 174
+      width: 74
+      height: 11
+    spriteID: 689f60182f247de429cb7c2f34b8a31d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 174}
+  - name: The Blood King_Frame_141
+    originalName: 
+    pivot: {x: 0.6, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 244
+      width: 90
+      height: 7
+    spriteID: 657b66889b886a040b719c43f0f4c5b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 244}
+  - name: The Blood King_Frame_142
+    originalName: 
+    pivot: {x: 0.539823, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 306
+      width: 113
+      height: 5
+    spriteID: fdc156d3ec993f848b438a632a4b61d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 306}
+  - name: The Blood King_Frame_143
+    originalName: 
+    pivot: {x: 0.5151515, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 199
+      y: 423
+      width: 132
+      height: 3
+    spriteID: 563bdfe8e37ea1d4f82d082f8e01b133
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 199, y: 423}
+  - name: The Blood King_Frame_144
+    originalName: 
+    pivot: {x: 0.5111111, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 451
+      width: 135
+      height: 1
+    spriteID: 947d8a0f4260aed49ae9a5dfe611a036
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 451}
+  - name: The Blood King_Frame_145
+    originalName: 
+    pivot: {x: 0.5109489, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 339
+      y: 423
+      width: 137
+      height: 1
+    spriteID: 19ff119b93420974398c88be2d695412
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 339, y: 423}
+  - name: The Blood King_Frame_146
+    originalName: 
+    pivot: {x: -67.00001, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 468
+      y: 202
+      width: 1
+      height: 1
+    spriteID: 92df51fda6c50764abc290f161d510a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 468, y: 202}
+  - name: The Blood King_Frame_147
+    originalName: 
+    pivot: {x: 0.7752809, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 460
+      width: 89
+      height: 1
+    spriteID: b17e63ca98ed3dc4ca7a9454bf8680ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 460}
+  - name: The Blood King_Frame_148
+    originalName: 
+    pivot: {x: 0.7752809, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 469
+      width: 89
+      height: 1
+    spriteID: 832f02bf3457e244dae8186fa94c1f9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 469}
+  - name: The Blood King_Frame_149
+    originalName: 
+    pivot: {x: 0.77272725, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 469
+      width: 88
+      height: 1
+    spriteID: aee93452b57ebd743832c4efe08e3de7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 469}
+  - name: The Blood King_Frame_150
+    originalName: 
+    pivot: {x: 0.79518074, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 423
+      width: 83
+      height: 5
+    spriteID: 77b77df58ef215b41929674360e6887d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 423}
+  - name: The Blood King_Frame_151
+    originalName: 
+    pivot: {x: 0.84931505, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 121
+      width: 73
+      height: 5
+    spriteID: e71f60041e7ec6842bf5c10e71f94b14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 187, y: 121}
+  - name: The Blood King_Frame_152
+    originalName: 
+    pivot: {x: 0.9692308, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 155
+      y: 259
+      width: 65
+      height: 7
+    spriteID: 76931f4cebcf5484e9d821b271606eb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 155, y: 259}
+  - name: The Blood King_Frame_153
+    originalName: 
+    pivot: {x: 1.0363637, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 340
+      y: 159
+      width: 55
+      height: 7
+    spriteID: c554d5d449afe51478cf4fc7e2da1f61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 340, y: 159}
+  - name: The Blood King_Frame_154
+    originalName: 
+    pivot: {x: 1.0784314, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 259
+      y: 306
+      width: 51
+      height: 11
+    spriteID: 3145a75c151d53c479f95ce867634d46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 259, y: 306}
+  - name: The Blood King_Frame_155
+    originalName: 
+    pivot: {x: 1.1999999, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 390
+      y: 306
+      width: 40
+      height: 14
+    spriteID: 81115bc9ba83057419fedc24ebac4767
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 390, y: 306}
+  - name: The Blood King_Frame_156
+    originalName: 
+    pivot: {x: 1.4516128, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 419
+      y: 335
+      width: 31
+      height: 15
+    spriteID: bd01cfd72b5a1d14788346e065266c6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 419, y: 335}
+  - name: The Blood King_Frame_157
+    originalName: 
+    pivot: {x: 1.7999998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 423
+      width: 25
+      height: 17
+    spriteID: 02e235572035f2b4b9d7f94f0acf3438
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 423}
+  - name: The Blood King_Frame_158
+    originalName: 
+    pivot: {x: 2, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 423
+      width: 23
+      height: 20
+    spriteID: 973163d050782aa429bec2cad615345b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 423}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -656362568
+    name: The Blood King
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: The Blood King_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 0
+        y: 0
+        width: 108
+        height: 22
+      spriteId: d98b84e140513184c8877f48bc7f7db1
+    - name: The Blood King_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 0
+        y: 0
+        width: 113
+        height: 22
+      spriteId: 4f8aef30eee96b34d9e3d620d1451b47
+    - name: The Blood King_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 5
+        y: 0
+        width: 110
+        height: 20
+      spriteId: f5549f0ba9637fa4a8a6078a2eaff91a
+    - name: The Blood King_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 16
+        y: 0
+        width: 101
+        height: 18
+      spriteId: f5c20e6fa39f60c49b6fb4d87ea3e1c8
+    - name: The Blood King_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 39
+        y: 0
+        width: 80
+        height: 16
+      spriteId: c26de011077c7874fb37a2c81d00746b
+    - name: The Blood King_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 83
+        y: 0
+        width: 83
+        height: 17
+      spriteId: 4c014fb5aaaefcf43a8db40edbdf2b23
+    - name: The Blood King_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 83
+        y: 0
+        width: 84
+        height: 17
+      spriteId: c27c0c557c1869948ad0a535ce44588d
+    - name: The Blood King_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 89
+        y: 0
+        width: 79
+        height: 16
+      spriteId: 2ac1913c509538c4293bbde8e8944023
+    - name: The Blood King_Frame_103
+      frameIndex: 103
+      cellRect:
+        x: 92
+        y: 0
+        width: 28
+        height: 17
+      spriteId: a8250abcba75c5949b06016547fa8ddd
+    - name: The Blood King_Frame_104
+      frameIndex: 104
+      cellRect:
+        x: 98
+        y: 9
+        width: 26
+        height: 69
+      spriteId: a2a7778df67e6d94fba736bf968f866b
+    - name: The Blood King_Frame_105
+      frameIndex: 105
+      cellRect:
+        x: 97
+        y: 54
+        width: 25
+        height: 24
+      spriteId: 3b1c8c86a0758b9448307a1250b42aec
+    - name: The Blood King_Frame_106
+      frameIndex: 106
+      cellRect:
+        x: 93
+        y: 56
+        width: 28
+        height: 22
+      spriteId: 2db20c8815801cd40a07a2c3a47e57f9
+    - name: The Blood King_Frame_107
+      frameIndex: 107
+      cellRect:
+        x: 91
+        y: 57
+        width: 30
+        height: 22
+      spriteId: 7fd7ec1e90358734594891f09822ca2f
+    - name: The Blood King_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: 6900f14a982b7ed4e9ff43d7e5619932
+    - name: The Blood King_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: b0aed6ab771903646bdc67fcc0207c4d
+    - name: The Blood King_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: 7c145b13093d33344a0c3bcdadcefaeb
+    - name: The Blood King_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: 0a837a6bfa5e73446945084df445c3a5
+    - name: The Blood King_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: 979c64c48dd98004aa96f2d46e5b88da
+    - name: The Blood King_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: c7818df842e73494f8affdc9c3face99
+    - name: The Blood King_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: 356d5c2b20be38447ba1907721b9a4fb
+    - name: The Blood King_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: 2e842c902dfc33b4fa9612cc5a0f5c6c
+    - name: The Blood King_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: de8d7e60589e27040bab199056692991
+    - name: The Blood King_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: 5c1f71ddd92e2a743b6312de01945dd8
+    - name: The Blood King_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: e9fd2317dc8b11c4e8e3fb0cd4924dbe
+    - name: The Blood King_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: e0c113e0137c31048842a4fce486bbe1
+    - name: The Blood King_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 35
+        y: 0
+        width: 26
+        height: 20
+      spriteId: f3b7890b063ea4e45a637d2345d9080a
+    - name: The Blood King_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 34
+        y: 0
+        width: 31
+        height: 20
+      spriteId: 6e08cc5cd88932142a31ca1c30a4e230
+    - name: The Blood King_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 34
+        y: 0
+        width: 30
+        height: 20
+      spriteId: c91840a5b3797cf4e9a06f9d954c4a3e
+    - name: The Blood King_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 35
+        y: 0
+        width: 34
+        height: 20
+      spriteId: e774207e5202d1641afc40664c8507d3
+    - name: The Blood King_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 33
+        y: 0
+        width: 37
+        height: 20
+      spriteId: 73d857104e269a44b9134ef02186afdd
+    - name: The Blood King_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 32
+        y: 0
+        width: 33
+        height: 20
+      spriteId: 63b67e039f6ba3240953257e5088ca10
+    - name: The Blood King_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 32
+        y: 0
+        width: 34
+        height: 20
+      spriteId: 6c59bf1307995dc4d81f8013f60fb2c0
+    - name: The Blood King_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 33
+        y: 0
+        width: 34
+        height: 20
+      spriteId: bd5aac324453da84c96513816decae6c
+    - name: The Blood King_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 32
+        y: 0
+        width: 36
+        height: 20
+      spriteId: 1bae099d6bd37084eab3bba08c65aace
+    - name: The Blood King_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 34
+        y: 0
+        width: 30
+        height: 20
+      spriteId: 1eb453cc62b705146b18e530e61a51ce
+    - name: The Blood King_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 34
+        y: 0
+        width: 31
+        height: 20
+      spriteId: 983cfff5cf83b2d498802504f8c02b6b
+    - name: The Blood King_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 38
+        y: 0
+        width: 24
+        height: 19
+      spriteId: a77dc25799fbd8247a4f46d2db85e2ee
+    - name: The Blood King_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 38
+        y: 0
+        width: 22
+        height: 23
+      spriteId: fd56f103a68109348b05a4f20c7ba7c8
+    - name: The Blood King_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 37
+        y: 2
+        width: 26
+        height: 22
+      spriteId: 0509fa0004cf06a4a8676a5b3f4d5bf9
+    - name: The Blood King_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 37
+        y: 2
+        width: 27
+        height: 21
+      spriteId: c3a3126d98bd49a4a9f9d89588d2106a
+    - name: The Blood King_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 43
+        y: 0
+        width: 19
+        height: 19
+      spriteId: 836c3fbaa4341ee4b9b720ee216e9bd3
+    - name: The Blood King_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 43
+        y: 0
+        width: 17
+        height: 23
+      spriteId: 2d90e409e61efb148a0dec96d875464a
+    - name: The Blood King_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 42
+        y: 2
+        width: 21
+        height: 22
+      spriteId: e6309e3708eabc846b3e9476ac74b492
+    - name: The Blood King_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 42
+        y: 2
+        width: 22
+        height: 21
+      spriteId: 8e4fa56302c4f244cbec7f9498e08b41
+    - name: The Blood King_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 38
+        y: 0
+        width: 22
+        height: 23
+      spriteId: 4646a82eb7932924d816c4a7e7361199
+    - name: The Blood King_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 38
+        y: 0
+        width: 23
+        height: 23
+      spriteId: 94a381696b0624c41a4f3060f12a5e46
+    - name: The Blood King_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 38
+        y: 0
+        width: 23
+        height: 23
+      spriteId: c19c90724172cec4bb8ee43b7d74abe8
+    - name: The Blood King_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 38
+        y: 0
+        width: 24
+        height: 23
+      spriteId: 73f9603c5a8948e4ca09f1be46d01c53
+    - name: The Blood King_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 37
+        y: 0
+        width: 26
+        height: 23
+      spriteId: d6fbc0fa2a8fb804b97ed8b774d86265
+    - name: The Blood King_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 37
+        y: 1
+        width: 26
+        height: 22
+      spriteId: dab014a13fba0494883f7dd28f6ca84a
+    - name: The Blood King_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 37
+        y: 2
+        width: 27
+        height: 21
+      spriteId: 4979d348a8677af4ab14c46b0a7d1ec0
+    - name: The Blood King_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 37
+        y: 2
+        width: 27
+        height: 21
+      spriteId: a42c7b153423b6d4f9d9f4a6ec1cb4b9
+    - name: The Blood King_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 37
+        y: 2
+        width: 29
+        height: 21
+      spriteId: 13328791854fc6d4cb3b54c1a4af06e2
+    - name: The Blood King_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 37
+        y: 2
+        width: 29
+        height: 21
+      spriteId: 6a2897fec7c7bc749b28e8d8160bdeba
+    - name: The Blood King_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 38
+        y: 0
+        width: 28
+        height: 17
+      spriteId: 9073e2e0bbde7ff45b45a3d46d972e56
+    - name: The Blood King_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 38
+        y: 0
+        width: 28
+        height: 17
+      spriteId: fa67f4fe435ebf243b9dbabe5a91e8d0
+    - name: The Blood King_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 38
+        y: 0
+        width: 28
+        height: 18
+      spriteId: 22cf9403adf395546b259d2735db068e
+    - name: The Blood King_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 34
+        y: 0
+        width: 27
+        height: 20
+      spriteId: 365d692d66c87304bb5cb7fe220e4431
+    - name: The Blood King_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 33
+        y: 0
+        width: 28
+        height: 19
+      spriteId: 5cf6440f20dd8064d8fe3c04a166f5f3
+    - name: The Blood King_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 33
+        y: 0
+        width: 28
+        height: 18
+      spriteId: 9e69faedeb750bc45a1b238b110c3864
+    - name: The Blood King_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 32
+        y: 0
+        width: 42
+        height: 26
+      spriteId: 1d099c33970336247b45edec2000e02d
+    - name: The Blood King_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 31
+        y: 0
+        width: 58
+        height: 27
+      spriteId: cdc01118a4c010248ae0e863f9a6e3a7
+    - name: The Blood King_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 42
+        y: 0
+        width: 53
+        height: 29
+      spriteId: b12745724e9000d42b8bab4303e96c60
+    - name: The Blood King_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 40
+        y: 0
+        width: 61
+        height: 29
+      spriteId: 3fdaa52fc6522d44991aef34d22d5a83
+    - name: The Blood King_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 39
+        y: 0
+        width: 64
+        height: 26
+      spriteId: c35abd76f1d29d645be28515e7784380
+    - name: The Blood King_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 45
+        y: 0
+        width: 59
+        height: 28
+      spriteId: 8111a4078dd062e4aa94783c0da605fe
+    - name: The Blood King_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 47
+        y: 0
+        width: 43
+        height: 27
+      spriteId: a27e220101735ef4888c6d64269a1f8a
+    - name: The Blood King_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 48
+        y: 0
+        width: 50
+        height: 27
+      spriteId: 53997c7aa393a9d4288798e405894e32
+    - name: The Blood King_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 48
+        y: 0
+        width: 55
+        height: 26
+      spriteId: c3dea874b54527749a30537511e5a890
+    - name: The Blood King_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 48
+        y: 0
+        width: 57
+        height: 18
+      spriteId: 429187cccd84c3c4b9574a6ead33ebac
+    - name: The Blood King_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 48
+        y: 0
+        width: 57
+        height: 18
+      spriteId: cbaeb6544d65bb04a864ceaef60c1703
+    - name: The Blood King_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 36
+        y: 0
+        width: 25
+        height: 20
+      spriteId: bdcb1a2a451f4a545a1c0e3d94f5549b
+    - name: The Blood King_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 34
+        y: 0
+        width: 27
+        height: 20
+      spriteId: 9888de6b6429c0e4098f71cdf84c579b
+    - name: The Blood King_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 32
+        y: 0
+        width: 30
+        height: 20
+      spriteId: 0eb06cd5e4219cc4dbf4fcd3f7dfa0e5
+    - name: The Blood King_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 32
+        y: 0
+        width: 29
+        height: 23
+      spriteId: 69106479416fb444b93961b921614012
+    - name: The Blood King_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 43
+        y: 0
+        width: 17
+        height: 24
+      spriteId: 6ed61fefc2c1ba84fa159f7126df8f7f
+    - name: The Blood King_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 43
+        y: 0
+        width: 17
+        height: 24
+      spriteId: 847e8cde816cb4945b165d3eee442eea
+    - name: The Blood King_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 35
+        y: 0
+        width: 25
+        height: 22
+      spriteId: 6f760aa2b2f52474eb17998a62699199
+    - name: The Blood King_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 25
+        y: 0
+        width: 38
+        height: 20
+      spriteId: 9ba54b744ba076a4da619b92b7f04bd0
+    - name: The Blood King_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 23
+        y: 0
+        width: 43
+        height: 20
+      spriteId: cec5fb75ff4dcdc44bf00ccb0ea1f142
+    - name: The Blood King_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 21
+        y: 0
+        width: 47
+        height: 19
+      spriteId: 97442d8c2715f4745b355b5ef326365c
+    - name: The Blood King_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 20
+        y: 0
+        width: 55
+        height: 19
+      spriteId: 0a9b09839ffb46c45997deeac5e29547
+    - name: The Blood King_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 24
+        y: 0
+        width: 35
+        height: 14
+      spriteId: 1b38f495e32af2544b38a5c4704aaa06
+    - name: The Blood King_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 23
+        y: 0
+        width: 36
+        height: 14
+      spriteId: 09e4595c0a9fd0343a2c9b27737f9a6e
+    - name: The Blood King_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 35
+        y: 0
+        width: 28
+        height: 20
+      spriteId: 0f35feedc616bc445864c31e27e4880a
+    - name: The Blood King_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 34
+        y: 0
+        width: 28
+        height: 19
+      spriteId: d932ced66c8d1e041ba58e36750080a1
+    - name: The Blood King_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 33
+        y: 0
+        width: 29
+        height: 19
+      spriteId: f8660337fac14ab408777a378497dd03
+    - name: The Blood King_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 6
+        y: 0
+        width: 44
+        height: 16
+      spriteId: bc5855b76ee7ccb4893b37b1b8a918d2
+    - name: The Blood King_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 5
+        y: 0
+        width: 45
+        height: 21
+      spriteId: 4625208aed4b43540bb066ff78529ef9
+    - name: The Blood King_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 5
+        y: 0
+        width: 46
+        height: 21
+      spriteId: 1a5ff14496883954b9ca6f2c2eb889b4
+    - name: The Blood King_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 2
+        y: 0
+        width: 49
+        height: 21
+      spriteId: 1432403f115515c4994bbb93b18d46fb
+    - name: The Blood King_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 2
+        y: 0
+        width: 27
+        height: 21
+      spriteId: 9ac6d5172f910df448e5d731be961bbc
+    - name: The Blood King_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 1
+        y: 0
+        width: 104
+        height: 22
+      spriteId: 9a55d0af7a43c2e498325523ad3d0853
+    - name: The Blood King_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 84
+        y: 0
+        width: 37
+        height: 17
+      spriteId: 8761e1af32764324dbac0b418659f9cc
+    - name: The Blood King_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 84
+        y: 0
+        width: 39
+        height: 15
+      spriteId: 836929653c0bade44bc333e508be7827
+    - name: The Blood King_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 84
+        y: 0
+        width: 43
+        height: 15
+      spriteId: d238a0754571d2c42aa7bd963e5e021c
+    - name: The Blood King_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 84
+        y: 0
+        width: 47
+        height: 15
+      spriteId: fed5840086e71914eae7f6841d421e85
+    - name: The Blood King_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 84
+        y: 0
+        width: 48
+        height: 15
+      spriteId: e20908ef03e129c4691900e11d2ab2b6
+    - name: The Blood King_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 35
+        y: 0
+        width: 28
+        height: 20
+      spriteId: 4f85ff33cc1b7fe46a8a4f2971c50be6
+    - name: The Blood King_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 34
+        y: 0
+        width: 29
+        height: 20
+      spriteId: adc6718db70b16a40b158c962938c5d6
+    - name: The Blood King_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 33
+        y: 0
+        width: 29
+        height: 19
+      spriteId: e47ad79aacc8f58439f470aa1367f4ca
+    - name: The Blood King_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 37
+        y: 0
+        width: 100
+        height: 17
+      spriteId: c6ba9ede88d8da745bad0b49edbfb899
+    - name: The Blood King_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 80
+        y: 0
+        width: 73
+        height: 17
+      spriteId: faf925188399fef4f95f444b788b04e9
+    - name: The Blood King_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 88
+        y: 0
+        width: 53
+        height: 16
+      spriteId: 3b7dc716706bc1d4aa6cde7ea7a7b0dc
+    - name: The Blood King_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 80
+        y: 0
+        width: 60
+        height: 16
+      spriteId: 9632a46f7b1c8ad48a3acd8c0bd82d16
+    - name: The Blood King_Frame_100
+      frameIndex: 100
+      cellRect:
+        x: 76
+        y: 0
+        width: 43
+        height: 16
+      spriteId: ae118cdd191c777499fe83f99ecbd4a7
+    - name: The Blood King_Frame_101
+      frameIndex: 101
+      cellRect:
+        x: 72
+        y: 0
+        width: 47
+        height: 16
+      spriteId: 6886f2390dbdf7540a53ca2d445de967
+    - name: The Blood King_Frame_102
+      frameIndex: 102
+      cellRect:
+        x: 71
+        y: 0
+        width: 48
+        height: 16
+      spriteId: 73ea5c160eb6e554da5dfae60aaf6487
+    - name: The Blood King_Frame_108
+      frameIndex: 108
+      cellRect:
+        x: 86
+        y: 1
+        width: 32
+        height: 78
+      spriteId: 4b2b8c2bf6b47f7408e3be8ff8881e1e
+    - name: The Blood King_Frame_109
+      frameIndex: 109
+      cellRect:
+        x: 83
+        y: 0
+        width: 32
+        height: 45
+      spriteId: 54fb9111e7f35d047b6127e2f23c0984
+    - name: The Blood King_Frame_110
+      frameIndex: 110
+      cellRect:
+        x: 80
+        y: 0
+        width: 38
+        height: 34
+      spriteId: e6904dad46472c04fbc158e0ecd80f91
+    - name: The Blood King_Frame_111
+      frameIndex: 111
+      cellRect:
+        x: 78
+        y: 0
+        width: 43
+        height: 31
+      spriteId: 54bf183298a45cb4a9963266a5e9b1e9
+    - name: The Blood King_Frame_112
+      frameIndex: 112
+      cellRect:
+        x: 76
+        y: 0
+        width: 47
+        height: 30
+      spriteId: 1c7654168c670f3469585a67a2ea6ad0
+    - name: The Blood King_Frame_113
+      frameIndex: 113
+      cellRect:
+        x: 75
+        y: 0
+        width: 55
+        height: 19
+      spriteId: ea68d040f12de9746b8f51390e7d5dce
+    - name: The Blood King_Frame_114
+      frameIndex: 114
+      cellRect:
+        x: 79
+        y: 0
+        width: 35
+        height: 14
+      spriteId: 471d0dcab5a5253418fcff3193c04081
+    - name: The Blood King_Frame_115
+      frameIndex: 115
+      cellRect:
+        x: 78
+        y: 0
+        width: 36
+        height: 14
+      spriteId: bff02f4d46a9bd84691fcdeab1dc51cf
+    - name: The Blood King_Frame_116
+      frameIndex: 116
+      cellRect:
+        x: 43
+        y: 0
+        width: 19
+        height: 19
+      spriteId: 6384b7319310cb6499d5e34b8beb266d
+    - name: The Blood King_Frame_117
+      frameIndex: 117
+      cellRect:
+        x: 43
+        y: 0
+        width: 19
+        height: 19
+      spriteId: b6bfd444ea61a1d4998d10ca5623bc56
+    - name: The Blood King_Frame_118
+      frameIndex: 118
+      cellRect:
+        x: 39
+        y: 0
+        width: 29
+        height: 17
+      spriteId: 640cde582e6dabf4fb91e13a9e33742f
+    - name: The Blood King_Frame_119
+      frameIndex: 119
+      cellRect:
+        x: 39
+        y: 0
+        width: 31
+        height: 17
+      spriteId: e121a75c581f611488a9e8585f63e86e
+    - name: The Blood King_Frame_120
+      frameIndex: 120
+      cellRect:
+        x: 36
+        y: 0
+        width: 40
+        height: 17
+      spriteId: 2a273ac7ba9ec504986a398a2cb11549
+    - name: The Blood King_Frame_121
+      frameIndex: 121
+      cellRect:
+        x: 29
+        y: 0
+        width: 51
+        height: 11
+      spriteId: fd655a572dec054489019fc290a20549
+    - name: The Blood King_Frame_122
+      frameIndex: 122
+      cellRect:
+        x: 27
+        y: 0
+        width: 55
+        height: 10
+      spriteId: 12b5bdc4c25ac5a4b83580623eace069
+    - name: The Blood King_Frame_123
+      frameIndex: 123
+      cellRect:
+        x: 21
+        y: 0
+        width: 65
+        height: 10
+      spriteId: eb72a24b5bcde19449abd01a53647835
+    - name: The Blood King_Frame_124
+      frameIndex: 124
+      cellRect:
+        x: 22
+        y: 0
+        width: 73
+        height: 5
+      spriteId: b07b7bba9a4769147976995b21a2b50c
+    - name: The Blood King_Frame_125
+      frameIndex: 125
+      cellRect:
+        x: 18
+        y: 0
+        width: 83
+        height: 5
+      spriteId: 28e3d32cf737dfa4f910df7ff3e677ea
+    - name: The Blood King_Frame_126
+      frameIndex: 126
+      cellRect:
+        x: 16
+        y: 0
+        width: 88
+        height: 1
+      spriteId: 7313c2fca6b13544f963cd5d12cd2ca5
+    - name: The Blood King_Frame_127
+      frameIndex: 127
+      cellRect:
+        x: 15
+        y: 0
+        width: 89
+        height: 1
+      spriteId: 31d9a939e0160994cb25ab6006270e4b
+    - name: The Blood King_Frame_128
+      frameIndex: 128
+      cellRect:
+        x: 15
+        y: 0
+        width: 89
+        height: 1
+      spriteId: 18b4dcbf7849a9e47af480df03d62295
+    - name: The Blood King_Frame_129
+      frameIndex: 129
+      cellRect:
+        x: 63
+        y: 0
+        width: 19
+        height: 2
+      spriteId: 8ce14e94ded411e4e80fb99787e2e722
+    - name: The Blood King_Frame_130
+      frameIndex: 130
+      cellRect:
+        x: 63
+        y: 0
+        width: 19
+        height: 2
+      spriteId: 4249e58dae7ee52448b45d3c82032817
+    - name: The Blood King_Frame_131
+      frameIndex: 131
+      cellRect:
+        x: 63
+        y: 0
+        width: 19
+        height: 5
+      spriteId: 4d7921c4a7fd5204fa5120d85295af79
+    - name: The Blood King_Frame_132
+      frameIndex: 132
+      cellRect:
+        x: 63
+        y: 0
+        width: 19
+        height: 24
+      spriteId: e109d367ff2ac77408cc88cd487f6f24
+    - name: The Blood King_Frame_133
+      frameIndex: 133
+      cellRect:
+        x: 59
+        y: 0
+        width: 27
+        height: 34
+      spriteId: c5842f6f67596da4eb20428ded2ed14b
+    - name: The Blood King_Frame_134
+      frameIndex: 134
+      cellRect:
+        x: 59
+        y: 0
+        width: 25
+        height: 38
+      spriteId: 91555b9ac719ae043b268a0313fe2260
+    - name: The Blood King_Frame_135
+      frameIndex: 135
+      cellRect:
+        x: 59
+        y: 0
+        width: 25
+        height: 39
+      spriteId: c770bc32e5043fe46b128a05774b23eb
+    - name: The Blood King_Frame_136
+      frameIndex: 136
+      cellRect:
+        x: 62
+        y: 0
+        width: 22
+        height: 43
+      spriteId: 0ce9aed0a3daccc41b24ab8b9f3e6d3d
+    - name: The Blood King_Frame_137
+      frameIndex: 137
+      cellRect:
+        x: 61
+        y: 0
+        width: 22
+        height: 44
+      spriteId: 48c08f29240273649a22cf9241dffb31
+    - name: The Blood King_Frame_138
+      frameIndex: 138
+      cellRect:
+        x: 64
+        y: 6
+        width: 16
+        height: 34
+      spriteId: 70a655675300e4f488258e7e5e6621c2
+    - name: The Blood King_Frame_139
+      frameIndex: 139
+      cellRect:
+        x: 54
+        y: 0
+        width: 37
+        height: 15
+      spriteId: f23e55ece78cf6d48a164765a7536305
+    - name: The Blood King_Frame_140
+      frameIndex: 140
+      cellRect:
+        x: 33
+        y: 0
+        width: 74
+        height: 11
+      spriteId: 689f60182f247de429cb7c2f34b8a31d
+    - name: The Blood King_Frame_141
+      frameIndex: 141
+      cellRect:
+        x: 30
+        y: 0
+        width: 90
+        height: 7
+      spriteId: 657b66889b886a040b719c43f0f4c5b2
+    - name: The Blood King_Frame_142
+      frameIndex: 142
+      cellRect:
+        x: 23
+        y: 0
+        width: 113
+        height: 5
+      spriteId: fdc156d3ec993f848b438a632a4b61d6
+    - name: The Blood King_Frame_143
+      frameIndex: 143
+      cellRect:
+        x: 16
+        y: 0
+        width: 132
+        height: 3
+      spriteId: 563bdfe8e37ea1d4f82d082f8e01b133
+    - name: The Blood King_Frame_144
+      frameIndex: 144
+      cellRect:
+        x: 15
+        y: 0
+        width: 135
+        height: 1
+      spriteId: 947d8a0f4260aed49ae9a5dfe611a036
+    - name: The Blood King_Frame_145
+      frameIndex: 145
+      cellRect:
+        x: 14
+        y: 0
+        width: 137
+        height: 1
+      spriteId: 19ff119b93420974398c88be2d695412
+    - name: The Blood King_Frame_146
+      frameIndex: 146
+      cellRect:
+        x: 151
+        y: 0
+        width: 1
+        height: 1
+      spriteId: 92df51fda6c50764abc290f161d510a4
+    - name: The Blood King_Frame_147
+      frameIndex: 147
+      cellRect:
+        x: 15
+        y: 0
+        width: 89
+        height: 1
+      spriteId: b17e63ca98ed3dc4ca7a9454bf8680ed
+    - name: The Blood King_Frame_148
+      frameIndex: 148
+      cellRect:
+        x: 15
+        y: 0
+        width: 89
+        height: 1
+      spriteId: 832f02bf3457e244dae8186fa94c1f9e
+    - name: The Blood King_Frame_149
+      frameIndex: 149
+      cellRect:
+        x: 16
+        y: 0
+        width: 88
+        height: 1
+      spriteId: aee93452b57ebd743832c4efe08e3de7
+    - name: The Blood King_Frame_150
+      frameIndex: 150
+      cellRect:
+        x: 18
+        y: 0
+        width: 83
+        height: 5
+      spriteId: 77b77df58ef215b41929674360e6887d
+    - name: The Blood King_Frame_151
+      frameIndex: 151
+      cellRect:
+        x: 22
+        y: 0
+        width: 73
+        height: 5
+      spriteId: e71f60041e7ec6842bf5c10e71f94b14
+    - name: The Blood King_Frame_152
+      frameIndex: 152
+      cellRect:
+        x: 21
+        y: 0
+        width: 65
+        height: 7
+      spriteId: 76931f4cebcf5484e9d821b271606eb6
+    - name: The Blood King_Frame_153
+      frameIndex: 153
+      cellRect:
+        x: 27
+        y: 0
+        width: 55
+        height: 7
+      spriteId: c554d5d449afe51478cf4fc7e2da1f61
+    - name: The Blood King_Frame_154
+      frameIndex: 154
+      cellRect:
+        x: 29
+        y: 0
+        width: 51
+        height: 11
+      spriteId: 3145a75c151d53c479f95ce867634d46
+    - name: The Blood King_Frame_155
+      frameIndex: 155
+      cellRect:
+        x: 36
+        y: 0
+        width: 40
+        height: 14
+      spriteId: 81115bc9ba83057419fedc24ebac4767
+    - name: The Blood King_Frame_156
+      frameIndex: 156
+      cellRect:
+        x: 39
+        y: 0
+        width: 31
+        height: 15
+      spriteId: bd01cfd72b5a1d14788346e065266c6f
+    - name: The Blood King_Frame_157
+      frameIndex: 157
+      cellRect:
+        x: 39
+        y: 0
+        width: 25
+        height: 17
+      spriteId: 02e235572035f2b4b9d7f94f0acf3438
+    - name: The Blood King_Frame_158
+      frameIndex: 158
+      cellRect:
+        x: 38
+        y: 0
+        width: 23
+        height: 20
+      spriteId: 973163d050782aa429bec2cad615345b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 168, y: 79}

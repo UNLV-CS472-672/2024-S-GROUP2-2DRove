@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: 039edd2681ffbdf48854a0e3d34262a0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 256208957278509065
+    second: teleport appear (168x79)_0
+  - first:
+      213: -8555434302639576997
+    second: teleport appear (168x79)_1
+  - first:
+      213: 3635999737563595368
+    second: teleport appear (168x79)_2
+  - first:
+      213: 864570385568836256
+    second: teleport appear (168x79)_3
+  - first:
+      213: -3085412474696973495
+    second: teleport appear (168x79)_4
+  - first:
+      213: -2827713580350814327
+    second: teleport appear (168x79)_5
+  - first:
+      213: 509390151390932431
+    second: teleport appear (168x79)_6
+  - first:
+      213: 1420995626956292270
+    second: teleport appear (168x79)_7
+  - first:
+      213: -8434707032416113688
+    second: teleport appear (168x79)_8
+  - first:
+      213: 3673061615616215491
+    second: teleport appear (168x79)_9
+  - first:
+      213: 5702472493615927210
+    second: teleport appear (168x79)_10
+  - first:
+      213: 5445037957859235004
+    second: teleport appear (168x79)_11
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: teleport appear (168x79)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 869
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908dbde60bc3e8300800000000000000
+      internalID: 256208957278509065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 790
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58e9f394ddf44980800000000000000
+      internalID: -8555434302639576997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 711
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86244e83f7aa57230800000000000000
+      internalID: 3635999737563595368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 632
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa272b5f229ffb00800000000000000
+      internalID: 864570385568836256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 553
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943c02493b96e25d0800000000000000
+      internalID: -3085412474696973495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98744a40b71f1c8d0800000000000000
+      internalID: -2827713580350814327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd2db1d4a7b11700800000000000000
+      internalID: 509390151390932431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 316
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea00d147ef368b310800000000000000
+      internalID: 1420995626956292270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 237
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb295c94a6e1fa80800000000000000
+      internalID: -8434707032416113688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c94de4241659f230800000000000000
+      internalID: 3673061615616215491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafc96b1580432f40800000000000000
+      internalID: 5702472493615927210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 168
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4d7b27c29a09b40800000000000000
+      internalID: 5445037957859235004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      teleport appear (168x79)_0: 256208957278509065
+      teleport appear (168x79)_1: -8555434302639576997
+      teleport appear (168x79)_10: 5702472493615927210
+      teleport appear (168x79)_11: 5445037957859235004
+      teleport appear (168x79)_2: 3635999737563595368
+      teleport appear (168x79)_3: 864570385568836256
+      teleport appear (168x79)_4: -3085412474696973495
+      teleport appear (168x79)_5: -2827713580350814327
+      teleport appear (168x79)_6: 509390151390932431
+      teleport appear (168x79)_7: 1420995626956292270
+      teleport appear (168x79)_8: -8434707032416113688
+      teleport appear (168x79)_9: 3673061615616215491
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rb;
     private float timer;
     private Vector2 randomDirection;
+    private Animator animator;
 
     private void Start()
     {
@@ -33,6 +34,8 @@ public class Enemy : MonoBehaviour
         StartCoroutine(AttackPlayer());
 
         health = maxHealth;
+
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -50,13 +53,17 @@ public class Enemy : MonoBehaviour
     //Randomizes the direction
     private void getRandomDirection()
     {
-        randomDirection = new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
+        randomDirection = (player.GetComponent<Transform>().position - transform.position).normalized; //Instead of mouse position it uses the player's transform to aim at the player
     }
 
     //Lets the enemy move by adding a force with the random direction with the intensity of the speed
     private void move()
     {
         rb.AddForce(randomDirection * moveSpeed);
+        animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
+
+        bool flipped = rb.velocity.x < 0;
+        gameObject.transform.rotation = Quaternion.Euler(new Vector3(0f, flipped ? 180f : 0f, 0f));
     }
 
     //The attack player is an IEnumerator because it uses yield return new WaitForSeconds(float seconds); which delays the code after for the specified time
@@ -65,12 +72,6 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(cooldown); //Delays the attack by the cooldown
 
         if (player != null){
-            GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //Creates a Projectile from the enemy projectile prefab, the same process as the player's attack
-            Projectile projectile = obj.GetComponent<Projectile>();
-
-            Vector2 direction = (player.GetComponent<Transform>().position - transform.position).normalized; //Instead of mouse position it uses the player's transform to aim at the player
-
-            projectile.setDirection(direction);
 
             StartCoroutine(AttackPlayer()); //Starts the function over
         }
@@ -79,10 +80,14 @@ public class Enemy : MonoBehaviour
 
     //Deals damage to the enemy's health
     public void dealDamage(float damage){
+        animator.SetBool("damaged", true);
         healthBar.SetActive(true); //Displays the health bar since it is hidden before the 1st hit
         health -= damage;
         checkDeath();
         healthBarSlider.value = health / maxHealth; //Sets the enemy's health bar size
+        // animator.SetBool("damaged", false);
+
+        
     }
 
     //Checks if the enemy dies

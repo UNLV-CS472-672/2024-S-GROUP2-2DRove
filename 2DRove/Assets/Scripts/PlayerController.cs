@@ -114,14 +114,17 @@ public class PlayerController : MonoBehaviour
 
     //Shoots the projectile
     private void shoot(){
-        GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
-        Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
+        //GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
+        //Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
 
-        Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
+        //Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
 
-        projectile.setDirection(direction);
+        //projectile.setDirection(direction);
 
-        lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
+        //lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
+
+        animator.SetTrigger("Slash"); //Triggers the slash animation
+        
     }
 
     //Returns true if the values for an action are on cooldown or not

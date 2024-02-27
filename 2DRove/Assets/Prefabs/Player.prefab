@@ -202,6 +202,11 @@ MonoBehaviour:
   blinkCooldown: 1
   shootCooldown: 0.25
   projectilePrefab: {fileID: 3833847839207358409, guid: d3594913b3b82534c89d435f6cf70cb3, type: 3}
+  slashPoint: {fileID: 0}
+  slashRange: 1.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &3614290600010504197
 MonoBehaviour:
   m_ObjectHideFlags: 0

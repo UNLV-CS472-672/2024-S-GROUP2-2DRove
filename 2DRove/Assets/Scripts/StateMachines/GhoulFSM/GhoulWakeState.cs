@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GhoulWakeState : BaseState<GhoulStateMachine.EGhoulState>
 {
-    public bool idling = true;
+    private bool idling = true;
     public GhoulWakeState(GhoulStateMachine.EGhoulState EState) : base(EState)
     {}
     

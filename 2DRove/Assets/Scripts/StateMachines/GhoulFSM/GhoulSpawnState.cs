@@ -11,6 +11,7 @@ public class GhoulSpawnState : BaseState<GhoulStateMachine.EGhoulState>
     {}
     public override void EnterState()
     {
+        Debug.Log("Entering spawn state");
         time = Time.time;
         updateID();
     }

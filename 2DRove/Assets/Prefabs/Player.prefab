@@ -200,7 +200,7 @@ MonoBehaviour:
   speedFactor: 50
   blinkDistance: 5
   blinkCooldown: 1
-  shootCooldown: 0.25
+  shootCooldown: 1
   projectilePrefab: {fileID: 3833847839207358409, guid: d3594913b3b82534c89d435f6cf70cb3, type: 3}
   slashPoint: {fileID: 0}
   slashRange: 1.5

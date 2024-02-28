@@ -34,6 +34,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]private Transform slashPoint;
     [SerializeField]private float slashRange;
     [SerializeField]private LayerMask enemyLayer;
+    private float slashCooldown = 1f; //adjust this to change the cooldown of the slash
+    private float nextSlashTime = 0f; //dont change this
+
 
     //The Start function is called if the script is enabled before any update functions
     private void Start(){
@@ -61,7 +64,6 @@ public class PlayerController : MonoBehaviour
     }
 
     //FixedUpdate unlike Update is called on an independant timer ignoring frame rate while Update is called each frame. Because of this, movement in FixedUpdate does not have to be multiplied by Time.deltaTime
-    
     private void FixedUpdate(){
         //A Vector2 is a data type formatted like a coordinate (x, y) and is used by many things from position in the transform component to magitude of forces with physics
         Vector2 inputDirection = new Vector2(findDirectionFromInputs("Left", "Right"), findDirectionFromInputs("Down", "Up"));
@@ -77,8 +79,7 @@ public class PlayerController : MonoBehaviour
         if(input.actions["Blink"].IsPressed() && notOnCooldown(lastBlinkedTime, blinkCooldown)){
             blink(inputDirection, blinkDistance);
         }
-    
-        //Checks for the input and if shoot is on cooldown
+
         if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             shoot();
         }
@@ -143,15 +144,17 @@ public class PlayerController : MonoBehaviour
         //lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
 
         //Vector2 inputDirection = new Vector2(findDirectionFromInputs("Left", "Right"), findDirectionFromInputs("Down", "Up"));
-        animator.SetTrigger("Slash"); //Triggers the slash animation
-        //make the player stop moving for a short time while the animation plays (0.5 seconds) then continue moving
-        StartCoroutine(stopMovement(1f));
-
-        //Slash hitbox
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(slashPoint.position, slashRange, enemyLayer);
-        foreach (Collider2D enemy in hitEnemies){
-            Debug.Log("We hit " + enemy.name); //this is for debugging, and it works
-        }//just need mobs to take dmg and add the animations accordingly.
+        if(Time.time >= nextSlashTime){
+            animator.SetTrigger("Slash"); //Triggers the slash animation
+            //make the player stop moving for a short time while the animation plays (0.5 seconds) then continue moving
+            StartCoroutine(stopMovement(1f));
+            nextSlashTime = Time.time + slashCooldown; //Updates when the player slashed last, putting the slash function on cooldown
+            //Slash hitbox
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(slashPoint.position, slashRange, enemyLayer);
+            foreach (Collider2D enemy in hitEnemies){
+                Debug.Log("We hit " + enemy.name); //this is for debugging, and it works
+            }//just need mobs to take dmg and add the animations accordingly.
+        }
     }
 
     //Draws a gizmo to show the range of the slash
@@ -164,9 +167,10 @@ public class PlayerController : MonoBehaviour
 
     //Stops the player's movement for a short time
     private IEnumerator stopMovement(float time){
-        speedFactor = 0; //Stops the player's movement
-        yield return new WaitForSeconds(time); //Waits for the time specified
-        speedFactor = 50; //Resumes the player's movement
+        speedFactor = 0; //stops the player's movement
+        yield return new WaitForSeconds(time); //waits for the cooldown
+        yield return new WaitUntil(() => !Input.GetMouseButton(0)); // wait until the left mouse button is released
+        speedFactor = 50; //resumes the player's movement
     }
 
     //Returns true if the values for an action are on cooldown or not

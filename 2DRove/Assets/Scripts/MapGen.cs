@@ -113,14 +113,13 @@ namespace MapGen
                 }
                 Debug.Log("Tiles generated: " + tilePositions.Count);
                 Debug.Log("Generating tiles for empty space in border");
-                fillInEmptySpace(tilePositions);
+                fillInEmptySpace();
             }
         }
         /// <summary>
         /// Fills in the empty space created between tiles and the border. Works very similar to the tile generation process but with a different color and name.
         /// </summary>
-        /// <param name="tilePositions">The dictionary containing the positions of the tiles generated in the previous function.</param>
-        void fillInEmptySpace(Dictionary<Vector2Int, GameObject> tilePositions)
+        void fillInEmptySpace()
         {
             for (int j = minX - 1; j <= maxX + 1; j++)
             {

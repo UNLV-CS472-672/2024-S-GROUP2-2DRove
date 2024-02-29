@@ -36,29 +36,28 @@ public class Player : MonoBehaviour
         {
             speed = moveSpeed;
         }
-        // Calculate the new position of the player
-        Vector2Int newPosition = new Vector2Int(Mathf.RoundToInt(rb.position.x / MapGen.MapGen.tileSizeX + xSpeed / MapGen.MapGen.tileSizeX), Mathf.RoundToInt(rb.position.y / MapGen.MapGen.tileSizeY + ySpeed / MapGen.MapGen.tileSizeY));
-        // Check if the new position is an empty space
-        RaycastHit2D hit = Physics2D.Raycast(rb.position, new Vector2(xSpeed, ySpeed), 1.0f);
-        // If the new position is an empty space, move the player to the new position
-        if (hit.collider != null)
-        {
-            // Check if the new position is an empty space
-            if (MapGen.MapGen.emptySpacePositions.TryGetValue(newPosition, out GameObject value))
-            {
-                // Check if the new position is an empty space
-                if (hit.collider.gameObject == value)
-                {
-                    Debug.Log("You hit an empty space!");
-                }
-            }
-            else
-            {
-                // Move character if it's not an empty space
-                rb.AddForce(new Vector2(xSpeed, ySpeed) * speed);
-            }
-        }
-
-        
+        rb.AddForce(new Vector2(xSpeed, ySpeed) * speed);
+        // // Calculate the new position of the player
+        // Vector2Int newPosition = new Vector2Int(Mathf.RoundToInt(rb.position.x / MapGen.MapGen.tileSizeX + xSpeed / MapGen.MapGen.tileSizeX), Mathf.RoundToInt(rb.position.y / MapGen.MapGen.tileSizeY + ySpeed / MapGen.MapGen.tileSizeY));
+        // // Check if the new position is an empty space
+        // RaycastHit2D hit = Physics2D.Raycast(rb.position, new Vector2(xSpeed, ySpeed), 1.0f);
+        // // If the new position is an empty space, move the player to the new position
+        // if (hit.collider != null)
+        // {
+        //     // Check if the new position is an empty space
+        //     if (MapGen.MapGen.emptySpacePositions.TryGetValue(newPosition, out GameObject value))
+        //     {
+        //         // Check if the new position is an empty space
+        //         if (hit.collider.gameObject == value)
+        //         {
+        //             Debug.Log("You hit an empty space!");
+        //         }
+        //     }
+        //     else
+        //     {
+        //         // Move character if it's not an empty space
+        //         rb.AddForce(new Vector2(xSpeed, ySpeed) * speed);
+        //     }
+        // }
     }
 }

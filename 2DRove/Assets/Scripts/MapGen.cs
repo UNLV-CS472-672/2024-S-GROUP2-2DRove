@@ -120,34 +120,28 @@ namespace MapGen
         /// Fills in the empty space created between tiles and the border. Works very similar to the tile generation process but with a different color and name.
         /// </summary>
         /// <param name="tilePositions">The dictionary containing the positions of the tiles generated in the previous function.</param>
-        void fillInEmptySpace(Dictionary<Vector2Int,GameObject> tilePositions)
+        void fillInEmptySpace(Dictionary<Vector2Int, GameObject> tilePositions)
         {
-            for (int j = minX-1; j <= maxX+1; j++)
+            for (int j = minX - 1; j <= maxX + 1; j++)
             {
-                // Initial position
-                Vector2Int currentPosition = new(j,minY-1);
-                for (int i = minY-1; i <= maxY+1; i++)
+                Vector2Int currentPosition = new Vector2Int(j, minY - 1);
+                for (int i = minY - 1; i <= maxY + 1; i++)
                 {
-                    // Check if the position is already occupied
                     if (tilePositions.ContainsKey(currentPosition) || emptySpacePositions.ContainsKey(currentPosition))
                     {
-                        // Handle overlapping position or visited position
-                        Debug.Log("Overlap detected at position: " + currentPosition + "moving onto next step to fill in blank space.");
+                        Debug.Log("Overlap detected at position: " + currentPosition + ". Moving onto the next step to fill in blank space.");
                     }
                     else
                     {
-                        // Instantiate new tile
-                        GameObject go = new("EmptySpace" + "(" + j + ")"+ "-" + "(" + i + ")");
+                        GameObject go = new GameObject("EmptySpace" + "(" + j + ")" + "-" + "(" + i + ")");
                         go.transform.position = new Vector3(currentPosition.x * tileSizeX, currentPosition.y * tileSizeY, 0);
                         go.AddComponent<SpriteRenderer>().sprite = startSprite;
                         go.transform.localScale = new Vector3(tileSizeX, tileSizeY, 1);
                         go.GetComponent<SpriteRenderer>().color = Color.black;
-                        // Store tile position in the dictionary
                         emptySpacePositions.Add(currentPosition, go);
                     }
                     currentPosition.y++;
                 }
-
                 currentPosition.x++;
             }
             Debug.Log("Empty Space generated: " + emptySpacePositions.Count);

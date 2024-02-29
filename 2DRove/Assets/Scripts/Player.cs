@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using MapGen;
 
 public class Player : MonoBehaviour
 {
@@ -31,6 +32,25 @@ public class Player : MonoBehaviour
             speed = moveSpeed;
         }
 
-        rb.AddForce(new Vector2(xSpeed, ySpeed) * speed);
+        Vector2Int newPosition = new Vector2Int(Mathf.RoundToInt(rb.position.x/MapGen.MapGen.tileSizeX + xSpeed/MapGen.MapGen.tileSizeX), Mathf.RoundToInt(rb.position.y/MapGen.MapGen.tileSizeY + ySpeed/MapGen.MapGen.tileSizeY));
+
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, new Vector2(xSpeed, ySpeed), 1.0f);
+
+        if(hit.collider != null)
+        {
+            if(MapGen.MapGen.emptySpacePositions.TryGetValue(newPosition, out GameObject value))
+            {
+                if(hit.collider.gameObject == value)
+                {
+                    Debug.Log("You hit an empty space!");
+                }
+            }
+            else
+            {
+                rb.AddForce(new Vector2(xSpeed, ySpeed) * speed);
+            }
+        }
+
+        
     }
 }

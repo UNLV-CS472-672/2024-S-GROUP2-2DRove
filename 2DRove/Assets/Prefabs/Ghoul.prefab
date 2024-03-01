@@ -177,8 +177,8 @@ GameObject:
   - component: {fileID: 878488624133352400}
   - component: {fileID: 8710239744230377646}
   - component: {fileID: 272362257799738756}
-  - component: {fileID: 3389882915635703113}
   - component: {fileID: -1127995572195980354}
+  - component: {fileID: 5769794538153678791}
   m_Layer: 7
   m_Name: Ghoul
   m_TagString: Ghoul
@@ -320,19 +320,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.069776654, y: 0.23010108}
   m_EdgeRadius: 0
---- !u!114 &3389882915635703113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475996137607520006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e72f41879302ef488acee2cdb892b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: -1127995572195980354}
 --- !u!50 &-1127995572195980354
 Rigidbody2D:
   serializedVersion: 4
@@ -360,6 +347,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5769794538153678791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475996137607520006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9468a1e7eb719b4cb2f0380bd8eb3c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4951135885874391136
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.01, y: 0.1}
+  m_AnchoredPosition: {x: -0.008, y: 0.106}
   m_SizeDelta: {x: 6.4348, y: 1.1157}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5904735019844170611

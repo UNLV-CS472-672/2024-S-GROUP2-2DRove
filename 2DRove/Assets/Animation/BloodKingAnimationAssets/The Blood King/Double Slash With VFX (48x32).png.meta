@@ -1,40 +1,49 @@
 fileFormatVersion: 2
-guid: a6fc276ed456f9f45a01aedd402b9a09
+guid: 0787b6766779f4242adf8d4429c6bc8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1973825400771222782
-    second: death or teleport (168x79)_0
+      213: 2306238360643402309
+    second: Double Slash With VFX (48x32)_0
   - first:
-      213: 3860549158160761477
-    second: death or teleport (168x79)_1
+      213: 3412886793984274825
+    second: Double Slash With VFX (48x32)_1
   - first:
-      213: 2713265009845811703
-    second: death or teleport (168x79)_2
+      213: 1428850786528186189
+    second: Double Slash With VFX (48x32)_2
   - first:
-      213: 7767238673607984507
-    second: death or teleport (168x79)_3
+      213: 6128138616389830427
+    second: Double Slash With VFX (48x32)_3
   - first:
-      213: 384103587005919023
-    second: death or teleport (168x79)_4
+      213: -2385923829296917478
+    second: Double Slash With VFX (48x32)_4
   - first:
-      213: -2732458338892618023
-    second: death or teleport (168x79)_5
+      213: 6782421957399175641
+    second: Double Slash With VFX (48x32)_5
   - first:
-      213: 8704260249668164597
-    second: death or teleport (168x79)_6
+      213: 1023051221007312695
+    second: Double Slash With VFX (48x32)_6
   - first:
-      213: 2003770332125375064
-    second: death or teleport (168x79)_7
+      213: 8932574579027952982
+    second: Double Slash With VFX (48x32)_7
   - first:
-      213: 3529719511763167421
-    second: death or teleport (168x79)_8
+      213: 8878710713595523252
+    second: Double Slash With VFX (48x32)_8
   - first:
-      213: -6212815675008836846
-    second: death or teleport (168x79)_9
+      213: -8390480642827589355
+    second: Double Slash With VFX (48x32)_9
   - first:
-      213: -7591924831021590611
-    second: death or teleport (168x79)_10
+      213: 8074144571299804287
+    second: Double Slash With VFX (48x32)_10
+  - first:
+      213: -6498194691762749863
+    second: Double Slash With VFX (48x32)_11
+  - first:
+      213: 272676573645209415
+    second: Double Slash With VFX (48x32)_12
+  - first:
+      213: 5182599078972640764
+    second: Double Slash With VFX (48x32)_13
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -143,232 +152,295 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death or teleport (168x79)_0
+      name: Double Slash With VFX (48x32)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 790
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 416
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc9c958ebf646b10800000000000000
-      internalID: 1973825400771222782
+      spriteID: 54a778de197610020800000000000000
+      internalID: 2306238360643402309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_1
+      name: Double Slash With VFX (48x32)_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 711
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 384
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5820b1a510d639530800000000000000
-      internalID: 3860549158160761477
+      spriteID: 981fd06f4720d5f20800000000000000
+      internalID: 3412886793984274825
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_2
+      name: Double Slash With VFX (48x32)_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 632
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 352
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f93b55a62477a520800000000000000
-      internalID: 2713265009845811703
+      spriteID: d4fcc00583c44d310800000000000000
+      internalID: 1428850786528186189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_3
+      name: Double Slash With VFX (48x32)_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 553
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 320
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b75841acb66cacb60800000000000000
-      internalID: 7767238673607984507
+      spriteID: b1705447a958b0550800000000000000
+      internalID: 6128138616389830427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_4
+      name: Double Slash With VFX (48x32)_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 474
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 288
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2fe0746d2c945500800000000000000
-      internalID: 384103587005919023
+      spriteID: a141e9d1bee73eed0800000000000000
+      internalID: -2385923829296917478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_5
+      name: Double Slash With VFX (48x32)_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 395
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 256
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d660c23e9b541ad0800000000000000
-      internalID: -2732458338892618023
+      spriteID: 9d1669fd5d0002e50800000000000000
+      internalID: 6782421957399175641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_6
+      name: Double Slash With VFX (48x32)_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 316
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 224
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb1606749ebbc870800000000000000
-      internalID: 8704260249668164597
+      spriteID: 737ab274aab923e00800000000000000
+      internalID: 1023051221007312695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_7
+      name: Double Slash With VFX (48x32)_7
       rect:
         serializedVersion: 2
         x: 0
-        y: 237
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 192
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85aacc92082decb10800000000000000
-      internalID: 2003770332125375064
+      spriteID: 65545a8b041e6fb70800000000000000
+      internalID: 8932574579027952982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_8
+      name: Double Slash With VFX (48x32)_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 158
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 160
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db8a867d1351cf030800000000000000
-      internalID: 3529719511763167421
+      spriteID: 4b0f0534a54873b70800000000000000
+      internalID: 8878710713595523252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_9
+      name: Double Slash With VFX (48x32)_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 79
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 128
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b9e1c7f05a7c9a0800000000000000
-      internalID: -6212815675008836846
+      spriteID: 519687d5f460f8b80800000000000000
+      internalID: -8390480642827589355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_10
+      name: Double Slash With VFX (48x32)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74397d75bf1d0070800000000000000
+      internalID: 8074144571299804287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ef6245b56c1d5a0800000000000000
+      internalID: -6498194691762749863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f71b626edb8c300800000000000000
+      internalID: 272676573645209415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Double Slash With VFX (48x32)_13
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 79
+        height: 32
+      alignment: 9
+      pivot: {x: 0.29, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da79d75079014a690800000000000000
-      internalID: -7591924831021590611
+      spriteID: cfd4e6b576a4ce740800000000000000
+      internalID: 5182599078972640764
       vertices: []
       indices: 
       edges: []
@@ -384,17 +456,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      death or teleport (168x79)_0: 1973825400771222782
-      death or teleport (168x79)_1: 3860549158160761477
-      death or teleport (168x79)_10: -7591924831021590611
-      death or teleport (168x79)_2: 2713265009845811703
-      death or teleport (168x79)_3: 7767238673607984507
-      death or teleport (168x79)_4: 384103587005919023
-      death or teleport (168x79)_5: -2732458338892618023
-      death or teleport (168x79)_6: 8704260249668164597
-      death or teleport (168x79)_7: 2003770332125375064
-      death or teleport (168x79)_8: 3529719511763167421
-      death or teleport (168x79)_9: -6212815675008836846
+      Double Slash With VFX (48x32)_0: 2306238360643402309
+      Double Slash With VFX (48x32)_1: 3412886793984274825
+      Double Slash With VFX (48x32)_10: 8074144571299804287
+      Double Slash With VFX (48x32)_11: -6498194691762749863
+      Double Slash With VFX (48x32)_12: 272676573645209415
+      Double Slash With VFX (48x32)_13: 5182599078972640764
+      Double Slash With VFX (48x32)_2: 1428850786528186189
+      Double Slash With VFX (48x32)_3: 6128138616389830427
+      Double Slash With VFX (48x32)_4: -2385923829296917478
+      Double Slash With VFX (48x32)_5: 6782421957399175641
+      Double Slash With VFX (48x32)_6: 1023051221007312695
+      Double Slash With VFX (48x32)_7: 8932574579027952982
+      Double Slash With VFX (48x32)_8: 8878710713595523252
+      Double Slash With VFX (48x32)_9: -8390480642827589355
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

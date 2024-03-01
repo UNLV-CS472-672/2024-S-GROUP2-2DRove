@@ -1,40 +1,43 @@
 fileFormatVersion: 2
-guid: a6fc276ed456f9f45a01aedd402b9a09
+guid: 24b34d243e5fc1c49a200094ae374fa4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1973825400771222782
-    second: death or teleport (168x79)_0
+      213: -685476648212503728
+    second: idle(32x32)_0
   - first:
-      213: 3860549158160761477
-    second: death or teleport (168x79)_1
+      213: -6095147714273196852
+    second: idle(32x32)_1
   - first:
-      213: 2713265009845811703
-    second: death or teleport (168x79)_2
+      213: -4706280638639643917
+    second: idle(32x32)_2
   - first:
-      213: 7767238673607984507
-    second: death or teleport (168x79)_3
+      213: -5436756541045269280
+    second: idle(32x32)_3
   - first:
-      213: 384103587005919023
-    second: death or teleport (168x79)_4
+      213: -5593506355054140345
+    second: idle(32x32)_4
   - first:
-      213: -2732458338892618023
-    second: death or teleport (168x79)_5
+      213: 2671354212198587371
+    second: idle(32x32)_5
   - first:
-      213: 8704260249668164597
-    second: death or teleport (168x79)_6
+      213: 2356573666292365605
+    second: idle(32x32)_6
   - first:
-      213: 2003770332125375064
-    second: death or teleport (168x79)_7
+      213: 1726400579763367792
+    second: idle(32x32)_7
   - first:
-      213: 3529719511763167421
-    second: death or teleport (168x79)_8
+      213: -5687651429210214024
+    second: idle(32x32)_8
   - first:
-      213: -6212815675008836846
-    second: death or teleport (168x79)_9
+      213: 3810049062431336715
+    second: idle(32x32)_9
   - first:
-      213: -7591924831021590611
-    second: death or teleport (168x79)_10
+      213: 8786271535387794293
+    second: idle(32x32)_10
+  - first:
+      213: -8681455078301840192
+    second: idle(32x32)_11
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -143,232 +146,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death or teleport (168x79)_0
+      name: IdleRight_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 790
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 352
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc9c958ebf646b10800000000000000
-      internalID: 1973825400771222782
+      spriteID: 2e266f4029340894ca590be27f17c92e
+      internalID: -1570135069
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_1
+      name: IdleRight_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 711
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 320
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5820b1a510d639530800000000000000
-      internalID: 3860549158160761477
+      spriteID: 4ed24659932198d47855dfd286869fe4
+      internalID: 1126618142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_2
+      name: IdleRight_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 632
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 288
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f93b55a62477a520800000000000000
-      internalID: 2713265009845811703
+      spriteID: 436ff3a3d77f5dc4c8f03dac099ac12e
+      internalID: 1663686245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_3
+      name: IdleRight_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 553
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 256
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b75841acb66cacb60800000000000000
-      internalID: 7767238673607984507
+      spriteID: cdd64c359e8765a45aea444007ded2ff
+      internalID: 245324196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_4
+      name: IdleRight_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 474
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 224
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2fe0746d2c945500800000000000000
-      internalID: 384103587005919023
+      spriteID: 76f83073428dc6f478ab7ac72bd29835
+      internalID: -2115246922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_5
+      name: IdleRight_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 395
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 192
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d660c23e9b541ad0800000000000000
-      internalID: -2732458338892618023
+      spriteID: 4ddf7ef9a75ee91469d158455c0ed08e
+      internalID: -361019979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_6
+      name: IdleRight_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 316
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb1606749ebbc870800000000000000
-      internalID: 8704260249668164597
+      spriteID: f0f598678de5ee84da097db9821f4287
+      internalID: -836019614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_7
+      name: IdleRight_7
       rect:
         serializedVersion: 2
         x: 0
-        y: 237
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85aacc92082decb10800000000000000
-      internalID: 2003770332125375064
+      spriteID: 9137fbff2d3fd25448d167b29265f530
+      internalID: 208464586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_8
+      name: IdleRight_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 158
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 96
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db8a867d1351cf030800000000000000
-      internalID: 3529719511763167421
+      spriteID: 08a1d42b2e7a90f479ff2696e2aa7bb9
+      internalID: -2101055449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_9
+      name: IdleRight_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 79
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 64
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b9e1c7f05a7c9a0800000000000000
-      internalID: -6212815675008836846
+      spriteID: f8802f8f93bf34341a5aec7fcf485910
+      internalID: 1875295627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_10
+      name: IdleRight_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42b63b79822dbc489dfc28748c8bda6
+      internalID: 1341465814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleRight_11
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 168
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.7, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da79d75079014a690800000000000000
-      internalID: -7591924831021590611
+      spriteID: 9ef97052e3cdd0344b2b6cecd57159bb
+      internalID: -1116500158
       vertices: []
       indices: 
       edges: []
@@ -384,17 +408,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      death or teleport (168x79)_0: 1973825400771222782
-      death or teleport (168x79)_1: 3860549158160761477
-      death or teleport (168x79)_10: -7591924831021590611
-      death or teleport (168x79)_2: 2713265009845811703
-      death or teleport (168x79)_3: 7767238673607984507
-      death or teleport (168x79)_4: 384103587005919023
-      death or teleport (168x79)_5: -2732458338892618023
-      death or teleport (168x79)_6: 8704260249668164597
-      death or teleport (168x79)_7: 2003770332125375064
-      death or teleport (168x79)_8: 3529719511763167421
-      death or teleport (168x79)_9: -6212815675008836846
+      IdleRight_0: -1570135069
+      IdleRight_1: 1126618142
+      IdleRight_10: 1341465814
+      IdleRight_11: -1116500158
+      IdleRight_2: 1663686245
+      IdleRight_3: 245324196
+      IdleRight_4: -2115246922
+      IdleRight_5: -361019979
+      IdleRight_6: -836019614
+      IdleRight_7: 208464586
+      IdleRight_8: -2101055449
+      IdleRight_9: 1875295627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

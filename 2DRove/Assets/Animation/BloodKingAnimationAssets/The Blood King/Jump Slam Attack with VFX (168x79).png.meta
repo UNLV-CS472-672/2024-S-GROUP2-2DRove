@@ -1,40 +1,46 @@
 fileFormatVersion: 2
-guid: a6fc276ed456f9f45a01aedd402b9a09
+guid: 6b4a9755835fdd444bf416fcde2d5cdc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1973825400771222782
-    second: death or teleport (168x79)_0
+      213: -4962246330612393216
+    second: Jump Slam Attack with VFX (168x79)_0
   - first:
-      213: 3860549158160761477
-    second: death or teleport (168x79)_1
+      213: -598442335762352027
+    second: Jump Slam Attack with VFX (168x79)_1
   - first:
-      213: 2713265009845811703
-    second: death or teleport (168x79)_2
+      213: 3154196079783569235
+    second: Jump Slam Attack with VFX (168x79)_2
   - first:
-      213: 7767238673607984507
-    second: death or teleport (168x79)_3
+      213: -8651317856582211813
+    second: Jump Slam Attack with VFX (168x79)_3
   - first:
-      213: 384103587005919023
-    second: death or teleport (168x79)_4
+      213: 1659434320816973955
+    second: Jump Slam Attack with VFX (168x79)_4
   - first:
-      213: -2732458338892618023
-    second: death or teleport (168x79)_5
+      213: -4481464828609345518
+    second: Jump Slam Attack with VFX (168x79)_5
   - first:
-      213: 8704260249668164597
-    second: death or teleport (168x79)_6
+      213: 746292215248118047
+    second: Jump Slam Attack with VFX (168x79)_6
   - first:
-      213: 2003770332125375064
-    second: death or teleport (168x79)_7
+      213: 4512275143821148318
+    second: Jump Slam Attack with VFX (168x79)_7
   - first:
-      213: 3529719511763167421
-    second: death or teleport (168x79)_8
+      213: -2044482897121622788
+    second: Jump Slam Attack with VFX (168x79)_8
   - first:
-      213: -6212815675008836846
-    second: death or teleport (168x79)_9
+      213: -3828918733117331609
+    second: Jump Slam Attack with VFX (168x79)_9
   - first:
-      213: -7591924831021590611
-    second: death or teleport (168x79)_10
+      213: -3488240909116391417
+    second: Jump Slam Attack with VFX (168x79)_10
+  - first:
+      213: 9068743572910468182
+    second: Jump Slam Attack with VFX (168x79)_11
+  - first:
+      213: -4243956171570170010
+    second: Jump Slam Attack with VFX (168x79)_12
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -143,232 +149,274 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death or teleport (168x79)_0
+      name: Jump Slam Attack with VFX (168x79)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 948
+        width: 168
+        height: 79
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bdcdfd04f822bb0800000000000000
+      internalID: -4962246330612393216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Slam Attack with VFX (168x79)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 869
+        width: 168
+        height: 79
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5687456cdd7e1b7f0800000000000000
+      internalID: -598442335762352027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump Slam Attack with VFX (168x79)_2
       rect:
         serializedVersion: 2
         x: 0
         y: 790
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc9c958ebf646b10800000000000000
-      internalID: 1973825400771222782
+      spriteID: 357ed677f94f5cb20800000000000000
+      internalID: 3154196079783569235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_1
+      name: Jump Slam Attack with VFX (168x79)_3
       rect:
         serializedVersion: 2
         x: 0
         y: 711
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5820b1a510d639530800000000000000
-      internalID: 3860549158160761477
+      spriteID: b176c6ffe3850f780800000000000000
+      internalID: -8651317856582211813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_2
+      name: Jump Slam Attack with VFX (168x79)_4
       rect:
         serializedVersion: 2
         x: 0
         y: 632
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f93b55a62477a520800000000000000
-      internalID: 2713265009845811703
+      spriteID: 388236409be770710800000000000000
+      internalID: 1659434320816973955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_3
+      name: Jump Slam Attack with VFX (168x79)_5
       rect:
         serializedVersion: 2
         x: 0
         y: 553
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b75841acb66cacb60800000000000000
-      internalID: 7767238673607984507
+      spriteID: 21845517b73aec1c0800000000000000
+      internalID: -4481464828609345518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_4
+      name: Jump Slam Attack with VFX (168x79)_6
       rect:
         serializedVersion: 2
         x: 0
         y: 474
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2fe0746d2c945500800000000000000
-      internalID: 384103587005919023
+      spriteID: f11e084d0dc5b5a00800000000000000
+      internalID: 746292215248118047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_5
+      name: Jump Slam Attack with VFX (168x79)_7
       rect:
         serializedVersion: 2
         x: 0
         y: 395
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d660c23e9b541ad0800000000000000
-      internalID: -2732458338892618023
+      spriteID: e90c8441652de9e30800000000000000
+      internalID: 4512275143821148318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_6
+      name: Jump Slam Attack with VFX (168x79)_8
       rect:
         serializedVersion: 2
         x: 0
         y: 316
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb1606749ebbc870800000000000000
-      internalID: 8704260249668164597
+      spriteID: cf444bf13a980a3e0800000000000000
+      internalID: -2044482897121622788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_7
+      name: Jump Slam Attack with VFX (168x79)_9
       rect:
         serializedVersion: 2
         x: 0
         y: 237
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85aacc92082decb10800000000000000
-      internalID: 2003770332125375064
+      spriteID: 767e3bed2b2fcdac0800000000000000
+      internalID: -3828918733117331609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_8
+      name: Jump Slam Attack with VFX (168x79)_10
       rect:
         serializedVersion: 2
         x: 0
         y: 158
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db8a867d1351cf030800000000000000
-      internalID: 3529719511763167421
+      spriteID: 700c129ef57479fc0800000000000000
+      internalID: -3488240909116391417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_9
+      name: Jump Slam Attack with VFX (168x79)_11
       rect:
         serializedVersion: 2
         x: 0
         y: 79
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b9e1c7f05a7c9a0800000000000000
-      internalID: -6212815675008836846
+      spriteID: 65c6f663b36aadd70800000000000000
+      internalID: 9068743572910468182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_10
+      name: Jump Slam Attack with VFX (168x79)_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.63, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da79d75079014a690800000000000000
-      internalID: -7591924831021590611
+      spriteID: 667bb3fe8507a15c0800000000000000
+      internalID: -4243956171570170010
       vertices: []
       indices: 
       edges: []
@@ -384,17 +432,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      death or teleport (168x79)_0: 1973825400771222782
-      death or teleport (168x79)_1: 3860549158160761477
-      death or teleport (168x79)_10: -7591924831021590611
-      death or teleport (168x79)_2: 2713265009845811703
-      death or teleport (168x79)_3: 7767238673607984507
-      death or teleport (168x79)_4: 384103587005919023
-      death or teleport (168x79)_5: -2732458338892618023
-      death or teleport (168x79)_6: 8704260249668164597
-      death or teleport (168x79)_7: 2003770332125375064
-      death or teleport (168x79)_8: 3529719511763167421
-      death or teleport (168x79)_9: -6212815675008836846
+      Jump Slam Attack with VFX (168x79)_0: -4962246330612393216
+      Jump Slam Attack with VFX (168x79)_1: -598442335762352027
+      Jump Slam Attack with VFX (168x79)_10: -3488240909116391417
+      Jump Slam Attack with VFX (168x79)_11: 9068743572910468182
+      Jump Slam Attack with VFX (168x79)_12: -4243956171570170010
+      Jump Slam Attack with VFX (168x79)_2: 3154196079783569235
+      Jump Slam Attack with VFX (168x79)_3: -8651317856582211813
+      Jump Slam Attack with VFX (168x79)_4: 1659434320816973955
+      Jump Slam Attack with VFX (168x79)_5: -4481464828609345518
+      Jump Slam Attack with VFX (168x79)_6: 746292215248118047
+      Jump Slam Attack with VFX (168x79)_7: 4512275143821148318
+      Jump Slam Attack with VFX (168x79)_8: -2044482897121622788
+      Jump Slam Attack with VFX (168x79)_9: -3828918733117331609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

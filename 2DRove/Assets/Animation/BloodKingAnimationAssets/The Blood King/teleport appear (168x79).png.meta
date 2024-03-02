@@ -1,40 +1,43 @@
 fileFormatVersion: 2
-guid: a6fc276ed456f9f45a01aedd402b9a09
+guid: ac1609c8368432e4894a833382fa82bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1973825400771222782
-    second: death or teleport (168x79)_0
+      213: 256208957278509065
+    second: teleport appear (168x79)_0
   - first:
-      213: 3860549158160761477
-    second: death or teleport (168x79)_1
+      213: -8555434302639576997
+    second: teleport appear (168x79)_1
   - first:
-      213: 2713265009845811703
-    second: death or teleport (168x79)_2
+      213: 3635999737563595368
+    second: teleport appear (168x79)_2
   - first:
-      213: 7767238673607984507
-    second: death or teleport (168x79)_3
+      213: 864570385568836256
+    second: teleport appear (168x79)_3
   - first:
-      213: 384103587005919023
-    second: death or teleport (168x79)_4
+      213: -3085412474696973495
+    second: teleport appear (168x79)_4
   - first:
-      213: -2732458338892618023
-    second: death or teleport (168x79)_5
+      213: -2827713580350814327
+    second: teleport appear (168x79)_5
   - first:
-      213: 8704260249668164597
-    second: death or teleport (168x79)_6
+      213: 509390151390932431
+    second: teleport appear (168x79)_6
   - first:
-      213: 2003770332125375064
-    second: death or teleport (168x79)_7
+      213: 1420995626956292270
+    second: teleport appear (168x79)_7
   - first:
-      213: 3529719511763167421
-    second: death or teleport (168x79)_8
+      213: -8434707032416113688
+    second: teleport appear (168x79)_8
   - first:
-      213: -6212815675008836846
-    second: death or teleport (168x79)_9
+      213: 3673061615616215491
+    second: teleport appear (168x79)_9
   - first:
-      213: -7591924831021590611
-    second: death or teleport (168x79)_10
+      213: 5702472493615927210
+    second: teleport appear (168x79)_10
+  - first:
+      213: 5445037957859235004
+    second: teleport appear (168x79)_11
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -143,232 +146,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: death or teleport (168x79)_0
+      name: teleport appear (168x79)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 869
+        width: 168
+        height: 79
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908dbde60bc3e8300800000000000000
+      internalID: 256208957278509065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teleport appear (168x79)_1
       rect:
         serializedVersion: 2
         x: 0
         y: 790
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efc9c958ebf646b10800000000000000
-      internalID: 1973825400771222782
+      spriteID: b58e9f394ddf44980800000000000000
+      internalID: -8555434302639576997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_1
+      name: teleport appear (168x79)_2
       rect:
         serializedVersion: 2
         x: 0
         y: 711
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5820b1a510d639530800000000000000
-      internalID: 3860549158160761477
+      spriteID: 86244e83f7aa57230800000000000000
+      internalID: 3635999737563595368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_2
+      name: teleport appear (168x79)_3
       rect:
         serializedVersion: 2
         x: 0
         y: 632
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f93b55a62477a520800000000000000
-      internalID: 2713265009845811703
+      spriteID: 0aa272b5f229ffb00800000000000000
+      internalID: 864570385568836256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_3
+      name: teleport appear (168x79)_4
       rect:
         serializedVersion: 2
         x: 0
         y: 553
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b75841acb66cacb60800000000000000
-      internalID: 7767238673607984507
+      spriteID: 943c02493b96e25d0800000000000000
+      internalID: -3085412474696973495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_4
+      name: teleport appear (168x79)_5
       rect:
         serializedVersion: 2
         x: 0
         y: 474
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2fe0746d2c945500800000000000000
-      internalID: 384103587005919023
+      spriteID: 98744a40b71f1c8d0800000000000000
+      internalID: -2827713580350814327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_5
+      name: teleport appear (168x79)_6
       rect:
         serializedVersion: 2
         x: 0
         y: 395
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d660c23e9b541ad0800000000000000
-      internalID: -2732458338892618023
+      spriteID: fcd2db1d4a7b11700800000000000000
+      internalID: 509390151390932431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_6
+      name: teleport appear (168x79)_7
       rect:
         serializedVersion: 2
         x: 0
         y: 316
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb1606749ebbc870800000000000000
-      internalID: 8704260249668164597
+      spriteID: ea00d147ef368b310800000000000000
+      internalID: 1420995626956292270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_7
+      name: teleport appear (168x79)_8
       rect:
         serializedVersion: 2
         x: 0
         y: 237
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85aacc92082decb10800000000000000
-      internalID: 2003770332125375064
+      spriteID: 8eb295c94a6e1fa80800000000000000
+      internalID: -8434707032416113688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_8
+      name: teleport appear (168x79)_9
       rect:
         serializedVersion: 2
         x: 0
         y: 158
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db8a867d1351cf030800000000000000
-      internalID: 3529719511763167421
+      spriteID: 3c94de4241659f230800000000000000
+      internalID: 3673061615616215491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_9
+      name: teleport appear (168x79)_10
       rect:
         serializedVersion: 2
         x: 0
         y: 79
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21b9e1c7f05a7c9a0800000000000000
-      internalID: -6212815675008836846
+      spriteID: aafc96b1580432f40800000000000000
+      internalID: 5702472493615927210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: death or teleport (168x79)_10
+      name: teleport appear (168x79)_11
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 168
         height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.34, y: 0.12}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da79d75079014a690800000000000000
-      internalID: -7591924831021590611
+      spriteID: cb4d7b27c29a09b40800000000000000
+      internalID: 5445037957859235004
       vertices: []
       indices: 
       edges: []
@@ -384,17 +408,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      death or teleport (168x79)_0: 1973825400771222782
-      death or teleport (168x79)_1: 3860549158160761477
-      death or teleport (168x79)_10: -7591924831021590611
-      death or teleport (168x79)_2: 2713265009845811703
-      death or teleport (168x79)_3: 7767238673607984507
-      death or teleport (168x79)_4: 384103587005919023
-      death or teleport (168x79)_5: -2732458338892618023
-      death or teleport (168x79)_6: 8704260249668164597
-      death or teleport (168x79)_7: 2003770332125375064
-      death or teleport (168x79)_8: 3529719511763167421
-      death or teleport (168x79)_9: -6212815675008836846
+      teleport appear (168x79)_0: 256208957278509065
+      teleport appear (168x79)_1: -8555434302639576997
+      teleport appear (168x79)_10: 5702472493615927210
+      teleport appear (168x79)_11: 5445037957859235004
+      teleport appear (168x79)_2: 3635999737563595368
+      teleport appear (168x79)_3: 864570385568836256
+      teleport appear (168x79)_4: -3085412474696973495
+      teleport appear (168x79)_5: -2827713580350814327
+      teleport appear (168x79)_6: 509390151390932431
+      teleport appear (168x79)_7: 1420995626956292270
+      teleport appear (168x79)_8: -8434707032416113688
+      teleport appear (168x79)_9: 3673061615616215491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

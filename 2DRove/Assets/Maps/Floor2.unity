@@ -541,11 +541,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0623192da1a7747b1a6f511945ed66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  tile: {fileID: 776782529497576670, guid: 3d0ebfadeeadb944f954038ca8be65db, type: 3}
   cycles: 11
   steps: 133
   tileSizeX: 20
   tileSizeY: 20
+  maxX: 5
+  maxY: 5
+  minX: -5
+  minY: -5
 --- !u!4 &1838036539
 Transform:
   m_ObjectHideFlags: 0
@@ -566,5 +570,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1837929897}
-  - {fileID: 1838036539}
   - {fileID: 1220066505}
+  - {fileID: 1838036539}

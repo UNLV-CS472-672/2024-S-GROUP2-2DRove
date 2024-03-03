@@ -490,8 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 602447683}
-  - component: {fileID: 602447682}
-  - component: {fileID: 602447684}
+  - component: {fileID: 602447685}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -499,27 +498,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &602447682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602447681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae0623192da1a7747b1a6f511945ed66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tile: {fileID: 776782529497576670, guid: 3d0ebfadeeadb944f954038ca8be65db, type: 3}
-  cycles: 2
-  steps: 25
-  tileSizeX: 20
-  tileSizeY: 20
-  maxX: 5
-  maxY: 5
-  minX: -5
-  minY: -5
 --- !u!4 &602447683
 Transform:
   m_ObjectHideFlags: 0
@@ -535,7 +513,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &602447684
+--- !u!114 &602447685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -544,9 +522,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 602447681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37b68a389ea5e0342ac566848585190a, type: 3}
+  m_Script: {fileID: 11500000, guid: beea543b0de777d4ab12afa55f562645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tile: {fileID: 776782529497576670, guid: 3d0ebfadeeadb944f954038ca8be65db, type: 3}
+  tileNum: 25
+  tileSizeX: 20
+  tileSizeY: 20
+  maxX: 5
+  maxY: 5
+  minX: -5
+  minY: -5
 --- !u!1 &1102318596
 GameObject:
   m_ObjectHideFlags: 0

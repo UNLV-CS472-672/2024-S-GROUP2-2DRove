@@ -8,6 +8,7 @@ TagManager:
   - PlayerProjectile
   - Enemy
   - Ghoul
+  - Spitter
   layers:
   - Default
   - TransparentFX

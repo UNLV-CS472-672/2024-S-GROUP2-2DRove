@@ -279,15 +279,19 @@ PrefabInstance:
       objectReference: {fileID: 2139139839}
     - target: {fileID: 2563748308338659624, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
       propertyPath: m_Size.y
-      value: 0.13811098
+      value: 0.2356213
       objectReference: {fileID: 0}
     - target: {fileID: 2563748308338659624, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
       propertyPath: m_Offset.y
-      value: 0.12981471
+      value: 0.12591298
       objectReference: {fileID: 0}
     - target: {fileID: 3475996137607520006, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
       propertyPath: m_Name
       value: Ghoul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475996137607520006, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3676918177868209009, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1218,6 +1222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8181783134252115575, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 9032579860153729722, guid: fccb1090956a9804b86ef8c349819aeb, type: 3}
     - target: {fileID: 8752092245281292779, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
@@ -1675,7 +1683,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9, y: -236}
+  m_AnchoredPosition: {x: -3.0700073, y: -238.43}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261592507

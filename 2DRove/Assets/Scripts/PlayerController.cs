@@ -83,7 +83,11 @@ public class PlayerController : MonoBehaviour
         }
 
         if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
-            shoot();
+            Slash();
+        }
+
+        if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
+            rangeAttack();
         }
     }
 
@@ -134,18 +138,26 @@ public class PlayerController : MonoBehaviour
         lastBlinkedTime = Time.time; //Updates when the player blinked last, putting the blink on cooldown
     }
 
-    //Shoots the projectile
-    private void shoot(){
-        //GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
-        //Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
+    //Range Attack
+    private void rangeAttack(){
+        GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
+        Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
+        Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
 
-        //Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
+        projectile.setDirection(direction);
 
-        //projectile.setDirection(direction);
+        lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
+        Collider2D projectileCollider = obj.GetComponent<Collider2D>();
+        Collider2D playerCollider = GetComponent<Collider2D>();
+        if (projectileCollider != null && playerCollider != null) {
+            Physics2D.IgnoreCollision(projectileCollider, playerCollider);
+        }
+        
+    }
 
-        //lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
-
-        //Vector2 inputDirection = new Vector2(findDirectionFromInputs("Left", "Right"), findDirectionFromInputs("Down", "Up"));
+    //Slash
+    private void Slash(){
+        
         if(Time.time >= nextSlashTime){
         animator.SetTrigger("Slash"); // Triggers the slash animation
         StartCoroutine(stopMovement(1f));

@@ -30,6 +30,16 @@ public class NewEnemy : MonoBehaviour
         }
     }
 
+    public void TakeRangedDamage(float rangedDamage)
+    {
+        currentHealth -= rangedDamage;
+        animator.SetTrigger("hit");
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
     void Die()
     {
         animator.SetBool("isDead", true);

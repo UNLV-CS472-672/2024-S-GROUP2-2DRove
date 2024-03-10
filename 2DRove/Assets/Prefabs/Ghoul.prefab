@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 962467841880699752}
   m_Layer: 7
   m_Name: Ghoul
-  m_TagString: Ghoul
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,6 +420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  animator: {fileID: 0}
 --- !u!1 &3921996220012240833
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  animator: {fileID: 0}
 --- !u!1 &4951135885874391136
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,67 +14,67 @@ namespace MapGen
         [SerializeField] int maxY = 5;
         [SerializeField] int minX = -5;
         [SerializeField] int minY = -5;
+
+        enum Direction { Right, Left, Up, Down }
+
         // Dictionary to store positions of tiles
-        public static Dictionary<Vector2Int, GameObject> tilePositions = new();
+        public static List<Vector2> tilePositions = new();
 
         void Start()
         {
-            // // Check if the number of steps and cycles is too large for the given bounds
-            // if(steps*cycles > (maxX+maxY)*(Mathf.Abs(minX)+Mathf.Abs(minY)))
-            // {
-            //     Debug.LogError("The number of steps and cycles is too large for the given bounds.");
-            //     return;
-            // }
-            // ONLY TO BE USED FOR TESTING PURPOSES, BORDER IS DRAWN BY EMPTY SPACE METHOD
-            // //Create Black Border Line reprenseting the outline boundary
-            // DrawBorder drawBorder = new();
-            // drawBorder.DrawBorderLine((minX-1)*tileSizeX, (minY-1)*tileSizeY, (maxX+1)*tileSizeX, (maxY+1)*tileSizeY);
-        
             // Generate tiles
             for (int j = 0; j < cycles; j++)
             {
                 // Initial position
-                Vector2Int currentPosition = Vector2Int.zero;
+                Vector2 currentPosition = new(-7.5f, 1.5f);
                 for (int i = 0; i < steps; i++)
                 {
-                    // Check if the position is already occupied
-                    if (!tilePositions.ContainsKey(currentPosition))
+                    // Check if the position is already occupied and within the bounds
+                    // This works but idk how it works. :)
+                    if (!tilePositions.Contains(new Vector2Int((int)currentPosition.x, (int)currentPosition.y)) && 
+                        currentPosition.x >= minX && 
+                        currentPosition.x <= maxX && 
+                        currentPosition.y >= minY && 
+                        currentPosition.y <= maxY)
                     {
                         // Create a new tile at the current position
-                        GameObject newTile = Instantiate(tile, new Vector3(currentPosition.x * tileSizeX, currentPosition.y * tileSizeY, 0), Quaternion.identity);
+                        GameObject newTile = Instantiate(tile, new Vector3(currentPosition.x, currentPosition.y, 0), Quaternion.identity);
                         newTile.name = "Tile(" + currentPosition.x + ", " + currentPosition.y + ")";
                         newTile.transform.localScale = new Vector3(tileSizeX, tileSizeY, 1);
-                        newTile.GetComponent<SpriteRenderer>().color = new Color(Random.Range(0.1f, 0.9f), Random.Range(0.1f, 0.9f), Random.Range(0.1f, 0.9f));
-                        tilePositions.Add(currentPosition, newTile);
+                        tilePositions.Add(new Vector2Int((int)currentPosition.x, (int)currentPosition.y));
                     } else 
                         i--; // Handle overlapping position or visited position
 
                     // Update current position based on random direction
-                    switch (Random.Range(0,4))
+                    switch ((Direction)Random.Range(0,4))
                     {
                         /*
                             Mathf.Min returns the smaller of the two numbers
                             Mathf.Max returns the larger of the two numbers
                             Example: Mathf.Min(5, 10) returns 5
                         */
-                        case 0:
-                            currentPosition.x = Mathf.Min(currentPosition.x + 1, maxX);
+                        case Direction.Right:
+                            currentPosition.x = Mathf.Min(currentPosition.x + (13.5f / 3 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y + (6.7f / 3 * tileSizeY), maxY);
                             break;
-                        case 1:
-                            currentPosition.x = Mathf.Max(currentPosition.x - 1, minX);
+                        case Direction.Left:
+                            currentPosition.x = Mathf.Min(currentPosition.x - (13.5f / 3 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y - (6.7f / 3 * tileSizeY), maxY);
                             break;
-                        case 2:
-                            currentPosition.y = Mathf.Min(currentPosition.y + 1, maxY);
+                        case Direction.Up:
+                            currentPosition.x = Mathf.Min(currentPosition.x + (10.5f / 3 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y - (5.3f / 3 * tileSizeY), maxY);
                             break;
-                        case 3:
-                            currentPosition.y = Mathf.Max(currentPosition.y - 1, minY);
+                        case Direction.Down: 
+                            currentPosition.x = Mathf.Min(currentPosition.x - (10.5f / 3 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y + (5.3f / 3 * tileSizeY), maxY);
                             break;
                     }
                 }
                 Debug.Log("Tiles generated: " + tilePositions.Count);
                 Debug.Log("Generating tiles for empty space in border");
             }
-            FillInEmptySpace();
+           // FillInEmptySpace();
         }
 
         // Fills in the empty space created between tiles and the border. 
@@ -87,14 +87,12 @@ namespace MapGen
                 {
                     Debug.Log("Generating empty space for: " + i + " " + j);
                     // Check if the position is already occupied
-                    if (!tilePositions.ContainsKey(new Vector2Int(i, j)))
+                    if (!tilePositions.Contains(new Vector2Int(i, j)))
                     {
                         GameObject emptyTiles = Instantiate(tile, new Vector3(i * tileSizeX, j * tileSizeY, 0), Quaternion.identity);
                         emptyTiles.name = "EmptyTile(" + i + ", " + j + ")";
                         emptyTiles.transform.localScale = new Vector3(tileSizeX, tileSizeY, 1);
-                        emptyTiles.GetComponent<SpriteRenderer>().color = Color.black;
-                        emptyTiles.AddComponent<BoxCollider2D>();
-                        tilePositions.Add(new Vector2Int(i, j), emptyTiles);
+                        tilePositions.Add(new Vector2Int(i, j));
                     }
                 }
             Debug.Log("Empty Space generated: " + tilePositions.Count);

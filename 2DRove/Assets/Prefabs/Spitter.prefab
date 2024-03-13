@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7220932494962270720}
   - component: {fileID: 5234104497043412940}
+  - component: {fileID: 2746849136351622655}
   m_Layer: 7
   m_Name: AttackBox
   m_TagString: Untagged
@@ -77,6 +78,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.2}
   m_EdgeRadius: 0
+--- !u!114 &2746849136351622655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800186229107613894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &6229290378130564962
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +105,7 @@ GameObject:
   - component: {fileID: 6102114280818583993}
   - component: {fileID: 3607408024131565962}
   - component: {fileID: 5598037921612947105}
+  - component: {fileID: 7350636726140891444}
   m_Layer: 7
   m_Name: Spitter
   m_TagString: Spitter
@@ -271,3 +286,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaede9f121f542f498471114a9bec0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7350636726140891444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6229290378130564962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100

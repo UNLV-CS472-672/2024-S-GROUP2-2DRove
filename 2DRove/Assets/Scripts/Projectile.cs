@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] private float projectileLifetime;
     [SerializeField] private float velocity;
     [SerializeField] private float damage;
+    [SerializeField] private float rangedDamage;
+    [SerializeField] private float knockbackStrength = 2f;
 
     private void Awake(){
         Destroy(gameObject, projectileLifetime); //Destroys the projectile, delayed by the lifetime in seconds
@@ -18,13 +20,18 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col){
         GameObject target = col.gameObject; //Saves the game object the projectile collided with
-
+        Vector2 knockbackDirection = (Vector2)(transform.position - target.transform.position).normalized;
         if(target.CompareTag("Player")){ //If it collided with a valid player or enemy, deals damage to them
             target.GetComponent<PlayerController>().dealDamage(damage);
         }else if(target.CompareTag("Enemy")){
-            target.GetComponent<Enemy>().dealDamage(damage);
+            target.GetComponent<NewEnemy>().TakeRangedDamage(rangedDamage);
+            Rigidbody2D rb = target.GetComponent<Rigidbody2D>();
+            if(rb != null){
+                rb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse); //Applies a force to the enemy based on the projectile's velocity
+            }
         }
 
-        Destroy(gameObject); //Immediately destroys the projectile on contact with a valid object
+        // wait for 1 second for animation
+        Destroy(gameObject, 0.3f); 
     }
 }

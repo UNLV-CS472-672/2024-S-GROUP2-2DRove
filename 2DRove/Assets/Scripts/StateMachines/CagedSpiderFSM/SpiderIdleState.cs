@@ -1,0 +1,29 @@
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class SpiderIdleState : SpiderBaseState
+{
+    private bool idling = true;
+    private Transform player;
+    public override void EnterState(SpiderStateManager Spider)
+    {
+        Debug.Log("Entering Wake State...");
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    }
+
+    public override void UpdateState(SpiderStateManager Spider)
+    {
+        //make them just walk around randomly
+        //make a radius fov? that seems pretty cool, and it would have a faint ring around the Spider
+        //if player is in radius, enter walk state
+        Spider.SwitchState(Spider.AggroState);
+    }
+
+    public override void OnCollisionEnter2D(SpiderStateManager Spider, Collision2D other)
+    {
+        
+    } 
+
+    public override void OnTriggerStay2D(SpiderStateManager Spider, Collider2D other) {
+    }
+}

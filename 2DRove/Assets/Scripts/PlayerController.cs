@@ -36,8 +36,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]private LayerMask enemyLayer;
     private float slashCooldown = 1f; //adjust this to change the cooldown of the slash
     private float nextSlashTime = 0f; //dont change this
-    private float playerAttackDamage = 10; //adjust this to change the damage of the slash
-    [SerializeField] private float knockbackStrength = 5f; // Adjust this value for knock back 
 
 
     //The Start function is called if the script is enabled before any update functions
@@ -159,30 +157,17 @@ public class PlayerController : MonoBehaviour
     private void Slash(){
         
         if(Time.time >= nextSlashTime){
-        animator.SetTrigger("Slash"); // Triggers the slash animation
-        StartCoroutine(stopMovement(1f));
-        nextSlashTime = Time.time + slashCooldown; // Cooldown management
-        // Damage application is now handled by the animation event
-    }
-    }
-
-    //This function is called by the animation event at the end of the slash animation
-    private void ApplyDamage() {
-        Vector2 knockbackDirection = (Vector2)(transform.position - slashPoint.position).normalized;
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(slashPoint.position, slashRange, enemyLayer);
-        foreach (Collider2D enemy in hitEnemies) {
-            NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
-            if (enemyScript != null) {
-                enemyScript.TakeDamage(playerAttackDamage);
-                Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
-                if (enemyRb != null) {
-                    // Apply knockback
-                    enemyRb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse);
-                }
-            }
+            animator.SetTrigger("Slash"); //Triggers the slash animation
+            //make the player stop moving for a short time while the animation plays (0.5 seconds) then continue moving
+            StartCoroutine(stopMovement(1f));
+            nextSlashTime = Time.time + slashCooldown; //Updates when the player slashed last, putting the slash function on cooldown
+            //Slash hitbox
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(slashPoint.position, slashRange, enemyLayer);
+            foreach (Collider2D enemy in hitEnemies){
+                Debug.Log("We hit " + enemy.name); //this is for debugging, and it works
+            }//just need mobs to take dmg and add the animations accordingly.
         }
     }
-
 
     //Draws a gizmo to show the range of the slash
     private void OnDrawGizmosSelected(){

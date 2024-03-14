@@ -15,7 +15,7 @@ namespace MapGen
         [SerializeField] int minX = -5;
         [SerializeField] int minY = -5;
 
-        enum Direction { Right, Left, Up, Down }
+        enum Direction { UpRight, DownLeft, UpLeft, DownRight }
 
         // Dictionary to store positions of tiles
         public static List<Vector2> tilePositions = new();
@@ -26,7 +26,7 @@ namespace MapGen
             for (int j = 0; j < cycles; j++)
             {
                 // Initial position
-                Vector2 currentPosition = new(-7.5f, 1.5f);
+                Vector2 currentPosition = new(0,0);
                 for (int i = 0; i < steps; i++)
                 {
                     // Check if the position is already occupied and within the bounds
@@ -53,28 +53,28 @@ namespace MapGen
                             Mathf.Max returns the larger of the two numbers
                             Example: Mathf.Min(5, 10) returns 5
                         */
-                        case Direction.Right:
-                            currentPosition.x = Mathf.Min(currentPosition.x + (13.5f / 3 * tileSizeX), maxX);
-                            currentPosition.y = Mathf.Min(currentPosition.y + (6.7f / 3 * tileSizeY), maxY);
+                        case Direction.UpRight:
+                            currentPosition.x = Mathf.Min(currentPosition.x + (10 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y + (5 * tileSizeY), maxY);
                             break;
-                        case Direction.Left:
-                            currentPosition.x = Mathf.Min(currentPosition.x - (13.5f / 3 * tileSizeX), maxX);
-                            currentPosition.y = Mathf.Min(currentPosition.y - (6.7f / 3 * tileSizeY), maxY);
+                        case Direction.DownLeft:
+                            currentPosition.x = Mathf.Min(currentPosition.x - (10 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y - (5 * tileSizeY), maxY);
                             break;
-                        case Direction.Up:
-                            currentPosition.x = Mathf.Min(currentPosition.x + (10.5f / 3 * tileSizeX), maxX);
-                            currentPosition.y = Mathf.Min(currentPosition.y - (5.3f / 3 * tileSizeY), maxY);
+                        case Direction.UpLeft:
+                            currentPosition.x = Mathf.Min(currentPosition.x + (10 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y - (5 * tileSizeY), maxY);
                             break;
-                        case Direction.Down: 
-                            currentPosition.x = Mathf.Min(currentPosition.x - (10.5f / 3 * tileSizeX), maxX);
-                            currentPosition.y = Mathf.Min(currentPosition.y + (5.3f / 3 * tileSizeY), maxY);
+                        case Direction.DownRight: 
+                            currentPosition.x = Mathf.Min(currentPosition.x - (10 * tileSizeX), maxX);
+                            currentPosition.y = Mathf.Min(currentPosition.y + (5 * tileSizeY), maxY);
                             break;
                     }
                 }
                 Debug.Log("Tiles generated: " + tilePositions.Count);
                 Debug.Log("Generating tiles for empty space in border");
             }
-           // FillInEmptySpace();
+           FillInEmptySpace();
         }
 
         // Fills in the empty space created between tiles and the border. 
@@ -89,10 +89,10 @@ namespace MapGen
                     // Check if the position is already occupied
                     if (!tilePositions.Contains(new Vector2Int(i, j)))
                     {
-                        GameObject emptyTiles = Instantiate(tile, new Vector3(i * tileSizeX, j * tileSizeY, 0), Quaternion.identity);
+                        GameObject emptyTiles = Instantiate(tile, new Vector3(10*i * tileSizeX, j *5* tileSizeY, 0), Quaternion.identity);
                         emptyTiles.name = "EmptyTile(" + i + ", " + j + ")";
                         emptyTiles.transform.localScale = new Vector3(tileSizeX, tileSizeY, 1);
-                        tilePositions.Add(new Vector2Int(i, j));
+                        tilePositions.Add(new Vector2Int(i*10, j*5));
                     }
                 }
             Debug.Log("Empty Space generated: " + tilePositions.Count);

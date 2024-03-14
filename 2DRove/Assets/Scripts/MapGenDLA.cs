@@ -9,17 +9,22 @@ namespace MapGenDLA
         // [SerializeField] int cycles = 2;
         // [SerializeField] int steps = 50;
         [SerializeField] int tileNum = 25;
-        [SerializeField] int tileSizeX = 20;
-        [SerializeField] int tileSizeY = 20;
+        // [SerializeField] int tileSizeX = 20;
+        // [SerializeField] int tileSizeY = 20;
+
+        [SerializeField] int scale = 20;
         [SerializeField] int maxX = 5;
         [SerializeField] int maxY = 5;
         [SerializeField] int minX = -5;
         [SerializeField] int minY = -5;
         // Dictionary to store positions of tiles
-        public static Dictionary<Vector2Int, GameObject> tilePositions = new();
+        // public static Dictionary<Vector2Int, GameObject> tilePositions = new();
+        enum Direction { UpRight, DownLeft, UpLeft, DownRight };
+        public static HashSet<Vector2Int> tilePositions = new();
 
         void Start()
         {
+<<<<<<< Updated upstream
             // // Check if the number of steps and cycles is too large for the given bounds
             // if(steps*cycles > (maxX+maxY)*(Mathf.Abs(minX)+Mathf.Abs(minY)))
             // {
@@ -30,6 +35,9 @@ namespace MapGenDLA
             // //Create Black Border Line reprenseting the outline boundary
             // DrawBorder drawBorder = new();
             // drawBorder.DrawBorderLine((minX-1)*tileSizeX, (minY-1)*tileSizeY, (maxX+1)*tileSizeX, (maxY+1)*tileSizeY);
+=======
+            // FillInEmptySpace();
+>>>>>>> Stashed changes
 
             //will be used to clarify which border the next walk will come from
             Vector2Int north = new (0,maxY);
@@ -40,6 +48,7 @@ namespace MapGenDLA
             Vector2Int previousPosition = new (0,0);    //location of the previous tile in the walk
             int startSide = 0;  //determines which side the walk will start
 
+<<<<<<< Updated upstream
             // Generate tiles
             int i = 0;  //counter for amount of tiles made
 
@@ -54,6 +63,12 @@ namespace MapGenDLA
 
             //will keep looping until it generates the amount of tiles wanted
             //NOTE!! will loop infinitely if there are more tiles requested than available on the grid.
+=======
+            // Generate first tile at (0, 0)
+            GenerateFirstTile(currentPosition);
+            
+            int i = 1;  // Tile counter 
+>>>>>>> Stashed changes
             while(i < tileNum){
                 startSide = Random.Range(0,4);  //true random: each loop will randomly choose which side to start its walk
                 // startSide = (startSide+1)%4; //fair random: starting position will rotate clockwise after every tile made
@@ -145,11 +160,96 @@ namespace MapGenDLA
                 //new tile was made so increment counter
                 i++;
             }
-            FillInEmptySpace();
+            // FillInEmptySpace();
         }
 
+<<<<<<< Updated upstream
         // Fills in the empty space created between tiles and the border. 
         // Works very similar to the tile generation process but with a different color and name.
+=======
+        // First tile: hard coding name and position because it should always start at 0.
+        private void GenerateFirstTile(Vector2Int currentPosition)
+        {
+            GameObject firstTile = Instantiate(tile, new Vector3(0, 0, 0), Quaternion.identity);
+            firstTile.name = "Tile(0,0)";
+            firstTile.transform.localScale = new Vector3(scale, scale, 1);
+            tilePositions.Add(new Vector2Int(0,0));
+            Debug.Log("Starting Tile Made!");
+        }
+
+        // Get a random direction for walk
+        private Vector2Int RandomDirection()
+        {
+            Vector2Int[] borderDirections = new Vector2Int[]
+            {
+                new Vector2Int(0, maxY),    // North
+                new Vector2Int(maxX, 0),    // East
+                new Vector2Int(0, minY),    // South
+                new Vector2Int(minX, 0)     // West
+            };
+
+            int startSide = Random.Range(0, borderDirections.Length);  // Randomly select a start side
+            return borderDirections[startSide];  // Return the selected border position
+        }
+
+        private void FindOpenTile(ref Vector2Int currentPosition, ref Vector2Int previousPosition)
+        {
+            // if the any of the start sides already has a tile on top of it
+            // technically this isnt DLA but code breaks if a tile lands on the border of the map
+            // algorithm switches to doing a random walk until it doesnt land on a tile
+            if(tilePositions.Contains(currentPosition)){
+                while(tilePositions.Contains(currentPosition)){
+                    //do random walks to place the next tile close by
+                    int direction = Random.Range(0, 4);
+                    currentPosition = UpdatePosition(direction, currentPosition);
+                }
+                previousPosition = currentPosition;
+            }
+            else{
+                //resetting previousPosition
+                previousPosition = currentPosition;
+
+                //start a walk until it reaches a tile that already exists
+                while(!tilePositions.Contains(currentPosition)){
+                    
+                    //previousPosition will have previous loop's tile coords
+                    previousPosition = currentPosition;
+
+                    // Update current position based on random direction
+                    int direction = Random.Range(0, 4);
+                    currentPosition = UpdatePosition(direction, currentPosition);
+                }
+            }
+        }
+
+        private Vector2Int UpdatePosition(int direction, Vector2Int position)
+        {
+            /*
+                Mathf.Min returns the smaller of the two numbers
+                Mathf.Max returns the larger of the two numbers
+                Example: Mathf.Min(5, 10) returns 5
+            */
+            switch (direction)
+            {
+                case 0: return new Vector2Int(Mathf.Clamp(position.x + 1,minX, maxX), Mathf.Clamp(position.y+1, minY, maxY));//ur
+                case 1: return new Vector2Int(Mathf.Clamp(position.x - 1, minX, maxX), Mathf.Clamp(position.y-1, minY, maxY));//dl
+                case 2: return new Vector2Int(Mathf.Clamp(position.x-1, minX, maxX), Mathf.Clamp(position.y + 1, minY, maxY));//ul
+                case 3: return new Vector2Int(Mathf.Clamp(position.x+1, minX, maxX), Mathf.Clamp(position.y - 1, minY, maxY));//dr
+                default: return position;
+            }
+        }
+
+        //Create a new tile where the previous tile was
+        private void CreatePreviousTile(Vector2Int previousPosition)
+        {
+            GameObject newTile = Instantiate(tile, new Vector3(previousPosition.x * scale * 10, previousPosition.y * scale * 5, 0), Quaternion.identity);
+            newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
+            newTile.transform.localScale = new Vector3(scale, scale, 1);
+            tilePositions.Add(previousPosition);
+        }
+
+        // Fills in the empty space created between tiles and the border similarly to tile generation. 
+>>>>>>> Stashed changes
         void FillInEmptySpace()
         {
             // Generate empty space
@@ -158,14 +258,14 @@ namespace MapGenDLA
                 {
                     Debug.Log("Generating empty space for: " + i + " " + j);
                     // Check if the position is already occupied
-                    if (!tilePositions.ContainsKey(new Vector2Int(i, j)))
+                    if (!tilePositions.Contains(new Vector2Int(i, j)))
                     {
-                        GameObject emptyTiles = Instantiate(tile, new Vector3(i * tileSizeX, j * tileSizeY, 0), Quaternion.identity);
+                        GameObject emptyTiles = Instantiate(tile, new Vector3(i * scale*10, j * scale*5, 0), Quaternion.identity);
                         emptyTiles.name = "EmptyTile(" + i + ", " + j + ")";
-                        emptyTiles.transform.localScale = new Vector3(tileSizeX, tileSizeY, 1);
+                        emptyTiles.transform.localScale = new Vector3(scale, scale, 1);
                         emptyTiles.GetComponent<SpriteRenderer>().color = Color.black;
                         emptyTiles.AddComponent<BoxCollider2D>();
-                        tilePositions.Add(new Vector2Int(i, j), emptyTiles);
+                        tilePositions.Add(new Vector2Int(i, j));
                     }
                 }
             Debug.Log("Empty Space generated: " + tilePositions.Count);

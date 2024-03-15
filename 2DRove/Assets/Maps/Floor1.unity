@@ -211,7 +211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ca71fd974f8ba9a44b3314339e0fcde6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -490,8 +490,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 602447683}
-  - component: {fileID: 602447682}
   - component: {fileID: 602447684}
+  - component: {fileID: 602447685}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -499,27 +499,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &602447682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602447681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae0623192da1a7747b1a6f511945ed66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startSprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  cycles: 2
-  steps: 25
-  tileSizeX: 20
-  tileSizeY: 20
-  maxX: 5
-  maxY: 5
-  minX: -5
-  minY: -5
 --- !u!4 &602447683
 Transform:
   m_ObjectHideFlags: 0
@@ -547,7 +526,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b68a389ea5e0342ac566848585190a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineWidth: 20
+--- !u!114 &602447685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602447681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beea543b0de777d4ab12afa55f562645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tile: {fileID: 9148618936101596910, guid: 518c796cb363c8640a70ddf9456746d2, type: 3}
+  tileNum: 121
+  scale: 2
+  maxX: 5
+  maxY: 5
+  minX: -5
+  minY: -5
 --- !u!1 &1102318596
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +658,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7000142242859989008, guid: 293f8e78ac061ba4991d2d8ceeaacfcb, type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000142242859989008, guid: 293f8e78ac061ba4991d2d8ceeaacfcb, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:

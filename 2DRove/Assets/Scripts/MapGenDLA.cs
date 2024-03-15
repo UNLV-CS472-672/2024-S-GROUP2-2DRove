@@ -8,6 +8,7 @@ namespace MapGenDLA
         [SerializeField] GameObject tile;
         // [SerializeField] int cycles = 2;
         // [SerializeField] int steps = 50;
+        
         [SerializeField] int tileNum = 25;
         // [SerializeField] int tileSizeX = 20;
         // [SerializeField] int tileSizeY = 20;
@@ -24,8 +25,20 @@ namespace MapGenDLA
 
         void Start()
         {
-            // FillInEmptySpace();
-
+            //checks for SerializeFields
+            int possibleTiles = Mathf.Abs(maxX-minX+1) * Mathf.Abs(maxY-minY+1);
+            if(possibleTiles < tileNum){
+                Debug.LogError("Cannot request more tiles than available");
+                return;
+            }
+            if(tileNum <= 0){
+                Debug.LogError("must create 1 or more tiles");
+                return;
+            }
+            if(scale <= 0){
+                Debug.LogError("Scale must be greater than 0");
+            }
+            
             Vector2Int currentPosition = new (0, 0);    // Location of current tile in the walk.
             Vector2Int previousPosition = new (0, 0);   // Location of the previous tile in the walk.
             
@@ -46,6 +59,8 @@ namespace MapGenDLA
                 CreatePreviousTile(previousPosition);
                 i++;
             }
+
+            //todo: implement FillInEmptySpace to work for isometric
             // FillInEmptySpace();
         }
 

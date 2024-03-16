@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GhoulStateManager : MonoBehaviour
 {
-    private Animator animator;
+    public Animator animator;
     GhoulBaseState currentState;
     public GhoulAggroState AggroState = new GhoulAggroState();
     public GhoulAttackState AttackState = new GhoulAttackState();
@@ -47,5 +47,10 @@ public class GhoulStateManager : MonoBehaviour
     public void TakeDamageAnimation()
     {
         currentState.TakeDamage(this);
+    }
+
+    public void Destroy(float waitDuration)
+    {
+        Destroy(gameObject, waitDuration);
     }
 }

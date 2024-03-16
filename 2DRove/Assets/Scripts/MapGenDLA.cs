@@ -45,7 +45,7 @@ namespace MapGenDLA
 
             // Generate first tile at (0, 0)
             GenerateFirstTile(currentPosition);
-            
+
             int i = 1;  // Tile counter 
             while(i < tileNum){
 
@@ -62,6 +62,7 @@ namespace MapGenDLA
 
             //todo: implement FillInEmptySpace to work for isometric
             // FillInEmptySpace();
+
         }
 
         // First tile: hard coding name and position because it should always start at 0.
@@ -71,6 +72,7 @@ namespace MapGenDLA
             firstTile.name = "Tile(0,0)";
             firstTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(new Vector2Int(0,0));
+
             Debug.Log("Starting Tile Made!");
         }
 
@@ -96,6 +98,7 @@ namespace MapGenDLA
             // algorithm switches to doing a random walk until it doesnt land on a tile
             if(tilePositions.Contains(currentPosition)){
                 while(tilePositions.Contains(currentPosition)){
+
                     //do random walks to place the next tile close by
                     int direction = Random.Range(0, 4);
                     currentPosition = UpdatePosition(direction, currentPosition);
@@ -108,6 +111,7 @@ namespace MapGenDLA
 
                 //start a walk until it reaches a tile that already exists
                 while(!tilePositions.Contains(currentPosition)){
+
                     
                     //previousPosition will have previous loop's tile coords
                     previousPosition = currentPosition;
@@ -132,6 +136,7 @@ namespace MapGenDLA
                 case 1: return new Vector2Int(Mathf.Clamp(position.x - 1, minX, maxX), Mathf.Clamp(position.y-1, minY, maxY));//dl
                 case 2: return new Vector2Int(Mathf.Clamp(position.x-1, minX, maxX), Mathf.Clamp(position.y + 1, minY, maxY));//ul
                 case 3: return new Vector2Int(Mathf.Clamp(position.x+1, minX, maxX), Mathf.Clamp(position.y - 1, minY, maxY));//dr
+
                 default: return position;
             }
         }
@@ -143,6 +148,7 @@ namespace MapGenDLA
             newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
             newTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(previousPosition);
+
         }
 
         // Fills in the empty space created between tiles and the border similarly to tile generation. 

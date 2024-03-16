@@ -41,8 +41,22 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    pptrCurveMapping:
+    - {fileID: -1238624536992928206, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - {fileID: 7461289394191328812, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - {fileID: -7991556346762831668, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - {fileID: -3399689915215838967, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - {fileID: -3399689915215838967, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -67,4 +81,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: TakeDamageAnimation
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

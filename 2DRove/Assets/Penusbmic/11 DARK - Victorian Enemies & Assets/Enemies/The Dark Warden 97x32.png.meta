@@ -1,0 +1,1402 @@
+fileFormatVersion: 2
+guid: 062dd3014b8db3b4e9d165399b7afd77
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2605309709859226732
+    second: The Dark Warden 97x32_0
+  - first:
+      213: 6671333618545167320
+    second: The Dark Warden 97x32_1
+  - first:
+      213: -859864127369869897
+    second: The Dark Warden 97x32_2
+  - first:
+      213: 8172871927225119331
+    second: The Dark Warden 97x32_3
+  - first:
+      213: -3749720286249147593
+    second: The Dark Warden 97x32_4
+  - first:
+      213: 2119950899319744038
+    second: The Dark Warden 97x32_5
+  - first:
+      213: -2246508664828738298
+    second: The Dark Warden 97x32_6
+  - first:
+      213: 2806848873745493990
+    second: The Dark Warden 97x32_7
+  - first:
+      213: 7918528343729597128
+    second: The Dark Warden 97x32_8
+  - first:
+      213: -4424822520394232989
+    second: The Dark Warden 97x32_9
+  - first:
+      213: -8262166361314652717
+    second: The Dark Warden 97x32_10
+  - first:
+      213: 593439619014385881
+    second: The Dark Warden 97x32_11
+  - first:
+      213: 7182302300475069830
+    second: The Dark Warden 97x32_12
+  - first:
+      213: -3816559720643437882
+    second: The Dark Warden 97x32_13
+  - first:
+      213: -5188516273223603827
+    second: The Dark Warden 97x32_14
+  - first:
+      213: 3152079804974359001
+    second: The Dark Warden 97x32_15
+  - first:
+      213: 7683478006480095006
+    second: The Dark Warden 97x32_16
+  - first:
+      213: -9216999224900855438
+    second: The Dark Warden 97x32_17
+  - first:
+      213: 704765952393012198
+    second: The Dark Warden 97x32_18
+  - first:
+      213: -1510615419449005379
+    second: The Dark Warden 97x32_19
+  - first:
+      213: 8252253645774886662
+    second: The Dark Warden 97x32_20
+  - first:
+      213: 3795404209070691388
+    second: The Dark Warden 97x32_21
+  - first:
+      213: 4965865249907850092
+    second: The Dark Warden 97x32_22
+  - first:
+      213: -8617311243212468359
+    second: The Dark Warden 97x32_23
+  - first:
+      213: 2931977352324659930
+    second: The Dark Warden 97x32_24
+  - first:
+      213: 1706326045559486576
+    second: The Dark Warden 97x32_25
+  - first:
+      213: 1759208571634575240
+    second: The Dark Warden 97x32_26
+  - first:
+      213: -1884865774504071680
+    second: The Dark Warden 97x32_27
+  - first:
+      213: 476772086146654103
+    second: The Dark Warden 97x32_28
+  - first:
+      213: -5957510274134180993
+    second: The Dark Warden 97x32_29
+  - first:
+      213: -8433764843771828686
+    second: The Dark Warden 97x32_30
+  - first:
+      213: 2972944314841012469
+    second: The Dark Warden 97x32_31
+  - first:
+      213: 1729289531118746249
+    second: The Dark Warden 97x32_32
+  - first:
+      213: -4538831640994640868
+    second: The Dark Warden 97x32_33
+  - first:
+      213: 4370755675444170086
+    second: The Dark Warden 97x32_34
+  - first:
+      213: -7613856636872116575
+    second: The Dark Warden 97x32_35
+  - first:
+      213: 7445272911793202181
+    second: The Dark Warden 97x32_36
+  - first:
+      213: 9108812279696597092
+    second: The Dark Warden 97x32_37
+  - first:
+      213: -4756890261904520199
+    second: The Dark Warden 97x32_38
+  - first:
+      213: -3556077597198106072
+    second: The Dark Warden 97x32_39
+  - first:
+      213: -6442449817392047269
+    second: The Dark Warden 97x32_40
+  - first:
+      213: 2327134525687832367
+    second: The Dark Warden 97x32_41
+  - first:
+      213: -8236877974217021969
+    second: The Dark Warden 97x32_42
+  - first:
+      213: 8424874497434560495
+    second: The Dark Warden 97x32_43
+  - first:
+      213: -6415741066696454294
+    second: The Dark Warden 97x32_44
+  - first:
+      213: -7924637544427364082
+    second: The Dark Warden 97x32_45
+  - first:
+      213: -2185231878002738608
+    second: The Dark Warden 97x32_46
+  - first:
+      213: 6866915566645013610
+    second: The Dark Warden 97x32_47
+  - first:
+      213: 5976651810731096638
+    second: The Dark Warden 97x32_48
+  - first:
+      213: -3502421535672613759
+    second: The Dark Warden 97x32_49
+  - first:
+      213: -8401138341170098435
+    second: The Dark Warden 97x32_50
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64090aa06be72420800000000000000
+      internalID: 2605309709859226732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db818f6496559c50800000000000000
+      internalID: 6671333618545167320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b58405c1262114f0800000000000000
+      internalID: -859864127369869897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362f30157bfdb6170800000000000000
+      internalID: 8172871927225119331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_4
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7332b0b344156fbc0800000000000000
+      internalID: -3749720286249147593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_5
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62629376c149b6d10800000000000000
+      internalID: 2119950899319744038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_6
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605cb08954cc2d0e0800000000000000
+      internalID: -2246508664828738298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef2ec9ed2ee3f620800000000000000
+      internalID: 2806848873745493990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_8
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca6ddf039344ed60800000000000000
+      internalID: 7918528343729597128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_9
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bc0c58c5fd792c0800000000000000
+      internalID: -4424822520394232989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_10
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd88ae1873e65d80800000000000000
+      internalID: -8262166361314652717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_11
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 96
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0eef670325c3800800000000000000
+      internalID: 593439619014385881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685994983e9aca360800000000000000
+      internalID: 7182302300475069830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_13
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cadbf2b72bd80bc0800000000000000
+      internalID: -3816559720643437882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_14
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d896c2f70ffaef7b0800000000000000
+      internalID: -5188516273223603827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_15
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1ed27d1ef6ebb20800000000000000
+      internalID: 3152079804974359001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17c5cfb98231aa60800000000000000
+      internalID: 7683478006480095006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_17
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279dbb8e904a61080800000000000000
+      internalID: -9216999224900855438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_18
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3ec2256e4d7c900800000000000000
+      internalID: 704765952393012198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_19
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbaa3839747390be0800000000000000
+      internalID: -1510615419449005379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_20
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60795d0f7f4e58270800000000000000
+      internalID: 8252253645774886662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_21
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c345eace40cfba430800000000000000
+      internalID: 3795404209070691388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_22
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bb63f622c4ae440800000000000000
+      internalID: 4965865249907850092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_23
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 64
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f475da419296880800000000000000
+      internalID: -8617311243212468359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada3dce1ed970b820800000000000000
+      internalID: 2931977352324659930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_25
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078f1987f761ea710800000000000000
+      internalID: 1706326045559486576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_26
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887e91e00e6f96810800000000000000
+      internalID: 1759208571634575240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_27
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ea465809c97d5e0800000000000000
+      internalID: -1884865774504071680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_28
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fd791bfa5dd9600800000000000000
+      internalID: 476772086146654103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_29
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bfd7c48fba25da0800000000000000
+      internalID: -5957510274134180993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_30
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2366dcffe8f35fa80800000000000000
+      internalID: -8433764843771828686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_31
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f89d1f5a15024920800000000000000
+      internalID: 2972944314841012469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_32
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a72289aabaff710800000000000000
+      internalID: 1729289531118746249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_33
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c06379ba4d201c0800000000000000
+      internalID: -4538831640994640868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_34
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d4fda212b08ac30800000000000000
+      internalID: 4370755675444170086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_35
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6bc7c8ab5265690800000000000000
+      internalID: -7613856636872116575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_36
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504a54b344ce25760800000000000000
+      internalID: 7445272911793202181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_37
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46028010280096e70800000000000000
+      internalID: 9108812279696597092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_38
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb8aa782812cfdb0800000000000000
+      internalID: -4756890261904520199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_39
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 32
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8224849244646aec0800000000000000
+      internalID: -3556077597198106072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b111f4602d796a0800000000000000
+      internalID: -6442449817392047269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_41
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f9b2c7584ab4020800000000000000
+      internalID: 2327134525687832367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_42
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe52e809f1bb0bd80800000000000000
+      internalID: -8236877974217021969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_43
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7a5d0f7ba2be470800000000000000
+      internalID: 8424874497434560495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_44
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f0caced75b6f6a0800000000000000
+      internalID: -6415741066696454294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_45
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01eeaec328060290800000000000000
+      internalID: -7924637544427364082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_46
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a79cf4f2f7ca1e0800000000000000
+      internalID: -2185231878002738608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_47
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ce97c435f2c4f50800000000000000
+      internalID: 6866915566645013610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_48
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a72dcf72551f250800000000000000
+      internalID: 5976651810731096638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_49
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1844e808b26e46fc0800000000000000
+      internalID: -3502421535672613759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Dark Warden 97x32_50
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 0
+        width: 97
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe44a99039296b80800000000000000
+      internalID: -8401138341170098435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      The Dark Warden 97x32_0: 2605309709859226732
+      The Dark Warden 97x32_1: 6671333618545167320
+      The Dark Warden 97x32_10: -8262166361314652717
+      The Dark Warden 97x32_11: 593439619014385881
+      The Dark Warden 97x32_12: 7182302300475069830
+      The Dark Warden 97x32_13: -3816559720643437882
+      The Dark Warden 97x32_14: -5188516273223603827
+      The Dark Warden 97x32_15: 3152079804974359001
+      The Dark Warden 97x32_16: 7683478006480095006
+      The Dark Warden 97x32_17: -9216999224900855438
+      The Dark Warden 97x32_18: 704765952393012198
+      The Dark Warden 97x32_19: -1510615419449005379
+      The Dark Warden 97x32_2: -859864127369869897
+      The Dark Warden 97x32_20: 8252253645774886662
+      The Dark Warden 97x32_21: 3795404209070691388
+      The Dark Warden 97x32_22: 4965865249907850092
+      The Dark Warden 97x32_23: -8617311243212468359
+      The Dark Warden 97x32_24: 2931977352324659930
+      The Dark Warden 97x32_25: 1706326045559486576
+      The Dark Warden 97x32_26: 1759208571634575240
+      The Dark Warden 97x32_27: -1884865774504071680
+      The Dark Warden 97x32_28: 476772086146654103
+      The Dark Warden 97x32_29: -5957510274134180993
+      The Dark Warden 97x32_3: 8172871927225119331
+      The Dark Warden 97x32_30: -8433764843771828686
+      The Dark Warden 97x32_31: 2972944314841012469
+      The Dark Warden 97x32_32: 1729289531118746249
+      The Dark Warden 97x32_33: -4538831640994640868
+      The Dark Warden 97x32_34: 4370755675444170086
+      The Dark Warden 97x32_35: -7613856636872116575
+      The Dark Warden 97x32_36: 7445272911793202181
+      The Dark Warden 97x32_37: 9108812279696597092
+      The Dark Warden 97x32_38: -4756890261904520199
+      The Dark Warden 97x32_39: -3556077597198106072
+      The Dark Warden 97x32_4: -3749720286249147593
+      The Dark Warden 97x32_40: -6442449817392047269
+      The Dark Warden 97x32_41: 2327134525687832367
+      The Dark Warden 97x32_42: -8236877974217021969
+      The Dark Warden 97x32_43: 8424874497434560495
+      The Dark Warden 97x32_44: -6415741066696454294
+      The Dark Warden 97x32_45: -7924637544427364082
+      The Dark Warden 97x32_46: -2185231878002738608
+      The Dark Warden 97x32_47: 6866915566645013610
+      The Dark Warden 97x32_48: 5976651810731096638
+      The Dark Warden 97x32_49: -3502421535672613759
+      The Dark Warden 97x32_5: 2119950899319744038
+      The Dark Warden 97x32_50: -8401138341170098435
+      The Dark Warden 97x32_6: -2246508664828738298
+      The Dark Warden 97x32_7: 2806848873745493990
+      The Dark Warden 97x32_8: 7918528343729597128
+      The Dark Warden 97x32_9: -4424822520394232989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

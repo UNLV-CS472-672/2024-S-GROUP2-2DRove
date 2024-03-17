@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 //Generally a PlayerController class is used to contain most if not all player based stuff in one place. (Movement/Actions)
 
@@ -29,23 +30,35 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     private PlayerInput input;
     private GameOverMenu gameOverMenu;
+    private bool flipped;
+    [SerializeField]private Transform slashPoint;
+    [SerializeField]private float slashRange;
+    [SerializeField]private LayerMask enemyLayer;
+    private float slashCooldown = 1f; //adjust this to change the cooldown of the slash
+    private float nextSlashTime = 0f; //dont change this
+    private float playerAttackDamage = 10; //adjust this to change the damage of the slash
+    [SerializeField] private float knockbackStrength = 5f; // Adjust this value for knock back 
+
 
     //The Start function is called if the script is enabled before any update functions
     private void Start(){
         //Assigning the component to the variables to prevent having to get the component at every instance where you need to edit the values
         input = GetComponent<PlayerInput>();
         animator = GetComponent<Animator>();
+        if (animator == null){
+            Debug.LogError("Animator not found on player");
+        }
         rb = GetComponent<Rigidbody2D>();
 
         //Find the game over menu
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
 
         //Find text fields
-        healthText = GameObject.Find("Health Text").GetComponent<TMP_Text>();
+        healthText = GameObject.Find("TextSliderBar/Text (TMP)").GetComponent<TMP_Text>();
         goldText = GameObject.Find("Gold Text").GetComponent<TMP_Text>();
 
         //Find health slider
-        healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
+        healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
 
         //Starts the player with max health and initializes the health slider
         health = maxHealth;
@@ -63,14 +76,18 @@ public class PlayerController : MonoBehaviour
         //Decides which animation plays based on the input direction
         animateMovement(inputDirection);
         
+
         //Checks for the input and if the blink is on cooldown
         if(input.actions["Blink"].IsPressed() && notOnCooldown(lastBlinkedTime, blinkCooldown)){
             blink(inputDirection, blinkDistance);
         }
-    
-        //Checks for the input and if shoot is on cooldown
+
         if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
-            shoot();
+            Slash();
+        }
+
+        if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
+            rangeAttack();
         }
     }
 
@@ -88,13 +105,22 @@ public class PlayerController : MonoBehaviour
 
     //Decides the animation state of the player (Idle is layer 0, Walking is layer 1)
     private void animateMovement(Vector2 direction){
-        if(direction == Vector2.zero){ //If player is not moving
-            animator.SetLayerWeight(1, 0); //Hides the movement animation by setting it's weight to 0
-        }else{
-            animator.SetLayerWeight(1, 1); //Shows the movement animation by setting it's weight to 1, allowing it to show over the idle animation
-            animator.SetFloat("xDir", direction.x); //These set which movement animation plays based on which direction the player is facing
-            animator.SetFloat("yDir", direction.y);
+        animator.SetFloat("yDir", Mathf.Abs(direction.y)); //Sets the vertical direction parameter in the animator to the player's y velocity
+        animator.SetFloat("xDir", Mathf.Abs(direction.x)); //Sets the velocity parameter in the animator to the absolute value of the player's x velocity. This is used to determine if the player is moving or not
+        
+        if (direction.x != 0){ //If the player is moving horizontally
+            flipped = direction.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
         }
+        
+        this.transform.rotation = Quaternion.Euler(new Vector3(0f, flipped ? 180f: 0f, 0f));
+        // if(direction == Vector2.zero){ //If player is not moving
+        //     animator.SetLayerWeight(1, 0); //Hides the movement animation by setting it's weight to 0
+        // }
+        // else{
+        //     animator.SetLayerWeight(1, 1); //Shows the movement animation by setting it's weight to 1, allowing it to show over the idle animation
+        //     animator.SetFloat("xDir", direction.x); //These set which movement animation plays based on which direction the player is facing
+        //     animator.SetFloat("yDir", direction.y);
+        // }
     }
 
     //Blinks the player based on the direction and distance inputted
@@ -112,16 +138,71 @@ public class PlayerController : MonoBehaviour
         lastBlinkedTime = Time.time; //Updates when the player blinked last, putting the blink on cooldown
     }
 
-    //Shoots the projectile
-    private void shoot(){
+    //Range Attack
+    private void rangeAttack(){
         GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
         Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
-
         Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
 
         projectile.setDirection(direction);
 
         lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
+        Collider2D projectileCollider = obj.GetComponent<Collider2D>();
+        Collider2D playerCollider = GetComponent<Collider2D>();
+        if (projectileCollider != null && playerCollider != null) {
+            Physics2D.IgnoreCollision(projectileCollider, playerCollider);
+        }
+        
+    }
+
+    //Slash
+    private void Slash(){
+        
+        if(Time.time >= nextSlashTime){
+        animator.SetTrigger("Slash"); // Triggers the slash animation
+        StartCoroutine(stopMovement(1f));
+        nextSlashTime = Time.time + slashCooldown; // Cooldown management
+        // Damage application is now handled by the animation event
+    }
+    }
+
+    //This function is called by the animation event at the end of the slash animation
+    private void ApplyDamage() {
+        Vector2 knockbackDirection = (Vector2)(transform.position - slashPoint.position).normalized;
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(slashPoint.position, slashRange, enemyLayer);
+        //PROBLEM, THIS HITBOX DETECTION APPLIES TO ENEMY HITBOX AS WELL, NOT JUST THEIR BODY HURTBOX
+        //Current fix, only look for box colliders, as current hitboxes for enemies are capsules, while their hurtbox are boxcolliders
+        foreach (Collider2D enemy in hitEnemies) {
+            if (enemy is not BoxCollider2D)
+                continue;
+            NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
+            
+            if (enemyScript != null) {
+                enemyScript.TakeDamage(playerAttackDamage);
+                Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
+                if (enemyRb != null) {
+                    // Apply knockback
+                    enemyRb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse);
+                }
+            }
+        }
+    }
+
+
+    //Draws a gizmo to show the range of the slash
+    private void OnDrawGizmosSelected(){
+        if (slashPoint == null){
+            return;
+        }
+        Gizmos.DrawWireSphere(slashPoint.position, slashRange);
+    }
+
+    //Stops the player's movement for a short time
+    private IEnumerator stopMovement(float time){
+        speedFactor = 0; //stops the player's movement
+        yield return new WaitForSeconds(time); //waits for the cooldown
+        yield return new WaitUntil(() => !Input.GetMouseButton(0)); // wait until the left mouse button is released
+        speedFactor = 50; //resumes the player's movement
     }
 
     //Returns true if the values for an action are on cooldown or not

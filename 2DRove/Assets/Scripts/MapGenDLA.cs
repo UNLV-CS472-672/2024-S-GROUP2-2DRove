@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
+using CreateBorder;
 
-namespace MapGenDLA
+namespace MapGenDLANamespace
 {
     public class MapGenDLA : MonoBehaviour
     {
@@ -13,11 +14,19 @@ namespace MapGenDLA
         // [SerializeField] int tileSizeX = 20;
         // [SerializeField] int tileSizeY = 20;
 
-        [SerializeField] int scale = 20;
-        [SerializeField] int maxX = 5;
-        [SerializeField] int maxY = 5;
-        [SerializeField] int minX = -5;
-        [SerializeField] int minY = -5;
+        public int leftMost = 0;
+        public int rightMost = 0;
+        public int topMost = 0;
+        public int bottomMost = 0;
+
+        private DrawBorder drawBorder;
+
+
+        [SerializeField] public int scale = 20;
+        [SerializeField] public int maxX = 5;
+        [SerializeField] public int maxY = 5;
+        [SerializeField] public int minX = -5;
+        [SerializeField] public int minY = -5;
         // Dictionary to store positions of tiles
         // public static Dictionary<Vector2Int, GameObject> tilePositions = new();
         enum Direction { UpRight, DownLeft, UpLeft, DownRight };
@@ -59,6 +68,13 @@ namespace MapGenDLA
                 CreatePreviousTile(previousPosition);
                 i++;
             }
+            Debug.Log(leftMost);
+            Debug.Log(bottomMost);
+            Debug.Log(rightMost);
+            Debug.Log(topMost);
+            drawBorder = GetComponent<DrawBorder>();
+            drawBorder.DrawBorderLine(leftMost * 35, bottomMost * 35, rightMost * 35, topMost * 35);
+
 
             //todo: implement FillInEmptySpace to work for isometric
             // FillInEmptySpace();
@@ -148,6 +164,11 @@ namespace MapGenDLA
             newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
             newTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(previousPosition);
+
+            leftMost = Mathf.Min(leftMost, previousPosition.x);
+            rightMost = Mathf.Max(rightMost, previousPosition.x);
+            topMost = Mathf.Max(topMost, previousPosition.y);
+            bottomMost = Mathf.Min(bottomMost, previousPosition.y);
 
         }
 

@@ -541,9 +541,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae0623192da1a7747b1a6f511945ed66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 776782529497576670, guid: 3d0ebfadeeadb944f954038ca8be65db, type: 3}
+  tile: {fileID: 9148618936101596910, guid: 536d28fedba186a40bce44a5e912ebce, type: 3}
   cycles: 11
-  steps: 133
+  steps: 13
   tileSizeX: 20
   tileSizeY: 20
   maxX: 5

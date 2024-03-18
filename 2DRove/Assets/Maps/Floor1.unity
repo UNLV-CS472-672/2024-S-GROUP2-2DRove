@@ -389,6 +389,9 @@ MonoBehaviour:
   playerInput: {fileID: 409696410}
   sprintSpeed: 50
   moveSpeed: 30
+  tileLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

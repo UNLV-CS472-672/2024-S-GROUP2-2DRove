@@ -6,6 +6,7 @@ namespace MapGenDLA
     public class MapGenDLA : MonoBehaviour
     {
         [SerializeField] GameObject tile;
+        [SerializeField] GameObject borderPrefab;
         // [SerializeField] int cycles = 2;
         // [SerializeField] int steps = 50;
         
@@ -22,6 +23,7 @@ namespace MapGenDLA
         // public static Dictionary<Vector2Int, GameObject> tilePositions = new();
         enum Direction { UpRight, DownLeft, UpLeft, DownRight };
         public static HashSet<Vector2Int> tilePositions = new();
+        public static Dictionary<Vector2Int, GameObject> tileObjects = new();
 
         void Start()
         {
@@ -60,6 +62,18 @@ namespace MapGenDLA
                 i++;
             }
 
+            foreach (var tile in tileObjects)
+            {
+                Vector2Int position = tile.Key;
+                GameObject tileObject = tile.Value;
+
+                //Check the neighboring tiles
+                CheckAndAddBorder(position + Vector2Int.up, tileObject, Vector2.up);
+                CheckAndAddBorder(position + Vector2Int.down, tileObject, Vector2.down);
+                CheckAndAddBorder(position + Vector2Int.left, tileObject, Vector2.left);
+                CheckAndAddBorder(position + Vector2Int.right, tileObject, Vector2.right);
+            }
+
             //todo: implement FillInEmptySpace to work for isometric
             // FillInEmptySpace();
 
@@ -70,8 +84,10 @@ namespace MapGenDLA
         {
             GameObject firstTile = Instantiate(tile, new Vector3(0, 0, 0), Quaternion.identity);
             firstTile.name = "Tile(0,0)";
+            //firstTile.layer = LayerMask.NameToLayer("TileLayer");
             firstTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(new Vector2Int(0,0));
+            tileObjects.Add(new Vector2Int(0,0), firstTile);
 
             Debug.Log("Starting Tile Made!");
         }
@@ -145,9 +161,11 @@ namespace MapGenDLA
         private void CreatePreviousTile(Vector2Int previousPosition)
         {
             GameObject newTile = Instantiate(tile, new Vector3(previousPosition.x * scale * 10, previousPosition.y * scale * 5, 0), Quaternion.identity);
+            //newTile.layer = LayerMask.NameToLayer("TileLayer");
             newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
             newTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(previousPosition);
+            tileObjects.Add(previousPosition, newTile);
 
         }
 
@@ -171,6 +189,24 @@ namespace MapGenDLA
                     }
                 }
             Debug.Log("Empty Space generated: " + tilePositions.Count);
+        }
+
+        
+
+        void CheckAndAddBorder(Vector2Int position, GameObject tileObject, Vector2 direction)
+        {
+            // If the neighboring tile is empty, add a border
+            if (!tileObjects.ContainsKey(position))
+            {
+                AddBorder(tileObject, direction);
+            }
+        }
+        void AddBorder(GameObject tileObject, Vector2 direction)
+        {
+            GameObject border = Instantiate(borderPrefab, tileObject.transform.position + (Vector3)direction * 0.5f, Quaternion.identity);
+            border.transform.parent = tileObject.transform;
+            BoxCollider2D collider = border.AddComponent<BoxCollider2D>();
+            collider.size = new Vector2(1, 1);
         }
     }
 

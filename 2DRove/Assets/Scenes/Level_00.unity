@@ -1710,7 +1710,7 @@ PrefabInstance:
     - target: {fileID: -4547627616058721799, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: -3605996192705472802, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
+      objectReference: {fileID: 9100000, guid: 10cab48a7471ecd4f904149dcb45f8c9, type: 2}
     - target: {fileID: -150980145948101271, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_Size.x
       value: 0.12
@@ -1743,6 +1743,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CagedSpider
       objectReference: {fileID: 0}
+    - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8191069111030342767, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_LocalScale.x
       value: 9.99
@@ -1757,11 +1765,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8191069111030342767, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.454
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 8191069111030342767, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.167
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 8191069111030342767, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2974,3 +2982,4 @@ SceneRoots:
   - {fileID: 253213109}
   - {fileID: 741563902}
   - {fileID: 1311096807}
+  - {fileID: 1153652336}

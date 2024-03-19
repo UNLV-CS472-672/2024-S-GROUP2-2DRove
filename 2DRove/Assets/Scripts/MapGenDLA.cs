@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace MapGenDLA
 {
@@ -23,6 +24,8 @@ namespace MapGenDLA
         // public static Dictionary<Vector2Int, GameObject> tilePositions = new();
         enum Direction { UpRight, DownLeft, UpLeft, DownRight };
         public static HashSet<Vector2Int> tilePositions = new();
+        // We need to make sure we are not creating border tiles on top of each other
+        public static HashSet<Vector2Int> borderPositions = new();
         public static Dictionary<Vector2Int, GameObject> tileObjects = new();
 
         void Start()
@@ -66,12 +69,17 @@ namespace MapGenDLA
             {
                 Vector2Int position = tile.Key;
                 GameObject tileObject = tile.Value;
+                // Our directions considering we are isometric
+                Vector2Int RightUp = Vector2Int.right + Vector2Int.up;
+                Vector2Int LeftUp = Vector2Int.left + Vector2Int.up;
+                Vector2Int RightDown = Vector2Int.right + Vector2Int.down;
+                Vector2Int LeftDown = Vector2Int.left + Vector2Int.down;
 
                 //Check the neighboring tiles
-                CheckAndAddBorder(position + Vector2Int.up, tileObject, Vector2.up);
-                CheckAndAddBorder(position + Vector2Int.down, tileObject, Vector2.down);
-                CheckAndAddBorder(position + Vector2Int.left, tileObject, Vector2.left);
-                CheckAndAddBorder(position + Vector2Int.right, tileObject, Vector2.right);
+                CheckAndAddBorder(position + RightUp, tileObject);
+                CheckAndAddBorder(position + LeftUp, tileObject);
+                CheckAndAddBorder(position + RightDown, tileObject);
+                CheckAndAddBorder(position + LeftDown, tileObject);
             }
 
             //todo: implement FillInEmptySpace to work for isometric
@@ -193,20 +201,27 @@ namespace MapGenDLA
 
         
 
-        void CheckAndAddBorder(Vector2Int position, GameObject tileObject, Vector2 direction)
+        void CheckAndAddBorder(Vector2Int position, GameObject tileObject)
         {
-            // If the neighboring tile is empty, add a border
-            if (!tileObjects.ContainsKey(position))
+            // If the neighboring tile is empty (either a basic tile or border), add a border
+            if (!tilePositions.Contains(position) && !borderPositions.Contains(position))
             {
-                AddBorder(tileObject, direction);
+                AddBorder(tileObject, position);
             }
         }
-        void AddBorder(GameObject tileObject, Vector2 direction)
+        void AddBorder(GameObject tileObject, Vector2Int position)
         {
-            GameObject border = Instantiate(borderPrefab, tileObject.transform.position + (Vector3)direction * 0.5f, Quaternion.identity);
+            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * 10, position.y * scale * 5, 0), Quaternion.identity);
+            border.name = "Border(" + position.x + ", " + position.y + ")";
             border.transform.parent = tileObject.transform;
-            BoxCollider2D collider = border.AddComponent<BoxCollider2D>();
-            collider.size = new Vector2(1, 1);
+            border.transform.localScale = new Vector3(scale / 2, scale / 2, 1);
+            // Place the tile lower in the layers
+            border.GetComponent<Renderer>().sortingOrder = -1;
+            // Apply a tilemap collider to give all the tiles on the tilemap a collider
+            TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
+            Tilemap tilemap = border.GetComponent<Tilemap>();
+            // Keep it in a list so we do not stack borders on top of each other when checking
+            borderPositions.Add(position);
         }
     }
 

@@ -8,6 +8,8 @@ namespace MapGenDLA
     {
         [SerializeField] GameObject tile;
         [SerializeField] GameObject borderPrefab;
+
+        [SerializeField] GameObject exitPrefab;
         // [SerializeField] int cycles = 2;
         // [SerializeField] int steps = 50;
         
@@ -30,6 +32,10 @@ namespace MapGenDLA
 
         void Start()
         {
+            //Clear at the start of a scene being loaded
+            tilePositions.Clear();
+            borderPositions.Clear();
+            tileObjects.Clear();
             //checks for SerializeFields
             int possibleTiles = Mathf.Abs(maxX-minX+1) * Mathf.Abs(maxY-minY+1);
             if(possibleTiles < tileNum){
@@ -82,7 +88,9 @@ namespace MapGenDLA
                 CheckAndAddBorder(position + LeftDown, tileObject);
             }
 
-            
+            //Add an exit
+            Vector2Int farthestTile = FindFarthestTile(new Vector2Int(0, 0));
+            AddExit(tileObjects[farthestTile], farthestTile);
 
             //todo: implement FillInEmptySpace to work for isometric
             // FillInEmptySpace();
@@ -204,8 +212,6 @@ namespace MapGenDLA
         //     Debug.Log("Empty Space generated: " + tilePositions.Count);
         // }
 
-        
-
         void CheckAndAddBorder(Vector2Int position, GameObject tileObject)
         {
             // If the neighboring tile is empty (either a basic tile or border), add a border
@@ -216,7 +222,7 @@ namespace MapGenDLA
         }
         void AddBorder(GameObject tileObject, Vector2Int position)
         {
-            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * 10, position.y * scale * 5, 0), Quaternion.identity);
+            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * maxX, position.y * scale * maxY/2, 0), Quaternion.identity);
             border.name = "Border(" + position.x + ", " + position.y + ")";
             border.transform.parent = tileObject.transform;
             border.transform.localScale = new Vector3(scale / 2, scale / 2, 1);
@@ -227,6 +233,33 @@ namespace MapGenDLA
             TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
             // Keep it in a list so we do not stack borders on top of each other when checking
             borderPositions.Add(position);
+        }
+
+        void AddExit(GameObject tileObject, Vector2Int position)
+        {
+            GameObject exit = Instantiate(exitPrefab, new Vector3(position.x * scale * maxX + scale * maxX/2, position.y * scale * maxY/2 + scale * 2.5f, 0), Quaternion.identity);
+            exit.name = "Exit(" + position.x + ", " + position.y + ")";
+            exit.transform.parent = tileObject.transform;
+            exit.transform.localScale = new Vector3(scale, scale, 1);
+            //Add a collider to the exit
+            BoxCollider2D collider = exit.AddComponent<BoxCollider2D>();
+            collider.isTrigger = true;
+        }
+
+        Vector2Int FindFarthestTile(Vector2Int startPoint)
+        {
+            Vector2Int farthestTile = new Vector2Int(0, 0);
+            float maxDistance = 0;
+            foreach (var tile in tilePositions)
+            {
+                float distance = Vector2Int.Distance(startPoint, tile);
+                if (distance > maxDistance)
+                {
+                    maxDistance = distance;
+                    farthestTile = tile;
+                }
+            }
+            return farthestTile;
         }
     }
 

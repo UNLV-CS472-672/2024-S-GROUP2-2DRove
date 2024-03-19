@@ -82,6 +82,8 @@ namespace MapGenDLA
                 CheckAndAddBorder(position + LeftDown, tileObject);
             }
 
+            
+
             //todo: implement FillInEmptySpace to work for isometric
             // FillInEmptySpace();
 

@@ -526,6 +526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b68a389ea5e0342ac566848585190a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lineWidth: 1
 --- !u!114 &602447685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,13 +540,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
-  borderPrefab: {fileID: 9148618936101596910, guid: 0782699ad0b610845b181582b233c853, type: 3}
+  borderPrefab: {fileID: 9148618936101596910, guid: c12282422f5fbdd4fa47b11c1aad7867, type: 3}
   tileNum: 20
   scale: 2
-  maxX: 5
-  maxY: 5
-  minX: -5
-  minY: -5
+  maxX: 10
+  maxY: 10
+  minX: -10
+  minY: -10
 --- !u!1 &1102318596
 GameObject:
   m_ObjectHideFlags: 0

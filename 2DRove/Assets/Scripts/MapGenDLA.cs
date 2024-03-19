@@ -154,12 +154,13 @@ namespace MapGenDLA
                 Mathf.Max returns the larger of the two numbers
                 Example: Mathf.Min(5, 10) returns 5
             */
+            int distance = 1;
             switch (direction)
             {
-                case 0: return new Vector2Int(Mathf.Clamp(position.x + 1,minX, maxX), Mathf.Clamp(position.y+1, minY, maxY));//ur
-                case 1: return new Vector2Int(Mathf.Clamp(position.x - 1, minX, maxX), Mathf.Clamp(position.y-1, minY, maxY));//dl
-                case 2: return new Vector2Int(Mathf.Clamp(position.x-1, minX, maxX), Mathf.Clamp(position.y + 1, minY, maxY));//ul
-                case 3: return new Vector2Int(Mathf.Clamp(position.x+1, minX, maxX), Mathf.Clamp(position.y - 1, minY, maxY));//dr
+                case 0: return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
+                case 1: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
+                case 2: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
+                case 3: return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
 
                 default: return position;
             }
@@ -177,27 +178,29 @@ namespace MapGenDLA
 
         }
 
+
+        // Deprecated for now.
         // Fills in the empty space created between tiles and the border similarly to tile generation. 
-        void FillInEmptySpace()
-        {
-            // Generate empty space
-            for (int i = minX-1; i <= maxX+1; i++)
-                for (int j = minY-1; j <= maxY+1; j++)
-                {
-                    Debug.Log("Generating empty space for: " + i + " " + j);
-                    // Check if the position is already occupied
-                    if (!tilePositions.Contains(new Vector2Int(i, j)))
-                    {
-                        GameObject emptyTiles = Instantiate(tile, new Vector3(i * scale*10, j * scale*5, 0), Quaternion.identity);
-                        emptyTiles.name = "EmptyTile(" + i + ", " + j + ")";
-                        emptyTiles.transform.localScale = new Vector3(scale, scale, 1);
-                        emptyTiles.GetComponent<SpriteRenderer>().color = Color.black;
-                        emptyTiles.AddComponent<BoxCollider2D>();
-                        tilePositions.Add(new Vector2Int(i, j));
-                    }
-                }
-            Debug.Log("Empty Space generated: " + tilePositions.Count);
-        }
+        // void FillInEmptySpace()
+        // {
+        //     // Generate empty space
+        //     for (int i = minX-1; i <= maxX+1; i++)
+        //         for (int j = minY-1; j <= maxY+1; j++)
+        //         {
+        //             Debug.Log("Generating empty space for: " + i + " " + j);
+        //             // Check if the position is already occupied
+        //             if (!tilePositions.Contains(new Vector2Int(i, j)))
+        //             {
+        //                 GameObject emptyTiles = Instantiate(tile, new Vector3(i * scale*10, j * scale*5, 0), Quaternion.identity);
+        //                 emptyTiles.name = "EmptyTile(" + i + ", " + j + ")";
+        //                 emptyTiles.transform.localScale = new Vector3(scale, scale, 1);
+        //                 emptyTiles.GetComponent<SpriteRenderer>().color = Color.black;
+        //                 emptyTiles.AddComponent<BoxCollider2D>();
+        //                 tilePositions.Add(new Vector2Int(i, j));
+        //             }
+        //         }
+        //     Debug.Log("Empty Space generated: " + tilePositions.Count);
+        // }
 
         
 

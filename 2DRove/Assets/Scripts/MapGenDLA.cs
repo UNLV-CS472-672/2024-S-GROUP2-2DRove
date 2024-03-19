@@ -223,8 +223,8 @@ namespace MapGenDLA
             // Place the tile lower in the layers
             border.GetComponent<Renderer>().sortingOrder = -1;
             // Apply a tilemap collider to give all the tiles on the tilemap a collider
-            TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
             Tilemap tilemap = border.GetComponent<Tilemap>();
+            TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
             // Keep it in a list so we do not stack borders on top of each other when checking
             borderPositions.Add(position);
         }

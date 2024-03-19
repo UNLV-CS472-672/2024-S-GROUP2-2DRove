@@ -389,9 +389,6 @@ MonoBehaviour:
   playerInput: {fileID: 409696410}
   sprintSpeed: 50
   moveSpeed: 30
-  tileLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
+  borderPrefab: {fileID: 9148618936101596910, guid: 0782699ad0b610845b181582b233c853, type: 3}
   tileNum: 20
   scale: 2
   maxX: 5

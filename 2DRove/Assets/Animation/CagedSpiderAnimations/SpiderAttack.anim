@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SpiderTouch
+  m_Name: SpiderAttack
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -34,8 +34,6 @@ AnimationClip:
       value: {fileID: -3720862128604698080, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
     - time: 0.5
       value: {fileID: 570161265209609646, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
-    - time: 0.5833333
-      value: {fileID: 1101561605388807911, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -65,13 +63,12 @@ AnimationClip:
     - {fileID: 7020246651675954241, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
     - {fileID: -3720862128604698080, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
     - {fileID: 570161265209609646, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
-    - {fileID: 1101561605388807911, guid: 16c6be884a170514b82c3053d5ed53b2, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666666
+    m_StopTime: 0.5833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

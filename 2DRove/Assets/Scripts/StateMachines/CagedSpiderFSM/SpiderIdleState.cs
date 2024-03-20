@@ -7,7 +7,7 @@ public class SpiderIdleState : SpiderBaseState
     private Transform player;
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Wake State...");
+        Debug.Log("Spider entering Wake State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

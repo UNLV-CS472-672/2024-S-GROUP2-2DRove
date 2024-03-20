@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 namespace MapGenDLA
 {
     public class MapGenDLA : MonoBehaviour
     {
         [SerializeField] GameObject tile;
+        [SerializeField] GameObject borderPrefab;
         // [SerializeField] int cycles = 2;
         // [SerializeField] int steps = 50;
         
@@ -22,6 +24,9 @@ namespace MapGenDLA
         // public static Dictionary<Vector2Int, GameObject> tilePositions = new();
         enum Direction { UpRight, DownLeft, UpLeft, DownRight };
         public static HashSet<Vector2Int> tilePositions = new();
+        // We need to make sure we are not creating border tiles on top of each other
+        public static HashSet<Vector2Int> borderPositions = new();
+        public static Dictionary<Vector2Int, GameObject> tileObjects = new();
 
         void Start()
         {
@@ -60,6 +65,25 @@ namespace MapGenDLA
                 i++;
             }
 
+            foreach (var tile in tileObjects)
+            {
+                Vector2Int position = tile.Key;
+                GameObject tileObject = tile.Value;
+                // Our directions considering we are isometric
+                Vector2Int RightUp = Vector2Int.right + Vector2Int.up;
+                Vector2Int LeftUp = Vector2Int.left + Vector2Int.up;
+                Vector2Int RightDown = Vector2Int.right + Vector2Int.down;
+                Vector2Int LeftDown = Vector2Int.left + Vector2Int.down;
+
+                //Check the neighboring tiles
+                CheckAndAddBorder(position + RightUp, tileObject);
+                CheckAndAddBorder(position + LeftUp, tileObject);
+                CheckAndAddBorder(position + RightDown, tileObject);
+                CheckAndAddBorder(position + LeftDown, tileObject);
+            }
+
+            
+
             //todo: implement FillInEmptySpace to work for isometric
             // FillInEmptySpace();
 
@@ -70,8 +94,10 @@ namespace MapGenDLA
         {
             GameObject firstTile = Instantiate(tile, new Vector3(0, 0, 0), Quaternion.identity);
             firstTile.name = "Tile(0,0)";
+            //firstTile.layer = LayerMask.NameToLayer("TileLayer");
             firstTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(new Vector2Int(0,0));
+            tileObjects.Add(new Vector2Int(0,0), firstTile);
 
             Debug.Log("Starting Tile Made!");
         }
@@ -130,12 +156,13 @@ namespace MapGenDLA
                 Mathf.Max returns the larger of the two numbers
                 Example: Mathf.Min(5, 10) returns 5
             */
+            int distance = 1;
             switch (direction)
             {
-                case 0: return new Vector2Int(Mathf.Clamp(position.x + 1,minX, maxX), Mathf.Clamp(position.y+1, minY, maxY));//ur
-                case 1: return new Vector2Int(Mathf.Clamp(position.x - 1, minX, maxX), Mathf.Clamp(position.y-1, minY, maxY));//dl
-                case 2: return new Vector2Int(Mathf.Clamp(position.x-1, minX, maxX), Mathf.Clamp(position.y + 1, minY, maxY));//ul
-                case 3: return new Vector2Int(Mathf.Clamp(position.x+1, minX, maxX), Mathf.Clamp(position.y - 1, minY, maxY));//dr
+                case 0: return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
+                case 1: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
+                case 2: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
+                case 3: return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
 
                 default: return position;
             }
@@ -145,32 +172,61 @@ namespace MapGenDLA
         private void CreatePreviousTile(Vector2Int previousPosition)
         {
             GameObject newTile = Instantiate(tile, new Vector3(previousPosition.x * scale * 10, previousPosition.y * scale * 5, 0), Quaternion.identity);
+            //newTile.layer = LayerMask.NameToLayer("TileLayer");
             newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
             newTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(previousPosition);
+            tileObjects.Add(previousPosition, newTile);
 
         }
 
+
+        // Deprecated for now.
         // Fills in the empty space created between tiles and the border similarly to tile generation. 
-        void FillInEmptySpace()
+        // void FillInEmptySpace()
+        // {
+        //     // Generate empty space
+        //     for (int i = minX-1; i <= maxX+1; i++)
+        //         for (int j = minY-1; j <= maxY+1; j++)
+        //         {
+        //             Debug.Log("Generating empty space for: " + i + " " + j);
+        //             // Check if the position is already occupied
+        //             if (!tilePositions.Contains(new Vector2Int(i, j)))
+        //             {
+        //                 GameObject emptyTiles = Instantiate(tile, new Vector3(i * scale*10, j * scale*5, 0), Quaternion.identity);
+        //                 emptyTiles.name = "EmptyTile(" + i + ", " + j + ")";
+        //                 emptyTiles.transform.localScale = new Vector3(scale, scale, 1);
+        //                 emptyTiles.GetComponent<SpriteRenderer>().color = Color.black;
+        //                 emptyTiles.AddComponent<BoxCollider2D>();
+        //                 tilePositions.Add(new Vector2Int(i, j));
+        //             }
+        //         }
+        //     Debug.Log("Empty Space generated: " + tilePositions.Count);
+        // }
+
+        
+
+        void CheckAndAddBorder(Vector2Int position, GameObject tileObject)
         {
-            // Generate empty space
-            for (int i = minX-1; i <= maxX+1; i++)
-                for (int j = minY-1; j <= maxY+1; j++)
-                {
-                    Debug.Log("Generating empty space for: " + i + " " + j);
-                    // Check if the position is already occupied
-                    if (!tilePositions.Contains(new Vector2Int(i, j)))
-                    {
-                        GameObject emptyTiles = Instantiate(tile, new Vector3(i * scale*10, j * scale*5, 0), Quaternion.identity);
-                        emptyTiles.name = "EmptyTile(" + i + ", " + j + ")";
-                        emptyTiles.transform.localScale = new Vector3(scale, scale, 1);
-                        emptyTiles.GetComponent<SpriteRenderer>().color = Color.black;
-                        emptyTiles.AddComponent<BoxCollider2D>();
-                        tilePositions.Add(new Vector2Int(i, j));
-                    }
-                }
-            Debug.Log("Empty Space generated: " + tilePositions.Count);
+            // If the neighboring tile is empty (either a basic tile or border), add a border
+            if (!tilePositions.Contains(position) && !borderPositions.Contains(position))
+            {
+                AddBorder(tileObject, position);
+            }
+        }
+        void AddBorder(GameObject tileObject, Vector2Int position)
+        {
+            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * 10, position.y * scale * 5, 0), Quaternion.identity);
+            border.name = "Border(" + position.x + ", " + position.y + ")";
+            border.transform.parent = tileObject.transform;
+            border.transform.localScale = new Vector3(scale / 2, scale / 2, 1);
+            // Place the tile lower in the layers
+            border.GetComponent<Renderer>().sortingOrder = -1;
+            // Apply a tilemap collider to give all the tiles on the tilemap a collider
+            Tilemap tilemap = border.GetComponent<Tilemap>();
+            TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
+            // Keep it in a list so we do not stack borders on top of each other when checking
+            borderPositions.Add(position);
         }
     }
 

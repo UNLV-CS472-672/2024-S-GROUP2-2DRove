@@ -195,19 +195,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65af4b292c6b6e4583fa4245458c416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 100
   maxHealth: 10
   coins: 0
   speedFactor: 50
   blinkDistance: 5
   blinkCooldown: 1
   shootCooldown: 1
-  projectilePrefab: {fileID: 3833847839207358409, guid: d3594913b3b82534c89d435f6cf70cb3, type: 3}
+  projectilePrefab: {fileID: 9032579860153729722, guid: fccb1090956a9804b86ef8c349819aeb, type: 3}
   slashPoint: {fileID: 8752092245281292779}
   slashRange: 1.5
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  knockbackStrength: 5
 --- !u!114 &3614290600010504197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -262,7 +263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8064289160981386832}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.21, y: -0.025999999, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0}
   m_ConstrainProportionsScale: 0

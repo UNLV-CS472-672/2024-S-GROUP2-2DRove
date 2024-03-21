@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class Exit : MonoBehaviour
 {
     public LoadingScreenManager loadingScreenManager;
-    private static int levelCounter = 0;
+    private static int levelCounter = 1;
 
     void Start()
     {

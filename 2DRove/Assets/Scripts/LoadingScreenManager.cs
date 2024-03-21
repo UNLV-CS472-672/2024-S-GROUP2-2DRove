@@ -15,20 +15,22 @@ public class LoadingScreenManager : MonoBehaviour
 
     IEnumerator LoadAsync(int sceneIndex)
     {
-        float minLoadingTime = 5f; // Minimum time to show the loading screen
+        float minLoadingTime = 2f; // Minimum time to show the loading screen
         float startTime = Time.time;
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        operation.allowSceneActivation = false; // Don't allow the scene to activate until it's fully loaded
         loadingScreenCanvas.gameObject.SetActive(true);
         loadingScreen.SetActive(true);
-        while (!operation.isDone)
+        while (Time.time - startTime < minLoadingTime || !operation.isDone)
         {
-            float timeProgress = (Time.time - startTime) / minLoadingTime;
-            float loadProgress = operation.progress / 0.9f;
-            float progress = Mathf.Clamp01(Mathf.Max(timeProgress, loadProgress));
+            float progress = Mathf.Clamp01((Time.time - startTime) / minLoadingTime);
             loadingBar.value = progress;
+            if (Time.time - startTime >= minLoadingTime && operation.progress >= 0.9f) // If the scene has loaded and the minimum loading time has passed
+            {
+                operation.allowSceneActivation = true; // Allow the scene to activate
+            }
             yield return null;
         }
-        yield return new WaitForSeconds(minLoadingTime - (Time.time - startTime));
         loadingScreenCanvas.gameObject.SetActive(false);
         loadingScreen.SetActive(false);
     }

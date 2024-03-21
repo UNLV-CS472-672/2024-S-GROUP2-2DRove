@@ -66,7 +66,7 @@ namespace MapGenDLA
         }
 
         // First tile: hard coding name and position because it should always start at 0.
-        public void GenerateFirstTile(Vector2Int currentPosition)
+        private void GenerateFirstTile(Vector2Int currentPosition)
         {
             GameObject firstTile = Instantiate(tile, new Vector3(0, 0, 0), Quaternion.identity);
             firstTile.name = "Tile(0,0)";

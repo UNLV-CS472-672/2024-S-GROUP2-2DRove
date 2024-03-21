@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>3/20/2024 - 7:06:41 PM</Generatedon>
+    <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
+    <Assemblies>1</Assemblies>
+    <Classes>4</Classes>
+    <Files>4</Files>
+    <Coveredlines>73</Coveredlines>
+    <Uncoveredlines>201</Uncoveredlines>
+    <Coverablelines>274</Coverablelines>
+    <Totallines>537</Totallines>
+    <Linecoverage>26.6</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+    <Coveredmethods>11</Coveredmethods>
+    <Totalmethods>32</Totalmethods>
+    <Methodcoverage>34.3</Methodcoverage>
+  </Summary>
+  <Coverage>
+    <Assembly name="MapGenAssembly" classes="4" coverage="26.6" coveredlines="73" coverablelines="274" totallines="537" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="11" totalmethods="32" methodcoverage="34.3">
+      <Class name="DLAMapGen" coverage="0" coveredlines="0" coverablelines="128" totallines="194" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="17" methodcoverage="0" />
+      <Class name="MapGen.MapGen" coverage="0" coveredlines="0" coverablelines="57" totallines="101" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="MapGenDLA.MapGenDLA" coverage="81.9" coveredlines="59" coverablelines="72" totallines="179" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="8" methodcoverage="100" />
+      <Class name="Player" coverage="82.3" coveredlines="14" coverablelines="17" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>

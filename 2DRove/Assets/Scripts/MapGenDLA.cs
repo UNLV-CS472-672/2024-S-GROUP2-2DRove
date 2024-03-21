@@ -20,7 +20,7 @@ namespace MapGenDLA
         [SerializeField] int minY = -5;
         // Dictionary to store positions of tiles
         // public static Dictionary<Vector2Int, GameObject> tilePositions = new();
-        enum Direction { UpRight, DownLeft, UpLeft, DownRight };
+        //enum Direction { UpRight, DownLeft, UpLeft, DownRight };
         public static HashSet<Vector2Int> tilePositions = new();
 
         void Start()
@@ -66,7 +66,7 @@ namespace MapGenDLA
         }
 
         // First tile: hard coding name and position because it should always start at 0.
-        private void GenerateFirstTile(Vector2Int currentPosition)
+        public void GenerateFirstTile(Vector2Int currentPosition)
         {
             GameObject firstTile = Instantiate(tile, new Vector3(0, 0, 0), Quaternion.identity);
             firstTile.name = "Tile(0,0)";
@@ -150,7 +150,8 @@ namespace MapGenDLA
             tilePositions.Add(previousPosition);
 
         }
-
+// Deprecated, we implemented a new method to do this on another branch
+/*
         // Fills in the empty space created between tiles and the border similarly to tile generation. 
         void FillInEmptySpace()
         {
@@ -172,6 +173,7 @@ namespace MapGenDLA
                 }
             Debug.Log("Empty Space generated: " + tilePositions.Count);
         }
+*/
     }
 
 }

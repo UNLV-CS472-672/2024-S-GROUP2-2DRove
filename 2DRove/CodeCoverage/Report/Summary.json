@@ -1,0 +1,27 @@
+{
+  "summary": {
+    "generatedon": "2024-03-21T02:06:41Z",
+    "parser": "MultiReportParser (2x OpenCoverParser)",
+    "assemblies": 1,
+    "classes": 4,
+    "files": 4,
+    "coveredlines": 73,
+    "uncoveredlines": 201,
+    "coverablelines": 274,
+    "totallines": 537,
+    "linecoverage": 26.6,
+    "coveredbranches": 0,
+    "totalbranches": 0,
+    "coveredmethods": 11,
+    "totalmethods": 32,
+    "methodcoverage": 34.3
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "MapGenAssembly", "classes": 4, "coverage": 26.6, "coveredlines": 73, "coverablelines": 274, "totallines": 537, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 34.3, "coveredmethods": 11, "totalmethods": 32, "classesinassembly": [
+        { "name": "DLAMapGen", "coverage": 0, "coveredlines": 0, "coverablelines": 128, "totallines": 194, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 17 },
+        { "name": "MapGen.MapGen", "coverage": 0, "coveredlines": 0, "coverablelines": 57, "totallines": 101, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
+        { "name": "MapGenDLA.MapGenDLA", "coverage": 81.9, "coveredlines": 59, "coverablelines": 72, "totallines": 179, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 8, "totalmethods": 8 },
+        { "name": "Player", "coverage": 82.3, "coveredlines": 14, "coverablelines": 17, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 } ] } ]
+  }
+}

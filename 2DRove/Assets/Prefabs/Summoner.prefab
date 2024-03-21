@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7779842288227567658}
   - component: {fileID: -781768465481185257}
   - component: {fileID: 8724349399916483158}
+  - component: {fileID: 8946580072168331372}
   m_Layer: 7
   m_Name: Summoner
   m_TagString: Enemy
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -215,7 +216,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.075, y: 0.19}
+  m_Offset: {x: 0.2, y: 0.17}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.14285718, y: -0.027777778}
@@ -226,7 +227,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21000001, y: 0.36}
+  m_Size: {x: 0.25, y: 0.15}
   m_EdgeRadius: 0
 --- !u!114 &-781768465481185257
 MonoBehaviour:
@@ -240,6 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee2a52bf540f605429ab7f1a34180fc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!114 &8724349399916483158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,3 +256,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   animator: {fileID: 719559770693969259}
+--- !u!70 &8946580072168331372
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146096097140963350}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 439
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.18, y: 0.17}
+  m_Size: {x: 0.25, y: 0.18}
+  m_Direction: 1

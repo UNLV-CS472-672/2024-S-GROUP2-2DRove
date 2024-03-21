@@ -7,7 +7,7 @@ public class GhoulIdleState : GhoulBaseState
     private Transform player;
     public override void EnterState(GhoulStateManager ghoul)
     {
-        Debug.Log("Entering Wake State...");
+        Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -25,5 +25,15 @@ public class GhoulIdleState : GhoulBaseState
     } 
 
     public override void OnTriggerStay2D(GhoulStateManager ghoul, Collider2D other) {
+    }
+
+    public override void EventTrigger(GhoulStateManager ghoul)
+    {
+
+    }
+
+    public override void TakeDamage(GhoulStateManager ghoul)
+    {
+        ghoul.SwitchState(ghoul.HitState);
     }
 }

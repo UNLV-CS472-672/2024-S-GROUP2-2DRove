@@ -1,15 +1,15 @@
 {
   "summary": {
-    "generatedon": "2024-03-21T02:19:23Z",
+    "generatedon": "2024-03-21T23:21:56Z",
     "parser": "MultiReportParser (2x OpenCoverParser)",
     "assemblies": 1,
     "classes": 4,
     "files": 4,
-    "coveredlines": 73,
+    "coveredlines": 74,
     "uncoveredlines": 201,
-    "coverablelines": 274,
+    "coverablelines": 275,
     "totallines": 537,
-    "linecoverage": 26.6,
+    "linecoverage": 26.9,
     "coveredbranches": 0,
     "totalbranches": 0,
     "coveredmethods": 11,
@@ -18,10 +18,10 @@
  },
   "coverage": {
     "assemblies": [
-      { "name": "MapGenAssembly", "classes": 4, "coverage": 26.6, "coveredlines": 73, "coverablelines": 274, "totallines": 537, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 34.3, "coveredmethods": 11, "totalmethods": 32, "classesinassembly": [
+      { "name": "MapGenAssembly", "classes": 4, "coverage": 26.9, "coveredlines": 74, "coverablelines": 275, "totallines": 537, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 34.3, "coveredmethods": 11, "totalmethods": 32, "classesinassembly": [
         { "name": "DLAMapGen", "coverage": 0, "coveredlines": 0, "coverablelines": 128, "totallines": 194, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 17 },
         { "name": "MapGen.MapGen", "coverage": 0, "coveredlines": 0, "coverablelines": 57, "totallines": 101, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
-        { "name": "MapGenDLA.MapGenDLA", "coverage": 81.9, "coveredlines": 59, "coverablelines": 72, "totallines": 179, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 8, "totalmethods": 8 },
+        { "name": "MapGenDLA.MapGenDLA", "coverage": 82.1, "coveredlines": 60, "coverablelines": 73, "totallines": 179, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 8, "totalmethods": 8 },
         { "name": "Player", "coverage": 82.3, "coveredlines": 14, "coverablelines": 17, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 } ] } ]
   }
 }

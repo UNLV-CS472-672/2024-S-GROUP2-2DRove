@@ -10,11 +10,11 @@ public class MapGenDLATest
     //private MapGenDLA.MapGenDLA testDLA;
     //private GameObject testObject;
     // A Test behaves as an ordinary method
-    [SetUp]
-    public void Setup()
+    [UnitySetUp]
+    public IEnumerator SetUp()
     {
-        SceneManager.LoadScene("Maps/Floor1");
-        // Use the Assert class to test conditions
+        // Load the test scene
+        yield return SceneManager.LoadSceneAsync("Maps/Floor1", LoadSceneMode.Single);
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
@@ -22,12 +22,14 @@ public class MapGenDLATest
     [UnityTest]
     public IEnumerator MapGenerated()
     {
-        //Assert.IsNotNull(testDLA);
 
-        //testDLA.GenerateFirstTile(new Vector2Int(0, 0));
-        // Use the Assert class to test conditions.
-        // Use yield to skip a frame.
+        GameObject mapGenObject = GameObject.Find("Start");
+        MapGenDLA.MapGenDLA mapGenerator = mapGenObject.GetComponent<MapGenDLA.MapGenDLA>();
+        Assert.IsNotNull(mapGenerator, "MapGenDLA component not found");
+
         yield return null;
+
+
     }
 
 }

@@ -5,7 +5,7 @@ namespace MapGenDLA
 {
     public class MapGenDLA : MonoBehaviour
     {
-        [SerializeField] GameObject tile;
+        [SerializeField] public GameObject tile;
         // [SerializeField] int cycles = 2;
         // [SerializeField] int steps = 50;
         
@@ -148,7 +148,7 @@ namespace MapGenDLA
             newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
             newTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(previousPosition);
-
+            Debug.Log("Tile(" + previousPosition.x + ", " + previousPosition.y + ") Made!");
         }
 // Deprecated, we implemented a new method to do this on another branch
 /*

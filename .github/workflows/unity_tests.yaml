@@ -31,7 +31,7 @@ jobs:
         uses: game-ci/unity-test-runner@v4.1.1
         # Need to generate Pro Unity license with Github secrets to get this to work   
         env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
         with:
           unityVersion: 2022.3.19f1
           testMode: playmode

@@ -1,0 +1,24 @@
+{
+  "summary": {
+    "generatedon": "2024-03-22T00:36:12Z",
+    "parser": "MultiReportParser (2x OpenCoverParser)",
+    "assemblies": 1,
+    "classes": 1,
+    "files": 1,
+    "coveredlines": 5,
+    "uncoveredlines": 0,
+    "coverablelines": 5,
+    "totallines": 25,
+    "linecoverage": 100,
+    "coveredbranches": 0,
+    "totalbranches": 0,
+    "coveredmethods": 2,
+    "totalmethods": 2,
+    "methodcoverage": 100
+ },
+  "coverage": {
+    "assemblies": [
+      { "name": "Tests", "classes": 1, "coverage": 100, "coveredlines": 5, "coverablelines": 5, "totallines": 25, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2, "classesinassembly": [
+        { "name": "MainTest", "coverage": 100, "coveredlines": 5, "coverablelines": 5, "totallines": 25, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 } ] } ]
+  }
+}

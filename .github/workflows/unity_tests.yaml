@@ -33,7 +33,6 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
-	        # Our Unity Version should be standardized to this
           unityVersion: 2022.3.19f1
           testMode: playmode
           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateAdditionalMetrics

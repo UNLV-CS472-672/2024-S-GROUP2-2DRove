@@ -1,0 +1,40 @@
+name: 2DRove CI workflow
+
+on:
+  # Replace with whatever branch you're working on :)
+  push: 
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  runTests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # Does something   
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      # Does something
+      - name: Cache Library
+        uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library
+      # Runs tests using integrated Test Runner for workflows
+      - name: Unity - Test runner
+        uses: game-ci/unity-test-runner@v4.1.1
+        # Need to generate Pro Unity license with Github secrets to get this to work   
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+	        # Our Unity Version should be standardized to this
+          unityVersion: 2022.3.19f1
+          testMode: playmode
+          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateAdditionalMetrics
+            

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using CreateBorder;
+// using CreateBorder;
 using UnityEngine.Tilemaps;
 using UnityEngine.SceneManagement;
 
@@ -24,7 +24,7 @@ namespace MapGenDLANamespace
         public int topMost = 0;
         public int bottomMost = 0;
 
-        private DrawBorder drawBorder;
+        // private DrawBorder drawBorder;
 
 
         [SerializeField] public int scale = 20;
@@ -84,8 +84,8 @@ namespace MapGenDLANamespace
             Debug.Log(bottomMost);
             Debug.Log(rightMost);
             Debug.Log(topMost);
-            drawBorder = GetComponent<DrawBorder>();
-            drawBorder.DrawBorderLine(leftMost * 35, bottomMost * 35, rightMost * 35, topMost * 35);
+            // drawBorder = GetComponent<DrawBorder>();
+            // drawBorder.DrawBorderLine(leftMost * 35, bottomMost * 35, rightMost * 35, topMost * 35);
 
 
             foreach (var tile in tileObjects)

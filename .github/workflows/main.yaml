@@ -37,7 +37,6 @@ jobs:
         with:
           projectPath: 2DRove
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-        with:
           unityVersion: 2022.3.19f1
           testMode: playmode
           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateAdditionalMetrics

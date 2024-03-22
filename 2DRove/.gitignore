@@ -70,3 +70,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore our CodeCoverage folder (it changes a lot and causes merge conflicts)
+CodeCoverage/
+
+# Ignore our Tests meta file (I think our assemblies might cause merge conflicts still)
+Assets/Tests.meta

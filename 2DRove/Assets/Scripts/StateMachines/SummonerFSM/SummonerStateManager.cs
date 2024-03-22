@@ -14,24 +14,36 @@ public class SummonerStateManager : MonoBehaviour
     public SummonerIdleState IdleState = new SummonerIdleState();
     public SummonerSpawnState SpawnState = new SummonerSpawnState();
 
+    private NewEnemy newEnemy; // Reference to NewEnemy component
+
+
     // Start is called before the first frame update
     void Start()
     {
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        newEnemy = GetComponent<NewEnemy>(); // Assign NewEnemy component
+
     }
 
     // Update is called once per frame
     void Update()
     {
         currentState.UpdateState(this);
+
+           // Check for death condition if not already in DeathState
+        if (currentState != DeathState && newEnemy.CurrentHeath() <= 0)
+        {
+            SwitchState(DeathState);
+        }
     }
 
-    private void OnTriggerStay2D(Collider2D other) {
+    private void OnTriggerStay2D(Collider2D other)
+    {
         currentState.OnTriggerStay2D(this, other);
     }
-    
+
     public void SwitchState(SummonerBaseState state)
     {
         currentState = state;

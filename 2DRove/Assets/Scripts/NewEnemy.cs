@@ -24,6 +24,7 @@ public class NewEnemy : MonoBehaviour
     {
         currentHealth -= damage;
         animator.SetTrigger("hit");
+        
     }
 
     public void TakeRangedDamage(float rangedDamage)

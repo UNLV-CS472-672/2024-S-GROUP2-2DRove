@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Maps/Floor1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Maps/Floor2.unity
+    guid: 42bb9c610a0d6a74cae3b9388841dea2
+  - enabled: 1
+    path: Assets/Maps/Floor3.unity
+    guid: 43a2136eee3f2e842ad03348ff0e329c
+  - enabled: 1
+    path: Assets/Maps/Floor4.unity
+    guid: e0949d2cda886f942b997359e717cf76
+  - enabled: 1
+    path: Assets/Maps/Floor5.unity
+    guid: 118f87dbda897bf45a68211040c19a3e
+  - enabled: 1
+    path: Assets/Maps/Victory Screen.unity
+    guid: 90d432eca7646274997eea96df5418e4
   m_configObjects: {}

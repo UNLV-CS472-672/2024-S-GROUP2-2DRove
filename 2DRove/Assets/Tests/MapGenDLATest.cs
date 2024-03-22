@@ -14,7 +14,7 @@ public class MapGenDLATest
     public IEnumerator SetUp()
     {
         // Load the test scene
-        yield return SceneManager.LoadSceneAsync("Maps/Floor1", LoadSceneMode.Single);
+        yield return null;
     }
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
@@ -22,10 +22,14 @@ public class MapGenDLATest
     [UnityTest]
     public IEnumerator MapGenerated()
     {
+        //yield return SceneManager.LoadSceneAsync("Maps/Floor1", LoadSceneMode.Single);
+
 
         GameObject mapGenObject = GameObject.Find("Start");
         MapGenDLA.MapGenDLA mapGenerator = mapGenObject.GetComponent<MapGenDLA.MapGenDLA>();
         Assert.IsNotNull(mapGenerator, "MapGenDLA component not found");
+
+
 
         yield return null;
 

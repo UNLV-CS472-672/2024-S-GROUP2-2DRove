@@ -45,5 +45,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: CodeCoverage/Report/index.HTML
+          path: 2DRove/CodeCoverage/Report/index.HTML
             

@@ -24,10 +24,16 @@ public class GhoulSpawnState : GhoulBaseState
     } 
 
     public override void OnTriggerStay2D(GhoulStateManager ghoul, Collider2D other) {
-        Debug.Log(other.tag);
-        if (other.tag == "Player")
-        {
-            ghoul.SwitchState(ghoul.AttackState);
-        }
+        
+    }
+
+    public override void EventTrigger(GhoulStateManager ghoul)
+    {
+
+    }
+
+    public override void TakeDamage(GhoulStateManager ghoul)
+    {
+        ghoul.SwitchState(ghoul.HitState);
     }
 }

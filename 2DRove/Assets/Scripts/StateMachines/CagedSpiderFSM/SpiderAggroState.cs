@@ -9,7 +9,7 @@ public class SpiderAggroState : SpiderBaseState
 
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Aggro State...");
+        Debug.Log("Spider entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = Spider.GetComponent<Rigidbody2D>();
         animator = Spider.GetComponent<Animator>();

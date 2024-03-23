@@ -6,10 +6,11 @@ public class SpiderAttackState : SpiderBaseState
     private Animator animator;
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Attack State");
+        Debug.Log("Spider entering Attack State");
         attackTime = .9f;
         animator = Spider.GetComponent<Animator>();
         animator.SetBool("attacking", true);
+        animator.SetFloat("velocity", 0);
     }
 
     public override void UpdateState(SpiderStateManager Spider)

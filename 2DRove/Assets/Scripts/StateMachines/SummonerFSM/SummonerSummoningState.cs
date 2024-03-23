@@ -1,99 +1,88 @@
 using UnityEngine;
+using System.Collections; // This line is necessary for IEnumerator
+
 
 public class SummonerSummoningState : SummonerBaseState
 {
-    private float summoningTime = .9f; // Duration before the actual summoning happens
+    public GameObject ghoulPrefab; // Assigned via Unity Inspector
+    // private float summoningTime = 0.5f; // Time before summoning happens
     private Animator animator;
-    public override void EnterState(SummonerStateManager summoner)
-    {
-        Debug.Log("Entering Attack State");
-        summoningTime = .9f;
-        animator = summoner.GetComponent<Animator>();
-        animator.SetBool("isSummoning", true);
-    }
-
-    public override void UpdateState(SummonerStateManager summoner)
-    {
-        if(summoningTime <= 0)
-        {
-            summoner.SwitchState(summoner.IdleState);
-            animator.SetBool("isSummoning", false);
-        }
-
-        summoningTime -= Time.deltaTime;
-    }
-
-    public override void OnCollisionEnter2D(SummonerStateManager summoner, Collision2D other)
-    {
-        
-    }
-    
-    public override void OnTriggerStay2D(SummonerStateManager summoner, Collider2D other) {
-    }
-
-        public override void EventTrigger(SummonerStateManager summoner)
-    {
-
-    }
-    public override void TakeDamage(SummonerStateManager summoner)
-    {
-        summoner.SwitchState(summoner.HitState);
-    }
-}
-
-    /* ERROR - ArgumentException: The Object you want to instantiate is null
-
-    public GameObject ghoulPrefab; // Assign this in the inspector with your Summoner prefab
-    public int numberOfGhoulsToSpawn = 3; // Number of Ghouls to spawn each time
+    private Transform playerTransform;
+    public float summoningRange = 8f; // Range within which summoning continues
+    private int ghoulSummonCount = 0; // Counter for the number of Ghouls summoned
+    public int maxGhouls = 3; // Maximum number of Ghouls to summon
+    public float summonDelay = 1f; // Delay between each Ghoul summoning
 
     public override void EnterState(SummonerStateManager summoner)
     {
         Debug.Log("Summoner: Entering Summoning State...");
-        summoningTime = 2f; // Reset summoning time if needed
         animator = summoner.GetComponent<Animator>();
-        animator.SetBool("isSummoning", true); // Trigger summoning animation
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform; // Find the player
+
+        // Start the summoning process
+        animator.SetBool("isSummoning", true);
+
+        summoner.StartCoroutine(SummonGhoul(summoner));
+    }
+    private IEnumerator SummonGhoul(SummonerStateManager summoner)
+    {
+        while (ghoulSummonCount < maxGhouls)
+        {
+            animator.SetBool("isSummoning", true);
+
+            // Wait for the specified delay to simulate summoning time
+            yield return new WaitForSeconds(summonDelay);
+
+            // Randomize the spawn position around the summoner within a given radius
+            Vector3 spawnOffset = Random.insideUnitCircle * summoningRange; // summoningRange is used as radius here
+            Vector3 spawnPosition = summoner.transform.position + spawnOffset;
+
+            // Instantiate the ghoul prefab
+            if (ghoulPrefab != null)
+            {
+                GameObject.Instantiate(ghoulPrefab, spawnPosition, Quaternion.identity);
+                ghoulSummonCount++;
+            }
+            else
+            {
+                Debug.LogError("Ghoul prefab not assigned in SummonerSummoningState.");
+                break; // Exit the loop if the prefab is not assigned
+            }
+
+            // Reset the animator if we've reached the max number of ghouls
+            if (ghoulSummonCount >= maxGhouls)
+            {
+                animator.SetBool("isSummoning", false);
+                break;
+            }
+        }
+
+        // Once all ghouls are summoned, stop the summoning animation and switch to idle
+        animator.SetBool("isSummoning", false);
+        summoner.SwitchState(summoner.IdleState);
     }
 
     public override void UpdateState(SummonerStateManager summoner)
     {
-        if (summoningTime <= 0)
+        // Check if the player has moved out of summoning range
+        if (Vector3.Distance(summoner.transform.position, playerTransform.position) > summoningRange)
         {
-            PerformSummoning(summoner);
-            summoningTime = 2f; // Reset time if want to summoning multiple times
-        }
-        else
-        {
-            summoningTime -= Time.deltaTime;
+            Debug.Log("Player moved out of summoning range. Switching state.");
+            animator.SetBool("isSummoning", false);
+            summoner.SwitchState(summoner.AggroState); // Switch back to AggroState
         }
     }
 
-    private void PerformSummoning(SummonerStateManager summoner)
-    {
-        animator.SetBool("isSummoning", false); // Stop summoning animation
 
-        for (int i = 0; i < numberOfGhoulsToSpawn; i++)
-        {
-            // Calculate spawn position (around the summoner)
-           //  Vector3 spawnPosition = summoner.transform.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0);
-
-            // Instantiate the ghoul at the spawn position
-            GameObject spawnedGhoul = GameObject.Instantiate(ghoulPrefab, spawnPosition, Quaternion.identity);
-            // Optional: Initialize the ghoul with any specific state or settings
-        }
-
-        // Switch back to idle or any other state as needed
-        summoner.SwitchState(summoner.IdleState);
-    }
-
-    // Implement other methods as needed, potentially empty if they have no behavior in this state
     public override void OnCollisionEnter2D(SummonerStateManager summoner, Collision2D other)
     {
 
     }
+
     public override void OnTriggerStay2D(SummonerStateManager summoner, Collider2D other)
     {
-
     }
+
     public override void EventTrigger(SummonerStateManager summoner)
     {
 
@@ -103,4 +92,3 @@ public class SummonerSummoningState : SummonerBaseState
         summoner.SwitchState(summoner.HitState);
     }
 }
-*/

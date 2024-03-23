@@ -19,14 +19,6 @@ namespace MapGenDLANamespace
         // [SerializeField] int tileSizeX = 20;
         // [SerializeField] int tileSizeY = 20;
 
-        public int leftMost = 0;
-        public int rightMost = 0;
-        public int topMost = 0;
-        public int bottomMost = 0;
-
-        // private DrawBorder drawBorder;
-
-
         [SerializeField] public int scale = 20;
         [SerializeField] public int maxX = 5;
         [SerializeField] public int maxY = 5;
@@ -67,6 +59,12 @@ namespace MapGenDLANamespace
             // Generate first tile at (0, 0)
             GenerateFirstTile(currentPosition);
 
+            // Used for determining endpoint direction for implementing map generation direction bias
+            Vector2Int endpoint = GenerateRandomBorderEndpoint();
+
+            // Generate Endpoint tile 
+            //CreatePreviousTile(endpoint);
+
             int i = 1;  // Tile counter 
             while(i < tileNum){
 
@@ -74,18 +72,12 @@ namespace MapGenDLANamespace
                 currentPosition = RandomDirection();
 
                 // Find open, non-border tile 
-                FindOpenTile(ref currentPosition, ref previousPosition);
+                FindOpenTile(ref currentPosition, ref previousPosition, endpoint);
 
                 //Create a new tile where the previous tile was
                 CreatePreviousTile(previousPosition);
                 i++;
             }
-            Debug.Log(leftMost);
-            Debug.Log(bottomMost);
-            Debug.Log(rightMost);
-            Debug.Log(topMost);
-            // drawBorder = GetComponent<DrawBorder>();
-            // drawBorder.DrawBorderLine(leftMost * 35, bottomMost * 35, rightMost * 35, topMost * 35);
 
 
             foreach (var tile in tileObjects)
@@ -105,12 +97,16 @@ namespace MapGenDLANamespace
                 CheckAndAddBorder(position + LeftDown, tileObject);
             }
 
-            //Add an exit
-            Vector2Int farthestTile = FindFarthestTile(new Vector2Int(0, 0));
-            AddExit(tileObjects[farthestTile], farthestTile);
+            // //Add an exit
+            // Vector2Int farthestTile = FindFarthestTile(new Vector2Int(0, 0));
+            // AddExit(tileObjects[farthestTile], farthestTile);
+            Vector2Int closestTile = FindClosestGeneratedTileToEndpoint(endpoint);
+            AddExit(closestTile);
 
-            //todo: implement FillInEmptySpace to work for isometric
-            // FillInEmptySpace();
+
+
+            // //todo: implement FillInEmptySpace to work for isometric
+            // // FillInEmptySpace();
 
         }
 
@@ -142,7 +138,7 @@ namespace MapGenDLANamespace
             return borderDirections[startSide];  // Return the selected border position
         }
 
-        private void FindOpenTile(ref Vector2Int currentPosition, ref Vector2Int previousPosition)
+        private void FindOpenTile(ref Vector2Int currentPosition, ref Vector2Int previousPosition, Vector2Int targetPosition)
         {
             // if the any of the start sides already has a tile on top of it
             // technically this isnt DLA but code breaks if a tile lands on the border of the map
@@ -152,7 +148,7 @@ namespace MapGenDLANamespace
 
                     //do random walks to place the next tile close by
                     int direction = Random.Range(0, 4);
-                    currentPosition = UpdatePosition(direction, currentPosition);
+                    currentPosition = UpdatePosition(direction, currentPosition, targetPosition);
                 }
                 previousPosition = currentPosition;
             }
@@ -169,28 +165,51 @@ namespace MapGenDLANamespace
 
                     // Update current position based on random direction
                     int direction = Random.Range(0, 4);
-                    currentPosition = UpdatePosition(direction, currentPosition);
+                    currentPosition = UpdatePosition(direction, currentPosition, targetPosition);
                 }
             }
         }
 
-        private Vector2Int UpdatePosition(int direction, Vector2Int position)
+        private Vector2Int UpdatePosition(int direction, Vector2Int position, Vector2Int targetPosition)
         {
-            /*
-                Mathf.Min returns the smaller of the two numbers
-                Mathf.Max returns the larger of the two numbers
-                Example: Mathf.Min(5, 10) returns 5
-            */
-            int distance = 1;
-            switch (direction)
-            {
-                case 0: return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
-                case 1: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
-                case 2: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
-                case 3: return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
+            Vector2Int biasDirection = GetBiasDirection(position, targetPosition);
+            int bias = Random.Range(0, 10); // Introduce a bias probability, e.g., 20% chance to follow the bias direction
 
-                default: return position;
+            if (bias < 2) // 20% chance to move towards the target
+            {
+                return new Vector2Int(
+                    Mathf.Clamp(position.x + biasDirection.x, minX, maxX),
+                    Mathf.Clamp(position.y + biasDirection.y, minY, maxY)
+                );
             }
+            else
+            {
+                /*
+                    Mathf.Min returns the smaller of the two numbers
+                    Mathf.Max returns the larger of the two numbers
+                    Example: Mathf.Min(5, 10) returns 5
+                */
+                int distance = 1;
+                switch (direction)
+                {
+                    case 0: return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
+                    case 1: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
+                    case 2: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
+                    case 3: return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
+
+                    default: return position;
+                }
+            }
+
+        }
+
+        private Vector2Int GetBiasDirection(Vector2Int currentPosition, Vector2Int targetPosition)
+        {
+            // Calculate the direction vector towards the target
+            Vector2Int direction = targetPosition - currentPosition;
+            direction.x = (int)Mathf.Sign(direction.x);
+            direction.y = (int)Mathf.Sign(direction.y);
+            return direction;
         }
 
         //Create a new tile where the previous tile was
@@ -202,12 +221,6 @@ namespace MapGenDLANamespace
             newTile.transform.localScale = new Vector3(scale, scale, 1);
             tilePositions.Add(previousPosition);
             tileObjects.Add(previousPosition, newTile);
-
-            leftMost = Mathf.Min(leftMost, previousPosition.x);
-            rightMost = Mathf.Max(rightMost, previousPosition.x);
-            topMost = Mathf.Max(topMost, previousPosition.y);
-            bottomMost = Mathf.Min(bottomMost, previousPosition.y);
-
         }
 
 
@@ -257,16 +270,43 @@ namespace MapGenDLANamespace
             borderPositions.Add(position);
         }
 
-        void AddExit(GameObject tileObject, Vector2Int position)
+        void AddExit(Vector2Int closestTile)
         {
-            GameObject exit = Instantiate(exitPrefab, new Vector3(position.x * scale * maxX + scale * maxX/2, position.y * scale * maxY/2 + scale * 2.5f, 0), Quaternion.identity);
-            exit.name = "Exit(" + position.x + ", " + position.y + ")";
-            exit.transform.parent = tileObject.transform;
-            exit.transform.localScale = new Vector3(scale, scale, 1);
-            //Add a collider to the exit
-            BoxCollider2D collider = exit.AddComponent<BoxCollider2D>();
-            collider.isTrigger = true;
+            if (tileObjects.TryGetValue(closestTile, out GameObject tileObject))
+            {
+                // Use the tileObject's position, as it might have been adjusted for your game world
+                Vector3 exitPosition = tileObject.transform.position + new Vector3(0, 0, -1); // Adjust Z if necessary to ensure visibility
+                GameObject exit = Instantiate(exitPrefab, exitPosition, Quaternion.identity);
+                exit.name = "Exit(" + closestTile.x + ", " + closestTile.y + ")";
+                exit.transform.localScale = new Vector3(scale, scale, 1);
+                BoxCollider2D collider = exit.AddComponent<BoxCollider2D>();
+                collider.isTrigger = true;
+            }
+            else
+            {
+                Debug.LogError("Closest tile to endpoint not found in tileObjects.");
+            }
         }
+
+
+        Vector2Int FindClosestGeneratedTileToEndpoint(Vector2Int endpoint)
+        {
+            Vector2Int closestTile = new Vector2Int(0, 0);
+            float minDistance = float.MaxValue; // Corrected initialization
+            foreach (Vector2Int tilePosition in tilePositions)
+            {
+                float distance = Vector2.Distance(tilePosition, endpoint);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    closestTile = tilePosition;
+                }
+            }
+            return closestTile;
+        }
+
+
+
 
         Vector2Int FindFarthestTile(Vector2Int startPoint)
         {
@@ -283,6 +323,31 @@ namespace MapGenDLANamespace
             }
             return farthestTile;
         }
+
+        Vector2Int GenerateRandomBorderEndpoint()
+        {
+            int side = Random.Range(0, 4); // Randomly select one of the four sides
+            int randomPosition;
+
+            switch (side)
+            {
+                case 0: // Top
+                    randomPosition = Random.Range(minX, maxX + 1);
+                    return new Vector2Int(randomPosition, maxY);
+                case 1: // Bottom
+                    randomPosition = Random.Range(minX, maxX + 1);
+                    return new Vector2Int(randomPosition, minY);
+                case 2: // Left
+                    randomPosition = Random.Range(minY, maxY + 1);
+                    return new Vector2Int(minX, randomPosition);
+                case 3: // Right
+                    randomPosition = Random.Range(minY, maxY + 1);
+                    return new Vector2Int(maxX, randomPosition);
+                default:
+                    return new Vector2Int(0, 0); // This case should never be reached
+            }
+        }
+
     }
 
 }

@@ -170,13 +170,8 @@ public class PlayerController : MonoBehaviour
     private void ApplyDamage() {
         Vector2 knockbackDirection = (Vector2)(transform.position - slashPoint.position).normalized;
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(slashPoint.position, slashRange, enemyLayer);
-        //PROBLEM, THIS HITBOX DETECTION APPLIES TO ENEMY HITBOX AS WELL, NOT JUST THEIR BODY HURTBOX
-        //Current fix, only look for box colliders, as current hitboxes for enemies are capsules, while their hurtbox are boxcolliders
         foreach (Collider2D enemy in hitEnemies) {
-            if (enemy is not BoxCollider2D)
-                continue;
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
-            
             if (enemyScript != null) {
                 enemyScript.TakeDamage(playerAttackDamage);
                 Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();

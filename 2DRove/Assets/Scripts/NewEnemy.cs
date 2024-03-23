@@ -24,16 +24,28 @@ public class NewEnemy : MonoBehaviour
     {
         currentHealth -= damage;
         animator.SetTrigger("hit");
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     public void TakeRangedDamage(float rangedDamage)
     {
         currentHealth -= rangedDamage;
         animator.SetTrigger("hit");
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
-    
-    public float CurrentHeath()
+
+    void Die()
     {
-        return currentHealth;
+        animator.SetBool("isDead", true);
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+        // wait for 1 second
+        Destroy(gameObject, 1f);
     }
 }

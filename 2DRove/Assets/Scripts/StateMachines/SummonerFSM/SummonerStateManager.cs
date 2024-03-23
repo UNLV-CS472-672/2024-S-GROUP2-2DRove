@@ -15,6 +15,7 @@ public class SummonerStateManager : MonoBehaviour
     public SummonerSpawnState SpawnState = new SummonerSpawnState();
 
     private NewEnemy newEnemy; // Reference to NewEnemy component
+    public GameObject ghoulPrefab;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,17 @@ public class SummonerStateManager : MonoBehaviour
         animator = this.GetComponent<Animator>();
         newEnemy = GetComponent<NewEnemy>(); // Assign NewEnemy component
 
+        // Create a new SummoningState 
+
+        SummoningState = new SummonerSummoningState();
+        SummoningState.ghoulPrefab = ghoulPrefab;
+
+        // Set the ghoulPrefab field in SummoningState
+        if (SummoningState != null)
+        {
+            SummoningState.ghoulPrefab = ghoulPrefab;
+        }
+
     }
 
     // Update is called once per frame
@@ -32,7 +44,7 @@ public class SummonerStateManager : MonoBehaviour
     {
         currentState.UpdateState(this);
 
-           // Check for death condition if not already in DeathState
+        // Check for death condition if not already in DeathState
         if (currentState != DeathState && newEnemy.CurrentHeath() <= 0)
         {
             SwitchState(DeathState);

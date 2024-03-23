@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class PauseMenu : MonoBehaviour
         
     }
 
+    // Function to resume the game
     void Resume()
     {
         pauseMenuUI.SetActive(false);                // Deactivate the pause menu UI
@@ -32,6 +34,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = false;                        // Set the game to not paused
     }
 
+    // Function to pause the game
     void Pause()
     {
         pauseMenuUI.SetActive(true);                 // Activate the pause menu UI
@@ -39,6 +42,7 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;                         // Set the game to paused
     }
 
+    // Function to quit the game
     public void QuitGame()
     {
         Application.Quit();                          // Quit the game
@@ -47,5 +51,13 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         Resume();                                   // Resume the game
+    }
+
+    public void Retry(){
+        // if the game is paused, resume it
+        if(GameIsPaused){
+            Resume();
+        }
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //This reloads the current level
     }
 }

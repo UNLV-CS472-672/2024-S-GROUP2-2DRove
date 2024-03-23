@@ -5,14 +5,14 @@ public class SummonerAggroState : SummonerBaseState
     private Transform player;
     private Rigidbody2D rb;
     private Animator animator;
-    private bool flipped = false; // Correctly declared at the class level
+    private bool flipped = false; 
 
     public float summoningDistance = 8f; // The distance at which the Summoner will stop and start summoning
     public float moveSpeed = 1f; // Speed at which the Summoner moves towards the player
 
     public override void EnterState(SummonerStateManager summoner)
     {
-        Debug.Log("Summoner: Entering Aggro State...");
+        //Debug.Log("Summoner: Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = summoner.GetComponent<Rigidbody2D>();
         animator = summoner.GetComponent<Animator>();
@@ -21,7 +21,7 @@ public class SummonerAggroState : SummonerBaseState
     public override void UpdateState(SummonerStateManager summoner)
     {
         float distanceToPlayer = Vector2.Distance(player.position, summoner.transform.position);
-        Debug.Log($"Distance to player: {distanceToPlayer}");
+        // Debug.Log($"Distance to player: {distanceToPlayer}");
 
         if (distanceToPlayer <= summoningDistance)
         {
@@ -30,7 +30,7 @@ public class SummonerAggroState : SummonerBaseState
             rb.velocity = Vector2.zero; // Ensure the Rigidbody stops moving
 
             Debug.Log("Switching to SummoningState");
-            animator.SetBool("isSummoning", true); // Ensure this matches your Animator parameter
+            animator.SetBool("isSummoning", true);
             summoner.SwitchState(summoner.SummoningState);
         }
         else
@@ -58,7 +58,7 @@ public class SummonerAggroState : SummonerBaseState
 
     public override void OnTriggerStay2D(SummonerStateManager summoner, Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.tag == "Player")
         {
             summoner.SwitchState(summoner.SummoningState);
         }
@@ -66,7 +66,7 @@ public class SummonerAggroState : SummonerBaseState
 
     public override void EventTrigger(SummonerStateManager summoner)
     {
-        // Implement any event-specific behavior
+        
     }
 
     public override void TakeDamage(SummonerStateManager summoner)

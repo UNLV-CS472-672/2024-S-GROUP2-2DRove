@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  ghoulPrefab: {fileID: 3475996137607520006, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
 --- !u!114 &8724349399916483158
 MonoBehaviour:
   m_ObjectHideFlags: 0

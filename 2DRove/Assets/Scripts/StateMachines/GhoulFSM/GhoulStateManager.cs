@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GhoulStateManager : MonoBehaviour
 {
-    public Animator animator;
     GhoulBaseState currentState;
     public GhoulAggroState AggroState = new GhoulAggroState();
     public GhoulAttackState AttackState = new GhoulAttackState();
@@ -18,7 +17,6 @@ public class GhoulStateManager : MonoBehaviour
     {
         currentState = SpawnState;
         currentState.EnterState(this);
-        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,22 +33,5 @@ public class GhoulStateManager : MonoBehaviour
     {
         currentState = state;
         state.EnterState(this);
-    }
-
-    public void EventTrigger()
-    {
-        currentState.EventTrigger(this);
-    }
-
-//damage dealt is calculated by PlayerController.cs
-//this is purely to be placed in hit stun
-    public void TakeDamageAnimation()
-    {
-        currentState.TakeDamage(this);
-    }
-
-    public void Destroy(float waitDuration)
-    {
-        Destroy(gameObject, waitDuration);
     }
 }

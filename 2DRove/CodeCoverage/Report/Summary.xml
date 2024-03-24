@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>3/22/2024 - 8:32:34 AM</Generatedon>
-    <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
+    <Generatedon>3/21/2024 - 4:41:29 PM</Generatedon>
+    <Parser>OpenCoverParser</Parser>
     <Assemblies>1</Assemblies>
-    <Classes>1</Classes>
-    <Files>1</Files>
-    <Coveredlines>5</Coveredlines>
-    <Uncoveredlines>0</Uncoveredlines>
-    <Coverablelines>5</Coverablelines>
-    <Totallines>25</Totallines>
-    <Linecoverage>100</Linecoverage>
+    <Classes>4</Classes>
+    <Files>4</Files>
+    <Coveredlines>0</Coveredlines>
+    <Uncoveredlines>275</Uncoveredlines>
+    <Coverablelines>275</Coverablelines>
+    <Totallines>537</Totallines>
+    <Linecoverage>0</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>2</Coveredmethods>
-    <Totalmethods>2</Totalmethods>
-    <Methodcoverage>100</Methodcoverage>
+    <Coveredmethods>0</Coveredmethods>
+    <Totalmethods>32</Totalmethods>
+    <Methodcoverage>0</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="Tests" classes="1" coverage="100" coveredlines="5" coverablelines="5" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100">
-      <Class name="MainTest" coverage="100" coveredlines="5" coverablelines="5" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+    <Assembly name="MapGenAssembly" classes="4" coverage="0" coveredlines="0" coverablelines="275" totallines="537" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="32" methodcoverage="0">
+      <Class name="DLAMapGen" coverage="0" coveredlines="0" coverablelines="128" totallines="194" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="17" methodcoverage="0" />
+      <Class name="MapGen.MapGen" coverage="0" coveredlines="0" coverablelines="57" totallines="101" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="MapGenDLA.MapGenDLA" coverage="0" coveredlines="0" coverablelines="73" totallines="179" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
+      <Class name="Player" coverage="0" coveredlines="0" coverablelines="17" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
     </Assembly>
   </Coverage>
 </CoverageReport>

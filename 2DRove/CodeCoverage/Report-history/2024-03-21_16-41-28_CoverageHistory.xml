@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<coverage version="1.0" date="2024-03-21_16-41-28" tag="">
-  <assembly name="MapGenAssembly">
-    <class name="DLAMapGen" coveredlines="0" coverablelines="128" totallines="194" coveredbranches="0" totalbranches="0" />
-    <class name="MapGen.MapGen" coveredlines="0" coverablelines="57" totallines="101" coveredbranches="0" totalbranches="0" />
-    <class name="MapGenDLA.MapGenDLA" coveredlines="0" coverablelines="73" totallines="179" coveredbranches="0" totalbranches="0" />
-    <class name="Player" coveredlines="0" coverablelines="17" totallines="63" coveredbranches="0" totalbranches="0" />
-  </assembly>
-</coverage>

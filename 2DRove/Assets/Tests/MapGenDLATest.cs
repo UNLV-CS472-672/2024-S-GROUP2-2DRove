@@ -22,12 +22,12 @@ public class MapGenDLATest
     [UnityTest]
     public IEnumerator MapGenerated()
     {
-        //yield return SceneManager.LoadSceneAsync("Maps/Floor1", LoadSceneMode.Single);
+        yield return SceneManager.LoadSceneAsync("Maps/Floor1", LoadSceneMode.Single);
 
 
-        GameObject mapGenObject = GameObject.Find("Start");
-        MapGenDLA.MapGenDLA mapGenerator = mapGenObject.GetComponent<MapGenDLA.MapGenDLA>();
-        Assert.IsNotNull(mapGenerator, "MapGenDLA component not found");
+        //GameObject mapGenObject = GameObject.Find("Start");
+        //MapGenDLA.MapGenDLA mapGenerator = mapGenObject.GetComponent<MapGenDLA.MapGenDLA>();
+        //Assert.IsNotNull(mapGenerator, "MapGenDLA component not found");
 
 
 

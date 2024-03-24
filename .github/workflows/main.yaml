@@ -4,10 +4,10 @@ on:
   # Replace with whatever branch you're working on :)
   push: 
     branches: 
-      - main
+      - testest
   pull_request:
     branches:
-      - main
+      - testtest
 
 jobs:
   runTests:

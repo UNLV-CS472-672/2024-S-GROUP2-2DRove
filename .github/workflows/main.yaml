@@ -15,12 +15,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Does something   
+      # Checkout repo code
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
           lfs: true
-      # Does something
+      # Caches information to make future jobs go faster
       - name: Cache Library
         uses: actions/cache@v2
         with:
@@ -40,7 +40,7 @@ jobs:
           unityVersion: 2022.3.19f1
           testMode: playmode
           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateHtmlReport
-
+      # Archive our code coverage results in a zip file (will try to output it to actions later)
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:

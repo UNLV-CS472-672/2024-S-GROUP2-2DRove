@@ -5,6 +5,8 @@ using UnityEngine;
 public class GhoulStateManager : MonoBehaviour
 {
     public Animator animator;
+    public Transform attackPoint;
+    [SerializeField] public float attackRange;
     GhoulBaseState currentState;
     public GhoulAggroState AggroState = new GhoulAggroState();
     public GhoulAttackState AttackState = new GhoulAttackState();
@@ -52,5 +54,12 @@ public class GhoulStateManager : MonoBehaviour
     public void Destroy(float waitDuration)
     {
         Destroy(gameObject, waitDuration);
+    }
+
+    private void OnDrawGizmosSelected(){
+        if (attackPoint == null){
+            return;
+        }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

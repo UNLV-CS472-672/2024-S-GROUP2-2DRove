@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  maxHealth: 10
+  maxHealth: 100
   coins: 0
   speedFactor: 50
   blinkDistance: 5

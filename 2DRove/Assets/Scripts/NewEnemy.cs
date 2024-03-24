@@ -6,6 +6,7 @@ public class NewEnemy : MonoBehaviour
 {
 
     public float maxHealth = 100;
+    [SerializeField]
     float currentHealth;
     public Animator animator;  
     // Start is called before the first frame update

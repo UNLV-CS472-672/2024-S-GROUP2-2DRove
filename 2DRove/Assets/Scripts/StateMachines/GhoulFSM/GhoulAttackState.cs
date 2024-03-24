@@ -36,10 +36,9 @@ public class GhoulAttackState : GhoulBaseState
     //done in animation events
     public override void EventTrigger(GhoulStateManager ghoul)
     {
-        CapsuleCollider2D hitbox = ghoul.GetComponent<CapsuleCollider2D>();
-        Vector2 worldSpace = new Vector2(ghoul.GetComponent<Transform>().position.x + 1.1f, ghoul.GetComponent<Transform>().position.y + 1.15f);
+        Vector2 knockbackDirection = (Vector2)(ghoul.transform.position - ghoul.attackPoint.position).normalized;
         LayerMask mask = LayerMask.GetMask("Player");
-        Collider2D[] colliders = Physics2D.OverlapCapsuleAll(worldSpace + hitbox.offset, new Vector2(2.1f, 1.75f), CapsuleDirection2D.Horizontal, 0f, mask);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(ghoul.attackPoint.position, ghoul.attackRange, mask);
 
         foreach (Collider2D collider in colliders)
         {
@@ -47,6 +46,8 @@ public class GhoulAttackState : GhoulBaseState
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
                 playerScript.dealDamage(1);
+                collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
+                collider.GetComponent<Animator>().SetTrigger("Hit");
             }
         }
     }

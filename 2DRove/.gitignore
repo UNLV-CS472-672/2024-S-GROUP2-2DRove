@@ -73,6 +73,3 @@ crashlytics-build.properties
 
 # Ignore our CodeCoverage folder (it changes a lot and causes merge conflicts)
 -f CodeCoverage/
-
-# Ignore our Tests meta file (I think our assemblies might cause merge conflicts still)
-Assets/Tests.meta

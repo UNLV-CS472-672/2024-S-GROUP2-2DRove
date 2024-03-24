@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GhoulStateManager : MonoBehaviour
+public class CagedShockerStateManager : MonoBehaviour
 {
     public Animator animator;
-    public Transform attackPoint;
+    public Transform attackPointX;
+    public Transform attackPointY;
     [SerializeField] public float attackRange;
-    GhoulBaseState currentState;
-    public GhoulAggroState AggroState = new GhoulAggroState();
-    public GhoulAttackState AttackState = new GhoulAttackState();
-    public GhoulDeathState DeathState = new GhoulDeathState();
-    public GhoulHitState HitState = new GhoulHitState();
-    public GhoulIdleState IdleState = new GhoulIdleState();
-    public GhoulSpawnState SpawnState = new GhoulSpawnState();
+    [SerializeField] public float attackHeight;
+    private Mesh attackHitbox;
+    CagedShockerBaseState currentState;
+    public CagedShockerAggroState AggroState = new CagedShockerAggroState();
+    public CagedShockerAttackState AttackState = new CagedShockerAttackState();
+    public CagedShockerDeathState DeathState = new CagedShockerDeathState();
+    public CagedShockerHitState HitState = new CagedShockerHitState();
+    public CagedShockerIdleState IdleState = new CagedShockerIdleState();
+    public CagedShockerSpawnState SpawnState = new CagedShockerSpawnState();
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +36,7 @@ public class GhoulStateManager : MonoBehaviour
         currentState.OnTriggerStay2D(this, other);
     }
 
-    public void SwitchState(GhoulBaseState state)
+    public void SwitchState(CagedShockerBaseState state)
     {
         currentState = state;
         state.EnterState(this);
@@ -57,9 +60,10 @@ public class GhoulStateManager : MonoBehaviour
     }
 
     private void OnDrawGizmosSelected(){
-        if (attackPoint == null){
+        if (attackPointX == null){
             return;
         }
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Gizmos.DrawWireSphere(attackPointX.position, attackRange);
+        Gizmos.DrawWireSphere(attackPointY.position, attackHeight);
     }
 }

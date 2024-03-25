@@ -5,45 +5,46 @@ public class SpiderHitState : SpiderBaseState
     private float health;
     private Animator animator;
     private float hitStun = .41f;
-    public override void EnterState(SpiderStateManager spider)
+    public override void EnterState(SpiderStateManager Spider)
     {
         Debug.Log("Entering Hit State...");
-        animator = spider.GetComponent<Animator>();
+        animator = Spider.GetComponent<Animator>();
         //set animation bool hitstunn to true or smth
         // NO NEED TO SET TRIGGER bc its done in NewEnemy for now
         // animator.SetTrigger("hit");
 
-        health = spider.GetComponent<NewEnemy>().CurrentHeath();
+        health = Spider.GetComponent<NewEnemy>().CurrentHeath();
         if (health <= 0)
         {
-            spider.SwitchState(spider.DeathState);
+            Spider.SwitchState(Spider.DeathState);
         }
     }
 
-    public override void UpdateState(SpiderStateManager spider)
+    public override void UpdateState(SpiderStateManager Spider)
     {
         if (hitStun <= 0)
         {
-            spider.SwitchState(spider.IdleState);
+            Spider.SwitchState(Spider.IdleState);
         }
 
+        hitStun -= Time.deltaTime;
     }
 
-    public override void OnCollisionEnter2D(SpiderStateManager spider, Collision2D other)
+    public override void OnCollisionEnter2D(SpiderStateManager Spider, Collision2D other)
     {
         
     } 
 
-    public override void OnTriggerStay2D(SpiderStateManager spider, Collider2D other) {
+    public override void OnTriggerStay2D(SpiderStateManager Spider, Collider2D other) {
     }
 
-    public override void EventTrigger(SpiderStateManager spider)
+    public override void EventTrigger(SpiderStateManager Spider)
     {
 
     }
 
-    public override void TakeDamage(SpiderStateManager spider)
+    public override void TakeDamage(SpiderStateManager Spider)
     {
-        spider.SwitchState(spider.HitState);
+        Spider.SwitchState(Spider.HitState);
     }
 }

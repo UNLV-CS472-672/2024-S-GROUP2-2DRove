@@ -5,35 +5,35 @@ public class SpiderIdleState : SpiderBaseState
 {
     private bool idling = true;
     private Transform player;
-    public override void EnterState(SpiderStateManager spider)
+    public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Wake State...");
+        Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
-    public override void UpdateState(SpiderStateManager spider)
+    public override void UpdateState(SpiderStateManager Spider)
     {
         //make them just walk around randomly
-        //make a radius fov? that seems pretty cool, and it would have a faint ring around the spider
+        //make a radius fov? that seems pretty cool, and it would have a faint ring around the Spider
         //if player is in radius, enter walk state
-        spider.SwitchState(spider.AggroState);
+        Spider.SwitchState(Spider.AggroState);
     }
 
-    public override void OnCollisionEnter2D(SpiderStateManager spider, Collision2D other)
+    public override void OnCollisionEnter2D(SpiderStateManager Spider, Collision2D other)
     {
         
     } 
 
-    public override void OnTriggerStay2D(SpiderStateManager spider, Collider2D other) {
+    public override void OnTriggerStay2D(SpiderStateManager Spider, Collider2D other) {
     }
 
-    public override void EventTrigger(SpiderStateManager spider)
+    public override void EventTrigger(SpiderStateManager Spider)
     {
 
     }
 
-    public override void TakeDamage(SpiderStateManager spider)
+    public override void TakeDamage(SpiderStateManager Spider)
     {
-        spider.SwitchState(spider.HitState);
+        Spider.SwitchState(Spider.HitState);
     }
 }

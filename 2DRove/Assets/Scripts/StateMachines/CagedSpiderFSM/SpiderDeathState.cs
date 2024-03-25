@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SpiderDeathState : SpiderBaseState
 {
+    
     public override void EnterState(SpiderStateManager Spider)
     {
         Debug.Log("Entering Death State...");
@@ -10,7 +11,7 @@ public class SpiderDeathState : SpiderBaseState
         // Spider.GetComponent<CapsuleCollider2D>().enabled = false;
         Spider.enabled = false;
         // wait for 1 second
-        Spider.Destroy(.81f); 
+        Spider.Destroy(.81f);
     }
 
     public override void UpdateState(SpiderStateManager Spider)
@@ -33,6 +34,6 @@ public class SpiderDeathState : SpiderBaseState
 
     public override void TakeDamage(SpiderStateManager Spider)
     {
-        
+
     }
 }

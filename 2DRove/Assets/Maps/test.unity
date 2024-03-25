@@ -525,9 +525,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beea543b0de777d4ab12afa55f562645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 9148618936101596910, guid: f90fc857f3744a34f8fa9044ec470c37, type: 3}
+  tile: {fileID: 776782529497576670, guid: 3d0ebfadeeadb944f954038ca8be65db, type: 3}
   tileNum: 25
-  scale: 5
+  tileSizeX: 20
+  tileSizeY: 20
   maxX: 5
   maxY: 5
   minX: -5

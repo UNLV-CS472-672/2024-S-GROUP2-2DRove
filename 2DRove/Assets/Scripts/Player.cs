@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using MapGen;
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private float sprintSpeed = 50.0f;
     [SerializeField] private float moveSpeed = 30.0f;
+    
+
     private float speed;
     float xSpeed, ySpeed;
     Rigidbody2D rb;
@@ -18,6 +21,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    
     // Update is called once per frame
     /// <summary>
     /// This method is called at a fixed interval and is used for physics-related updates.
@@ -36,7 +40,8 @@ public class Player : MonoBehaviour
         {
             speed = moveSpeed;
         }
-        rb.AddForce(new Vector2(xSpeed, ySpeed) * speed);
+        Vector2 direction = new Vector2(xSpeed, ySpeed);
+        rb.AddForce(direction * speed);
         // // Calculate the new position of the player
         // Vector2Int newPosition = new Vector2Int(Mathf.RoundToInt(rb.position.x / MapGen.MapGen.tileSizeX + xSpeed / MapGen.MapGen.tileSizeX), Mathf.RoundToInt(rb.position.y / MapGen.MapGen.tileSizeY + ySpeed / MapGen.MapGen.tileSizeY));
         // // Check if the new position is an empty space

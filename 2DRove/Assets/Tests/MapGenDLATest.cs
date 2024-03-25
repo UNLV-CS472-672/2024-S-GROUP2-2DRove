@@ -7,53 +7,45 @@ using UnityEngine.SceneManagement;
 
 public class MapGenDLATest
 {
-    //private MapGenDLA.MapGenDLA testDLA;
-    //private GameObject testObject;
-    // A Test behaves as an ordinary method
-    [UnitySetUp]
-    public IEnumerator SetUp()
-    {
-        // Load the test scene
-        yield return null;
-    }
-
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
     public IEnumerator LoadProperMap()
     {
-        yield return SceneManager.LoadSceneAsync("Tests/Test1");
-
-        //GameObject mapGenObject = GameObject.Find("Start");
-        //MapGenDLA.MapGenDLA mapGenerator = mapGenObject.GetComponent<MapGenDLA.MapGenDLA>();
-        //Assert.IsNotNull(mapGenerator, "MapGenDLA component not found");
-
+        // Load a proper scene that is like a scene we would load normally
+        SceneManager.LoadScene("Tests/Test1", LoadSceneMode.Single);
+        // Yield next frame to scene
         yield return null;
-
-        yield return SceneManager.UnloadSceneAsync("Tests/Test1");
-
-        
 
     }
     [UnityTest]
-    public IEnumerator LoadImproperMap()
+    public IEnumerator LoadNotEnoughPotentialTiles()
     {
-        yield return SceneManager.LoadSceneAsync("Tests/Test2");
-
+        // Assert log message (we are checking for errors)
+        LogAssert.Expect(LogType.Error, "Cannot request more tiles than available");
+        // Load scene with too few potential tiles
+        SceneManager.LoadScene("Test2", LoadSceneMode.Single);
+        // Yield next frame to scene
         yield return null;
-
-        yield return SceneManager.UnloadSceneAsync("Tests/Test2");
-
-        yield return SceneManager.LoadSceneAsync("Tests/Test3");
-
+    }
+    [UnityTest]
+    public IEnumerator LoadNotEnoughTiles()
+    {
+        // Assert log message (we are checking for errors)
+        LogAssert.Expect(LogType.Error, "Must create 1 or more tiles");
+        // Load scene with not enough tiles to load scene
+        SceneManager.LoadScene("Test3", LoadSceneMode.Single);
+        // Yield next frame to scene
         yield return null;
-
-        yield return SceneManager.UnloadSceneAsync("Tests/Test3");
-
-        yield return SceneManager.LoadSceneAsync("Tests/Test4");
-
+    }
+    [UnityTest]
+    public IEnumerator LoadNotEnoughSize()
+    {
+        // Assert log message (we are checking for errors)
+        LogAssert.Expect(LogType.Error, "Scale must be greater than 0");
+        // Load scene with impossible scale
+        SceneManager.LoadScene("Test4", LoadSceneMode.Single);
+        // Yield next frame to scene
         yield return null;
-
-        yield return SceneManager.UnloadSceneAsync("Tests/Test4");
     }
 }

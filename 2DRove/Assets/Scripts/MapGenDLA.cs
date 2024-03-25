@@ -32,11 +32,12 @@ namespace MapGenDLA
                 return;
             }
             if(tileNum <= 0){
-                Debug.LogError("must create 1 or more tiles");
+                Debug.LogError("Must create 1 or more tiles");
                 return;
             }
             if(scale <= 0){
                 Debug.LogError("Scale must be greater than 0");
+                return;
             }
             
             Vector2Int currentPosition = new (0, 0);    // Location of current tile in the walk.

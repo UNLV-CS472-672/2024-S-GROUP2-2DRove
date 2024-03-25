@@ -6,7 +6,6 @@ public class NewEnemy : MonoBehaviour
 {
 
     public float maxHealth = 100;
-    [SerializeField]
     float currentHealth;
     public Animator animator;  
     // Start is called before the first frame update
@@ -25,7 +24,6 @@ public class NewEnemy : MonoBehaviour
     {
         currentHealth -= damage;
         animator.SetTrigger("hit");
-        
     }
 
     public void TakeRangedDamage(float rangedDamage)

@@ -43,7 +43,7 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           unityVersion: 2022.3.19f1
           testMode: playmode
-          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath 2DRove/CodeCoverage/GithubActions -coverageOptions generateHtmlReport
+          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath 2DRove/CodeCoverageGithubActions -coverageOptions generateHtmlReport
       # Archive our code coverage results in a zip file (will try to output it to actions later)
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4

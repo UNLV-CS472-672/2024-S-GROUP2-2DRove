@@ -71,5 +71,4 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Ignore our CodeCoverage folder (it changes a lot and causes merge conflicts)
-CodeCoverage/
+

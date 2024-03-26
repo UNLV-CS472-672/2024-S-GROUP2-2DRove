@@ -3,13 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Border
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - TileLayer
+  - 
   - Water
   - UI
   - 

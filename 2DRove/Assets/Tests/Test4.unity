@@ -211,7 +211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ca71fd974f8ba9a44b3314339e0fcde6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -490,6 +490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 602447683}
+  - component: {fileID: 602447684}
   - component: {fileID: 602447685}
   m_Layer: 0
   m_Name: Start
@@ -513,6 +514,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &602447684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602447681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b68a389ea5e0342ac566848585190a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &602447685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,14 +538,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beea543b0de777d4ab12afa55f562645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 776782529497576670, guid: 3d0ebfadeeadb944f954038ca8be65db, type: 3}
-  tileNum: 25
-  tileSizeX: 20
-  tileSizeY: 20
-  maxX: 5
-  maxY: 5
-  minX: -5
-  minY: -5
+  tile: {fileID: 9148618936101596910, guid: 89c269eb69467df45b890f17865925ab, type: 3}
+  tileNum: 20
+  scale: 0
+  maxX: 10
+  maxY: 10
+  minX: -10
+  minY: -10
 --- !u!1 &1102318596
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +584,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 383671073899580109, guid: 293f8e78ac061ba4991d2d8ceeaacfcb, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 932151897851556478, guid: 293f8e78ac061ba4991d2d8ceeaacfcb, type: 3}
       propertyPath: m_Name
       value: Player
@@ -648,6 +664,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7000142242859989008, guid: 293f8e78ac061ba4991d2d8ceeaacfcb, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -659,5 +679,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1102318597}
-  - {fileID: 4545772957896390668}
   - {fileID: 602447683}
+  - {fileID: 4545772957896390668}

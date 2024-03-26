@@ -30,13 +30,25 @@ public class SpiderAggroState : SpiderBaseState
 
     public override void OnCollisionEnter2D(SpiderStateManager Spider, Collision2D other)
     {
-
+        
     }
 
     public override void OnTriggerStay2D(SpiderStateManager Spider, Collider2D other) {
-        if (other.tag == "Player")
+        // if (other.tag("Player")) // Used CompareTag for optimized performance
+
+        if (other.CompareTag("Player"))
         {
             Spider.SwitchState(Spider.AttackState);
         }
+    }
+
+    public override void EventTrigger(SpiderStateManager Spider)
+    {
+
+    }
+
+    public override void TakeDamage(SpiderStateManager Spider)
+    {
+        Spider.SwitchState(Spider.HitState);
     }
 }

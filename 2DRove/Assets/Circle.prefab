@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3625537515009467603}
   - component: {fileID: 3197534821892992352}
-  - component: {fileID: 1554542182818625955}
   m_Layer: 0
   m_Name: Circle
   m_TagString: Untagged
@@ -27,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 923991240687089494}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.953278, y: 22.632816, z: 7.73}
+  m_LocalPosition: {x: 37.953278, y: 22.632816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85,15 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1554542182818625955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923991240687089494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d0f789553dcc454484c0922ae3e1292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

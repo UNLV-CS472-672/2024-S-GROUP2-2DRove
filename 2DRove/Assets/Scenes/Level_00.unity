@@ -391,6 +391,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8365791941300477824, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1526,7 +1530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5e892dc0b0880f4182deece1e7f5665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 3
   damage: 10
   lifetime: 5
   hitLayers:
@@ -1812,6 +1816,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 800186229107613894, guid: be179befa880d774ea3885548de8a42e, type: 3}
+      propertyPath: m_Name
+      value: projectileAttackPoint
+      objectReference: {fileID: 0}
     - target: {fileID: 1758016283059345825, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.77
@@ -1854,7 +1862,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3925657958980297227, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925657958980297227, guid: be179befa880d774ea3885548de8a42e, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 5598037921612947105, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: projectilePrefab
@@ -1872,27 +1884,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7220932494962270720, guid: be179befa880d774ea3885548de8a42e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9005955090540826374, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9005955090540826374, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9005955090540826374, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 439
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9005955090540826374, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_IncludeLayers.m_Bits
-      value: 64
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1758016283059345825, guid: be179befa880d774ea3885548de8a42e, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 292499567}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 800186229107613894, guid: be179befa880d774ea3885548de8a42e, type: 3}
@@ -1907,6 +1923,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1581600467}
     m_Modifications:
+    - target: {fileID: -3762193347483259035, guid: 31f6e4179acf61f459f93f36fa29c62b, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3578320336554610286, guid: 31f6e4179acf61f459f93f36fa29c62b, type: 3}
       propertyPath: hitLayers.m_Bits
       value: 375
@@ -2128,7 +2148,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 272362257799738756, guid: 7035eb186f35b4040b1f495e24f48be7, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 878488624133352400, guid: 7035eb186f35b4040b1f495e24f48be7, type: 3}
       propertyPath: m_Enabled

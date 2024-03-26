@@ -41,14 +41,14 @@ jobs:
           testMode: playmode
           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateHtmlReport
       # Move code coreage items
-      - name: Move code coverage items to new folder called "CodeCoverageGithubActions"
+      - name: Create folder called "CodeCoverageGithubActions" and "Reports" subfolder.
         run: |
           mkdir -p 2DRove/CodeCoverageGithubActions
-          mv 2DRove/CodeCoverage/* 2DRove/CodeCoverageGithubActions
+          mkdir -p 2DRove/CodeCoverageGithubActions/Report
       # Archive our code coverage results in a zip file (will try to output it to actions later)
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: 2DRove/CodeCoverage/Report/
+          path: 2DRove/CodeCoverageGithubActions/Report
             

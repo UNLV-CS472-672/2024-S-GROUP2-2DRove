@@ -45,14 +45,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: 2DRove/CodeCoverage/Report/
-      # Commit and push the code coverage results to the branch
-      - name: Commit code coverage results
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f 2DRove/CodeCoverage/Report
-          git commit -m "Updated code coverage report using github actions."
-          git push
-            
+          path: 2DRove/CodeCoverage
             

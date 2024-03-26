@@ -7,7 +7,7 @@ public class SpiderAttackState : SpiderBaseState
     public override void EnterState(SpiderStateManager Spider)
     {
         Debug.Log("Entering Attack State");
-        attackTime = .9f;
+        attackTime = 2.0f;
         animator = Spider.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }

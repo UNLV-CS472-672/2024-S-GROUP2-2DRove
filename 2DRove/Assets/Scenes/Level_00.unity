@@ -1783,7 +1783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_TagString
@@ -1828,6 +1828,10 @@ PrefabInstance:
     - target: {fileID: 8191069111030342767, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937932253450727748, guid: c784912f46a7eef43883c17e90185d08, type: 3}
+      propertyPath: maxHealth
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -7983308880637474554, guid: c784912f46a7eef43883c17e90185d08, type: 3}
@@ -1966,6 +1970,10 @@ PrefabInstance:
     - target: {fileID: 6229290378130564962, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_Name
       value: Spitter
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229290378130564962, guid: be179befa880d774ea3885548de8a42e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

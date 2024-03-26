@@ -13,6 +13,10 @@ Please list your methods that you have implemented in your PR. This will make it
 
 Please list your fields that you have implemented as well as where they are. This will make it easier for the reviewer to keep track of any added variables.
 
+- [ ] **Changes to Unity Editor (Screenshots, if applicable)**
+
+Include screenshots of the Unity editor such as any changes to objects you've made. This is only applicable in certain cases and may not be included in most PRs.
+
 - [ ] **Related Issue**
 
 Please list the related issue (use '#' and it should show an autofill option).

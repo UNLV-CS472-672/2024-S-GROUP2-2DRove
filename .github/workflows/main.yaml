@@ -40,6 +40,11 @@ jobs:
           unityVersion: 2022.3.19f1
           testMode: playmode
           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateHtmlReport
+      # Move code coreage items
+      - name: Move code coverage items to new folder called "CodeCoverageGithubActions"
+        run: |
+          mkdir -p 2DRove/CodeCoverageGithubActions
+          mv 2DRove/CodeCoverage/* 2DRove/CodeCoverageGithubActions
       # Archive our code coverage results in a zip file (will try to output it to actions later)
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4

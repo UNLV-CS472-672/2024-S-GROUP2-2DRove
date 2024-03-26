@@ -17,10 +17,11 @@ public class SpitterStateManager : MonoBehaviour
     [SerializeField] public GameObject projectilePrefab;
     [SerializeField] public Transform projectileSpawnPoint;
 
+    [SerializeField] public float attackRange;
+
+
     public GameObject ProjectilePrefab => projectilePrefab;
     public Transform ProjectileSpawnPoint => projectileSpawnPoint;
-
-    [SerializeField] public float attackRange;
     public Transform attackPoint;
 
 
@@ -76,10 +77,8 @@ public class SpitterStateManager : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if (attackPoint == null)
-        {
-            return;
-        }
+        Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+
     }
 }

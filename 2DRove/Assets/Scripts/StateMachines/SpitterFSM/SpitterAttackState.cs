@@ -8,7 +8,6 @@ public class SpitterAttackState : SpitterBaseState
     private SpitterStateManager spitter;
 
     public float attackCooldown = 2.0f; // Cooldown between attacks
-    private float rangedAttackDistance = 10.0f; // The distance for ranged attacks
     private bool isAttackInitiated = false; // To control attack initiation
     private Coroutine attackCoroutine; // To keep track of the coroutine
 
@@ -22,6 +21,7 @@ public class SpitterAttackState : SpitterBaseState
         {
             isAttackInitiated = false; // Reset attack initiation flag
             animator.SetBool("isAttacking", true);
+            Debug.Log("Enter Attack State");
             attackCoroutine = spitter.StartCoroutine(AttackRoutine()); // Store coroutine reference
         }
         else
@@ -32,6 +32,9 @@ public class SpitterAttackState : SpitterBaseState
 
     public override void UpdateState(SpitterStateManager spitter)
     {
+        // Dynamically adjust the ranged attack distance based on the SpitterStateManager
+        // rangedAttackDistance = spitter.attackRange;
+
         // If the player is destroyed during the attack, clean up and exit state
         if (playerTransform == null || playerTransform.gameObject == null)
         {
@@ -40,11 +43,11 @@ public class SpitterAttackState : SpitterBaseState
         }
 
         float distanceToPlayer = Vector3.Distance(spitter.transform.position, playerTransform.position);
-        if (!isAttackInitiated && distanceToPlayer <= rangedAttackDistance)
+        if (!isAttackInitiated && distanceToPlayer <= spitter.attackRange)
         {
             attackCoroutine = spitter.StartCoroutine(AttackRoutine());
         }
-        else if (distanceToPlayer > rangedAttackDistance && isAttackInitiated)
+        else if (distanceToPlayer > spitter.attackRange && isAttackInitiated)
         {
             CleanupAttack();
         }
@@ -80,7 +83,7 @@ public class SpitterAttackState : SpitterBaseState
     {
         if (playerTransform == null) return; // Extra check to ensure player is not null
 
-        GameObject projectilePrefab = spitter.ProjectilePrefab; 
+        GameObject projectilePrefab = spitter.ProjectilePrefab;
         Transform projectileSpawnPoint = spitter.ProjectileSpawnPoint;
 
         if (projectilePrefab != null && projectileSpawnPoint != null)

@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 3/26/2024 - 2:55:34 AM |
+| Generated on: | 3/26/2024 - 3:00:20 AM |
 | Parser: | MultiReportParser (2x OpenCoverParser) |
 | Assemblies: | 3 |
 | Classes: | 223 |
 | Files: | 217 |
-| Covered lines: | 1343 |
-| Uncovered lines: | 7041 |
+| Covered lines: | 1345 |
+| Uncovered lines: | 7039 |
 | Coverable lines: | 8384 |
 | Total lines: | 16842 |
-| Line coverage: | 16% (1343 of 8384) |
+| Line coverage: | 16% (1345 of 8384) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 316 |
@@ -19,10 +19,10 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GameTestAssembly**|**169**|**62**|**231**|**478**|**73.1%**|**0**|**0**|****|**19**|**23**|**82.6%**|
+|**GameTestAssembly**|**171**|**60**|**231**|**478**|**74%**|**0**|**0**|****|**19**|**23**|**82.6%**|
 |Exit|4|7|11|20|36.3%|0|0||2|3|66.6%|
 |LoadingScreenManager|0|23|23|37|0%|0|0||0|2|0%|
-|MapGenDLANamespace.MapGenDLA|150|29|179|353|83.7%|0|0||14|15|93.3%|
+|MapGenDLANamespace.MapGenDLA|152|27|179|353|84.9%|0|0||14|15|93.3%|
 |Player|15|3|18|68|83.3%|0|0||3|3|100%|
 |**UnityEditor.TestRunner**|**276**|**4945**|**5221**|**11063**|**5.2%**|**0**|**0**|****|**101**|**762**|**13.2%**|
 |TestRunner.Callbacks.WindowResultUpdaterDataHolder|0|1|1|11|0%|0|0||0|1|0%|

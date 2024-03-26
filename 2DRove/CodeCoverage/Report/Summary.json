@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generatedon": "2024-03-26T09:55:34Z",
+    "generatedon": "2024-03-26T10:00:20Z",
     "parser": "MultiReportParser (2x OpenCoverParser)",
     "assemblies": 3,
     "classes": 223,
     "files": 217,
-    "coveredlines": 1343,
-    "uncoveredlines": 7041,
+    "coveredlines": 1345,
+    "uncoveredlines": 7039,
     "coverablelines": 8384,
     "totallines": 16842,
     "linecoverage": 16,
@@ -18,10 +18,10 @@
  },
   "coverage": {
     "assemblies": [
-      { "name": "GameTestAssembly", "classes": 4, "coverage": 73.1, "coveredlines": 169, "coverablelines": 231, "totallines": 478, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 82.6, "coveredmethods": 19, "totalmethods": 23, "classesinassembly": [
+      { "name": "GameTestAssembly", "classes": 4, "coverage": 74, "coveredlines": 171, "coverablelines": 231, "totallines": 478, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 82.6, "coveredmethods": 19, "totalmethods": 23, "classesinassembly": [
         { "name": "Exit", "coverage": 36.3, "coveredlines": 4, "coverablelines": 11, "totallines": 20, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 2, "totalmethods": 3 },
         { "name": "LoadingScreenManager", "coverage": 0, "coveredlines": 0, "coverablelines": 23, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "MapGenDLANamespace.MapGenDLA", "coverage": 83.7, "coveredlines": 150, "coverablelines": 179, "totallines": 353, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 93.3, "coveredmethods": 14, "totalmethods": 15 },
+        { "name": "MapGenDLANamespace.MapGenDLA", "coverage": 84.9, "coveredlines": 152, "coverablelines": 179, "totallines": 353, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 93.3, "coveredmethods": 14, "totalmethods": 15 },
         { "name": "Player", "coverage": 83.3, "coveredlines": 15, "coverablelines": 18, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 } ] },
       { "name": "UnityEditor.TestRunner", "classes": 127, "coverage": 5.2, "coveredlines": 276, "coverablelines": 5221, "totallines": 11063, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 13.2, "coveredmethods": 101, "totalmethods": 762, "classesinassembly": [
         { "name": "TestRunner.Callbacks.WindowResultUpdaterDataHolder", "coverage": 0, "coveredlines": 0, "coverablelines": 1, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },

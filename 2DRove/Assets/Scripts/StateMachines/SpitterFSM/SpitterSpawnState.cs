@@ -22,4 +22,14 @@ public class SpitterSpawnState : SpitterBaseState
             spitter.SwitchState(spitter.AttackState);
         }
     }
+
+    public override void EventTrigger(SpitterStateManager spitter)
+    {
+
+    }
+
+    public override void TakeDamage(SpitterStateManager spitter)
+    {
+        spitter.SwitchState(spitter.HitState);
+    }
 }

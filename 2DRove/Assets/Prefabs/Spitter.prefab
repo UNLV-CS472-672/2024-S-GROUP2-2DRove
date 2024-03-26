@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 800186229107613894}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: 0.28, z: 0}
+  m_LocalPosition: {x: 0.12, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60,10 +60,10 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 439
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -203,7 +203,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6229290378130564962}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -325,8 +325,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaede9f121f542f498471114a9bec0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   projectilePrefab: {fileID: 9167159287664988583, guid: 31f6e4179acf61f459f93f36fa29c62b, type: 3}
   projectileSpawnPoint: {fileID: 7220932494962270720}
+  attackRange: 4.8
+  attackPoint: {fileID: 7220932494962270720}
 --- !u!114 &7350636726140891444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,5 +378,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1, y: 0.18}
-  m_Size: {x: 0.8, y: 0.2}
-  m_Direction: 1
+  m_Size: {x: 0.2, y: 0.7}
+  m_Direction: 0

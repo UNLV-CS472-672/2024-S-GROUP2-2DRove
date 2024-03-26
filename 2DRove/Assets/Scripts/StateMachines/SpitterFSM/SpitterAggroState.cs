@@ -5,13 +5,18 @@ public class SpitterAggroState : SpitterBaseState
     private Transform player;
     private Rigidbody2D rb;
     private Animator animator;
-    private bool flipped = false;
 
     public override void EnterState(SpitterStateManager spitter)
     {
         Debug.Log("Spitter Entering Aggo State...");
-
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        // Safe check to ensure player is not null
+        player = GameObject.FindGameObjectWithTag("Player")?.GetComponent<Transform>(); 
+        if (player == null)
+        {
+            // Debug.LogWarning("Player not found!");
+            spitter.SwitchState(spitter.IdleState);
+            return;
+        }
 
         rb = spitter.GetComponent<Rigidbody2D>();
         animator = spitter.GetComponent<Animator>();
@@ -19,34 +24,50 @@ public class SpitterAggroState : SpitterBaseState
 
     public override void UpdateState(SpitterStateManager spitter)
     {
+        if (player == null)
+        {
+            spitter.SwitchState(spitter.IdleState);
+            return;
+        }
+
         Vector2 direction = (player.position - spitter.transform.position).normalized;
         rb.AddForce(direction * 1f);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
-        // Check if attack animation is playing
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("isAttacking")) // Replace "AttackAnimationName" with your actual attack animation name
+        // If not attacking, flip the spitter to face the player
+        if (!animator.GetBool("isAttacking")) 
         {
-            // Player is moving horizontally and attack is not playing
-            if (direction.x != 0)
+            // Check the direction to the player and flip if necessary
+            bool shouldFlip = (direction.x > 0 && spitter.transform.localScale.x < 0) || (direction.x < 0 && spitter.transform.localScale.x > 0);
+            if (shouldFlip)
             {
-                flipped = direction.x < 0; // player moved left(flipped = true), else player is moving right(flipped = false)
-                spitter.transform.rotation = Quaternion.Euler(new Vector3(0f, flipped ? 180 : 0f, 0f));
+                // Flip by scaling in x direction
+                spitter.transform.localScale = new Vector3(-spitter.transform.localScale.x, spitter.transform.localScale.y, spitter.transform.localScale.z);
             }
         }
     }
 
     public override void OnCollisionEnter2D(SpitterStateManager spitter, Collision2D other)
     {
-
+        
     }
-    public override void OnTriggerStay2D(SpitterStateManager spitter, Collider2D other)
+    
+    public override void OnTriggerStay2D(SpitterStateManager spitter, Collider2D other) 
     {
-        // if (other.tag("Player")) // Used CompareTag for optimized performance
-
-        if (other.CompareTag("Player"))
+        // Check for null reference before attempting to switch state
+        if (player != null && other.gameObject == player.gameObject)
         {
             spitter.SwitchState(spitter.AttackState);
         }
     }
 
+    public override void EventTrigger(SpitterStateManager spitter)
+    {
+        // Implement any specific event triggers if necessary
+    }
+
+    public override void TakeDamage(SpitterStateManager spitter)
+    {
+        spitter.SwitchState(spitter.HitState);
+    }
 }

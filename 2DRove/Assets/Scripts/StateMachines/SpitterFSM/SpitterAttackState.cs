@@ -3,91 +3,103 @@ using System.Collections;
 
 public class SpitterAttackState : SpitterBaseState
 {
-    private float rangedAttackDistance = 110.0f; // The distance for ranged attacks
-    private float attackTime = 2.0f; // Time the attack animation should play
-    public float attackCooldown = 2.0f;
-    // private float lastAttackTime = .0f;
-    private bool isAttackInitiated = false; // To control attack initiation
-
-
-
     private Animator animator;
     private Transform playerTransform;
     private SpitterStateManager spitter;
 
+    public float attackCooldown = 2.0f; // Cooldown between attacks
+    private float rangedAttackDistance = 10.0f; // The distance for ranged attacks
+    private bool isAttackInitiated = false; // To control attack initiation
+    private Coroutine attackCoroutine; // To keep track of the coroutine
+
     public override void EnterState(SpitterStateManager spitter)
     {
         this.spitter = spitter;
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform; // Use null-conditional to prevent error
         animator = spitter.GetComponent<Animator>();
 
-        // Start the attack animation and projectile firing simultaneously
-        isAttackInitiated = false; // Reset attack initiation flag
-
-        animator.SetBool("isAttacking", true);
-        // RangedAttack();
-
-        Debug.Log("[SpitterAttackState] Attack routine initiated.");
-
-        // Start a coroutine to end the attack after the animation duration
-        // spitter.StartCoroutine(EndAttack());
+        if (playerTransform != null)
+        {
+            isAttackInitiated = false; // Reset attack initiation flag
+            animator.SetBool("isAttacking", true);
+            attackCoroutine = spitter.StartCoroutine(AttackRoutine()); // Store coroutine reference
+        }
+        else
+        {
+            spitter.SwitchState(spitter.IdleState);
+        }
     }
 
     public override void UpdateState(SpitterStateManager spitter)
     {
+        // If the player is destroyed during the attack, clean up and exit state
+        if (playerTransform == null || playerTransform.gameObject == null)
+        {
+            CleanupAttack();
+            return;
+        }
 
         float distanceToPlayer = Vector3.Distance(spitter.transform.position, playerTransform.position);
-        Debug.Log($"[SpitterAttackState] Distance to player: {distanceToPlayer}");
-
-        // Start the attack routine only if not already initiated and player is in range
-        if (distanceToPlayer <= rangedAttackDistance && !isAttackInitiated)
+        if (!isAttackInitiated && distanceToPlayer <= rangedAttackDistance)
         {
-            isAttackInitiated = true; // Set the flag to true to prevent re-initiation
-            spitter.StartCoroutine(AttackRoutine());
+            attackCoroutine = spitter.StartCoroutine(AttackRoutine());
         }
-
-        // If the player moves out of attack range, consider ending the attack early
         else if (distanceToPlayer > rangedAttackDistance && isAttackInitiated)
         {
-            // Stop the attack coroutine and switch state to idle
-            isAttackInitiated = false;
-            animator.SetBool("isAttacking", false);
-
-            spitter.StopCoroutine(AttackRoutine()); // Stop the current attack routine
-            spitter.SwitchState(spitter.IdleState);
-            Debug.Log("[SpitterAttackState] Player out of attack range. Ending attack early.");
+            CleanupAttack();
         }
     }
 
-
-
-    // Use this method to end the attack animation and switch state after a fixed time
     private IEnumerator AttackRoutine()
     {
-        yield return new WaitForSeconds(attackTime);
-        RangedAttack();
+        isAttackInitiated = true;
+        yield return new WaitForSeconds(attackCooldown); // Wait for the appropriate time to fire the projectile
 
-        animator.SetBool("isAttacking", false);
-        spitter.SwitchState(spitter.IdleState);
-        Debug.Log("[SpitterAttackState] Attack routine complete. Switching to idle state.");
+        // If player has been destroyed, don't continue
+        if (playerTransform == null)
+        {
+            yield break;
+        }
+
+        FireProjectile(); // Proceed to fire the projectile
+
+        yield return new WaitForSeconds(attackCooldown); // Cooldown after firing
+
+        // If player has been destroyed, don't continue
+        if (playerTransform == null || playerTransform.gameObject == null)
+        {
+            CleanupAttack();
+
+            yield break;
+        }
+
+        CleanupAttack();
     }
 
-
-    // This method will fire the projectile immediately
-    private void RangedAttack()
+    private void FireProjectile()
     {
-        GameObject projectilePrefab = spitter.ProjectilePrefab; // Retrieve from state manager
-        Transform projectileSpawnPoint = spitter.ProjectileSpawnPoint; 
+        if (playerTransform == null) return; // Extra check to ensure player is not null
+
+        GameObject projectilePrefab = spitter.ProjectilePrefab; 
+        Transform projectileSpawnPoint = spitter.ProjectileSpawnPoint;
 
         if (projectilePrefab != null && projectileSpawnPoint != null)
         {
-            GameObject projectileObject = GameObject.Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
-            Projectile projectile = projectileObject.GetComponent<Projectile>();
-
             // Calculate the direction from the spitter to the player
             Vector2 direction = (playerTransform.position - projectileSpawnPoint.position).normalized;
-            projectile.setDirection(direction);
 
+            // Check the angle of the direction
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            // If the angle is downwards, do not fire
+            if (angle < -45f && angle > -135f)
+            {
+                Debug.Log("[SpitterAttackState] Prevented firing downwards.");
+                return;
+            }
+
+            GameObject projectileObject = GameObject.Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
+            Projectile projectile = projectileObject.GetComponent<Projectile>();
+            projectile.setDirection(direction);
             Debug.Log("[SpitterAttackState] Projectile fired.");
         }
         else
@@ -96,6 +108,21 @@ public class SpitterAttackState : SpitterBaseState
         }
     }
 
+    private void CleanupAttack()
+    {
+        if (attackCoroutine != null)
+        {
+            spitter.StopCoroutine(attackCoroutine);
+            attackCoroutine = null;
+        }
+        isAttackInitiated = false;
+        animator.SetBool("isAttacking", false);
+        spitter.SwitchState(spitter.IdleState);
+    }
+    private Vector2 CalculateDirection()
+    {
+        return (playerTransform.position - spitter.ProjectileSpawnPoint.position).normalized;
+    }
 
     public override void OnCollisionEnter2D(SpitterStateManager spitter, Collision2D other)
     {
@@ -106,5 +133,17 @@ public class SpitterAttackState : SpitterBaseState
     public override void OnTriggerStay2D(SpitterStateManager spitter, Collider2D other)
     {
 
+    }
+
+    //done in animation events
+    public override void EventTrigger(SpitterStateManager spitter)
+    {
+        FireProjectile();
+    }
+
+    public override void TakeDamage(SpitterStateManager spitter)
+    {
+        CleanupAttack();
+        spitter.SwitchState(spitter.HitState);
     }
 }

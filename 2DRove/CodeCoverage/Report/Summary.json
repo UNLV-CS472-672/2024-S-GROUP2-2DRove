@@ -1,30 +1,28 @@
 {
   "summary": {
-    "generatedon": "2024-03-26T07:09:36Z",
+    "generatedon": "2024-03-26T09:55:34Z",
     "parser": "MultiReportParser (2x OpenCoverParser)",
     "assemblies": 3,
-    "classes": 225,
-    "files": 219,
-    "coveredlines": 1264,
-    "uncoveredlines": 7304,
-    "coverablelines": 8568,
-    "totallines": 17136,
-    "linecoverage": 14.7,
+    "classes": 223,
+    "files": 217,
+    "coveredlines": 1343,
+    "uncoveredlines": 7041,
+    "coverablelines": 8384,
+    "totallines": 16842,
+    "linecoverage": 16,
     "coveredbranches": 0,
     "totalbranches": 0,
-    "coveredmethods": 305,
-    "totalmethods": 1341,
-    "methodcoverage": 22.7
+    "coveredmethods": 316,
+    "totalmethods": 1321,
+    "methodcoverage": 23.9
  },
   "coverage": {
     "assemblies": [
-      { "name": "GameTestAssembly", "classes": 6, "coverage": 36.1, "coveredlines": 150, "coverablelines": 415, "totallines": 772, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 39.5, "coveredmethods": 17, "totalmethods": 43, "classesinassembly": [
-        { "name": "DLAMapGen", "coverage": 0, "coveredlines": 0, "coverablelines": 128, "totallines": 194, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 17 },
-        { "name": "Exit", "coverage": 30, "coveredlines": 3, "coverablelines": 10, "totallines": 19, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 50, "coveredmethods": 1, "totalmethods": 2 },
+      { "name": "GameTestAssembly", "classes": 4, "coverage": 73.1, "coveredlines": 169, "coverablelines": 231, "totallines": 478, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 82.6, "coveredmethods": 19, "totalmethods": 23, "classesinassembly": [
+        { "name": "Exit", "coverage": 36.3, "coveredlines": 4, "coverablelines": 11, "totallines": 20, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 2, "totalmethods": 3 },
         { "name": "LoadingScreenManager", "coverage": 0, "coveredlines": 0, "coverablelines": 23, "totallines": 37, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "MapGen.MapGen", "coverage": 0, "coveredlines": 0, "coverablelines": 57, "totallines": 101, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
-        { "name": "MapGenDLANamespace.MapGenDLA", "coverage": 79.3, "coveredlines": 142, "coverablelines": 179, "totallines": 353, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 93.3, "coveredmethods": 14, "totalmethods": 15 },
-        { "name": "Player", "coverage": 27.7, "coveredlines": 5, "coverablelines": 18, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 2, "totalmethods": 3 } ] },
+        { "name": "MapGenDLANamespace.MapGenDLA", "coverage": 83.7, "coveredlines": 150, "coverablelines": 179, "totallines": 353, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 93.3, "coveredmethods": 14, "totalmethods": 15 },
+        { "name": "Player", "coverage": 83.3, "coveredlines": 15, "coverablelines": 18, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 } ] },
       { "name": "UnityEditor.TestRunner", "classes": 127, "coverage": 5.2, "coveredlines": 276, "coverablelines": 5221, "totallines": 11063, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 13.2, "coveredmethods": 101, "totalmethods": 762, "classesinassembly": [
         { "name": "TestRunner.Callbacks.WindowResultUpdaterDataHolder", "coverage": 0, "coveredlines": 0, "coverablelines": 1, "totallines": 11, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 1 },
         { "name": "UnityEditor.TestRunner.CommandLineParser.CommandLineOption", "coverage": 0, "coveredlines": 0, "coverablelines": 25, "totallines": 45, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 7 },
@@ -153,7 +151,7 @@
         { "name": "UnityEngine.TestTools.ExitPlayMode", "coverage": 0, "coveredlines": 0, "coverablelines": 17, "totallines": 48, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "UnityEngine.TestTools.RecompileScripts", "coverage": 0, "coveredlines": 0, "coverablelines": 36, "totallines": 111, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 13 },
         { "name": "UnityEngine.TestTools.WaitForDomainReload", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 } ] },
-      { "name": "UnityEngine.TestRunner", "classes": 92, "coverage": 28.5, "coveredlines": 838, "coverablelines": 2932, "totallines": 6571, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 34.8, "coveredmethods": 187, "totalmethods": 536, "classesinassembly": [
+      { "name": "UnityEngine.TestRunner", "classes": 92, "coverage": 30.6, "coveredlines": 898, "coverablelines": 2932, "totallines": 6571, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 36.5, "coveredmethods": 196, "totalmethods": 536, "classesinassembly": [
         { "name": "UnityEngine.TestRunner.NUnitExtensions.Filters.AssemblyNameFilter", "coverage": 0, "coveredlines": 0, "coverablelines": 8, "totallines": 25, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
         { "name": "UnityEngine.TestRunner.NUnitExtensions.Filters.CategoryFilterExtended", "coverage": 0, "coveredlines": 0, "coverablelines": 16, "totallines": 36, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
         { "name": "UnityEngine.TestRunner.NUnitExtensions.Filters.FullNameFilter", "coverage": 0, "coveredlines": 0, "coverablelines": 7, "totallines": 21, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 3 },
@@ -180,7 +178,7 @@
         { "name": "UnityEngine.TestRunner.TestRunCallbackAttribute", "coverage": 81.8, "coveredlines": 9, "coverablelines": 11, "totallines": 68, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 2, "totalmethods": 2 },
         { "name": "UnityEngine.TestRunner.Utils.TestRunCallbackListener", "coverage": 79.4, "coveredlines": 27, "coverablelines": 34, "totallines": 63, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 83.3, "coveredmethods": 5, "totalmethods": 6 },
         { "name": "UnityEngine.TestTools.AttributeHelper", "coverage": 0, "coveredlines": 0, "coverablelines": 27, "totallines": 45, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "UnityEngine.TestTools.BeforeAfterTestCommandBase[T]", "coverage": 28.7, "coveredlines": 54, "coverablelines": 188, "totallines": 296, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 45.4, "coveredmethods": 5, "totalmethods": 11 },
+        { "name": "UnityEngine.TestTools.BeforeAfterTestCommandBase[T]", "coverage": 29.7, "coveredlines": 56, "coverablelines": 188, "totallines": 296, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 45.4, "coveredmethods": 5, "totalmethods": 11 },
         { "name": "UnityEngine.TestTools.BeforeAfterTestCommandState", "coverage": 100, "coveredlines": 23, "coverablelines": 23, "totallines": 52, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 100, "coveredmethods": 3, "totalmethods": 3 },
         { "name": "UnityEngine.TestTools.ConditionalIgnoreAttribute", "coverage": 0, "coveredlines": 0, "coverablelines": 18, "totallines": 85, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "UnityEngine.TestTools.Constraints.AllocatingGCMemoryConstraint", "coverage": 0, "coveredlines": 0, "coverablelines": 37, "totallines": 128, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 6 },
@@ -192,10 +190,10 @@
         { "name": "UnityEngine.TestTools.EnumerableSetUpTearDownCommand", "coverage": 53.3, "coveredlines": 16, "coverablelines": 30, "totallines": 58, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 42.8, "coveredmethods": 3, "totalmethods": 7 },
         { "name": "UnityEngine.TestTools.EnumerableTestMethodCommand", "coverage": 60.8, "coveredlines": 45, "coverablelines": 74, "totallines": 135, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 6, "totalmethods": 9 },
         { "name": "UnityEngine.TestTools.ImmediateEnumerableCommand", "coverage": 0, "coveredlines": 0, "coverablelines": 14, "totallines": 32, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 2 },
-        { "name": "UnityEngine.TestTools.LogAssert", "coverage": 0, "coveredlines": 0, "coverablelines": 19, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
-        { "name": "UnityEngine.TestTools.Logging.LogEvent", "coverage": 42.8, "coveredlines": 3, "coverablelines": 7, "totallines": 18, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 66.6, "coveredmethods": 6, "totalmethods": 9 },
-        { "name": "UnityEngine.TestTools.Logging.LogMatch", "coverage": 0, "coveredlines": 0, "coverablelines": 52, "totallines": 103, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 8 },
-        { "name": "UnityEngine.TestTools.Logging.LogScope", "coverage": 42.6, "coveredlines": 72, "coverablelines": 169, "totallines": 248, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 57.5, "coveredmethods": 19, "totalmethods": 33 },
+        { "name": "UnityEngine.TestTools.LogAssert", "coverage": 15.7, "coveredlines": 3, "coverablelines": 19, "totallines": 79, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 20, "coveredmethods": 1, "totalmethods": 5 },
+        { "name": "UnityEngine.TestTools.Logging.LogEvent", "coverage": 57.1, "coveredlines": 4, "coverablelines": 7, "totallines": 18, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 88.8, "coveredmethods": 8, "totalmethods": 9 },
+        { "name": "UnityEngine.TestTools.Logging.LogMatch", "coverage": 46.1, "coveredlines": 24, "coverablelines": 52, "totallines": 103, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 62.5, "coveredmethods": 5, "totalmethods": 8 },
+        { "name": "UnityEngine.TestTools.Logging.LogScope", "coverage": 60.3, "coveredlines": 102, "coverablelines": 169, "totallines": 248, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 60.6, "coveredmethods": 20, "totalmethods": 33 },
         { "name": "UnityEngine.TestTools.MonoBehaviourTest[T]", "coverage": 0, "coveredlines": 0, "coverablelines": 12, "totallines": 60, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 4 },
         { "name": "UnityEngine.TestTools.NUnitExtensions.ActionDelegator", "coverage": 0, "coveredlines": 0, "coverablelines": 37, "totallines": 73, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },
         { "name": "UnityEngine.TestTools.NUnitExtensions.BaseDelegator", "coverage": 0, "coveredlines": 0, "coverablelines": 32, "totallines": 58, "branchcoverage": null, "coveredbranches": 0, "totalbranches": 0, "methodcoverage": 0, "coveredmethods": 0, "totalmethods": 5 },

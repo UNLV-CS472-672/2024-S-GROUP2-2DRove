@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>3/26/2024 - 12:09:36 AM</Generatedon>
+    <Generatedon>3/26/2024 - 2:55:34 AM</Generatedon>
     <Parser>MultiReportParser (2x OpenCoverParser)</Parser>
     <Assemblies>3</Assemblies>
-    <Classes>225</Classes>
-    <Files>219</Files>
-    <Coveredlines>1264</Coveredlines>
-    <Uncoveredlines>7304</Uncoveredlines>
-    <Coverablelines>8568</Coverablelines>
-    <Totallines>17136</Totallines>
-    <Linecoverage>14.7</Linecoverage>
+    <Classes>223</Classes>
+    <Files>217</Files>
+    <Coveredlines>1343</Coveredlines>
+    <Uncoveredlines>7041</Uncoveredlines>
+    <Coverablelines>8384</Coverablelines>
+    <Totallines>16842</Totallines>
+    <Linecoverage>16</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>305</Coveredmethods>
-    <Totalmethods>1341</Totalmethods>
-    <Methodcoverage>22.7</Methodcoverage>
+    <Coveredmethods>316</Coveredmethods>
+    <Totalmethods>1321</Totalmethods>
+    <Methodcoverage>23.9</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="GameTestAssembly" classes="6" coverage="36.1" coveredlines="150" coverablelines="415" totallines="772" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="17" totalmethods="43" methodcoverage="39.5">
-      <Class name="DLAMapGen" coverage="0" coveredlines="0" coverablelines="128" totallines="194" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="17" methodcoverage="0" />
-      <Class name="Exit" coverage="30" coveredlines="3" coverablelines="10" totallines="19" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="2" methodcoverage="50" />
+    <Assembly name="GameTestAssembly" classes="4" coverage="73.1" coveredlines="169" coverablelines="231" totallines="478" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="19" totalmethods="23" methodcoverage="82.6">
+      <Class name="Exit" coverage="36.3" coveredlines="4" coverablelines="11" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="3" methodcoverage="66.6" />
       <Class name="LoadingScreenManager" coverage="0" coveredlines="0" coverablelines="23" totallines="37" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="MapGen.MapGen" coverage="0" coveredlines="0" coverablelines="57" totallines="101" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
-      <Class name="MapGenDLANamespace.MapGenDLA" coverage="79.3" coveredlines="142" coverablelines="179" totallines="353" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="15" methodcoverage="93.3" />
-      <Class name="Player" coverage="27.7" coveredlines="5" coverablelines="18" totallines="68" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="3" methodcoverage="66.6" />
+      <Class name="MapGenDLANamespace.MapGenDLA" coverage="83.7" coveredlines="150" coverablelines="179" totallines="353" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="15" methodcoverage="93.3" />
+      <Class name="Player" coverage="83.3" coveredlines="15" coverablelines="18" totallines="68" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
     </Assembly>
     <Assembly name="UnityEditor.TestRunner" classes="127" coverage="5.2" coveredlines="276" coverablelines="5221" totallines="11063" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="101" totalmethods="762" methodcoverage="13.2">
       <Class name="TestRunner.Callbacks.WindowResultUpdaterDataHolder" coverage="0" coveredlines="0" coverablelines="1" totallines="11" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="1" methodcoverage="0" />
@@ -155,7 +153,7 @@
       <Class name="UnityEngine.TestTools.RecompileScripts" coverage="0" coveredlines="0" coverablelines="36" totallines="111" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="13" methodcoverage="0" />
       <Class name="UnityEngine.TestTools.WaitForDomainReload" coverage="0" coveredlines="0" coverablelines="14" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
     </Assembly>
-    <Assembly name="UnityEngine.TestRunner" classes="92" coverage="28.5" coveredlines="838" coverablelines="2932" totallines="6571" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="187" totalmethods="536" methodcoverage="34.8">
+    <Assembly name="UnityEngine.TestRunner" classes="92" coverage="30.6" coveredlines="898" coverablelines="2932" totallines="6571" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="196" totalmethods="536" methodcoverage="36.5">
       <Class name="UnityEngine.TestRunner.NUnitExtensions.Filters.AssemblyNameFilter" coverage="0" coveredlines="0" coverablelines="8" totallines="25" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
       <Class name="UnityEngine.TestRunner.NUnitExtensions.Filters.CategoryFilterExtended" coverage="0" coveredlines="0" coverablelines="16" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
       <Class name="UnityEngine.TestRunner.NUnitExtensions.Filters.FullNameFilter" coverage="0" coveredlines="0" coverablelines="7" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="3" methodcoverage="0" />
@@ -182,7 +180,7 @@
       <Class name="UnityEngine.TestRunner.TestRunCallbackAttribute" coverage="81.8" coveredlines="9" coverablelines="11" totallines="68" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
       <Class name="UnityEngine.TestRunner.Utils.TestRunCallbackListener" coverage="79.4" coveredlines="27" coverablelines="34" totallines="63" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="6" methodcoverage="83.3" />
       <Class name="UnityEngine.TestTools.AttributeHelper" coverage="0" coveredlines="0" coverablelines="27" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="UnityEngine.TestTools.BeforeAfterTestCommandBase[T]" coverage="28.7" coveredlines="54" coverablelines="188" totallines="296" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="11" methodcoverage="45.4" />
+      <Class name="UnityEngine.TestTools.BeforeAfterTestCommandBase[T]" coverage="29.7" coveredlines="56" coverablelines="188" totallines="296" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="11" methodcoverage="45.4" />
       <Class name="UnityEngine.TestTools.BeforeAfterTestCommandState" coverage="100" coveredlines="23" coverablelines="23" totallines="52" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
       <Class name="UnityEngine.TestTools.ConditionalIgnoreAttribute" coverage="0" coveredlines="0" coverablelines="18" totallines="85" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
       <Class name="UnityEngine.TestTools.Constraints.AllocatingGCMemoryConstraint" coverage="0" coveredlines="0" coverablelines="37" totallines="128" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
@@ -194,10 +192,10 @@
       <Class name="UnityEngine.TestTools.EnumerableSetUpTearDownCommand" coverage="53.3" coveredlines="16" coverablelines="30" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="7" methodcoverage="42.8" />
       <Class name="UnityEngine.TestTools.EnumerableTestMethodCommand" coverage="60.8" coveredlines="45" coverablelines="74" totallines="135" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="9" methodcoverage="66.6" />
       <Class name="UnityEngine.TestTools.ImmediateEnumerableCommand" coverage="0" coveredlines="0" coverablelines="14" totallines="32" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
-      <Class name="UnityEngine.TestTools.LogAssert" coverage="0" coveredlines="0" coverablelines="19" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
-      <Class name="UnityEngine.TestTools.Logging.LogEvent" coverage="42.8" coveredlines="3" coverablelines="7" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="9" methodcoverage="66.6" />
-      <Class name="UnityEngine.TestTools.Logging.LogMatch" coverage="0" coveredlines="0" coverablelines="52" totallines="103" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="8" methodcoverage="0" />
-      <Class name="UnityEngine.TestTools.Logging.LogScope" coverage="42.6" coveredlines="72" coverablelines="169" totallines="248" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="19" totalmethods="33" methodcoverage="57.5" />
+      <Class name="UnityEngine.TestTools.LogAssert" coverage="15.7" coveredlines="3" coverablelines="19" totallines="79" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="5" methodcoverage="20" />
+      <Class name="UnityEngine.TestTools.Logging.LogEvent" coverage="57.1" coveredlines="4" coverablelines="7" totallines="18" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="8" totalmethods="9" methodcoverage="88.8" />
+      <Class name="UnityEngine.TestTools.Logging.LogMatch" coverage="46.1" coveredlines="24" coverablelines="52" totallines="103" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="8" methodcoverage="62.5" />
+      <Class name="UnityEngine.TestTools.Logging.LogScope" coverage="60.3" coveredlines="102" coverablelines="169" totallines="248" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="20" totalmethods="33" methodcoverage="60.6" />
       <Class name="UnityEngine.TestTools.MonoBehaviourTest[T]" coverage="0" coveredlines="0" coverablelines="12" totallines="60" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
       <Class name="UnityEngine.TestTools.NUnitExtensions.ActionDelegator" coverage="0" coveredlines="0" coverablelines="37" totallines="73" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
       <Class name="UnityEngine.TestTools.NUnitExtensions.BaseDelegator" coverage="0" coveredlines="0" coverablelines="32" totallines="58" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class Exit : MonoBehaviour
 {
     public LoadingScreenManager loadingScreenManager;
+    public int nextSceneIndex = 0;
     void Start()
     {
         loadingScreenManager = GameObject.Find("LoadingScreenManager").GetComponent<LoadingScreenManager>();
@@ -12,7 +13,7 @@ public class Exit : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
-            int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             loadingScreenManager.LoadScene(nextSceneIndex);
         }
     }

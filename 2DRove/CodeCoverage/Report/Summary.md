@@ -1,31 +1,29 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 3/26/2024 - 12:09:36 AM |
+| Generated on: | 3/26/2024 - 2:55:34 AM |
 | Parser: | MultiReportParser (2x OpenCoverParser) |
 | Assemblies: | 3 |
-| Classes: | 225 |
-| Files: | 219 |
-| Covered lines: | 1264 |
-| Uncovered lines: | 7304 |
-| Coverable lines: | 8568 |
-| Total lines: | 17136 |
-| Line coverage: | 14.7% (1264 of 8568) |
+| Classes: | 223 |
+| Files: | 217 |
+| Covered lines: | 1343 |
+| Uncovered lines: | 7041 |
+| Coverable lines: | 8384 |
+| Total lines: | 16842 |
+| Line coverage: | 16% (1343 of 8384) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 305 |
-| Total methods: | 1341 |
-| Method coverage: | 22.7% (305 of 1341) |
+| Covered methods: | 316 |
+| Total methods: | 1321 |
+| Method coverage: | 23.9% (316 of 1321) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GameTestAssembly**|**150**|**265**|**415**|**772**|**36.1%**|**0**|**0**|****|**17**|**43**|**39.5%**|
-|DLAMapGen|0|128|128|194|0%|0|0||0|17|0%|
-|Exit|3|7|10|19|30%|0|0||1|2|50%|
+|**GameTestAssembly**|**169**|**62**|**231**|**478**|**73.1%**|**0**|**0**|****|**19**|**23**|**82.6%**|
+|Exit|4|7|11|20|36.3%|0|0||2|3|66.6%|
 |LoadingScreenManager|0|23|23|37|0%|0|0||0|2|0%|
-|MapGen.MapGen|0|57|57|101|0%|0|0||0|4|0%|
-|MapGenDLANamespace.MapGenDLA|142|37|179|353|79.3%|0|0||14|15|93.3%|
-|Player|5|13|18|68|27.7%|0|0||2|3|66.6%|
+|MapGenDLANamespace.MapGenDLA|150|29|179|353|83.7%|0|0||14|15|93.3%|
+|Player|15|3|18|68|83.3%|0|0||3|3|100%|
 |**UnityEditor.TestRunner**|**276**|**4945**|**5221**|**11063**|**5.2%**|**0**|**0**|****|**101**|**762**|**13.2%**|
 |TestRunner.Callbacks.WindowResultUpdaterDataHolder|0|1|1|11|0%|0|0||0|1|0%|
 |UnityEditor.TestRunner.CommandLineParser.CommandLineOption|0|25|25|45|0%|0|0||0|7|0%|
@@ -154,7 +152,7 @@
 |UnityEngine.TestTools.ExitPlayMode|0|17|17|48|0%|0|0||0|5|0%|
 |UnityEngine.TestTools.RecompileScripts|0|36|36|111|0%|0|0||0|13|0%|
 |UnityEngine.TestTools.WaitForDomainReload|0|14|14|63|0%|0|0||0|4|0%|
-|**UnityEngine.TestRunner**|**838**|**2094**|**2932**|**6571**|**28.5%**|**0**|**0**|****|**187**|**536**|**34.8%**|
+|**UnityEngine.TestRunner**|**898**|**2034**|**2932**|**6571**|**30.6%**|**0**|**0**|****|**196**|**536**|**36.5%**|
 |UnityEngine.TestRunner.NUnitExtensions.Filters.AssemblyNameFilter|0|8|8|25|0%|0|0||0|3|0%|
 |UnityEngine.TestRunner.NUnitExtensions.Filters.CategoryFilterExtended|0|16|16|36|0%|0|0||0|3|0%|
 |UnityEngine.TestRunner.NUnitExtensions.Filters.FullNameFilter|0|7|7|21|0%|0|0||0|3|0%|
@@ -181,7 +179,7 @@
 |UnityEngine.TestRunner.TestRunCallbackAttribute|9|2|11|68|81.8%|0|0||2|2|100%|
 |UnityEngine.TestRunner.Utils.TestRunCallbackListener|27|7|34|63|79.4%|0|0||5|6|83.3%|
 |UnityEngine.TestTools.AttributeHelper|0|27|27|45|0%|0|0||0|2|0%|
-|UnityEngine.TestTools.BeforeAfterTestCommandBase[T]|54|134|188|296|28.7%|0|0||5|11|45.4%|
+|UnityEngine.TestTools.BeforeAfterTestCommandBase[T]|56|132|188|296|29.7%|0|0||5|11|45.4%|
 |UnityEngine.TestTools.BeforeAfterTestCommandState|23|0|23|52|100%|0|0||3|3|100%|
 |UnityEngine.TestTools.ConditionalIgnoreAttribute|0|18|18|85|0%|0|0||0|4|0%|
 |UnityEngine.TestTools.Constraints.AllocatingGCMemoryConstraint|0|37|37|128|0%|0|0||0|6|0%|
@@ -193,10 +191,10 @@
 |UnityEngine.TestTools.EnumerableSetUpTearDownCommand|16|14|30|58|53.3%|0|0||3|7|42.8%|
 |UnityEngine.TestTools.EnumerableTestMethodCommand|45|29|74|135|60.8%|0|0||6|9|66.6%|
 |UnityEngine.TestTools.ImmediateEnumerableCommand|0|14|14|32|0%|0|0||0|2|0%|
-|UnityEngine.TestTools.LogAssert|0|19|19|79|0%|0|0||0|5|0%|
-|UnityEngine.TestTools.Logging.LogEvent|3|4|7|18|42.8%|0|0||6|9|66.6%|
-|UnityEngine.TestTools.Logging.LogMatch|0|52|52|103|0%|0|0||0|8|0%|
-|UnityEngine.TestTools.Logging.LogScope|72|97|169|248|42.6%|0|0||19|33|57.5%|
+|UnityEngine.TestTools.LogAssert|3|16|19|79|15.7%|0|0||1|5|20%|
+|UnityEngine.TestTools.Logging.LogEvent|4|3|7|18|57.1%|0|0||8|9|88.8%|
+|UnityEngine.TestTools.Logging.LogMatch|24|28|52|103|46.1%|0|0||5|8|62.5%|
+|UnityEngine.TestTools.Logging.LogScope|102|67|169|248|60.3%|0|0||20|33|60.6%|
 |UnityEngine.TestTools.MonoBehaviourTest[T]|0|12|12|60|0%|0|0||0|4|0%|
 |UnityEngine.TestTools.NUnitExtensions.ActionDelegator|0|37|37|73|0%|0|0||0|5|0%|
 |UnityEngine.TestTools.NUnitExtensions.BaseDelegator|0|32|32|58|0%|0|0||0|5|0%|

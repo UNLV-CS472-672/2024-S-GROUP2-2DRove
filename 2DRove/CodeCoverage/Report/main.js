@@ -224,11 +224,11 @@ var assemblies = [
   {
     "name": "Tests",
     "classes": [
-      { "name": "MainTest", "rp": "Tests_MainTest.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 25, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "3/21/2024 - 5:33:45 PM", "cl": 5, "ucl": 0, "cal": 5, "tl": 25, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "3/21/2024 - 5:36:11 PM", "cl": 5, "ucl": 0, "cal": 5, "tl": 25, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "3/21/2024 - 10:05:09 PM", "cl": 5, "ucl": 0, "cal": 5, "tl": 25, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }, { "et": "3/22/2024 - 8:32:33 AM", "cl": 5, "ucl": 0, "cal": 5, "tl": 25, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
+      { "name": "MainTest", "rp": "Tests_MainTest.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 25, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [100], "bch": [], "hc": [{ "et": "3/26/2024 - 3:56:23 PM", "cl": 5, "ucl": 0, "cal": 5, "tl": 25, "lcq": 100, "cb": 0, "tb": 0, "bcq": 0 }] },
     ]},
 ];
 
-var historicCoverageExecutionTimes = ["3/21/2024 - 10:05:09 PM", "3/21/2024 - 5:36:11 PM", "3/21/2024 - 5:33:45 PM"];
+var historicCoverageExecutionTimes = [];
 
 var riskHotspotMetrics = [
 ];

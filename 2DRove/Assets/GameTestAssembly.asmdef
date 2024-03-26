@@ -2,7 +2,8 @@
     "name": "RuntimeAssembly",
     "rootNamespace": "",
     "references": [
-        "Tests"
+        "UnityEditor.TestRunner",
+        "UnityEngine.TestRunner"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

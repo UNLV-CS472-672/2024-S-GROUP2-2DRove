@@ -40,15 +40,19 @@ jobs:
           unityVersion: 2022.3.19f1
           testMode: playmode
           customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateHtmlReport
-      # Move code coreage items
-      - name: Create folder called "CodeCoverageGithubActions" and "Reports" subfolder.
-        run: |
-          mkdir -p 2DRove/CodeCoverageGithubActions
-          mkdir -p 2DRove/CodeCoverageGithubActions/Report
       # Archive our code coverage results in a zip file (will try to output it to actions later)
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: 2DRove/CodeCoverageGithubActions/Report
+          path: 2DRove/CodeCoverage/Report/
+      # Commit and push the code coverage results to the branch
+      - name: Commit code coverage results
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f 2DRove/CodeCoverage/Report
+          git commit -m "Updated code coverage report using github actions."
+          git push
+            
             

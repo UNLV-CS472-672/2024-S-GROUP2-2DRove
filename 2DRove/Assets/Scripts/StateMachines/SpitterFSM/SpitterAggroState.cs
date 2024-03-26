@@ -10,8 +10,8 @@ public class SpitterAggroState : SpitterBaseState
     public override void EnterState(SpitterStateManager spitter)
     {
         Debug.Log("Spitter Entering Aggo State...");
-    
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>(); 
+
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
 
         rb = spitter.GetComponent<Rigidbody2D>();
         animator = spitter.GetComponent<Animator>();
@@ -19,17 +19,20 @@ public class SpitterAggroState : SpitterBaseState
 
     public override void UpdateState(SpitterStateManager spitter)
     {
-        Vector2 Direction = (player.position - spitter.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        Vector2 direction = (player.position - spitter.transform.position).normalized;
+        rb.AddForce(direction * 1f);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
-        // player is moving horizional
-        if (Direction.x != 0)
+        // Check if attack animation is playing
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("isAttacking")) // Replace "AttackAnimationName" with your actual attack animation name
         {
-            flipped = Direction.x < 0; // player moved left(flipped = true), else player is moving right(flipped = false)
+            // Player is moving horizontally and attack is not playing
+            if (direction.x != 0)
+            {
+                flipped = direction.x < 0; // player moved left(flipped = true), else player is moving right(flipped = false)
+                spitter.transform.rotation = Quaternion.Euler(new Vector3(0f, flipped ? 180 : 0f, 0f));
+            }
         }
-        spitter.transform.rotation = Quaternion.Euler(new Vector3(0f, flipped ? 180 : 0f, 0f));
-
     }
 
     public override void OnCollisionEnter2D(SpitterStateManager spitter, Collision2D other)

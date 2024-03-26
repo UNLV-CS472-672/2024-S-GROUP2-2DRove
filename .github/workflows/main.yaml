@@ -26,10 +26,6 @@ jobs:
         with:
           path: Library
           key: Library
-      # Move code coreage items
-      - name: Move code coverage items to new folder called "CodeCoverageGithubActions"
-        run: |
-          mkdir -p 2DRove/CodeCoverageGithubActions
       # Runs tests using integrated Test Runner for workflows
       - name: Unity - Test runner
         uses: game-ci/unity-test-runner@v4.1.1
@@ -43,11 +39,11 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           unityVersion: 2022.3.19f1
           testMode: playmode
-          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath 2DRove/CodeCoverageGithubActions -coverageOptions generateHtmlReport
+          customParameters: -debugCodeOptimization -enableCodeCoverage -coverageResultsPath ./coverage-results -coverageOptions generateHtmlReport
       # Archive our code coverage results in a zip file (will try to output it to actions later)
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: 2DRove/CodeCoverageGithubActions/Report/
+          path: 2DRove/CodeCoverage
             

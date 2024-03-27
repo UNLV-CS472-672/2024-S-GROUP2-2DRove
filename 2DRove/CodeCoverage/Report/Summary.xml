@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageReport scope="Summary">
+  <Summary>
+    <Generatedon>3/26/2024 - 5:46:43 PM</Generatedon>
+    <Parser>MultiReportParser (5x OpenCoverParser)</Parser>
+    <Assemblies>2</Assemblies>
+    <Classes>54</Classes>
+    <Files>54</Files>
+    <Coveredlines>988</Coveredlines>
+    <Uncoveredlines>623</Uncoveredlines>
+    <Coverablelines>1611</Coverablelines>
+    <Totallines>3136</Totallines>
+    <Linecoverage>61.3</Linecoverage>
+    <Coveredbranches>0</Coveredbranches>
+    <Totalbranches>0</Totalbranches>
+    <Coveredmethods>207</Coveredmethods>
+    <Totalmethods>370</Totalmethods>
+    <Methodcoverage>55.9</Methodcoverage>
+  </Summary>
+  <Coverage>
+    <Assembly name="GameTestAssembly" classes="53" coverage="61.3" coveredlines="975" coverablelines="1588" totallines="3096" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="203" totalmethods="365" methodcoverage="55.6">
+      <Class name="CagedShockerAggroState" coverage="82.7" coveredlines="24" coverablelines="29" totallines="52" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="CagedShockerAttackState" coverage="86.4" coveredlines="32" coverablelines="37" totallines="61" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="CagedShockerDeathState" coverage="0" coveredlines="0" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
+      <Class name="CagedShockerHitState" coverage="3.7" coveredlines="1" coverablelines="27" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="7" methodcoverage="14.2" />
+      <Class name="CagedShockerIdleState" coverage="58.8" coveredlines="10" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="CagedShockerSpawnState" coverage="55" coveredlines="11" coverablelines="20" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="7" methodcoverage="42.8" />
+      <Class name="CagedShockerStateManager" coverage="66.6" coveredlines="24" coverablelines="36" totallines="69" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="9" methodcoverage="66.6" />
+      <Class name="CameraTrackingPlayer" coverage="100" coveredlines="6" coverablelines="6" totallines="17" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+      <Class name="Enemy" coverage="0" coveredlines="0" coverablelines="56" totallines="108" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="9" methodcoverage="0" />
+      <Class name="FPSDisplay" coverage="0" coveredlines="0" coverablelines="7" totallines="20" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="2" methodcoverage="0" />
+      <Class name="GameOverMenu" coverage="66.6" coveredlines="6" coverablelines="9" totallines="22" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="3" methodcoverage="66.6" />
+      <Class name="GhoulAggroState" coverage="75.8" coveredlines="22" coverablelines="29" totallines="52" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="GhoulAttackState" coverage="2.7" coveredlines="1" coverablelines="37" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="7" methodcoverage="14.2" />
+      <Class name="GhoulDeathState" coverage="41.1" coveredlines="7" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="6" methodcoverage="16.6" />
+      <Class name="GhoulHitState" coverage="84.6" coveredlines="22" coverablelines="26" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="GhoulIdleState" coverage="58.8" coveredlines="10" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="GhoulSpawnState" coverage="65" coveredlines="13" coverablelines="20" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="GhoulStateManager" coverage="77.1" coveredlines="27" coverablelines="35" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="9" methodcoverage="77.7" />
+      <Class name="ItemPickUp" coverage="0" coveredlines="0" coverablelines="26" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="5" methodcoverage="0" />
+      <Class name="MainMenu" coverage="0" coveredlines="0" coverablelines="13" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="4" methodcoverage="0" />
+      <Class name="NewEnemy" coverage="100" coveredlines="17" coverablelines="17" totallines="41" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="PlayerController" coverage="80.8" coveredlines="118" coverablelines="146" totallines="267" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="18" methodcoverage="77.7" />
+      <Class name="Projectile" coverage="100" coveredlines="25" coverablelines="25" totallines="45" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="SpawnEnemy" coverage="100" coveredlines="11" coverablelines="11" totallines="27" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
+      <Class name="SpiderAggroState" coverage="86.2" coveredlines="25" coverablelines="29" totallines="54" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="SpiderAttackState" coverage="54" coveredlines="20" coverablelines="37" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="SpiderDeathState" coverage="64.7" coveredlines="11" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="6" methodcoverage="50" />
+      <Class name="SpiderHitState" coverage="84.6" coveredlines="22" coverablelines="26" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="SpiderIdleState" coverage="58.8" coveredlines="10" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="SpiderSleepState" coverage="65" coveredlines="13" coverablelines="20" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="SpiderStateManager" coverage="77.1" coveredlines="27" coverablelines="35" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="9" methodcoverage="77.7" />
+      <Class name="SpitterAggroState" coverage="80" coveredlines="32" coverablelines="40" totallines="73" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="6" methodcoverage="83.3" />
+      <Class name="SpitterAttackState" coverage="75.8" coveredlines="69" coverablelines="91" totallines="152" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="9" totalmethods="11" methodcoverage="81.8" />
+      <Class name="SpitterDeathState" coverage="77.7" coveredlines="21" coverablelines="27" totallines="56" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="6" methodcoverage="50" />
+      <Class name="SpitterHitState" coverage="84.6" coveredlines="22" coverablelines="26" totallines="50" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="SpitterIdleState" coverage="55.1" coveredlines="16" coverablelines="29" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="6" methodcoverage="50" />
+      <Class name="SpitterProjectile" coverage="27.2" coveredlines="6" coverablelines="22" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="4" methodcoverage="50" />
+      <Class name="SpitterSpawnState" coverage="60.8" coveredlines="14" coverablelines="23" totallines="35" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="SpitterStateManager" coverage="82.5" coveredlines="33" coverablelines="40" totallines="84" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="11" methodcoverage="90.9" />
+      <Class name="SummonerAggroState" coverage="76.7" coveredlines="33" coverablelines="43" totallines="76" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="SummonerDeathState" coverage="44.4" coveredlines="8" coverablelines="18" totallines="43" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="6" methodcoverage="16.6" />
+      <Class name="SummonerHitState" coverage="3.1" coveredlines="1" coverablelines="32" totallines="65" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="7" methodcoverage="14.2" />
+      <Class name="SummonerIdleState" coverage="58.8" coveredlines="10" coverablelines="17" totallines="87" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="SummonerSpawnState" coverage="68.1" coveredlines="15" coverablelines="22" totallines="48" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="7" methodcoverage="57.1" />
+      <Class name="SummonerStateManager" coverage="85.3" coveredlines="35" coverablelines="41" totallines="81" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="8" methodcoverage="75" />
+      <Class name="SummonerSummoningState" coverage="70.5" coveredlines="36" coverablelines="51" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="8" methodcoverage="62.5" />
+      <Class name="WardenAggroState" coverage="82.7" coveredlines="24" coverablelines="29" totallines="52" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="7" methodcoverage="71.4" />
+      <Class name="WardenAttackState" coverage="78.8" coveredlines="41" coverablelines="52" totallines="89" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="8" methodcoverage="62.5" />
+      <Class name="WardenDeathState" coverage="0" coveredlines="0" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="0" totalmethods="6" methodcoverage="0" />
+      <Class name="WardenHitState" coverage="3.7" coveredlines="1" coverablelines="27" totallines="48" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="7" methodcoverage="14.2" />
+      <Class name="WardenIdleState" coverage="47" coveredlines="8" coverablelines="17" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="7" methodcoverage="42.8" />
+      <Class name="WardenSpawnState" coverage="55" coveredlines="11" coverablelines="20" totallines="39" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="7" methodcoverage="42.8" />
+      <Class name="WardenStateManager" coverage="55.8" coveredlines="24" coverablelines="43" totallines="82" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="10" methodcoverage="60" />
+    </Assembly>
+    <Assembly name="Tests" classes="1" coverage="56.5" coveredlines="13" coverablelines="23" totallines="40" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="5" methodcoverage="80">
+      <Class name="GamePlayTests" coverage="56.5" coveredlines="13" coverablelines="23" totallines="40" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="5" methodcoverage="80" />
+    </Assembly>
+  </Coverage>
+</CoverageReport>

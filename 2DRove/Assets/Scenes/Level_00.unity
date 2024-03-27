@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146096097140963350, guid: 9b858c8dd6cf16a449655a05c98f6909, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8724349399916483158, guid: 9b858c8dd6cf16a449655a05c98f6909, type: 3}
       propertyPath: animator
@@ -349,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3475996137607520006, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4012842002547039159, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1787,7 +1787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_TagString
@@ -1977,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6229290378130564962, guid: be179befa880d774ea3885548de8a42e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2144,7 +2144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3475996137607520006, guid: 7035eb186f35b4040b1f495e24f48be7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4012842002547039159, guid: 7035eb186f35b4040b1f495e24f48be7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3025,7 +3025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2044225662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3284,3 +3284,5 @@ SceneRoots:
   - {fileID: 1554912677}
   - {fileID: 2062739817}
   - {fileID: 1598291091}
+  - {fileID: 1311096807}
+  - {fileID: 1863365161}

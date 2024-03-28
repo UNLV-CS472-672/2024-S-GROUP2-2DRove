@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: damaged
+  m_Name: hit
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,17 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2393012492615232403, guid: 6fae021e473031b4a92c5a547bf33611, type: 3}
-    - time: 0.099999905
-      value: {fileID: -5630380051239354753, guid: 6fae021e473031b4a92c5a547bf33611, type: 3}
-    - time: 0.1999999
-      value: {fileID: -5630380051239354753, guid: 6fae021e473031b4a92c5a547bf33611, type: 3}
+      value: {fileID: -1149077906, guid: 03ecdaa44b30e6243af89b202bf444b8, type: 3}
+    - time: 0.083333336
+      value: {fileID: 1420373051, guid: 03ecdaa44b30e6243af89b202bf444b8, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 100
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -48,15 +46,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2393012492615232403, guid: 6fae021e473031b4a92c5a547bf33611, type: 3}
-    - {fileID: -5630380051239354753, guid: 6fae021e473031b4a92c5a547bf33611, type: 3}
-    - {fileID: -5630380051239354753, guid: 6fae021e473031b4a92c5a547bf33611, type: 3}
+    - {fileID: -1149077906, guid: 03ecdaa44b30e6243af89b202bf444b8, type: 3}
+    - {fileID: 1420373051, guid: 03ecdaa44b30e6243af89b202bf444b8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.2099999
+    m_StopTime: 0.16666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -67,7 +64,7 @@ AnimationClip:
     m_LoopBlendPositionY: 0
     m_LoopBlendPositionXZ: 0
     m_KeepOriginalOrientation: 0
-    m_KeepOriginalPositionY: 0
+    m_KeepOriginalPositionY: 1
     m_KeepOriginalPositionXZ: 0
     m_HeightFromFeet: 0
     m_Mirror: 0
@@ -75,11 +72,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0
-    functionName: TakeDamage
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

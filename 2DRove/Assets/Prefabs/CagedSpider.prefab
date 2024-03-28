@@ -242,7 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   attackPoint: {fileID: 0}
-  attackRange: 0
+  attackRange: 1
 --- !u!114 &8937932253450727748
 MonoBehaviour:
   m_ObjectHideFlags: 0

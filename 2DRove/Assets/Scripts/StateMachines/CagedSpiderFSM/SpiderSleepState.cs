@@ -24,10 +24,16 @@ public class SpiderSleepState : SpiderBaseState
     } 
 
     public override void OnTriggerStay2D(SpiderStateManager Spider, Collider2D other) {
-        Debug.Log(other.tag);
-        if (other.tag == "Player")
-        {
-            Spider.SwitchState(Spider.AttackState);
-        }
+        
+    }
+
+    public override void EventTrigger(SpiderStateManager Spider)
+    {
+
+    }
+
+    public override void TakeDamage(SpiderStateManager Spider)
+    {
+        Spider.SwitchState(Spider.HitState);
     }
 }

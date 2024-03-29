@@ -165,3 +165,4 @@ MonoBehaviour:
   velocity: 20
   damage: 1
   rangedDamage: 15
+  knockbackStrength: 2

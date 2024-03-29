@@ -7,7 +7,7 @@ public class SpiderIdleState : SpiderBaseState
     private Transform player;
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Wake State...");
+        Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -25,5 +25,15 @@ public class SpiderIdleState : SpiderBaseState
     } 
 
     public override void OnTriggerStay2D(SpiderStateManager Spider, Collider2D other) {
+    }
+
+    public override void EventTrigger(SpiderStateManager Spider)
+    {
+
+    }
+
+    public override void TakeDamage(SpiderStateManager Spider)
+    {
+        Spider.SwitchState(Spider.HitState);
     }
 }

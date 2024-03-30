@@ -5,6 +5,7 @@ public class RockBossAttackState : RockBossBaseState
 {
     private float attackTime = 2.5f;
     private Animator animator;
+    private int returnAttackType;
     public override void EnterState(RockBossStateManager RockBoss)
     {
         Debug.Log("Entering Attack State");
@@ -36,6 +37,7 @@ public class RockBossAttackState : RockBossBaseState
                 Debug.Log("Slamming");
                 break; 
         }
+        returnAttackType = attackType;
     }
 
     public override void UpdateState(RockBossStateManager RockBoss)
@@ -70,16 +72,37 @@ public class RockBossAttackState : RockBossBaseState
         LayerMask mask = LayerMask.GetMask("Player");
         Collider2D[] colliders = Physics2D.OverlapCapsuleAll(RockBoss.attackPointX.position, new Vector2(RockBoss.attackRange * 2, RockBoss.attackHeight), CapsuleDirection2D.Vertical, mask);
 
-        
-
         foreach (Collider2D collider in colliders)
         {
             if (collider.CompareTag("Player"))
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
-                playerScript.dealDamage(1);
-                collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
-                collider.GetComponent<Animator>().SetTrigger("Hit");
+                if (returnAttackType == 0) //beam attack
+                {
+                    playerScript.dealDamage(15);
+                    collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 25, ForceMode2D.Impulse);
+                    collider.GetComponent<Animator>().SetTrigger("Hit");
+                }
+                else if (returnAttackType == 1) //shooting attack
+                {
+                    playerScript.dealDamage(12);
+                    collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 20, ForceMode2D.Impulse);
+                    collider.GetComponent<Animator>().SetTrigger("Hit");
+                }
+                else if (returnAttackType == 2) //charging
+                {
+                    playerScript.dealDamage(10);
+                    collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 40, ForceMode2D.Impulse);
+                    collider.GetComponent<Animator>().SetTrigger("Hit");
+                }
+                else if (returnAttackType == 3) //slamming
+                {
+                    playerScript.dealDamage(10);
+                    collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
+                    collider.GetComponent<Animator>().SetTrigger("Hit");
+                    playerScript.ReduceMoveSpeed(35, 1.5f);
+                }
+                
             }
         }
         

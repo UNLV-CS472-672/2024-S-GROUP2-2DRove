@@ -2663,8 +2663,8 @@ ScriptedImporter:
     uvTransform: {x: 92, y: 1989}
   - name: Ancient Boss_Frame_132
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.22866169, y: 0.5181876}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2683,8 +2683,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 914}
   - name: Ancient Boss_Frame_133
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.2425765, y: 0.46414447}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2703,8 +2703,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 682}
   - name: Ancient Boss_Frame_134
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.23332536, y: 0.5}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2723,8 +2723,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 604}
   - name: Ancient Boss_Frame_135
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.2354043, y: 0.5}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2743,8 +2743,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 372}
   - name: Ancient Boss_Frame_136
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.21948403, y: 0.46414533}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2763,8 +2763,8 @@ ScriptedImporter:
     uvTransform: {x: 180, y: 4}
   - name: Ancient Boss_Frame_137
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.19910811, y: 0.42725042}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2783,8 +2783,8 @@ ScriptedImporter:
     uvTransform: {x: 358, y: 81}
   - name: Ancient Boss_Frame_138
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.20815349, y: 0.51818806}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2803,8 +2803,8 @@ ScriptedImporter:
     uvTransform: {x: 358, y: 4}
   - name: Ancient Boss_Frame_139
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.2362229, y: 0.5}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -2823,8 +2823,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 760}
   - name: Ancient Boss_Frame_140
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.22822964, y: 0.5}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3063,8 +3063,8 @@ ScriptedImporter:
     uvTransform: {x: 358, y: 235}
   - name: Ancient Boss_Frame_152
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.2753503, y: 0.48450762}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3083,8 +3083,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 283}
   - name: Ancient Boss_Frame_153
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.25513372, y: 0.47012076}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3103,8 +3103,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 191}
   - name: Ancient Boss_Frame_154
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.24748164, y: 0.45570824}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3123,8 +3123,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 98}
   - name: Ancient Boss_Frame_155
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.25349402, y: 0.4854084}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3143,8 +3143,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Ancient Boss_Frame_156
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.24162993, y: 0.48181307}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3163,8 +3163,8 @@ ScriptedImporter:
     uvTransform: {x: 358, y: 158}
   - name: Ancient Boss_Frame_157
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.22947411, y: 0.5000004}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3183,8 +3183,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 450}
   - name: Ancient Boss_Frame_158
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.24901211, y: 0.4636257}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3203,8 +3203,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 527}
   - name: Ancient Boss_Frame_159
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.2521107, y: 0.54403204}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -3223,8 +3223,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 991}
   - name: Ancient Boss_Frame_160
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.27411088, y: 0.5224086}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

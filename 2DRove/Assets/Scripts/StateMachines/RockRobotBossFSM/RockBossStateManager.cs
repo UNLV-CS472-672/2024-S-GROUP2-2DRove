@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WardenStateManager : MonoBehaviour
+public class RockBossStateManager : MonoBehaviour
 {
     public Animator animator;
     public Transform attackPointX;
@@ -10,13 +10,13 @@ public class WardenStateManager : MonoBehaviour
     [SerializeField] public float attackRange;
     [SerializeField] public float attackHeight;
     private Mesh attackHitbox;
-    WardenBaseState currentState;
-    public WardenAggroState AggroState = new WardenAggroState();
-    public WardenAttackState AttackState = new WardenAttackState();
-    public WardenDeathState DeathState = new WardenDeathState();
-    public WardenHitState HitState = new WardenHitState();
-    public WardenIdleState IdleState = new WardenIdleState();
-    public WardenSpawnState SpawnState = new WardenSpawnState();
+    RockBossBaseState currentState;
+    public RockBossAggroState AggroState = new RockBossAggroState();
+    public RockBossAttackState AttackState = new RockBossAttackState();
+    public RockBossDeathState DeathState = new RockBossDeathState();
+    public RockBossHitState HitState = new RockBossHitState();
+    public RockBossIdleState IdleState = new RockBossIdleState();
+    public RockBossSpawnState SpawnState = new RockBossSpawnState();
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class WardenStateManager : MonoBehaviour
         currentState.OnTriggerStay2D(this, other);
     }
 
-    public void SwitchState(WardenBaseState state)
+    public void SwitchState(RockBossBaseState state)
     {
         currentState = state;
         state.EnterState(this);
@@ -46,12 +46,25 @@ public class WardenStateManager : MonoBehaviour
     {
         currentState.EventTrigger(this);
     }
+    public void TeleportToRandomPosition(RockBossStateManager RockBoss)
+    {
+        // Define the range of teleportation around the current position
+        float teleportRangeX = 10f; 
+        float teleportRangeY = 5f; 
+
+        // Generate a random new position within the defined range
+        Vector3 randomPosition = new Vector3(Random.Range(-teleportRangeX, teleportRangeX), Random.Range(-teleportRangeY, teleportRangeY), 0) + RockBoss.transform.position;
+
+        // Update the RockBoss's position to the new random position
+        RockBoss.transform.position = randomPosition;
+    }
 
 //damage dealt is calculated by PlayerController.cs
 //this is purely to be placed in hit stun
     public void TakeDamageAnimation()
     {
         currentState.TakeDamage(this);
+        TeleportToRandomPosition(this);
     }
 
     public void Destroy(float waitDuration)

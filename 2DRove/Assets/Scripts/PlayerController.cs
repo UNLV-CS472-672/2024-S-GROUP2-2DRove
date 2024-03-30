@@ -179,10 +179,12 @@ public class PlayerController : MonoBehaviour
             
             if (enemyScript != null) {
                 enemyScript.TakeDamage(playerAttackDamage);
-                Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
-                if (enemyRb != null) {
-                    // Apply knockback
-                    enemyRb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse);
+                if (enemy.CompareTag("Enemy")){
+                    Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
+                    if (enemyRb != null) {
+                        // Apply knockback
+                        enemyRb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse);
+                    }
                 }
             }
         }

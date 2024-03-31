@@ -113,12 +113,12 @@ TextureImporter:
       name: hit_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 77
-        width: 116
-        height: 77
+        x: 50
+        y: 135
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: hit_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 116
-        height: 77
+        x: 52
+        y: 56
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

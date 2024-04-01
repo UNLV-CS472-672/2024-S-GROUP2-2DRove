@@ -58,6 +58,7 @@
     },
     "dotnet.defaultSolution": "2DRove.sln",
     "cSpell.words": [
-        "hitbox"
+        "hitbox",
+        "knockback"
     ]
 }

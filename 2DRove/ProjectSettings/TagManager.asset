@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Ghoul
   - Spitter
+  - Boss
   layers:
   - Default
   - TransparentFX

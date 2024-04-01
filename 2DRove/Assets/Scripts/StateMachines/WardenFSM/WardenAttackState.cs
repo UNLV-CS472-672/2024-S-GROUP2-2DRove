@@ -34,19 +34,6 @@ public class WardenAttackState : WardenBaseState
 
     }
 
-    public void TeleportToRandomPosition(WardenStateManager Warden)
-    {
-        // Define the range of teleportation around the current position
-        float teleportRangeX = 10f; 
-        float teleportRangeY = 5f; 
-
-        // Generate a random new position within the defined range
-        Vector3 randomPosition = new Vector3(Random.Range(-teleportRangeX, teleportRangeX), Random.Range(-teleportRangeY, teleportRangeY), 0) + Warden.transform.position;
-
-        // Update the warden's position to the new random position
-        Warden.transform.position = randomPosition;
-    }
-
     //done in animation events
     public override void EventTrigger(WardenStateManager Warden)
     {
@@ -70,7 +57,7 @@ public class WardenAttackState : WardenBaseState
                 Rigidbody2D rb = collider.GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {
-                    rb.AddForce(knockbackDirection * 500, ForceMode2D.Impulse);
+                    rb.AddForce(-knockbackDirection * 60, ForceMode2D.Impulse);
                 }
 
                 Animator anim = collider.GetComponent<Animator>();

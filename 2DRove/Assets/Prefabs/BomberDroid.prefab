@@ -14,9 +14,11 @@ GameObject:
   - component: {fileID: 5344662497737817243}
   - component: {fileID: 2917843822174796061}
   - component: {fileID: 5337510034192135019}
-  m_Layer: 0
-  m_Name: BomberDriod
-  m_TagString: Untagged
+  - component: {fileID: 5605959815181131764}
+  - component: {fileID: 7029340579710266121}
+  m_Layer: 7
+  m_Name: BomberDroid
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,10 +197,10 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 439
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -215,9 +217,45 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.35}
-  m_Size: {x: 0.27, y: 0.55}
+  m_Offset: {x: 0, y: -0.25}
+  m_Size: {x: 0.25, y: 0.4}
   m_Direction: 0
+--- !u!114 &5605959815181131764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3416500892644624562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  animator: {fileID: 3172939078098488337}
+--- !u!114 &7029340579710266121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3416500892644624562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8fae358245cb624fa010e6824d209e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  attackPointX: {fileID: 7022727250061143398}
+  attackPointY: {fileID: 7804762773561169063}
+  attackRange: 4
+  attackHeight: 0
+  moveSpeed: 3
+  attackDamage: 3
+  attackTime: 1
+  player: {fileID: 0}
 --- !u!1 &4608956215718251093
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7022727250061143398}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPointX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +296,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7804762773561169063}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPointY
   m_TagString: Untagged
   m_Icon: {fileID: 0}

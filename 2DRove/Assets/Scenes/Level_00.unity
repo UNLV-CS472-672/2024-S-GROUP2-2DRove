@@ -2753,6 +2753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spitter
       objectReference: {fileID: 0}
+    - target: {fileID: 6229290378130564962, guid: be179befa880d774ea3885548de8a42e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3287,8 +3291,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3416500892644624562, guid: c67d68b804916554abaf7280dea0c6e1, type: 3}
       propertyPath: m_Name
-      value: BomberDriod
+      value: BomberDroid
       objectReference: {fileID: 0}
+    - target: {fileID: 7029340579710266121, guid: c67d68b804916554abaf7280dea0c6e1, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2089330319}
     - target: {fileID: 9103084502511522577, guid: c67d68b804916554abaf7280dea0c6e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.36

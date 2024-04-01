@@ -8,12 +8,11 @@ public class BomberStateManager : MonoBehaviour
     public Transform attackPointX;
     public Transform attackPointY;
     [SerializeField] public float attackRange; // Distance of the attack 
-    [SerializeField] private float attackHeight = 3f; // The point from where bombs will be dropped
+     [SerializeField] private float attackHeight = 3f; // The point from where bombs will be dropped
     [SerializeField] private float moveSpeed = 3f; // Default speed
     [SerializeField] private int attackDamage = 5; // Default damage value    
     [SerializeField] private float attackTime = 2f; // Default damage value    
     [SerializeField] private Transform player; // Reference to the player's transform
-
 
     public float MoveSpeed => moveSpeed; // Public getter for moveSpeed so it can be accessed but not directly modified by states
     public int AttackDamage => attackDamage; // Public getter to access the damage value
@@ -87,7 +86,7 @@ public class BomberStateManager : MonoBehaviour
         {
             return;
         }
-        // Visual representation for the bomb drop point and rate
+        // Shows the attackRange, attackHeight
         Gizmos.DrawWireSphere(attackPointX.position, attackRange);
         Gizmos.DrawWireSphere(attackPointY.position, attackHeight);
     }

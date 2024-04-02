@@ -1,0 +1,5235 @@
+fileFormatVersion: 2
+guid: 1589b123fd0806e48a7c021d6510f139
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Ancient Boss_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 452
+      width: 67
+      height: 30
+    spriteID: 705c5114e6ef9ab4f9565fa303e3d1c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 452}
+  - name: Ancient Boss_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 2013
+      width: 67
+      height: 31
+    spriteID: 562e0a19dd10caf469d8f3fcb22f35e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 2013}
+  - name: Ancient Boss_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 490
+      width: 67
+      height: 30
+    spriteID: fd8525175ca73504cb6eae602af82534
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 490}
+  - name: Ancient Boss_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 528
+      width: 67
+      height: 30
+    spriteID: 1f3279f39a1ae7947b2febafabddfd1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 528}
+  - name: Ancient Boss_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 566
+      width: 67
+      height: 30
+    spriteID: 10579843cda89ae40a80bc2105bf76dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 566}
+  - name: Ancient Boss_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 373
+      width: 67
+      height: 32
+    spriteID: d23e7327d2b51a5429c07711084ba23e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 373}
+  - name: Ancient Boss_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 332
+      width: 67
+      height: 33
+    spriteID: ca2e4187957feeb409f1012255e726b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 332}
+  - name: Ancient Boss_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2005
+      width: 67
+      height: 37
+    spriteID: d917a50ffa5841440b2263160142af69
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2005}
+  - name: Ancient Boss_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 112
+      width: 67
+      height: 44
+    spriteID: 0a108c11537f5e242ae064dc326fac15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 112}
+  - name: Ancient Boss_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 59
+      width: 67
+      height: 45
+    spriteID: 6eaca33bc10722d4fb94e63abfc82aae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 59}
+  - name: Ancient Boss_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 4
+      width: 67
+      height: 47
+    spriteID: 0c6de18659d54de41b0b85ea0c1169b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 4}
+  - name: Ancient Boss_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 82
+      width: 67
+      height: 51
+    spriteID: b4ac4c8a7687d2747ab64ee3c76e3ea7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 82}
+  - name: Ancient Boss_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 695
+      width: 67
+      height: 52
+    spriteID: 84e21e4483deef84988afa60b143f96e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 695}
+  - name: Ancient Boss_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 755
+      width: 67
+      height: 52
+    spriteID: cac13da414300e643a24b3034f60266f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 755}
+  - name: Ancient Boss_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 815
+      width: 67
+      height: 52
+    spriteID: 0ec0a0dec36330e43853c1eb61b47141
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 815}
+  - name: Ancient Boss_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1313
+      width: 68
+      height: 53
+    spriteID: ad2c07e3e3121af4392382f769d1a554
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1313}
+  - name: Ancient Boss_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1374
+      width: 68
+      height: 53
+    spriteID: 262e9ed0e0d3eea4eaf6dacfec71d77d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1374}
+  - name: Ancient Boss_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1561
+      width: 69
+      height: 52
+    spriteID: 8d2659114d0279e4fbbc0118d5f94606
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1561}
+  - name: Ancient Boss_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1803
+      width: 68
+      height: 52
+    spriteID: 706cc5526acc193478b9a1b8d0fdedba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1803}
+  - name: Ancient Boss_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 141
+      width: 67
+      height: 51
+    spriteID: 6167f1c9d16c8b7448200c337c1ff52b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 141}
+  - name: Ancient Boss_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 200
+      width: 67
+      height: 51
+    spriteID: 97589e1ba8c78644f937446ffcdd4683
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 200}
+  - name: Ancient Boss_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1384
+      width: 67
+      height: 50
+    spriteID: 0003716d0dc27b2439ea8864b1f4a9b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1384}
+  - name: Ancient Boss_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1442
+      width: 67
+      height: 50
+    spriteID: 14b9159cc423f9f45bdfbf906bd916c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1442}
+  - name: Ancient Boss_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 259
+      width: 67
+      height: 51
+    spriteID: 4998c601b3e6fec48825428a4675cef0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 259}
+  - name: Ancient Boss_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 318
+      width: 67
+      height: 51
+    spriteID: a7ab4e33f2a00c74e9d7b2c4e2297201
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 318}
+  - name: Ancient Boss_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 875
+      width: 67
+      height: 52
+    spriteID: cb86973fb0e56914abf8d9f99a9712ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 875}
+  - name: Ancient Boss_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 935
+      width: 67
+      height: 52
+    spriteID: 27704ed9903d46446969e625f6986d8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 935}
+  - name: Ancient Boss_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1681
+      width: 67
+      height: 53
+    spriteID: 27709392514e3324fb826480f2506297
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1681}
+  - name: Ancient Boss_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1742
+      width: 67
+      height: 53
+    spriteID: 108ae3942bffbf74d9686a655621a3a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1742}
+  - name: Ancient Boss_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 995
+      width: 67
+      height: 52
+    spriteID: 80ad2a1c5db66304283de5b7659b436f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 995}
+  - name: Ancient Boss_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1055
+      width: 67
+      height: 52
+    spriteID: bed5dae7b0c57254e8c35ab941efa8de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1055}
+  - name: Ancient Boss_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 377
+      width: 67
+      height: 51
+    spriteID: 84908967c907d6443887853571a05187
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 377}
+  - name: Ancient Boss_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 436
+      width: 67
+      height: 51
+    spriteID: 3b2abe1fdecbd584a9de49f656112c32
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 436}
+  - name: Ancient Boss_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1500
+      width: 67
+      height: 50
+    spriteID: 65f7094f4b6fd3d488f17bc8ee7bccee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1500}
+  - name: Ancient Boss_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1558
+      width: 67
+      height: 50
+    spriteID: 17b637d4338f5a344a80ce42749b55d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1558}
+  - name: Ancient Boss_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 495
+      width: 67
+      height: 51
+    spriteID: 5ebb110e8df0f3f4ead3ded5e2777684
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 495}
+  - name: Ancient Boss_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 554
+      width: 67
+      height: 51
+    spriteID: e9eba638a6f903848a5967b7e9ac1109
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 554}
+  - name: Ancient Boss_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1893
+      width: 66
+      height: 52
+    spriteID: 84f03f777802daa4db56914d6887e5cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1893}
+  - name: Ancient Boss_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1953
+      width: 66
+      height: 52
+    spriteID: 6a9183bde6993ad4898441546dafc5e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1953}
+  - name: Ancient Boss_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1863
+      width: 66
+      height: 53
+    spriteID: c45db51aadbf9fb41babe60379b3b13f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1863}
+  - name: Ancient Boss_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1924
+      width: 66
+      height: 53
+    spriteID: 7a7ad9454b488df48a3d6e576c0a8edc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1924}
+  - name: Ancient Boss_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1115
+      width: 67
+      height: 52
+    spriteID: b155b8ae7f7da8c4d9843150f9fcdfb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1115}
+  - name: Ancient Boss_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 82
+      width: 66
+      height: 52
+    spriteID: 2168223abedd78646a64f98311662c1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 82}
+  - name: Ancient Boss_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 912
+      width: 66
+      height: 51
+    spriteID: 9dae9a4f54838074eab7f343bf80243e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 912}
+  - name: Ancient Boss_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 971
+      width: 66
+      height: 51
+    spriteID: 5c6e91527c574ac4f83f54f2c3a1bdc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 971}
+  - name: Ancient Boss_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1734
+      width: 66
+      height: 50
+    spriteID: 907552f7d1c3b294faacc51897985d3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1734}
+  - name: Ancient Boss_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1792
+      width: 66
+      height: 50
+    spriteID: 6c65fd8390cfc3543b30dd4c5c14e749
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1792}
+  - name: Ancient Boss_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1030
+      width: 66
+      height: 51
+    spriteID: d9cf05acd0eac314cbee7078f3552f88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1030}
+  - name: Ancient Boss_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1089
+      width: 66
+      height: 51
+    spriteID: 56c135ac2ac544242844f9ff575fed21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1089}
+  - name: Ancient Boss_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 142
+      width: 66
+      height: 52
+    spriteID: 0a0bbfab759ac8046a9b93d190c1785b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 142}
+  - name: Ancient Boss_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 202
+      width: 66
+      height: 52
+    spriteID: acffcbbf70ad9fb4cb2dd977a9a2ef97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 202}
+  - name: Ancient Boss_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1985
+      width: 66
+      height: 53
+    spriteID: 4d1377b5f21de0144bd00110d54b512e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1985}
+  - name: Ancient Boss_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 634
+      width: 66
+      height: 53
+    spriteID: 64749dd65344b82458090ea3ddbac288
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 634}
+  - name: Ancient Boss_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 262
+      width: 66
+      height: 52
+    spriteID: 0e1a46432644e6541894a67624f9f098
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 262}
+  - name: Ancient Boss_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 322
+      width: 66
+      height: 52
+    spriteID: 248eec7a21eda8b45a2aee6976fbfe3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 322}
+  - name: Ancient Boss_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1148
+      width: 66
+      height: 51
+    spriteID: 5463a758651cd334abad7a731e73ff00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1148}
+  - name: Ancient Boss_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1207
+      width: 66
+      height: 51
+    spriteID: 3661d954a9fb4c646b8d4df96be84515
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1207}
+  - name: Ancient Boss_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1850
+      width: 66
+      height: 50
+    spriteID: aa5ccefd55ed9284c92957650ba2624d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1850}
+  - name: Ancient Boss_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1908
+      width: 66
+      height: 50
+    spriteID: 9e64437c183081840ac38afcab6320c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1908}
+  - name: Ancient Boss_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1266
+      width: 66
+      height: 51
+    spriteID: 20b523ec37dcf724fb76e498daa82455
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1266}
+  - name: Ancient Boss_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1325
+      width: 66
+      height: 51
+    spriteID: c759dbdfc562b6b43b8194c2c5b2c723
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1325}
+  - name: Ancient Boss_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1175
+      width: 67
+      height: 52
+    spriteID: bce05f07b23577441b99857f126f7968
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1175}
+  - name: Ancient Boss_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 672
+      width: 65
+      height: 52
+    spriteID: adff8a3ce0ffe5a41b11d9891cfa00c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 672}
+  - name: Ancient Boss_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1623
+      width: 46
+      height: 52
+    spriteID: 2e6acd1f1f996df4ca3f23297cba6d50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1623}
+  - name: Ancient Boss_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1683
+      width: 37
+      height: 52
+    spriteID: b167694009d7b284f9c23ba6582cda3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1683}
+  - name: Ancient Boss_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1059
+      width: 56
+      height: 52
+    spriteID: e61be3ab41308974a9a1871b5c005670
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1059}
+  - name: Ancient Boss_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 732
+      width: 65
+      height: 52
+    spriteID: cdec2212566439f4d86ee3ca466b020a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 732}
+  - name: Ancient Boss_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 382
+      width: 66
+      height: 52
+    spriteID: e7a6e960b980e7f479717880626bd815
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 382}
+  - name: Ancient Boss_Frame_68
+    originalName: 
+    pivot: {x: 1.0223881, y: -0.48076922}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1235
+      width: 67
+      height: 52
+    spriteID: 6d9693dc64ba5914ab59fe9e6368e3eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1235}
+  - name: Ancient Boss_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 442
+      width: 66
+      height: 52
+    spriteID: 34d176f9cd2ab4c47a7825cd487b6d55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 442}
+  - name: Ancient Boss_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 792
+      width: 65
+      height: 52
+    spriteID: c1edb6e229332e84d921299e088d1cac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 792}
+  - name: Ancient Boss_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1119
+      width: 56
+      height: 52
+    spriteID: d4be85b17b1053a43bb03ba17392fa60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1119}
+  - name: Ancient Boss_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1743
+      width: 37
+      height: 52
+    spriteID: 135d2916dec5bd54a9dd85a55d5ec2b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1743}
+  - name: Ancient Boss_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1803
+      width: 37
+      height: 52
+    spriteID: bf0cd33afd22a5d4485de16db9ae8f7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1803}
+  - name: Ancient Boss_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 852
+      width: 65
+      height: 52
+    spriteID: 25621bd4bede3a149916587c8209ade5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 852}
+  - name: Ancient Boss_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1295
+      width: 67
+      height: 52
+    spriteID: 5c16fac36217e044ea3e9576de3acfab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1295}
+  - name: Ancient Boss_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1355
+      width: 67
+      height: 52
+    spriteID: cff35c526a9955847a19163090a0c33b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1355}
+  - name: Ancient Boss_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1616
+      width: 65
+      height: 51
+    spriteID: 9ca7330217f62e843991a296830baa55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1616}
+  - name: Ancient Boss_Frame_78
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1966
+      width: 63
+      height: 50
+    spriteID: 9aae967238b1ce842885ea9798172fd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1966}
+  - name: Ancient Boss_Frame_79
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 892
+      width: 61
+      height: 49
+    spriteID: f4f2e972ddd7277429417e3f5cde5e71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 892}
+  - name: Ancient Boss_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1179
+      width: 59
+      height: 48
+    spriteID: bbbc81f55a0ce1f40aa0e548ce1aaf09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1179}
+  - name: Ancient Boss_Frame_81
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1405
+      width: 57
+      height: 47
+    spriteID: 94fa5b8762f219f4eae26268ee4792af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1405}
+  - name: Ancient Boss_Frame_82
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1515
+      width: 55
+      height: 46
+    spriteID: 0723baa485489834a94affce3867fecc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1515}
+  - name: Ancient Boss_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1291
+      width: 55
+      height: 49
+    spriteID: 8cbcd9d9cae5e274c9af57ae94f07a6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1291}
+  - name: Ancient Boss_Frame_84
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1724
+      width: 73
+      height: 60
+    spriteID: 9f4a340f9c5cb354fae7669bfdc38865
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1724}
+  - name: Ancient Boss_Frame_85
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1443
+      width: 74
+      height: 64
+    spriteID: ce91921379fa25e4d9d0fe26534b3578
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1443}
+  - name: Ancient Boss_Frame_86
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1930
+      width: 73
+      height: 67
+    spriteID: e8e87b071dc840747a9189c7f782d19c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1930}
+  - name: Ancient Boss_Frame_87
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 1199
+      width: 69
+      height: 68
+    spriteID: 4e427c49d0d76bf43ae4af41cd11714f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 1199}
+  - name: Ancient Boss_Frame_88
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 101
+      y: 1120
+      width: 69
+      height: 69
+    spriteID: c557bad3f15d3524aaf842ff0321efb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 101, y: 1120}
+  - name: Ancient Boss_Frame_89
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 447
+      width: 77
+      height: 53
+    spriteID: 068bd18fdc436fe489ede32dc6b6e3fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 447}
+  - name: Ancient Boss_Frame_90
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1792
+      width: 78
+      height: 56
+    spriteID: 6294353f1bea9734bb9c26796cb93f31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1792}
+  - name: Ancient Boss_Frame_91
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1515
+      width: 79
+      height: 58
+    spriteID: 085c8498cb6ea634e80b59a609e2937c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1515}
+  - name: Ancient Boss_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 451
+      y: 235
+      width: 78
+      height: 59
+    spriteID: 924cf5bf3c91e584fa88322d986e2475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 451, y: 235}
+  - name: Ancient Boss_Frame_93
+    originalName: 
+    pivot: {x: 0.9671052, y: -0.28333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1581
+      width: 76
+      height: 60
+    spriteID: d37236d054e48774288c70272550e3c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1581}
+  - name: Ancient Boss_Frame_94
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1000
+      width: 63
+      height: 60
+    spriteID: 79c73c5aab23fdf4c922b6801556dc97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1000}
+  - name: Ancient Boss_Frame_95
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1496
+      width: 63
+      height: 57
+    spriteID: d3fdbd360c9fcf54c916c7d702ef3e1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1496}
+  - name: Ancient Boss_Frame_96
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1189
+      width: 67
+      height: 54
+    spriteID: ab27f07ea03b71242b35b19a89e91f47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1189}
+  - name: Ancient Boss_Frame_97
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1435
+      width: 68
+      height: 53
+    spriteID: da21856e467e6eb4a9e43673886eabc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1435}
+  - name: Ancient Boss_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1775
+      width: 68
+      height: 51
+    spriteID: 0b65a5ae8a9fef540becebcc331b787d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1775}
+  - name: Ancient Boss_Frame_99
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1834
+      width: 68
+      height: 51
+    spriteID: 40e49ef13c2aedb4b966de8ede96c46f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1834}
+  - name: Ancient Boss_Frame_100
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 613
+      width: 67
+      height: 51
+    spriteID: b53dd14fcfac34b40b564669cac741a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 613}
+  - name: Ancient Boss_Frame_101
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 616
+      width: 64
+      height: 48
+    spriteID: 4bcdd9558f8d8834e8ff2b9893ce5bcb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 616}
+  - name: Ancient Boss_Frame_102
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 782
+      width: 63
+      height: 48
+    spriteID: 7e5f3379fafe1344080f1640dd6fa532
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 782}
+  - name: Ancient Boss_Frame_103
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 467
+      y: 305
+      width: 63
+      height: 46
+    spriteID: 3a3935821ac1b2146b35be5cd63f3141
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 467, y: 305}
+  - name: Ancient Boss_Frame_109
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1854
+      width: 74
+      height: 68
+    spriteID: a1ad853b84931a74ea545052dc606b71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1854}
+  - name: Ancient Boss_Frame_110
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1776
+      width: 75
+      height: 70
+    spriteID: 1b4cdf2de3043a04d972629aa9ccc7f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1776}
+  - name: Ancient Boss_Frame_111
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1696
+      width: 76
+      height: 72
+    spriteID: 64699ca6e7a3f3249966e580069fa0e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1696}
+  - name: Ancient Boss_Frame_112
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 93
+      y: 1359
+      width: 77
+      height: 74
+    spriteID: b44ccf6b88342a94db499be8a1a1667c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 93, y: 1359}
+  - name: Ancient Boss_Frame_113
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 93
+      y: 1275
+      width: 79
+      height: 76
+    spriteID: 9f300a2a965008f41af95bb3b756d0c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 93, y: 1275}
+  - name: Ancient Boss_Frame_114
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1443
+      width: 80
+      height: 76
+    spriteID: fbad93d644b7f144580ee47df9eb10d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1443}
+  - name: Ancient Boss_Frame_115
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1275
+      width: 81
+      height: 76
+    spriteID: 9f90bfc584c84ef4ebcb80181cf2aac2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1275}
+  - name: Ancient Boss_Frame_116
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1359
+      width: 81
+      height: 76
+    spriteID: 992ecf2e5c5f03d4fad99ea39ce0bca0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1359}
+  - name: Ancient Boss_Frame_117
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1612
+      width: 74
+      height: 76
+    spriteID: 71e099c189ebe65498a74f41593d1a06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1612}
+  - name: Ancient Boss_Frame_118
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1527
+      width: 75
+      height: 77
+    spriteID: b3a4bb06103d4c6459dccbf0f364d51f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1527}
+  - name: Ancient Boss_Frame_119
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1649
+      width: 67
+      height: 67
+    spriteID: 6ac9bd339f2f667458a5c5f9a36967e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1649}
+  - name: Ancient Boss_Frame_120
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 814
+      width: 66
+      height: 58
+    spriteID: 4f128f37e2abb3044923e213249d8530
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 814}
+  - name: Ancient Boss_Frame_121
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1415
+      width: 67
+      height: 52
+    spriteID: cd410901bbc33e041970cd2ea0f9c079
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1415}
+  - name: Ancient Boss_Frame_122
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1621
+      width: 69
+      height: 52
+    spriteID: 842650500be8c78439e69efbf8691a14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1621}
+  - name: Ancient Boss_Frame_123
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1068
+      width: 71
+      height: 52
+    spriteID: f17e153c0d8128c4296239ee137afd0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1068}
+  - name: Ancient Boss_Frame_124
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 880
+      width: 73
+      height: 52
+    spriteID: 67f4ea84f9ed29f4088cb12b3296db7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 880}
+  - name: Ancient Boss_Frame_125
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 694
+      width: 74
+      height: 52
+    spriteID: a36bb452edc533e4085559144d6823aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 694}
+  - name: Ancient Boss_Frame_126
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 634
+      width: 75
+      height: 52
+    spriteID: 11bd19f57a4ad5244b06105978bee591
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 634}
+  - name: Ancient Boss_Frame_127
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 940
+      width: 73
+      height: 52
+    spriteID: 905136977e3af2f4a936a56de7cee478
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 940}
+  - name: Ancient Boss_Frame_128
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 754
+      width: 74
+      height: 52
+    spriteID: 748a4574469c3194a9ab3d64d615c29a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 754}
+  - name: Ancient Boss_Frame_129
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 443
+      y: 447
+      width: 77
+      height: 52
+    spriteID: 554c51f055cb9ff4793e83936736931c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 443, y: 447}
+  - name: Ancient Boss_Frame_130
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1929
+      width: 80
+      height: 52
+    spriteID: 4167fe28c7a5a044bb96e0948c56072d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1929}
+  - name: Ancient Boss_Frame_131
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1989
+      width: 80
+      height: 52
+    spriteID: 885488a29944ffe48b4ed62ef265eedd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1989}
+  - name: Ancient Boss_Frame_132
+    originalName: 
+    pivot: {x: 0.22866169, y: 0.5181876}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 914
+      width: 148
+      height: 69
+    spriteID: e70ebce08c2c02d4ca549f9b008effbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 914}
+  - name: Ancient Boss_Frame_133
+    originalName: 
+    pivot: {x: 0.2425765, y: 0.46414447}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 682
+      width: 156
+      height: 70
+    spriteID: 3e4fbc31ad5eb6a41b402712a98fb0f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 682}
+  - name: Ancient Boss_Frame_134
+    originalName: 
+    pivot: {x: 0.23332536, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 604
+      width: 160
+      height: 70
+    spriteID: 327dbc1893617614d9b887e0d53f5989
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 604}
+  - name: Ancient Boss_Frame_135
+    originalName: 
+    pivot: {x: 0.2354043, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 372
+      width: 166
+      height: 70
+    spriteID: 5146e062df257a9419e60441d2073f3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 372}
+  - name: Ancient Boss_Frame_136
+    originalName: 
+    pivot: {x: 0.21948403, y: 0.46414533}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 4
+      width: 170
+      height: 70
+    spriteID: 7b1287c13b286d14c8e661612894820c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 4}
+  - name: Ancient Boss_Frame_137
+    originalName: 
+    pivot: {x: 0.19910811, y: 0.42725042}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 81
+      width: 171
+      height: 69
+    spriteID: 52d2effea3f15d74eb2f700a55526bf6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 81}
+  - name: Ancient Boss_Frame_138
+    originalName: 
+    pivot: {x: 0.20815349, y: 0.51818806}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 4
+      width: 172
+      height: 69
+    spriteID: 58c2f176dcea93448abc9c619c562611
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 4}
+  - name: Ancient Boss_Frame_139
+    originalName: 
+    pivot: {x: 0.2362229, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 760
+      width: 157
+      height: 69
+    spriteID: 253002f98f7e0564e8aad750f066a28c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 760}
+  - name: Ancient Boss_Frame_140
+    originalName: 
+    pivot: {x: 0.22822964, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 837
+      width: 157
+      height: 69
+    spriteID: 4b81a75e7e5463847b85a09278fac864
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 837}
+  - name: Ancient Boss_Frame_141
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1128
+      width: 69
+      height: 53
+    spriteID: 124cee6ba24b66d41a68e0e1ed5678f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1128}
+  - name: Ancient Boss_Frame_142
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1475
+      width: 67
+      height: 52
+    spriteID: c8bca0e6c6940384fbb26416b4544eaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1475}
+  - name: Ancient Boss_Frame_143
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1535
+      width: 67
+      height: 52
+    spriteID: c1a6ee659055db24286ca256d58d8f13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1535}
+  - name: Ancient Boss_Frame_144
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 254
+      y: 1675
+      width: 65
+      height: 51
+    spriteID: f24716a92c58e9940ad0fa4b776c1cdb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 254, y: 1675}
+  - name: Ancient Boss_Frame_145
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 502
+      width: 63
+      height: 50
+    spriteID: bda0a78c36032594ea43a36f2cca5959
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 502}
+  - name: Ancient Boss_Frame_146
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 949
+      width: 61
+      height: 49
+    spriteID: 8991216b8f41014418d3223306342c6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 949}
+  - name: Ancient Boss_Frame_147
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1235
+      width: 59
+      height: 48
+    spriteID: 63912123beb7d4f4aa17d4d233560216
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1235}
+  - name: Ancient Boss_Frame_148
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1460
+      width: 57
+      height: 47
+    spriteID: e08b447e5a889a7419d13c9ec3176d3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1460}
+  - name: Ancient Boss_Frame_149
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1569
+      width: 55
+      height: 46
+    spriteID: c466e251a4d51e047913389758576015
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1569}
+  - name: Ancient Boss_Frame_150
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1348
+      width: 55
+      height: 49
+    spriteID: feddb92d436c6584abab2002ba9f7315
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1348}
+  - name: Ancient Boss_Frame_151
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 235
+      width: 85
+      height: 62
+    spriteID: 058356f63cf75454fb9204ec0b84e06e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 235}
+  - name: Ancient Boss_Frame_152
+    originalName: 
+    pivot: {x: 0.2753503, y: 0.48450762}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 283
+      width: 162
+      height: 81
+    spriteID: 51a8857f107401a4bbaf252e26bf2c30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 283}
+  - name: Ancient Boss_Frame_153
+    originalName: 
+    pivot: {x: 0.25513372, y: 0.47012076}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 191
+      width: 164
+      height: 84
+    spriteID: 33ad5334ac984b34baea6db9a77ce95a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 191}
+  - name: Ancient Boss_Frame_154
+    originalName: 
+    pivot: {x: 0.24748164, y: 0.45570824}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 98
+      width: 164
+      height: 85
+    spriteID: 4eb58e91aa7698d44b9413d0061b0180
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 98}
+  - name: Ancient Boss_Frame_155
+    originalName: 
+    pivot: {x: 0.25349402, y: 0.4854084}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 168
+      height: 86
+    spriteID: e90c16a10f5d87a4b864e1db2e2107fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Ancient Boss_Frame_156
+    originalName: 
+    pivot: {x: 0.24162993, y: 0.48181307}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 158
+      width: 170
+      height: 69
+    spriteID: cd603b677650fba45b0fba7bcfdb85f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 158}
+  - name: Ancient Boss_Frame_157
+    originalName: 
+    pivot: {x: 0.22947411, y: 0.5000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 450
+      width: 167
+      height: 69
+    spriteID: 32dd603095c989444b69c2e2500e93b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 450}
+  - name: Ancient Boss_Frame_158
+    originalName: 
+    pivot: {x: 0.24901211, y: 0.4636257}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 527
+      width: 165
+      height: 69
+    spriteID: 8c41cacff536d504daddcdaa778eae82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 527}
+  - name: Ancient Boss_Frame_159
+    originalName: 
+    pivot: {x: 0.2521107, y: 0.54403204}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 991
+      width: 162
+      height: 57
+    spriteID: 72e121039d5ee9a43b557bb71ae24355
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 991}
+  - name: Ancient Boss_Frame_160
+    originalName: 
+    pivot: {x: 0.27411088, y: 0.5224086}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1056
+      width: 150
+      height: 56
+    spriteID: c44c521a54cce5f408d9b07f5349a30e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1056}
+  - name: Ancient Boss_Frame_161
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1595
+      width: 67
+      height: 52
+    spriteID: 7ce2b8ebd7c0a264f90f222b14ec93fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1595}
+  - name: Ancient Boss_Frame_162
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1655
+      width: 67
+      height: 52
+    spriteID: ff44163f936a6b44f89871503666dbc2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1655}
+  - name: Ancient Boss_Frame_163
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 441
+      y: 1715
+      width: 67
+      height: 52
+    spriteID: 9d5cf1c61c06f8d479bc48af05027795
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 441, y: 1715}
+  - name: Ancient Boss_Frame_164
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 1251
+      width: 67
+      height: 54
+    spriteID: 9b7fc7f3962fffe4990a484ffeb3c3aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 1251}
+  - name: Ancient Boss_Frame_165
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 1856
+      width: 67
+      height: 65
+    spriteID: b453a808bf3266744ab04e2ed9c8d8f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 1856}
+  - name: Ancient Boss_Frame_166
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1120
+      width: 89
+      height: 71
+    spriteID: 2f8e3e1654143fc4e82c74d67fd27310
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1120}
+  - name: Ancient Boss_Frame_174
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 164
+      width: 67
+      height: 34
+    spriteID: e10d4d8687d4db24cace2712097d04f9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 164}
+  - name: Ancient Boss_Frame_175
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 206
+      width: 67
+      height: 34
+    spriteID: 1a011c7a0fbf89446bca46893d62eb5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 206}
+  - name: Ancient Boss_Frame_176
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 248
+      width: 67
+      height: 34
+    spriteID: 921631f63a7dd0c44aaff80adba6dfcb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 248}
+  - name: Ancient Boss_Frame_177
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 290
+      width: 67
+      height: 34
+    spriteID: ac0b9d83303ed0048887f15b2a9bd65c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 290}
+  - name: Ancient Boss_Frame_178
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 604
+      width: 67
+      height: 30
+    spriteID: b7d1a9874cdb9cb4480163aa43ee6de3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 604}
+  - name: Ancient Boss_Frame_179
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 413
+      width: 67
+      height: 31
+    spriteID: b989abde0320bcc4484e918884232547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 413}
+  - name: Ancient Boss_Frame_180
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 642
+      width: 67
+      height: 30
+    spriteID: 9f4b420a66c416c48a9bf6fad365c81a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 642}
+  - name: Ancient Boss_Frame_181
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 538
+      y: 680
+      width: 67
+      height: 30
+    spriteID: 14a291fd1b7fd984dbdffe15b0b1e713
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 538, y: 680}
+  - name: Ancient Boss_Frame_104
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 1006
+      width: 65
+      height: 45
+    spriteID: d6869166cd075f54ea4a427ab761b670
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 1006}
+  - name: Ancient Boss_Frame_105
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 838
+      width: 65
+      height: 46
+    spriteID: 76f15c9b399b1fd499282325172ef797
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 838}
+  - name: Ancient Boss_Frame_106
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 672
+      width: 65
+      height: 47
+    spriteID: 11cf30216c892c14990ef6c163d352cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 672}
+  - name: Ancient Boss_Frame_107
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 727
+      width: 65
+      height: 47
+    spriteID: c0e25414fc04aeb489187650a97bd33a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 727}
+  - name: Ancient Boss_Frame_108
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 180
+      y: 560
+      width: 65
+      height: 48
+    spriteID: f384120f0c85cb54698f504039efefaa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 560}
+  - name: Ancient Boss_Frame_167
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1199
+      width: 91
+      height: 68
+    spriteID: 7d946b1ba00989a47acf120135ebd372
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1199}
+  - name: Ancient Boss_Frame_168
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 305
+      width: 101
+      height: 47
+    spriteID: c06dd98b109ce1e4380366999632f040
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 305}
+  - name: Ancient Boss_Frame_169
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 550
+      width: 115
+      height: 34
+    spriteID: 350c6fb5049c0cc4f85afd96da1c11dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 550}
+  - name: Ancient Boss_Frame_170
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 592
+      width: 115
+      height: 34
+    spriteID: 4944f68e4fc06a74b9b6e3c2e2a91fa6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 592}
+  - name: Ancient Boss_Frame_171
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 508
+      width: 118
+      height: 34
+    spriteID: 65abe823db9dac4488d82541ac75575e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 508}
+  - name: Ancient Boss_Frame_172
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 404
+      width: 120
+      height: 35
+    spriteID: cd67b67ce92b7f444b29b9b9752753c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 404}
+  - name: Ancient Boss_Frame_173
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 358
+      y: 360
+      width: 119
+      height: 36
+    spriteID: 8c47eeed7963f33449c4e1424c0f9462
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 358, y: 360}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -106958581
+    name: Ancient Boss
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Ancient Boss_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 30
+      spriteId: 705c5114e6ef9ab4f9565fa303e3d1c1
+    - name: Ancient Boss_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 32
+        y: 8
+        width: 67
+        height: 31
+      spriteId: 562e0a19dd10caf469d8f3fcb22f35e4
+    - name: Ancient Boss_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 30
+      spriteId: fd8525175ca73504cb6eae602af82534
+    - name: Ancient Boss_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 30
+      spriteId: 1f3279f39a1ae7947b2febafabddfd1a
+    - name: Ancient Boss_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 30
+      spriteId: 10579843cda89ae40a80bc2105bf76dc
+    - name: Ancient Boss_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 32
+        y: 8
+        width: 67
+        height: 32
+      spriteId: d23e7327d2b51a5429c07711084ba23e
+    - name: Ancient Boss_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 32
+        y: 8
+        width: 67
+        height: 33
+      spriteId: ca2e4187957feeb409f1012255e726b1
+    - name: Ancient Boss_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 32
+        y: 8
+        width: 67
+        height: 37
+      spriteId: d917a50ffa5841440b2263160142af69
+    - name: Ancient Boss_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 32
+        y: 8
+        width: 67
+        height: 44
+      spriteId: 0a108c11537f5e242ae064dc326fac15
+    - name: Ancient Boss_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 32
+        y: 12
+        width: 67
+        height: 45
+      spriteId: 6eaca33bc10722d4fb94e63abfc82aae
+    - name: Ancient Boss_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 32
+        y: 24
+        width: 67
+        height: 47
+      spriteId: 0c6de18659d54de41b0b85ea0c1169b0
+    - name: Ancient Boss_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 51
+      spriteId: b4ac4c8a7687d2747ab64ee3c76e3ea7
+    - name: Ancient Boss_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 32
+        y: 26
+        width: 67
+        height: 52
+      spriteId: 84e21e4483deef84988afa60b143f96e
+    - name: Ancient Boss_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: cac13da414300e643a24b3034f60266f
+    - name: Ancient Boss_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: 0ec0a0dec36330e43853c1eb61b47141
+    - name: Ancient Boss_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 31
+        y: 25
+        width: 68
+        height: 53
+      spriteId: ad2c07e3e3121af4392382f769d1a554
+    - name: Ancient Boss_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 31
+        y: 25
+        width: 68
+        height: 53
+      spriteId: 262e9ed0e0d3eea4eaf6dacfec71d77d
+    - name: Ancient Boss_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 30
+        y: 26
+        width: 69
+        height: 52
+      spriteId: 8d2659114d0279e4fbbc0118d5f94606
+    - name: Ancient Boss_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 31
+        y: 26
+        width: 68
+        height: 52
+      spriteId: 706cc5526acc193478b9a1b8d0fdedba
+    - name: Ancient Boss_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 51
+      spriteId: 6167f1c9d16c8b7448200c337c1ff52b
+    - name: Ancient Boss_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 51
+      spriteId: 97589e1ba8c78644f937446ffcdd4683
+    - name: Ancient Boss_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 50
+      spriteId: 0003716d0dc27b2439ea8864b1f4a9b6
+    - name: Ancient Boss_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 50
+      spriteId: 14b9159cc423f9f45bdfbf906bd916c3
+    - name: Ancient Boss_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 32
+        y: 26
+        width: 67
+        height: 51
+      spriteId: 4998c601b3e6fec48825428a4675cef0
+    - name: Ancient Boss_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 32
+        y: 26
+        width: 67
+        height: 51
+      spriteId: a7ab4e33f2a00c74e9d7b2c4e2297201
+    - name: Ancient Boss_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: cb86973fb0e56914abf8d9f99a9712ec
+    - name: Ancient Boss_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: 27704ed9903d46446969e625f6986d8f
+    - name: Ancient Boss_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 53
+      spriteId: 27709392514e3324fb826480f2506297
+    - name: Ancient Boss_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 53
+      spriteId: 108ae3942bffbf74d9686a655621a3a7
+    - name: Ancient Boss_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 32
+        y: 26
+        width: 67
+        height: 52
+      spriteId: 80ad2a1c5db66304283de5b7659b436f
+    - name: Ancient Boss_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 32
+        y: 26
+        width: 67
+        height: 52
+      spriteId: bed5dae7b0c57254e8c35ab941efa8de
+    - name: Ancient Boss_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 51
+      spriteId: 84908967c907d6443887853571a05187
+    - name: Ancient Boss_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 51
+      spriteId: 3b2abe1fdecbd584a9de49f656112c32
+    - name: Ancient Boss_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 50
+      spriteId: 65f7094f4b6fd3d488f17bc8ee7bccee
+    - name: Ancient Boss_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 32
+        y: 27
+        width: 67
+        height: 50
+      spriteId: 17b637d4338f5a344a80ce42749b55d2
+    - name: Ancient Boss_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 32
+        y: 26
+        width: 67
+        height: 51
+      spriteId: 5ebb110e8df0f3f4ead3ded5e2777684
+    - name: Ancient Boss_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 32
+        y: 26
+        width: 67
+        height: 51
+      spriteId: e9eba638a6f903848a5967b7e9ac1109
+    - name: Ancient Boss_Frame_37
+      frameIndex: 37
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 52
+      spriteId: 84f03f777802daa4db56914d6887e5cb
+    - name: Ancient Boss_Frame_38
+      frameIndex: 38
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 52
+      spriteId: 6a9183bde6993ad4898441546dafc5e1
+    - name: Ancient Boss_Frame_39
+      frameIndex: 39
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 53
+      spriteId: c45db51aadbf9fb41babe60379b3b13f
+    - name: Ancient Boss_Frame_40
+      frameIndex: 40
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 53
+      spriteId: 7a7ad9454b488df48a3d6e576c0a8edc
+    - name: Ancient Boss_Frame_41
+      frameIndex: 41
+      cellRect:
+        x: 30
+        y: 26
+        width: 67
+        height: 52
+      spriteId: b155b8ae7f7da8c4d9843150f9fcdfb1
+    - name: Ancient Boss_Frame_42
+      frameIndex: 42
+      cellRect:
+        x: 31
+        y: 26
+        width: 66
+        height: 52
+      spriteId: 2168223abedd78646a64f98311662c1d
+    - name: Ancient Boss_Frame_43
+      frameIndex: 43
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 51
+      spriteId: 9dae9a4f54838074eab7f343bf80243e
+    - name: Ancient Boss_Frame_44
+      frameIndex: 44
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 51
+      spriteId: 5c6e91527c574ac4f83f54f2c3a1bdc4
+    - name: Ancient Boss_Frame_45
+      frameIndex: 45
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 50
+      spriteId: 907552f7d1c3b294faacc51897985d3a
+    - name: Ancient Boss_Frame_46
+      frameIndex: 46
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 50
+      spriteId: 6c65fd8390cfc3543b30dd4c5c14e749
+    - name: Ancient Boss_Frame_47
+      frameIndex: 47
+      cellRect:
+        x: 31
+        y: 26
+        width: 66
+        height: 51
+      spriteId: d9cf05acd0eac314cbee7078f3552f88
+    - name: Ancient Boss_Frame_48
+      frameIndex: 48
+      cellRect:
+        x: 31
+        y: 26
+        width: 66
+        height: 51
+      spriteId: 56c135ac2ac544242844f9ff575fed21
+    - name: Ancient Boss_Frame_49
+      frameIndex: 49
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 52
+      spriteId: 0a0bbfab759ac8046a9b93d190c1785b
+    - name: Ancient Boss_Frame_50
+      frameIndex: 50
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 52
+      spriteId: acffcbbf70ad9fb4cb2dd977a9a2ef97
+    - name: Ancient Boss_Frame_51
+      frameIndex: 51
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 53
+      spriteId: 4d1377b5f21de0144bd00110d54b512e
+    - name: Ancient Boss_Frame_52
+      frameIndex: 52
+      cellRect:
+        x: 31
+        y: 25
+        width: 66
+        height: 53
+      spriteId: 64749dd65344b82458090ea3ddbac288
+    - name: Ancient Boss_Frame_53
+      frameIndex: 53
+      cellRect:
+        x: 31
+        y: 26
+        width: 66
+        height: 52
+      spriteId: 0e1a46432644e6541894a67624f9f098
+    - name: Ancient Boss_Frame_54
+      frameIndex: 54
+      cellRect:
+        x: 31
+        y: 26
+        width: 66
+        height: 52
+      spriteId: 248eec7a21eda8b45a2aee6976fbfe3d
+    - name: Ancient Boss_Frame_55
+      frameIndex: 55
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 51
+      spriteId: 5463a758651cd334abad7a731e73ff00
+    - name: Ancient Boss_Frame_56
+      frameIndex: 56
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 51
+      spriteId: 3661d954a9fb4c646b8d4df96be84515
+    - name: Ancient Boss_Frame_57
+      frameIndex: 57
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 50
+      spriteId: aa5ccefd55ed9284c92957650ba2624d
+    - name: Ancient Boss_Frame_58
+      frameIndex: 58
+      cellRect:
+        x: 31
+        y: 27
+        width: 66
+        height: 50
+      spriteId: 9e64437c183081840ac38afcab6320c9
+    - name: Ancient Boss_Frame_59
+      frameIndex: 59
+      cellRect:
+        x: 31
+        y: 26
+        width: 66
+        height: 51
+      spriteId: 20b523ec37dcf724fb76e498daa82455
+    - name: Ancient Boss_Frame_60
+      frameIndex: 60
+      cellRect:
+        x: 31
+        y: 26
+        width: 66
+        height: 51
+      spriteId: c759dbdfc562b6b43b8194c2c5b2c723
+    - name: Ancient Boss_Frame_61
+      frameIndex: 61
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: bce05f07b23577441b99857f126f7968
+    - name: Ancient Boss_Frame_62
+      frameIndex: 62
+      cellRect:
+        x: 33
+        y: 25
+        width: 65
+        height: 52
+      spriteId: adff8a3ce0ffe5a41b11d9891cfa00c5
+    - name: Ancient Boss_Frame_63
+      frameIndex: 63
+      cellRect:
+        x: 39
+        y: 25
+        width: 46
+        height: 52
+      spriteId: 2e6acd1f1f996df4ca3f23297cba6d50
+    - name: Ancient Boss_Frame_64
+      frameIndex: 64
+      cellRect:
+        x: 47
+        y: 25
+        width: 37
+        height: 52
+      spriteId: b167694009d7b284f9c23ba6582cda3f
+    - name: Ancient Boss_Frame_65
+      frameIndex: 65
+      cellRect:
+        x: 42
+        y: 25
+        width: 56
+        height: 52
+      spriteId: e61be3ab41308974a9a1871b5c005670
+    - name: Ancient Boss_Frame_66
+      frameIndex: 66
+      cellRect:
+        x: 34
+        y: 25
+        width: 65
+        height: 52
+      spriteId: cdec2212566439f4d86ee3ca466b020a
+    - name: Ancient Boss_Frame_67
+      frameIndex: 67
+      cellRect:
+        x: 33
+        y: 25
+        width: 66
+        height: 52
+      spriteId: e7a6e960b980e7f479717880626bd815
+    - name: Ancient Boss_Frame_68
+      frameIndex: 68
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: 6d9693dc64ba5914ab59fe9e6368e3eb
+    - name: Ancient Boss_Frame_69
+      frameIndex: 69
+      cellRect:
+        x: 33
+        y: 25
+        width: 66
+        height: 52
+      spriteId: 34d176f9cd2ab4c47a7825cd487b6d55
+    - name: Ancient Boss_Frame_70
+      frameIndex: 70
+      cellRect:
+        x: 34
+        y: 25
+        width: 65
+        height: 52
+      spriteId: c1edb6e229332e84d921299e088d1cac
+    - name: Ancient Boss_Frame_71
+      frameIndex: 71
+      cellRect:
+        x: 42
+        y: 25
+        width: 56
+        height: 52
+      spriteId: d4be85b17b1053a43bb03ba17392fa60
+    - name: Ancient Boss_Frame_72
+      frameIndex: 72
+      cellRect:
+        x: 47
+        y: 25
+        width: 37
+        height: 52
+      spriteId: 135d2916dec5bd54a9dd85a55d5ec2b3
+    - name: Ancient Boss_Frame_73
+      frameIndex: 73
+      cellRect:
+        x: 48
+        y: 25
+        width: 37
+        height: 52
+      spriteId: bf0cd33afd22a5d4485de16db9ae8f7b
+    - name: Ancient Boss_Frame_74
+      frameIndex: 74
+      cellRect:
+        x: 33
+        y: 25
+        width: 65
+        height: 52
+      spriteId: 25621bd4bede3a149916587c8209ade5
+    - name: Ancient Boss_Frame_75
+      frameIndex: 75
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: 5c16fac36217e044ea3e9576de3acfab
+    - name: Ancient Boss_Frame_76
+      frameIndex: 76
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: cff35c526a9955847a19163090a0c33b
+    - name: Ancient Boss_Frame_77
+      frameIndex: 77
+      cellRect:
+        x: 33
+        y: 25
+        width: 65
+        height: 51
+      spriteId: 9ca7330217f62e843991a296830baa55
+    - name: Ancient Boss_Frame_78
+      frameIndex: 78
+      cellRect:
+        x: 34
+        y: 25
+        width: 63
+        height: 50
+      spriteId: 9aae967238b1ce842885ea9798172fd0
+    - name: Ancient Boss_Frame_79
+      frameIndex: 79
+      cellRect:
+        x: 35
+        y: 25
+        width: 61
+        height: 49
+      spriteId: f4f2e972ddd7277429417e3f5cde5e71
+    - name: Ancient Boss_Frame_80
+      frameIndex: 80
+      cellRect:
+        x: 36
+        y: 25
+        width: 59
+        height: 48
+      spriteId: bbbc81f55a0ce1f40aa0e548ce1aaf09
+    - name: Ancient Boss_Frame_81
+      frameIndex: 81
+      cellRect:
+        x: 37
+        y: 25
+        width: 57
+        height: 47
+      spriteId: 94fa5b8762f219f4eae26268ee4792af
+    - name: Ancient Boss_Frame_82
+      frameIndex: 82
+      cellRect:
+        x: 38
+        y: 25
+        width: 55
+        height: 46
+      spriteId: 0723baa485489834a94affce3867fecc
+    - name: Ancient Boss_Frame_83
+      frameIndex: 83
+      cellRect:
+        x: 38
+        y: 25
+        width: 55
+        height: 49
+      spriteId: 8cbcd9d9cae5e274c9af57ae94f07a6a
+    - name: Ancient Boss_Frame_84
+      frameIndex: 84
+      cellRect:
+        x: 28
+        y: 24
+        width: 73
+        height: 60
+      spriteId: 9f4a340f9c5cb354fae7669bfdc38865
+    - name: Ancient Boss_Frame_85
+      frameIndex: 85
+      cellRect:
+        x: 27
+        y: 25
+        width: 74
+        height: 64
+      spriteId: ce91921379fa25e4d9d0fe26534b3578
+    - name: Ancient Boss_Frame_86
+      frameIndex: 86
+      cellRect:
+        x: 27
+        y: 25
+        width: 73
+        height: 67
+      spriteId: e8e87b071dc840747a9189c7f782d19c
+    - name: Ancient Boss_Frame_87
+      frameIndex: 87
+      cellRect:
+        x: 31
+        y: 25
+        width: 69
+        height: 68
+      spriteId: 4e427c49d0d76bf43ae4af41cd11714f
+    - name: Ancient Boss_Frame_88
+      frameIndex: 88
+      cellRect:
+        x: 31
+        y: 25
+        width: 69
+        height: 69
+      spriteId: c557bad3f15d3524aaf842ff0321efb6
+    - name: Ancient Boss_Frame_89
+      frameIndex: 89
+      cellRect:
+        x: 27
+        y: 24
+        width: 77
+        height: 53
+      spriteId: 068bd18fdc436fe489ede32dc6b6e3fa
+    - name: Ancient Boss_Frame_90
+      frameIndex: 90
+      cellRect:
+        x: 26
+        y: 21
+        width: 78
+        height: 56
+      spriteId: 6294353f1bea9734bb9c26796cb93f31
+    - name: Ancient Boss_Frame_91
+      frameIndex: 91
+      cellRect:
+        x: 26
+        y: 19
+        width: 79
+        height: 58
+      spriteId: 085c8498cb6ea634e80b59a609e2937c
+    - name: Ancient Boss_Frame_92
+      frameIndex: 92
+      cellRect:
+        x: 26
+        y: 18
+        width: 78
+        height: 59
+      spriteId: 924cf5bf3c91e584fa88322d986e2475
+    - name: Ancient Boss_Frame_93
+      frameIndex: 93
+      cellRect:
+        x: 27
+        y: 17
+        width: 76
+        height: 60
+      spriteId: d37236d054e48774288c70272550e3c3
+    - name: Ancient Boss_Frame_94
+      frameIndex: 94
+      cellRect:
+        x: 36
+        y: 17
+        width: 63
+        height: 60
+      spriteId: 79c73c5aab23fdf4c922b6801556dc97
+    - name: Ancient Boss_Frame_95
+      frameIndex: 95
+      cellRect:
+        x: 38
+        y: 20
+        width: 63
+        height: 57
+      spriteId: d3fdbd360c9fcf54c916c7d702ef3e1e
+    - name: Ancient Boss_Frame_96
+      frameIndex: 96
+      cellRect:
+        x: 32
+        y: 23
+        width: 67
+        height: 54
+      spriteId: ab27f07ea03b71242b35b19a89e91f47
+    - name: Ancient Boss_Frame_97
+      frameIndex: 97
+      cellRect:
+        x: 31
+        y: 24
+        width: 68
+        height: 53
+      spriteId: da21856e467e6eb4a9e43673886eabc3
+    - name: Ancient Boss_Frame_98
+      frameIndex: 98
+      cellRect:
+        x: 31
+        y: 26
+        width: 68
+        height: 51
+      spriteId: 0b65a5ae8a9fef540becebcc331b787d
+    - name: Ancient Boss_Frame_99
+      frameIndex: 99
+      cellRect:
+        x: 31
+        y: 26
+        width: 68
+        height: 51
+      spriteId: 40e49ef13c2aedb4b966de8ede96c46f
+    - name: Ancient Boss_Frame_100
+      frameIndex: 100
+      cellRect:
+        x: 31
+        y: 26
+        width: 67
+        height: 51
+      spriteId: b53dd14fcfac34b40b564669cac741a5
+    - name: Ancient Boss_Frame_101
+      frameIndex: 101
+      cellRect:
+        x: 31
+        y: 27
+        width: 64
+        height: 48
+      spriteId: 4bcdd9558f8d8834e8ff2b9893ce5bcb
+    - name: Ancient Boss_Frame_102
+      frameIndex: 102
+      cellRect:
+        x: 31
+        y: 27
+        width: 63
+        height: 48
+      spriteId: 7e5f3379fafe1344080f1640dd6fa532
+    - name: Ancient Boss_Frame_103
+      frameIndex: 103
+      cellRect:
+        x: 31
+        y: 28
+        width: 63
+        height: 46
+      spriteId: 3a3935821ac1b2146b35be5cd63f3141
+    - name: Ancient Boss_Frame_109
+      frameIndex: 109
+      cellRect:
+        x: 25
+        y: 9
+        width: 74
+        height: 68
+      spriteId: a1ad853b84931a74ea545052dc606b71
+    - name: Ancient Boss_Frame_110
+      frameIndex: 110
+      cellRect:
+        x: 24
+        y: 7
+        width: 75
+        height: 70
+      spriteId: 1b4cdf2de3043a04d972629aa9ccc7f1
+    - name: Ancient Boss_Frame_111
+      frameIndex: 111
+      cellRect:
+        x: 23
+        y: 5
+        width: 76
+        height: 72
+      spriteId: 64699ca6e7a3f3249966e580069fa0e1
+    - name: Ancient Boss_Frame_112
+      frameIndex: 112
+      cellRect:
+        x: 22
+        y: 3
+        width: 77
+        height: 74
+      spriteId: b44ccf6b88342a94db499be8a1a1667c
+    - name: Ancient Boss_Frame_113
+      frameIndex: 113
+      cellRect:
+        x: 20
+        y: 1
+        width: 79
+        height: 76
+      spriteId: 9f300a2a965008f41af95bb3b756d0c7
+    - name: Ancient Boss_Frame_114
+      frameIndex: 114
+      cellRect:
+        x: 19
+        y: 1
+        width: 80
+        height: 76
+      spriteId: fbad93d644b7f144580ee47df9eb10d5
+    - name: Ancient Boss_Frame_115
+      frameIndex: 115
+      cellRect:
+        x: 18
+        y: 1
+        width: 81
+        height: 76
+      spriteId: 9f90bfc584c84ef4ebcb80181cf2aac2
+    - name: Ancient Boss_Frame_116
+      frameIndex: 116
+      cellRect:
+        x: 18
+        y: 1
+        width: 81
+        height: 76
+      spriteId: 992ecf2e5c5f03d4fad99ea39ce0bca0
+    - name: Ancient Boss_Frame_117
+      frameIndex: 117
+      cellRect:
+        x: 25
+        y: 1
+        width: 74
+        height: 76
+      spriteId: 71e099c189ebe65498a74f41593d1a06
+    - name: Ancient Boss_Frame_118
+      frameIndex: 118
+      cellRect:
+        x: 24
+        y: 0
+        width: 75
+        height: 77
+      spriteId: b3a4bb06103d4c6459dccbf0f364d51f
+    - name: Ancient Boss_Frame_119
+      frameIndex: 119
+      cellRect:
+        x: 32
+        y: 10
+        width: 67
+        height: 67
+      spriteId: 6ac9bd339f2f667458a5c5f9a36967e0
+    - name: Ancient Boss_Frame_120
+      frameIndex: 120
+      cellRect:
+        x: 33
+        y: 19
+        width: 66
+        height: 58
+      spriteId: 4f128f37e2abb3044923e213249d8530
+    - name: Ancient Boss_Frame_121
+      frameIndex: 121
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: cd410901bbc33e041970cd2ea0f9c079
+    - name: Ancient Boss_Frame_122
+      frameIndex: 122
+      cellRect:
+        x: 32
+        y: 25
+        width: 69
+        height: 52
+      spriteId: 842650500be8c78439e69efbf8691a14
+    - name: Ancient Boss_Frame_123
+      frameIndex: 123
+      cellRect:
+        x: 32
+        y: 25
+        width: 71
+        height: 52
+      spriteId: f17e153c0d8128c4296239ee137afd0c
+    - name: Ancient Boss_Frame_124
+      frameIndex: 124
+      cellRect:
+        x: 32
+        y: 25
+        width: 73
+        height: 52
+      spriteId: 67f4ea84f9ed29f4088cb12b3296db7b
+    - name: Ancient Boss_Frame_125
+      frameIndex: 125
+      cellRect:
+        x: 32
+        y: 25
+        width: 74
+        height: 52
+      spriteId: a36bb452edc533e4085559144d6823aa
+    - name: Ancient Boss_Frame_126
+      frameIndex: 126
+      cellRect:
+        x: 32
+        y: 25
+        width: 75
+        height: 52
+      spriteId: 11bd19f57a4ad5244b06105978bee591
+    - name: Ancient Boss_Frame_127
+      frameIndex: 127
+      cellRect:
+        x: 32
+        y: 25
+        width: 73
+        height: 52
+      spriteId: 905136977e3af2f4a936a56de7cee478
+    - name: Ancient Boss_Frame_128
+      frameIndex: 128
+      cellRect:
+        x: 32
+        y: 25
+        width: 74
+        height: 52
+      spriteId: 748a4574469c3194a9ab3d64d615c29a
+    - name: Ancient Boss_Frame_129
+      frameIndex: 129
+      cellRect:
+        x: 32
+        y: 25
+        width: 77
+        height: 52
+      spriteId: 554c51f055cb9ff4793e83936736931c
+    - name: Ancient Boss_Frame_130
+      frameIndex: 130
+      cellRect:
+        x: 32
+        y: 25
+        width: 80
+        height: 52
+      spriteId: 4167fe28c7a5a044bb96e0948c56072d
+    - name: Ancient Boss_Frame_131
+      frameIndex: 131
+      cellRect:
+        x: 32
+        y: 25
+        width: 80
+        height: 52
+      spriteId: 885488a29944ffe48b4ed62ef265eedd
+    - name: Ancient Boss_Frame_132
+      frameIndex: 132
+      cellRect:
+        x: 31
+        y: 9
+        width: 148
+        height: 69
+      spriteId: e70ebce08c2c02d4ca549f9b008effbf
+    - name: Ancient Boss_Frame_133
+      frameIndex: 133
+      cellRect:
+        x: 29
+        y: 8
+        width: 156
+        height: 70
+      spriteId: 3e4fbc31ad5eb6a41b402712a98fb0f8
+    - name: Ancient Boss_Frame_134
+      frameIndex: 134
+      cellRect:
+        x: 29
+        y: 8
+        width: 160
+        height: 70
+      spriteId: 327dbc1893617614d9b887e0d53f5989
+    - name: Ancient Boss_Frame_135
+      frameIndex: 135
+      cellRect:
+        x: 29
+        y: 8
+        width: 166
+        height: 70
+      spriteId: 5146e062df257a9419e60441d2073f3c
+    - name: Ancient Boss_Frame_136
+      frameIndex: 136
+      cellRect:
+        x: 29
+        y: 8
+        width: 170
+        height: 70
+      spriteId: 7b1287c13b286d14c8e661612894820c
+    - name: Ancient Boss_Frame_137
+      frameIndex: 137
+      cellRect:
+        x: 29
+        y: 9
+        width: 171
+        height: 69
+      spriteId: 52d2effea3f15d74eb2f700a55526bf6
+    - name: Ancient Boss_Frame_138
+      frameIndex: 138
+      cellRect:
+        x: 29
+        y: 9
+        width: 172
+        height: 69
+      spriteId: 58c2f176dcea93448abc9c619c562611
+    - name: Ancient Boss_Frame_139
+      frameIndex: 139
+      cellRect:
+        x: 30
+        y: 9
+        width: 157
+        height: 69
+      spriteId: 253002f98f7e0564e8aad750f066a28c
+    - name: Ancient Boss_Frame_140
+      frameIndex: 140
+      cellRect:
+        x: 31
+        y: 9
+        width: 157
+        height: 69
+      spriteId: 4b81a75e7e5463847b85a09278fac864
+    - name: Ancient Boss_Frame_141
+      frameIndex: 141
+      cellRect:
+        x: 32
+        y: 25
+        width: 69
+        height: 53
+      spriteId: 124cee6ba24b66d41a68e0e1ed5678f6
+    - name: Ancient Boss_Frame_142
+      frameIndex: 142
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: c8bca0e6c6940384fbb26416b4544eaa
+    - name: Ancient Boss_Frame_143
+      frameIndex: 143
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: c1a6ee659055db24286ca256d58d8f13
+    - name: Ancient Boss_Frame_144
+      frameIndex: 144
+      cellRect:
+        x: 33
+        y: 25
+        width: 65
+        height: 51
+      spriteId: f24716a92c58e9940ad0fa4b776c1cdb
+    - name: Ancient Boss_Frame_145
+      frameIndex: 145
+      cellRect:
+        x: 34
+        y: 25
+        width: 63
+        height: 50
+      spriteId: bda0a78c36032594ea43a36f2cca5959
+    - name: Ancient Boss_Frame_146
+      frameIndex: 146
+      cellRect:
+        x: 35
+        y: 25
+        width: 61
+        height: 49
+      spriteId: 8991216b8f41014418d3223306342c6e
+    - name: Ancient Boss_Frame_147
+      frameIndex: 147
+      cellRect:
+        x: 36
+        y: 25
+        width: 59
+        height: 48
+      spriteId: 63912123beb7d4f4aa17d4d233560216
+    - name: Ancient Boss_Frame_148
+      frameIndex: 148
+      cellRect:
+        x: 37
+        y: 25
+        width: 57
+        height: 47
+      spriteId: e08b447e5a889a7419d13c9ec3176d3c
+    - name: Ancient Boss_Frame_149
+      frameIndex: 149
+      cellRect:
+        x: 38
+        y: 25
+        width: 55
+        height: 46
+      spriteId: c466e251a4d51e047913389758576015
+    - name: Ancient Boss_Frame_150
+      frameIndex: 150
+      cellRect:
+        x: 38
+        y: 25
+        width: 55
+        height: 49
+      spriteId: feddb92d436c6584abab2002ba9f7315
+    - name: Ancient Boss_Frame_151
+      frameIndex: 151
+      cellRect:
+        x: 28
+        y: 22
+        width: 85
+        height: 62
+      spriteId: 058356f63cf75454fb9204ec0b84e06e
+    - name: Ancient Boss_Frame_152
+      frameIndex: 152
+      cellRect:
+        x: 27
+        y: 8
+        width: 162
+        height: 81
+      spriteId: 51a8857f107401a4bbaf252e26bf2c30
+    - name: Ancient Boss_Frame_153
+      frameIndex: 153
+      cellRect:
+        x: 27
+        y: 8
+        width: 164
+        height: 84
+      spriteId: 33ad5334ac984b34baea6db9a77ce95a
+    - name: Ancient Boss_Frame_154
+      frameIndex: 154
+      cellRect:
+        x: 31
+        y: 8
+        width: 164
+        height: 85
+      spriteId: 4eb58e91aa7698d44b9413d0061b0180
+    - name: Ancient Boss_Frame_155
+      frameIndex: 155
+      cellRect:
+        x: 31
+        y: 8
+        width: 168
+        height: 86
+      spriteId: e90c16a10f5d87a4b864e1db2e2107fe
+    - name: Ancient Boss_Frame_156
+      frameIndex: 156
+      cellRect:
+        x: 31
+        y: 8
+        width: 170
+        height: 69
+      spriteId: cd603b677650fba45b0fba7bcfdb85f8
+    - name: Ancient Boss_Frame_157
+      frameIndex: 157
+      cellRect:
+        x: 31
+        y: 8
+        width: 167
+        height: 69
+      spriteId: 32dd603095c989444b69c2e2500e93b7
+    - name: Ancient Boss_Frame_158
+      frameIndex: 158
+      cellRect:
+        x: 31
+        y: 8
+        width: 165
+        height: 69
+      spriteId: 8c41cacff536d504daddcdaa778eae82
+    - name: Ancient Boss_Frame_159
+      frameIndex: 159
+      cellRect:
+        x: 31
+        y: 20
+        width: 162
+        height: 57
+      spriteId: 72e121039d5ee9a43b557bb71ae24355
+    - name: Ancient Boss_Frame_160
+      frameIndex: 160
+      cellRect:
+        x: 31
+        y: 21
+        width: 150
+        height: 56
+      spriteId: c44c521a54cce5f408d9b07f5349a30e
+    - name: Ancient Boss_Frame_161
+      frameIndex: 161
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: 7ce2b8ebd7c0a264f90f222b14ec93fb
+    - name: Ancient Boss_Frame_162
+      frameIndex: 162
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: ff44163f936a6b44f89871503666dbc2
+    - name: Ancient Boss_Frame_163
+      frameIndex: 163
+      cellRect:
+        x: 32
+        y: 25
+        width: 67
+        height: 52
+      spriteId: 9d5cf1c61c06f8d479bc48af05027795
+    - name: Ancient Boss_Frame_164
+      frameIndex: 164
+      cellRect:
+        x: 32
+        y: 24
+        width: 67
+        height: 54
+      spriteId: 9b7fc7f3962fffe4990a484ffeb3c3aa
+    - name: Ancient Boss_Frame_165
+      frameIndex: 165
+      cellRect:
+        x: 32
+        y: 14
+        width: 67
+        height: 65
+      spriteId: b453a808bf3266744ab04e2ed9c8d8f6
+    - name: Ancient Boss_Frame_166
+      frameIndex: 166
+      cellRect:
+        x: 18
+        y: 9
+        width: 89
+        height: 71
+      spriteId: 2f8e3e1654143fc4e82c74d67fd27310
+    - name: Ancient Boss_Frame_174
+      frameIndex: 174
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 34
+      spriteId: e10d4d8687d4db24cace2712097d04f9
+    - name: Ancient Boss_Frame_175
+      frameIndex: 175
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 34
+      spriteId: 1a011c7a0fbf89446bca46893d62eb5e
+    - name: Ancient Boss_Frame_176
+      frameIndex: 176
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 34
+      spriteId: 921631f63a7dd0c44aaff80adba6dfcb
+    - name: Ancient Boss_Frame_177
+      frameIndex: 177
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 34
+      spriteId: ac0b9d83303ed0048887f15b2a9bd65c
+    - name: Ancient Boss_Frame_178
+      frameIndex: 178
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 30
+      spriteId: b7d1a9874cdb9cb4480163aa43ee6de3
+    - name: Ancient Boss_Frame_179
+      frameIndex: 179
+      cellRect:
+        x: 32
+        y: 8
+        width: 67
+        height: 31
+      spriteId: b989abde0320bcc4484e918884232547
+    - name: Ancient Boss_Frame_180
+      frameIndex: 180
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 30
+      spriteId: 9f4b420a66c416c48a9bf6fad365c81a
+    - name: Ancient Boss_Frame_181
+      frameIndex: 181
+      cellRect:
+        x: 32
+        y: 9
+        width: 67
+        height: 30
+      spriteId: 14a291fd1b7fd984dbdffe15b0b1e713
+    - name: Ancient Boss_Frame_104
+      frameIndex: 104
+      cellRect:
+        x: 29
+        y: 29
+        width: 65
+        height: 45
+      spriteId: d6869166cd075f54ea4a427ab761b670
+    - name: Ancient Boss_Frame_105
+      frameIndex: 105
+      cellRect:
+        x: 29
+        y: 28
+        width: 65
+        height: 46
+      spriteId: 76f15c9b399b1fd499282325172ef797
+    - name: Ancient Boss_Frame_106
+      frameIndex: 106
+      cellRect:
+        x: 29
+        y: 28
+        width: 65
+        height: 47
+      spriteId: 11cf30216c892c14990ef6c163d352cb
+    - name: Ancient Boss_Frame_107
+      frameIndex: 107
+      cellRect:
+        x: 29
+        y: 28
+        width: 65
+        height: 47
+      spriteId: c0e25414fc04aeb489187650a97bd33a
+    - name: Ancient Boss_Frame_108
+      frameIndex: 108
+      cellRect:
+        x: 29
+        y: 27
+        width: 65
+        height: 48
+      spriteId: f384120f0c85cb54698f504039efefaa
+    - name: Ancient Boss_Frame_167
+      frameIndex: 167
+      cellRect:
+        x: 16
+        y: 9
+        width: 91
+        height: 68
+      spriteId: 7d946b1ba00989a47acf120135ebd372
+    - name: Ancient Boss_Frame_168
+      frameIndex: 168
+      cellRect:
+        x: 9
+        y: 9
+        width: 101
+        height: 47
+      spriteId: c06dd98b109ce1e4380366999632f040
+    - name: Ancient Boss_Frame_169
+      frameIndex: 169
+      cellRect:
+        x: 5
+        y: 9
+        width: 115
+        height: 34
+      spriteId: 350c6fb5049c0cc4f85afd96da1c11dd
+    - name: Ancient Boss_Frame_170
+      frameIndex: 170
+      cellRect:
+        x: 3
+        y: 9
+        width: 115
+        height: 34
+      spriteId: 4944f68e4fc06a74b9b6e3c2e2a91fa6
+    - name: Ancient Boss_Frame_171
+      frameIndex: 171
+      cellRect:
+        x: 1
+        y: 9
+        width: 118
+        height: 34
+      spriteId: 65abe823db9dac4488d82541ac75575e
+    - name: Ancient Boss_Frame_172
+      frameIndex: 172
+      cellRect:
+        x: 0
+        y: 9
+        width: 120
+        height: 35
+      spriteId: cd67b67ce92b7f444b29b9b9752753c9
+    - name: Ancient Boss_Frame_173
+      frameIndex: 173
+      cellRect:
+        x: 0
+        y: 9
+        width: 119
+        height: 36
+      spriteId: 8c47eeed7963f33449c4e1424c0f9462
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 201, y: 94}

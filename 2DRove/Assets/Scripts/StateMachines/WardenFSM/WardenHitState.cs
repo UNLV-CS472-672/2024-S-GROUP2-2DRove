@@ -14,7 +14,7 @@ public class WardenHitState : WardenBaseState
         Debug.Log("HP: " + health);
         if (health <= 0)
         {
-            Warden.SwitchState(Warden.HitState);
+            Warden.SwitchState(Warden.DeathState);
         }
     }
 

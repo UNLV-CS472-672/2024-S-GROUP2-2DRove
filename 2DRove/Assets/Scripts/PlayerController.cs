@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxHealth;
     [SerializeField] private int coins;
     [SerializeField] private float speedFactor;
+    private float currentSpeed = 50;
     [SerializeField] private float blinkDistance;
     [SerializeField] private float blinkCooldown;
     private float lastBlinkedTime;
@@ -50,6 +51,8 @@ public class PlayerController : MonoBehaviour
         }
         rb = GetComponent<Rigidbody2D>();
 
+        speedFactor = currentSpeed;
+
         //Find the game over menu
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
 
@@ -63,6 +66,17 @@ public class PlayerController : MonoBehaviour
         //Starts the player with max health and initializes the health slider
         health = maxHealth;
         setHealthUI();
+    }
+
+    // Method to reduce the player's movement speed
+    public void ReduceMoveSpeed(float amount, float duration) {
+        speedFactor -= amount;
+        StartCoroutine(ResetMoveSpeed(duration));
+    }
+
+    private IEnumerator ResetMoveSpeed(float delay) {
+        yield return new WaitForSeconds(delay);
+        speedFactor = currentSpeed; // Reset to the normal move speed
     }
 
     //FixedUpdate unlike Update is called on an independant timer ignoring frame rate while Update is called each frame. Because of this, movement in FixedUpdate does not have to be multiplied by Time.deltaTime
@@ -179,10 +193,12 @@ public class PlayerController : MonoBehaviour
             
             if (enemyScript != null) {
                 enemyScript.TakeDamage(playerAttackDamage);
-                Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
-                if (enemyRb != null) {
-                    // Apply knockback
-                    enemyRb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse);
+                if (enemy.CompareTag("Enemy")){
+                    Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
+                    if (enemyRb != null) {
+                        // Apply knockback
+                        enemyRb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse);
+                    }
                 }
             }
         }

@@ -38,7 +38,9 @@ public class Projectile : MonoBehaviour
                 rb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse); //Applies a force to the enemy based on the projectile's velocity
             }
         }
-
+        else if (target.CompareTag("Boss")){//boss don't take knockbacks
+            target.GetComponent<NewEnemy>().TakeRangedDamage(rangedDamage);
+        }
         // wait for 1 second for animation
         Destroy(gameObject, 0.3f);
     }

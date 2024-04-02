@@ -256,6 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   animator: {fileID: 719559770693969259}
 --- !u!70 &8946580072168331372
 CapsuleCollider2D:

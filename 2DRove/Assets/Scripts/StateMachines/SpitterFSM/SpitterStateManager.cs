@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class SpitterStateManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    SpitterBaseState currentState; //
+    SpitterBaseState currentState;
+    public Animator animator;
 
-    
     public SpitterSpawnState SpawnState = new SpitterSpawnState();
     public SpitterIdleState IdleState = new SpitterIdleState();
     public SpitterAggroState AggroState = new SpitterAggroState();
@@ -15,11 +14,31 @@ public class SpitterStateManager : MonoBehaviour
     public SpitterHitState HitState = new SpitterHitState();
     public SpitterDeathState DeathState = new SpitterDeathState();
 
+    [SerializeField] public GameObject projectilePrefab;
+    [SerializeField] public Transform projectileSpawnPoint;
+
+    [SerializeField] public float attackRange;
+
+
+    public GameObject ProjectilePrefab => projectilePrefab;
+    public Transform ProjectileSpawnPoint => projectileSpawnPoint;
+    public Transform attackPoint;
+
 
     void Start()
     {
         currentState = SpawnState;
         currentState.EnterState(this);
+        animator = this.GetComponent<Animator>();
+
+        // AttackState.Setup(this, projectilePrefab, projectileSpawnPoint);
+        if (projectilePrefab == null || projectileSpawnPoint == null)
+        {
+            Debug.LogError("Projectile Prefab or Projectile Spawn Point not assigned in SpitterStateManager");
+            return;
+        }
+
+
     }
 
     // Update is called once per frame
@@ -27,11 +46,39 @@ public class SpitterStateManager : MonoBehaviour
     {
         currentState.UpdateState(this);
     }
-    private void OnTriggerStay2D(Collider2D other){
+    private void OnTriggerStay2D(Collider2D other)
+    {
         currentState.OnTriggerStay2D(this, other);
     }
-    public void SwitchState(SpitterBaseState state){
+    public void SwitchState(SpitterBaseState state)
+    {
         currentState = state;
         state.EnterState(this);
+    }
+
+    public void EventTrigger()
+    {
+        currentState.EventTrigger(this);
+    }
+
+
+    //damage dealt is calculated by PlayerController.cs
+    //this is purely to be placed in hit stun
+    public void TakeDamageAnimation()
+    {
+        currentState.TakeDamage(this);
+    }
+
+    public void Destroy(float waitDuration)
+    {
+        Destroy(gameObject, waitDuration);
+        // currentState = null;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+
     }
 }

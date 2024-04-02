@@ -2,43 +2,43 @@ using UnityEngine;
 
 public class DaggerMushroomAttackState : DaggerMushroomBaseState
 {
-    private float attackTime = .9f;
+    private float attackTime = 1.0f;
     private Animator animator;
-    public override void EnterState(DaggerMushroomStateManager mushroom)
+    public override void EnterState(DaggerMushroomStateManager mush)
     {
         Debug.Log("Entering Attack State");
-        attackTime = .9f;
-        animator = mushroom.GetComponent<Animator>();
+        attackTime = 1.0f;
+        animator = mush.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }
 
-    public override void UpdateState(DaggerMushroomStateManager mushroom)
+    public override void UpdateState(DaggerMushroomStateManager mush)
     {
         if(attackTime <= 0)
         {
-            mushroom.SwitchState(mushroom.IdleState);
+            mush.SwitchState(mush.IdleState);
             animator.SetBool("attacking", false);
         }
 
         attackTime -= Time.deltaTime;
     }
 
-    public override void OnCollisionEnter2D(DaggerMushroomStateManager mushroom, Collision2D other)
+    public override void OnCollisionEnter2D(DaggerMushroomStateManager mush, Collision2D other)
     {
         
     }
     
-    public override void OnTriggerStay2D(DaggerMushroomStateManager mushroom, Collider2D other) 
+    public override void OnTriggerStay2D(DaggerMushroomStateManager mush, Collider2D other) 
     {
 
     }
 
     //done in animation events
-    public override void EventTrigger(DaggerMushroomStateManager mushroom)
+    public override void EventTrigger(DaggerMushroomStateManager mush)
     {
-        Vector2 knockbackDirection = (Vector2)(mushroom.transform.position - mushroom.attackPoint.position).normalized;
+        Vector2 knockbackDirection = (Vector2)(mush.transform.position - mush.attackPoint.position).normalized;
         LayerMask mask = LayerMask.GetMask("Player");
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(mushroom.attackPoint.position, mushroom.attackRange, mask);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(mush.attackPoint.position, mush.attackRange, mask);
 
         foreach (Collider2D collider in colliders)
         {
@@ -52,8 +52,8 @@ public class DaggerMushroomAttackState : DaggerMushroomBaseState
         }
     }
 
-    public override void TakeDamage(DaggerMushroomStateManager mushroom)
+    public override void TakeDamage(DaggerMushroomStateManager mush)
     {
-        mushroom.SwitchState(mushroom.HitState);
+        
     }
 }

@@ -123,8 +123,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Caged Spider_Frame_0
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -143,8 +143,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 187}
   - name: Caged Spider_Frame_1
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -163,8 +163,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 206}
   - name: Caged Spider_Frame_2
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -183,8 +183,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 225}
   - name: Caged Spider_Frame_3
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -203,8 +203,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 51}
   - name: Caged Spider_Frame_4
     originalName: 
-    pivot: {x: 0.4166667, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -223,8 +223,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 130}
   - name: Caged Spider_Frame_5
     originalName: 
-    pivot: {x: 0.4166667, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -243,8 +243,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 149}
   - name: Caged Spider_Frame_6
     originalName: 
-    pivot: {x: 0.3846154, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -263,8 +263,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 111}
   - name: Caged Spider_Frame_7
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -283,8 +283,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 70}
   - name: Caged Spider_Frame_8
     originalName: 
-    pivot: {x: 0.5, y: -1.3333334}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -303,8 +303,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 91}
   - name: Caged Spider_Frame_9
     originalName: 
-    pivot: {x: 0.5, y: -1.2307693}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -323,8 +323,8 @@ ScriptedImporter:
     uvTransform: {x: 25, y: 224}
   - name: Caged Spider_Frame_10
     originalName: 
-    pivot: {x: 0.53846157, y: -1.3333334}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -343,8 +343,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 71}
   - name: Caged Spider_Frame_11
     originalName: 
-    pivot: {x: 0.5, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -363,8 +363,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 168}
   - name: Caged Spider_Frame_12
     originalName: 
-    pivot: {x: 0.53333336, y: -1.3333334}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -383,8 +383,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 51}
   - name: Caged Spider_Frame_13
     originalName: 
-    pivot: {x: 0.53846157, y: -1.2307693}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -403,8 +403,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 225}
   - name: Caged Spider_Frame_14
     originalName: 
-    pivot: {x: 0.3846154, y: -1.1428572}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -423,8 +423,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 203}
   - name: Caged Spider_Frame_15
     originalName: 
-    pivot: {x: 0.35714287, y: -1.2307693}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -443,8 +443,8 @@ ScriptedImporter:
     uvTransform: {x: 25, y: 203}
   - name: Caged Spider_Frame_16
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -463,8 +463,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 89}
   - name: Caged Spider_Frame_17
     originalName: 
-    pivot: {x: 0.4615385, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -483,8 +483,8 @@ ScriptedImporter:
     uvTransform: {x: 95, y: 4}
   - name: Caged Spider_Frame_18
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -503,8 +503,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 108}
   - name: Caged Spider_Frame_19
     originalName: 
-    pivot: {x: 0.48387095, y: -0.9411765}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -523,8 +523,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 57}
   - name: Caged Spider_Frame_20
     originalName: 
-    pivot: {x: 0.4848485, y: -0.8888889}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -543,8 +543,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 31}
   - name: Caged Spider_Frame_21
     originalName: 
-    pivot: {x: 0.4857143, y: -0.84210527}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -563,8 +563,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Caged Spider_Frame_22
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -583,8 +583,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 127}
   - name: Caged Spider_Frame_23
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -603,8 +603,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 146}
   - name: Caged Spider_Frame_24
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -623,8 +623,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 165}
   - name: Caged Spider_Frame_25
     originalName: 
-    pivot: {x: 0.45454547, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -643,8 +643,8 @@ ScriptedImporter:
     uvTransform: {x: 70, y: 184}
   - name: Caged Spider_Frame_26
     originalName: 
-    pivot: {x: 0.48, y: -1.4545455}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -663,8 +663,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 184}
   - name: Caged Spider_Frame_27
     originalName: 
-    pivot: {x: 0.48387095, y: -1.2307693}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -683,8 +683,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 125}
   - name: Caged Spider_Frame_28
     originalName: 
-    pivot: {x: 0.45714286, y: -1.1428572}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -703,8 +703,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 82}
   - name: Caged Spider_Frame_29
     originalName: 
-    pivot: {x: 0.4473684, y: -1.0666667}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -723,8 +723,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 28}
   - name: Caged Spider_Frame_30
     originalName: 
-    pivot: {x: 0.45000002, y: -1}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -743,8 +743,8 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 4}
   - name: Caged Spider_Frame_31
     originalName: 
-    pivot: {x: 0.2580645, y: -1.5384616}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -763,8 +763,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 146}
   - name: Caged Spider_Frame_32
     originalName: 
-    pivot: {x: 0.54285717, y: -1.7777778}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -783,8 +783,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 167}
   - name: Caged Spider_Frame_33
     originalName: 
-    pivot: {x: 0.27272728, y: -1.6153847}
-    alignment: 9
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03ecdaa44b30e6243af89b202bf444b8
+guid: 7233200770790ec4285eec89679ae30e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,49 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: damaged_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 144
-        height: 80
-      alignment: 9
-      pivot: {x: 0.14, y: 0.18}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53c7ba04d9524124196f986f7aec87f4
-      internalID: -1149077906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: damaged_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 144
-        height: 80
-      alignment: 9
-      pivot: {x: 0.14, y: 0.18}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 014e7fbb5d6223944a22c8cda976ab16
-      internalID: 1420373051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -161,9 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      damaged_0: -1149077906
-      damaged_1: 1420373051
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

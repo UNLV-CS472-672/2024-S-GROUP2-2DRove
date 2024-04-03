@@ -675,21 +675,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1632550805101332209, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
-      propertyPath: attackRange
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2381006408141876882, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
       propertyPath: m_Name
       value: DaggerMushroom
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461730871974859416, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 5461730871974859416, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 7565989429211467913, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
       propertyPath: m_LocalPosition.x

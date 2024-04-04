@@ -35,13 +35,15 @@ public class BomberHitState : BomberBaseState
 
     public override void OnTriggerStay2D(BomberStateManager bomber, Collider2D other)
     {
-    }
 
+    }
     public override void EventTrigger(BomberStateManager bomber)
     {
 
     }
 
+
+ 
     public override void TakeDamage(BomberStateManager bomber)
     {
         bomber.SwitchState(bomber.HitState);

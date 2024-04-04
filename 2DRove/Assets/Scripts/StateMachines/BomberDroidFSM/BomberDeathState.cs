@@ -26,7 +26,7 @@ public class BomberDeathState : BomberBaseState
             shadowOriginalPosition = shadowTransform.localPosition;
         }
         else
-        {
+        {   // Check that Shadow is not found
             Debug.LogError("BombShadow not found as a child of the bomber!");
         }
         // isdead wait 1 second

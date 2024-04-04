@@ -62,17 +62,16 @@ public class BomberStateManager : MonoBehaviour
         currentState.EventTrigger(this);
     }
 
-    // This would handle the bomber taking damage and possibly dropping a bomb in response
+    // This would handle the bomber taking damage
     public void TakeDamageAnimation()
     {
         currentState.TakeDamage(this);
     }
 
 
-    // Instantiate a bomb and drop it from the bombDropPoint
-    public void DropBomb()
+  public void TakeDamage(int damage)
     {
-        // Bomb drop logic here
+        
     }
 
     public void Destroy(float waitDuration)

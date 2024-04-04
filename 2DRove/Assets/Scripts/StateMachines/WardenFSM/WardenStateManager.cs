@@ -46,25 +46,12 @@ public class WardenStateManager : MonoBehaviour
     {
         currentState.EventTrigger(this);
     }
-    public void TeleportToRandomPosition(WardenStateManager Warden)
-    {
-        // Define the range of teleportation around the current position
-        float teleportRangeX = 10f; 
-        float teleportRangeY = 5f; 
-
-        // Generate a random new position within the defined range
-        Vector3 randomPosition = new Vector3(Random.Range(-teleportRangeX, teleportRangeX), Random.Range(-teleportRangeY, teleportRangeY), 0) + Warden.transform.position;
-
-        // Update the warden's position to the new random position
-        Warden.transform.position = randomPosition;
-    }
 
 //damage dealt is calculated by PlayerController.cs
 //this is purely to be placed in hit stun
     public void TakeDamageAnimation()
     {
         currentState.TakeDamage(this);
-        TeleportToRandomPosition(this);
     }
 
     public void Destroy(float waitDuration)

@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: 83c9230da48c2f04984778de72018e7a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5385336171411387106
+    second: Bugs Alone_0
+  - first:
+      213: -749815312668202838
+    second: Bugs Alone_1
+  - first:
+      213: -2120954205619558707
+    second: Bugs Alone_2
+  - first:
+      213: -2998510745606075222
+    second: Bugs Alone_3
+  - first:
+      213: 9021729275404066518
+    second: Bugs Alone_4
+  - first:
+      213: 8651542630807776969
+    second: Bugs Alone_5
+  - first:
+      213: -1228454704034170745
+    second: Bugs Alone_6
+  - first:
+      213: 5378078444837086802
+    second: Bugs Alone_7
+  - first:
+      213: 6843983932411219779
+    second: Bugs Alone_8
+  - first:
+      213: -5041534659975576088
+    second: Bugs Alone_9
+  - first:
+      213: 2071765319307944055
+    second: Bugs Alone_10
+  - first:
+      213: 6218798792322783990
+    second: Bugs Alone_11
+  - first:
+      213: -8752450530989950975
+    second: Bugs Alone_12
+  - first:
+      213: 2225341293353748448
+    second: Bugs Alone_13
+  - first:
+      213: -4400414287514826259
+    second: Bugs Alone_14
+  - first:
+      213: 5434607238261827167
+    second: Bugs Alone_15
+  - first:
+      213: -780238262320882757
+    second: Bugs Alone_16
+  - first:
+      213: 2024966888916882594
+    second: Bugs Alone_17
+  - first:
+      213: -1323332591766001440
+    second: Bugs Alone_18
+  - first:
+      213: 788711119444902139
+    second: Bugs Alone_19
+  - first:
+      213: 864540524175488247
+    second: Bugs Alone_20
+  - first:
+      213: 1139906826009924928
+    second: Bugs Alone_21
+  - first:
+      213: -1192847707010281891
+    second: Bugs Alone_22
+  - first:
+      213: -2326536408968262845
+    second: Bugs Alone_23
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bugs Alone_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1219
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d46fae8417345b0800000000000000
+      internalID: -5385336171411387106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1166
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8634122fe1895f0800000000000000
+      internalID: -749815312668202838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1113
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6ec25236bd092e0800000000000000
+      internalID: -2120954205619558707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac45f81d562366d0800000000000000
+      internalID: -2998510745606075222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1007
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de93301afe933d70800000000000000
+      internalID: 9021729275404066518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 954
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce22745f24701870800000000000000
+      internalID: 8651542630807776969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 901
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788b26f84f6a3fee0800000000000000
+      internalID: -1228454704034170745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 848
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25623bee9d5c2aa40800000000000000
+      internalID: 5378078444837086802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f0ad32027bafe50800000000000000
+      internalID: 6843983932411219779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5065d10fed80ab0800000000000000
+      internalID: -5041534659975576088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 689
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770e25bc49360cc10800000000000000
+      internalID: 2071765319307944055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa17029d8c9d4650800000000000000
+      internalID: 6218798792322783990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1083a225d9c098680800000000000000
+      internalID: -8752450530989950975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7cb5ead1002ee10800000000000000
+      internalID: 2225341293353748448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 477
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9002815869ee2c0800000000000000
+      internalID: -4400414287514826259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 424
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56ec5a4d7a9b6b40800000000000000
+      internalID: 5434607238261827167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 371
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb123e2f690c25f0800000000000000
+      internalID: -780238262320882757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 318
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a491df18a02a1c10800000000000000
+      internalID: 2024966888916882594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e82714e40492ade0800000000000000
+      internalID: -1323332591766001440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf00ae8959012fa00800000000000000
+      internalID: 788711119444902139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 159
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4f865b6077ffb00800000000000000
+      internalID: 864540524175488247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0455d510833c1df00800000000000000
+      internalID: 1139906826009924928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e43889457227fe0800000000000000
+      internalID: -1192847707010281891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bugs Alone_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 111
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b0f6a667b76bfd0800000000000000
+      internalID: -2326536408968262845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Bugs Alone_0: -5385336171411387106
+      Bugs Alone_1: -749815312668202838
+      Bugs Alone_10: 2071765319307944055
+      Bugs Alone_11: 6218798792322783990
+      Bugs Alone_12: -8752450530989950975
+      Bugs Alone_13: 2225341293353748448
+      Bugs Alone_14: -4400414287514826259
+      Bugs Alone_15: 5434607238261827167
+      Bugs Alone_16: -780238262320882757
+      Bugs Alone_17: 2024966888916882594
+      Bugs Alone_18: -1323332591766001440
+      Bugs Alone_19: 788711119444902139
+      Bugs Alone_2: -2120954205619558707
+      Bugs Alone_20: 864540524175488247
+      Bugs Alone_21: 1139906826009924928
+      Bugs Alone_22: -1192847707010281891
+      Bugs Alone_23: -2326536408968262845
+      Bugs Alone_3: -2998510745606075222
+      Bugs Alone_4: 9021729275404066518
+      Bugs Alone_5: 8651542630807776969
+      Bugs Alone_6: -1228454704034170745
+      Bugs Alone_7: 5378078444837086802
+      Bugs Alone_8: 6843983932411219779
+      Bugs Alone_9: -5041534659975576088
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

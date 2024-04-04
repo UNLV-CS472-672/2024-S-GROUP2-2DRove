@@ -41,36 +41,36 @@ namespace EdgeTiles
         public void AssignAndSwapEdgeTiles() {
             foreach (var tilePos in tilePositions) {
                 TileType tileType = GetTileType(tilePos);
-                // switch (tileType) {
-                //     case TileType.NECorner:
-                //         SwapTile(tilePos, NEcornerPrefab); // Replace with North East Corner tile prefab
-                //         break;
-                //     case TileType.NWCorner:
-                //         SwapTile(tilePos, NWcornerPrefab); // Replace with North West Corner tile prefab
-                //         break;
-                //     case TileType.SECorner:
-                //         SwapTile(tilePos, SEcornerPrefab); // Replace with South East Corner tile prefab
-                //         break;
-                //     case TileType.SWCorner:
-                //         SwapTile(tilePos, SWcornerPrefab); // Replace with South West Corner tile prefab
-                //         break;
-                //     case TileType.NPeninsula:
-                //         SwapTile(tilePos, humpNorthPrefab); // Replace with North Peninsula tile prefab
-                //         break;
-                //     case TileType.SPeninsula:
-                //         SwapTile(tilePos, humpSouthPrefab); // Replace with South Peninsula tile prefab
-                //         break;
-                //     case TileType.WPeninsula:
-                //         SwapTile(tilePos, humpWestPrefab); // Replace with West Peninsula tile prefab
-                //         break;
-                //     case TileType.EPeninsula:
-                //         SwapTile(tilePos, humpEastPrefab); // Replace with East Peninsula tile prefab
-                //         break;
-                //     case TileType.None:
-                //     default:
-                //         // No need to swap if it's a regular tile or the type is None
-                //         break;
-                // }
+                switch (tileType) {
+                    case TileType.NECorner:
+                        SwapTile(tilePos, NEcornerPrefab); // Replace with North East Corner tile prefab
+                        break;
+                    case TileType.NWCorner:
+                        SwapTile(tilePos, NWcornerPrefab); // Replace with North West Corner tile prefab
+                        break;
+                    case TileType.SECorner:
+                        SwapTile(tilePos, SEcornerPrefab); // Replace with South East Corner tile prefab
+                        break;
+                    case TileType.SWCorner:
+                        SwapTile(tilePos, SWcornerPrefab); // Replace with South West Corner tile prefab
+                        break;
+                    case TileType.NPeninsula:
+                        SwapTile(tilePos, humpNorthPrefab); // Replace with North Peninsula tile prefab
+                        break;
+                    case TileType.SPeninsula:
+                        SwapTile(tilePos, humpSouthPrefab); // Replace with South Peninsula tile prefab
+                        break;
+                    case TileType.WPeninsula:
+                        SwapTile(tilePos, humpWestPrefab); // Replace with West Peninsula tile prefab
+                        break;
+                    case TileType.EPeninsula:
+                        SwapTile(tilePos, humpEastPrefab); // Replace with East Peninsula tile prefab
+                        break;
+                    case TileType.None:
+                    default:
+                        // No need to swap if it's a regular tile or the type is None
+                        break;
+                }
             }
         }
 
@@ -100,21 +100,6 @@ namespace EdgeTiles
             Debug.Log("Left: " + (left ? "Yes" : "No"));
             Debug.Log("Right: " + (right ? "Yes" : "No"));
 
-            // Check peninsulas
-            // if (!up && !left && !right && down) return TileType.NPeninsula; // North Peninsula
-            // if (up && !down && !left && !right) return TileType.SPeninsula; // South Peninsula
-            // if (!up && !down && !left && right) return TileType.WPeninsula; // West Peninsula
-            // if (!up && !down && left && !right) return TileType.EPeninsula; // East Peninsula
-
-            // // Check corners
-            // if (!up && !right) return TileType.NECorner; // North East Corner
-            // if (!up && !left) return TileType.NWCorner; // North West Corner
-            // if (!down && !right) return TileType.SECorner; // South East Corner
-            // if (!down && !left) return TileType.SWCorner; // South West Corner
-
-            // return TileType.None; // Not an edge or corner
-
-            // for debugging
             TileType type = TileType.None;
             bool flag = true; 
 
@@ -159,12 +144,14 @@ namespace EdgeTiles
         // Swap the tile at the given position with a new tile based on type
         void SwapTile(Vector2Int position, GameObject newTilePrefab) {
             if (tileObjects.TryGetValue(position, out GameObject oldTile)) {
+                Debug.Log("HERE: " + position);
                 // Destroy or disable the old tile
                 Destroy(oldTile);
 
                 // Instantiate the new tile prefab and place it at the correct position
-                GameObject newTile = Instantiate(newTilePrefab, new Vector3(position.x * scale, position.y * scale, 0), Quaternion.identity);
+                GameObject newTile = Instantiate(newTilePrefab, new Vector3(position.x * scale * 10, position.y * scale * 5, 0), Quaternion.identity);
                 newTile.name = newTilePrefab.name + "(" + position.x + ", " + position.y + ")";
+                newTile.transform.localScale = new Vector3(scale, scale, 1);
 
                 // Update the tileObjects dictionary
                 tileObjects[position] = newTile;

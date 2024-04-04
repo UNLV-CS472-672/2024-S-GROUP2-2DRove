@@ -1,3 +1,4 @@
+/*
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -53,6 +54,7 @@ namespace MapGen
                             Mathf.Max returns the larger of the two numbers
                             Example: Mathf.Min(5, 10) returns 5
                         */
+                        /*
                         case Direction.UpRight:
                             currentPosition.x = Mathf.Min(currentPosition.x + (10 * tileSizeX), maxX);
                             currentPosition.y = Mathf.Min(currentPosition.y + (5 * tileSizeY), maxY);
@@ -99,3 +101,4 @@ namespace MapGen
         }
     }
 }
+*/

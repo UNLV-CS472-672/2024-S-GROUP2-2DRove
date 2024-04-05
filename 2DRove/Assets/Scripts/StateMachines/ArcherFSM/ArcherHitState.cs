@@ -24,7 +24,7 @@ public class ArcherHitState : ArcherBaseState
     {
         if (hitStun <= 0)
         {
-            archer.SwitchState(archer.RetreatState);
+            archer.SwitchState(archer.IdleState);
         }
 
         hitStun -= Time.deltaTime;

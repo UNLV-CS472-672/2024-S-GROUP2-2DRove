@@ -9,7 +9,6 @@ public class ArcherStateManager : MonoBehaviour
     [SerializeField] public float attackRange;
     ArcherBaseState currentState;
     public ArcherAggroState AggroState = new ArcherAggroState();
-    public ArcherRetreatState RetreatState = new ArcherRetreatState();
     public ArcherAttackState AttackState = new ArcherAttackState();
     public ArcherDeathState DeathState = new ArcherDeathState();
     public ArcherHitState HitState = new ArcherHitState();

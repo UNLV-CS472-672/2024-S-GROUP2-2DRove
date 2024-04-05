@@ -5,11 +5,11 @@ public class ArcherIdleState : ArcherBaseState
 {
     private bool idling = true;
     private Transform player;
-    private float idleTime = 3.0f;
+    private float idleTime = 1.0f;
     public override void EnterState(ArcherStateManager archer)
     {
         Debug.Log("Entering Idle State...");
-        idleTime = 3.0f;
+        idleTime = 1.0f;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

@@ -4,10 +4,10 @@ on:
   # Replace with whatever branch you're working on :)
   push: 
     branches: 
-      - main
+      - mapgen
   pull_request:
     branches:
-      - main
+      - mapgen
 
 jobs:
   runTests:
@@ -45,5 +45,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: code-coverage-report
-          path: 2DRove/CodeCoverage/Report/
+          path: 2DRove/CodeCoverage
             

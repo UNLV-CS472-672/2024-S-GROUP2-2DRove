@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class ArcherAttackState : ArcherBaseState
 {
-    private float attackTime = 4.0f;
+    private float attackTime = 1.167f;
     private Animator animator;
     public override void EnterState(ArcherStateManager archer)
     {
         Debug.Log("Entering Attack State");
-        attackTime = 4.0f;
+        attackTime = 1.167f;
         animator = archer.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }
@@ -54,6 +54,6 @@ public class ArcherAttackState : ArcherBaseState
 
     public override void TakeDamage(ArcherStateManager archer)
     {
-        
+        archer.SwitchState(archer.HitState);
     }
 }

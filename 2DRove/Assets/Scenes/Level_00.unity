@@ -701,6 +701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DaggerMushroom
       objectReference: {fileID: 0}
+    - target: {fileID: 2381006408141876882, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7565989429211467913, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.86
@@ -1785,10 +1789,6 @@ PrefabInstance:
     - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_Name
       value: CagedSpider
-      objectReference: {fileID: 0}
-    - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8191069111030342767, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_LocalPosition.x

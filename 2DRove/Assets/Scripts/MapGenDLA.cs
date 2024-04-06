@@ -311,8 +311,8 @@ namespace MapGenDLANamespace
         {
             GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * maxX, position.y * scale * maxY/2, 0), Quaternion.identity);
             border.name = "Border(" + position.x + ", " + position.y + ")";
-            border.transform.parent = tileObject.transform;
-            border.transform.localScale = new Vector3(scale / 2, scale / 2, 1);
+            //border.transform.parent = tileObject.transform;
+            border.transform.localScale = new Vector3(scale, scale, 1);
             // Place the tile lower in the layers
             border.GetComponent<Renderer>().sortingOrder = -1;
             // Apply a tilemap collider to give all the tiles on the tilemap a collider

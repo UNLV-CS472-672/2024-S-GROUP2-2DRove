@@ -1,30 +1,31 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 3/26/2024 - 3:00:20 AM |
+| Generated on: | 4/6/2024 - 11:48:42 AM |
 | Parser: | MultiReportParser (2x OpenCoverParser) |
 | Assemblies: | 3 |
-| Classes: | 223 |
-| Files: | 217 |
-| Covered lines: | 1345 |
-| Uncovered lines: | 7039 |
-| Coverable lines: | 8384 |
-| Total lines: | 16842 |
-| Line coverage: | 16% (1345 of 8384) |
+| Classes: | 224 |
+| Files: | 218 |
+| Covered lines: | 2125 |
+| Uncovered lines: | 6382 |
+| Coverable lines: | 8507 |
+| Total lines: | 17056 |
+| Line coverage: | 24.9% (2125 of 8507) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 316 |
-| Total methods: | 1321 |
-| Method coverage: | 23.9% (316 of 1321) |
+| Covered methods: | 412 |
+| Total methods: | 1327 |
+| Method coverage: | 31% (412 of 1327) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GameTestAssembly**|**171**|**60**|**231**|**478**|**74%**|**0**|**0**|****|**19**|**23**|**82.6%**|
+|**GameTestAssembly**|**284**|**70**|**354**|**692**|**80.2%**|**0**|**0**|****|**25**|**29**|**86.2%**|
+|EdgeTiles.AssignEdges|85|7|92|163|92.3%|0|0||6|6|100%|
 |Exit|4|7|11|20|36.3%|0|0||2|3|66.6%|
 |LoadingScreenManager|0|23|23|37|0%|0|0||0|2|0%|
-|MapGenDLANamespace.MapGenDLA|152|27|179|353|84.9%|0|0||14|15|93.3%|
+|MapGenDLANamespace.MapGenDLA|180|30|210|404|85.7%|0|0||14|15|93.3%|
 |Player|15|3|18|68|83.3%|0|0||3|3|100%|
-|**UnityEditor.TestRunner**|**276**|**4945**|**5221**|**11063**|**5.2%**|**0**|**0**|****|**101**|**762**|**13.2%**|
+|**UnityEditor.TestRunner**|**836**|**4385**|**5221**|**11063**|**16%**|**0**|**0**|****|**173**|**762**|**22.7%**|
 |TestRunner.Callbacks.WindowResultUpdaterDataHolder|0|1|1|11|0%|0|0||0|1|0%|
 |UnityEditor.TestRunner.CommandLineParser.CommandLineOption|0|25|25|45|0%|0|0||0|7|0%|
 |UnityEditor.TestRunner.CommandLineParser.CommandLineOptionSet|0|32|32|49|0%|0|0||0|3|0%|
@@ -36,20 +37,20 @@
 |UnityEditor.TestTools.RequirePlatformSupportAttribute|0|15|15|48|0%|0|0||0|4|0%|
 |UnityEditor.TestTools.TestPlayerBuildModifierAttribute|0|11|11|33|0%|0|0||0|2|0%|
 |UnityEditor.TestTools.TestRunner.AndroidPlatformSetup|0|51|51|94|0%|0|0||0|9|0%|
-|UnityEditor.TestTools.TestRunner.Api.Analytics.AnalyticsReporter|0|94|94|162|0%|0|0||0|7|0%|
+|UnityEditor.TestTools.TestRunner.Api.Analytics.AnalyticsReporter|54|40|94|162|57.4%|0|0||4|7|57.1%|
 |UnityEditor.TestTools.TestRunner.Api.Analytics.AnalyticsTestCallback|6|7|13|31|46.1%|0|0||3|5|60%|
 |UnityEditor.TestTools.TestRunner.Api.CallbacksDelegator|25|62|87|136|28.7%|0|0||6|14|42.8%|
 |UnityEditor.TestTools.TestRunner.Api.CallbacksDelegatorListener|9|3|12|28|75%|0|0||4|4|100%|
 |UnityEditor.TestTools.TestRunner.Api.CallbacksHolder|3|26|29|69|10.3%|0|0||1|9|11.1%|
 |UnityEditor.TestTools.TestRunner.Api.ExecutionSettings|0|35|35|106|0%|0|0||0|10|0%|
 |UnityEditor.TestTools.TestRunner.Api.Filter|0|6|6|67|0%|0|0||0|2|0%|
-|UnityEditor.TestTools.TestRunner.Api.TestAdaptor|13|86|99|127|13.1%|0|0||21|40|52.5%|
-|UnityEditor.TestTools.TestRunner.Api.TestAdaptorFactory|16|45|61|96|26.2%|0|0||2|9|22.2%|
+|UnityEditor.TestTools.TestRunner.Api.TestAdaptor|61|38|99|127|61.6%|0|0||35|40|87.5%|
+|UnityEditor.TestTools.TestRunner.Api.TestAdaptorFactory|26|35|61|96|42.6%|0|0||2|9|22.2%|
 |UnityEditor.TestTools.TestRunner.Api.TestResultAdaptor|43|32|75|95|57.3%|0|0||38|40|95%|
-|UnityEditor.TestTools.TestRunner.Api.TestRunnerApi|0|66|66|158|0%|0|0||0|9|0%|
+|UnityEditor.TestTools.TestRunner.Api.TestRunnerApi|6|60|66|158|9%|0|0||2|9|22.2%|
 |UnityEditor.TestTools.TestRunner.ApplePlatformSetup|0|16|16|42|0%|0|0||0|6|0%|
 |UnityEditor.TestTools.TestRunner.AttributeFinderBase[T1,T2]|54|7|61|109|88.5%|0|0||6|6|100%|
-|UnityEditor.TestTools.TestRunner.CachingTestListProvider|0|27|27|49|0%|0|0||0|2|0%|
+|UnityEditor.TestTools.TestRunner.CachingTestListProvider|9|18|27|49|33.3%|0|0||1|2|50%|
 |UnityEditor.TestTools.TestRunner.CommandLineTest.Executer|0|70|70|137|0%|0|0||0|9|0%|
 |UnityEditor.TestTools.TestRunner.CommandLineTest.ExitCallbacks|0|27|27|52|0%|0|0||0|5|0%|
 |UnityEditor.TestTools.TestRunner.CommandLineTest.LogSavingCallbacks|0|10|10|29|0%|0|0||0|4|0%|
@@ -68,26 +69,26 @@
 |UnityEditor.TestTools.TestRunner.EditModeRunnerCallback|0|118|118|186|0%|0|0||0|13|0%|
 |UnityEditor.TestTools.TestRunner.EditmodeWorkItemFactory|0|3|3|14|0%|0|0||0|1|0%|
 |UnityEditor.TestTools.TestRunner.EditorAssembliesProxy|0|1|1|13|0%|0|0||0|1|0%|
-|UnityEditor.TestTools.TestRunner.EditorAssemblyWrapper|0|5|5|18|0%|0|0||0|3|0%|
+|UnityEditor.TestTools.TestRunner.EditorAssemblyWrapper|1|4|5|18|20%|0|0||1|3|33.3%|
 |UnityEditor.TestTools.TestRunner.EditorCompilationInterfaceProxy|0|6|6|17|0%|0|0||0|2|0%|
 |UnityEditor.TestTools.TestRunner.EditorEnumeratorTestWorkItem|0|120|120|181|0%|0|0||0|5|0%|
-|UnityEditor.TestTools.TestRunner.EditorLoadedTestAssemblyProvider|0|67|67|123|0%|0|0||0|6|0%|
+|UnityEditor.TestTools.TestRunner.EditorLoadedTestAssemblyProvider|13|54|67|123|19.4%|0|0||1|6|16.6%|
 |UnityEditor.TestTools.TestRunner.EnumeratorStepHelper|0|23|23|51|0%|0|0||0|4|0%|
 |UnityEditor.TestTools.TestRunner.GUI.AssetsDatabaseHelper|0|4|4|11|0%|0|0||0|1|0%|
 |UnityEditor.TestTools.TestRunner.GUI.EditModeTestListGUI|0|49|49|92|0%|0|0||0|6|0%|
 |UnityEditor.TestTools.TestRunner.GUI.GuiHelper|0|79|79|137|0%|0|0||0|12|0%|
 |UnityEditor.TestTools.TestRunner.GUI.Icons|0|8|8|24|0%|0|0||0|1|0%|
-|UnityEditor.TestTools.TestRunner.GUI.PlayModeTestListGUI|0|116|116|241|0%|0|0||0|10|0%|
+|UnityEditor.TestTools.TestRunner.GUI.PlayModeTestListGUI|23|93|116|241|19.8%|0|0||3|10|30%|
 |UnityEditor.TestTools.TestRunner.GUI.ResultSummarizer|0|39|39|174|0%|0|0||0|14|0%|
 |UnityEditor.TestTools.TestRunner.GUI.TestFilterSettings|0|59|59|104|0%|0|0||0|7|0%|
-|UnityEditor.TestTools.TestRunner.GUI.TestListGUI|9|371|380|553|2.3%|0|0||2|33|6%|
-|UnityEditor.TestTools.TestRunner.GUI.TestListGUIHelper|0|68|68|135|0%|0|0||0|10|0%|
-|UnityEditor.TestTools.TestRunner.GUI.TestListTreeViewDataSource|0|62|62|98|0%|0|0||0|8|0%|
-|UnityEditor.TestTools.TestRunner.GUI.TestListTreeViewGUI|0|3|3|11|0%|0|0||0|1|0%|
-|UnityEditor.TestTools.TestRunner.GUI.TestRunnerResult|33|45|78|148|42.3%|0|0||3|12|25%|
-|UnityEditor.TestTools.TestRunner.GUI.TestRunnerUIFilter|0|106|106|177|0%|0|0||0|10|0%|
-|UnityEditor.TestTools.TestRunner.GUI.TestTreeViewBuilder|0|64|64|110|0%|0|0||0|5|0%|
-|UnityEditor.TestTools.TestRunner.GUI.TestTreeViewItem|0|90|90|137|0%|0|0||0|8|0%|
+|UnityEditor.TestTools.TestRunner.GUI.TestListGUI|134|246|380|553|35.2%|0|0||16|33|48.4%|
+|UnityEditor.TestTools.TestRunner.GUI.TestListGUIHelper|5|63|68|135|7.3%|0|0||1|10|10%|
+|UnityEditor.TestTools.TestRunner.GUI.TestListTreeViewDataSource|24|38|62|98|38.7%|0|0||3|8|37.5%|
+|UnityEditor.TestTools.TestRunner.GUI.TestListTreeViewGUI|3|0|3|11|100%|0|0||1|1|100%|
+|UnityEditor.TestTools.TestRunner.GUI.TestRunnerResult|50|28|78|148|64.1%|0|0||5|12|41.6%|
+|UnityEditor.TestTools.TestRunner.GUI.TestRunnerUIFilter|58|48|106|177|54.7%|0|0||7|10|70%|
+|UnityEditor.TestTools.TestRunner.GUI.TestTreeViewBuilder|50|14|64|110|78.1%|0|0||5|5|100%|
+|UnityEditor.TestTools.TestRunner.GUI.TestTreeViewItem|51|39|90|137|56.6%|0|0||6|8|75%|
 |UnityEditor.TestTools.TestRunner.GUI.UITestRunnerFilter|0|97|97|164|0%|0|0||0|9|0%|
 |UnityEditor.TestTools.TestRunner.GUI.WindowResultUpdater|9|25|34|59|26.4%|0|0||3|6|50%|
 |UnityEditor.TestTools.TestRunner.LuminPlatformSetup|0|25|25|50|0%|0|0||0|5|0%|
@@ -108,10 +109,10 @@
 |UnityEditor.TestTools.TestRunner.SwitchPlatformSetup|0|15|15|41|0%|0|0||0|5|0%|
 |UnityEditor.TestTools.TestRunner.TestLauncherBase|13|31|44|81|29.5%|0|0||2|5|40%|
 |UnityEditor.TestTools.TestRunner.TestLaunchFailedException|0|2|2|285|0%|0|0||0|2|0%|
-|UnityEditor.TestTools.TestRunner.TestListCache|0|30|30|56|0%|0|0||0|4|0%|
-|UnityEditor.TestTools.TestRunner.TestListCacheData|0|4|4|27|0%|0|0||0|3|0%|
-|UnityEditor.TestTools.TestRunner.TestListJob|0|17|17|36|0%|0|0||0|3|0%|
-|UnityEditor.TestTools.TestRunner.TestListProvider|0|21|21|42|0%|0|0||0|2|0%|
+|UnityEditor.TestTools.TestRunner.TestListCache|8|22|30|56|26.6%|0|0||1|4|25%|
+|UnityEditor.TestTools.TestRunner.TestListCacheData|2|2|4|27|50%|0|0||2|3|66.6%|
+|UnityEditor.TestTools.TestRunner.TestListJob|7|10|17|36|41.1%|0|0||1|3|33.3%|
+|UnityEditor.TestTools.TestRunner.TestListProvider|14|7|21|42|66.6%|0|0||1|2|50%|
 |UnityEditor.TestTools.TestRunner.TestResultSerializer|0|34|34|83|0%|0|0||0|4|0%|
 |UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildActionTaskBase[T]|0|42|42|75|0%|0|0||0|3|0%|
 |UnityEditor.TestTools.TestRunner.TestRun.Tasks.BuildTestTreeTask|0|34|34|61|0%|0|0||0|2|0%|
@@ -131,7 +132,7 @@
 |UnityEditor.TestTools.TestRunner.TestRun.TestJobRunner|0|116|116|166|0%|0|0||0|5|0%|
 |UnityEditor.TestTools.TestRunner.TestRunnerCallback|14|3|17|37|82.3%|0|0||4|5|80%|
 |UnityEditor.TestTools.TestRunner.TestRunnerStateSerializer|0|88|88|162|0%|0|0||0|8|0%|
-|UnityEditor.TestTools.TestRunner.TestRunnerWindow|3|157|160|266|1.8%|0|0||1|16|6.2%|
+|UnityEditor.TestTools.TestRunner.TestRunnerWindow|35|125|160|266|21.8%|0|0||3|16|18.7%|
 |UnityEditor.TestTools.TestRunner.TestRunnerWindowSettings|0|12|12|26|0%|0|0||0|3|0%|
 |UnityEditor.TestTools.TestRunner.TestSettings|0|114|114|199|0%|0|0||0|27|0%|
 |UnityEditor.TestTools.TestRunner.TestSettingsDeserializer|0|74|74|139|0%|0|0||0|9|0%|
@@ -152,7 +153,7 @@
 |UnityEngine.TestTools.ExitPlayMode|0|17|17|48|0%|0|0||0|5|0%|
 |UnityEngine.TestTools.RecompileScripts|0|36|36|111|0%|0|0||0|13|0%|
 |UnityEngine.TestTools.WaitForDomainReload|0|14|14|63|0%|0|0||0|4|0%|
-|**UnityEngine.TestRunner**|**898**|**2034**|**2932**|**6571**|**30.6%**|**0**|**0**|****|**196**|**536**|**36.5%**|
+|**UnityEngine.TestRunner**|**1005**|**1927**|**2932**|**6571**|**34.2%**|**0**|**0**|****|**214**|**536**|**39.9%**|
 |UnityEngine.TestRunner.NUnitExtensions.Filters.AssemblyNameFilter|0|8|8|25|0%|0|0||0|3|0%|
 |UnityEngine.TestRunner.NUnitExtensions.Filters.CategoryFilterExtended|0|16|16|36|0%|0|0||0|3|0%|
 |UnityEngine.TestRunner.NUnitExtensions.Filters.FullNameFilter|0|7|7|21|0%|0|0||0|3|0%|
@@ -170,7 +171,7 @@
 |UnityEngine.TestRunner.NUnitExtensions.Runner.UnityWorkItem|54|7|61|117|88.5%|0|0||18|19|94.7%|
 |UnityEngine.TestRunner.NUnitExtensions.Runner.UnityWorkItemDataHolder|1|0|1|10|100%|0|0||1|1|100%|
 |UnityEngine.TestRunner.NUnitExtensions.Runner.WorkItemFactory|9|2|11|28|81.8%|0|0||1|1|100%|
-|UnityEngine.TestRunner.NUnitExtensions.TestExtensions|32|92|124|193|25.8%|0|0||4|17|23.5%|
+|UnityEngine.TestRunner.NUnitExtensions.TestExtensions|83|41|124|193|66.9%|0|0||12|17|70.5%|
 |UnityEngine.TestRunner.NUnitExtensions.TestResultExtensions|0|48|48|77|0%|0|0||0|2|0%|
 |UnityEngine.TestRunner.TestLaunchers.PlayerConnectionMessageIds|0|6|6|14|0%|0|0||0|6|0%|
 |UnityEngine.TestRunner.TestLaunchers.RemoteTestData|0|24|24|56|0%|0|0||0|1|0%|
@@ -199,7 +200,7 @@
 |UnityEngine.TestTools.NUnitExtensions.ActionDelegator|0|37|37|73|0%|0|0||0|5|0%|
 |UnityEngine.TestTools.NUnitExtensions.BaseDelegator|0|32|32|58|0%|0|0||0|5|0%|
 |UnityEngine.TestTools.NUnitExtensions.ConstructDelegator|0|85|85|135|0%|0|0||0|8|0%|
-|UnityEngine.TestTools.NUnitExtensions.UnityTestAssemblyBuilder|0|39|39|71|0%|0|0||0|4|0%|
+|UnityEngine.TestTools.NUnitExtensions.UnityTestAssemblyBuilder|24|15|39|71|61.5%|0|0||2|4|50%|
 |UnityEngine.TestTools.OuterUnityTestActionCommand|12|6|18|38|66.6%|0|0||3|5|60%|
 |UnityEngine.TestTools.PostBuildCleanupAttribute|0|9|9|31|0%|0|0||0|4|0%|
 |UnityEngine.TestTools.PrebuildSetupAttribute|0|9|9|74|0%|0|0||0|4|0%|
@@ -208,7 +209,7 @@
 |UnityEngine.TestTools.TestCommandPcHelper|0|5|5|18|0%|0|0||0|2|0%|
 |UnityEngine.TestTools.TestEnumerator|29|21|50|94|58%|0|0||5|9|55.5%|
 |UnityEngine.TestTools.TestMustExpectAllLogsAttribute|0|3|3|36|0%|0|0||0|2|0%|
-|UnityEngine.TestTools.TestPlatformEnumExtensions|0|3|3|33|0%|0|0||0|1|0%|
+|UnityEngine.TestTools.TestPlatformEnumExtensions|3|0|3|33|100%|0|0||1|1|100%|
 |UnityEngine.TestTools.TestRunner.Callbacks.PlayerQuitHandler|0|15|15|45|0%|0|0||0|6|0%|
 |UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback|17|7|24|47|70.8%|0|0||5|6|83.3%|
 |UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender|0|75|75|132|0%|0|0||0|14|0%|
@@ -227,10 +228,10 @@
 |UnityEngine.TestTools.TestRunner.UnityTestTimeoutException|0|8|8|28|0%|0|0||0|4|0%|
 |UnityEngine.TestTools.UnityCombinatorialStrategy|0|8|8|20|0%|0|0||0|1|0%|
 |UnityEngine.TestTools.UnityPlatformAttribute|0|29|29|82|0%|0|0||0|8|0%|
-|UnityEngine.TestTools.UnityTestAttribute|2|35|37|149|5.4%|0|0||1|7|14.2%|
+|UnityEngine.TestTools.UnityTestAttribute|30|7|37|149|81%|0|0||7|7|100%|
 |UnityEngine.TestTools.UnityTestMethodCommand|0|5|5|19|0%|0|0||0|2|0%|
 |UnityEngine.TestTools.Utils.AssemblyLoadProxy|0|3|3|12|0%|0|0||0|1|0%|
-|UnityEngine.TestTools.Utils.AssemblyWrapper|0|11|11|33|0%|0|0||0|5|0%|
+|UnityEngine.TestTools.Utils.AssemblyWrapper|1|10|11|33|9%|0|0||1|5|20%|
 |UnityEngine.TestTools.Utils.ColorEqualityComparer|0|15|15|80|0%|0|0||0|6|0%|
 |UnityEngine.TestTools.Utils.CoroutineRunner|33|29|62|100|53.2%|0|0||5|7|71.4%|
 |UnityEngine.TestTools.Utils.FloatEqualityComparer|0|13|13|74|0%|0|0||0|6|0%|

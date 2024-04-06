@@ -39,7 +39,7 @@ namespace MapGenDLANamespace
             borderPositions.Clear();
             tileObjects.Clear();
             //checks for SerializeFields
-            int possibleTiles = Mathf.Abs(maxX-minX+1) * Mathf.Abs(maxY-minY+1);
+            int possibleTiles = (Mathf.Abs(maxX-minX+1) * Mathf.Abs(maxY-minY+1))/2+1;
             if(possibleTiles < tileNum){
                 Debug.LogError("Cannot request more tiles than available");
                 return;
@@ -171,16 +171,18 @@ namespace MapGenDLANamespace
         }
 
         private Vector2Int UpdatePosition(int direction, Vector2Int position, Vector2Int targetPosition)
-        {
+        {   
+            int oldX = position.x;
+            int oldY = position.y;
+            int distance = 1;
+            
             Vector2Int biasDirection = GetBiasDirection(position, targetPosition);
             int bias = Random.Range(0, 10); // Introduce a bias probability, e.g., 20% chance to follow the bias direction
 
             if (bias < 2) // 20% chance to move towards the target
             {
-                return new Vector2Int(
-                    Mathf.Clamp(position.x + biasDirection.x, minX, maxX),
-                    Mathf.Clamp(position.y + biasDirection.y, minY, maxY)
-                );
+                position.x += biasDirection.x;
+                position.y += biasDirection.y;
             }
             else
             {
@@ -189,17 +191,43 @@ namespace MapGenDLANamespace
                     Mathf.Max returns the larger of the two numbers
                     Example: Mathf.Min(5, 10) returns 5
                 */
-                int distance = 1;
+            
                 switch (direction)
                 {
-                    case 0: return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
-                    case 1: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
-                    case 2: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
-                    case 3: return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
-
+                    case 0: 
+                        // return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
+                        position.x += distance;
+                        position.y += distance;
+                        break;
+                    case 1:
+                        position.x -= distance;
+                        position.y -= distance;                    
+                        break;
+                        // return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
+                    case 2: 
+                        // return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
+                        position.x -= distance;
+                        position.y += distance;
+                        break;
+                    case 3: 
+                        //return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
+                        position.x += distance;
+                        position.y -= distance;
+                        break;
                     default: return position;
                 }
+            }   
+
+            //if UpdatePosition ends up going out of bounds it is going to return another call of the function and it will keep going
+            //until the next update position gives a location that is not out of bounds
+            if(position.x > maxX || position.x < minX || position.y > maxY || position.y < minY){
+                direction = (direction+1)%4;//it will rotate direction to choose a different area 
+                position.x = oldX;//get the values of x and y before they were changed
+                position.y = oldY;//to stay in place and call the function again
+                return UpdatePosition(direction, position, targetPosition);
             }
+            else
+                return new Vector2Int(position.x, position.y);
 
         }
 

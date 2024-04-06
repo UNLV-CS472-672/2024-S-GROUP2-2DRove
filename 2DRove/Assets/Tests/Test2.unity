@@ -616,7 +616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
-  borderPrefab: {fileID: 7063881829829423826, guid: b1a93f1b4cc8f0446bc9a2cf3748ea7e, type: 3}
+  borderPrefab: {fileID: 9148618936101596910, guid: ecc8ee7854454b7459ce990868a9d124, type: 3}
   exitPrefab: {fileID: 923991240687089494, guid: e61882843c20b724b8a4998f498ece17, type: 3}
   tileNum: 20
   leftMost: 0

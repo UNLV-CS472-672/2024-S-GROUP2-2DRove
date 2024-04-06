@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 // using CreateBorder;
+using EdgeTiles; 
 using UnityEngine.Tilemaps;
 using UnityEngine.SceneManagement;
+
 
 namespace MapGenDLANamespace
 {
@@ -18,6 +20,16 @@ namespace MapGenDLANamespace
         [SerializeField] int tileNum = 25;
         // [SerializeField] int tileSizeX = 20;
         // [SerializeField] int tileSizeY = 20;
+
+
+        public int leftMost = 0;
+        public int rightMost = 0;
+        public int topMost = 0;
+        public int bottomMost = 0;
+
+        // private DrawBorder drawBorder;
+        public AssignEdges assignEdges; 
+
 
         [SerializeField] public int scale = 20;
         [SerializeField] public int maxX = 5;
@@ -107,6 +119,18 @@ namespace MapGenDLANamespace
 
             // //todo: implement FillInEmptySpace to work for isometric
             // // FillInEmptySpace();
+
+            // After all tiles have been generated:
+            assignEdges = GetComponent<AssignEdges>();
+            if(assignEdges == null) {
+                Debug.LogError("AssignEdges component not found on the same GameObject.");
+            } else {
+                assignEdges.SetTileObjects(tileObjects);
+                assignEdges.SetScale(scale);
+                assignEdges.SetTilePositions(tilePositions); 
+                assignEdges.AssignAndSwapEdgeTiles();
+            }
+
 
         }
 

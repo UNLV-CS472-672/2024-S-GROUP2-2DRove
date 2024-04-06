@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 5039196915434134696}
   - component: {fileID: -7782330968607924152}
   - component: {fileID: -8407291104085338163}
+  - component: {fileID: 8129932945131315647}
+  - component: {fileID: 801179507252480761}
   m_Layer: 0
   m_Name: humpWest
   m_TagString: Untagged
@@ -3897,6 +3899,111 @@ TilemapRenderer:
   m_Mode: 1
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!60 &8129932945131315647
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9148618936101596910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.9415612, y: -2.2940135}
+      - {x: 1.5926466, y: -2.8389711}
+      - {x: 3.38026, y: -3.790883}
+      - {x: 5.44736, y: -2.9278388}
+      - {x: 7.5141907, y: -1.9251609}
+  m_UseDelaunayMesh: 0
+--- !u!60 &801179507252480761
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9148618936101596910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -4.874508, y: 1.479456}
+      - {x: -4.4665046, y: 2.3001328}
+      - {x: -6.2343893, y: 1.178303}
+      - {x: -5.374796, y: 0.42658234}
+      - {x: -4.5048532, y: 0.07002187}
+      - {x: -4.391038, y: 0.368788}
+      - {x: -4.0654116, y: 0.6168592}
+      - {x: -4.4135857, y: 0.72510767}
+      - {x: -4.814207, y: 1.21136}
+      - {x: -4.913375, y: 1.3105288}
+  m_UseDelaunayMesh: 0
 --- !u!114 &1501110228969606741
 MonoBehaviour:
   m_ObjectHideFlags: 0

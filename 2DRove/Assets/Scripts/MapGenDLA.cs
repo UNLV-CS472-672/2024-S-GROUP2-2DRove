@@ -257,7 +257,7 @@ namespace MapGenDLANamespace
         }
         void AddBorder(GameObject tileObject, Vector2Int position)
         {
-            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale, position.y * scale, 0), Quaternion.identity);
+            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * maxX, position.y * scale * (maxY / 2), 0), Quaternion.identity);
             border.name = "Border(" + position.x + ", " + position.y + ")";
             border.transform.parent = tileObject.transform;
             border.transform.localScale = new Vector3(scale / 2, scale / 2, 1);

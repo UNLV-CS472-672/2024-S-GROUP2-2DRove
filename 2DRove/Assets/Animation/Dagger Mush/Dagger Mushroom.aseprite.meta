@@ -23,7 +23,7 @@ ScriptedImporter:
     normalMapFilter: 0
     flipGreenChannel: 0
     swizzle: 50462976
-    isReadable: 0
+    isReadable: 1
     streamingMipmaps: 0
     streamingMipmapsPriority: 0
     vTOnly: 0
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638471843669890483
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: ec3b8f66cc9d01e48b3b4d9dd88970f3
+    spriteID: 77e83e0f54ea455449a13bb09b6e6dd8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: c5af3d1761b91894693a7b44095b4452
+    spriteID: bc63f55f4868a174fbaf6e58d8aa49e1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +172,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 29868ec2a4fc8d94c84dd35c5f3e9bef
+    spriteID: 064600f37c5247346b12e32f549bfb4e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +192,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: fd95df82d52d8754abb58862b1bfb45c
+    spriteID: c79277d5bf4fb214484c72ea8b47e90d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +212,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 664404212033ac4418611c057129c0a7
+    spriteID: 6af1a5b46da2548489e93bb68cb28611
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +232,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 62202beeb0850e146b31de16feed8d13
+    spriteID: 6e8d268126c6cd2448fd0099695538c1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +252,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: 8e857debe8f16b246ac552a310c4efec
+    spriteID: 9ab9af4b03e9e5e4ba781f4627c82efa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +272,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: df0eccab5ebd5e048b9728d465f2195b
+    spriteID: f3db2d9e987121b46b9465ce6bbebf37
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +292,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 313401946b54cf7409b73a44f8c2e254
+    spriteID: 74fc7404417fb5441a7b9b5365abe82f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +312,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: e617346e778db6940b69e06f101239ec
+    spriteID: 40c4b9fc964cf2f44a6fc38a6830ca57
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +332,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: e6a63e0c237cb184a94a464f1eddf708
+    spriteID: f648f5b52dfeb6a4a9fb72c920c9a564
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +352,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 91e06b5cd7ac07d44a7c8dc2bc123c32
+    spriteID: eb1afbade0c976744bb3937dd641134c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +372,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: cbf13d21802441242b04a978a378d8e9
+    spriteID: 5b5b263439718534db41b7cce51ed6bc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +392,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: d78ae044dd8837a4a92ffeed13ce9bd3
+    spriteID: 5275e966a43233d448d2a5cdc1e65fa3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +412,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: ef6d4c62740f35f4f9d3983c3410aa27
+    spriteID: 76264781f435e1541be55b9b2947c506
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +432,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: b5231ccca69837647b7a418245de4cc1
+    spriteID: 3db9324201860c142b964167ae20c848
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +452,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: f345e6910aadc7846824fa4a54316ed0
+    spriteID: e8d6536d9a3aa4f42b11a83cc7bad6a8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +472,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 56eaa9f3eb90d8543aed04a477a42f09
+    spriteID: e9441a465218564469db88169dcc1513
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 8703dc6f380d8e84f99733305a7b3531
+    spriteID: e911411c39db3bd459876d63c7b064a8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: c21817f89a6369243aee3f1db3396872
+    spriteID: 8ede870aaff9bc1448013efd49c9d0e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 619d7ce6446c8224f9ee7d2ad4ea2e39
+    spriteID: 4d799f487c359954cb0a1d80306c04e9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: a635cd9d559bad64ca66bb4e8a58ea6e
+    spriteID: 5b0773641969e7e47a528374daee2a2f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 3d1bbf32be732a64aaeacc6e20a69e74
+    spriteID: 15f4e47e59bfa8a418f4746bef09c36a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +592,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 9289e2f7fec61684789ea3666a5f583f
+    spriteID: 47c2641772e17134cbec9d81e532008c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +612,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: bd958ef814e6c494eb74f005438ea031
+    spriteID: 4ce43fcbb9b667c47af4e3883938d7ca
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +632,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 9037622a0637f2040970163228cc9fc0
+    spriteID: 24059bc67ae057c469260d6642205829
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +652,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: 53aa1672e3d46d34b9ad3d204168e128
+    spriteID: 6d6197182bc3ecd42b7790a1d7f98662
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +672,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 9010b075feb668c44a0dc8eef33eda03
+    spriteID: 0c14c51c04a05134ca463410d5e885e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +692,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 5ced1aeb80ee2f145a2d1f6e62162fb6
+    spriteID: bb739ceacf5feb646bfc92956dc303c8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +712,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: d3c81d41bb9598c49a69c2464f1efb4a
+    spriteID: 8aa7b37c55f7d5a4ab25b05e1d0ec213
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +732,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 182f1c046302f93488ae3e8bfd4f5018
+    spriteID: 5c83e09d98878a446a055a65e39bbedd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +752,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: bf26b22bba9231746ab2b3424a44dd9d
+    spriteID: 9c65416948e758a49be6f0f88d9fff44
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +772,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: b4d3bc075480c0649a19713cb088a811
+    spriteID: fba26c30d7f45a54eaf84083354c65d5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +792,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 9bec439c84e2be544b54a91a2ac72225
+    spriteID: 6f00b2d57a4d35d4097f28d921215509
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +812,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: b785df7483cd61145aa841e4073b1e18
+    spriteID: 7108290b2b0faac408c99a9335acc2da
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +832,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 63cbad11023f36140962ada7227c3d8e
+    spriteID: ecd35aa3cdaf4ad4ebcdac5525cdd8c4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +852,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: d9378ee5085b3bd4f9a10a52f5862c0d
+    spriteID: 56227e2728299d6489c923d3f21beb7d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +872,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 192bdfb73d89ac34d9cbc4c0bc8e885a
+    spriteID: 0eb752760cc4b234aa3fd74a7b11e8b6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +892,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: f73c33527ddbc17429be8e7b6394dbd5
+    spriteID: e0e88a051df1b844a8453b6c83c3bd59
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +912,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 9f16070adbcdd5948a8c88cde416e49b
+    spriteID: 5fcf49ad1bac2ec4a9a08dbe44aeb7cf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -932,7 +932,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 73d9867d78064384e90e5290e087a749
+    spriteID: 577495e5f847830489c40324b38da31a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -952,7 +952,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: d2d5482683e320442be2fabccadc012a
+    spriteID: 7bf4257489652444db6c236d1d769a1e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -972,7 +972,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 3167782418b575147a8b2e4cce10706b
+    spriteID: 842aa75402b3f974bb943c3e16f23412
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -992,7 +992,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: f7c8cf5a5a576b74ba8d4949e642333e
+    spriteID: 3bd6b324f80dad041b80896a1ddc7fb4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1012,7 +1012,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: 6166989ec1da46443b042b7bba36b420
+    spriteID: a556163c5321ce148b06a59e5c2582dd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1032,7 +1032,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 041544571d5e56447b844ae1acd01b0f
+    spriteID: adc6cbfa5106573499320338ba9b8616
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1052,7 +1052,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: 4c365034728d2b5439d246ee4ffc5425
+    spriteID: 76e327efba1b43e4fbb6a0b590dc6825
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1072,7 +1072,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 19a5e2996509d064f957b68fa3a7af3d
+    spriteID: 12671ac3e0e8c66488c3e0cebb29e799
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1092,7 +1092,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 8f525f80270f30240914646a20681d6c
+    spriteID: 33188772694ae724fbef8b476453a503
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1112,7 +1112,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 3ba5fa1c1a0bfac43a0319df8d612fdc
+    spriteID: 632e24455508e6c4b933ac5b60c3da28
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1132,7 +1132,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 0c5c3eb5bdf17194cb9a563d9fc4ebec
+    spriteID: 408167b9124c1cf4e89a238e6d02c559
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1152,7 +1152,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: ac3526336d9d50f449bb131faed6f051
+    spriteID: 5739bf0e26be8f9449986387417087c2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1172,7 +1172,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 48d33e01506cd3444bd192ee40754cd3
+    spriteID: e435ed7f58ed94d4586860445a55083e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1192,7 +1192,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: d28dc672b5b4be44284a6978e5c7676b
+    spriteID: 4abaf67163921d44c9146331c657b0f2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1212,7 +1212,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: eaec1f22c698b4f4bb3b10882874a555
+    spriteID: 9b992cf8bd5b6c447975c1a25f203392
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1232,7 +1232,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 1088c0899df10304abe9fbec0aa9d23c
+    spriteID: e962949a5006bb841af9ba95e24e6066
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1252,7 +1252,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: ce7b99282da9ae84e9bf5805dd040889
+    spriteID: a8bf84911aa49664e97aacdb4e38e649
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1272,7 +1272,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: b2317ec6f5922614ca7c16d00808d2de
+    spriteID: 036002eea10ffd740817c7c581248039
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1292,7 +1292,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 485c75d73fa77ff48b88ddbb7762b1dd
+    spriteID: 66b7203e929353c4bae09c2c8e187074
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1312,7 +1312,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 4f7b3106fdf9e244d8c794200e726e36
+    spriteID: d590dcb1bc9632f489297112ab68fd55
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1332,7 +1332,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 5c0cf637b68b6114aa7b7ca33cf82be0
+    spriteID: c6525442cce70df4f8dd7c269e95287d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1352,7 +1352,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: cfa2581312e07e64a891868d230beac5
+    spriteID: f5533962d6b17464aa5df45ebb08a835
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1372,7 +1372,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: eb3885e4ada57a24e86f336ee0b53354
+    spriteID: 820d7a1788d4a0e469d6a4b753c01b4d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1397,7 +1397,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: ec3b8f66cc9d01e48b3b4d9dd88970f3
+      spriteId: 77e83e0f54ea455449a13bb09b6e6dd8
     - name: Dagger Mushroom_Frame_1
       frameIndex: 1
       cellRect:
@@ -1405,7 +1405,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: c5af3d1761b91894693a7b44095b4452
+      spriteId: bc63f55f4868a174fbaf6e58d8aa49e1
     - name: Dagger Mushroom_Frame_2
       frameIndex: 2
       cellRect:
@@ -1413,7 +1413,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 29868ec2a4fc8d94c84dd35c5f3e9bef
+      spriteId: 064600f37c5247346b12e32f549bfb4e
     - name: Dagger Mushroom_Frame_3
       frameIndex: 3
       cellRect:
@@ -1421,7 +1421,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: fd95df82d52d8754abb58862b1bfb45c
+      spriteId: c79277d5bf4fb214484c72ea8b47e90d
     - name: Dagger Mushroom_Frame_4
       frameIndex: 4
       cellRect:
@@ -1429,7 +1429,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 664404212033ac4418611c057129c0a7
+      spriteId: 6af1a5b46da2548489e93bb68cb28611
     - name: Dagger Mushroom_Frame_5
       frameIndex: 5
       cellRect:
@@ -1437,7 +1437,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 62202beeb0850e146b31de16feed8d13
+      spriteId: 6e8d268126c6cd2448fd0099695538c1
     - name: Dagger Mushroom_Frame_6
       frameIndex: 6
       cellRect:
@@ -1445,7 +1445,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 8e857debe8f16b246ac552a310c4efec
+      spriteId: 9ab9af4b03e9e5e4ba781f4627c82efa
     - name: Dagger Mushroom_Frame_7
       frameIndex: 7
       cellRect:
@@ -1453,7 +1453,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: df0eccab5ebd5e048b9728d465f2195b
+      spriteId: f3db2d9e987121b46b9465ce6bbebf37
     - name: Dagger Mushroom_Frame_8
       frameIndex: 8
       cellRect:
@@ -1461,7 +1461,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 313401946b54cf7409b73a44f8c2e254
+      spriteId: 74fc7404417fb5441a7b9b5365abe82f
     - name: Dagger Mushroom_Frame_9
       frameIndex: 9
       cellRect:
@@ -1469,7 +1469,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: e617346e778db6940b69e06f101239ec
+      spriteId: 40c4b9fc964cf2f44a6fc38a6830ca57
     - name: Dagger Mushroom_Frame_10
       frameIndex: 10
       cellRect:
@@ -1477,7 +1477,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: e6a63e0c237cb184a94a464f1eddf708
+      spriteId: f648f5b52dfeb6a4a9fb72c920c9a564
     - name: Dagger Mushroom_Frame_11
       frameIndex: 11
       cellRect:
@@ -1485,7 +1485,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 91e06b5cd7ac07d44a7c8dc2bc123c32
+      spriteId: eb1afbade0c976744bb3937dd641134c
     - name: Dagger Mushroom_Frame_12
       frameIndex: 12
       cellRect:
@@ -1493,7 +1493,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: cbf13d21802441242b04a978a378d8e9
+      spriteId: 5b5b263439718534db41b7cce51ed6bc
     - name: Dagger Mushroom_Frame_13
       frameIndex: 13
       cellRect:
@@ -1501,7 +1501,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: d78ae044dd8837a4a92ffeed13ce9bd3
+      spriteId: 5275e966a43233d448d2a5cdc1e65fa3
     - name: Dagger Mushroom_Frame_14
       frameIndex: 14
       cellRect:
@@ -1509,7 +1509,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: ef6d4c62740f35f4f9d3983c3410aa27
+      spriteId: 76264781f435e1541be55b9b2947c506
     - name: Dagger Mushroom_Frame_15
       frameIndex: 15
       cellRect:
@@ -1517,7 +1517,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: b5231ccca69837647b7a418245de4cc1
+      spriteId: 3db9324201860c142b964167ae20c848
     - name: Dagger Mushroom_Frame_16
       frameIndex: 16
       cellRect:
@@ -1525,7 +1525,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: f345e6910aadc7846824fa4a54316ed0
+      spriteId: e8d6536d9a3aa4f42b11a83cc7bad6a8
     - name: Dagger Mushroom_Frame_17
       frameIndex: 17
       cellRect:
@@ -1533,7 +1533,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 56eaa9f3eb90d8543aed04a477a42f09
+      spriteId: e9441a465218564469db88169dcc1513
     - name: Dagger Mushroom_Frame_18
       frameIndex: 18
       cellRect:
@@ -1541,7 +1541,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 8703dc6f380d8e84f99733305a7b3531
+      spriteId: e911411c39db3bd459876d63c7b064a8
     - name: Dagger Mushroom_Frame_19
       frameIndex: 19
       cellRect:
@@ -1549,7 +1549,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: c21817f89a6369243aee3f1db3396872
+      spriteId: 8ede870aaff9bc1448013efd49c9d0e6
     - name: Dagger Mushroom_Frame_20
       frameIndex: 20
       cellRect:
@@ -1557,7 +1557,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 619d7ce6446c8224f9ee7d2ad4ea2e39
+      spriteId: 4d799f487c359954cb0a1d80306c04e9
     - name: Dagger Mushroom_Frame_21
       frameIndex: 21
       cellRect:
@@ -1565,7 +1565,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: a635cd9d559bad64ca66bb4e8a58ea6e
+      spriteId: 5b0773641969e7e47a528374daee2a2f
     - name: Dagger Mushroom_Frame_22
       frameIndex: 22
       cellRect:
@@ -1573,7 +1573,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 3d1bbf32be732a64aaeacc6e20a69e74
+      spriteId: 15f4e47e59bfa8a418f4746bef09c36a
     - name: Dagger Mushroom_Frame_23
       frameIndex: 23
       cellRect:
@@ -1581,7 +1581,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 9289e2f7fec61684789ea3666a5f583f
+      spriteId: 47c2641772e17134cbec9d81e532008c
     - name: Dagger Mushroom_Frame_24
       frameIndex: 24
       cellRect:
@@ -1589,7 +1589,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: bd958ef814e6c494eb74f005438ea031
+      spriteId: 4ce43fcbb9b667c47af4e3883938d7ca
     - name: Dagger Mushroom_Frame_25
       frameIndex: 25
       cellRect:
@@ -1597,7 +1597,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 9037622a0637f2040970163228cc9fc0
+      spriteId: 24059bc67ae057c469260d6642205829
     - name: Dagger Mushroom_Frame_26
       frameIndex: 26
       cellRect:
@@ -1605,7 +1605,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 53aa1672e3d46d34b9ad3d204168e128
+      spriteId: 6d6197182bc3ecd42b7790a1d7f98662
     - name: Dagger Mushroom_Frame_27
       frameIndex: 27
       cellRect:
@@ -1613,7 +1613,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 9010b075feb668c44a0dc8eef33eda03
+      spriteId: 0c14c51c04a05134ca463410d5e885e2
     - name: Dagger Mushroom_Frame_28
       frameIndex: 28
       cellRect:
@@ -1621,7 +1621,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 5ced1aeb80ee2f145a2d1f6e62162fb6
+      spriteId: bb739ceacf5feb646bfc92956dc303c8
     - name: Dagger Mushroom_Frame_29
       frameIndex: 29
       cellRect:
@@ -1629,7 +1629,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: d3c81d41bb9598c49a69c2464f1efb4a
+      spriteId: 8aa7b37c55f7d5a4ab25b05e1d0ec213
     - name: Dagger Mushroom_Frame_30
       frameIndex: 30
       cellRect:
@@ -1637,7 +1637,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 182f1c046302f93488ae3e8bfd4f5018
+      spriteId: 5c83e09d98878a446a055a65e39bbedd
     - name: Dagger Mushroom_Frame_31
       frameIndex: 31
       cellRect:
@@ -1645,7 +1645,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: bf26b22bba9231746ab2b3424a44dd9d
+      spriteId: 9c65416948e758a49be6f0f88d9fff44
     - name: Dagger Mushroom_Frame_32
       frameIndex: 32
       cellRect:
@@ -1653,7 +1653,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: b4d3bc075480c0649a19713cb088a811
+      spriteId: fba26c30d7f45a54eaf84083354c65d5
     - name: Dagger Mushroom_Frame_33
       frameIndex: 33
       cellRect:
@@ -1661,7 +1661,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 9bec439c84e2be544b54a91a2ac72225
+      spriteId: 6f00b2d57a4d35d4097f28d921215509
     - name: Dagger Mushroom_Frame_34
       frameIndex: 34
       cellRect:
@@ -1669,7 +1669,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: b785df7483cd61145aa841e4073b1e18
+      spriteId: 7108290b2b0faac408c99a9335acc2da
     - name: Dagger Mushroom_Frame_35
       frameIndex: 35
       cellRect:
@@ -1677,7 +1677,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 63cbad11023f36140962ada7227c3d8e
+      spriteId: ecd35aa3cdaf4ad4ebcdac5525cdd8c4
     - name: Dagger Mushroom_Frame_36
       frameIndex: 36
       cellRect:
@@ -1685,7 +1685,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: d9378ee5085b3bd4f9a10a52f5862c0d
+      spriteId: 56227e2728299d6489c923d3f21beb7d
     - name: Dagger Mushroom_Frame_37
       frameIndex: 37
       cellRect:
@@ -1693,7 +1693,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 192bdfb73d89ac34d9cbc4c0bc8e885a
+      spriteId: 0eb752760cc4b234aa3fd74a7b11e8b6
     - name: Dagger Mushroom_Frame_38
       frameIndex: 38
       cellRect:
@@ -1701,7 +1701,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: f73c33527ddbc17429be8e7b6394dbd5
+      spriteId: e0e88a051df1b844a8453b6c83c3bd59
     - name: Dagger Mushroom_Frame_39
       frameIndex: 39
       cellRect:
@@ -1709,7 +1709,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 9f16070adbcdd5948a8c88cde416e49b
+      spriteId: 5fcf49ad1bac2ec4a9a08dbe44aeb7cf
     - name: Dagger Mushroom_Frame_40
       frameIndex: 40
       cellRect:
@@ -1717,7 +1717,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 73d9867d78064384e90e5290e087a749
+      spriteId: 577495e5f847830489c40324b38da31a
     - name: Dagger Mushroom_Frame_41
       frameIndex: 41
       cellRect:
@@ -1725,7 +1725,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: d2d5482683e320442be2fabccadc012a
+      spriteId: 7bf4257489652444db6c236d1d769a1e
     - name: Dagger Mushroom_Frame_42
       frameIndex: 42
       cellRect:
@@ -1733,7 +1733,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 3167782418b575147a8b2e4cce10706b
+      spriteId: 842aa75402b3f974bb943c3e16f23412
     - name: Dagger Mushroom_Frame_43
       frameIndex: 43
       cellRect:
@@ -1741,7 +1741,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: f7c8cf5a5a576b74ba8d4949e642333e
+      spriteId: 3bd6b324f80dad041b80896a1ddc7fb4
     - name: Dagger Mushroom_Frame_44
       frameIndex: 44
       cellRect:
@@ -1749,7 +1749,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 6166989ec1da46443b042b7bba36b420
+      spriteId: a556163c5321ce148b06a59e5c2582dd
     - name: Dagger Mushroom_Frame_45
       frameIndex: 45
       cellRect:
@@ -1757,7 +1757,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 041544571d5e56447b844ae1acd01b0f
+      spriteId: adc6cbfa5106573499320338ba9b8616
     - name: Dagger Mushroom_Frame_46
       frameIndex: 46
       cellRect:
@@ -1765,7 +1765,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 4c365034728d2b5439d246ee4ffc5425
+      spriteId: 76e327efba1b43e4fbb6a0b590dc6825
     - name: Dagger Mushroom_Frame_47
       frameIndex: 47
       cellRect:
@@ -1773,7 +1773,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 19a5e2996509d064f957b68fa3a7af3d
+      spriteId: 12671ac3e0e8c66488c3e0cebb29e799
     - name: Dagger Mushroom_Frame_48
       frameIndex: 48
       cellRect:
@@ -1781,7 +1781,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 8f525f80270f30240914646a20681d6c
+      spriteId: 33188772694ae724fbef8b476453a503
     - name: Dagger Mushroom_Frame_49
       frameIndex: 49
       cellRect:
@@ -1789,7 +1789,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 3ba5fa1c1a0bfac43a0319df8d612fdc
+      spriteId: 632e24455508e6c4b933ac5b60c3da28
     - name: Dagger Mushroom_Frame_50
       frameIndex: 50
       cellRect:
@@ -1797,7 +1797,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 0c5c3eb5bdf17194cb9a563d9fc4ebec
+      spriteId: 408167b9124c1cf4e89a238e6d02c559
     - name: Dagger Mushroom_Frame_51
       frameIndex: 51
       cellRect:
@@ -1805,7 +1805,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: ac3526336d9d50f449bb131faed6f051
+      spriteId: 5739bf0e26be8f9449986387417087c2
     - name: Dagger Mushroom_Frame_52
       frameIndex: 52
       cellRect:
@@ -1813,7 +1813,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 48d33e01506cd3444bd192ee40754cd3
+      spriteId: e435ed7f58ed94d4586860445a55083e
     - name: Dagger Mushroom_Frame_53
       frameIndex: 53
       cellRect:
@@ -1821,7 +1821,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: d28dc672b5b4be44284a6978e5c7676b
+      spriteId: 4abaf67163921d44c9146331c657b0f2
     - name: Dagger Mushroom_Frame_54
       frameIndex: 54
       cellRect:
@@ -1829,7 +1829,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: eaec1f22c698b4f4bb3b10882874a555
+      spriteId: 9b992cf8bd5b6c447975c1a25f203392
     - name: Dagger Mushroom_Frame_55
       frameIndex: 55
       cellRect:
@@ -1837,7 +1837,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 1088c0899df10304abe9fbec0aa9d23c
+      spriteId: e962949a5006bb841af9ba95e24e6066
     - name: Dagger Mushroom_Frame_56
       frameIndex: 56
       cellRect:
@@ -1845,7 +1845,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: ce7b99282da9ae84e9bf5805dd040889
+      spriteId: a8bf84911aa49664e97aacdb4e38e649
     - name: Dagger Mushroom_Frame_57
       frameIndex: 57
       cellRect:
@@ -1853,7 +1853,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: b2317ec6f5922614ca7c16d00808d2de
+      spriteId: 036002eea10ffd740817c7c581248039
     - name: Dagger Mushroom_Frame_58
       frameIndex: 58
       cellRect:
@@ -1861,7 +1861,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 485c75d73fa77ff48b88ddbb7762b1dd
+      spriteId: 66b7203e929353c4bae09c2c8e187074
     - name: Dagger Mushroom_Frame_59
       frameIndex: 59
       cellRect:
@@ -1869,7 +1869,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 4f7b3106fdf9e244d8c794200e726e36
+      spriteId: d590dcb1bc9632f489297112ab68fd55
     - name: Dagger Mushroom_Frame_60
       frameIndex: 60
       cellRect:
@@ -1877,7 +1877,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: 5c0cf637b68b6114aa7b7ca33cf82be0
+      spriteId: c6525442cce70df4f8dd7c269e95287d
     - name: Dagger Mushroom_Frame_61
       frameIndex: 61
       cellRect:
@@ -1885,7 +1885,7 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: cfa2581312e07e64a891868d230beac5
+      spriteId: f5533962d6b17464aa5df45ebb08a835
     - name: Dagger Mushroom_Frame_62
       frameIndex: 62
       cellRect:
@@ -1893,10 +1893,46 @@ ScriptedImporter:
         y: 0
         width: 192
         height: 192
-      spriteId: eb3885e4ada57a24e86f336ee0b53354
+      spriteId: 820d7a1788d4a0e469d6a4b753c01b4d
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

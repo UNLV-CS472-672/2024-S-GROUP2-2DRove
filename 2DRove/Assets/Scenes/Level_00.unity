@@ -1592,10 +1592,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockRobotBoss
       objectReference: {fileID: 0}
-    - target: {fileID: 647290685018556563, guid: 5800befcedb0b0d42b44c7ac127b0a84, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6103349213836330879, guid: 5800befcedb0b0d42b44c7ac127b0a84, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.17

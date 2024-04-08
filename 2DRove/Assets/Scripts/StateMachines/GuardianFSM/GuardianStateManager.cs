@@ -16,9 +16,12 @@ public class GuardianStateManager : MonoBehaviour
     public GuardianAggroState AggroState = new GuardianAggroState();
     public GuardianAttackState AttackState = new GuardianAttackState();
     public GuardianDeathState DeathState = new GuardianDeathState();
-    public GuardianHitState HitState = new GuardianHitState();
+    // public GuardianHitState HitState = new GuardianHitState();
     public GuardianIdleState IdleState = new GuardianIdleState();
     public GuardianSpawnState SpawnState = new GuardianSpawnState();
+    public GuardianVertDashState VertDashState = new GuardianVertDashState();
+    public GuardianHorizontalDashState HorizontalDashState = new GuardianHorizontalDashState();
+    public GuadianSpecialState SpecialState = new GuadianSpecialState();
 
     // Start is called before the first frame update
     void Start()

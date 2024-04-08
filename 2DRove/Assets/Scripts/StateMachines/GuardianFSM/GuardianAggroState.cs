@@ -17,8 +17,12 @@ public class GuardianAggroState : GuardianBaseState
 
     public override void UpdateState(GuardianStateManager Guardian)
     {
-        Vector2 Direction = (player.position - Guardian.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        Vector2 Direction = (player.position - Guardian.transform.position);
+        if (Direction.magnitude > 10)
+        {
+            Guardian.SwitchState(Guardian.VertDashState);
+        }
+        rb.AddForce(Direction.normalized * 1f);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

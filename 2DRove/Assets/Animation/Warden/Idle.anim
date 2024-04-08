@@ -32,7 +32,7 @@ AnimationClip:
       value: {fileID: -1077225710317469713, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
     - time: 0.5
       value: {fileID: -8458149835581429129, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - time: 0.6
+    - time: 0.59999996
       value: {fileID: 311710855587004809, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
     - time: 0.7
       value: {fileID: 2970297156618717366, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
@@ -57,30 +57,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    pptrCurveMapping:
-    - {fileID: -4399776404457581402, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: -6064674588836361114, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: -5193393692313322731, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: -8897287435025126850, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: -1077225710317469713, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: -8458149835581429129, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: 311710855587004809, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: 2970297156618717366, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: 9118306951349071339, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: 9167272200075535245, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: 5064401758020728689, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: 8159990286595243366, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
-    - {fileID: 8159990286595243366, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

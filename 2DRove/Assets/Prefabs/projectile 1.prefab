@@ -13,16 +13,8 @@ PrefabInstance:
       value: projectile 1
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 07a31deda26b8994fad9b93b41030665, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: -2253911629886400664, guid: 07a31deda26b8994fad9b93b41030665, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -2253911629886400664, guid: 07a31deda26b8994fad9b93b41030665, type: 3}
-      propertyPath: m_TagString
-      value: PlayerProjectile
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 07a31deda26b8994fad9b93b41030665, type: 3}
       propertyPath: m_LocalScale.x

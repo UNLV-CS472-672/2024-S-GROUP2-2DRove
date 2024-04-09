@@ -14,6 +14,11 @@ public class RockBossAttackState : RockBossBaseState
         PerformRandomAttack(RockBoss);
     }
 
+    private IEnumerator AttackCoolDown()
+    {
+        yield return new WaitForSeconds(2.5f);
+    }
+
     private void PerformRandomAttack(RockBossStateManager RockBoss)
     {
         int attackType = Random.Range(0, 4);
@@ -38,6 +43,7 @@ public class RockBossAttackState : RockBossBaseState
                 break; 
         }
         returnAttackType = attackType;
+        RockBoss.StartCoroutine(AttackCoolDown());
     }
 
     public override void UpdateState(RockBossStateManager RockBoss)

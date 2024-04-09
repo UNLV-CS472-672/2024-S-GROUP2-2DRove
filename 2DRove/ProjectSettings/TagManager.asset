@@ -10,6 +10,8 @@ TagManager:
   - Ghoul
   - Spitter
   - Boss
+  - Shadow
+  - Bomber
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Player
   - Enemy
   - Items
-  - 
+  - 'Projectile '
   - 
   - 
   - 

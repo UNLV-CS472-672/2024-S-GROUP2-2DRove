@@ -4,26 +4,13 @@ public class ArcherAttackState : ArcherBaseState
 {
     private float attackTime = 1.0f;
     private Animator animator;
-    private int countdown = 2;
     private bool isSpecial = false;
     public override void EnterState(ArcherStateManager archer)
     {
         Debug.Log("Entering Attack State");
         attackTime = 1.0f;
         animator = archer.GetComponent<Animator>();
-        if(countdown <= 0)
-        {
-            Debug.Log("Entering Special Attack State");
-            animator.SetBool("specialAttack", true);
-            isSpecial = true;
-            countdown = 2;
-        }
-        else
-        {
-            animator.SetBool("attacking", true);
-            isSpecial = false;
-            countdown--;
-        }
+        animator.SetBool("attacking", true);
     }
 
     public override void UpdateState(ArcherStateManager archer)
@@ -32,7 +19,6 @@ public class ArcherAttackState : ArcherBaseState
         {
             archer.SwitchState(archer.IdleState);
             animator.SetBool("attacking", false);
-            animator.SetBool("specialAttack", false);
         }
 
         attackTime -= Time.deltaTime;
@@ -53,14 +39,6 @@ public class ArcherAttackState : ArcherBaseState
     {
         Vector2 knockbackDirection = (Vector2)(archer.transform.position - archer.attackPoint.position).normalized;
         LayerMask mask = LayerMask.GetMask("Player");
-        if(isSpecial)
-        {
-            archer.attackRange = 10;
-        }
-        else
-        {
-            archer.attackRange = 5;
-        }
         Collider2D[] colliders = Physics2D.OverlapCircleAll(archer.attackPoint.position, archer.attackRange, mask);
 
         foreach (Collider2D collider in colliders)
@@ -68,14 +46,7 @@ public class ArcherAttackState : ArcherBaseState
             if (collider.CompareTag("Player"))
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
-                if(isSpecial)
-                {
-                    playerScript.dealDamage(5);
-                }
-                else
-                {
-                    playerScript.dealDamage(1);
-                }
+                playerScript.dealDamage(1);
                 collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                 collider.GetComponent<Animator>().SetTrigger("Hit");
             }

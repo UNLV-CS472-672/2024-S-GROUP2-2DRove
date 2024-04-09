@@ -5,11 +5,9 @@ public class ArcherIdleState : ArcherBaseState
 {
     private bool idling = true;
     private Transform player;
-    private float idleTime = 1.0f;
     public override void EnterState(ArcherStateManager archer)
     {
         Debug.Log("Entering Idle State...");
-        idleTime = 1.0f;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -18,11 +16,8 @@ public class ArcherIdleState : ArcherBaseState
         //make them just walk around randomly
         //make a radius fov? that seems pretty cool, and it would have a faint ring around the archer
         //if player is in radius, enter walk state
-        if(idleTime <= 0)
-        {
-            archer.SwitchState(archer.AggroState);
-        }
-        idleTime -= Time.deltaTime;
+        archer.SwitchState(archer.AggroState);
+        
     }
 
     public override void OnCollisionEnter2D(ArcherStateManager archer, Collision2D other)

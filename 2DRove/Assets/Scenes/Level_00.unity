@@ -1668,9 +1668,33 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1870879186007765102, guid: 06df680a45893844f84fe476cd512cab, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870879186007765102, guid: 06df680a45893844f84fe476cd512cab, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240.26703
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870879186007765102, guid: 06df680a45893844f84fe476cd512cab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1013.8665
+      objectReference: {fileID: 0}
     - target: {fileID: 3902313112000723237, guid: 06df680a45893844f84fe476cd512cab, type: 3}
       propertyPath: m_Name
       value: UI Overlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790664256011883585, guid: 06df680a45893844f84fe476cd512cab, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790664256011883585, guid: 06df680a45893844f84fe476cd512cab, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240.267
+      objectReference: {fileID: 0}
+    - target: {fileID: 4790664256011883585, guid: 06df680a45893844f84fe476cd512cab, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1013.86646
       objectReference: {fileID: 0}
     - target: {fileID: 7929035884775917154, guid: 06df680a45893844f84fe476cd512cab, type: 3}
       propertyPath: m_Pivot.x

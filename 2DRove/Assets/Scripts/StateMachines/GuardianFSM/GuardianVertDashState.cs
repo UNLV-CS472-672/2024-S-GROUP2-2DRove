@@ -31,7 +31,9 @@ public class GuardianVertDashState : GuardianBaseState
             Guardian.SwitchState(Guardian.HorizontalDashState);
         }
 
-        Guardian.GetComponent<Transform>().position = new Vector3(xPos, Mathf.SmoothStep(playerYPos, yPos, dashTime/dashDuration), 0);
+        float vertDist = playerYPos - yPos;
+        float prediction = (vertDist < 6 && vertDist > -6) ? 0 : ((vertDist)/(Mathf.Abs(vertDist))) * 6;
+        Guardian.GetComponent<Transform>().position = new Vector3(xPos, Mathf.SmoothStep(playerYPos + prediction, yPos, dashTime/dashDuration), 0);
         dashTime -= Time.deltaTime;
     }
 

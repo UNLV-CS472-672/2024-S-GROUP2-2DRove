@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class CagedShockerAttackState : CagedShockerBaseState
 {
-    private float attackTime = .9f;
+    private float attackTime = 1.333f;
     private Animator animator;
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
         Debug.Log("Entering Attack State");
-        attackTime = .9f;
+        attackTime = 1.333f;
         animator = CagedShocker.GetComponent<Animator>();
-        animator.SetBool("attacking", true);
+        animator.SetTrigger("attacking");
     }
 
     public override void UpdateState(CagedShockerStateManager CagedShocker)
@@ -17,7 +17,6 @@ public class CagedShockerAttackState : CagedShockerBaseState
         if(attackTime <= 0)
         {
             CagedShocker.SwitchState(CagedShocker.IdleState);
-            animator.SetBool("attacking", false);
         }
 
         attackTime -= Time.deltaTime;

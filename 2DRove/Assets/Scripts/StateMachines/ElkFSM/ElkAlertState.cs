@@ -4,8 +4,7 @@ public class ElkAlertState : ElkBaseState
 {
     private Transform player;
     private Animator animator;
-    private float alertDuration = 3.0f; // Time in seconds the elk stays alert before returning to idle
-
+    private float alertDuration = 1.0f;
     private float timer;
 
     public override void EnterState(ElkStateManager elk)

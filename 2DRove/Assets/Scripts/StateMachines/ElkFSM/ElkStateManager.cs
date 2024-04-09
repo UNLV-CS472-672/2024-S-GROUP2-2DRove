@@ -11,16 +11,17 @@ public class ElkStateManager : MonoBehaviour
     public ElkSpawnState SpawnState = new ElkSpawnState();
     public ElkDeathState DeathState = new ElkDeathState();
     public ElkAlertState AlertState = new ElkAlertState();
+    public ElkFleeState FleeState = new ElkFleeState();
 
     private Mesh ElkHitbox;
     private ElkBaseState currentState;
 
     public Animator animator;
     [SerializeField] private Transform player;
-    [SerializeField] public float playerRange; // Distance to the player 
+    [SerializeField] public float playerRange;
 
-    public Transform Player => player; // Public getter for the player's transform
-    public float PlayerRange => playerRange; // Public getter for the player's transform
+    public Transform Player => player; 
+    public float PlayerRange => playerRange; 
 
 
     void Start()

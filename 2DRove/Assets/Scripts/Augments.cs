@@ -40,8 +40,9 @@ public class Augments : MonoBehaviour
     // Closes augment display 
     void closeAugmentOverlay()
     {
-        unpause();
+        
         augmentOverlayCanvas.gameObject.SetActive(false);
+        unpause();
     }
     //Adds augment to list of chosen augments
     void addAugment(Button button)

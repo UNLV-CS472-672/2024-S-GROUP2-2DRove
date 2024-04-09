@@ -33,8 +33,9 @@ public class SelectedAugmentList : MonoBehaviour
     }
     void CloseAugmentList()
     {
-        unpause();
+        
         augmentListOverlay.gameObject.SetActive(false);
+        unpause();
     }
 
     void pause()

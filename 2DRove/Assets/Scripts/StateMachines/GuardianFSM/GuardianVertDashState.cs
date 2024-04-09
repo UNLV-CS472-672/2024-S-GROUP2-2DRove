@@ -22,6 +22,7 @@ public class GuardianVertDashState : GuardianBaseState
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("vertDash");
         Guardian.GetComponent<PolygonCollider2D>().enabled = true;
+        Guardian.afterImage.makeGhost = true;
     }
 
     public override void UpdateState(GuardianStateManager Guardian)

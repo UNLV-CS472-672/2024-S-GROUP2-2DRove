@@ -1319,8 +1319,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6916207954854211963, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 2089330324}
   m_SourcePrefab: {fileID: 100100000, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+--- !u!1 &764933734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3475996137607520006, guid: c13b7d4318b67d440a5c35ffca2407c3, type: 3}
+  m_PrefabInstance: {fileID: 1339190085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &764933741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 764933734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef48a9d30487bb418ad8e25fe59f39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostDelay: 0.005
+  ghostDuration: 0.25
+  ghost: {fileID: 5560060911911527608, guid: dd8e4c737d1c3c3488e93ba0ea203354, type: 3}
+  makeGhost: 0
 --- !u!1 &766497975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,6 +1982,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1212220447984024971, guid: c13b7d4318b67d440a5c35ffca2407c3, type: 3}
+      propertyPath: afterImage
+      value: 
+      objectReference: {fileID: 764933741}
     - target: {fileID: 3475996137607520006, guid: c13b7d4318b67d440a5c35ffca2407c3, type: 3}
       propertyPath: m_Name
       value: Guardian
@@ -2006,10 +2034,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8710239744230377646, guid: c13b7d4318b67d440a5c35ffca2407c3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3475996137607520006, guid: c13b7d4318b67d440a5c35ffca2407c3, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 764933741}
   m_SourcePrefab: {fileID: 100100000, guid: c13b7d4318b67d440a5c35ffca2407c3, type: 3}
 --- !u!1 &1374899003
 GameObject:
@@ -2145,6 +2180,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374899003}
   m_CullTransparentMesh: 1
+--- !u!1 &1418766648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6916207954854211963, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+  m_PrefabInstance: {fileID: 741563902}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1554912677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2156,6 +2196,10 @@ PrefabInstance:
     - target: {fileID: 3475996137607520006, guid: 7035eb186f35b4040b1f495e24f48be7, type: 3}
       propertyPath: m_Name
       value: CagedShocker
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475996137607520006, guid: 7035eb186f35b4040b1f495e24f48be7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4012842002547039159, guid: 7035eb186f35b4040b1f495e24f48be7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3184,6 +3228,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1784697184544801091, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
   m_PrefabInstance: {fileID: 741563902}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2089330324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418766648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef48a9d30487bb418ad8e25fe59f39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostDelay: 0.1
+  ghostDuration: 0
+  ghost: {fileID: 0}
+  makeGhost: 0
 --- !u!1 &2101556889
 GameObject:
   m_ObjectHideFlags: 0

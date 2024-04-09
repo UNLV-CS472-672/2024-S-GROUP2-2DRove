@@ -19,6 +19,7 @@ public class GuadianSpecialState : GuardianBaseState
         specialTime = specialDuration;
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("special");
+        Guardian.afterImage.makeGhost = false;
     }
 
     public override void UpdateState(GuardianStateManager Guardian)

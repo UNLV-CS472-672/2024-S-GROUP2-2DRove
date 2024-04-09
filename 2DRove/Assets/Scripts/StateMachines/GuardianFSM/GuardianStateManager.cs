@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GuardianStateManager : MonoBehaviour
 {
+    public AfterImage afterImage;
     public Animator animator;
     public Transform attack1X;
     public Transform attack1Y;

@@ -14,7 +14,6 @@ public class GuardianVertDashState : GuardianBaseState
     public override void EnterState(GuardianStateManager Guardian)
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        playerYPos = player.transform.position.y;
         xPos = Guardian.GetComponent<Transform>().position.x;
         yPos = Guardian.GetComponent<Transform>().position.y;
         Debug.Log("Entering Dash State");
@@ -32,9 +31,8 @@ public class GuardianVertDashState : GuardianBaseState
             Guardian.SwitchState(Guardian.HorizontalDashState);
         }
 
-        float vertDist = playerYPos - yPos;
-        float prediction = (vertDist < 6 && vertDist > -6) ? 0 : ((vertDist)/(Mathf.Abs(vertDist))) * 6;
-        Guardian.GetComponent<Transform>().position = new Vector3(xPos, Mathf.SmoothStep(playerYPos + prediction, yPos, dashTime/dashDuration), 0);
+        playerYPos = player.transform.position.y;
+        Guardian.GetComponent<Transform>().position = new Vector3(xPos, Mathf.SmoothStep(playerYPos, yPos, dashTime/dashDuration), 0);
         dashTime -= Time.deltaTime;
     }
 

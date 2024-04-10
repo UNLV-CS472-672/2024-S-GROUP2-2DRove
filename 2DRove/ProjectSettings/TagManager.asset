@@ -4,18 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
   - Border
-=======
-  - EnemyProjectile
-  - PlayerProjectile
-  - Enemy
-  - Ghoul
-  - Spitter
-  - Boss
-  - Shadow
-  - Bomber
->>>>>>> fsmtest
   layers:
   - Default
   - TransparentFX
@@ -23,10 +12,10 @@ TagManager:
   - TileLayer
   - Water
   - UI
-  - Player
-  - Enemy
-  - Items
-  - 'Projectile '
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

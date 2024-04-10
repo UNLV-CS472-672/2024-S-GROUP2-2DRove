@@ -1,0 +1,4125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  - component: {fileID: 2863061482242398745}
+  m_Layer: 0
+  m_Name: isoTileUniverse_Demo_MainCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 209171508793566208}
+  - {fileID: 7710117758502914132}
+  - {fileID: 7462830892745195955}
+  - {fileID: 8096572776473768758}
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 12
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!114 &2863061482242398745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef28380a2a8f84c4d81704bd0fa7c0e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraScript: {fileID: 0}
+  Normal_Camera_BackgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  Normal_Camera_TilesetDisplayColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+  MoveSpeed: 5
+  CameraTransform: {fileID: 519420032}
+  CameraBounds_BL_Transform: {fileID: 209171508793566208}
+  CameraBounds_BR_Transform: {fileID: 7710117758502914132}
+  CameraBounds_TL_Transform: {fileID: 7462830892745195955}
+  CameraBounds_TR_Transform: {fileID: 8096572776473768758}
+--- !u!1 &578500891901737797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7295393328465032536}
+  - component: {fileID: 7972643602353610015}
+  m_Layer: 0
+  m_Name: TundraRocksAndMountains_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7295393328465032536
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578500891901737797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7972643602353610015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578500891901737797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: 80a4102ffd02c444b94d9bae99297baf, type: 2}
+  - {fileID: 11400000, guid: fe46168544e61444299c43f38f9fc6b6, type: 2}
+  - {fileID: 11400000, guid: 5201b45ba23214b91aa30af0ceab444b, type: 2}
+  - {fileID: 11400000, guid: 76b3751882d904ea78a8850209a42277, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: a45ae0fbe34e24dd2b84022322f41213, type: 2}
+  - {fileID: 11400000, guid: 6b0264cda69e947c1b3f06a5865c4663, type: 2}
+  - {fileID: 11400000, guid: 0af03c544104c4126a637f3f0182c196, type: 2}
+  - {fileID: 11400000, guid: e546621c7a8e84ad09bbac73addabe83, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  - {fileID: 11400000, guid: 80a4102ffd02c444b94d9bae99297baf, type: 2}
+  - {fileID: 11400000, guid: fe46168544e61444299c43f38f9fc6b6, type: 2}
+  - {fileID: 11400000, guid: 5201b45ba23214b91aa30af0ceab444b, type: 2}
+  - {fileID: 11400000, guid: 76b3751882d904ea78a8850209a42277, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 1
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 11400000, guid: cc17f7f7ff8cc408da8910966bbb7a1f, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &961103984201470237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7346007984311722308}
+  - component: {fileID: 9173082726114861742}
+  m_Layer: 0
+  m_Name: Swamp_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7346007984311722308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961103984201470237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9173082726114861742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961103984201470237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  - {fileID: 11400000, guid: 454ec9e910b17410b9e81f2a56794ac9, type: 2}
+  - {fileID: 11400000, guid: feb53e39f4b7e4d25aa9c934bfdf94a4, type: 2}
+  - {fileID: 11400000, guid: ed9a3174fc6ae40b899c59518dc8ae64, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  - {fileID: 11400000, guid: 454ec9e910b17410b9e81f2a56794ac9, type: 2}
+  - {fileID: 11400000, guid: feb53e39f4b7e4d25aa9c934bfdf94a4, type: 2}
+  - {fileID: 11400000, guid: ed9a3174fc6ae40b899c59518dc8ae64, type: 2}
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  - {fileID: 11400000, guid: 454ec9e910b17410b9e81f2a56794ac9, type: 2}
+  - {fileID: 11400000, guid: feb53e39f4b7e4d25aa9c934bfdf94a4, type: 2}
+  - {fileID: 11400000, guid: ed9a3174fc6ae40b899c59518dc8ae64, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: 7d05660051716413cbaeccebba6c3e47, type: 2}
+  - {fileID: 11400000, guid: a9048de9e12c54610bd74c97dcbb1e1d, type: 2}
+  - {fileID: 11400000, guid: a5bcd7db1998f4a7ebd01522fc50983f, type: 2}
+  - {fileID: 11400000, guid: be5f4a85dc8a647c496d83ba39767387, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: 7fd2828ce78c2459f81a5a82c315b998, type: 2}
+  - {fileID: 11400000, guid: 3864fe7cc189e4697843351f1aea5158, type: 2}
+  - {fileID: 11400000, guid: 6c43cef9a8f5f4e2d9a2399298144058, type: 2}
+  - {fileID: 11400000, guid: 37d60e7d17c6d469f9f7657995067287, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  - {fileID: 11400000, guid: 454ec9e910b17410b9e81f2a56794ac9, type: 2}
+  - {fileID: 11400000, guid: feb53e39f4b7e4d25aa9c934bfdf94a4, type: 2}
+  - {fileID: 11400000, guid: ed9a3174fc6ae40b899c59518dc8ae64, type: 2}
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 1
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 15
+  ChanceToSpawn_02_RiverBot: 5
+  Biome_River_BaseTile: {fileID: 11400000, guid: 32068e4a8ba324c618eae57877602d5e, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  - {fileID: 11400000, guid: 454ec9e910b17410b9e81f2a56794ac9, type: 2}
+  - {fileID: 11400000, guid: feb53e39f4b7e4d25aa9c934bfdf94a4, type: 2}
+  - {fileID: 11400000, guid: ed9a3174fc6ae40b899c59518dc8ae64, type: 2}
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &971194768880474532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1503027835255588351}
+  - component: {fileID: 2180029219534690512}
+  m_Layer: 0
+  m_Name: isoTileUniverse_TilePalette
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1503027835255588351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971194768880474532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7444331835576630462}
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!156049354 &2180029219534690512
+Grid:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971194768880474532}
+  m_Enabled: 1
+  m_CellSize: {x: 1, y: 0.5, z: 0}
+  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellLayout: 2
+  m_CellSwizzle: 0
+--- !u!1 &1567802928975555995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5352990060385999318}
+  - component: {fileID: 2411994876391213646}
+  m_Layer: 0
+  m_Name: BlightedOcean_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5352990060385999318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567802928975555995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2411994876391213646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567802928975555995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 5fcab3efb35674015a9995a2769cc30a, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 5fcab3efb35674015a9995a2769cc30a, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2
+--- !u!1 &1599203514009372664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4532943483034978438}
+  - component: {fileID: 6272251242598085723}
+  m_Layer: 0
+  m_Name: isoTileUniverse_Demo_BiomeGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4532943483034978438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599203514009372664}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 519420032}
+  - {fileID: 1503027835255588351}
+  - {fileID: 3338064665104525005}
+  - {fileID: 3507356592624172275}
+  - {fileID: 6084667352381965024}
+  - {fileID: 7295393328465032536}
+  - {fileID: 7346007984311722308}
+  - {fileID: 6910982649986960129}
+  - {fileID: 2693820162914796186}
+  - {fileID: 2837856174760215992}
+  - {fileID: 1270858653620715770}
+  - {fileID: 8628018047871468651}
+  - {fileID: 4874009374576722012}
+  - {fileID: 1618467208198645438}
+  - {fileID: 4346346391810364594}
+  - {fileID: 1539915903221547238}
+  - {fileID: 5599185576411581505}
+  - {fileID: 5352990060385999318}
+  - {fileID: 7777479227580631727}
+  - {fileID: 3912659916408377335}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6272251242598085723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599203514009372664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae6fbda8f4dcf4f258cf09a9c925a1b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera_Transform: {fileID: 519420032}
+  Show_DemoInstructionsGUI: 1
+  Tilemap_ToGenerateOn: {fileID: 5332697044084280010}
+  Tiles_ToUseWhenGenerating:
+  - {fileID: 11400000, guid: 5fcab3efb35674015a9995a2769cc30a, type: 2}
+  RandomChanceToSpawn_BelowGenArray: 25
+  Tiles_ToUseWhenGenerating_Random:
+  - {fileID: 11400000, guid: b597611d8a1114de69fd35ec32dd3ca2, type: 2}
+  - {fileID: 11400000, guid: f50e0f396e65047bc8c1b738744a0b6e, type: 2}
+  Regenerate_IsoMap: 0
+  WorldGenType: 1
+  RandomlySpawn_TilesIn: 0
+  RandomSeed: 1000
+  IsoMapSize_Width: 60
+  IsoMapSize_Height: 60
+  xOrg_Layer1: 0
+  yOrg_Layer1: 0
+  WorldScale: 20
+  Snow_GenerationDepth_MIN: 76
+  Snow_GenerationDepth_MAX: 84
+  GenerateSingleBiome: 1
+  Single_BiomeInterations: 24
+  Single_BiomeType: 16
+  Single_BiomeOceanType: 17
+  GreenForest_BiomeSettings: {fileID: 5077176684703656407}
+  SnowForest_BiomeSettings: {fileID: 5057232044330487418}
+  RocksAndMountains_BiomeSettings: {fileID: 7654744539714460676}
+  TundraRocksAndMountains_BiomeSettings: {fileID: 7972643602353610015}
+  Swamp_BiomeSettings: {fileID: 9173082726114861742}
+  Desert_BiomeSettings: {fileID: 5313163219234941305}
+  Tundra_BiomeSettings: {fileID: 9078757249523463728}
+  Volcanic_BiomeSettings: {fileID: 4240141013525483229}
+  BlightedLands_BiomeSettings: {fileID: 8051497720156351663}
+  GrassOcean_BiomeSettings: {fileID: 3610195906362346722}
+  TundraOcean_BiomeSettings: {fileID: 7103479731295643067}
+  SwampOcean_BiomeSettings: {fileID: 8238821829449573764}
+  DesertOcean_BiomeSettings: {fileID: 2945751581333649179}
+  VolcanicOcean_BiomeSettings: {fileID: 7237812571154160746}
+  SandLake_BiomeSettings: {fileID: 8933856937098761711}
+  BlightedOcean_BiomeSettings: {fileID: 2411994876391213646}
+  MetalWorld_BiomeSettings: {fileID: 5575977335467861986}
+  MetalWorldOcean_BiomeSettings: {fileID: 492005461414690683}
+  BlankGrid_MapTile: {fileID: 11400000, guid: 59d18104b118d4d56be2752d8685c16e, type: 2}
+  Tiles_BiomeMarkers:
+  - {fileID: 11400000, guid: 0a208b322a9cf4766bf60b55acf71a27, type: 2}
+  - {fileID: 11400000, guid: 4d461c0aa17284981bf9e010d9f02985, type: 2}
+  - {fileID: 11400000, guid: 6f237323c0ddf4f7abd99dbf1e163cf6, type: 2}
+  - {fileID: 11400000, guid: 480c0695e073b49faa1e66867adff3f1, type: 2}
+  - {fileID: 11400000, guid: e53552149dace47f385685ecd4bf0317, type: 2}
+  - {fileID: 11400000, guid: de0f69ac3a5e344c9a29604f5064d0a0, type: 2}
+  - {fileID: 11400000, guid: 2ae6e7551577c458f8353c24c90a7155, type: 2}
+  Tiles_Dirt:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  Tiles_Sand:
+  - {fileID: 11400000, guid: 2daff079114cb41d5b8254ecdc911e68, type: 2}
+  - {fileID: 11400000, guid: a548988598de84e52a04fcf6d6b9e0d6, type: 2}
+  - {fileID: 11400000, guid: 40bbae2eb5f6040a8a5afc25c57243e2, type: 2}
+  - {fileID: 11400000, guid: f306d01d8c6504cf7875b4a3cdfde8da, type: 2}
+  Tiles_Grass:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  Tiles_SnowyGrass:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Forest:
+  - {fileID: 11400000, guid: 087403b5b3ee44caf9c28411800e45c8, type: 2}
+  - {fileID: 11400000, guid: 33836e7bfb57e401697d14d5bb31360c, type: 2}
+  - {fileID: 11400000, guid: 4c3ced6e206864e0e99b306b356db391, type: 2}
+  - {fileID: 11400000, guid: 0b0f7ec11c6ad40708e91ffd4cd12fe1, type: 2}
+  Tiles_SnowyForest:
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  Tiles_SwampMud:
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  - {fileID: 11400000, guid: 454ec9e910b17410b9e81f2a56794ac9, type: 2}
+  - {fileID: 11400000, guid: feb53e39f4b7e4d25aa9c934bfdf94a4, type: 2}
+  - {fileID: 11400000, guid: ed9a3174fc6ae40b899c59518dc8ae64, type: 2}
+  Tiles_SwampForest:
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  Tiles_DesertSands:
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  - {fileID: 11400000, guid: 6a1fd0701732543dbaa8dc9238a579df, type: 2}
+  - {fileID: 11400000, guid: fce7fe2a339094617bc281c83e177dd8, type: 2}
+  - {fileID: 11400000, guid: 5155ca0bbb5954fcf932ea342ca70bd5, type: 2}
+  - {fileID: 11400000, guid: 92ef0b89da5914614a17278f56494eb5, type: 2}
+  - {fileID: 11400000, guid: f2c42e03817e04d08b078792d31466fc, type: 2}
+  - {fileID: 11400000, guid: 64d706ae30c0a4292b71f904e79cdd87, type: 2}
+  - {fileID: 11400000, guid: 3b4c1dae96aa4483aba923ac6bbe1249, type: 2}
+  Tiles_DesertRocks:
+  - {fileID: 11400000, guid: 446ada05c66334ae2884452b312c80e7, type: 2}
+  - {fileID: 11400000, guid: 647011fd418b0435791451ab1360ba57, type: 2}
+  - {fileID: 11400000, guid: f44c5d89d918c4af49efe969532f2fdb, type: 2}
+  - {fileID: 11400000, guid: 7764ec30dfeb7459b9d85cfa294c1eee, type: 2}
+  Tiles_DesertMountains:
+  - {fileID: 11400000, guid: f0f4b6a3e7c2440a88e127fec0d114bd, type: 2}
+  - {fileID: 11400000, guid: 022d9ef7ccc9643d0b5a44524d1c0586, type: 2}
+  - {fileID: 11400000, guid: 99233b2219cc748f4843d3cca9c89ee9, type: 2}
+  - {fileID: 11400000, guid: 14e7dbe8c555b49f898a9a9d5e8e4b31, type: 2}
+  Tiles_Rocks:
+  - {fileID: 11400000, guid: 6c58997022b694f21b9f09b9ba5dbdc5, type: 2}
+  - {fileID: 11400000, guid: 863e6e468b5ea42059ab92d8305d8b9e, type: 2}
+  - {fileID: 11400000, guid: 02a08a6d7a997451da496b311dfeaa4e, type: 2}
+  - {fileID: 11400000, guid: 4389de80ff58145f19e4a10180d24f07, type: 2}
+  Tiles_Rocks_Set02:
+  - {fileID: 11400000, guid: 7fd2828ce78c2459f81a5a82c315b998, type: 2}
+  - {fileID: 11400000, guid: 3864fe7cc189e4697843351f1aea5158, type: 2}
+  - {fileID: 11400000, guid: 6c43cef9a8f5f4e2d9a2399298144058, type: 2}
+  - {fileID: 11400000, guid: 37d60e7d17c6d469f9f7657995067287, type: 2}
+  Tiles_Mountains:
+  - {fileID: 11400000, guid: abf22db9e9cea48f4a01f0d5a8af5bf6, type: 2}
+  - {fileID: 11400000, guid: eda8fe8452fae498ba3202646fa1ba82, type: 2}
+  - {fileID: 11400000, guid: a1a901b2565c64e3eb867315daf1351f, type: 2}
+  - {fileID: 11400000, guid: c28663ecb5345427f87ddd7f0785cebc, type: 2}
+  Tiles_Mountains_Set02:
+  - {fileID: 11400000, guid: 7d05660051716413cbaeccebba6c3e47, type: 2}
+  - {fileID: 11400000, guid: a9048de9e12c54610bd74c97dcbb1e1d, type: 2}
+  - {fileID: 11400000, guid: a5bcd7db1998f4a7ebd01522fc50983f, type: 2}
+  - {fileID: 11400000, guid: be5f4a85dc8a647c496d83ba39767387, type: 2}
+  Tiles_TundraRocks:
+  - {fileID: 11400000, guid: a45ae0fbe34e24dd2b84022322f41213, type: 2}
+  - {fileID: 11400000, guid: 6b0264cda69e947c1b3f06a5865c4663, type: 2}
+  - {fileID: 11400000, guid: 0af03c544104c4126a637f3f0182c196, type: 2}
+  - {fileID: 11400000, guid: e546621c7a8e84ad09bbac73addabe83, type: 2}
+  Tiles_TundraMountains:
+  - {fileID: 11400000, guid: 80a4102ffd02c444b94d9bae99297baf, type: 2}
+  - {fileID: 11400000, guid: fe46168544e61444299c43f38f9fc6b6, type: 2}
+  - {fileID: 11400000, guid: 5201b45ba23214b91aa30af0ceab444b, type: 2}
+  - {fileID: 11400000, guid: 76b3751882d904ea78a8850209a42277, type: 2}
+  Tiles_BurntGrass:
+  - {fileID: 11400000, guid: b39a5ae815ce844ad8f210780526cac4, type: 2}
+  - {fileID: 11400000, guid: 2a1f0492a3eb4494f931a5c1d354f4e1, type: 2}
+  - {fileID: 11400000, guid: 3ac5a82335f6c41638ba65879d30a0d1, type: 2}
+  - {fileID: 11400000, guid: f20d601b99f384238a239b4f0896680a, type: 2}
+  Tiles_BurntForest:
+  - {fileID: 11400000, guid: 73321ccef94d7419f984b09456dd4486, type: 2}
+  - {fileID: 11400000, guid: 4eb62584b1bfa4bf59d69572e7fae7d4, type: 2}
+  - {fileID: 11400000, guid: df4d476d4920842c9b6ca7a5d633e41a, type: 2}
+  - {fileID: 11400000, guid: 14f1943bb5a0545ec96522eee7ae6b05, type: 2}
+  Tiles_LavaGrounds:
+  - {fileID: 11400000, guid: 71de831ac515a477c9bf3a58b55ed3a2, type: 2}
+  - {fileID: 11400000, guid: e920ef85e34904be091da42970c6074b, type: 2}
+  - {fileID: 11400000, guid: 07668ab3b36c849afb97a6f7653c636c, type: 2}
+  - {fileID: 11400000, guid: 2f171f44a2a3f40ea9cf99a92acdb45e, type: 2}
+  Tiles_CooledLavaGrounds:
+  - {fileID: 11400000, guid: c763a1c7a36ca49c0a40d8c531088a85, type: 2}
+  - {fileID: 11400000, guid: 608b9d6f7d3fd461db5008614e56227a, type: 2}
+  - {fileID: 11400000, guid: beff6184feba64c55b7f54fb1e5f12c5, type: 2}
+  - {fileID: 11400000, guid: 410f4f11c6e3446f1914c9fd28d1b91d, type: 2}
+  Spawn_Copper_OnMap: 1
+  CopperSpawnChance: 6
+  Tiles_Resource_Copper_Set01:
+  - {fileID: 11400000, guid: a93696910dc6fc346b0f3ff07e383ede, type: 2}
+  - {fileID: 11400000, guid: edd207f2d58ed944d92c55cab462d7a2, type: 2}
+  - {fileID: 11400000, guid: b87dc6dd0f73c054d8f4540e68138d52, type: 2}
+  - {fileID: 11400000, guid: de543e4f15470c04e8054f0a4bfc02d7, type: 2}
+  Spawn_Iron_OnMap: 1
+  IronSpawnChance: 5
+  Tiles_Resource_Iron_Set01:
+  - {fileID: 11400000, guid: 9d205b5eaa00e744b889cb12e2e203e0, type: 2}
+  - {fileID: 11400000, guid: f1a302d45c894bc4bb7b7bc4d65b7a5f, type: 2}
+  - {fileID: 11400000, guid: fab2204156b60e740916f02da2a072e8, type: 2}
+  - {fileID: 11400000, guid: 84afcb67d99657a47bf2245166801344, type: 2}
+  Spawn_Silver_OnMap: 1
+  SilverSpawnChance: 4
+  Tiles_Resource_Silver_Set01:
+  - {fileID: 11400000, guid: 80b328ef775cd2b4cbee848d9b62a48a, type: 2}
+  - {fileID: 11400000, guid: 6a6e57dbd6120f04a93a6a07f571f439, type: 2}
+  - {fileID: 11400000, guid: d6f0cb33386f2054da050eb6dd466587, type: 2}
+  - {fileID: 11400000, guid: 0f66cb88fc8f06746859bb55f22e4836, type: 2}
+  Spawn_Gold_OnMap: 1
+  GoldSpawnChance: 3
+  Tiles_Resource_Gold_Set01:
+  - {fileID: 11400000, guid: cad6e76aa16f4ed49bbd838bce84abc4, type: 2}
+  - {fileID: 11400000, guid: 122db85b200943447a4873ac53328294, type: 2}
+  - {fileID: 11400000, guid: 74336e251ef2b3c48ab6a6ea084f8b0f, type: 2}
+  - {fileID: 11400000, guid: eb2633d84ab106e488e7bab3b2c7ff45, type: 2}
+  Tiles_MetalWorld_GroundPlates_Tier1:
+  - {fileID: 11400000, guid: f91aaa5de0004ec478d2c0d1d7d7194e, type: 2}
+  - {fileID: 11400000, guid: d573a86bcfe49a2429fc3adaf131a83f, type: 2}
+  - {fileID: 11400000, guid: 4f0aa8a071fd0254a85b52d9c54aa729, type: 2}
+  - {fileID: 11400000, guid: 2b6b953fb657f2243828de6b3bb1cccc, type: 2}
+  - {fileID: 11400000, guid: 3f0423d4d08eece4cac7ef0007279dcb, type: 2}
+  - {fileID: 11400000, guid: 65c0a37ac9145e1418b65a7efeaaa185, type: 2}
+  - {fileID: 11400000, guid: ebe0cedee7ebd04438040d7ccda9e48b, type: 2}
+  - {fileID: 11400000, guid: 097bb3813f3730c4da2297d0b1b0f88d, type: 2}
+  Tiles_MetalWorld_IronForest_Tier1:
+  - {fileID: 11400000, guid: 135a543494cf1234ca529d96606d1664, type: 2}
+  - {fileID: 11400000, guid: b5e323f34121f8a4d8f5fd66227e2f80, type: 2}
+  - {fileID: 11400000, guid: e24428aeaedce1c4b85d1a62ccf057ef, type: 2}
+  - {fileID: 11400000, guid: 55bdc7be01b161046ac0931ffd8fd0f2, type: 2}
+  - {fileID: 11400000, guid: 08cb55c3fb9f41d4595cec0b42401727, type: 2}
+  - {fileID: 11400000, guid: 7180decfbc75ade4f92ef43cdae636b5, type: 2}
+  - {fileID: 11400000, guid: c70a35cc36896354996deda450028127, type: 2}
+  - {fileID: 11400000, guid: dff9371d7acf7f94bafffc749fe97c38, type: 2}
+  Tiles_MetalWorld_MetalRocks_Tier1:
+  - {fileID: 11400000, guid: e54f28d1492994d41955c0788ad9c7f0, type: 2}
+  - {fileID: 11400000, guid: abee7217ff53fca44a524b31368642b0, type: 2}
+  - {fileID: 11400000, guid: a0a6b125055fc1840bc8dbaed42d631d, type: 2}
+  - {fileID: 11400000, guid: be42ed0486afb0643930581233d5f778, type: 2}
+  Tiles_MetalWorld_MetalMountains_Tier1:
+  - {fileID: 11400000, guid: d3070bd8c34b29642b0bc4759ba6aaa3, type: 2}
+  - {fileID: 11400000, guid: 8e3ffeff4378dea488e8bc868eb3afa9, type: 2}
+  - {fileID: 11400000, guid: 32e9ca903a84dc842b21f71530f267b0, type: 2}
+  - {fileID: 11400000, guid: 99b4bf9c07c9c7c42b20fa65b6f941c8, type: 2}
+  Tiles_ColonyBuildings_Tier1:
+  - {fileID: 11400000, guid: 14c14abff4a1b44239e7abe24f7e8971, type: 2}
+  - {fileID: 11400000, guid: 6484df500d1934491aeae3c55955cd6f, type: 2}
+  - {fileID: 11400000, guid: 672d27171452846b68f925d00ad24d05, type: 2}
+  - {fileID: 11400000, guid: b70a9ff7db4bb4ac4a5ec46999b12db8, type: 2}
+  - {fileID: 11400000, guid: 7b13da2bc86584169b8063d0629cef98, type: 2}
+  - {fileID: 11400000, guid: 10955ecfdc71a43a488029ec17fa35e1, type: 2}
+  - {fileID: 11400000, guid: cbcf6f3065120402cb3f71fa4edfc156, type: 2}
+  - {fileID: 11400000, guid: e39f8e55e04474f52bb8a95085e6b722, type: 2}
+  Tiles_CityBuildings_Tier1:
+  - {fileID: 11400000, guid: 899f80041b8eb43fba91af35c0aa835d, type: 2}
+  - {fileID: 11400000, guid: 131243e8947894590a5195afaea9ea8e, type: 2}
+  - {fileID: 11400000, guid: 4ace0fc9eddb444d1a3f142e2254b790, type: 2}
+  - {fileID: 11400000, guid: 9de4a4ead221847a49d81cf7776fc7e7, type: 2}
+  - {fileID: 11400000, guid: 08dd7b059289b43e7969c2aeaacd57c3, type: 2}
+  - {fileID: 11400000, guid: 962293ec5c7a34c85a5c90d5e7b4cbd1, type: 2}
+  - {fileID: 11400000, guid: 0cecfa436f726446c91d34f666051df4, type: 2}
+  - {fileID: 11400000, guid: f4737d00bc6234adf8e8362259d40309, type: 2}
+  Tiles_CityBuildings_Tier1_Damage_Light:
+  - {fileID: 11400000, guid: 257a90a68df8b574b89912e81b7fa773, type: 2}
+  - {fileID: 11400000, guid: e3fe680bb3ab3a6478d5ec676530cc4b, type: 2}
+  - {fileID: 11400000, guid: 770bfabcfce7f164786996f2ae739677, type: 2}
+  - {fileID: 11400000, guid: 6f63522b22f41bc4a9e071738ebffb68, type: 2}
+  - {fileID: 11400000, guid: 9065477e676ed1741af9214728f91966, type: 2}
+  - {fileID: 11400000, guid: 3f09d8458e0364c429848e37d6697b2f, type: 2}
+  - {fileID: 11400000, guid: 6cb5d5ca3354786468816382522ac0ee, type: 2}
+  - {fileID: 11400000, guid: ef49e2017dfd6f54d80fbbfed920c41f, type: 2}
+  Tiles_CityBuildings_Tier1_Damage_Medium:
+  - {fileID: 11400000, guid: 5836cea132958e04fb539603965d7c0f, type: 2}
+  - {fileID: 11400000, guid: e5eda81dfe990774cbb72c98de4ea829, type: 2}
+  - {fileID: 11400000, guid: a5e853c8f7b878d4787c9a8e9511a1c4, type: 2}
+  - {fileID: 11400000, guid: 22717ff664a13554bad50a152410b9ac, type: 2}
+  - {fileID: 11400000, guid: e9a7c0fc683a17442925dbbc74fbc183, type: 2}
+  - {fileID: 11400000, guid: 8f2267c94a2ca4e4789c54767bf086d8, type: 2}
+  - {fileID: 11400000, guid: 0ba2f2d129b553147b6a91e0d373d83d, type: 2}
+  - {fileID: 11400000, guid: e28342d97eafbf34793a2a3f119bfb38, type: 2}
+  Tiles_CityBuildings_Tier1_Damage_Heavy:
+  - {fileID: 11400000, guid: 007795f95eacf3b49981ac8a5fb7febc, type: 2}
+  - {fileID: 11400000, guid: 2398d065528031e4e944120a37edd22e, type: 2}
+  - {fileID: 11400000, guid: ce894139c29216c4eabe4e7468031b79, type: 2}
+  - {fileID: 11400000, guid: d0ddd434d7a4b2f43961fd59e0905320, type: 2}
+  - {fileID: 11400000, guid: d8cde02a8a9d5384b82b8025450b91a4, type: 2}
+  - {fileID: 11400000, guid: 8f3aee14b602adb43af24f477d436bd7, type: 2}
+  - {fileID: 11400000, guid: 9f0ea40d10fb2f6459ebff22d654c935, type: 2}
+  - {fileID: 11400000, guid: 278a7fe15f3c8fe43b3c4bba2d0cec7c, type: 2}
+  Tiles_CityBuildings_Tier1_Damage_Ruins:
+  - {fileID: 11400000, guid: 72556016a30384d49b785b6ae6cbbedd, type: 2}
+  - {fileID: 11400000, guid: 21c9bd0f90320544aa4b09941719689c, type: 2}
+  - {fileID: 11400000, guid: 31a9e64cafe7f554f9cbd19b3217c7ed, type: 2}
+  - {fileID: 11400000, guid: 3a89e59faed164841b3d37473b4f80fe, type: 2}
+  - {fileID: 11400000, guid: e0e30b3adf00a644a88984fb47fd8257, type: 2}
+  - {fileID: 11400000, guid: 42aee5dc2be5b954baa66af8f07d9637, type: 2}
+  - {fileID: 11400000, guid: abcdd76aaeadebf428a8b79430b2bbb2, type: 2}
+  - {fileID: 11400000, guid: 9317cfee13b17504c946fa4963051ad7, type: 2}
+  Tiles_CityBuildings_Tier2:
+  - {fileID: 11400000, guid: b03e9840d55ae44f6af9a3ce8133edd1, type: 2}
+  - {fileID: 11400000, guid: b492e83d0814640f889e9e7e234c303c, type: 2}
+  - {fileID: 11400000, guid: b5bbfba5ed1f740cb9a2dce5db8db8aa, type: 2}
+  - {fileID: 11400000, guid: a2e1dd593c3b4492cbffc447b385372e, type: 2}
+  - {fileID: 11400000, guid: 73e4475c02d30475fb51ec1cf0328132, type: 2}
+  - {fileID: 11400000, guid: 5db731e5e7ba141d396307e0c23a4ef5, type: 2}
+  - {fileID: 11400000, guid: 283fa03d36eb9491dbac6f77e4b58a3c, type: 2}
+  - {fileID: 11400000, guid: da8544a5e68084cecb00414f46f42525, type: 2}
+  Tiles_CityBuildings_Tier2_Damage_Light:
+  - {fileID: 11400000, guid: 834ecdd02453914469a72843dd791b17, type: 2}
+  - {fileID: 11400000, guid: 1563e3816d6ed964a9befca1ddec3c2a, type: 2}
+  - {fileID: 11400000, guid: 986965846b880414883bc4728794e229, type: 2}
+  - {fileID: 11400000, guid: 8572640c1b4edc74d945e82c34b385dd, type: 2}
+  - {fileID: 11400000, guid: d00f7fe3aafc3f94e8a1e3cbded02a63, type: 2}
+  - {fileID: 11400000, guid: 7dffc37a72a7864438f513cc44097f02, type: 2}
+  - {fileID: 11400000, guid: e4079d9ceb46b084fb9e090525c9582b, type: 2}
+  - {fileID: 11400000, guid: 104ddc1a02b7c534aa0be3cbaed40b06, type: 2}
+  Tiles_CityBuildings_Tier2_Damage_Medium:
+  - {fileID: 11400000, guid: f08764cdf27ef294ca1fcaa9d605eec3, type: 2}
+  - {fileID: 11400000, guid: 72c00d809cba77d4d913532b2e9df459, type: 2}
+  - {fileID: 11400000, guid: b33ed92fb1f24ea40a6acab2367d2f83, type: 2}
+  - {fileID: 11400000, guid: b3c02d1cfdf266b4995d47c9fdb05d7d, type: 2}
+  - {fileID: 11400000, guid: 4200f1dbf80c26b40ad0534cf3a457c3, type: 2}
+  - {fileID: 11400000, guid: 8ad0937be08fe214d93b6d0694023ac5, type: 2}
+  - {fileID: 11400000, guid: fb9917de7b1015d4ba38b415b280cb82, type: 2}
+  - {fileID: 11400000, guid: 099ca6334eb85fc4e833c7d1e3c39439, type: 2}
+  Tiles_CityBuildings_Tier2_Damage_Heavy:
+  - {fileID: 11400000, guid: 2ee0e58ed6d8b674eb187701f9c03a2c, type: 2}
+  - {fileID: 11400000, guid: 15fd72995bccc4b4190078e4532fa3fc, type: 2}
+  - {fileID: 11400000, guid: a787212008f480b4b9e9c805b8d6f88c, type: 2}
+  - {fileID: 11400000, guid: a8b7bce2210de5d428efc0aed69a60ff, type: 2}
+  - {fileID: 11400000, guid: 4350e07ef03e04a41b97c3d88d4eb1d9, type: 2}
+  - {fileID: 11400000, guid: 202a0a5a0459baa4f8fe972be4e9e241, type: 2}
+  - {fileID: 11400000, guid: 1cf39805cbd4cc144b2a87b2e310049e, type: 2}
+  - {fileID: 11400000, guid: 758d04f71b40f594995e269b06d9f6cb, type: 2}
+  Tiles_CityBuildings_Tier2_Damage_Ruins:
+  - {fileID: 11400000, guid: 6538a711b02d1d64f9b549aa83f8513b, type: 2}
+  - {fileID: 11400000, guid: 3df56b3e0a9ee3d4f86f685e41cefb9e, type: 2}
+  - {fileID: 11400000, guid: 7003eb8ae0836d5479fa05cae030f595, type: 2}
+  - {fileID: 11400000, guid: 7cdfc5d3a8de72d47a2a41217da86e83, type: 2}
+  - {fileID: 11400000, guid: af5c90e2d715b7748b67e3d51c9997a7, type: 2}
+  - {fileID: 11400000, guid: 61f8fcd89b367be47b1d452ce853757e, type: 2}
+  - {fileID: 11400000, guid: 098ebd253dbfafa449c11103b6877b5d, type: 2}
+  - {fileID: 11400000, guid: a15d67a6740a5b546aec37dd6f90a19f, type: 2}
+  Tiles_CityBuildings_Tier3:
+  - {fileID: 11400000, guid: 47fd947ede332412eb04f581661745cd, type: 2}
+  - {fileID: 11400000, guid: e414a1f5fbccc4ee6b057eb12fd0e47c, type: 2}
+  - {fileID: 11400000, guid: 1bc5bf8635828427da60b33489deb708, type: 2}
+  - {fileID: 11400000, guid: b0dd9925dab104f968bea75efe51db43, type: 2}
+  - {fileID: 11400000, guid: bc1c47fe3c5fe45e58d2e7dda1bf382a, type: 2}
+  - {fileID: 11400000, guid: 62c60e859a8c54b0fa13c107d2071124, type: 2}
+  - {fileID: 11400000, guid: c5173ac99fc964631ae165aa240176d5, type: 2}
+  - {fileID: 11400000, guid: 15ce972986e814684b46293c66b84a32, type: 2}
+  Tiles_CityBuildings_Tier3_Damage_Light:
+  - {fileID: 11400000, guid: d8c166b2dd50b7f46aa560482e5c4a67, type: 2}
+  - {fileID: 11400000, guid: 46c6436a9d62f4e408081010e17249b4, type: 2}
+  - {fileID: 11400000, guid: db11392ec7583ca468c847a757c2a0d7, type: 2}
+  - {fileID: 11400000, guid: a35a5855d6112444aadd37f20ca1b69d, type: 2}
+  - {fileID: 11400000, guid: 96e25385d0cb20a4a939f7cd26fad9d5, type: 2}
+  - {fileID: 11400000, guid: a579619bece1ffb4ab34b5bc7a0d2df7, type: 2}
+  - {fileID: 11400000, guid: 68978a0e27380ef46b47a7ee5460a4dd, type: 2}
+  - {fileID: 11400000, guid: ab646ea6beb9ce44bb02c290470aabbf, type: 2}
+  Tiles_CityBuildings_Tier3_Damage_Medium:
+  - {fileID: 11400000, guid: 7ec78e4d27b255542a12bc59f8028555, type: 2}
+  - {fileID: 11400000, guid: f6aa57a73f0d6e340a56d293640405b5, type: 2}
+  - {fileID: 11400000, guid: d928e9776af703d4b8552403805efbbb, type: 2}
+  - {fileID: 11400000, guid: 2137f231cd56bf045af2dfd4c528cc95, type: 2}
+  - {fileID: 11400000, guid: eefe0646ab22edd49b6d8740533173c6, type: 2}
+  - {fileID: 11400000, guid: 2bb15a4859a46764385b782bb9bb371f, type: 2}
+  - {fileID: 11400000, guid: 2ffa69666f5848249b2e6ca1ae8a02fd, type: 2}
+  - {fileID: 11400000, guid: 244ae4b7e03f0e649ba61ce31cd90b7a, type: 2}
+  Tiles_CityBuildings_Tier3_Damage_Heavy:
+  - {fileID: 11400000, guid: 840e2521b60203f4dae411029a07524d, type: 2}
+  - {fileID: 11400000, guid: aac8bd34ce8dc384086ed77cf614c2df, type: 2}
+  - {fileID: 11400000, guid: 85d18b2e10460294f83b70ca1dfdbc2b, type: 2}
+  - {fileID: 11400000, guid: b374f4475e37f3e4b849985fad116ea5, type: 2}
+  - {fileID: 11400000, guid: e6f21629af5ac9a4385585794f304985, type: 2}
+  - {fileID: 11400000, guid: a8d3e11ac7deae84d82b82deffeec539, type: 2}
+  - {fileID: 11400000, guid: 53e2ce6c9eb31144296b5eaf424cd8ed, type: 2}
+  - {fileID: 11400000, guid: aa5571541ec956e4eb5dbfdd28e66183, type: 2}
+  Tiles_CityBuildings_Tier3_Damage_Ruins:
+  - {fileID: 11400000, guid: b400996ed27a2954bab28767443fc10e, type: 2}
+  - {fileID: 11400000, guid: f7cced7ba21951b49a4d205e8561ce4c, type: 2}
+  - {fileID: 11400000, guid: ffda01e795c5b4c498175570bba661c0, type: 2}
+  - {fileID: 11400000, guid: ecf24bd3ca54b1249873500b2c4d4e74, type: 2}
+  - {fileID: 11400000, guid: 3a9f5931eb689444f951ec35ca81923e, type: 2}
+  - {fileID: 11400000, guid: e312f009634bc594ab0832c0e511ee7b, type: 2}
+  - {fileID: 11400000, guid: 8e80c57bb6500be44ab5755053662d49, type: 2}
+  - {fileID: 11400000, guid: fbf0146ca4613024b88f82c3ed1bb04c, type: 2}
+  Tiles_VolcanicAshGround:
+  - {fileID: 11400000, guid: d750837217689486fbd893d4fb784a5f, type: 2}
+  - {fileID: 11400000, guid: 8c50a620d225843599f7be4620f47d26, type: 2}
+  - {fileID: 11400000, guid: 977c0dcf4c5894d1995498d2d62db4ff, type: 2}
+  - {fileID: 11400000, guid: 8a635358ee7bf4973878a8abff07e866, type: 2}
+  Tiles_VolcanicAshGroundDark:
+  - {fileID: 11400000, guid: 32c6a91e5f88d475191e7b0b75fe9d18, type: 2}
+  - {fileID: 11400000, guid: fae58341b4628460a9837c5e0cd1e906, type: 2}
+  - {fileID: 11400000, guid: 47397c90305cf410c8793b046878832e, type: 2}
+  - {fileID: 11400000, guid: bf854597769a344d197db61b995cbcce, type: 2}
+  Tiles_VolcanicLavaGround:
+  - {fileID: 11400000, guid: 71de831ac515a477c9bf3a58b55ed3a2, type: 2}
+  - {fileID: 11400000, guid: e920ef85e34904be091da42970c6074b, type: 2}
+  - {fileID: 11400000, guid: 07668ab3b36c849afb97a6f7653c636c, type: 2}
+  - {fileID: 11400000, guid: 2f171f44a2a3f40ea9cf99a92acdb45e, type: 2}
+  Tiles_VolcanicCooledLavaGround:
+  - {fileID: 11400000, guid: c763a1c7a36ca49c0a40d8c531088a85, type: 2}
+  - {fileID: 11400000, guid: 608b9d6f7d3fd461db5008614e56227a, type: 2}
+  - {fileID: 11400000, guid: beff6184feba64c55b7f54fb1e5f12c5, type: 2}
+  - {fileID: 11400000, guid: 410f4f11c6e3446f1914c9fd28d1b91d, type: 2}
+  Tiles_VolcanicRocks:
+  - {fileID: 11400000, guid: b19fbb8f9b1074914b6673dd4d5482b6, type: 2}
+  - {fileID: 11400000, guid: f775b2b12650d4700b29e70d1b6c199b, type: 2}
+  - {fileID: 11400000, guid: 6f1959fa46373473e949994320a8e081, type: 2}
+  - {fileID: 11400000, guid: 70c82d7ed989749c3837d7a4d4434e61, type: 2}
+  Tiles_VolcanicMountains:
+  - {fileID: 11400000, guid: 523c5edabbfb5473f81e5c58d15e9aaa, type: 2}
+  - {fileID: 11400000, guid: 45de3dee9847d442bac871af2baa166c, type: 2}
+  - {fileID: 11400000, guid: 84f5f4c8305a545ad9c9479be577a001, type: 2}
+  - {fileID: 11400000, guid: 2f60da3611cd8475c8f7d6aacf8011c9, type: 2}
+  Tiles_BlightedLands_InfectedGrounds:
+  - {fileID: 11400000, guid: f50e0f396e65047bc8c1b738744a0b6e, type: 2}
+  - {fileID: 11400000, guid: b597611d8a1114de69fd35ec32dd3ca2, type: 2}
+  - {fileID: 11400000, guid: 32b04592879e84d0fa633a493dce1e31, type: 2}
+  - {fileID: 11400000, guid: 14853bceff7bd47c0b9188257eb897a9, type: 2}
+  Tiles_BlightedLands_InfectedNodules:
+  - {fileID: 11400000, guid: eeb9ee3d8e79e403b8866d676c209c5f, type: 2}
+  - {fileID: 11400000, guid: de1e80a27743e467ea98bd41863d5b0c, type: 2}
+  - {fileID: 11400000, guid: 2e0e9e726772a478885cb0411dd5827a, type: 2}
+  - {fileID: 11400000, guid: 6d99920c217184c20a3c02a72130b9ab, type: 2}
+  Tiles_BlightedLands_InfectedGrass:
+  - {fileID: 11400000, guid: 16245c6a950274a88868876fe9b57b7b, type: 2}
+  - {fileID: 11400000, guid: 0c51f5a14415d44928b86517ff0976c2, type: 2}
+  - {fileID: 11400000, guid: 6374664a414e645e1910a74810bfd809, type: 2}
+  - {fileID: 11400000, guid: d77c90845cb5947ec871ffa919bbca6e, type: 2}
+  Tiles_BlightedLands_InfectedForest:
+  - {fileID: 11400000, guid: 24ed056064706488bb41af8f0ec4e8bc, type: 2}
+  - {fileID: 11400000, guid: 1b9d447269694407f83a60e38816cd86, type: 2}
+  - {fileID: 11400000, guid: 8059ae59dd1ba4d0585244614185256e, type: 2}
+  - {fileID: 11400000, guid: 1994409fc8a26418aa63a1e96328aeca, type: 2}
+  Tiles_BlightedLands_InfectedRocks:
+  - {fileID: 11400000, guid: befe6aa69f826414b91a79ed9400cfc3, type: 2}
+  - {fileID: 11400000, guid: 4a3429f2a2fde4926b4c75b548a696cb, type: 2}
+  - {fileID: 11400000, guid: 6d27c3ab9f42d40f79d58ee2d850c340, type: 2}
+  - {fileID: 11400000, guid: a9220f71236bb47f99c4976fb6dd5794, type: 2}
+  Tiles_BlightedLands_InfectedMountains:
+  - {fileID: 11400000, guid: 039b2e4a9c2d14d5697b1abd6ec3e094, type: 2}
+  - {fileID: 11400000, guid: af1d2eac6ec554114b39c2de13d53c0a, type: 2}
+  - {fileID: 11400000, guid: 950653f55be914c6ab5a6f263dfe6762, type: 2}
+  - {fileID: 11400000, guid: 8356c251da2124a8290af4b0d0360e69, type: 2}
+  Base_LightShallowRiver_01_Tile: {fileID: 11400000, guid: cc17f7f7ff8cc408da8910966bbb7a1f, type: 2}
+  LightShallowRiver_01_Tile_Array:
+  - {fileID: 11400000, guid: cc17f7f7ff8cc408da8910966bbb7a1f, type: 2}
+  - {fileID: 11400000, guid: 6d3c8c749beca47ecb490afb68fbcfc8, type: 2}
+  - {fileID: 11400000, guid: 0c90a3c1d81584a1783e2e24c00ecbcf, type: 2}
+  - {fileID: 11400000, guid: 0b16161e33bf948bf93d6304f0a260db, type: 2}
+  - {fileID: 11400000, guid: 77cf4dcbd11374702b1ef00c56589639, type: 2}
+  - {fileID: 11400000, guid: 7bb2164be377a44b9b5591f64cdc4938, type: 2}
+  - {fileID: 11400000, guid: bca8095ade4d0489bb8c36cdf42a89ac, type: 2}
+  - {fileID: 11400000, guid: 8ceb7362665484af1959fca83aa39492, type: 2}
+  - {fileID: 11400000, guid: c9d28c42f01c34786aa446346ca520cc, type: 2}
+  - {fileID: 11400000, guid: bc1536526c9994c3f87d620e0ccc590f, type: 2}
+  - {fileID: 11400000, guid: 3289262176c7942f88bd6f5dd83ec95b, type: 2}
+  - {fileID: 11400000, guid: 3c025c9cfffe44a9db77c1ec94b2617e, type: 2}
+  - {fileID: 11400000, guid: b8ffd25f0ac354ab58133995fe9e5924, type: 2}
+  - {fileID: 11400000, guid: 1ff65000f6021409abaf6755ae303d26, type: 2}
+  - {fileID: 11400000, guid: fda70bc02a8014cab97b1d91cf25b4c4, type: 2}
+  - {fileID: 11400000, guid: ad24e65cbbf5f4788989ecfbfc37dbcb, type: 2}
+  Base_SandLake_01_Tile: {fileID: 11400000, guid: 5d2e2467d404f4a479f66dd099c29b22, type: 2}
+  SandLake_01_Tile_Array:
+  - {fileID: 11400000, guid: 5d2e2467d404f4a479f66dd099c29b22, type: 2}
+  - {fileID: 11400000, guid: 36f72cb632d504d65a9cde557edbfe1e, type: 2}
+  - {fileID: 11400000, guid: 040c1c62c0d4d4683bd6f942dbe40475, type: 2}
+  - {fileID: 11400000, guid: dd6477224b730406186a1d85e4554ac4, type: 2}
+  - {fileID: 11400000, guid: b630079353bf845eea106c6749589b02, type: 2}
+  - {fileID: 11400000, guid: ea137ec1bb7dd4ec994aeb04c835c468, type: 2}
+  - {fileID: 11400000, guid: a482bad1624c74d169a4d49ffa39c39b, type: 2}
+  - {fileID: 11400000, guid: bacece6a937f84340959ddc2d99f6438, type: 2}
+  - {fileID: 11400000, guid: c1f7fdf0d3b5d43049ffc86768446b58, type: 2}
+  - {fileID: 11400000, guid: 39d3586bc19674ba2a06724f73e34d10, type: 2}
+  - {fileID: 11400000, guid: 6123de21a24af4c8394ba97a45f8327b, type: 2}
+  - {fileID: 11400000, guid: 0a4baa7f87a624f59a430825ee0a6ba9, type: 2}
+  - {fileID: 11400000, guid: 5853dbd000ddd47129f49d3f59b735f8, type: 2}
+  - {fileID: 11400000, guid: 3a2eec6a55a844c57bff431decf5322b, type: 2}
+  - {fileID: 11400000, guid: 3906915586b1d4a6d9ada09317dd2990, type: 2}
+  - {fileID: 11400000, guid: 12985aa93e3b74b4d9c869527355e428, type: 2}
+  Base_SandRoad_Tier1_01_Tile: {fileID: 11400000, guid: 18e0eac0237fc4db48bed8f0600fd6ec, type: 2}
+  SandRoad_Tier1_01_Tile_Array:
+  - {fileID: 11400000, guid: 18e0eac0237fc4db48bed8f0600fd6ec, type: 2}
+  - {fileID: 11400000, guid: 4c530e73ca2764e3a8426f786cb4fb9c, type: 2}
+  - {fileID: 11400000, guid: 1ad03cdbd67a74090963fa8b757ff92f, type: 2}
+  - {fileID: 11400000, guid: bfec059cb38d2412d97ad8a9f6e87dc9, type: 2}
+  - {fileID: 11400000, guid: 5149612b97b854db68fca7b694eed0a9, type: 2}
+  - {fileID: 11400000, guid: 1980b697ce4844705a4297e4136c5794, type: 2}
+  - {fileID: 11400000, guid: 4aae89b9dd7584d9f9656aa50ee9b8c8, type: 2}
+  - {fileID: 11400000, guid: 34638b44ad7eb48bc9ad53dd967ad827, type: 2}
+  - {fileID: 11400000, guid: 208d8ceab646645b28e9cd778e28e56e, type: 2}
+  - {fileID: 11400000, guid: 1cadf1aa0762f452c82c05e877201a67, type: 2}
+  - {fileID: 11400000, guid: cfd41fa013d5d4a02890b2ecf7df8178, type: 2}
+  - {fileID: 11400000, guid: d18136cab5f3c4855862cf9dadd7a342, type: 2}
+  - {fileID: 11400000, guid: 773a574172b984270b5bbbfddba49d49, type: 2}
+  - {fileID: 11400000, guid: fd85d1e43cb23400195265bd0cf8856c, type: 2}
+  - {fileID: 11400000, guid: 020df4151c5c94578b499102cb9a2b72, type: 2}
+  - {fileID: 11400000, guid: 27e5c6b7de1a54549b9e75aef0dd4dc9, type: 2}
+  Base_CementRoad_Tier1_01_Tile: {fileID: 11400000, guid: 43b59b032a22b4d6a8982e202ba5b403, type: 2}
+  CementRoad_Tier1_01_Tile_Array:
+  - {fileID: 11400000, guid: 43b59b032a22b4d6a8982e202ba5b403, type: 2}
+  - {fileID: 11400000, guid: 4eb5e2e3202474435a3b313da324d995, type: 2}
+  - {fileID: 11400000, guid: d47edf229588144f0b5bb2a467e6d0ae, type: 2}
+  - {fileID: 11400000, guid: ae30d7e0f064540c9b36b0a2ad28360e, type: 2}
+  - {fileID: 11400000, guid: 65e49cd72b48342b98937f799129e3f6, type: 2}
+  - {fileID: 11400000, guid: a079681b3cb85488bb9d214834ee4318, type: 2}
+  - {fileID: 11400000, guid: e9b01ae2edca747ac84c6d34ca8ed0e6, type: 2}
+  - {fileID: 11400000, guid: 0eb840a03a801463d8f8ca2ae99d4bd1, type: 2}
+  - {fileID: 11400000, guid: 72bafdb92e6284e5caf7273389286bab, type: 2}
+  - {fileID: 11400000, guid: e05398124d5cf40d8a9829a654c33489, type: 2}
+  - {fileID: 11400000, guid: bbdfba83a3ef14ee7826bf317a2e295d, type: 2}
+  - {fileID: 11400000, guid: 50c9c756b9c7e40fc9cf7f7a8e145c26, type: 2}
+  - {fileID: 11400000, guid: 83d99443a117841a880ab2a70a2f8e17, type: 2}
+  - {fileID: 11400000, guid: db23207ca7020430b83d4e7b43022ed6, type: 2}
+  - {fileID: 11400000, guid: 18ee54312a272436dbee1da8d70a9175, type: 2}
+  - {fileID: 11400000, guid: 530e63756c611490e8aee98f38062014, type: 2}
+  Base_DesertRoad_Tier1_01_Tile: {fileID: 11400000, guid: 46a0b442e1da44cbd9ede96d83b8aaec, type: 2}
+  DesertRoad_Tier1_01_Tile_Array:
+  - {fileID: 11400000, guid: 46a0b442e1da44cbd9ede96d83b8aaec, type: 2}
+  - {fileID: 11400000, guid: f92e907ddcc7e480abbb6f8e5c5f9519, type: 2}
+  - {fileID: 11400000, guid: e65582235d9884f5aa949b814651c4c1, type: 2}
+  - {fileID: 11400000, guid: def9956e5d796476f9160f816409b7f1, type: 2}
+  - {fileID: 11400000, guid: 2aca230561aa446c3824578d5a708325, type: 2}
+  - {fileID: 11400000, guid: b665b62b963004a3fa4b5451680635d1, type: 2}
+  - {fileID: 11400000, guid: 4e9205ce475d240c39203f9f450c5f76, type: 2}
+  - {fileID: 11400000, guid: 0354310dd30a24d17b9858f77b276bc7, type: 2}
+  - {fileID: 11400000, guid: 77458ef3244bd47529ca5061d685efc5, type: 2}
+  - {fileID: 11400000, guid: 458a7b7abf2c84e488a81b86f5a65ebc, type: 2}
+  - {fileID: 11400000, guid: f59a987b4a09a4eb5a0e342abc7110c1, type: 2}
+  - {fileID: 11400000, guid: b750bebef4551454595f1d87f81d8015, type: 2}
+  - {fileID: 11400000, guid: e1383ff6200084b15be39cf2514d375f, type: 2}
+  - {fileID: 11400000, guid: 47e505b0c7fea489b922672e3e685d41, type: 2}
+  - {fileID: 11400000, guid: bf06b006cb50e44f7999164fbc6e200c, type: 2}
+  - {fileID: 11400000, guid: 528a73813dee74c66928e9a092744aca, type: 2}
+  Base_SwampRoad_Tier1_01_Tile: {fileID: 11400000, guid: c6d6d35164f674ef580bf921eeb6971a, type: 2}
+  SwampRoad_Tier1_01_Tile_Array:
+  - {fileID: 11400000, guid: c6d6d35164f674ef580bf921eeb6971a, type: 2}
+  - {fileID: 11400000, guid: fc512c251b12747b4bc28504ec8578e1, type: 2}
+  - {fileID: 11400000, guid: d6f81b1451a7c45a68c7ab174d12548c, type: 2}
+  - {fileID: 11400000, guid: 15bc64efa2ba940f489eef2a8264d7de, type: 2}
+  - {fileID: 11400000, guid: 1ee0855ea786a43eb9d842124bb204f0, type: 2}
+  - {fileID: 11400000, guid: 2f3027c59e1d24e21922deb0c71801ea, type: 2}
+  - {fileID: 11400000, guid: 9866e392a29074abcb6e47652702095a, type: 2}
+  - {fileID: 11400000, guid: 7fee96fbc3865499c8e95857b1f8aec4, type: 2}
+  - {fileID: 11400000, guid: 575592b5adcf64374a2a505a4a0a0262, type: 2}
+  - {fileID: 11400000, guid: 332b0e38521324d0e99385eb1e292aea, type: 2}
+  - {fileID: 11400000, guid: 65539007d0be147de97d740a3ab8c215, type: 2}
+  - {fileID: 11400000, guid: 0e1af49f0d44f4da8b1d02d06f6bfd07, type: 2}
+  - {fileID: 11400000, guid: 858a03e4ad6634ff68cd042cce429ae5, type: 2}
+  - {fileID: 11400000, guid: 11cf92be2e9ec46cf9c1074bcc139789, type: 2}
+  - {fileID: 11400000, guid: b19eb1b996a384159911b11c9b8d2a2c, type: 2}
+  - {fileID: 11400000, guid: 1898be0b7d161427da51fecb659c5e94, type: 2}
+  Base_GrassRoad_Tier1_01_Tile: {fileID: 11400000, guid: 11c8333b069c24b03a72421d016c6c0e, type: 2}
+  GrassRoad_Tier1_01_Tile_Array:
+  - {fileID: 11400000, guid: 11c8333b069c24b03a72421d016c6c0e, type: 2}
+  - {fileID: 11400000, guid: 1a0ab32a5bd9c4954a4e0c2a22887d74, type: 2}
+  - {fileID: 11400000, guid: b1d47962a7715410791d207a0a0ac5c3, type: 2}
+  - {fileID: 11400000, guid: 0f20824b877494ffd835ae753938398a, type: 2}
+  - {fileID: 11400000, guid: 6c7ed3bd9a2f04c4ead4a06a43315687, type: 2}
+  - {fileID: 11400000, guid: fea88b5a3056b4514b2508038c5d790a, type: 2}
+  - {fileID: 11400000, guid: 26dda052b91c14f99af3b06b9872fbc9, type: 2}
+  - {fileID: 11400000, guid: e5f204c72389a41519b7647e3c02ffe0, type: 2}
+  - {fileID: 11400000, guid: 59483a3bada9141d5ae6fd0c9efa5cf7, type: 2}
+  - {fileID: 11400000, guid: 351d069c788c5476781174369a650fff, type: 2}
+  - {fileID: 11400000, guid: 88a311b6e62b04851b45899f4beff1e9, type: 2}
+  - {fileID: 11400000, guid: dfdd6a828b01b4a9584837f6955db27a, type: 2}
+  - {fileID: 11400000, guid: bf508e6dad32c4a71b8e4c4990cc6557, type: 2}
+  - {fileID: 11400000, guid: 9c3977578010743acb4c1ba40a109a83, type: 2}
+  - {fileID: 11400000, guid: a9803c835ea9640b88ebd9e5d18edbe6, type: 2}
+  - {fileID: 11400000, guid: e5fb91ab74f9f45dcb0cb74cf4ba7cbb, type: 2}
+  Base_TundraRoad_Tier1_01_Tile: {fileID: 11400000, guid: caa1bb25b64aa4d10aa3d723a04f52c6, type: 2}
+  TundraRoad_Tier1_01_Tile_Array:
+  - {fileID: 11400000, guid: caa1bb25b64aa4d10aa3d723a04f52c6, type: 2}
+  - {fileID: 11400000, guid: fefb078ffe4f744cea4dd4c49904dc40, type: 2}
+  - {fileID: 11400000, guid: 1c264cb6c92c246d79eb78a144af443d, type: 2}
+  - {fileID: 11400000, guid: 6372f71e9d03c4609a258adf36659bec, type: 2}
+  - {fileID: 11400000, guid: 5810fd597c1db40c4a78a46a7da2a83e, type: 2}
+  - {fileID: 11400000, guid: 86ef8434bf99f46a4b920019981d4175, type: 2}
+  - {fileID: 11400000, guid: d31798137d8eb41af8c030f5b148e513, type: 2}
+  - {fileID: 11400000, guid: 8fc0120b756f34796b2929db5b679417, type: 2}
+  - {fileID: 11400000, guid: 8de2dcd704a71440b94e3056be6f9295, type: 2}
+  - {fileID: 11400000, guid: d81debda4861348dbbf9c78cf3afbe2a, type: 2}
+  - {fileID: 11400000, guid: 5e14a134ff5cb41c69ba590851203c64, type: 2}
+  - {fileID: 11400000, guid: bdcd7cb48b6614b7a8586dac0cfc4f27, type: 2}
+  - {fileID: 11400000, guid: 255847d2082444a23b99e964d49bc0fd, type: 2}
+  - {fileID: 11400000, guid: b3854028f7704452d9ee6f9774ee7881, type: 2}
+  - {fileID: 11400000, guid: f6222cd98ff534ebfad795263f63fc59, type: 2}
+  - {fileID: 11400000, guid: db7b58a764e5c44d88cb510f4a85f87d, type: 2}
+  Base_SwampRiver_01_Tile: {fileID: 11400000, guid: 32068e4a8ba324c618eae57877602d5e, type: 2}
+  SwampRiver_01_Tile_Array:
+  - {fileID: 11400000, guid: 32068e4a8ba324c618eae57877602d5e, type: 2}
+  - {fileID: 11400000, guid: 098eb9078d926466582a6e6ff7545cec, type: 2}
+  - {fileID: 11400000, guid: ff0e062cc899e4325b0974b2d2493035, type: 2}
+  - {fileID: 11400000, guid: 422a21fe9804b43a7a57809d72f1572b, type: 2}
+  - {fileID: 11400000, guid: ba90021a8ce8c4a2ea465e861a4ec02c, type: 2}
+  - {fileID: 11400000, guid: 367186ea59f2b4e0aa99b0b8dfb27a70, type: 2}
+  - {fileID: 11400000, guid: 09fc2e2233df14a588410fcf4a04fb7a, type: 2}
+  - {fileID: 11400000, guid: 547447490b8a4480fba90458afa1b08d, type: 2}
+  - {fileID: 11400000, guid: 11d6d17e043a14aa1a652f100f156e06, type: 2}
+  - {fileID: 11400000, guid: fd7d26e6781644727831ff3049c12cf8, type: 2}
+  - {fileID: 11400000, guid: 709133a62557d462aa2db2d1196d9a83, type: 2}
+  - {fileID: 11400000, guid: a75ce5f600b3e483487ddbbfe907ac6c, type: 2}
+  - {fileID: 11400000, guid: ac8baa1d572b840c496c1213bcdd1fe5, type: 2}
+  - {fileID: 11400000, guid: e410bc5d1de2549bd9e95e3ba12368d3, type: 2}
+  - {fileID: 11400000, guid: c7f624e3028fd4bebac907e74f79907e, type: 2}
+  - {fileID: 11400000, guid: e7540b65ff7554e64bae91d3e37bd78c, type: 2}
+  Base_LavaRiver_01_Tile: {fileID: 11400000, guid: 90b235a65ce6e4b05a3ff1917b7bfdf0, type: 2}
+  LavaRiver_01_Tile_Array:
+  - {fileID: 11400000, guid: 90b235a65ce6e4b05a3ff1917b7bfdf0, type: 2}
+  - {fileID: 11400000, guid: 0ed5af227fecc43a68e734023752022d, type: 2}
+  - {fileID: 11400000, guid: 6e08834834151415f9c7972c59365ce1, type: 2}
+  - {fileID: 11400000, guid: 5f39d70eae5c84822ba6ad52529c4b22, type: 2}
+  - {fileID: 11400000, guid: 4af0323f2e8e34004990c76340c1d7db, type: 2}
+  - {fileID: 11400000, guid: d34e1cf9f402c42aaa82bc62b0d74ef6, type: 2}
+  - {fileID: 11400000, guid: 53219b05e83c548368f792e85624d698, type: 2}
+  - {fileID: 11400000, guid: 4dae256a95b85432aa03abd4146cd80a, type: 2}
+  - {fileID: 11400000, guid: 313af8cbec4df46ff86b2a07197d55b4, type: 2}
+  - {fileID: 11400000, guid: 1a7369dab01f2435e83c509e9949b277, type: 2}
+  - {fileID: 11400000, guid: 53a3fa2c9c662467e89d4bef0c3d2493, type: 2}
+  - {fileID: 11400000, guid: 08c8a22a1f9ee4a368969e626b2ced86, type: 2}
+  - {fileID: 11400000, guid: 49963bb785dde42bdb9f778b7fc7d012, type: 2}
+  - {fileID: 11400000, guid: 2a90f7c0df6e8431782c34db64f3ae17, type: 2}
+  - {fileID: 11400000, guid: 1df604fcacb7c4c2196d4eb7b4edc3a6, type: 2}
+  - {fileID: 11400000, guid: 97141f493f55e421ba6f5a16c835e5c0, type: 2}
+  Base_BlightedRiver_01_Tile: {fileID: 11400000, guid: be07792f755d84a44ba2ef56186cfd3f, type: 2}
+  BlightedRiver_01_Tile_Array:
+  - {fileID: 11400000, guid: be07792f755d84a44ba2ef56186cfd3f, type: 2}
+  - {fileID: 11400000, guid: 82da26369e0e240618bf24f0158c8356, type: 2}
+  - {fileID: 11400000, guid: 9baed265127904d96aa77169f171b66e, type: 2}
+  - {fileID: 11400000, guid: dbfa1bed9f1ac464e9437cdad33c84ab, type: 2}
+  - {fileID: 11400000, guid: 30e313757976c4b9f833dcb4b9d41091, type: 2}
+  - {fileID: 11400000, guid: ffd9f2ac273e5474f9a27884dced75d4, type: 2}
+  - {fileID: 11400000, guid: 5aeb0193513e84e2ebbe4b74aca66a08, type: 2}
+  - {fileID: 11400000, guid: c2b61056d36bf4ce7bde20e3b45cd559, type: 2}
+  - {fileID: 11400000, guid: c41e5d0361e1f4940bf63b832a3ab27e, type: 2}
+  - {fileID: 11400000, guid: 8547d32f964c74cc1bffe9a6651e5335, type: 2}
+  - {fileID: 11400000, guid: 33772c5e3e8274d6cb12781ac388fb89, type: 2}
+  - {fileID: 11400000, guid: 90604d2acd4254cebb79328874a3e09f, type: 2}
+  - {fileID: 11400000, guid: 605bda29d5bb8428fb00e8a5d428f88e, type: 2}
+  - {fileID: 11400000, guid: ef375302a249641e39667c7c0d532054, type: 2}
+  - {fileID: 11400000, guid: 49bafea17e7f94a20ac2a68527ef1445, type: 2}
+  - {fileID: 11400000, guid: c15f0b9f07dd94fc7a5c97445ce94186, type: 2}
+  Base_SmallMagmaRiver_01_Tile: {fileID: 11400000, guid: aec3a5292cf124630bf28ab0b60f2fa1, type: 2}
+  SmallMagmaRiver_01_Tile_Array:
+  - {fileID: 11400000, guid: aec3a5292cf124630bf28ab0b60f2fa1, type: 2}
+  - {fileID: 11400000, guid: 321d566449ccb49d0aa1af44604eb3d5, type: 2}
+  - {fileID: 11400000, guid: 47778ab8c3f674e38921b66cfb755dd6, type: 2}
+  - {fileID: 11400000, guid: 1fac9104d5ca4478ab82800b27983471, type: 2}
+  - {fileID: 11400000, guid: ce5775a0d4c1d4e7794a8de926bbe0f9, type: 2}
+  - {fileID: 11400000, guid: 4a977361e919b428eaafe871468bae93, type: 2}
+  - {fileID: 11400000, guid: b7c8e27171ff1419aacd6cfa01e5af4f, type: 2}
+  - {fileID: 11400000, guid: 08419c50804174ca7b899c268905b232, type: 2}
+  - {fileID: 11400000, guid: 3aa890450dda64d71bf0b9de45cf97ac, type: 2}
+  - {fileID: 11400000, guid: cb50a645ab0c444049e1354d7af9326e, type: 2}
+  - {fileID: 11400000, guid: 8e249abe5675944a08a41e74a8e28124, type: 2}
+  - {fileID: 11400000, guid: 4dd847d2d0a0342a493d477b422a3949, type: 2}
+  - {fileID: 11400000, guid: 8e196d89794554c64888c79cfa1f7aed, type: 2}
+  - {fileID: 11400000, guid: 36af8d67432b74980bcdc54f1f1f7bec, type: 2}
+  - {fileID: 11400000, guid: e268a89bedd1e4561ae565c1a77de780, type: 2}
+  - {fileID: 11400000, guid: 7c48887b80faf4453bc59e98c8de9418, type: 2}
+  Base_TundraOcean_01_Tile: {fileID: 11400000, guid: ef5c259c7a8a147a089f0cfdd1200fef, type: 2}
+  TundraOcean_01_Tile_Array:
+  - {fileID: 11400000, guid: ef5c259c7a8a147a089f0cfdd1200fef, type: 2}
+  - {fileID: 11400000, guid: f99d1a34b8ffc482585ebd72711d03f7, type: 2}
+  - {fileID: 11400000, guid: 4a058c92c9cdd4be192ff08d299de494, type: 2}
+  - {fileID: 11400000, guid: 04f33b7ea1b8b46799d7e0060c5191b1, type: 2}
+  - {fileID: 11400000, guid: b76c2e6eae3cd4f63a7594f107368ed3, type: 2}
+  - {fileID: 11400000, guid: 715e40fd3d077481baac5a1cd21dd92a, type: 2}
+  - {fileID: 11400000, guid: 998c6cc6c5606490bace07fb295ac471, type: 2}
+  - {fileID: 11400000, guid: a4803e737dc3d4ab39d4923b35f508a3, type: 2}
+  - {fileID: 11400000, guid: df168166b0f03483d8026bb16f3286b4, type: 2}
+  - {fileID: 11400000, guid: e79bf85fa53534d91a592dce5022a869, type: 2}
+  - {fileID: 11400000, guid: 26b8be5688ed34f95b4e67f2e3e620f7, type: 2}
+  - {fileID: 11400000, guid: b7e93475a1e904a1ca192196d859c7f0, type: 2}
+  - {fileID: 11400000, guid: a5cc69db3fc9f4dcf855e75b437f4026, type: 2}
+  - {fileID: 11400000, guid: df611bcf658bc4b79a1e89bc0528b94c, type: 2}
+  - {fileID: 11400000, guid: 688bedef775b1467a8fdc5d69c845ebf, type: 2}
+  - {fileID: 11400000, guid: 770d53b8dce3241d3891e7696f6c2991, type: 2}
+  Base_GrassOcean_01_Tile: {fileID: 11400000, guid: b672319a5c8bc40c5bfe64fee616cf23, type: 2}
+  GrassOcean_01_Tile_Array:
+  - {fileID: 11400000, guid: b672319a5c8bc40c5bfe64fee616cf23, type: 2}
+  - {fileID: 11400000, guid: 2ec1cdc060f45445db198d3a1946ee22, type: 2}
+  - {fileID: 11400000, guid: eaeaac6fc2b0a4c3c862fe03361847d3, type: 2}
+  - {fileID: 11400000, guid: e1f9fd230aa184ab3bdcb60645232e9c, type: 2}
+  - {fileID: 11400000, guid: fb8b49d4bb8bd4235b95395cc4e8e3ce, type: 2}
+  - {fileID: 11400000, guid: cdf145afa40be4bf088c9fa6c755980b, type: 2}
+  - {fileID: 11400000, guid: d968c6ab0b62345fba98ea70c31bb84f, type: 2}
+  - {fileID: 11400000, guid: 94d6079ce12ee4b2981d2dc8c177b7fd, type: 2}
+  - {fileID: 11400000, guid: 1be0f89f18c414e9bba2f70e4f748743, type: 2}
+  - {fileID: 11400000, guid: cd2ef478a9d0740408be5c6c2cd686cd, type: 2}
+  - {fileID: 11400000, guid: bad844791adc64bbe824f1f4d97edc12, type: 2}
+  - {fileID: 11400000, guid: 25bef9690467644fbaf731bb0a6695a9, type: 2}
+  - {fileID: 11400000, guid: dce1a6eb424b84149b3b52fd37eda301, type: 2}
+  - {fileID: 11400000, guid: c1d383780a0ac47aa98f1430c76d0813, type: 2}
+  - {fileID: 11400000, guid: 1ca2bf6c9f0764f0384c4c07bd13b443, type: 2}
+  - {fileID: 11400000, guid: e44341679f485464e9bb03847072fb9f, type: 2}
+  Base_SwampOcean_01_Tile: {fileID: 11400000, guid: c412a06959eee4967841da1eab6c32b1, type: 2}
+  SwampOcean_01_Tile_Array:
+  - {fileID: 11400000, guid: c412a06959eee4967841da1eab6c32b1, type: 2}
+  - {fileID: 11400000, guid: 46ec6de94323e4cb0aaa144b9fcbb753, type: 2}
+  - {fileID: 11400000, guid: e2e5873b1effb4d5ca1691eebc8d0962, type: 2}
+  - {fileID: 11400000, guid: e095e6aa6aea7470abcecd82626a3788, type: 2}
+  - {fileID: 11400000, guid: b6a3beb8a8c034b8b8761e3ce135076e, type: 2}
+  - {fileID: 11400000, guid: 7ed7b8dec345b4ed2b5e3a40b59dfdc2, type: 2}
+  - {fileID: 11400000, guid: 4d1224e35bc8b46cf848fd6b17ae5c16, type: 2}
+  - {fileID: 11400000, guid: f566ba1efb94140a8a99c4c6eae05841, type: 2}
+  - {fileID: 11400000, guid: d903466d12e2745448fb16068a8fdcae, type: 2}
+  - {fileID: 11400000, guid: 24ba2fc91920447adab7ea1279fa5dd9, type: 2}
+  - {fileID: 11400000, guid: dc2ac5b73f50543078d1254dcc2cab8e, type: 2}
+  - {fileID: 11400000, guid: 2acf25c4875dd49ecb23d8a247bb8629, type: 2}
+  - {fileID: 11400000, guid: 680fdab1594f945d0bff62cfeacbedc1, type: 2}
+  - {fileID: 11400000, guid: 29087680bba1a4d0fa9a8b10ed003caf, type: 2}
+  - {fileID: 11400000, guid: c2f92bdc8796c4e71b59aad0dd64ee5b, type: 2}
+  - {fileID: 11400000, guid: 8cc11416894da43e68480243dbcb916c, type: 2}
+  Base_DesertOcean_01_Tile: {fileID: 11400000, guid: 68998bbda386e4385852ab43ad92ac22, type: 2}
+  DesertOcean_01_Tile_Array:
+  - {fileID: 11400000, guid: 68998bbda386e4385852ab43ad92ac22, type: 2}
+  - {fileID: 11400000, guid: 7434f7e2b84914ad79dda85cccefb0e4, type: 2}
+  - {fileID: 11400000, guid: 1edde2d7270994cd1a9d9930265ca831, type: 2}
+  - {fileID: 11400000, guid: 945502de3c1834e2d89422056f9a879d, type: 2}
+  - {fileID: 11400000, guid: e8e967282495445c1809bea5f01f7910, type: 2}
+  - {fileID: 11400000, guid: f08f6de7c6c0c4c3791ed057793aaf7c, type: 2}
+  - {fileID: 11400000, guid: 905b4ca3d30af47e5ad18cfdeb2c158f, type: 2}
+  - {fileID: 11400000, guid: 42985d1be435d475daf618a5e478d2d4, type: 2}
+  - {fileID: 11400000, guid: f1721d319c434425ebab2beae3ab0f3a, type: 2}
+  - {fileID: 11400000, guid: 43f62c74d2fdd4c2ba28cf6ab6c5bc93, type: 2}
+  - {fileID: 11400000, guid: 9d45fcf111c244e228b3b3c750c73ea9, type: 2}
+  - {fileID: 11400000, guid: 6d3a33b3da6d444539aa88b7b3ae7242, type: 2}
+  - {fileID: 11400000, guid: 85a5c5c89ca71454a9adb258a6fe540c, type: 2}
+  - {fileID: 11400000, guid: 6b1572404c091495aba661ffe837e1e1, type: 2}
+  - {fileID: 11400000, guid: 159329a0b04fd475ea9b64c378af9f7e, type: 2}
+  - {fileID: 11400000, guid: be712d2238da04d73a55a515132049ca, type: 2}
+  Base_VolcanicOcean_01_Tile: {fileID: 11400000, guid: e61bdffc43e2247399f3b19b94009bc4, type: 2}
+  VolcanicOcean_01_Tile_Array:
+  - {fileID: 11400000, guid: e61bdffc43e2247399f3b19b94009bc4, type: 2}
+  - {fileID: 11400000, guid: ccdf8220e36b64d60b76926eb6b88ee6, type: 2}
+  - {fileID: 11400000, guid: 3170e35c51fa44c128e6d3c10111825c, type: 2}
+  - {fileID: 11400000, guid: 2952aa615aa0147a4b890aad9dfd501a, type: 2}
+  - {fileID: 11400000, guid: d0e4df1df1b934c0f8c4cedfa3662339, type: 2}
+  - {fileID: 11400000, guid: 17241fcf09a52474992a2462d9dfb093, type: 2}
+  - {fileID: 11400000, guid: 58e26048ff6ac4a1881d6caf770a914e, type: 2}
+  - {fileID: 11400000, guid: 06a59207c578847498321463b27d8686, type: 2}
+  - {fileID: 11400000, guid: 6cff7719ee08e4f3c9ff0478417b8479, type: 2}
+  - {fileID: 11400000, guid: 14d1429156993437babce5ca3f972a89, type: 2}
+  - {fileID: 11400000, guid: f9eb4b9d12fec4926928178b0318c68f, type: 2}
+  - {fileID: 11400000, guid: 9a919dc39f11544a39db83b1a84bfe19, type: 2}
+  - {fileID: 11400000, guid: 12106bef5df53482f94c4320f9562872, type: 2}
+  - {fileID: 11400000, guid: 1bcfdae3232834d6e97bc814adcad69e, type: 2}
+  - {fileID: 11400000, guid: 6663849fb1f9b4e128ba508cbe5a7524, type: 2}
+  - {fileID: 11400000, guid: 465a4052f339c4025aae2a1467bb9ea8, type: 2}
+  Base_BlightedOcean_01_Tile: {fileID: 11400000, guid: 5fcab3efb35674015a9995a2769cc30a, type: 2}
+  BlightedOcean_01_Tile_Array:
+  - {fileID: 11400000, guid: 5fcab3efb35674015a9995a2769cc30a, type: 2}
+  - {fileID: 11400000, guid: 040b53831c4a249648fa544e8bd00373, type: 2}
+  - {fileID: 11400000, guid: 7231e10ebc52d4333904d4e19ed1db3a, type: 2}
+  - {fileID: 11400000, guid: 13a9f4d17472e4b32924a77b51ce27ce, type: 2}
+  - {fileID: 11400000, guid: 6fc57d1bc1ccc47268894c06724e22e5, type: 2}
+  - {fileID: 11400000, guid: 71da5a5006ddb4928b48cb7da1e26d3e, type: 2}
+  - {fileID: 11400000, guid: 358db44eb9bb343279f08c508ffd2de7, type: 2}
+  - {fileID: 11400000, guid: d081e95ee87b7475e851594faa6453b6, type: 2}
+  - {fileID: 11400000, guid: c5f95990b1bcb4f459da1aad11660be6, type: 2}
+  - {fileID: 11400000, guid: e4616dc83498a4574bbc79b2d35bcc9f, type: 2}
+  - {fileID: 11400000, guid: 76a416f56ccaa4c9a8a861d95d80237c, type: 2}
+  - {fileID: 11400000, guid: e0c80861efb9b4e38b57cb0f43c83994, type: 2}
+  - {fileID: 11400000, guid: f67a0dde6bc474297823e785a20b1821, type: 2}
+  - {fileID: 11400000, guid: ec611f597b0f64f7795d6d6baab9a84e, type: 2}
+  - {fileID: 11400000, guid: 76531a90e7923475a85a6577a9381293, type: 2}
+  - {fileID: 11400000, guid: 64f25eb9da35e4935836e42c319f4353, type: 2}
+  Base_MetalWorldOcean_01_Tile: {fileID: 11400000, guid: d0ab4a6792147cb4b8d109e28c088ea2, type: 2}
+  MetalWorldOcean_01_Tile_Array:
+  - {fileID: 11400000, guid: d0ab4a6792147cb4b8d109e28c088ea2, type: 2}
+  - {fileID: 11400000, guid: d2eb47ff14831a64093eab3e34b5d969, type: 2}
+  - {fileID: 11400000, guid: a5d726a44837b9d48a10e514fc5cbbcd, type: 2}
+  - {fileID: 11400000, guid: 7c12236edf09fc64e962157b0240e64f, type: 2}
+  - {fileID: 11400000, guid: 46e01f66cc50c0148b55308f701fb472, type: 2}
+  - {fileID: 11400000, guid: d5fd6680f89b8c54a8f7709055d12581, type: 2}
+  - {fileID: 11400000, guid: 79604864282122047bf3fd7fdeecfcda, type: 2}
+  - {fileID: 11400000, guid: 9ffc96c3f35a0cc4d9e48c9b05e8c358, type: 2}
+  - {fileID: 11400000, guid: 87b846ef153e9a443b97cec8ca8f64c0, type: 2}
+  - {fileID: 11400000, guid: 3a24f37329fdb9748902419870cb7aad, type: 2}
+  - {fileID: 11400000, guid: 2381cf62921142e489a3c0f27a2366a8, type: 2}
+  - {fileID: 11400000, guid: 4ec87bd587c47544da361c2031a0bc2d, type: 2}
+  - {fileID: 11400000, guid: be7c75588edeec64997a4e28e3d513d4, type: 2}
+  - {fileID: 11400000, guid: 11d56e3c8dc94854c94feaead5af8c71, type: 2}
+  - {fileID: 11400000, guid: 3c90b72e4c9d0e643985588e5c66a277, type: 2}
+  - {fileID: 11400000, guid: ffd0b117dd840394bb6ae670dacbd21a, type: 2}
+  Display_Tileset: 0
+  Camera_BackgroundColor: {r: 0.254717, g: 0.254717, b: 0.254717, a: 0}
+  TilesToDisplay_AsSet_List:
+  - {fileID: 11400000, guid: d750837217689486fbd893d4fb784a5f, type: 2}
+  - {fileID: 11400000, guid: 8c50a620d225843599f7be4620f47d26, type: 2}
+  - {fileID: 11400000, guid: 977c0dcf4c5894d1995498d2d62db4ff, type: 2}
+  - {fileID: 11400000, guid: 8a635358ee7bf4973878a8abff07e866, type: 2}
+  - {fileID: 11400000, guid: 32c6a91e5f88d475191e7b0b75fe9d18, type: 2}
+  - {fileID: 11400000, guid: fae58341b4628460a9837c5e0cd1e906, type: 2}
+  - {fileID: 11400000, guid: 47397c90305cf410c8793b046878832e, type: 2}
+  - {fileID: 11400000, guid: bf854597769a344d197db61b995cbcce, type: 2}
+  WorldGenComplete: 0
+  RiverAndRoad_Bots: []
+  Process_RiverAndRoadBot_Activities: 0
+--- !u!1 &1968351353159364427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7444331835576630462}
+  - component: {fileID: 5332697044084280010}
+  - component: {fileID: 4257096732605825535}
+  m_Layer: 0
+  m_Name: isoUniv_Tilemap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7444331835576630462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968351353159364427}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1503027835255588351}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1839735485 &5332697044084280010
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968351353159364427}
+  m_Enabled: 1
+  m_Tiles: {}
+  m_AnimatedTiles: {}
+  m_TileAssetArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  m_TileMatrixArray:
+  - m_RefCount: 0
+    m_Data:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_TileColorArray:
+  - m_RefCount: 0
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
+  m_TileObjectToInstantiateArray: []
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: -11, y: -19, z: 0}
+  m_Size: {x: 61, y: 24, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!483693784 &4257096732605825535
+TilemapRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968351353159364427}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_ChunkSize: {x: 32, y: 32, z: 32}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_MaxChunkCount: 16
+  m_MaxFrameAge: 16
+  m_SortOrder: 3
+  m_Mode: 1
+  m_DetectChunkCullingBounds: 0
+  m_MaskInteraction: 0
+--- !u!1 &2643878186134567011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618467208198645438}
+  - component: {fileID: 8238821829449573764}
+  m_Layer: 0
+  m_Name: SwampOcean_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1618467208198645438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643878186134567011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8238821829449573764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643878186134567011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: c412a06959eee4967841da1eab6c32b1, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: c412a06959eee4967841da1eab6c32b1, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2
+--- !u!1 &2681954711003664293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6910982649986960129}
+  - component: {fileID: 5313163219234941305}
+  m_Layer: 0
+  m_Name: Desert_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6910982649986960129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681954711003664293}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5313163219234941305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681954711003664293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  - {fileID: 11400000, guid: 6a1fd0701732543dbaa8dc9238a579df, type: 2}
+  - {fileID: 11400000, guid: fce7fe2a339094617bc281c83e177dd8, type: 2}
+  - {fileID: 11400000, guid: 5155ca0bbb5954fcf932ea342ca70bd5, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  - {fileID: 11400000, guid: 6a1fd0701732543dbaa8dc9238a579df, type: 2}
+  - {fileID: 11400000, guid: fce7fe2a339094617bc281c83e177dd8, type: 2}
+  - {fileID: 11400000, guid: 5155ca0bbb5954fcf932ea342ca70bd5, type: 2}
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  - {fileID: 11400000, guid: 6a1fd0701732543dbaa8dc9238a579df, type: 2}
+  - {fileID: 11400000, guid: 64d706ae30c0a4292b71f904e79cdd87, type: 2}
+  - {fileID: 11400000, guid: 3b4c1dae96aa4483aba923ac6bbe1249, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  - {fileID: 11400000, guid: 6a1fd0701732543dbaa8dc9238a579df, type: 2}
+  - {fileID: 11400000, guid: fce7fe2a339094617bc281c83e177dd8, type: 2}
+  - {fileID: 11400000, guid: 5155ca0bbb5954fcf932ea342ca70bd5, type: 2}
+  - {fileID: 11400000, guid: 92ef0b89da5914614a17278f56494eb5, type: 2}
+  - {fileID: 11400000, guid: f2c42e03817e04d08b078792d31466fc, type: 2}
+  - {fileID: 11400000, guid: 64d706ae30c0a4292b71f904e79cdd87, type: 2}
+  - {fileID: 11400000, guid: 3b4c1dae96aa4483aba923ac6bbe1249, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  - {fileID: 11400000, guid: 6a1fd0701732543dbaa8dc9238a579df, type: 2}
+  - {fileID: 11400000, guid: fce7fe2a339094617bc281c83e177dd8, type: 2}
+  - {fileID: 11400000, guid: 5155ca0bbb5954fcf932ea342ca70bd5, type: 2}
+  - {fileID: 11400000, guid: 92ef0b89da5914614a17278f56494eb5, type: 2}
+  - {fileID: 11400000, guid: f2c42e03817e04d08b078792d31466fc, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 446ada05c66334ae2884452b312c80e7, type: 2}
+  - {fileID: 11400000, guid: 647011fd418b0435791451ab1360ba57, type: 2}
+  - {fileID: 11400000, guid: f44c5d89d918c4af49efe969532f2fdb, type: 2}
+  - {fileID: 11400000, guid: 7764ec30dfeb7459b9d85cfa294c1eee, type: 2}
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: f0f4b6a3e7c2440a88e127fec0d114bd, type: 2}
+  - {fileID: 11400000, guid: 022d9ef7ccc9643d0b5a44524d1c0586, type: 2}
+  - {fileID: 11400000, guid: 99233b2219cc748f4843d3cca9c89ee9, type: 2}
+  - {fileID: 11400000, guid: 14e7dbe8c555b49f898a9a9d5e8e4b31, type: 2}
+  - {fileID: 11400000, guid: 446ada05c66334ae2884452b312c80e7, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: 446ada05c66334ae2884452b312c80e7, type: 2}
+  - {fileID: 11400000, guid: 647011fd418b0435791451ab1360ba57, type: 2}
+  - {fileID: 11400000, guid: f44c5d89d918c4af49efe969532f2fdb, type: 2}
+  - {fileID: 11400000, guid: 7764ec30dfeb7459b9d85cfa294c1eee, type: 2}
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: b5667ad9113ed40ce838ec9d6fb0d2a3, type: 2}
+  - {fileID: 11400000, guid: 6a1fd0701732543dbaa8dc9238a579df, type: 2}
+  - {fileID: 11400000, guid: fce7fe2a339094617bc281c83e177dd8, type: 2}
+  - {fileID: 11400000, guid: 5155ca0bbb5954fcf932ea342ca70bd5, type: 2}
+  - {fileID: 11400000, guid: 92ef0b89da5914614a17278f56494eb5, type: 2}
+  - {fileID: 11400000, guid: f2c42e03817e04d08b078792d31466fc, type: 2}
+  - {fileID: 11400000, guid: 64d706ae30c0a4292b71f904e79cdd87, type: 2}
+  - {fileID: 11400000, guid: 3b4c1dae96aa4483aba923ac6bbe1249, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 15
+  ChanceToSpawn_02_RiverBot: 5
+  Biome_River_BaseTile: {fileID: 11400000, guid: 32068e4a8ba324c618eae57877602d5e, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: 2490fa3fc48334f18a82c6f1d88fdce0, type: 2}
+  - {fileID: 11400000, guid: 454ec9e910b17410b9e81f2a56794ac9, type: 2}
+  - {fileID: 11400000, guid: feb53e39f4b7e4d25aa9c934bfdf94a4, type: 2}
+  - {fileID: 11400000, guid: ed9a3174fc6ae40b899c59518dc8ae64, type: 2}
+  - {fileID: 11400000, guid: 64ea8c359da65449a97105dd4f29bc5f, type: 2}
+  - {fileID: 11400000, guid: fbce739f59b944d399c34564b1b8e499, type: 2}
+  - {fileID: 11400000, guid: 972a773d582b54d2b9d480235003f768, type: 2}
+  - {fileID: 11400000, guid: 8bef5eebd41fc4ed6b8fe1b63a7cf13e, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &2736943538839361342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6084667352381965024}
+  - component: {fileID: 7654744539714460676}
+  m_Layer: 0
+  m_Name: RocksAndMountains_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6084667352381965024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736943538839361342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7654744539714460676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2736943538839361342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  - {fileID: 11400000, guid: 7fd2828ce78c2459f81a5a82c315b998, type: 2}
+  - {fileID: 11400000, guid: 3864fe7cc189e4697843351f1aea5158, type: 2}
+  - {fileID: 11400000, guid: 6c43cef9a8f5f4e2d9a2399298144058, type: 2}
+  - {fileID: 11400000, guid: 37d60e7d17c6d469f9f7657995067287, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: 7d05660051716413cbaeccebba6c3e47, type: 2}
+  - {fileID: 11400000, guid: a9048de9e12c54610bd74c97dcbb1e1d, type: 2}
+  - {fileID: 11400000, guid: a5bcd7db1998f4a7ebd01522fc50983f, type: 2}
+  - {fileID: 11400000, guid: be5f4a85dc8a647c496d83ba39767387, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: 7fd2828ce78c2459f81a5a82c315b998, type: 2}
+  - {fileID: 11400000, guid: 3864fe7cc189e4697843351f1aea5158, type: 2}
+  - {fileID: 11400000, guid: 6c43cef9a8f5f4e2d9a2399298144058, type: 2}
+  - {fileID: 11400000, guid: 37d60e7d17c6d469f9f7657995067287, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  - {fileID: 11400000, guid: abf22db9e9cea48f4a01f0d5a8af5bf6, type: 2}
+  - {fileID: 11400000, guid: eda8fe8452fae498ba3202646fa1ba82, type: 2}
+  - {fileID: 11400000, guid: a1a901b2565c64e3eb867315daf1351f, type: 2}
+  - {fileID: 11400000, guid: c28663ecb5345427f87ddd7f0785cebc, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 1
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 11400000, guid: cc17f7f7ff8cc408da8910966bbb7a1f, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &3459664883621236118
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8096572776473768758}
+  m_Layer: 0
+  m_Name: TR_Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8096572776473768758
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459664883621236118}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3803294637763215051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7710117758502914132}
+  m_Layer: 0
+  m_Name: BR_Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7710117758502914132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3803294637763215051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4540461022164782906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209171508793566208}
+  m_Layer: 0
+  m_Name: BL_Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &209171508793566208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4540461022164782906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5372361449152207740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4874009374576722012}
+  - component: {fileID: 7103479731295643067}
+  m_Layer: 0
+  m_Name: TundraOcean_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4874009374576722012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5372361449152207740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7103479731295643067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5372361449152207740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: f99d1a34b8ffc482585ebd72711d03f7, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: ef5c259c7a8a147a089f0cfdd1200fef, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2
+--- !u!1 &5484051880976328995
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2693820162914796186}
+  - component: {fileID: 9078757249523463728}
+  m_Layer: 0
+  m_Name: Tundra_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2693820162914796186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5484051880976328995}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9078757249523463728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5484051880976328995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: 80a4102ffd02c444b94d9bae99297baf, type: 2}
+  - {fileID: 11400000, guid: fe46168544e61444299c43f38f9fc6b6, type: 2}
+  - {fileID: 11400000, guid: 5201b45ba23214b91aa30af0ceab444b, type: 2}
+  - {fileID: 11400000, guid: 76b3751882d904ea78a8850209a42277, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: a45ae0fbe34e24dd2b84022322f41213, type: 2}
+  - {fileID: 11400000, guid: 6b0264cda69e947c1b3f06a5865c4663, type: 2}
+  - {fileID: 11400000, guid: 0af03c544104c4126a637f3f0182c196, type: 2}
+  - {fileID: 11400000, guid: e546621c7a8e84ad09bbac73addabe83, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 11400000, guid: cc17f7f7ff8cc408da8910966bbb7a1f, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &5523776110205743928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539915903221547238}
+  - component: {fileID: 7237812571154160746}
+  m_Layer: 0
+  m_Name: VolcanicOcean_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1539915903221547238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523776110205743928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7237812571154160746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523776110205743928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: e61bdffc43e2247399f3b19b94009bc4, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: e61bdffc43e2247399f3b19b94009bc4, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2
+--- !u!1 &5751844544337198199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4346346391810364594}
+  - component: {fileID: 2945751581333649179}
+  m_Layer: 0
+  m_Name: DesertOcean_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4346346391810364594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751844544337198199}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2945751581333649179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751844544337198199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 68998bbda386e4385852ab43ad92ac22, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 68998bbda386e4385852ab43ad92ac22, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2
+--- !u!1 &5801804571129044479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7462830892745195955}
+  m_Layer: 0
+  m_Name: TL_Transform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7462830892745195955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5801804571129044479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6106215360743226278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8628018047871468651}
+  - component: {fileID: 3610195906362346722}
+  m_Layer: 0
+  m_Name: GrassOcean_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8628018047871468651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106215360743226278}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3610195906362346722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6106215360743226278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: b672319a5c8bc40c5bfe64fee616cf23, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: b672319a5c8bc40c5bfe64fee616cf23, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2
+--- !u!1 &6725133423545544425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2837856174760215992}
+  - component: {fileID: 4240141013525483229}
+  m_Layer: 0
+  m_Name: Volcanic_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2837856174760215992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6725133423545544425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4240141013525483229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6725133423545544425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: c763a1c7a36ca49c0a40d8c531088a85, type: 2}
+  - {fileID: 11400000, guid: 608b9d6f7d3fd461db5008614e56227a, type: 2}
+  - {fileID: 11400000, guid: beff6184feba64c55b7f54fb1e5f12c5, type: 2}
+  - {fileID: 11400000, guid: 410f4f11c6e3446f1914c9fd28d1b91d, type: 2}
+  - {fileID: 11400000, guid: d750837217689486fbd893d4fb784a5f, type: 2}
+  - {fileID: 11400000, guid: 8c50a620d225843599f7be4620f47d26, type: 2}
+  - {fileID: 11400000, guid: 977c0dcf4c5894d1995498d2d62db4ff, type: 2}
+  - {fileID: 11400000, guid: 8a635358ee7bf4973878a8abff07e866, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: d750837217689486fbd893d4fb784a5f, type: 2}
+  - {fileID: 11400000, guid: 8c50a620d225843599f7be4620f47d26, type: 2}
+  - {fileID: 11400000, guid: 977c0dcf4c5894d1995498d2d62db4ff, type: 2}
+  - {fileID: 11400000, guid: 8a635358ee7bf4973878a8abff07e866, type: 2}
+  - {fileID: 11400000, guid: 32c6a91e5f88d475191e7b0b75fe9d18, type: 2}
+  - {fileID: 11400000, guid: fae58341b4628460a9837c5e0cd1e906, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 32c6a91e5f88d475191e7b0b75fe9d18, type: 2}
+  - {fileID: 11400000, guid: fae58341b4628460a9837c5e0cd1e906, type: 2}
+  - {fileID: 11400000, guid: 47397c90305cf410c8793b046878832e, type: 2}
+  - {fileID: 11400000, guid: bf854597769a344d197db61b995cbcce, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: c763a1c7a36ca49c0a40d8c531088a85, type: 2}
+  - {fileID: 11400000, guid: 608b9d6f7d3fd461db5008614e56227a, type: 2}
+  - {fileID: 11400000, guid: beff6184feba64c55b7f54fb1e5f12c5, type: 2}
+  - {fileID: 11400000, guid: 410f4f11c6e3446f1914c9fd28d1b91d, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 32c6a91e5f88d475191e7b0b75fe9d18, type: 2}
+  - {fileID: 11400000, guid: fae58341b4628460a9837c5e0cd1e906, type: 2}
+  - {fileID: 11400000, guid: 47397c90305cf410c8793b046878832e, type: 2}
+  - {fileID: 11400000, guid: bf854597769a344d197db61b995cbcce, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: b19fbb8f9b1074914b6673dd4d5482b6, type: 2}
+  - {fileID: 11400000, guid: f775b2b12650d4700b29e70d1b6c199b, type: 2}
+  - {fileID: 11400000, guid: 6f1959fa46373473e949994320a8e081, type: 2}
+  - {fileID: 11400000, guid: 70c82d7ed989749c3837d7a4d4434e61, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: 32c6a91e5f88d475191e7b0b75fe9d18, type: 2}
+  - {fileID: 11400000, guid: fae58341b4628460a9837c5e0cd1e906, type: 2}
+  - {fileID: 11400000, guid: 523c5edabbfb5473f81e5c58d15e9aaa, type: 2}
+  - {fileID: 11400000, guid: 45de3dee9847d442bac871af2baa166c, type: 2}
+  - {fileID: 11400000, guid: 84f5f4c8305a545ad9c9479be577a001, type: 2}
+  - {fileID: 11400000, guid: 2f60da3611cd8475c8f7d6aacf8011c9, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: d750837217689486fbd893d4fb784a5f, type: 2}
+  - {fileID: 11400000, guid: 8c50a620d225843599f7be4620f47d26, type: 2}
+  - {fileID: 11400000, guid: 977c0dcf4c5894d1995498d2d62db4ff, type: 2}
+  - {fileID: 11400000, guid: 8a635358ee7bf4973878a8abff07e866, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 1
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 5
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 11400000, guid: aec3a5292cf124630bf28ab0b60f2fa1, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: d750837217689486fbd893d4fb784a5f, type: 2}
+  - {fileID: 11400000, guid: 8c50a620d225843599f7be4620f47d26, type: 2}
+  - {fileID: 11400000, guid: 977c0dcf4c5894d1995498d2d62db4ff, type: 2}
+  - {fileID: 11400000, guid: 8a635358ee7bf4973878a8abff07e866, type: 2}
+  - {fileID: 11400000, guid: 32c6a91e5f88d475191e7b0b75fe9d18, type: 2}
+  - {fileID: 11400000, guid: fae58341b4628460a9837c5e0cd1e906, type: 2}
+  - {fileID: 11400000, guid: 47397c90305cf410c8793b046878832e, type: 2}
+  - {fileID: 11400000, guid: bf854597769a344d197db61b995cbcce, type: 2}
+  - {fileID: 11400000, guid: c763a1c7a36ca49c0a40d8c531088a85, type: 2}
+  - {fileID: 11400000, guid: 608b9d6f7d3fd461db5008614e56227a, type: 2}
+  - {fileID: 11400000, guid: beff6184feba64c55b7f54fb1e5f12c5, type: 2}
+  - {fileID: 11400000, guid: 410f4f11c6e3446f1914c9fd28d1b91d, type: 2}
+  - {fileID: 11400000, guid: 71de831ac515a477c9bf3a58b55ed3a2, type: 2}
+  - {fileID: 11400000, guid: e920ef85e34904be091da42970c6074b, type: 2}
+  - {fileID: 11400000, guid: 07668ab3b36c849afb97a6f7653c636c, type: 2}
+  - {fileID: 11400000, guid: 2f171f44a2a3f40ea9cf99a92acdb45e, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &7213574242031538444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3912659916408377335}
+  - component: {fileID: 492005461414690683}
+  m_Layer: 0
+  m_Name: MetalWorldOcean_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3912659916408377335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213574242031538444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &492005461414690683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7213574242031538444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: d0ab4a6792147cb4b8d109e28c088ea2, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: d0ab4a6792147cb4b8d109e28c088ea2, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2
+--- !u!1 &7532496516903316373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3338064665104525005}
+  - component: {fileID: 5077176684703656407}
+  m_Layer: 0
+  m_Name: GreenForest_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3338064665104525005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532496516903316373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5077176684703656407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7532496516903316373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  - {fileID: 11400000, guid: 087403b5b3ee44caf9c28411800e45c8, type: 2}
+  - {fileID: 11400000, guid: 33836e7bfb57e401697d14d5bb31360c, type: 2}
+  - {fileID: 11400000, guid: 4c3ced6e206864e0e99b306b356db391, type: 2}
+  - {fileID: 11400000, guid: 0b0f7ec11c6ad40708e91ffd4cd12fe1, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 087403b5b3ee44caf9c28411800e45c8, type: 2}
+  - {fileID: 11400000, guid: 33836e7bfb57e401697d14d5bb31360c, type: 2}
+  - {fileID: 11400000, guid: 4c3ced6e206864e0e99b306b356db391, type: 2}
+  - {fileID: 11400000, guid: 0b0f7ec11c6ad40708e91ffd4cd12fe1, type: 2}
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 087403b5b3ee44caf9c28411800e45c8, type: 2}
+  - {fileID: 11400000, guid: 33836e7bfb57e401697d14d5bb31360c, type: 2}
+  - {fileID: 11400000, guid: 4c3ced6e206864e0e99b306b356db391, type: 2}
+  - {fileID: 11400000, guid: 0b0f7ec11c6ad40708e91ffd4cd12fe1, type: 2}
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 087403b5b3ee44caf9c28411800e45c8, type: 2}
+  - {fileID: 11400000, guid: 33836e7bfb57e401697d14d5bb31360c, type: 2}
+  - {fileID: 11400000, guid: 4c3ced6e206864e0e99b306b356db391, type: 2}
+  - {fileID: 11400000, guid: 0b0f7ec11c6ad40708e91ffd4cd12fe1, type: 2}
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: 7d05660051716413cbaeccebba6c3e47, type: 2}
+  - {fileID: 11400000, guid: a9048de9e12c54610bd74c97dcbb1e1d, type: 2}
+  - {fileID: 11400000, guid: a5bcd7db1998f4a7ebd01522fc50983f, type: 2}
+  - {fileID: 11400000, guid: be5f4a85dc8a647c496d83ba39767387, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: 7fd2828ce78c2459f81a5a82c315b998, type: 2}
+  - {fileID: 11400000, guid: 3864fe7cc189e4697843351f1aea5158, type: 2}
+  - {fileID: 11400000, guid: 6c43cef9a8f5f4e2d9a2399298144058, type: 2}
+  - {fileID: 11400000, guid: 37d60e7d17c6d469f9f7657995067287, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  - {fileID: 11400000, guid: 087403b5b3ee44caf9c28411800e45c8, type: 2}
+  - {fileID: 11400000, guid: 33836e7bfb57e401697d14d5bb31360c, type: 2}
+  - {fileID: 11400000, guid: 4c3ced6e206864e0e99b306b356db391, type: 2}
+  - {fileID: 11400000, guid: 0b0f7ec11c6ad40708e91ffd4cd12fe1, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 1
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 11400000, guid: cc17f7f7ff8cc408da8910966bbb7a1f, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &7875195199899917842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270858653620715770}
+  - component: {fileID: 8051497720156351663}
+  m_Layer: 0
+  m_Name: BlightedLands_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270858653620715770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875195199899917842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8051497720156351663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875195199899917842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: f50e0f396e65047bc8c1b738744a0b6e, type: 2}
+  - {fileID: 11400000, guid: b597611d8a1114de69fd35ec32dd3ca2, type: 2}
+  - {fileID: 11400000, guid: 32b04592879e84d0fa633a493dce1e31, type: 2}
+  - {fileID: 11400000, guid: 14853bceff7bd47c0b9188257eb897a9, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: f50e0f396e65047bc8c1b738744a0b6e, type: 2}
+  - {fileID: 11400000, guid: b597611d8a1114de69fd35ec32dd3ca2, type: 2}
+  - {fileID: 11400000, guid: 32b04592879e84d0fa633a493dce1e31, type: 2}
+  - {fileID: 11400000, guid: 14853bceff7bd47c0b9188257eb897a9, type: 2}
+  - {fileID: 11400000, guid: 16245c6a950274a88868876fe9b57b7b, type: 2}
+  - {fileID: 11400000, guid: 0c51f5a14415d44928b86517ff0976c2, type: 2}
+  - {fileID: 11400000, guid: 6374664a414e645e1910a74810bfd809, type: 2}
+  - {fileID: 11400000, guid: d77c90845cb5947ec871ffa919bbca6e, type: 2}
+  - {fileID: 11400000, guid: 24ed056064706488bb41af8f0ec4e8bc, type: 2}
+  - {fileID: 11400000, guid: 1b9d447269694407f83a60e38816cd86, type: 2}
+  - {fileID: 11400000, guid: 8059ae59dd1ba4d0585244614185256e, type: 2}
+  - {fileID: 11400000, guid: 1994409fc8a26418aa63a1e96328aeca, type: 2}
+  - {fileID: 11400000, guid: eeb9ee3d8e79e403b8866d676c209c5f, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 24ed056064706488bb41af8f0ec4e8bc, type: 2}
+  - {fileID: 11400000, guid: 1b9d447269694407f83a60e38816cd86, type: 2}
+  - {fileID: 11400000, guid: 8059ae59dd1ba4d0585244614185256e, type: 2}
+  - {fileID: 11400000, guid: 1994409fc8a26418aa63a1e96328aeca, type: 2}
+  - {fileID: 11400000, guid: 16245c6a950274a88868876fe9b57b7b, type: 2}
+  - {fileID: 11400000, guid: 0c51f5a14415d44928b86517ff0976c2, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 24ed056064706488bb41af8f0ec4e8bc, type: 2}
+  - {fileID: 11400000, guid: 1b9d447269694407f83a60e38816cd86, type: 2}
+  - {fileID: 11400000, guid: 8059ae59dd1ba4d0585244614185256e, type: 2}
+  - {fileID: 11400000, guid: 1994409fc8a26418aa63a1e96328aeca, type: 2}
+  - {fileID: 11400000, guid: 16245c6a950274a88868876fe9b57b7b, type: 2}
+  - {fileID: 11400000, guid: 0c51f5a14415d44928b86517ff0976c2, type: 2}
+  - {fileID: 11400000, guid: 6374664a414e645e1910a74810bfd809, type: 2}
+  - {fileID: 11400000, guid: d77c90845cb5947ec871ffa919bbca6e, type: 2}
+  - {fileID: 11400000, guid: eeb9ee3d8e79e403b8866d676c209c5f, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 16245c6a950274a88868876fe9b57b7b, type: 2}
+  - {fileID: 11400000, guid: 0c51f5a14415d44928b86517ff0976c2, type: 2}
+  - {fileID: 11400000, guid: 6374664a414e645e1910a74810bfd809, type: 2}
+  - {fileID: 11400000, guid: d77c90845cb5947ec871ffa919bbca6e, type: 2}
+  - {fileID: 11400000, guid: eeb9ee3d8e79e403b8866d676c209c5f, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: 039b2e4a9c2d14d5697b1abd6ec3e094, type: 2}
+  - {fileID: 11400000, guid: af1d2eac6ec554114b39c2de13d53c0a, type: 2}
+  - {fileID: 11400000, guid: 950653f55be914c6ab5a6f263dfe6762, type: 2}
+  - {fileID: 11400000, guid: 8356c251da2124a8290af4b0d0360e69, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: befe6aa69f826414b91a79ed9400cfc3, type: 2}
+  - {fileID: 11400000, guid: 4a3429f2a2fde4926b4c75b548a696cb, type: 2}
+  - {fileID: 11400000, guid: 6d27c3ab9f42d40f79d58ee2d850c340, type: 2}
+  - {fileID: 11400000, guid: a9220f71236bb47f99c4976fb6dd5794, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: f50e0f396e65047bc8c1b738744a0b6e, type: 2}
+  - {fileID: 11400000, guid: b597611d8a1114de69fd35ec32dd3ca2, type: 2}
+  - {fileID: 11400000, guid: 32b04592879e84d0fa633a493dce1e31, type: 2}
+  - {fileID: 11400000, guid: 14853bceff7bd47c0b9188257eb897a9, type: 2}
+  - {fileID: 11400000, guid: 24ed056064706488bb41af8f0ec4e8bc, type: 2}
+  - {fileID: 11400000, guid: 1b9d447269694407f83a60e38816cd86, type: 2}
+  - {fileID: 11400000, guid: 8059ae59dd1ba4d0585244614185256e, type: 2}
+  - {fileID: 11400000, guid: 1994409fc8a26418aa63a1e96328aeca, type: 2}
+  - {fileID: 11400000, guid: eeb9ee3d8e79e403b8866d676c209c5f, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 1
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 15
+  ChanceToSpawn_02_RiverBot: 5
+  Biome_River_BaseTile: {fileID: 11400000, guid: be07792f755d84a44ba2ef56186cfd3f, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &7919005206806128569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7777479227580631727}
+  - component: {fileID: 5575977335467861986}
+  m_Layer: 0
+  m_Name: MetalWorld_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7777479227580631727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919005206806128569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5575977335467861986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7919005206806128569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: f91aaa5de0004ec478d2c0d1d7d7194e, type: 2}
+  - {fileID: 11400000, guid: d573a86bcfe49a2429fc3adaf131a83f, type: 2}
+  - {fileID: 11400000, guid: 4f0aa8a071fd0254a85b52d9c54aa729, type: 2}
+  - {fileID: 11400000, guid: 2b6b953fb657f2243828de6b3bb1cccc, type: 2}
+  - {fileID: 11400000, guid: 3f0423d4d08eece4cac7ef0007279dcb, type: 2}
+  - {fileID: 11400000, guid: 65c0a37ac9145e1418b65a7efeaaa185, type: 2}
+  - {fileID: 11400000, guid: ebe0cedee7ebd04438040d7ccda9e48b, type: 2}
+  - {fileID: 11400000, guid: 097bb3813f3730c4da2297d0b1b0f88d, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: f91aaa5de0004ec478d2c0d1d7d7194e, type: 2}
+  - {fileID: 11400000, guid: d573a86bcfe49a2429fc3adaf131a83f, type: 2}
+  - {fileID: 11400000, guid: 4f0aa8a071fd0254a85b52d9c54aa729, type: 2}
+  - {fileID: 11400000, guid: 2b6b953fb657f2243828de6b3bb1cccc, type: 2}
+  - {fileID: 11400000, guid: 3f0423d4d08eece4cac7ef0007279dcb, type: 2}
+  - {fileID: 11400000, guid: 65c0a37ac9145e1418b65a7efeaaa185, type: 2}
+  - {fileID: 11400000, guid: ebe0cedee7ebd04438040d7ccda9e48b, type: 2}
+  - {fileID: 11400000, guid: 097bb3813f3730c4da2297d0b1b0f88d, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 135a543494cf1234ca529d96606d1664, type: 2}
+  - {fileID: 11400000, guid: b5e323f34121f8a4d8f5fd66227e2f80, type: 2}
+  - {fileID: 11400000, guid: e24428aeaedce1c4b85d1a62ccf057ef, type: 2}
+  - {fileID: 11400000, guid: 55bdc7be01b161046ac0931ffd8fd0f2, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 08cb55c3fb9f41d4595cec0b42401727, type: 2}
+  - {fileID: 11400000, guid: 7180decfbc75ade4f92ef43cdae636b5, type: 2}
+  - {fileID: 11400000, guid: c70a35cc36896354996deda450028127, type: 2}
+  - {fileID: 11400000, guid: dff9371d7acf7f94bafffc749fe97c38, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: f91aaa5de0004ec478d2c0d1d7d7194e, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: e54f28d1492994d41955c0788ad9c7f0, type: 2}
+  - {fileID: 11400000, guid: abee7217ff53fca44a524b31368642b0, type: 2}
+  - {fileID: 11400000, guid: a0a6b125055fc1840bc8dbaed42d631d, type: 2}
+  - {fileID: 11400000, guid: be42ed0486afb0643930581233d5f778, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: d3070bd8c34b29642b0bc4759ba6aaa3, type: 2}
+  - {fileID: 11400000, guid: 8e3ffeff4378dea488e8bc868eb3afa9, type: 2}
+  - {fileID: 11400000, guid: 32e9ca903a84dc842b21f71530f267b0, type: 2}
+  - {fileID: 11400000, guid: 99b4bf9c07c9c7c42b20fa65b6f941c8, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: f91aaa5de0004ec478d2c0d1d7d7194e, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 11400000, guid: 097bb3813f3730c4da2297d0b1b0f88d, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: f91aaa5de0004ec478d2c0d1d7d7194e, type: 2}
+  - {fileID: 11400000, guid: d573a86bcfe49a2429fc3adaf131a83f, type: 2}
+  - {fileID: 11400000, guid: 4f0aa8a071fd0254a85b52d9c54aa729, type: 2}
+  - {fileID: 11400000, guid: 2b6b953fb657f2243828de6b3bb1cccc, type: 2}
+  - {fileID: 11400000, guid: 3f0423d4d08eece4cac7ef0007279dcb, type: 2}
+  - {fileID: 11400000, guid: 65c0a37ac9145e1418b65a7efeaaa185, type: 2}
+  - {fileID: 11400000, guid: ebe0cedee7ebd04438040d7ccda9e48b, type: 2}
+  - {fileID: 11400000, guid: 097bb3813f3730c4da2297d0b1b0f88d, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &8783519052885905753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3507356592624172275}
+  - component: {fileID: 5057232044330487418}
+  m_Layer: 0
+  m_Name: SnowForest_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3507356592624172275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8783519052885905753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5057232044330487418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8783519052885905753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array:
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  Tiles_Of_Biome_Perlin_LayerC_Array:
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  Tiles_Of_Biome_Perlin_LayerD_Array:
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  Tiles_Of_Biome_Perlin_LayerE_Array:
+  - {fileID: 11400000, guid: 7d05660051716413cbaeccebba6c3e47, type: 2}
+  - {fileID: 11400000, guid: a9048de9e12c54610bd74c97dcbb1e1d, type: 2}
+  - {fileID: 11400000, guid: a5bcd7db1998f4a7ebd01522fc50983f, type: 2}
+  - {fileID: 11400000, guid: be5f4a85dc8a647c496d83ba39767387, type: 2}
+  Tiles_Of_Biome_Perlin_LayerF_Array:
+  - {fileID: 11400000, guid: 7fd2828ce78c2459f81a5a82c315b998, type: 2}
+  - {fileID: 11400000, guid: 3864fe7cc189e4697843351f1aea5158, type: 2}
+  - {fileID: 11400000, guid: 6c43cef9a8f5f4e2d9a2399298144058, type: 2}
+  - {fileID: 11400000, guid: 37d60e7d17c6d469f9f7657995067287, type: 2}
+  Tiles_Of_Biome_Perlin_LayerG_Array:
+  - {fileID: 11400000, guid: 55b8e4e4192324b2983d8e14a478e9bf, type: 2}
+  - {fileID: 11400000, guid: b0ede770e41d049bdb1d77c0b74988da, type: 2}
+  - {fileID: 11400000, guid: c626bc23e86164563aa88762a924d10c, type: 2}
+  - {fileID: 11400000, guid: 3b0a5a23b430b4994abdc1781f11885b, type: 2}
+  - {fileID: 11400000, guid: 73ce65c18120040b5a002dd9210f4e76, type: 2}
+  - {fileID: 11400000, guid: 3bfda160209ea484e8022ce57195aea9, type: 2}
+  - {fileID: 11400000, guid: 5ea69b6851f3c4292b45bfb86ed54738, type: 2}
+  - {fileID: 11400000, guid: aa095f3a911f74fb6bdc75d0c2174963, type: 2}
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 1
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 11400000, guid: cc17f7f7ff8cc408da8910966bbb7a1f, type: 2}
+  Biome_River_PossibleTravelTiles:
+  - {fileID: 11400000, guid: a963a7755afd94ac18451fd3198d4c2d, type: 2}
+  - {fileID: 11400000, guid: 731d3568610fd4530b10c90fc2522839, type: 2}
+  - {fileID: 11400000, guid: c79d1c23176d64344952d2f2820d7f40, type: 2}
+  - {fileID: 11400000, guid: 9bd0d8a74ad4d4563ab19ad265bb0d5d, type: 2}
+  - {fileID: 11400000, guid: 6282d6ace525641ed9b2eb3c09dfceca, type: 2}
+  - {fileID: 11400000, guid: 1811be9c238404bf1a4945d6e806a7b7, type: 2}
+  - {fileID: 11400000, guid: 8eae261c64cac418196127100bdbb69c, type: 2}
+  - {fileID: 11400000, guid: 2bbff0b6871ff43cc9245b22d53d68c3, type: 2}
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 500
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.25
+  Override_WorldScale_MAXValue: 0.35
+--- !u!1 &8995602677954138814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5599185576411581505}
+  - component: {fileID: 8933856937098761711}
+  m_Layer: 0
+  m_Name: SandLake_Biome_Settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5599185576411581505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8995602677954138814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4532943483034978438}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8933856937098761711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8995602677954138814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f9dfb23067b54258b2e61c6cdd7dd4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Basic_Tiles_Of_Biome_Array:
+  - {fileID: 11400000, guid: 5d2e2467d404f4a479f66dd099c29b22, type: 2}
+  Tiles_Of_Biome_Perlin_LayerA_Array:
+  - {fileID: 11400000, guid: 5d2e2467d404f4a479f66dd099c29b22, type: 2}
+  Tiles_Of_Biome_Perlin_LayerB_Array: []
+  Tiles_Of_Biome_Perlin_LayerC_Array: []
+  Tiles_Of_Biome_Perlin_LayerD_Array: []
+  Tiles_Of_Biome_Perlin_LayerE_Array: []
+  Tiles_Of_Biome_Perlin_LayerF_Array: []
+  Tiles_Of_Biome_Perlin_LayerG_Array: []
+  TilemapToGenerateOn: {fileID: 0}
+  Spawn_BiomeRivers: 0
+  RiverBotsSpawned_Count: 0
+  ChanceToSpawn_RiverBot: 2
+  ChanceToSpawn_02_RiverBot: 2
+  Biome_River_BaseTile: {fileID: 0}
+  Biome_River_PossibleTravelTiles: []
+  RiverBot_GOs_List: []
+  Override_xOrgLayer: 1000
+  Override_yOrgLayer: 1000
+  Override_WorldScale_MINValue: 0.5
+  Override_WorldScale_MAXValue: 2

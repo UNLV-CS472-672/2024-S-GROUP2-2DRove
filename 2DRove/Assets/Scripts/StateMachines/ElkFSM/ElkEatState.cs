@@ -5,7 +5,7 @@ public class ElkEatState : ElkBaseState
     private Animator animator;
     private float timer;
 
-    private float detectionRadius = 8f; // Distance within which the elk c
+    private float detectionRadius = 5f; // distance to become alert
 
     private float eatDuration = 5f; //Time elk eat before switch state
     public override void EnterState(ElkStateManager elk)

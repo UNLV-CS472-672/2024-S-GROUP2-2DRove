@@ -211,4 +211,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   player: {fileID: 0}
-  playerRange: 8
+  playerRange: 5

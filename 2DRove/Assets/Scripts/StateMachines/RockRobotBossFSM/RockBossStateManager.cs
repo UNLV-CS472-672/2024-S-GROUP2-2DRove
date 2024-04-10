@@ -64,7 +64,6 @@ public class RockBossStateManager : MonoBehaviour
     public void TakeDamageAnimation()
     {
         currentState.TakeDamage(this);
-        TeleportToRandomPosition(this);
     }
 
     public void Destroy(float waitDuration)

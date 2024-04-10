@@ -57,11 +57,11 @@ public class PlayerController : MonoBehaviour
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
 
         //Find text fields
-        healthText = GameObject.Find("Health Text").GetComponent<TMP_Text>();
+        healthText = GameObject.Find("TextSliderBar/Text (TMP)").GetComponent<TMP_Text>();
         goldText = GameObject.Find("Gold Text").GetComponent<TMP_Text>();
 
         //Find health slider
-        healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
+        healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
 
         //Starts the player with max health and initializes the health slider
         health = maxHealth;
@@ -186,6 +186,7 @@ public class PlayerController : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(slashPoint.position, slashRange, enemyLayer);
         //PROBLEM, THIS HITBOX DETECTION APPLIES TO ENEMY HITBOX AS WELL, NOT JUST THEIR BODY HURTBOX
         //Current fix, only look for box colliders, as current hitboxes for enemies are capsules, while their hurtbox are boxcolliders
+        //NEW: simple solution, change to check if the collider checked is NOT a trigger
         foreach (Collider2D enemy in hitEnemies) {
             if (enemy is not BoxCollider2D)
                 continue;

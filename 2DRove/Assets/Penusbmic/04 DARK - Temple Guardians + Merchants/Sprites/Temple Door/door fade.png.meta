@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: baadc968d3efd9e469061e0fd590ea6a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2084280532587489097
+    second: door fade_0
+  - first:
+      213: -4782659387474581706
+    second: door fade_1
+  - first:
+      213: 1085177550284625042
+    second: door fade_2
+  - first:
+      213: -1871390054839576192
+    second: door fade_3
+  - first:
+      213: -6134297640174837678
+    second: door fade_4
+  - first:
+      213: -1580455244246058915
+    second: door fade_5
+  - first:
+      213: -8679060274009876489
+    second: door fade_6
+  - first:
+      213: 3696810629799746181
+    second: door fade_7
+  - first:
+      213: 7425631294512404762
+    second: door fade_8
+  - first:
+      213: -1499897292091059979
+    second: door fade_9
+  - first:
+      213: -5017954333086357132
+    second: door fade_10
+  - first:
+      213: 5988135261337792069
+    second: door fade_11
+  - first:
+      213: -2454216250376109017
+    second: door fade_12
+  - first:
+      213: 6121106023096678784
+    second: door fade_13
+  - first:
+      213: -8138378196693832746
+    second: door fade_14
+  - first:
+      213: 5538885770030606362
+    second: door fade_15
+  - first:
+      213: 5760715652423116984
+    second: door fade_16
+  - first:
+      213: 7844760219110475520
+    second: door fade_17
+  - first:
+      213: -7323494941765799684
+    second: door fade_18
+  - first:
+      213: 7497776678313169354
+    second: door fade_19
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: door fade_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2299
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947a325f91adcec10800000000000000
+      internalID: 2084280532587489097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2178
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637e3ef60a490adb0800000000000000
+      internalID: -4782659387474581706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2057
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29491f28b335f0f00800000000000000
+      internalID: 1085177550284625042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1936
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089961109ac7706e0800000000000000
+      internalID: -1871390054839576192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1815
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250acd21cc89edaa0800000000000000
+      internalID: -6134297640174837678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1694
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d587f473458111ae0800000000000000
+      internalID: -1580455244246058915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1573
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7df671aa8cd8780800000000000000
+      internalID: -8679060274009876489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1452
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a1a176ea5bd4330800000000000000
+      internalID: 3696810629799746181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1331
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a199f66d1542d0760800000000000000
+      internalID: 7425631294512404762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1210
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f097511c5b4f2be0800000000000000
+      internalID: -1499897292091059979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1089
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479614dce15ac5ab0800000000000000
+      internalID: -5017954333086357132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 968
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ea70f2b412a1350800000000000000
+      internalID: 5988135261337792069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 847
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7244752c25fd0fdd0800000000000000
+      internalID: -2454216250376109017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 726
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0897e2b3f7982f450800000000000000
+      internalID: 6121106023096678784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 605
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dba74a262cae0f80800000000000000
+      internalID: -8138378196693832746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 484
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18e326f2431edc40800000000000000
+      internalID: 5538885770030606362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 363
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b866b24d5c22ff40800000000000000
+      internalID: 5760715652423116984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 242
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00702302bdf2edc60800000000000000
+      internalID: 7844760219110475520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 121
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0fda9e628bd5a90800000000000000
+      internalID: -7323494941765799684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door fade_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 262
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1901cf9247d0860800000000000000
+      internalID: 7497776678313169354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      door fade_0: 2084280532587489097
+      door fade_1: -4782659387474581706
+      door fade_10: -5017954333086357132
+      door fade_11: 5988135261337792069
+      door fade_12: -2454216250376109017
+      door fade_13: 6121106023096678784
+      door fade_14: -8138378196693832746
+      door fade_15: 5538885770030606362
+      door fade_16: 5760715652423116984
+      door fade_17: 7844760219110475520
+      door fade_18: -7323494941765799684
+      door fade_19: 7497776678313169354
+      door fade_2: 1085177550284625042
+      door fade_3: -1871390054839576192
+      door fade_4: -6134297640174837678
+      door fade_5: -1580455244246058915
+      door fade_6: -8679060274009876489
+      door fade_7: 3696810629799746181
+      door fade_8: 7425631294512404762
+      door fade_9: -1499897292091059979
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

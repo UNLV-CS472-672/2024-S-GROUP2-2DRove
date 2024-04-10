@@ -2,31 +2,25 @@ using UnityEngine;
 
 public class GuardianAttackState : GuardianBaseState
 {
-    private float attackTime = .9f;
-    private float specialTime = 1.167f;
+    private float attackTime = .917f + .917f;
     private Animator animator;
     public override void EnterState(GuardianStateManager Guardian)
     {
         Debug.Log("Entering Attack State");
-        attackTime = .9f;
-        specialTime = 1.167f;
+        attackTime = .917f + .917f;
         animator = Guardian.GetComponent<Animator>();
-        // animator.SetBool("attacking", true);
-        animator.SetBool("special", true);
+        animator.SetBool("attacking", true);
     }
 
     public override void UpdateState(GuardianStateManager Guardian)
     {
-        if(specialTime <= 0)
-        // if(attackTime <= 0)
+        if(attackTime <= 0)
         {
-            Guardian.SwitchState(Guardian.IdleState);
-            animator.SetBool("special", false);
-            // animator.SetBool("attacking", false);
+            Guardian.SwitchState(Guardian.AggroState);
+            animator.SetBool("attacking", false);
         }
 
-        specialTime -= Time.deltaTime;
-        // attackTime -= Time.deltaTime;
+        attackTime -= Time.deltaTime;
     }
 
     public override void OnCollisionEnter2D(GuardianStateManager Guardian, Collision2D other)

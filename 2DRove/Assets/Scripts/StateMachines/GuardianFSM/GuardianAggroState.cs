@@ -6,6 +6,8 @@ public class GuardianAggroState : GuardianBaseState
     private Rigidbody2D rb;
     private Animator animator;
     private bool flipped = false;
+    private float dashRange;
+    private float patience;
 
     public override void EnterState(GuardianStateManager Guardian)
     {
@@ -13,12 +15,21 @@ public class GuardianAggroState : GuardianBaseState
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = Guardian.GetComponent<Rigidbody2D>();
         animator = Guardian.GetComponent<Animator>();
+        dashRange = 20;
+        patience = 5;
     }
 
     public override void UpdateState(GuardianStateManager Guardian)
     {
-        Vector2 Direction = (player.position - Guardian.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        Vector2 Direction = (player.position - Guardian.transform.position);
+        if (Direction.magnitude > Mathf.Lerp(5, dashRange, patience))
+        {
+            Guardian.SwitchState(Guardian.VertDashState);
+        }
+
+        patience -= Time.deltaTime;
+
+        rb.AddForce(Direction.normalized * 1f);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

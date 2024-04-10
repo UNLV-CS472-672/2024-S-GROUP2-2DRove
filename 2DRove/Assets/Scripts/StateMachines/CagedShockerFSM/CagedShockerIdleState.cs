@@ -3,20 +3,24 @@ using UnityEngine.UIElements;
 
 public class CagedShockerIdleState : CagedShockerBaseState
 {
-    private bool idling = true;
     private Transform player;
+    private float idleTime = 2f;
+
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
         Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        idleTime = 2f;
     }
 
     public override void UpdateState(CagedShockerStateManager CagedShocker)
     {
-        //make them just walk around randomly
-        //make a radius fov? that seems pretty cool, and it would have a faint ring around the CagedShocker
-        //if player is in radius, enter walk state
-        CagedShocker.SwitchState(CagedShocker.AggroState);
+        if (idleTime < 0)
+        {
+            CagedShocker.SwitchState(CagedShocker.Lurch1State);
+        }
+
+        idleTime -= Time.deltaTime;
     }
 
     public override void OnCollisionEnter2D(CagedShockerStateManager CagedShocker, Collision2D other)

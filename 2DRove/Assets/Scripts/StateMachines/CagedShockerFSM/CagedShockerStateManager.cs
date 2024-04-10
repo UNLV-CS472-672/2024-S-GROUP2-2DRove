@@ -11,12 +11,14 @@ public class CagedShockerStateManager : MonoBehaviour
     [SerializeField] public float attackHeight;
     private Mesh attackHitbox;
     CagedShockerBaseState currentState;
-    public CagedShockerAggroState AggroState = new CagedShockerAggroState();
+    // public CagedShockerAggroState AggroState = new CagedShockerAggroState();
     public CagedShockerAttackState AttackState = new CagedShockerAttackState();
     public CagedShockerDeathState DeathState = new CagedShockerDeathState();
     public CagedShockerHitState HitState = new CagedShockerHitState();
     public CagedShockerIdleState IdleState = new CagedShockerIdleState();
     public CagedShockerSpawnState SpawnState = new CagedShockerSpawnState();
+    public CagedShockerLurch1State Lurch1State = new CagedShockerLurch1State();
+    public CagedShockerLurch2State Lurch2State = new CagedShockerLurch2State();
 
     // Start is called before the first frame update
     void Start()

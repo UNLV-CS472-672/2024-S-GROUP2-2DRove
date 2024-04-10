@@ -11,6 +11,7 @@ EditorSettings:
   m_PrefabUIEnvironment: {fileID: 0}
   m_SpritePackerMode: 5
   m_SpritePackerPaddingPower: 1
+  m_Bc7TextureCompressor: 0
   m_EtcTextureCompressorBehavior: 1
   m_EtcTextureFastCompressor: 1
   m_EtcTextureNormalCompressor: 2

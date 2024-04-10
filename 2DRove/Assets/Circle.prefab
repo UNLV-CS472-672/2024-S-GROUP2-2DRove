@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3625537515009467603}
   - component: {fileID: 3197534821892992352}
   - component: {fileID: 1554542182818625955}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,3 +97,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d0f789553dcc454484c0922ae3e1292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingScreenManager: {fileID: 0}
+  nextSceneIndex: 0

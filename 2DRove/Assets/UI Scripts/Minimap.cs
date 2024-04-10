@@ -10,7 +10,7 @@ public class Minimap : MonoBehaviour
 
     // Start is called before the first frame update
     private void Start(){
-        MinimapCamera = GameObject.Find("MiniMapCamera").GetComponent<Camera>();       // Get the minimap camera component
+        MinimapCamera = GameObject.Find("Camera").GetComponent<Camera>();       // Get the minimap camera component
         MinimapScale = MinimapCamera.orthographicSize;                                  // Get the initial zoom of the minimap
     }                            
 

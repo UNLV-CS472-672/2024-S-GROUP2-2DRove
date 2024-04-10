@@ -57,11 +57,11 @@ public class PlayerController : MonoBehaviour
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
 
         //Find text fields
-        healthText = GameObject.Find("TextSliderBar/Text (TMP)").GetComponent<TMP_Text>();
+        healthText = GameObject.Find("Health Text").GetComponent<TMP_Text>();
         goldText = GameObject.Find("Gold Text").GetComponent<TMP_Text>();
 
         //Find health slider
-        healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
+        healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
 
         //Starts the player with max health and initializes the health slider
         health = maxHealth;

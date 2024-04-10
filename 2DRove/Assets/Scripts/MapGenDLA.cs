@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 // using CreateBorder;
+using EdgeTiles; 
 using UnityEngine.Tilemaps;
 using UnityEngine.SceneManagement;
+
 
 namespace MapGenDLANamespace
 {
@@ -18,6 +20,16 @@ namespace MapGenDLANamespace
         [SerializeField] int tileNum = 25;
         // [SerializeField] int tileSizeX = 20;
         // [SerializeField] int tileSizeY = 20;
+
+
+        public int leftMost = 0;
+        public int rightMost = 0;
+        public int topMost = 0;
+        public int bottomMost = 0;
+
+        // private DrawBorder drawBorder;
+        public AssignEdges assignEdges; 
+
 
         [SerializeField] public int scale = 20;
         [SerializeField] public int maxX = 5;
@@ -39,7 +51,7 @@ namespace MapGenDLANamespace
             borderPositions.Clear();
             tileObjects.Clear();
             //checks for SerializeFields
-            int possibleTiles = Mathf.Abs(maxX-minX+1) * Mathf.Abs(maxY-minY+1);
+            int possibleTiles = (Mathf.Abs(maxX-minX+1) * Mathf.Abs(maxY-minY+1))/2+1;
             if(possibleTiles < tileNum){
                 Debug.LogError("Cannot request more tiles than available");
                 return;
@@ -108,6 +120,18 @@ namespace MapGenDLANamespace
             // //todo: implement FillInEmptySpace to work for isometric
             // // FillInEmptySpace();
 
+            // After all tiles have been generated:
+            assignEdges = GetComponent<AssignEdges>();
+            if(assignEdges == null) {
+                Debug.LogError("AssignEdges component not found on the same GameObject.");
+            } else {
+                assignEdges.SetTileObjects(tileObjects);
+                assignEdges.SetScale(scale);
+                assignEdges.SetTilePositions(tilePositions); 
+                assignEdges.AssignAndSwapEdgeTiles();
+            }
+
+
         }
 
         // First tile: hard coding name and position because it should always start at 0.
@@ -171,16 +195,18 @@ namespace MapGenDLANamespace
         }
 
         private Vector2Int UpdatePosition(int direction, Vector2Int position, Vector2Int targetPosition)
-        {
+        {   
+            int oldX = position.x;
+            int oldY = position.y;
+            int distance = 1;
+            
             Vector2Int biasDirection = GetBiasDirection(position, targetPosition);
             int bias = Random.Range(0, 10); // Introduce a bias probability, e.g., 20% chance to follow the bias direction
 
             if (bias < 2) // 20% chance to move towards the target
             {
-                return new Vector2Int(
-                    Mathf.Clamp(position.x + biasDirection.x, minX, maxX),
-                    Mathf.Clamp(position.y + biasDirection.y, minY, maxY)
-                );
+                position.x += biasDirection.x;
+                position.y += biasDirection.y;
             }
             else
             {
@@ -189,17 +215,43 @@ namespace MapGenDLANamespace
                     Mathf.Max returns the larger of the two numbers
                     Example: Mathf.Min(5, 10) returns 5
                 */
-                int distance = 1;
+            
                 switch (direction)
                 {
-                    case 0: return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
-                    case 1: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
-                    case 2: return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
-                    case 3: return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
-
+                    case 0: 
+                        // return new Vector2Int(Mathf.Clamp(position.x + distance,minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ur
+                        position.x += distance;
+                        position.y += distance;
+                        break;
+                    case 1:
+                        position.x -= distance;
+                        position.y -= distance;                    
+                        break;
+                        // return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dl
+                    case 2: 
+                        // return new Vector2Int(Mathf.Clamp(position.x - distance, minX, maxX), Mathf.Clamp(position.y + distance, minY, maxY));//ul
+                        position.x -= distance;
+                        position.y += distance;
+                        break;
+                    case 3: 
+                        //return new Vector2Int(Mathf.Clamp(position.x + distance, minX, maxX), Mathf.Clamp(position.y - distance, minY, maxY));//dr
+                        position.x += distance;
+                        position.y -= distance;
+                        break;
                     default: return position;
                 }
+            }   
+
+            //if UpdatePosition ends up going out of bounds it is going to return another call of the function and it will keep going
+            //until the next update position gives a location that is not out of bounds
+            if(position.x > maxX || position.x < minX || position.y > maxY || position.y < minY){
+                direction = (direction+1)%4;//it will rotate direction to choose a different area 
+                position.x = oldX;//get the values of x and y before they were changed
+                position.y = oldY;//to stay in place and call the function again
+                return UpdatePosition(direction, position, targetPosition);
             }
+            else
+                return new Vector2Int(position.x, position.y);
 
         }
 
@@ -257,15 +309,15 @@ namespace MapGenDLANamespace
         }
         void AddBorder(GameObject tileObject, Vector2Int position)
         {
-            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * maxX, position.y * scale * (maxY / 2), 0), Quaternion.identity);
+            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * scale * maxX, position.y * scale * maxY/2, 0), Quaternion.identity);
             border.name = "Border(" + position.x + ", " + position.y + ")";
-            border.transform.parent = tileObject.transform;
-            border.transform.localScale = new Vector3(scale / 2, scale / 2, 1);
+            //border.transform.parent = tileObject.transform;
+            border.transform.localScale = new Vector3(scale, scale, 1);
             // Place the tile lower in the layers
             border.GetComponent<Renderer>().sortingOrder = -1;
             // Apply a tilemap collider to give all the tiles on the tilemap a collider
-            //Tilemap tilemap = border.GetComponent<Tilemap>();
-            //TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
+            Tilemap tilemap = border.GetComponent<Tilemap>();
+            TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
             // Keep it in a list so we do not stack borders on top of each other when checking
             borderPositions.Add(position);
         }

@@ -1848,10 +1848,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CagedSpider
       objectReference: {fileID: 0}
-    - target: {fileID: 7451212315464198201, guid: c784912f46a7eef43883c17e90185d08, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8191069111030342767, guid: c784912f46a7eef43883c17e90185d08, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.05

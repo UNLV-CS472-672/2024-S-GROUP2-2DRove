@@ -4,6 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - EnemyProjectile
   - PlayerProjectile
   - Enemy
@@ -12,11 +13,14 @@ TagManager:
   - Boss
   - Shadow
   - Bomber
+=======
+  - Border
+>>>>>>> mapgen
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - TileLayer
   - Water
   - UI
   - Player

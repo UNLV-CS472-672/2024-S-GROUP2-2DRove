@@ -23,28 +23,20 @@ public class AugmentInstantiator : MonoBehaviour
     void populateCommonAugmentDictionary()
     {
         // Common Augments
-        // Health Boost Augment
-        AugmentObject augment = commonAugments.healthBoost();
-        commonAugmentDictionary.Add(augment.augmentName, augment);
-        // Speed Boost Augment
-        augment = commonAugments.speedBoost();
-        commonAugmentDictionary.Add(augment.augmentName, augment);
-        // Mana Boost Augment
-        augment = commonAugments.manaBoost();
-        commonAugmentDictionary.Add(augment.augmentName, augment);
-        // Health Regen Augment
-        augment = commonAugments.healthRegen();
-        commonAugmentDictionary.Add(augment.augmentName, augment);
-        // Damage Boost Augment
-        augment = commonAugments.damageBoost();
-        commonAugmentDictionary.Add(augment.augmentName, augment);
-        // Critical Strike Augment
-        augment = commonAugments.criticalStrike();
-        commonAugmentDictionary.Add(augment.augmentName, augment);
-        // Burning Damage Augment
-        augment = commonAugments.burningDamage();
-        commonAugmentDictionary.Add(augment.augmentName, augment);
-        
+            // Health Boost Augment
+            commonAugments.healthBoost();
+            // Speed Boost Augment
+            commonAugments.speedBoost();
+            // Mana Boost Augment
+            commonAugments.manaBoost();
+            // Health Regen Augment
+            commonAugments.healthRegen();
+            // Damage Boost Augment
+            commonAugments.damageBoost();
+            // Critical Strike Augment
+            commonAugments.criticalStrike();
+            // Burning Damage Augment
+            commonAugments.burningDamage();
     }
 
     void populateRareAugmentDictionary()
@@ -96,7 +88,7 @@ public class AugmentInstantiator : MonoBehaviour
 
 }
 
-public class commonAugments : MonoBehaviour
+public class commonAugments
 {
     public static AugmentObject healthBoost()
     {

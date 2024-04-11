@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AugmentObject : MonoBehaviour
+public class AugmentObject
 {
     public string augmentName;
     // Name will be the name of the augment
@@ -17,17 +17,18 @@ public class AugmentObject : MonoBehaviour
     public string augmentMethodName;
     public Sprite AugmentImage;
     public Boolean isStackable = false;
+    public AugmentObject(){}
 }
 
-public class AugmentMethods : MonoBehaviour
+public class AugmentMethods
 {
-    public class commonAugmentMethods : MonoBehaviour
+    public class commonAugmentMethods
     {}
-    public class rareAugmentMethods : MonoBehaviour
+    public class rareAugmentMethods
     {}
-    public class epicAugmentMethods : MonoBehaviour
+    public class epicAugmentMethods
     {}
-    public class legendaryAugmentMethods : MonoBehaviour
+    public class legendaryAugmentMethods
     {}
     
 }

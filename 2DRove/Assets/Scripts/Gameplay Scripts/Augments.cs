@@ -49,10 +49,8 @@ public class Augments : MonoBehaviour
         unpause();
     }
     //Adds augment to list of chosen augments
-    void addAugment(Button button)
+    void addAugment(AugmentObject augmentClicked)
     {
-        TMPro.TextMeshProUGUI augmentText = button.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-        AugmentObject augmentClicked = shufflePool.Find(augment => augment.augmentName == augmentText.text.Split('\n')[0]);
         // Add the selected augment to the list of chosen augments
         chosenAugments.Add(augmentClicked);
         // Remove the selected augment from the list of current choice augments
@@ -138,13 +136,50 @@ public class Augments : MonoBehaviour
         for(int i = 0; i < 3; i++)
         {
             currentChoiceAugments.Add(shufflePool[i]);
+            Sprite newSprite = null;
+            switch(currentChoiceAugments[i].augmentRarity)
+            {
+                case "Common":
+                    augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/common");
+                    newSprite = Resources.Load<Sprite>("Augments/Rarity/common_clicked");
+                    break;
+                case "Rare":
+                    augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/rare");
+                    newSprite = Resources.Load<Sprite>("Augments/Rarity/rare_clicked");
+                    break;
+                case "Epic":
+                    augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/epic");
+                    newSprite = Resources.Load<Sprite>("Augments/Rarity/epic_clicked");
+                    break;
+                case "Legendary":
+                    augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/legendary");
+                    newSprite = Resources.Load<Sprite>("Augments/Rarity/legendary_clicked");
+                    break;
+            }
+            // Get the Button component
+            Button button = augmentCards[i].GetComponent<Button>();
+            // Create a new SpriteState
+            SpriteState spriteState = new SpriteState();
+
+            //Set the highlighted, pressed, and selected sprites
+            spriteState.highlightedSprite = newSprite;
+            spriteState.pressedSprite = newSprite;
+            spriteState.selectedSprite = newSprite;
+            //Apply the new SpriteState to the button
+            button.spriteState = spriteState;
+
+            // Finds child image object
+            Transform childImage = augmentCards[i].transform.Find("Augment Image");
+            Image nestedImage = childImage.GetComponent<Image>();
+            // Changes the icon image to fit the augment
+            nestedImage.sprite = shufflePool[i].AugmentImage;
             //Changes text to fit augment
-            augmentCards[i].GetComponentInChildren<TMPro.TextMeshProUGUI>().text = shufflePool[i].augmentName + "\n" + shufflePool[i].augmentDescription;
+            augmentCards[i].GetComponentInChildren<TMPro.TextMeshProUGUI>().text = shufflePool[i].augmentName;
             //Removes all previous listeners
             augmentCards[i].onClick.RemoveAllListeners();
             //Adds new listener to button
             int index = i;
-            augmentCards[i].onClick.AddListener(() => addAugment(augmentCards[index]));
+            augmentCards[i].onClick.AddListener(() => addAugment(shufflePool[index]));
         }
     }
 }

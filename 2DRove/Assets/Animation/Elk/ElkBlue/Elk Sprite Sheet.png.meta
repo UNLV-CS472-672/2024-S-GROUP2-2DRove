@@ -1,0 +1,1324 @@
+fileFormatVersion: 2
+guid: e8ffd8a6f51a28642b39913273074196
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6213303481528476683
+    second: Elk Sprite Sheet 56x35_0
+  - first:
+      213: 7586965537929037518
+    second: Elk Sprite Sheet 56x35_1
+  - first:
+      213: 5127863718110832700
+    second: Elk Sprite Sheet 56x35_2
+  - first:
+      213: -7080116007358099099
+    second: Elk Sprite Sheet 56x35_3
+  - first:
+      213: 7985015921704666191
+    second: Elk Sprite Sheet 56x35_4
+  - first:
+      213: 700228569019027882
+    second: Elk Sprite Sheet 56x35_5
+  - first:
+      213: 3673711605887983411
+    second: Elk Sprite Sheet 56x35_6
+  - first:
+      213: -938598456415975632
+    second: Elk Sprite Sheet 56x35_7
+  - first:
+      213: -5749924621248433108
+    second: Elk Sprite Sheet 56x35_8
+  - first:
+      213: 2031864333892188955
+    second: Elk Sprite Sheet 56x35_9
+  - first:
+      213: -3854206933768947786
+    second: Elk Sprite Sheet 56x35_10
+  - first:
+      213: 6124732517241049074
+    second: Elk Sprite Sheet 56x35_11
+  - first:
+      213: -5205151880353658592
+    second: Elk Sprite Sheet 56x35_12
+  - first:
+      213: 8412227347985183768
+    second: Elk Sprite Sheet 56x35_13
+  - first:
+      213: -5737894279442310101
+    second: Elk Sprite Sheet 56x35_14
+  - first:
+      213: -1150066720033165725
+    second: Elk Sprite Sheet 56x35_15
+  - first:
+      213: 2642774397598681438
+    second: Elk Sprite Sheet 56x35_16
+  - first:
+      213: -711099983045440859
+    second: Elk Sprite Sheet 56x35_17
+  - first:
+      213: -5025588181044812408
+    second: Elk Sprite Sheet 56x35_18
+  - first:
+      213: 1252954060257178785
+    second: Elk Sprite Sheet 56x35_19
+  - first:
+      213: -781943519381566179
+    second: Elk Sprite Sheet 56x35_20
+  - first:
+      213: 2325221989164385342
+    second: Elk Sprite Sheet 56x35_21
+  - first:
+      213: -942212929355231027
+    second: Elk Sprite Sheet 56x35_22
+  - first:
+      213: -222281569916053340
+    second: Elk Sprite Sheet 56x35_23
+  - first:
+      213: 3303265137808499004
+    second: Elk Sprite Sheet 56x35_24
+  - first:
+      213: 2172718100146956215
+    second: Elk Sprite Sheet 56x35_25
+  - first:
+      213: -7647273305119239031
+    second: Elk Sprite Sheet 56x35_26
+  - first:
+      213: -3942067243332261326
+    second: Elk Sprite Sheet 56x35_27
+  - first:
+      213: 7324620044365053231
+    second: Elk Sprite Sheet 56x35_28
+  - first:
+      213: -9118464943194283215
+    second: Elk Sprite Sheet 56x35_29
+  - first:
+      213: -8357938652183539393
+    second: Elk Sprite Sheet 56x35_30
+  - first:
+      213: -8023563572083530748
+    second: Elk Sprite Sheet 56x35_31
+  - first:
+      213: 6618645837035815737
+    second: Elk Sprite Sheet 56x35_32
+  - first:
+      213: 2007644074878582158
+    second: Elk Sprite Sheet 56x35_33
+  - first:
+      213: 5382695127836689947
+    second: Elk Sprite Sheet 56x35_34
+  - first:
+      213: 1024942279093076000
+    second: Elk Sprite Sheet 56x35_35
+  - first:
+      213: 54518465904923327
+    second: Elk Sprite Sheet 56x35_36
+  - first:
+      213: 7490292743366326617
+    second: Elk Sprite Sheet 56x35_37
+  - first:
+      213: 7137412021659748154
+    second: Elk Sprite Sheet 56x35_38
+  - first:
+      213: 2063129329179124104
+    second: Elk Sprite Sheet 56x35_39
+  - first:
+      213: 2225503950250142151
+    second: Elk Sprite Sheet 56x35_40
+  - first:
+      213: 2164521303605154483
+    second: Elk Sprite Sheet 56x35_41
+  - first:
+      213: 1014820463006132081
+    second: Elk Sprite Sheet 56x35_42
+  - first:
+      213: 2214655017265045072
+    second: Elk Sprite Sheet 56x35_43
+  - first:
+      213: 4533209392042442224
+    second: Elk Sprite Sheet 56x35_44
+  - first:
+      213: 2848085723321806128
+    second: Elk Sprite Sheet 56x35_45
+  - first:
+      213: 7852469132438933188
+    second: Elk Sprite Sheet 56x35_46
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ElkEat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb1ccd2769e5c9a0800000000000000
+      internalID: -6213303481528476683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkEat_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 105
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6046395f05a4960800000000000000
+      internalID: 7586965537929037518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkEat_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 105
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c382c9e02e4d92740800000000000000
+      internalID: 5127863718110832700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkEat_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 105
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5611ddcd0006ebd90800000000000000
+      internalID: -7080116007358099099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkEat_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 105
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f448b03aca970de60800000000000000
+      internalID: 7985015921704666191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkEat_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 105
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa195fd6c26b7b900800000000000000
+      internalID: 700228569019027882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fde2ccd35abf230800000000000000
+      internalID: 3673711605887983411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03788924dad69f2f0800000000000000
+      internalID: -938598456415975632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c24f639750a2430b0800000000000000
+      internalID: -5749924621248433108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bfd6da8d1a23c10800000000000000
+      internalID: 2031864333892188955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7bad5d63b138ac0800000000000000
+      internalID: -3854206933768947786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffcf6236cb6ff450800000000000000
+      internalID: 6124732517241049074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029409161f593c7b0800000000000000
+      internalID: -5205151880353658592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814bb7ef33c3eb470800000000000000
+      internalID: 8412227347985183768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c5813bd87ee50b0800000000000000
+      internalID: -5737894279442310101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eac6459642a00f0800000000000000
+      internalID: -1150066720033165725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e59cd5600550da420800000000000000
+      internalID: 2642774397598681438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa4ace355aa126f0800000000000000
+      internalID: -711099983045440859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8852c611d26814ab0800000000000000
+      internalID: -5025588181044812408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_13
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a433815413636110800000000000000
+      internalID: 1252954060257178785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_14
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dc7d4138af525f0800000000000000
+      internalID: -781943519381566179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_15
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3402106419d44020800000000000000
+      internalID: 2325221989164385342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_16
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0500335569ce2f0800000000000000
+      internalID: -942212929355231027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_17
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a89901071c4aecf0800000000000000
+      internalID: -222281569916053340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkAlert_18
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 70
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31e102342e87dd20800000000000000
+      internalID: 3303265137808499004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7225cb99b072e10800000000000000
+      internalID: 2172718100146956215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9845a0c227d6fd590800000000000000
+      internalID: -7647273305119239031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a2a786ab6fa49c0800000000000000
+      internalID: -3942067243332261326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2db5137f1746a560800000000000000
+      internalID: 7324620044365053231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1336d042274b47180800000000000000
+      internalID: -9118464943194283215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31d71ef313a20c80800000000000000
+      internalID: -8357938652183539393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404623d117396a090800000000000000
+      internalID: -8023563572083530748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkWalk_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 35
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93343aa52572adb50800000000000000
+      internalID: 6618645837035815737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d3e8e26a59cdb10800000000000000
+      internalID: 2007644074878582158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b168ee433bc23ba40800000000000000
+      internalID: 5382695127836689947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0204f9c8293593e00800000000000000
+      internalID: 1024942279093076000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb256f18140b1c000800000000000000
+      internalID: 54518465904923327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_4
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9593908909dd2f760800000000000000
+      internalID: 7490292743366326617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37c1a60b6e2d0360800000000000000
+      internalID: 7137412021659748154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_6
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8816967a135b1ac10800000000000000
+      internalID: 2063129329179124104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c963e03d0492ee10800000000000000
+      internalID: 2225503950250142151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2962258ace90e10800000000000000
+      internalID: 2164521303605154483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_9
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177274895dd551e00800000000000000
+      internalID: 1014820463006132081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_10
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e9e1421090cbe10800000000000000
+      internalID: 2214655017265045072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd77219ce139ee30800000000000000
+      internalID: 4533209392042442224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d257420ee668720800000000000000
+      internalID: 2848085723321806128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElkDeath_13
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce0eb0621399fc60800000000000000
+      internalID: 7852469132438933188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elk
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1064
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d781888cb3a8447aa391fb3a94ca52
+      internalID: -1598689496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Elk: -1598689496
+      ElkAlert_0: 3673711605887983411
+      ElkAlert_1: -938598456415975632
+      ElkAlert_10: 2642774397598681438
+      ElkAlert_11: -711099983045440859
+      ElkAlert_12: -5025588181044812408
+      ElkAlert_13: 1252954060257178785
+      ElkAlert_14: -781943519381566179
+      ElkAlert_15: 2325221989164385342
+      ElkAlert_16: -942212929355231027
+      ElkAlert_17: -222281569916053340
+      ElkAlert_18: 3303265137808499004
+      ElkAlert_2: -5749924621248433108
+      ElkAlert_3: 2031864333892188955
+      ElkAlert_4: -3854206933768947786
+      ElkAlert_5: 6124732517241049074
+      ElkAlert_6: -5205151880353658592
+      ElkAlert_7: 8412227347985183768
+      ElkAlert_8: -5737894279442310101
+      ElkAlert_9: -1150066720033165725
+      ElkDeath_0: 2007644074878582158
+      ElkDeath_1: 5382695127836689947
+      ElkDeath_10: 2214655017265045072
+      ElkDeath_11: 4533209392042442224
+      ElkDeath_12: 2848085723321806128
+      ElkDeath_13: 7852469132438933188
+      ElkDeath_2: 1024942279093076000
+      ElkDeath_3: 54518465904923327
+      ElkDeath_4: 7490292743366326617
+      ElkDeath_5: 7137412021659748154
+      ElkDeath_6: 2063129329179124104
+      ElkDeath_7: 2225503950250142151
+      ElkDeath_8: 2164521303605154483
+      ElkDeath_9: 1014820463006132081
+      ElkEat_0: -6213303481528476683
+      ElkEat_1: 7586965537929037518
+      ElkEat_2: 5127863718110832700
+      ElkEat_3: -7080116007358099099
+      ElkEat_4: 7985015921704666191
+      ElkEat_5: 700228569019027882
+      ElkWalk_0: 2172718100146956215
+      ElkWalk_1: -7647273305119239031
+      ElkWalk_2: -3942067243332261326
+      ElkWalk_3: 7324620044365053231
+      ElkWalk_4: -9118464943194283215
+      ElkWalk_5: -8357938652183539393
+      ElkWalk_6: -8023563572083530748
+      ElkWalk_7: 6618645837035815737
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

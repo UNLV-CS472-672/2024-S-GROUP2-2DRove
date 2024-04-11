@@ -128,6 +128,7 @@ namespace MapGenDLANamespace
                 assignEdges.SetTileObjects(tileObjects);
                 assignEdges.SetScale(scale);
                 assignEdges.SetTilePositions(tilePositions); 
+                assignEdges.SetBorderPositions(borderPositions);
                 assignEdges.AssignAndSwapEdgeTiles();
             }
 

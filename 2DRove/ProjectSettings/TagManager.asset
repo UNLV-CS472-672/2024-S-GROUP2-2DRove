@@ -5,17 +5,22 @@ TagManager:
   serializedVersion: 2
   tags:
   - Border
+  - Enemy
+  - EnemyProjectile
+  - PlayerProjectile
+  - Shadow
+  - Boss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - TileLayer
+  - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Tile Layer
+  - Player
+  - UI Overlay
+  - 'Exit '
   - 
   - 
   - 
@@ -41,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI Overlay
+    uniqueID: 2371582529
     locked: 0

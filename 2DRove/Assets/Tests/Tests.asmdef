@@ -1,11 +1,12 @@
 {
-    "name": "Tests",
+    "name": "Test Map Gen",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Unity.InputSystem",
-        "GameTestAssembly"
+        "GameTestAssembly",
+        "Unity.TextMeshPro"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

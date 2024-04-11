@@ -195,12 +195,12 @@ public class commonAugments
     }
 }
 
-public class rareAugments : MonoBehaviour
+public class rareAugments
 {
     public static AugmentObject placeholder()
     {
         AugmentObject augmentObject = new AugmentObject();
-        augmentObject.augmentName = "Placeholder";
+        augmentObject.augmentName = "Placeholder1";
         augmentObject.augmentDescription = "This is a placeholder augment.";
         augmentObject.augmentType = "Utility";
         augmentObject.augmentRarity = "Rare";
@@ -210,12 +210,12 @@ public class rareAugments : MonoBehaviour
         return augmentObject;
     }
 }
-public class epicAugments : MonoBehaviour
+public class epicAugments
 {
     public static AugmentObject placeholder()
     {
         AugmentObject augmentObject = new AugmentObject();
-        augmentObject.augmentName = "Placeholder";
+        augmentObject.augmentName = "Placeholder2";
         augmentObject.augmentDescription = "This is a placeholder augment.";
         augmentObject.augmentType = "Utility";
         augmentObject.augmentRarity = "Rare";
@@ -225,12 +225,12 @@ public class epicAugments : MonoBehaviour
         return augmentObject;
     }
 }
-public class legendaryAugments : MonoBehaviour
+public class legendaryAugments
 {
     public static AugmentObject placeholder()
     {
         AugmentObject augmentObject = new AugmentObject();
-        augmentObject.augmentName = "Placeholder";
+        augmentObject.augmentName = "Placeholder3";
         augmentObject.augmentDescription = "This is a placeholder augment.";
         augmentObject.augmentType = "Utility";
         augmentObject.augmentRarity = "Rare";

@@ -8,6 +8,7 @@ public class SelectedAugmentList : MonoBehaviour
     public Button closeAugmentList;
     public Button augmentList;
     public Canvas augmentListOverlay;
+    public Canvas augmentChooseDisplay;
     public GameObject augmentPrefab;
     public Transform augmentListTransform;
     void Start()
@@ -19,6 +20,12 @@ public class SelectedAugmentList : MonoBehaviour
     void ShowAugmentList()
     {
         pause();
+        //Closes other augment display if the other is active. Does so vice versa as well.
+        if(augmentChooseDisplay.gameObject.activeSelf)
+        {
+            augmentChooseDisplay.gameObject.SetActive(false);
+        }
+
         foreach(Transform child in augmentListTransform)
         {
             Destroy(child.gameObject);

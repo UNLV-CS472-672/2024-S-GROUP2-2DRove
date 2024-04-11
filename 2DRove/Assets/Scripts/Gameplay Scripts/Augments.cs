@@ -10,18 +10,19 @@ public class Augments : MonoBehaviour
     public Button augmentDebugButton;
     public Button augmentOverlayCloseButton;
     public Canvas augmentOverlayCanvas;
-    public static List<string> chosenAugments;
-    private List<string> allAugments;
-    private List<string> currentChoiceAugments;
+    public Canvas augmentListOverlay;
+    public static List<AugmentObject> chosenAugments;
+    private List<AugmentObject> shufflePool;
+    private List<AugmentObject> currentChoiceAugments;
 
     void Start()
     {
-        //List of all augments
-        allAugments = new List<string> { "Augment #1", "Augment #2", "Augment #3", "Augment #4", "Augment #5", "Augment #6", "Augment #7", "Augment #8", "Augment #9", "Augment #10" };
+        // Shuffle pool for augment selection
+        shufflePool = new List<AugmentObject>();
         //List of augments chosen by the randomizer
-        currentChoiceAugments = new List<string>();
+        currentChoiceAugments = new List<AugmentObject>();
         // List of augments chosen by the player
-        chosenAugments = new List<string>();
+        chosenAugments = new List<AugmentObject>();
         //List of augments chosen by the player
         rerollButton.onClick.AddListener(Reroll);
         // Augment debug button
@@ -35,12 +36,15 @@ public class Augments : MonoBehaviour
     void showAugmentOverlay()
     {
         pause();
+        if(augmentListOverlay.gameObject.activeSelf)
+        {
+            augmentListOverlay.gameObject.SetActive(false);
+        }
         augmentOverlayCanvas.gameObject.SetActive(true);
     }
     // Closes augment display 
     void closeAugmentOverlay()
     {
-        
         augmentOverlayCanvas.gameObject.SetActive(false);
         unpause();
     }
@@ -48,19 +52,30 @@ public class Augments : MonoBehaviour
     void addAugment(Button button)
     {
         TMPro.TextMeshProUGUI augmentText = button.GetComponentInChildren<TMPro.TextMeshProUGUI>();
-        string augmentName = augmentText.text;
-        Debug.Log("Adding augment: " + augmentName);
+        AugmentObject augmentClicked = shufflePool.Find(augment => augment.augmentName == augmentText.text.Split('\n')[0]);
         // Add the selected augment to the list of chosen augments
-        chosenAugments.Add(augmentName);
+        chosenAugments.Add(augmentClicked);
         // Remove the selected augment from the list of current choice augments
         augmentOverlayCanvas.gameObject.SetActive(false);
         //Removes chosen augments
-        for(int i = 0; i < allAugments.Count; i++)
+        switch(augmentClicked.augmentRarity)
         {
-            if(chosenAugments.Contains(allAugments[i]))
-            {
-                allAugments.RemoveAt(i);
-            }
+            case "Common":
+                if(!augmentClicked.isStackable)
+                    AugmentInstantiator.commonAugmentDictionary.Remove(augmentClicked.augmentName);
+                break;
+            case "Rare":
+                if(!augmentClicked.isStackable)
+                    AugmentInstantiator.rareAugmentDictionary.Remove(augmentClicked.augmentName);
+                break;
+            case "Epic":
+                if(!augmentClicked.isStackable)
+                    AugmentInstantiator.epicAugmentDictionary.Remove(augmentClicked.augmentName);
+                break;
+            case "Legendary":
+                if(!augmentClicked.isStackable)
+                    AugmentInstantiator.legendaryAugmentDictionary.Remove(augmentClicked.augmentName);
+                break;
         }
         Reroll();
         unpause();
@@ -80,22 +95,51 @@ public class Augments : MonoBehaviour
     void Reroll()
     {
         currentChoiceAugments.Clear();
+
+        // Create a new list for the shuffle pool
+        List<AugmentObject> shufflePool = new List<AugmentObject>();
+
+        // Add all augments to the shuffle pool
+        shufflePool.AddRange(AugmentInstantiator.commonAugmentDictionary.Values);
         
-        //Shuffle the augments
-        for(int i = 0; i < allAugments.Count; i++)
+        // Add other augments to the shuffle pool based on their rarity
+        System.Random rand = new System.Random();
+        foreach(var augment in AugmentInstantiator.rareAugmentDictionary.Values)
         {
-            string temp = allAugments[i];
-            int randomIndex = Random.Range(i, allAugments.Count);
-            allAugments[i] = allAugments[randomIndex];
-            allAugments[randomIndex] = temp;
+            if(rand.NextDouble() < 0.20) // 20% chance
+            {
+                shufflePool.Add(augment);
+            }
+        }
+        foreach(var augment in AugmentInstantiator.epicAugmentDictionary.Values)
+        {
+            if(rand.NextDouble() < 0.10) // 10% chance
+            {
+                shufflePool.Add(augment);
+            }
+        }
+        foreach(var augment in AugmentInstantiator.legendaryAugmentDictionary.Values)
+        {
+            if(rand.NextDouble() < 0.05) // 5% chance
+            {
+                shufflePool.Add(augment);
+            }
+        }
+        //Shuffle the augments
+        for(int i = 0; i < shufflePool.Count; i++)
+        {
+            AugmentObject temp = shufflePool[i];
+            int randomIndex = Random.Range(i, shufflePool.Count);
+            shufflePool[i] = shufflePool[randomIndex];
+            shufflePool[randomIndex] = temp;
         }
 
         // Assign the first three augments to the buttons
         for(int i = 0; i < 3; i++)
         {
-            currentChoiceAugments.Add(allAugments[i]);
+            currentChoiceAugments.Add(shufflePool[i]);
             //Changes text to fit augment
-            augmentCards[i].GetComponentInChildren<TMPro.TextMeshProUGUI>().text = allAugments[i];
+            augmentCards[i].GetComponentInChildren<TMPro.TextMeshProUGUI>().text = shufflePool[i].augmentName + "\n" + shufflePool[i].augmentDescription;
             //Removes all previous listeners
             augmentCards[i].onClick.RemoveAllListeners();
             //Adds new listener to button

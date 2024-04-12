@@ -17,7 +17,7 @@ public class FoxStateManager : MonoBehaviour
     private FoxBaseState currentState;
 
     public Animator animator;
-    [SerializeField] private Transform player;
+    [SerializeField] public Transform player;
     [SerializeField] public float playerRange;
 
 

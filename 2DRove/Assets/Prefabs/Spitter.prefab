@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4835223503720143938}
   - component: {fileID: 5992127735099010186}
   - component: {fileID: 8263905454741921188}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: projectileAttackPoint
   m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 928594411260537016}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: attackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 5598037921612947105}
   - component: {fileID: 7350636726140891444}
   - component: {fileID: 9005955090540826374}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Spitter
   m_TagString: Enemy
   m_Icon: {fileID: 0}

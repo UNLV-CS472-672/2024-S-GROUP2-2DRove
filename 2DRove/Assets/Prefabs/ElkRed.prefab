@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4633550635478953048}
   - component: {fileID: 4855716261266782918}
   - component: {fileID: 3416654283129974190}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: ElkRed
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_Size: {x: 0.56, y: 0.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2727284571409584859

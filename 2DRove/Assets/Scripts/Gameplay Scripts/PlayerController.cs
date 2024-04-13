@@ -119,7 +119,8 @@ public class PlayerController : MonoBehaviour
     private void blink(float distance){
         //First we raycast from the player in the direction and distance specified of the blink. The layermask is there so it only collides with colliders in the Default layer. We raycast to get collisions so the player cant teleport into/through walls or other objects.
         // Debug.Log(this.transform.rotation);
-        Vector2 direction = new Vector2(this.transform.rotation.y < .5f ? 1 : -1, 0);
+        Debug.Log("m_LocalRotation " + transform.localEulerAngles.y);
+        Vector2 direction = new Vector2(transform.localEulerAngles.y < 90 ? 1 : -1, 0);
         animator.SetTrigger("dash");
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, LayerMask.GetMask("Default"));
         Debug.DrawRay(transform.position, direction * distance, Color.red, 10f);

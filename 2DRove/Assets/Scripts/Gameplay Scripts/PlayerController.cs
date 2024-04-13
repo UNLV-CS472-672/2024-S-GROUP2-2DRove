@@ -57,11 +57,11 @@ public class PlayerController : MonoBehaviour
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
 
         //Find text fields
-        healthText = GameObject.Find("Health Text").GetComponent<TMP_Text>();
+        healthText = GameObject.Find("TextSliderBar/Text (TMP)").GetComponent<TMP_Text>();
         goldText = GameObject.Find("Gold Text").GetComponent<TMP_Text>();
 
         //Find health slider
-        healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
+        healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
 
         //Starts the player with max health and initializes the health slider
         health = maxHealth;
@@ -265,12 +265,12 @@ public class PlayerController : MonoBehaviour
         healthSlider.value = Mathf.Clamp(healthSlider.value, 0f, 1f);
 
         //Sets the color of the health bar based on the % of health left
-        if (healthSlider.value > 0.3f){
-            healthSlider.fillRect.GetComponent<Image>().color = Color.green;
-        }
-        else{
-            healthSlider.fillRect.GetComponent<Image>().color = Color.red;
-        }
+        // if (healthSlider.value > 0.3f){
+        //     healthSlider.fillRect.GetComponent<Image>().color = Color.green;
+        // }
+        // else{
+        //     healthSlider.fillRect.GetComponent<Image>().color = Color.red;
+        // }
 
         //Updates the player's health text
         healthText.text = Mathf.Ceil(health).ToString() + "/" + Mathf.Ceil(maxHealth).ToString();

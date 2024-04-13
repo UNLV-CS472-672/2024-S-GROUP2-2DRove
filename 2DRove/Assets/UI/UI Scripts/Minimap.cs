@@ -14,7 +14,7 @@ public class Minimap : MonoBehaviour
 
     // Start is called before the first frame update
     private void Start(){
-        player = GameObject.Find("Main Camera").GetComponent<Transform>(); // Get the player transform component
+        player = GameObject.Find("Player").GetComponent<Transform>(); // Get the player transform component
         MinimapTransform = GameObject.Find("MinimapCamera").GetComponent<Transform>();
         MinimapCamera = GameObject.Find("MinimapCamera").GetComponent<Camera>();       // Get the minimap camera component
         MinimapScale = MinimapCamera.orthographicSize;                                  // Get the initial zoom of the minimap
@@ -22,12 +22,14 @@ public class Minimap : MonoBehaviour
 
     // Update is called once per frame
     private void Update(){
-        MinimapTransform.position = new Vector3(player.position.x, player.position.y, player.position.z); // Update the minimap position to the player position
+        MinimapTransform.position = new Vector3(player.position.x, player.position.y, -1); // Update the minimap position to the player position
+        
     }        
 
     // Function to zoom in the minimap
     public void MinimapZoomIn()
     {
+        Debug.Log("Zoom In");
         if(MinimapScale > 6){
             MinimapScale -= 3;    // Decaease the scale of the minimap by 3
             MinimapCamera.orthographicSize = MinimapScale;

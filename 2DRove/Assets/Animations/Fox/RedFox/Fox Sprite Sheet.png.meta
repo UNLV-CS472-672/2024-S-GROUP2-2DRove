@@ -1,0 +1,802 @@
+fileFormatVersion: 2
+guid: 287907aad154e0545b1fa4a24485f345
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9127091995916340068
+    second: Fox Sprite Sheet 28x20 RED_0
+  - first:
+      213: -2622765127378127099
+    second: Fox Sprite Sheet 28x20 RED_1
+  - first:
+      213: 2822019221305749656
+    second: Fox Sprite Sheet 28x20 RED_2
+  - first:
+      213: 1394979841472353049
+    second: Fox Sprite Sheet 28x20 RED_3
+  - first:
+      213: 6975710718592479053
+    second: Fox Sprite Sheet 28x20 RED_4
+  - first:
+      213: -2968850548700157751
+    second: Fox Sprite Sheet 28x20 RED_5
+  - first:
+      213: 7220119081635923810
+    second: Fox Sprite Sheet 28x20 RED_6
+  - first:
+      213: -8937473431174788653
+    second: Fox Sprite Sheet 28x20 RED_7
+  - first:
+      213: 426412480104329658
+    second: Fox Sprite Sheet 28x20 RED_8
+  - first:
+      213: 4291142415788714858
+    second: Fox Sprite Sheet 28x20 RED_9
+  - first:
+      213: 3597339017863384639
+    second: Fox Sprite Sheet 28x20 RED_10
+  - first:
+      213: 6019628193190503608
+    second: Fox Sprite Sheet 28x20 RED_11
+  - first:
+      213: 5992211504405847638
+    second: Fox Sprite Sheet 28x20 RED_12
+  - first:
+      213: 1129750611357173862
+    second: Fox Sprite Sheet 28x20 RED_13
+  - first:
+      213: -2026336189579685764
+    second: Fox Sprite Sheet 28x20 RED_14
+  - first:
+      213: -585086466869305661
+    second: Fox Sprite Sheet 28x20 RED_15
+  - first:
+      213: -167072982948930925
+    second: Fox Sprite Sheet 28x20 RED_16
+  - first:
+      213: -3707957290093109736
+    second: Fox Sprite Sheet 28x20 RED_17
+  - first:
+      213: 4213980621469955300
+    second: Fox Sprite Sheet 28x20 RED_18
+  - first:
+      213: 8079142599333630963
+    second: Fox Sprite Sheet 28x20 RED_19
+  - first:
+      213: 4044778441702917989
+    second: Fox Sprite Sheet 28x20 RED_20
+  - first:
+      213: -7436198386670117973
+    second: Fox Sprite Sheet 28x20 RED_21
+  - first:
+      213: 2438728498965261107
+    second: Fox Sprite Sheet 28x20 RED_22
+  - first:
+      213: 6154601075496344124
+    second: Fox Sprite Sheet 28x20 RED_23
+  - first:
+      213: -5031398425373867498
+    second: Fox Sprite Sheet 28x20 RED_24
+  - first:
+      213: -5802239557492778348
+    second: Fox Sprite Sheet 28x20 RED_25
+  - first:
+      213: 84232797835283513
+    second: Fox Sprite Sheet 28x20 RED_26
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FoxAlert_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 100
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c947817ef2e065180800000000000000
+      internalID: -9127091995916340068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxAlert_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 100
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507385d33011a9bd0800000000000000
+      internalID: -2622765127378127099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxAlert_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 100
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890f043b783d92720800000000000000
+      internalID: 2822019221305749656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxAlert_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 100
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9135acf56c6fb5310800000000000000
+      internalID: 1394979841472353049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxAlert_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 100
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fe69d80f3bec060800000000000000
+      internalID: 6975710718592479053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxAlert_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 80
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8e085d7268cc6d0800000000000000
+      internalID: -2968850548700157751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxAlert_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267cde80d04033460800000000000000
+      internalID: 7220119081635923810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxEat_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 60
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9c5516447b7f380800000000000000
+      internalID: -8937473431174788653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxEat_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 60
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1796434ebeae500800000000000000
+      internalID: 426412480104329658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxEat_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 60
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ba2bdaa433d8b30800000000000000
+      internalID: 4291142415788714858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxEat_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 60
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e4668f6c05ce130800000000000000
+      internalID: 3597339017863384639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxEat_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 60
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4eb07c2f30a8350800000000000000
+      internalID: 6019628193190503608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxEat_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 60
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e9e1b7d9c982350800000000000000
+      internalID: 5992211504405847638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxRun_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 41
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66889b2023eadaf00800000000000000
+      internalID: 1129750611357173862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxRun_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 41
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c709598b8f101e3e0800000000000000
+      internalID: -2026336189579685764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxRun_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 40
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cedd5355fa51e7f0800000000000000
+      internalID: -585086466869305661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxRun_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 40
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a93c7d1007eadf0800000000000000
+      internalID: -167072982948930925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxRun_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 40
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e1ea18d70ba8cc0800000000000000
+      internalID: -3707957290093109736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxHit_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 21
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4b8117c011b7a30800000000000000
+      internalID: 4213980621469955300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxHit_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 20
+        width: 22
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3d1039361ee1070800000000000000
+      internalID: 8079142599333630963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxDeath_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5674cd40090f12830800000000000000
+      internalID: 4044778441702917989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxDeath_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babd13b47f05dc890800000000000000
+      internalID: -7436198386670117973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxDeath_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b227c16aa18d120800000000000000
+      internalID: 2438728498965261107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxDeath_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 0
+        width: 23
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a5237d119896550800000000000000
+      internalID: 6154601075496344124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxDeath_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 25
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61281242ac1ec2ab0800000000000000
+      internalID: -5031398425373867498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxDeath_5
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 0
+        width: 27
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a5ce13ddd4a7fa0800000000000000
+      internalID: -5802239557492778348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxDeath_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 28
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cc86988414b2100800000000000000
+      internalID: 84232797835283513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FoxAlert_0: -9127091995916340068
+      FoxAlert_1: -2622765127378127099
+      FoxAlert_2: 2822019221305749656
+      FoxAlert_3: 1394979841472353049
+      FoxAlert_4: 6975710718592479053
+      FoxAlert_5: -2968850548700157751
+      FoxAlert_6: 7220119081635923810
+      FoxDeath_0: 4044778441702917989
+      FoxDeath_1: -7436198386670117973
+      FoxDeath_2: 2438728498965261107
+      FoxDeath_3: 6154601075496344124
+      FoxDeath_4: -5031398425373867498
+      FoxDeath_5: -5802239557492778348
+      FoxDeath_6: 84232797835283513
+      FoxEat_0: -8937473431174788653
+      FoxEat_1: 426412480104329658
+      FoxEat_2: 4291142415788714858
+      FoxEat_3: 3597339017863384639
+      FoxEat_4: 6019628193190503608
+      FoxEat_5: 5992211504405847638
+      FoxHit_0: 4213980621469955300
+      FoxHit_1: 8079142599333630963
+      FoxRun_0: 1129750611357173862
+      FoxRun_1: -2026336189579685764
+      FoxRun_2: -585086466869305661
+      FoxRun_3: -167072982948930925
+      FoxRun_4: -3707957290093109736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

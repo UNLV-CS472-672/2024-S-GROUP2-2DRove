@@ -42,6 +42,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float knockbackStrength = 5f; // Adjust this value for knock back 
     private PlayerStateManager playerStateManager;
 
+    //Augment-affected fields
+    [SerializeField] private float speedBoost = 1f;
+    [SerializeField] private float maxMana = 50f;
+    [SerializeField] private float mana = 50f;
+    [SerializeField] private float rangeMana = 5f;
+    [SerializeField] private float healthRegen = 0f;
+    [SerializeField] private float damageBoost = 1f;
+    [SerializeField] private float critRate = 0;
+    [SerializeField] private bool burning = false;
+
 
     //The Start function is called if the script is enabled before any update functions
     private void Start(){
@@ -54,7 +64,7 @@ public class PlayerController : MonoBehaviour
         }
         rb = GetComponent<Rigidbody2D>();
 
-        speedFactor = currentSpeed;
+        speedFactor = currentSpeed * speedBoost;
 
         //Find the game over menu
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
@@ -79,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ResetMoveSpeed(float delay) {
         yield return new WaitForSeconds(delay);
-        speedFactor = currentSpeed; // Reset to the normal move speed
+        speedFactor = currentSpeed * speedBoost; // Reset to the normal move speed
     }
 
     //FixedUpdate unlike Update is called on an independant timer ignoring frame rate while Update is called each frame. Because of this, movement in FixedUpdate does not have to be multiplied by Time.deltaTime
@@ -146,17 +156,20 @@ public class PlayerController : MonoBehaviour
 
     //Range Attack
     private void rangeAttack(){
-        GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
-        Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
-        Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
+        if((mana - rangeMana) >= 0) {
+            mana -= rangeMana;
+            GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
+            Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
+            Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
 
-        projectile.setDirection(direction);
+            projectile.setDirection(direction);
 
-        lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
-        Collider2D projectileCollider = obj.GetComponent<Collider2D>();
-        Collider2D playerCollider = GetComponent<Collider2D>();
-        if (projectileCollider != null && playerCollider != null) {
-            Physics2D.IgnoreCollision(projectileCollider, playerCollider);
+            lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
+            Collider2D projectileCollider = obj.GetComponent<Collider2D>();
+            Collider2D playerCollider = GetComponent<Collider2D>();
+            if (projectileCollider != null && playerCollider != null) {
+                Physics2D.IgnoreCollision(projectileCollider, playerCollider);
+            }
         }
         
     }
@@ -185,7 +198,13 @@ public class PlayerController : MonoBehaviour
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                enemyScript.TakeDamage(playerAttackDamage);
+                float totalDamage =  playerAttackDamage * damageBoost;
+                float crit = Random.Range(1, 100);
+                if(crit <= (critRate * 100))
+                {
+                    totalDamage *= 1.5f;
+                }
+                enemyScript.TakeDamage(totalDamage);
                 if (enemy.CompareTag("Enemy")){
                     Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
                     if (enemyRb != null) {
@@ -297,5 +316,42 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+    //increases speed boost if selected in augment system
+    public void increaseSpeed(float addSpeed)
+    {
+        speedBoost += addSpeed;
+    }
+
+    //increases mana if selected in augment system
+    public void increaseMana(float addMana)
+    {
+        maxMana += addMana;
+        mana = maxMana;
+    }
+
+    //increases health regen if selected in augment system
+    public void increaseHealthRegen(float addHealthRegen)
+    {
+        healthRegen += addHealthRegen;
+    }
+
+    //increases speed boost if selected in augment system
+    public void increaseDamage(float addDamage)
+    {
+        damageBoost += addDamage;
+    }
+
+    //increases speed boost if selected in auhment system
+    public void increaseCrit(float addCrit)
+    {
+        critRate += addCrit;
+    }
+
+    //increases speed boost if selected in augment system
+    public void enableBurning()
+    {
+        burning = true;
     }
 }

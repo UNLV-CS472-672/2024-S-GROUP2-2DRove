@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -6383126755422583183}
   - component: {fileID: -3986995872299544415}
   - component: {fileID: -3450728954900394446}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Warden
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4394692168410877}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPointX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8061529373594328308}
   - component: {fileID: 7637117200333144095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1393467185958728732}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AttackPointY
   m_TagString: Untagged
   m_Icon: {fileID: 0}

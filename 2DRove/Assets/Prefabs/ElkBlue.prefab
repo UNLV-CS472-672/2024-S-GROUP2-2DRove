@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1144814910068169308}
   - component: {fileID: 1650966963288276836}
   - component: {fileID: 5638597522792428165}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: ElkBlue
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ SpriteRenderer:
   m_Size: {x: 0.56, y: 0.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &596079816133628464

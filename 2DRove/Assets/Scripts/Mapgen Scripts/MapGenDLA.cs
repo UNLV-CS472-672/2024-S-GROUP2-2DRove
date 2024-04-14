@@ -10,7 +10,8 @@ namespace MapGenDLANamespace
 {
     public class MapGenDLA : MonoBehaviour
     {
-        [SerializeField] GameObject tile;
+        [SerializeField] GameObject beginningTile;
+        [SerializeField] GameObject[] tile;
         [SerializeField] GameObject borderPrefab;
 
         [SerializeField] GameObject exitPrefab;
@@ -139,7 +140,7 @@ namespace MapGenDLANamespace
         // First tile: hard coding name and position because it should always start at 0.
         private void GenerateFirstTile(Vector2Int currentPosition)
         {
-            GameObject firstTile = Instantiate(tile, new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject firstTile = Instantiate(beginningTile, new Vector3(0, 0, 0), Quaternion.identity);
             firstTile.name = "Tile(0,0)";
             //firstTile.layer = LayerMask.NameToLayer("TileLayer");
             firstTile.transform.localScale = new Vector3(scale, scale, 1);
@@ -269,7 +270,7 @@ namespace MapGenDLANamespace
         //Create a new tile where the previous tile was
         private void CreatePreviousTile(Vector2Int previousPosition)
         {
-            GameObject newTile = Instantiate(tile, new Vector3(previousPosition.x * scale * 10, previousPosition.y * scale * 5, 0), Quaternion.identity);
+            GameObject newTile = Instantiate(getRandomTile(tile), new Vector3(previousPosition.x * scale * 10, previousPosition.y * scale * 5, 0), Quaternion.identity);
             //newTile.layer = LayerMask.NameToLayer("TileLayer");
             newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
             newTile.transform.localScale = new Vector3(scale, scale, 1);
@@ -277,6 +278,9 @@ namespace MapGenDLANamespace
             tileObjects.Add(previousPosition, newTile);
         }
 
+        private GameObject getRandomTile(GameObject[] tileSet){
+            return tileSet[Random.Range(0, tile.Length)];
+        }
 
         // Deprecated for now.
         // Fills in the empty space created between tiles and the border similarly to tile generation. 

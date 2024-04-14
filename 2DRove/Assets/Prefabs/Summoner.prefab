@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -781768465481185257}
   - component: {fileID: 8724349399916483158}
   - component: {fileID: 8946580072168331372}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Summoner
   m_TagString: Enemy
   m_Icon: {fileID: 0}

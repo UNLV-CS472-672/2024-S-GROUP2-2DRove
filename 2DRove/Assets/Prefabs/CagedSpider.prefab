@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3384140318252780453}
   - component: {fileID: 4050705368486985994}
   - component: {fileID: 3138408155665264289}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 702997494839263448}
   - component: {fileID: 2722715965370304581}
   - component: {fileID: 8937932253450727748}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: CagedSpider
   m_TagString: Enemy
   m_Icon: {fileID: 0}

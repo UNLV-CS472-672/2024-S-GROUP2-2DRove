@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4061516972465457001}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6555135141237207722}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 1303559184637223431}
   - component: {fileID: 3512483014866713349}
   - component: {fileID: 4616862565791431872}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: TarnishWidow
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2671824049831698277}
   - component: {fileID: 7910261294953272567}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}

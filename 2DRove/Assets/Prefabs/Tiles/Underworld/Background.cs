@@ -24,7 +24,7 @@ public class Background : MonoBehaviour
                 float yPos = (x * 6.5f - y * 6.5f) * 5.0f;
                 
                 GameObject background = Instantiate(getRandomTile(tile), new Vector3(xPos, yPos, 0), Quaternion.identity);
-                background.name = "Background(" + xPos + ", " + yPos + ")";
+                //background.name = "Background(" + xPos + ", " + yPos + ")";
                 background.transform.localScale = new Vector3(6.5f, 6.5f, 1);
                 background.GetComponent<Renderer>().sortingOrder = -5;
             }

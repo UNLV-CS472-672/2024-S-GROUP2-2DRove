@@ -90,19 +90,17 @@ public class PlayerController : MonoBehaviour
         //Decides which animation plays based on the input direction
         animateMovement(inputDirection);
 
+        if(input.actions["Blink"].IsPressed() && notOnCooldown(lastBlinkedTime, blinkCooldown)){
+            //Blinks the player based on direction of the player
+            blink(inputDirection, blinkDistance);
+        }
+
         if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             Slash();
         }
 
         if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             rangeAttack();
-        }
-    }
-
-    private void Update(){
-        if(input.actions["Blink"].IsPressed() && notOnCooldown(lastBlinkedTime, blinkCooldown)){
-            //Blinks the player based on direction of the player
-            blink(rb.velocity.normalized, blinkDistance);
         }
     }
 
@@ -145,7 +143,7 @@ public class PlayerController : MonoBehaviour
         Debug.DrawRay(transform.position, direction * distance, Color.red, 10f);
         Debug.Log(hit.distance);
         if(hit){ //If the raycast collides with an object
-            transform.position = (direction * (hit.distance - 2)) + (Vector2)transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block
+            transform.position = (direction * (hit.distance - 1)) + (Vector2)transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block
         }else{//If the raycast doesnt collide with anything then there is nothing in the way of the player blinking
             transform.position = (direction * distance) + (Vector2)transform.position; //Teleports the player the full distance in the direction the player was moving
         }

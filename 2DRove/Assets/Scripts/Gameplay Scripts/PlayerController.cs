@@ -47,7 +47,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxMana = 50f;
     [SerializeField] private float mana = 50f;
     [SerializeField] private float rangeMana = 5f;
-    [SerializeField] private float healthRegen = 0f;
+    [SerializeField] private float healthRegen = 1f;
+    private float lastRegen;
+    private float regenCooldown = 5f;
     [SerializeField] private float damageBoost = 1f;
     [SerializeField] private float critRate = 0;
     [SerializeField] private bool burning = false;
@@ -110,6 +112,9 @@ public class PlayerController : MonoBehaviour
 
         if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             rangeAttack();
+        }
+        if(notOnCooldown(lastRegen, regenCooldown)) {
+            regenHealth();
         }
     }
 
@@ -318,39 +323,58 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //increases speed boost if selected in augment system
-    public void increaseSpeed(float addSpeed)
+    /*
+        increaseSpeed: increases speed boost if selected in augment system
+        params: addSpeed - float, increases speedboost by this value
+    */
+    public void IncreaseSpeed(float addSpeed)
     {
         speedBoost += addSpeed;
     }
 
+    /*
+        increaseSpeed: increases speed boost if selected in augment system
+        params: addSpeed - float, increases speedboost by this value
+    */
+    public float getSpeed()
+    {
+        return speedBoost;
+    }
+
     //increases mana if selected in augment system
-    public void increaseMana(float addMana)
+    public void IncreaseMana(float addMana)
     {
         maxMana += addMana;
         mana = maxMana;
     }
 
-    //increases health regen if selected in augment system
-    public void increaseHealthRegen(float addHealthRegen)
+    //increases Health regen if selected in augment system
+    public void IncreaseHealthRegen(float addHealthRegen)
     {
         healthRegen += addHealthRegen;
     }
 
+    //increases health automatically
+    private void regenHealth()
+    {
+        healPlayer(healthRegen);
+        lastRegen = Time.time;
+    }
+
     //increases speed boost if selected in augment system
-    public void increaseDamage(float addDamage)
+    public void IncreaseDamage(float addDamage)
     {
         damageBoost += addDamage;
     }
 
     //increases speed boost if selected in auhment system
-    public void increaseCrit(float addCrit)
+    public void IncreaseCrit(float addCrit)
     {
         critRate += addCrit;
     }
 
     //increases speed boost if selected in augment system
-    public void enableBurning()
+    public void EnableBurning()
     {
         burning = true;
     }

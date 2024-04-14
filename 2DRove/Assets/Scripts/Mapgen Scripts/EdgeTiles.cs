@@ -18,21 +18,21 @@ namespace EdgeTiles
         [SerializeField] private GameObject SEcornerPrefab;
         [SerializeField] private GameObject SWcornerPrefab;
 
-        private Dictionary<Vector2Int, GameObject> tileObjects;
-        private int scale;
-        private HashSet<Vector2Int> tilePositions;
+        private Dictionary<Vector2, GameObject> tileObjects;
+        private float scale;
+        private HashSet<Vector2> tilePositions;
 
-        public void SetTilePositions(HashSet<Vector2Int> positions)
+        public void SetTilePositions(HashSet<Vector2> positions)
         {
-            tilePositions = new HashSet<Vector2Int>(positions); // Create a copy to avoid unintended modifications
+            tilePositions = new HashSet<Vector2>(positions); // Create a copy to avoid unintended modifications
         }
 
-        public void SetScale(int newScale)
+        public void SetScale(float newScale)
         {
             scale = newScale;
         }
 
-        public void SetTileObjects(Dictionary<Vector2Int, GameObject> objects)
+        public void SetTileObjects(Dictionary<Vector2, GameObject> objects)
         {
             tileObjects = objects;
         }
@@ -76,18 +76,18 @@ namespace EdgeTiles
 
 
         // Check the type of tile based on its neighbors.
-        TileType GetTileType(Vector2Int tilePos)
+        TileType GetTileType(Vector2 tilePos)
         {
-            Vector2Int isoUp = new Vector2Int(-1, 1);
-            Vector2Int isoDown = new Vector2Int(1, -1);
-            Vector2Int isoLeft = new Vector2Int(-1, -1);
-            Vector2Int isoRight = new Vector2Int(1, 1);
+            Vector2 isoUp = new Vector2(-1.0f, 1.0f);
+            Vector2 isoDown = new Vector2(1.0f, -1.0f);
+            Vector2 isoLeft = new Vector2(-1.0f, -1.0f);
+            Vector2 isoRight = new Vector2(1.0f, 1.0f);
             
             // Adjust for the scale of your grid if necessary
-            isoUp *= scale / 2;
-            isoDown *= scale / 2;
-            isoLeft *= scale / 2;
-            isoRight *= scale / 2;
+            //isoUp *= scale / 2;
+            //isoDown *= scale / 2;
+            //isoLeft *= scale / 2;
+            //isoRight *= scale / 2;
 
             bool up = tilePositions.Contains(tilePos + isoUp);
             bool down = tilePositions.Contains(tilePos + isoDown);
@@ -142,7 +142,7 @@ namespace EdgeTiles
         }
 
         // Swap the tile at the given position with a new tile based on type
-        void SwapTile(Vector2Int position, GameObject newTilePrefab) {
+        void SwapTile(Vector2 position, GameObject newTilePrefab) {
             if (tileObjects.TryGetValue(position, out GameObject oldTile)) {
                 Debug.Log("HERE: " + position);
                 // Destroy or disable the old tile

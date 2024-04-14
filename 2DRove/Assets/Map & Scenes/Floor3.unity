@@ -1642,7 +1642,7 @@ MonoBehaviour:
   topMost: 0
   bottomMost: 0
   assignEdges: {fileID: 0}
-  scale: 2
+  scale: 6.5
   maxX: 10
   maxY: 10
   minX: -10
@@ -1679,7 +1679,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe966aa58ce5a4f3fb70efcfadc32eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 9148618936101596910, guid: e5475ef70477443ae8e797453de0fc49, type: 3}
+  tile:
+  - {fileID: 9148618936101596910, guid: e5475ef70477443ae8e797453de0fc49, type: 3}
+  - {fileID: 9148618936101596910, guid: 4d7641526bf4a1c43aaaaeb9aa37dab8, type: 3}
+  - {fileID: 9148618936101596910, guid: a1cee68dcee124a4b936444dab41827e, type: 3}
+  - {fileID: 9148618936101596910, guid: a803a87bf61570749bdb524b194a1b04, type: 3}
 --- !u!1 &609530228
 GameObject:
   m_ObjectHideFlags: 0

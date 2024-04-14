@@ -47,6 +47,8 @@ namespace MapGenDLANamespace
 
         void Start()
         {
+            GameObject uiOverlay = GameObject.Find("UI Overlay");
+            DontDestroyOnLoad(uiOverlay);
             //Clear at the start of a scene being loaded
             tilePositions.Clear();
             borderPositions.Clear();

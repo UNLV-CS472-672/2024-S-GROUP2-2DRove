@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7610483236319873343}
   - component: {fileID: 2902167814241644366}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4220949984574667149}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 1321098047387594039}
   - component: {fileID: 5430507036490247282}
   - component: {fileID: 1545625608823368577}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 962467841880699752}
   - component: {fileID: 6891807063455474922}
   - component: {fileID: 5812207755115233459}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: CagedShocker
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3508278907231429021}
   - component: {fileID: 2579493004855450309}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -545,7 +545,7 @@ GameObject:
   - component: {fileID: 2532322777309564979}
   - component: {fileID: 4993068130986748323}
   - component: {fileID: 4115029962212798890}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5132978687934426247}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Handle Slide Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7210264281584237184}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +684,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5740284879921908024}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 5904735019844170611}
   - component: {fileID: 5611038611023981178}
   - component: {fileID: 41329277113117384}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

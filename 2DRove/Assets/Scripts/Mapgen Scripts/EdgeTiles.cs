@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;      
+using UnityEngine;  
+using Random=UnityEngine.Random;      
       
 namespace EdgeTiles
 {
@@ -9,14 +10,14 @@ namespace EdgeTiles
 
         enum TileType { None, NPeninsula, SPeninsula, WPeninsula, EPeninsula, NECorner, NWCorner, SECorner, SWCorner }
 
-        [SerializeField] private GameObject humpEastPrefab;
-        [SerializeField] private GameObject humpNorthPrefab;
-        [SerializeField] private GameObject humpSouthPrefab;
-        [SerializeField] private GameObject humpWestPrefab;
-        [SerializeField] private GameObject NEcornerPrefab;
-        [SerializeField] private GameObject NWcornerPrefab;
-        [SerializeField] private GameObject SEcornerPrefab;
-        [SerializeField] private GameObject SWcornerPrefab;
+        [SerializeField] private GameObject[] humpEastPrefab;
+        [SerializeField] private GameObject[] humpNorthPrefab;
+        [SerializeField] private GameObject[] humpSouthPrefab;
+        [SerializeField] private GameObject[] humpWestPrefab;
+        [SerializeField] private GameObject[] NEcornerPrefab;
+        [SerializeField] private GameObject[] NWcornerPrefab;
+        [SerializeField] private GameObject[] SEcornerPrefab;
+        [SerializeField] private GameObject[] SWcornerPrefab;
 
         private Dictionary<Vector2, GameObject> tileObjects;
         private float scale;
@@ -43,28 +44,28 @@ namespace EdgeTiles
                 TileType tileType = GetTileType(tilePos);
                 switch (tileType) {
                     case TileType.NECorner:
-                        SwapTile(tilePos, NEcornerPrefab); // Replace with North East Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(NEcornerPrefab)); // Replace with North East Corner tile prefab
                         break;
                     case TileType.NWCorner:
-                        SwapTile(tilePos, NWcornerPrefab); // Replace with North West Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(NWcornerPrefab)); // Replace with North West Corner tile prefab
                         break;
                     case TileType.SECorner:
-                        SwapTile(tilePos, SEcornerPrefab); // Replace with South East Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(SEcornerPrefab)); // Replace with South East Corner tile prefab
                         break;
                     case TileType.SWCorner:
-                        SwapTile(tilePos, SWcornerPrefab); // Replace with South West Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(SWcornerPrefab)); // Replace with South West Corner tile prefab
                         break;
                     case TileType.NPeninsula:
-                        SwapTile(tilePos, humpNorthPrefab); // Replace with North Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpNorthPrefab)); // Replace with North Peninsula tile prefab
                         break;
                     case TileType.SPeninsula:
-                        SwapTile(tilePos, humpSouthPrefab); // Replace with South Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpSouthPrefab)); // Replace with South Peninsula tile prefab
                         break;
                     case TileType.WPeninsula:
-                        SwapTile(tilePos, humpWestPrefab); // Replace with West Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpWestPrefab)); // Replace with West Peninsula tile prefab
                         break;
                     case TileType.EPeninsula:
-                        SwapTile(tilePos, humpEastPrefab); // Replace with East Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpEastPrefab)); // Replace with East Peninsula tile prefab
                         break;
                     case TileType.None:
                     default:
@@ -74,6 +75,9 @@ namespace EdgeTiles
             }
         }
 
+        private GameObject getRandomTile(GameObject[] tileSet){
+            return tileSet[Random.Range(0, tileSet.Length)];
+        }
 
         // Check the type of tile based on its neighbors.
         TileType GetTileType(Vector2 tilePos)

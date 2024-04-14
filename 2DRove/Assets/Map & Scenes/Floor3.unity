@@ -1633,7 +1633,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beea543b0de777d4ab12afa55f562645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
+  beginningTile: {fileID: 9148618936101596910, guid: 3598510a843b2e349b89a88756401209, type: 3}
+  tile:
+  - {fileID: 9148618936101596910, guid: d196dbf96079642378910ce7c6e46c33, type: 3}
+  - {fileID: 9148618936101596910, guid: c589aeecfdad34be4bea31294a40b7f4, type: 3}
+  - {fileID: 9148618936101596910, guid: 228791612b96d41b788e898f137e4be2, type: 3}
+  - {fileID: 9148618936101596910, guid: fecb05769cc8245138aeb1315e7ba02f, type: 3}
+  - {fileID: 9148618936101596910, guid: a6bb43c052c0e45b7b71ddf480f5086a, type: 3}
+  - {fileID: 9148618936101596910, guid: 5eba364edad0d4409a608e36f61c7734, type: 3}
+  - {fileID: 9148618936101596910, guid: 47442ff42da60411abad7dafb033bddc, type: 3}
   borderPrefab: {fileID: 9148618936101596910, guid: 8523a6a229aef471d820f4b8cf69d301, type: 3}
   exitPrefab: {fileID: 923991240687089494, guid: e61882843c20b724b8a4998f498ece17, type: 3}
   tileNum: 20
@@ -1659,14 +1667,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bcb3b3d201d6ae4d9e9bf3e930193f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  humpEastPrefab: {fileID: 9148618936101596910, guid: bf981969db36b403ba332ab4186ebf53, type: 3}
-  humpNorthPrefab: {fileID: 9148618936101596910, guid: 2c8eafdb72e4645ef95c4ef1a44b67f4, type: 3}
-  humpSouthPrefab: {fileID: 9148618936101596910, guid: 42f90b9a5ab3f40ae9ad5ec2269fe405, type: 3}
-  humpWestPrefab: {fileID: 9148618936101596910, guid: 05e62ef462439451f8243cef5df3cb55, type: 3}
-  NEcornerPrefab: {fileID: 9148618936101596910, guid: d38bf4bb9c8714e90aa4b96e5db68bf9, type: 3}
-  NWcornerPrefab: {fileID: 9148618936101596910, guid: 931cb03a3b6554afbbda00544a1db347, type: 3}
-  SEcornerPrefab: {fileID: 9148618936101596910, guid: 00308e761a16c4c168f5b4a0381ea1f4, type: 3}
-  SWcornerPrefab: {fileID: 9148618936101596910, guid: 6ce26eb55244f4657ae8010dc33a62b4, type: 3}
+  humpEastPrefab:
+  - {fileID: 9148618936101596910, guid: bf981969db36b403ba332ab4186ebf53, type: 3}
+  humpNorthPrefab:
+  - {fileID: 9148618936101596910, guid: 2c8eafdb72e4645ef95c4ef1a44b67f4, type: 3}
+  humpSouthPrefab:
+  - {fileID: 9148618936101596910, guid: 42f90b9a5ab3f40ae9ad5ec2269fe405, type: 3}
+  humpWestPrefab:
+  - {fileID: 9148618936101596910, guid: 05e62ef462439451f8243cef5df3cb55, type: 3}
+  NEcornerPrefab:
+  - {fileID: 9148618936101596910, guid: d38bf4bb9c8714e90aa4b96e5db68bf9, type: 3}
+  NWcornerPrefab:
+  - {fileID: 9148618936101596910, guid: 931cb03a3b6554afbbda00544a1db347, type: 3}
+  SEcornerPrefab:
+  - {fileID: 9148618936101596910, guid: 00308e761a16c4c168f5b4a0381ea1f4, type: 3}
+  SWcornerPrefab:
+  - {fileID: 9148618936101596910, guid: 6ce26eb55244f4657ae8010dc33a62b4, type: 3}
 --- !u!114 &602447687
 MonoBehaviour:
   m_ObjectHideFlags: 0

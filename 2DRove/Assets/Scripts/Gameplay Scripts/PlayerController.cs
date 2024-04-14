@@ -51,8 +51,10 @@ public class PlayerController : MonoBehaviour
     private float lastRegen;
     private float regenCooldown = 5f;
     [SerializeField] private float damageBoost = 1f;
-    [SerializeField] private float critRate = 0;
+    [SerializeField] private float critRate = 0f;
     [SerializeField] private bool burning = false;
+    [SerializeField] private float burnDamage = 0f;
+
 
 
     //The Start function is called if the script is enabled before any update functions
@@ -210,6 +212,11 @@ public class PlayerController : MonoBehaviour
                     totalDamage *= 1.5f;
                 }
                 enemyScript.TakeDamage(totalDamage);
+                if(burning) {
+                    //applies burning to enemies
+                    enemyScript.EnableBurning();
+                    enemyScript.setBurnDamage(burnDamage);
+                }
                 if (enemy.CompareTag("Enemy")){
                     Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
                     if (enemyRb != null) {
@@ -311,7 +318,18 @@ public class PlayerController : MonoBehaviour
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                enemyScript.TakeDamage(1);
+                float totalDamage =  playerAttackDamage * damageBoost; // increase total damage by damageBoost
+                float crit = Random.Range(1, 100);
+                if(crit <= (critRate * 100))
+                {
+                    totalDamage *= 1.5f;    // use random number to determine if player hits a crit or not
+                }
+                enemyScript.TakeDamage(totalDamage);
+                if(burning) {
+                    //applies burning to enemies
+                    enemyScript.EnableBurning();
+                    enemyScript.setBurnDamage(burnDamage);
+                }
                 if (enemy.CompareTag("Enemy")){
                     Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
                     if (enemyRb != null) {
@@ -322,6 +340,9 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+
+    // *** AUGMENTS
 
     /*
         increaseSpeed: increases speed boost if selected in augment system
@@ -361,21 +382,52 @@ public class PlayerController : MonoBehaviour
         lastRegen = Time.time;
     }
 
-    //increases speed boost if selected in augment system
+    //increases damage if selected in augment system
     public void IncreaseDamage(float addDamage)
     {
         damageBoost += addDamage;
     }
 
-    //increases speed boost if selected in auhment system
+    //increases crit rate if selected in augment system
     public void IncreaseCrit(float addCrit)
     {
         critRate += addCrit;
     }
 
-    //increases speed boost if selected in augment system
+    //enables burning if selected in augment system
     public void EnableBurning()
     {
         burning = true;
+        burnDamage = 1f;
+    }
+
+    //increases burn damage if selected in augment system, must enable burning to take effect
+    public void IncreaseBurn(float addBurn)
+    {
+        burnDamage += addBurn;
+    }
+
+    //returns whether player has burning enabled
+    public bool doesBurn()
+    {
+        return burning;
+    }
+
+    //returns the amount of burn damage
+    public float getBurnDamage()
+    {
+        return burnDamage;
+    }
+
+    //returns the damage boost
+    public float getDamageBoost()
+    {
+        return damageBoost;
+    }
+
+    //returns the crit rate
+    public float getCritRate()
+    {
+        return critRate;
     }
 }

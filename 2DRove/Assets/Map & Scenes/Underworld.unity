@@ -344,6 +344,7 @@ MonoBehaviour:
   - {fileID: 9148618936101596910, guid: a6bb43c052c0e45b7b71ddf480f5086a, type: 3}
   - {fileID: 9148618936101596910, guid: 5eba364edad0d4409a608e36f61c7734, type: 3}
   - {fileID: 9148618936101596910, guid: 47442ff42da60411abad7dafb033bddc, type: 3}
+  - {fileID: 9148618936101596910, guid: 0500c86f5ce3f4d11876c9abc5f9a607, type: 3}
   borderPrefab: {fileID: 9148618936101596910, guid: 8523a6a229aef471d820f4b8cf69d301, type: 3}
   exitPrefab: {fileID: 923991240687089494, guid: e61882843c20b724b8a4998f498ece17, type: 3}
   tileNum: 20

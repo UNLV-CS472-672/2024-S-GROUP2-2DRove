@@ -281,6 +281,9 @@ namespace MapGenDLANamespace
         return tileSet[Random.Range(0, tile.Length)];
     }
 
+        private GameObject getRandomTile(GameObject[] tileSet){
+            return tileSet[Random.Range(0, tile.Length)];
+        }
 
         // Deprecated for now.
         // Fills in the empty space created between tiles and the border similarly to tile generation. 

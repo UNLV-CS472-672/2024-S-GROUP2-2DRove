@@ -277,10 +277,6 @@ namespace MapGenDLANamespace
             tilePositions.Add(previousPosition);
             tileObjects.Add(previousPosition, newTile);
         }
-    private GameObject getRandomTile(GameObject[] tileSet){
-        return tileSet[Random.Range(0, tile.Length)];
-    }
-
         private GameObject getRandomTile(GameObject[] tileSet){
             return tileSet[Random.Range(0, tile.Length)];
         }

@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //FixedUpdate unlike Update is called on an independant timer ignoring frame rate while Update is called each frame. Because of this, movement in FixedUpdate does not have to be multiplied by Time.deltaTime
-    private void FixedUpdate(){
+    private void Update(){
         GetComponent<CapsuleCollider2D>().enabled = false;
         //Checks for the input and if the blink is on cooldown
         if(input.actions["Blink"].IsPressed() && notOnCooldown(lastBlinkedTime, blinkCooldown)){

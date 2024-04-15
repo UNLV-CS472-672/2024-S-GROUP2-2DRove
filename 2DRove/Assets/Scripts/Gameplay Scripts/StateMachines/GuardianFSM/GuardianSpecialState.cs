@@ -3,7 +3,6 @@ using UnityEngine;
 public class GuadianSpecialState : GuardianBaseState
 {
     private Transform player;
-    private float specialDuration = .750f + .250f;
     private float specialTime;
     private float xPos;
     private float yPos;
@@ -16,7 +15,7 @@ public class GuadianSpecialState : GuardianBaseState
         xPos = Guardian.GetComponent<Transform>().position.x;
         yPos = Guardian.GetComponent<Transform>().position.y;
         Debug.Log("Entering Dash State");
-        specialTime = specialDuration;
+        specialTime = (Guardian.AoETime / Guardian.AoESpeed) + (Guardian.AoEResetTime / Guardian.AoEResetSpeed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("special");
         Guardian.afterImage.makeGhost = false;

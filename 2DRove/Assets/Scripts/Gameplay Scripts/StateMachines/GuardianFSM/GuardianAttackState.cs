@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class GuardianAttackState : GuardianBaseState
 {
-    private float attackTime = .917f + .917f;
+    private float attackTime;
     private Animator animator;
     public override void EnterState(GuardianStateManager Guardian)
     {
         Debug.Log("Entering Attack State");
-        attackTime = .917f + .917f;
+        attackTime = (Guardian.attack1Time / Guardian.attack1Speed) + (Guardian.attack2Time / Guardian.attack2Speed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }

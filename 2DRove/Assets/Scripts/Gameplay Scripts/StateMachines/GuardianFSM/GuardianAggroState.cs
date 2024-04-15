@@ -27,9 +27,10 @@ public class GuardianAggroState : GuardianBaseState
             Guardian.SwitchState(Guardian.VertDashState);
         }
 
+        rb.AddForce(Direction.normalized * Guardian.MovementSpeed);
+
         patience -= Time.deltaTime;
 
-        rb.AddForce(Direction.normalized * 1f);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

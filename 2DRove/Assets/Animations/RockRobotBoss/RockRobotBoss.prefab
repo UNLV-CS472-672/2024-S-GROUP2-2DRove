@@ -17,13 +17,13 @@ GameObject:
   - component: {fileID: 8204070761296416533}
   - component: {fileID: 7336062654884450899}
   - component: {fileID: 8509703350336964303}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: RockRobotBoss
   m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6103349213836330879
 Transform:
   m_ObjectHideFlags: 0
@@ -298,7 +298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 130624589444498416}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 186395409122325504}
   - component: {fileID: 8489606765793708412}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8624798509624551241}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointY
   m_TagString: Untagged
   m_Icon: {fileID: 0}

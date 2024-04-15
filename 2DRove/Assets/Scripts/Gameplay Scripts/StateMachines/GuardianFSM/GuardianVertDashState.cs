@@ -3,10 +3,7 @@ using UnityEngine;
 public class GuardianVertDashState : GuardianBaseState
 {
     private Transform player;
-    private float dashDuration = .167f * 2;
     private float dashTime;
-    private float attackTime = .9f;
-    private float specialTime = 1.167f;
     private float xPos;
     private float yPos;
     private float playerYPos;
@@ -17,7 +14,7 @@ public class GuardianVertDashState : GuardianBaseState
         xPos = Guardian.GetComponent<Transform>().position.x;
         yPos = Guardian.GetComponent<Transform>().position.y;
         Debug.Log("Entering Dash State");
-        dashTime = dashDuration;
+        dashTime = ((Guardian.vertDashTime * 2) / Guardian.vertDashSpeed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("vertDash");
         Guardian.GetComponent<PolygonCollider2D>().enabled = true;
@@ -32,7 +29,7 @@ public class GuardianVertDashState : GuardianBaseState
         }
 
         playerYPos = player.transform.position.y;
-        Guardian.GetComponent<Transform>().position = new Vector3(xPos, Mathf.SmoothStep(playerYPos, yPos, dashTime/dashDuration), 0);
+        Guardian.GetComponent<Transform>().position = new Vector3(xPos, Mathf.SmoothStep(playerYPos, yPos, dashTime/(Guardian.vertDashTime *2)), 0);
         dashTime -= Time.deltaTime;
     }
 

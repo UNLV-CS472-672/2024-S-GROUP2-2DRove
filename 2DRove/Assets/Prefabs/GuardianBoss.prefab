@@ -445,8 +445,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3b7aed17caf584794c3d844ab5323c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSpeed: 1
+  walkAnimSpeed: 1
+  attack1Speed: 1
+  attack2Speed: 1
+  vertDashSpeed: 1
+  horizontalDashSpeed: 1
+  AoESpeed: 1
+  AoEResetSpeed: 1
   afterImage: {fileID: 1680049920885591672}
-  animator: {fileID: 0}
+  animator: {fileID: 878488624133352400}
   attack1X: {fileID: 7210264281584237184}
   attack1Y: {fileID: 4220949984574667149}
   attack1Length: 5.67

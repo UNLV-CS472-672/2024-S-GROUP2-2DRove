@@ -153,7 +153,7 @@ namespace EdgeTilesCity
                 Destroy(oldTile);
 
                 // Instantiate the new tile prefab and place it at the correct position
-                GameObject newTile = Instantiate(newTilePrefab, new Vector3(position.x * 26, position.y *13- 6.5f, 0), Quaternion.identity);
+                GameObject newTile = Instantiate(newTilePrefab, new Vector3(position.x * 26, position.y *13, 0), Quaternion.identity);
                 newTile.name = newTilePrefab.name + "(" + position.x + ", " + position.y + ")";
                 // newTile.transform.localScale = new Vector3(scale, scale, 1);
 

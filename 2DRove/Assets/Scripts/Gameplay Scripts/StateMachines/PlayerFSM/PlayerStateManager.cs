@@ -5,6 +5,20 @@ using UnityEngine.InputSystem;
 
 public class PlayerStateManager : MonoBehaviour
 {
+    public float MovementSpeed;
+    public float walkAnimSpeed;
+    public float slash1Speed;
+    public float slash2Speed;
+    public float slash3Speed;
+    public float hitStunSpeed;
+    public float idleAnimSpeed;
+    public float slash1Lurch;
+    public float slash2Lurch;
+    public float slash3Lurch;
+    [System.NonSerialized] public float slash1Time;
+    [System.NonSerialized] public float slash2Time;
+    [System.NonSerialized] public float slash3Time;
+    public Vector2 lastInput;
     public Animator animator;
     public Transform attackPoint;
     [SerializeField] public float attackRange;
@@ -29,11 +43,19 @@ public class PlayerStateManager : MonoBehaviour
         animator = this.GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody2D>();
         flipped = false;
+        lastInput = new Vector2(.9f, .1f);
+        findAnimationTimes();
     }
 
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("walkAnimSpeed", walkAnimSpeed);
+        animator.SetFloat("slash1Speed", slash1Speed);
+        animator.SetFloat("slash2Speed", slash2Speed);
+        animator.SetFloat("slash3Speed", slash3Speed);
+        animator.SetFloat("hitStunSpeed", hitStunSpeed);
+        animator.SetFloat("idleAnimSpeed", idleAnimSpeed);
         currentState.UpdateState(this);
     }
 
@@ -85,5 +107,28 @@ public class PlayerStateManager : MonoBehaviour
     public void Coroutine(IEnumerator coroutine)
     {
         StartCoroutine(coroutine);
+    }
+
+    private void findAnimationTimes()
+    {
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        foreach (AnimationClip clip in clips)
+        {
+            switch (clip.name)
+            {
+                case "Slash1":
+                    slash1Time = clip.length;
+                    break;
+                case "Slash2":
+                    slash2Time = clip.length;
+                    break;
+                case "Slash3":
+                    slash3Time = clip.length;
+                    break;
+                default:
+                    Debug.Log(clip.name + " is not accounted for.");
+                    break;
+            }
+        }
     }
 }

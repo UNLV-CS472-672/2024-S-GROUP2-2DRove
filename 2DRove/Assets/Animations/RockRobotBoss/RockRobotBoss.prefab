@@ -127,7 +127,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -207,6 +207,12 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackPointX: {fileID: 130624589444498416}
   attackPointY: {fileID: 8624798509624551241}
+  MovementSpeed: 1
+  walkAnimSpeed: 1
+  rangeAttackSpeed: 1
+  attackSpeed: 1
+  burstSpeed: 1
+  buffSpeed: 1
   attackRange: 7
   attackHeight: 1
 --- !u!70 &7336062654884450899
@@ -221,7 +227,7 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 951
@@ -256,7 +262,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -273,7 +279,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.042335004, y: 0.052011564}

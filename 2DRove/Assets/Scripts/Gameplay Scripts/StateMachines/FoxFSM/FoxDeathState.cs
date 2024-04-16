@@ -4,9 +4,6 @@ using System.Collections;
 
 public class FoxDeathState : FoxBaseState
 {
-    public Animator animator;
-    private bool isDead = false;
-
     public override void EnterState(FoxStateManager fox)
     {
         Debug.Log("Entering Death State...");

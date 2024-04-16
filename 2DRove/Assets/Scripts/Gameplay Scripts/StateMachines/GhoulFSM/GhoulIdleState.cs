@@ -3,7 +3,6 @@ using UnityEngine.UIElements;
 
 public class GhoulIdleState : GhoulBaseState
 {
-    private bool idling = true;
     private Transform player;
     public override void EnterState(GhoulStateManager ghoul)
     {

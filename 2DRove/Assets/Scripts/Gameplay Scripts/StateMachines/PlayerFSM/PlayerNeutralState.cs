@@ -16,16 +16,19 @@ public class PlayerNeutralState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager Player)
     {
-        Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up"));
+        Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up")).normalized;
+        // Player.lastInput = (inputDirection != Vector2.zero) ? ((Player.lastInput * .90f) + inputDirection).normalized : Player.lastInput;
+        Player.lastInput = (inputDirection != Vector2.zero) ? ((Player.lastInput * .80f) + inputDirection * .20f).normalized : Player.lastInput;
 
         //Multiplies the direction by the speed and applies it as a force. Default force type is ForceMode2D.Force
         Player.animator.SetFloat("yDir", Mathf.Abs(inputDirection.y)); //Sets the vertical direction parameter in the animator to the player's y velocity
         Player.animator.SetFloat("xDir", Mathf.Abs(inputDirection.x)); //Sets the velocity parameter in the animator to the absolute value of the player's x velocity. This is used to determine if the player is moving or not
-        Player.rb.AddForce(inputDirection * 5);
+        Player.rb.AddForce(inputDirection * Player.MovementSpeed);
 
         if (inputDirection.x != 0){ //If the player is moving horizontally
             Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
         }
+
         
         Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
         if (Input.GetKeyDown(KeyCode.Mouse0))

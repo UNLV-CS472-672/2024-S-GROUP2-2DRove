@@ -3,7 +3,6 @@ using UnityEngine.UIElements;
 
 public class RockBossIdleState : RockBossBaseState
 {
-    private bool idling = true;
     private Transform player;
     public override void EnterState(RockBossStateManager RockBoss)
     {

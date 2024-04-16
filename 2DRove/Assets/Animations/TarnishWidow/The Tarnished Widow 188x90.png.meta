@@ -113,12 +113,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_0
       rect:
         serializedVersion: 2
-        x: 49
+        x: 0
         y: 630
-        width: 73
-        height: 44
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.6482032, y: 0.5000028}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_1
       rect:
         serializedVersion: 2
-        x: 229
+        x: 188
         y: 630
-        width: 87
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_2
       rect:
         serializedVersion: 2
-        x: 425
-        y: 629
-        width: 71
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 376
+        y: 630
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_3
       rect:
         serializedVersion: 2
-        x: 617
-        y: 627
-        width: 68
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 564
+        y: 630
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_4
       rect:
         serializedVersion: 2
-        x: 805
-        y: 629
-        width: 62
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 752
+        y: 630
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_5
       rect:
         serializedVersion: 2
-        x: 991
-        y: 629
-        width: 64
-        height: 44
+        x: 940
+        y: 630
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.56775194, y: 0.49999905}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -239,12 +239,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_6
       rect:
         serializedVersion: 2
-        x: 1181
+        x: 1128
         y: 630
-        width: 62
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -260,12 +260,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_7
       rect:
         serializedVersion: 2
-        x: 1369
+        x: 1316
         y: 630
-        width: 62
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -281,12 +281,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_8
       rect:
         serializedVersion: 2
-        x: 1557
+        x: 1504
         y: 630
-        width: 62
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -302,12 +302,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_9
       rect:
         serializedVersion: 2
-        x: 52
+        x: 0
         y: 540
-        width: 65
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_10
       rect:
         serializedVersion: 2
-        x: 240
+        x: 188
         y: 540
-        width: 62
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,12 +344,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_11
       rect:
         serializedVersion: 2
-        x: 429
+        x: 376
         y: 540
-        width: 63
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_12
       rect:
         serializedVersion: 2
-        x: 621
+        x: 564
         y: 540
-        width: 68
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -386,12 +386,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_13
       rect:
         serializedVersion: 2
-        x: 812
+        x: 752
         y: 540
-        width: 66
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -407,12 +407,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_14
       rect:
         serializedVersion: 2
-        x: 999
+        x: 940
         y: 540
-        width: 69
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,12 +428,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_15
       rect:
         serializedVersion: 2
-        x: 1191
-        y: 538
-        width: 65
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1128
+        y: 540
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,12 +449,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_16
       rect:
         serializedVersion: 2
-        x: 1375
+        x: 1316
         y: 540
-        width: 68
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -470,12 +470,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_17
       rect:
         serializedVersion: 2
-        x: 1563
+        x: 1504
         y: 540
-        width: 66
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -491,12 +491,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_18
       rect:
         serializedVersion: 2
-        x: 1749
-        y: 537
-        width: 62
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1692
+        y: 540
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -512,12 +512,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_19
       rect:
         serializedVersion: 2
-        x: 1933
+        x: 1880
         y: 540
-        width: 67
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,12 +533,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_20
       rect:
         serializedVersion: 2
-        x: 52
+        x: 0
         y: 450
-        width: 63
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_21
       rect:
         serializedVersion: 2
-        x: 240
+        x: 188
         y: 450
-        width: 69
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,12 +575,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_22
       rect:
         serializedVersion: 2
-        x: 418
+        x: 376
         y: 450
-        width: 85
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,12 +596,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_23
       rect:
         serializedVersion: 2
-        x: 604
+        x: 564
         y: 450
-        width: 79
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,12 +617,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_24
       rect:
         serializedVersion: 2
-        x: 793
+        x: 752
         y: 450
-        width: 122
-        height: 50
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.44541234, y: 0.5159675}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,12 +638,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_25
       rect:
         serializedVersion: 2
-        x: 993
+        x: 940
         y: 450
-        width: 117
-        height: 36
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.40714112, y: 0.5}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -659,12 +659,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_26
       rect:
         serializedVersion: 2
-        x: 1171
+        x: 1128
         y: 450
-        width: 129
-        height: 50
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.42548287, y: 0.49999905}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -680,12 +680,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_27
       rect:
         serializedVersion: 2
-        x: 1366
+        x: 1316
         y: 450
-        width: 123
-        height: 45
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.35297477, y: 0.5}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -701,12 +701,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_28
       rect:
         serializedVersion: 2
-        x: 1557
+        x: 1504
         y: 450
-        width: 122
-        height: 47
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.37741238, y: 0.38934392}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -722,12 +722,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_30
       rect:
         serializedVersion: 2
-        x: 1739
+        x: 1880
         y: 450
-        width: 131
-        height: 47
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.3914217, y: 0.44574752}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -743,12 +743,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_29
       rect:
         serializedVersion: 2
-        x: 1926
+        x: 1692
         y: 450
-        width: 133
-        height: 46
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.38308877, y: 0.4009877}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -764,12 +764,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_31
       rect:
         serializedVersion: 2
-        x: 2120
+        x: 2068
         y: 450
-        width: 85
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -785,12 +785,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_32
       rect:
         serializedVersion: 2
-        x: 2307
+        x: 2256
         y: 450
-        width: 85
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -806,12 +806,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_33
       rect:
         serializedVersion: 2
-        x: 2493
+        x: 2444
         y: 450
-        width: 83
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -827,12 +827,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_34
       rect:
         serializedVersion: 2
-        x: 2684
+        x: 2632
         y: 450
-        width: 72
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -848,12 +848,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_35
       rect:
         serializedVersion: 2
-        x: 2871
+        x: 2820
         y: 450
-        width: 66
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -869,12 +869,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_36
       rect:
         serializedVersion: 2
-        x: 3059
+        x: 3008
         y: 450
-        width: 64
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -890,12 +890,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_37
       rect:
         serializedVersion: 2
-        x: 3248
+        x: 3196
         y: 450
-        width: 63
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -911,12 +911,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_38
       rect:
         serializedVersion: 2
-        x: 45
+        x: 0
         y: 360
-        width: 70
-        height: 42
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.57304424, y: 0.5456536}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -932,12 +932,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_39
       rect:
         serializedVersion: 2
-        x: 241
+        x: 188
         y: 360
-        width: 62
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -953,12 +953,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_40
       rect:
         serializedVersion: 2
-        x: 425
+        x: 376
         y: 360
-        width: 66
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -974,12 +974,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_41
       rect:
         serializedVersion: 2
-        x: 612
+        x: 564
         y: 360
-        width: 119
-        height: 47
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.3831075, y: 0.5000006}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -995,12 +995,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_42
       rect:
         serializedVersion: 2
-        x: 805
+        x: 752
         y: 360
-        width: 122
-        height: 36
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.35369623, y: 0.46609327}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1016,12 +1016,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_43
       rect:
         serializedVersion: 2
-        x: 988
+        x: 940
         y: 360
-        width: 137
-        height: 37
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.34570232, y: 0.4836555}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1037,12 +1037,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_44
       rect:
         serializedVersion: 2
-        x: 1176
+        x: 1128
         y: 360
-        width: 138
-        height: 50
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.30355573, y: 0.50000054}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1058,12 +1058,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_45
       rect:
         serializedVersion: 2
-        x: 1364
+        x: 1316
         y: 360
-        width: 140
-        height: 40
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.37018213, y: 0.4649331}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1079,12 +1079,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_46
       rect:
         serializedVersion: 2
-        x: 1552
+        x: 1504
         y: 360
-        width: 91
-        height: 38
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.5348853, y: 0.58409923}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1100,12 +1100,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_47
       rect:
         serializedVersion: 2
-        x: 1744
+        x: 1692
         y: 360
-        width: 80
-        height: 43
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.46115083, y: 0.48816484}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1121,12 +1121,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_48
       rect:
         serializedVersion: 2
-        x: 1928
+        x: 1880
         y: 360
-        width: 80
-        height: 38
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.6118515, y: 0.5}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1142,12 +1142,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_49
       rect:
         serializedVersion: 2
-        x: 2119
-        y: 359
-        width: 78
-        height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2068
+        y: 360
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1163,12 +1163,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_50
       rect:
         serializedVersion: 2
-        x: 2309
+        x: 2256
         y: 360
-        width: 74
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1184,12 +1184,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_51
       rect:
         serializedVersion: 2
-        x: 2492
+        x: 2444
         y: 360
-        width: 76
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1205,12 +1205,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_52
       rect:
         serializedVersion: 2
-        x: 2685
-        y: 359
-        width: 70
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2632
+        y: 360
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1226,12 +1226,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_53
       rect:
         serializedVersion: 2
-        x: 2873
+        x: 2820
         y: 360
-        width: 62
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1247,12 +1247,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_54
       rect:
         serializedVersion: 2
-        x: 38
+        x: 0
         y: 270
-        width: 77
-        height: 44
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.6494096, y: 0.57262975}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1268,12 +1268,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_55
       rect:
         serializedVersion: 2
-        x: 236
+        x: 188
         y: 270
-        width: 67
-        height: 45
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.58585596, y: 0.5}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1289,12 +1289,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_56
       rect:
         serializedVersion: 2
-        x: 423
+        x: 376
         y: 270
-        width: 68
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1310,12 +1310,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_57
       rect:
         serializedVersion: 2
-        x: 612
+        x: 564
         y: 270
-        width: 67
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1331,12 +1331,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_58
       rect:
         serializedVersion: 2
-        x: 804
+        x: 752
         y: 270
-        width: 63
-        height: 38
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1352,12 +1352,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_59
       rect:
         serializedVersion: 2
-        x: 988
+        x: 940
         y: 270
-        width: 67
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1373,12 +1373,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_60
       rect:
         serializedVersion: 2
-        x: 1181
+        x: 1128
         y: 270
-        width: 62
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1394,12 +1394,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_61
       rect:
         serializedVersion: 2
-        x: 1365
-        y: 267
-        width: 73
-        height: 86
+        x: 1316
+        y: 270
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.488808, y: 0.61400443}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1415,12 +1415,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_62
       rect:
         serializedVersion: 2
-        x: 1551
-        y: 265
-        width: 75
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1504
+        y: 270
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1436,12 +1436,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_63
       rect:
         serializedVersion: 2
-        x: 1737
-        y: 258
-        width: 73
-        height: 95
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1692
+        y: 270
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1457,12 +1457,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_64
       rect:
         serializedVersion: 2
-        x: 1931
-        y: 267
-        width: 70
+        x: 1880
+        y: 270
+        width: 188
         height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1478,12 +1478,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_65
       rect:
         serializedVersion: 2
-        x: 2120
-        y: 264
-        width: 69
-        height: 93
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2068
+        y: 270
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1499,12 +1499,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_66
       rect:
         serializedVersion: 2
-        x: 2308
+        x: 2256
         y: 270
-        width: 73
-        height: 89
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1520,12 +1520,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_67
       rect:
         serializedVersion: 2
-        x: 2491
-        y: 268
-        width: 80
-        height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2444
+        y: 270
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1541,12 +1541,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_68
       rect:
         serializedVersion: 2
-        x: 2685
-        y: 272
-        width: 72
-        height: 85
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2632
+        y: 270
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1562,12 +1562,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_69
       rect:
         serializedVersion: 2
-        x: 2876
+        x: 2820
         y: 270
-        width: 63
-        height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1583,12 +1583,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_70
       rect:
         serializedVersion: 2
-        x: 47
-        y: 158
-        width: 75
-        height: 104
+        x: 0
+        y: 180
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.500001, y: 0.41834113}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1604,12 +1604,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_71
       rect:
         serializedVersion: 2
-        x: 206
+        x: 188
         y: 180
-        width: 136
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1625,12 +1625,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_72
       rect:
         serializedVersion: 2
-        x: 393
+        x: 376
         y: 180
-        width: 142
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1646,12 +1646,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_73
       rect:
         serializedVersion: 2
-        x: 579
+        x: 564
         y: 180
-        width: 145
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1667,12 +1667,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_74
       rect:
         serializedVersion: 2
-        x: 766
-        y: 177
-        width: 147
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 752
+        y: 180
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1688,12 +1688,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_75
       rect:
         serializedVersion: 2
-        x: 954
-        y: 174
-        width: 143
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 940
+        y: 180
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1709,12 +1709,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_76
       rect:
         serializedVersion: 2
-        x: 1140
-        y: 174
-        width: 145
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1128
+        y: 180
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1730,12 +1730,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_77
       rect:
         serializedVersion: 2
-        x: 1327
-        y: 174
-        width: 147
-        height: 53
+        x: 1316
+        y: 180
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.5524232, y: 0.5727094}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1751,12 +1751,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_78
       rect:
         serializedVersion: 2
-        x: 1526
+        x: 1504
         y: 180
-        width: 123
-        height: 45
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1772,12 +1772,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_79
       rect:
         serializedVersion: 2
-        x: 1745
+        x: 1692
         y: 180
-        width: 89
-        height: 44
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.40574938, y: 0.5211837}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1793,12 +1793,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_80
       rect:
         serializedVersion: 2
-        x: 48
+        x: 0
         y: 90
-        width: 67
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1814,12 +1814,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_81
       rect:
         serializedVersion: 2
-        x: 223
+        x: 188
         y: 90
-        width: 80
-        height: 37
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.5815533, y: 0.44962063}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1835,12 +1835,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_82
       rect:
         serializedVersion: 2
-        x: 412
+        x: 376
         y: 90
-        width: 79
-        height: 42
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.67696834, y: 0.4112351}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1856,12 +1856,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_83
       rect:
         serializedVersion: 2
-        x: 604
+        x: 564
         y: 90
-        width: 75
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1877,12 +1877,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_84
       rect:
         serializedVersion: 2
-        x: 788
+        x: 752
         y: 90
-        width: 81
-        height: 48
+        width: 188
+        height: 90
       alignment: 9
-      pivot: {x: 0.68323505, y: 0.47423267}
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1898,12 +1898,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_85
       rect:
         serializedVersion: 2
-        x: 36
-        y: 0
-        width: 96
-        height: 56
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 940
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1919,12 +1919,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_86
       rect:
         serializedVersion: 2
-        x: 217
-        y: 0
-        width: 108
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1128
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1940,12 +1940,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_87
       rect:
         serializedVersion: 2
-        x: 398
-        y: 0
-        width: 134
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1316
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1961,12 +1961,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_88
       rect:
         serializedVersion: 2
-        x: 564
-        y: 0
-        width: 163
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1504
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1982,12 +1982,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_89
       rect:
         serializedVersion: 2
-        x: 756
-        y: 0
-        width: 161
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1692
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2003,12 +2003,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_90
       rect:
         serializedVersion: 2
-        x: 937
-        y: 0
-        width: 171
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1880
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2024,12 +2024,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_91
       rect:
         serializedVersion: 2
-        x: 1128
-        y: 0
-        width: 173
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2068
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2045,12 +2045,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_92
       rect:
         serializedVersion: 2
-        x: 1313
-        y: 0
+        x: 2256
+        y: 90
         width: 188
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2066,12 +2066,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_93
       rect:
         serializedVersion: 2
-        x: 1510
-        y: 0
-        width: 153
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2444
+        y: 90
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2087,12 +2087,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_94
       rect:
         serializedVersion: 2
-        x: 1681
+        x: 0
         y: 0
-        width: 183
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2108,12 +2108,12 @@ TextureImporter:
       name: The Tarnished Widow 188x90_95
       rect:
         serializedVersion: 2
-        x: 2014
+        x: 188
         y: 0
-        width: 152
-        height: 57
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2121,6 +2121,237 @@ TextureImporter:
       bones: []
       spriteID: a0afcf3cf65740d418572ce174430158
       internalID: 125509025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_96
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae156c83138b2c84a9c6e97ce14fa44a
+      internalID: -321185926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_97
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4d4d92c8a198d47b9594a4a0c211f1
+      internalID: 111344736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_98
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b688cf053995dc34292ee3c2eeeae9fc
+      internalID: 1499962459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_99
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a36da527d6c62648816cc3e2be90deb
+      internalID: -1525146282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_100
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196c5eb5f9ebc8746af24a2490e77e0f
+      internalID: 803228030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_101
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5f41f429bd7564c8fa673b48aacdfe
+      internalID: 1545339588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_102
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a23a6ec8b3151f4db958accb9c4f436
+      internalID: -574677495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_103
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb64d742c24c3440b115d1af063a318
+      internalID: -957474584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_104
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b22b8737b8003b45907ce4e01ff6226
+      internalID: -2078913754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_105
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2a2026988f25c4c855ffc7360551d7
+      internalID: 2138636464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The Tarnished Widow 188x90_106
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 0
+        width: 188
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685d3d2671d2cdf4381e99ea5c64b658
+      internalID: -298940533
       vertices: []
       indices: 
       edges: []
@@ -2141,6 +2372,11 @@ TextureImporter:
       The Tarnished Widow 188x90_10: -1084376678
       The Tarnished Widow 188x90_100: 803228030
       The Tarnished Widow 188x90_101: 1545339588
+      The Tarnished Widow 188x90_102: -574677495
+      The Tarnished Widow 188x90_103: -957474584
+      The Tarnished Widow 188x90_104: -2078913754
+      The Tarnished Widow 188x90_105: 2138636464
+      The Tarnished Widow 188x90_106: -298940533
       The Tarnished Widow 188x90_11: 901059341
       The Tarnished Widow 188x90_12: -1483712099
       The Tarnished Widow 188x90_13: 108998789

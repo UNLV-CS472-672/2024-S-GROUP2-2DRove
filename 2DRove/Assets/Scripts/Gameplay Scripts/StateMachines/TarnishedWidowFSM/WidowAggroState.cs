@@ -18,7 +18,7 @@ public class WidowAggroState : WidowBaseState
     public override void UpdateState(WidowStateManager Widow)
     {
         Vector2 Direction = (player.position - Widow.transform.position).normalized;
-        rb.AddForce(Direction * 1f); 
+        rb.AddForce(Direction * Widow.MovementSpeed); 
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

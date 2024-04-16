@@ -46,7 +46,7 @@ public class GuadianSpecialState : GuardianBaseState
     public override void EventTrigger(GuardianStateManager Guardian, int attackID)
     {
         LayerMask mask = LayerMask.GetMask("Player");
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(Guardian.attack1X.position, 8, mask);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(Guardian.attack1.position, 16, mask);
 
         foreach (Collider2D collider in colliders)
         {

@@ -3,13 +3,12 @@ using UnityEngine;
 
 public class PlayerSlash2State : PlayerBaseState
 {
-    private float cooldown = .417f;
     private float attackTime;
     private bool combo;
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash2 State");
-        attackTime = cooldown;
+        attackTime = Player.slash2Time;
         combo = false;
         Player.Coroutine(DashDelay(Player));
         Player.animator.SetTrigger("slash2");
@@ -22,15 +21,9 @@ public class PlayerSlash2State : PlayerBaseState
             Player.animator.SetTrigger("neutral");
             Player.SwitchState(Player.NeutralState);
         }
-        else if(attackTime <= .05f && combo == true)
+        else if(attackTime <= (Player.slash2Time * .2f) && combo == true)
         {
             Player.SwitchState(Player.Slash3State);
-            Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up"));
-            Player.rb.AddForce(inputDirection * 2000);
-
-            if (inputDirection.x != 0){ //If the player is moving horizontally
-                Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
-            }
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -84,15 +77,22 @@ public class PlayerSlash2State : PlayerBaseState
 
     IEnumerator DashDelay(PlayerStateManager Player)
     {
-        yield return new WaitForSeconds(cooldown * (3/4));
+        yield return new WaitForSeconds(Player.slash2Time * (3/4));
         Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up")).normalized;
-        inputDirection.Normalize();
-        Player.rb.AddForce(inputDirection * 500);
-
-        if (inputDirection.x != 0){ //If the player is moving horizontally
-            Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
+        if (inputDirection == Vector2.zero)
+        {
+            //already normalized
+            Player.rb.AddForce(100 * Player.slash2Lurch * Player.lastInput);
         }
+        else
+        {
+            inputDirection.Normalize();
+            Player.rb.AddForce(100 * Player.slash2Lurch * inputDirection);
+            if (inputDirection.x != 0){ //If the player is moving horizontally
+                Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
+            }
 
-        Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
+            Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
+        }
     }
 }

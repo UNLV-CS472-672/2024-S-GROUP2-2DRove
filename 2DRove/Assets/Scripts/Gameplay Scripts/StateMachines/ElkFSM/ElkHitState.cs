@@ -4,7 +4,6 @@ public class ElkHitState : ElkBaseState
 {
     private Animator animator;
 
-
     public override void EnterState(ElkStateManager elk)
     {
         Debug.Log("Entering Hit State...");

@@ -3,7 +3,6 @@ using UnityEngine.UIElements;
 
 public class SummonerIdleState : SummonerBaseState
 {
-    private bool idling = true;
     private Transform player;
     public override void EnterState(SummonerStateManager summoner)
     {

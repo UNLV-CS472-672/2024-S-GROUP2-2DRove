@@ -18,7 +18,7 @@ public class RockBossAggroState : RockBossBaseState
     public override void UpdateState(RockBossStateManager RockBoss)
     {
         Vector2 Direction = (player.position - RockBoss.transform.position).normalized;
-        rb.AddForce(Direction * 1f); 
+        rb.AddForce(Direction * RockBoss.MovementSpeed); 
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

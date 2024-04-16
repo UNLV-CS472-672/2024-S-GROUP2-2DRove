@@ -4,9 +4,6 @@ using System.Collections;
 
 public class ElkDeathState : ElkBaseState
 {
-    public Animator animator;
-    private bool isDead = false;
-
     public override void EnterState(ElkStateManager elk)
     {
         Debug.Log("Entering Death State...");

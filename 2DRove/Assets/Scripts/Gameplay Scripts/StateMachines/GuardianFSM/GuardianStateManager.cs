@@ -20,10 +20,8 @@ public class GuardianStateManager : MonoBehaviour
     [System.NonSerialized] public float AoEResetTime;
     public AfterImage afterImage;
     public Animator animator;
-    public Transform attack1X;
-    public Transform attack1Y;
+    public Transform attack1;
     [SerializeField] public float attack1Length;
-    [SerializeField] public float attack1Height;
     public Transform attack2;
     [SerializeField] public float attack2Range;
     private Mesh attackHitbox;
@@ -106,11 +104,10 @@ public class GuardianStateManager : MonoBehaviour
     }
 
     private void OnDrawGizmosSelected(){
-        if (attack1X == null){
+        if (attack1 == null){
             return;
         }
-        Gizmos.DrawWireSphere(attack1X.position, attack1Length);
-        Gizmos.DrawWireSphere(attack1Y.position, attack1Height);
+        Gizmos.DrawWireSphere(attack1.position, attack1Length);
         Gizmos.DrawWireSphere(attack2.position, attack2Range);
     }
 

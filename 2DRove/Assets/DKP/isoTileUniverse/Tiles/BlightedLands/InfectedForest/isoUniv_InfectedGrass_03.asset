@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: isoUniv_InfectedGrass_03
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 775662287, guid: af6103d960aa449fd8025edc43ce0741, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_Transform:
     e00: 1
     e01: 0

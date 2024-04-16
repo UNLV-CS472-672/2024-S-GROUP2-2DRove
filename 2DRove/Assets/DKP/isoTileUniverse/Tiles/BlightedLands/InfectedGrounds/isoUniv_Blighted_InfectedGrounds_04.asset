@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: isoUniv_Blighted_InfectedGrounds_04
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -568531411, guid: ca5d7014eb7214d45b2274f4a1d1ac3a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6627451, g: 0.6627451, b: 0.6627451, a: 1}
   m_Transform:
     e00: 1
     e01: 0

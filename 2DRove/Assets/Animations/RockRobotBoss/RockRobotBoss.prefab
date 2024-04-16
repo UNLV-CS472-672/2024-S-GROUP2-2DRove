@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6103349213836330879}
+  - component: {fileID: 8204070761296416533}
+  - component: {fileID: 3575275183738118299}
   - component: {fileID: -6166224184564577803}
   - component: {fileID: 8124369384152152226}
   - component: {fileID: 8805014588876468727}
   - component: {fileID: 5822216624937829971}
-  - component: {fileID: 3575275183738118299}
-  - component: {fileID: 8204070761296416533}
   - component: {fileID: 7336062654884450899}
   - component: {fileID: 8509703350336964303}
   m_Layer: 3
@@ -42,6 +42,44 @@ Transform:
   - {fileID: 8624798509624551241}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8204070761296416533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647290685018556563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3391e951397c3474a9974eb4d418feed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MovementSpeed: 1
+  walkAnimSpeed: 1
+  rangeAttackSpeed: 1
+  attackSpeed: 1
+  burstSpeed: 1
+  buffSpeed: 1
+  animator: {fileID: 0}
+  attackPointX: {fileID: 130624589444498416}
+  attackPointY: {fileID: 8624798509624551241}
+  attackRange: 7
+  attackHeight: 1
+--- !u!114 &3575275183738118299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647290685018556563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  currentHealth: 0
+  animator: {fileID: 8124369384152152226}
 --- !u!212 &-6166224184564577803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -177,44 +215,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3575275183738118299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647290685018556563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 200
-  currentHealth: 0
-  animator: {fileID: 8124369384152152226}
---- !u!114 &8204070761296416533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647290685018556563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3391e951397c3474a9974eb4d418feed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  attackPointX: {fileID: 130624589444498416}
-  attackPointY: {fileID: 8624798509624551241}
-  MovementSpeed: 1
-  walkAnimSpeed: 1
-  rangeAttackSpeed: 1
-  attackSpeed: 1
-  burstSpeed: 1
-  buffSpeed: 1
-  attackRange: 7
-  attackHeight: 1
 --- !u!70 &7336062654884450899
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

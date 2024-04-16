@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5895153965560817016}
   - component: {fileID: 4177119931783376245}
   - component: {fileID: 1406532370408335007}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: RedFox
   m_TagString: Enemy
   m_Icon: {fileID: 0}

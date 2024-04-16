@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6133631523922409274}
   - component: {fileID: 8550224772726086128}
   - component: {fileID: 1580194319203663484}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: BlueFox
   m_TagString: Enemy
   m_Icon: {fileID: 0}

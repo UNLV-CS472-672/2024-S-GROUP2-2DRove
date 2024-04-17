@@ -79,13 +79,14 @@ public class PlayerSlash1State : PlayerBaseState
     {
         yield return new WaitForSeconds(Player.slash1Time * (3/4));
         Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up"));
-        if (inputDirection == Vector2.zero)
-        {
-            //already normalized
-            Player.rb.AddForce(100 * Player.slash1Lurch * Player.lastInput);
-        }
-        else
-        {
+        Player.lastInput = inputDirection;
+        // if (inputDirection == Vector2.zero)
+        // {
+        //     //already normalized
+        //     Player.rb.AddForce(100 * Player.slash1Lurch * Player.lastInput);
+        // }
+        // else
+        // {
             inputDirection.Normalize();
             Player.rb.AddForce(100 * Player.slash1Lurch * inputDirection);
             if (inputDirection.x != 0){ //If the player is moving horizontally
@@ -93,6 +94,6 @@ public class PlayerSlash1State : PlayerBaseState
             }
 
             Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
-        }
+        // }
     }
 }

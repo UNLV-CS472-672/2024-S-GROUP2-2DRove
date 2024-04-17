@@ -79,6 +79,7 @@ public class PlayerSlash3State : PlayerBaseState
     {
         yield return new WaitForSeconds(Player.slash3Time * (4/5));
         Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up")).normalized;
+        Player.lastInput = inputDirection;
         if (inputDirection == Vector2.zero)
         {
             //already normalized

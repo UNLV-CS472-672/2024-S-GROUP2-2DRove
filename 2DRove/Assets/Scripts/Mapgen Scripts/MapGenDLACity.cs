@@ -12,8 +12,8 @@ namespace MapGenDLACityNamespace
     {
         [SerializeField] GameObject beginningTile;
         [SerializeField] GameObject[] tile;
-        [SerializeField] GameObject borderPrefab;
-
+        [SerializeField] GameObject[] borderPrefab;
+        [SerializeField] GameObject exitTile;
         [SerializeField] GameObject exitPrefab;
         // [SerializeField] int cycles = 2;
         // [SerializeField] int steps = 50;
@@ -92,6 +92,16 @@ namespace MapGenDLACityNamespace
                 i++;
             }
 
+            // After all tiles have been generated:
+            assignEdgesCity = GetComponent<AssignEdgesCity>();
+            if(assignEdgesCity == null) {
+                Debug.LogError("AssignEdges component not found on the same GameObject.");
+            } else {
+                assignEdgesCity.SetTileObjects(tileObjects);
+                assignEdgesCity.SetScale(6.5f);
+                assignEdgesCity.SetTilePositions(tilePositions); 
+                assignEdgesCity.AssignAndSwapEdgeTiles();
+            }
 
             foreach (var tile in tileObjects)
             {
@@ -113,25 +123,16 @@ namespace MapGenDLACityNamespace
             // //Add an exit
             // Vector2Int farthestTile = FindFarthestTile(new Vector2Int(0, 0));
             // AddExit(tileObjects[farthestTile], farthestTile);
-            Vector2 closestTile = FindClosestGeneratedTileToEndpoint(endpoint);
-            AddExit(closestTile);
 
 
 
             // //todo: implement FillInEmptySpace to work for isometric
             // // FillInEmptySpace();
 
-            // After all tiles have been generated:
-            assignEdgesCity = GetComponent<AssignEdgesCity>();
-            if(assignEdgesCity == null) {
-                Debug.LogError("AssignEdges component not found on the same GameObject.");
-            } else {
-                assignEdgesCity.SetTileObjects(tileObjects);
-                assignEdgesCity.SetScale(6.5f);
-                assignEdgesCity.SetTilePositions(tilePositions); 
-                assignEdgesCity.AssignAndSwapEdgeTiles();
-            }
 
+
+            Vector2 closestTile = FindClosestGeneratedTileToEndpoint(endpoint);
+            AddExit(closestTile);
 
         }
 
@@ -277,7 +278,7 @@ namespace MapGenDLACityNamespace
         }
 
         private GameObject getRandomTile(GameObject[] tileSet){
-            return tileSet[Random.Range(0, tile.Length)];
+            return tileSet[Random.Range(0, tileSet.Length)];
         }
 
         void CheckAndAddBorder(Vector2 position, GameObject tileObject)
@@ -290,15 +291,8 @@ namespace MapGenDLACityNamespace
         }
         void AddBorder(GameObject tileObject, Vector2 position)
         {
-            GameObject border = Instantiate(borderPrefab, new Vector3(position.x * 26, position.y * 13, 0), Quaternion.identity);
+            GameObject border = Instantiate(getRandomTile(borderPrefab), new Vector3(position.x * 26, position.y * 13, 0), Quaternion.identity);
             border.name = "Border(" + position.x + ", " + position.y + ")";
-            //border.transform.parent = tileObject.transform;
-            // border.transform.localScale = new Vector3(6.5f, 6.5f, 1f);
-            // Place the tile lower in the layers
-            // border.GetComponent<Renderer>().sortingOrder = -1;
-            // Apply a tilemap collider to give all the tiles on the tilemap a collider
-            // Tilemap tilemap = border.GetComponent<Tilemap>();
-            // TilemapCollider2D collider = border.AddComponent<TilemapCollider2D>();
             // Keep it in a list so we do not stack borders on top of each other when checking
             borderPositions.Add(position);
         }
@@ -308,12 +302,15 @@ namespace MapGenDLACityNamespace
             if (tileObjects.TryGetValue(closestTile, out GameObject tileObject))
             {
                 // Use the tileObject's position, as it might have been adjusted for your game world
-                Vector3 exitPosition = tileObject.transform.position + new Vector3(0, 0, -1); // Adjust Z if necessary to ensure visibility
-                GameObject exit = Instantiate(exitPrefab, exitPosition, Quaternion.identity);
-                exit.name = "Exit(" + closestTile.x + ", " + closestTile.y + ")";
-                exit.transform.localScale = new Vector3(6.5f, 6.5f, 1f);
-                BoxCollider2D collider = exit.AddComponent<BoxCollider2D>();
-                collider.isTrigger = true;
+                assignEdgesCity.SwapTile(closestTile, exitTile);
+         
+         
+                // Vector3 exitPosition = tileObject.transform.position + new Vector3(0, 0, -1); // Adjust Z if necessary to ensure visibility
+                // GameObject exit = Instantiate(exitPrefab, exitPosition, Quaternion.identity);
+                // exit.name = "Exit(" + closestTile.x + ", " + closestTile.y + ")";
+                // exit.transform.localScale = new Vector3(6.5f, 6.5f, 1f);
+                // BoxCollider2D collider = exit.AddComponent<BoxCollider2D>();
+                // collider.isTrigger = true;
             }
             else
             {

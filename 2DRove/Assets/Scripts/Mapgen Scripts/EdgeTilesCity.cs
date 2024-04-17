@@ -146,7 +146,10 @@ namespace EdgeTilesCity
         }
 
         // Swap the tile at the given position with a new tile based on type
-        void SwapTile(Vector2 position, GameObject newTilePrefab) {
+        public void SwapTile(Vector2 position, GameObject newTilePrefab) {
+            if (position == new Vector2(0,0))
+                return;
+
             if (tileObjects.TryGetValue(position, out GameObject oldTile)) {
                 Debug.Log("HERE: " + position);
                 // Destroy or disable the old tile

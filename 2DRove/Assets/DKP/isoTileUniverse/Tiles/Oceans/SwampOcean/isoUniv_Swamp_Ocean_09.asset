@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: isoUniv_Swamp_Ocean_09
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 205975156, guid: 2cea94f62fe6942ceb710495967e7059, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -33,4 +33,4 @@ MonoBehaviour:
     e33: 1
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
-  m_ColliderType: 1
+  m_ColliderType: 2

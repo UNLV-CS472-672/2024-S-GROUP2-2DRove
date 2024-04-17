@@ -17,8 +17,10 @@ public class PlayerNeutralState : PlayerBaseState
     public override void UpdateState(PlayerStateManager Player)
     {
         Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up")).normalized;
+        // Player.lastInput = (inputDirection != Vector2.zero) ? ((Player.lastInput * .90f) + inputDirection).normalized : Player.lastInput;
+        // Player.lastInput = (inputDirection != Vector2.zero) ? ((Player.lastInput * .80f) + inputDirection * .20f).normalized : Player.lastInput;
+        // Player.lastInput = (inputDirection != Vector2.zero) ? inputDirection : Player.lastInput;
         Player.lastInput = inputDirection;
-        
 
         //Multiplies the direction by the speed and applies it as a force. Default force type is ForceMode2D.Force
         Player.animator.SetFloat("yDir", Mathf.Abs(inputDirection.y)); //Sets the vertical direction parameter in the animator to the player's y velocity

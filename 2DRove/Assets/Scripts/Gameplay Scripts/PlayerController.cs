@@ -86,9 +86,9 @@ public class PlayerController : MonoBehaviour
     private void Update(){
         // Vector2 inputDirection = new Vector2(findDirectionFromInputs("Left", "Right"), findDirectionFromInputs("Down", "Up"));
         //Checks for the input and if the blink is on cooldown
-        if(input.actions["Blink"].IsPressed() && notOnCooldown(lastDashedTime, dashCooldown)){
-            blink(GetComponent<PlayerStateManager>().lastInput, dashDistance);
-        }
+        // if(input.actions["Blink"].IsPressed() && notOnCooldown(lastDashedTime, dashCooldown)){
+        //     blink(GetComponent<PlayerStateManager>().lastInput, dashDistance);
+        // }
 
         // if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
         //     Slash();

@@ -37,6 +37,10 @@ public class PlayerNeutralState : PlayerBaseState
         {
             Player.SwitchState(Player.Slash1State);
         }
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > Player.lastDashedTime + Player.dashCooldown && Player.lastInput != Vector2.zero)
+        {
+            Player.SwitchState(Player.DashState);
+        }
     }
 
     public override void OnCollisionEnter2D(PlayerStateManager Player, Collision2D other)

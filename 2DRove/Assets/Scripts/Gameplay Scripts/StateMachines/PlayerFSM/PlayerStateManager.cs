@@ -19,6 +19,11 @@ public class PlayerStateManager : MonoBehaviour
     [System.NonSerialized] public float slash2Time;
     [System.NonSerialized] public float slash3Time;
     public Vector2 lastInput;
+    public float dashDistance;
+    public float dashDuration;
+    public float dashCooldown;
+    [System.NonSerialized] public AfterImage afterImage;
+    [System.NonSerialized] public float lastDashedTime;
     public Animator animator;
     public Transform attackPoint;
     [SerializeField] public float attackRange;
@@ -33,11 +38,13 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerDeathState DeathState = new PlayerDeathState();
     public PlayerHitState HitState = new PlayerHitState();
     public PlayerSpawnState SpawnState = new PlayerSpawnState();
+    public PlayerDashState DashState = new PlayerDashState();
 
     // Start is called before the first frame update
     void Start()
     {
         input = this.GetComponent<PlayerInput>();
+        afterImage = this.GetComponent<AfterImage>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

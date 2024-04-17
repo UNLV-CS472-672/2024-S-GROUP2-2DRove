@@ -18,7 +18,7 @@ public class GuardianStateManager : MonoBehaviour
     [System.NonSerialized] public float horizontalDashTime;
     [System.NonSerialized] public float AoETime;
     [System.NonSerialized] public float AoEResetTime;
-    public AfterImage afterImage;
+    [System.NonSerialized] public AfterImage afterImage;
     public Animator animator;
     public Transform attack1;
     [SerializeField] public float attack1Length;
@@ -41,6 +41,7 @@ public class GuardianStateManager : MonoBehaviour
     {
         currentState = SpawnState;
         currentState.EnterState(this);
+        afterImage = this.GetComponent<AfterImage>();
         /*
 
             DO NOT DELETE

@@ -1429,6 +1429,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4267805824024617611, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+      propertyPath: makeGhost
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493224418580673698, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+      propertyPath: dashCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493224418580673698, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+      propertyPath: dashDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493224418580673698, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
+      propertyPath: dashDuration
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 6916207954854211963, guid: 40c84a5918b26d04e9f342e9cbc35447, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2601,6 +2617,10 @@ PrefabInstance:
     - target: {fileID: 7798029364652836450, guid: 1bc2471465dd297489e30f2cf4e141db, type: 3}
       propertyPath: m_Name
       value: TarnishWidow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7798029364652836450, guid: 1bc2471465dd297489e30f2cf4e141db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

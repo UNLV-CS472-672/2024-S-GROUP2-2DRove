@@ -97,6 +97,9 @@ MonoBehaviour:
   slash2Lurch: 10
   slash3Lurch: 10
   lastInput: {x: 0, y: 0}
+  dashDistance: 10
+  dashDuration: 0.05
+  dashCooldown: 1
   animator: {fileID: 0}
   attackPoint: {fileID: 8752092245281292779}
   attackRange: 1.74
@@ -144,7 +147,7 @@ MonoBehaviour:
   ghostDelay: 0.005
   ghostDuration: 0.25
   ghost: {fileID: 5774922461701893199, guid: a5d92673d858142f39717304a5242fef, type: 3}
-  makeGhost: 1
+  makeGhost: 0
 --- !u!95 &3558944411041303915
 Animator:
   serializedVersion: 5

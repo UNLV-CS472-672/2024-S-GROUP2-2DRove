@@ -349,7 +349,7 @@ MonoBehaviour:
   - {fileID: 9148618936101596910, guid: 09d84dae57be6c143852de2c051bc128, type: 3}
   - {fileID: 9148618936101596910, guid: 77dee92888d7473438c8ccb3cd04caff, type: 3}
   borderPrefab: {fileID: 9148618936101596910, guid: 8523a6a229aef471d820f4b8cf69d301, type: 3}
-  exitPrefab: {fileID: 5410679546200466348, guid: 30f6d91f3c9ea404e98153871336f91b, type: 3}
+  exitPrefab: {fileID: 923991240687089494, guid: abd09b3cb88bdf4429ef75bf81d088e3, type: 3}
   tileNum: 20
   leftMost: 0
   rightMost: 0

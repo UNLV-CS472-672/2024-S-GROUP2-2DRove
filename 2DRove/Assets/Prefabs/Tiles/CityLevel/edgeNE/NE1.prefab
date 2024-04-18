@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8121006237098796533}
   - component: {fileID: 8962626818215051651}
   - component: {fileID: 479627112224856509}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 4502185928476854724}
   - component: {fileID: 7264364531373435734}
   - component: {fileID: 8842624377545197758}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1062,7 @@ GameObject:
   - component: {fileID: 4754780645451351409}
   - component: {fileID: 2280282698922056660}
   - component: {fileID: 2528461278815028093}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1624,7 +1624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2380947475113135007}
   - component: {fileID: 800730300944362279}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: NE1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

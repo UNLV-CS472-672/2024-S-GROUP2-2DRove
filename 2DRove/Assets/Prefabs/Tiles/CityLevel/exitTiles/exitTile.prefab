@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8083076183112314111}
   - component: {fileID: 4343152240815417396}
   - component: {fileID: 2401315046562532366}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -731,7 +731,7 @@ GameObject:
   - component: {fileID: 1116150970158569745}
   - component: {fileID: 5561746440257210017}
   - component: {fileID: 7179016473131940550}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 8267330825707009255}
   - component: {fileID: 765652655261603142}
   - component: {fileID: 2561719467197744850}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1503,7 +1503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1671205866818290617}
   - component: {fileID: 513251112190587315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: exitTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1553,7 +1553,7 @@ GameObject:
   - component: {fileID: 116244742126558907}
   - component: {fileID: 6732050480700298954}
   - component: {fileID: 7928287112083371106}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: exit buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,6 +1854,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: door
       objectReference: {fileID: 0}
+    - target: {fileID: 159024987203984073, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 573833251801230273, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1339398773662259406, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1942,6 +1950,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3387564970576275812, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3522416966305592932, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1957,6 +1969,18 @@ PrefabInstance:
     - target: {fileID: 3522416966305592932, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926211329182197431, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5051736183910643539, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400314317967092027, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7812828849936888017, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}
       propertyPath: m_Color.b

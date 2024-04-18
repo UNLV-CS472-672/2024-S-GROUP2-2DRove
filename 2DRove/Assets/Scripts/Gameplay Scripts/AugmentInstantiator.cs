@@ -60,32 +60,47 @@ public class AugmentInstantiator : MonoBehaviour
         rareAugmentDictionary.Add(augment.augmentName, augment);
     }
 
-    void callAugmentMethod(AugmentObject augment)
+    public static void callAugmentMethod(AugmentObject augment)
     {
-        Type type = null;
         // Call the augment method
         switch(augment.augmentRarity)
         {
             case "Common":
-                type = typeof(AugmentMethods.commonAugmentMethods);
+            {
+                AugmentMethods.commonAugmentMethods commonAugmentMethods = new AugmentMethods.commonAugmentMethods();
+                Type commonType = typeof(AugmentMethods.commonAugmentMethods);
+                MethodInfo commonMethod = commonType.GetMethod(augment.augmentMethodName);
+                commonMethod.Invoke(commonAugmentMethods, null);
                 break;
+            }
+                
             case "Rare":
-                type = typeof(AugmentMethods.rareAugmentMethods);
+            {
+                AugmentMethods.rareAugmentMethods rareAugmentMethods = new AugmentMethods.rareAugmentMethods();
+                Type rareType= typeof(AugmentMethods.rareAugmentMethods);
+                MethodInfo rareMethod = rareType.GetMethod(augment.augmentMethodName);
+                rareMethod.Invoke(rareAugmentMethods, null);
                 break;
+            }
             case "Epic":
-                type = typeof(AugmentMethods.epicAugmentMethods);
+            {
+                AugmentMethods.epicAugmentMethods epicAugmentMethods = new AugmentMethods.epicAugmentMethods();
+                Type epicType = typeof(AugmentMethods.epicAugmentMethods);
+                MethodInfo epicMethod = epicType.GetMethod(augment.augmentMethodName);
+                epicMethod.Invoke(epicAugmentMethods, null);
                 break;
+            }
+                
             case "Legendary":
-                type = typeof(AugmentMethods.legendaryAugmentMethods);
+            {
+                AugmentMethods.legendaryAugmentMethods legendaryAugmentmethods = new AugmentMethods.legendaryAugmentMethods();
+                Type legendaryType = typeof(AugmentMethods.legendaryAugmentMethods);
+                MethodInfo legendaryMethod = legendaryType.GetMethod(augment.augmentMethodName);
+                legendaryMethod.Invoke(legendaryAugmentmethods, null);
                 break;
+            }
         }
-
-        MethodInfo method = type.GetMethod(augment.augmentMethodName);
-
-        method?.Invoke(this, null);
     }
-
-
 }
 
 public class commonAugments

@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerStateManager : MonoBehaviour
 {
+    public Vector2 inputDirection;
     public float MovementSpeed;
     public float walkAnimSpeed;
     public float slash1Speed;
@@ -18,7 +19,6 @@ public class PlayerStateManager : MonoBehaviour
     [System.NonSerialized] public float slash1Time;
     [System.NonSerialized] public float slash2Time;
     [System.NonSerialized] public float slash3Time;
-    public Vector2 lastInput;
     public float dashDistance;
     public float dashDuration;
     public float dashCooldown;
@@ -50,7 +50,7 @@ public class PlayerStateManager : MonoBehaviour
         animator = this.GetComponent<Animator>();
         rb = this.GetComponent<Rigidbody2D>();
         flipped = false;
-        lastInput = new Vector2(.9f, .1f);
+        // lastInput = new Vector2(.9f, .1f);
         findAnimationTimes();
     }
 

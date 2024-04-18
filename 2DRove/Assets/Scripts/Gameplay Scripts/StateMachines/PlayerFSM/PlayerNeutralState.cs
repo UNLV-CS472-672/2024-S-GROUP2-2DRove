@@ -9,6 +9,7 @@ public class PlayerNeutralState : PlayerBaseState
     {
         //Idle and walking handled in this state
         Debug.Log("Entering Neutral State...");
+        // Player.animator.ResetTrigger("neutral");
         Player.animator.ResetTrigger("slash1");
         Player.animator.ResetTrigger("slash2");
         Player.animator.ResetTrigger("slash3");
@@ -16,19 +17,17 @@ public class PlayerNeutralState : PlayerBaseState
 
     public override void UpdateState(PlayerStateManager Player)
     {
-        Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up")).normalized;
-        // Player.lastInput = (inputDirection != Vector2.zero) ? ((Player.lastInput * .90f) + inputDirection).normalized : Player.lastInput;
-        // Player.lastInput = (inputDirection != Vector2.zero) ? ((Player.lastInput * .80f) + inputDirection * .20f).normalized : Player.lastInput;
-        // Player.lastInput = (inputDirection != Vector2.zero) ? inputDirection : Player.lastInput;
-        Player.lastInput = inputDirection;
+        Player.inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up")).normalized;
+        // Player.lastInput = (Player.inputDirection != Vector2.zero) ? ((Player.lastInput * .80f) + Player.inputDirection * .20f).normalized : Player.lastInput;
+        // Player.lastInput = inputDirection;
 
         //Multiplies the direction by the speed and applies it as a force. Default force type is ForceMode2D.Force
-        Player.animator.SetFloat("yDir", Mathf.Abs(inputDirection.y)); //Sets the vertical direction parameter in the animator to the player's y velocity
-        Player.animator.SetFloat("xDir", Mathf.Abs(inputDirection.x)); //Sets the velocity parameter in the animator to the absolute value of the player's x velocity. This is used to determine if the player is moving or not
-        Player.rb.AddForce(inputDirection * Player.MovementSpeed);
+        Player.animator.SetFloat("yDir", Mathf.Abs(Player.inputDirection.y)); //Sets the vertical direction parameter in the animator to the player's y velocity
+        Player.animator.SetFloat("xDir", Mathf.Abs(Player.inputDirection.x)); //Sets the velocity parameter in the animator to the absolute value of the player's x velocity. This is used to determine if the player is moving or not
+        Player.rb.AddForce(Player.inputDirection * Player.MovementSpeed);
 
-        if (inputDirection.x != 0){ //If the player is moving horizontally
-            Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
+        if (Player.inputDirection.x != 0){ //If the player is moving horizontally
+            Player.flipped = Player.inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
         }
 
         
@@ -37,7 +36,7 @@ public class PlayerNeutralState : PlayerBaseState
         {
             Player.SwitchState(Player.Slash1State);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time > Player.lastDashedTime + Player.dashCooldown && Player.lastInput != Vector2.zero)
+        if (Input.GetKeyDown(KeyCode.Space) && Time.time > Player.lastDashedTime + Player.dashCooldown && Player.inputDirection != Vector2.zero)
         {
             Player.SwitchState(Player.DashState);
         }

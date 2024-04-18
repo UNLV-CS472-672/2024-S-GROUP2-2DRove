@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     
     public void StartGame(){
-        SceneManager.LoadScene("Floor1");
+        SceneManager.LoadScene("Underworld");
     }
 
     public void ExitGame(){

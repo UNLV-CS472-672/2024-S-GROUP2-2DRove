@@ -336,9 +336,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beginningTile: {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
   tile:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
+  - {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
+  - {fileID: 9148618936101596910, guid: 1229179fec04ecb47bd1add17e053ab4, type: 3}
   borderPrefab: {fileID: 9148618936101596910, guid: ecc8ee7854454b7459ce990868a9d124, type: 3}
   exitPrefab: {fileID: 923991240687089494, guid: e61882843c20b724b8a4998f498ece17, type: 3}
   tileNum: 20

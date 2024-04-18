@@ -20,15 +20,32 @@ public class AugmentObject
     public AugmentObject(){}
 }
 
+
 public class AugmentMethods
 {
+    // These are the classes you need to work with @voxelit and I gave an example using speedBoost.
+    // If you want to find the names of the methods, please reference the AugmentInstntiator.cs file after line 106. Each instance of an augment hasa an "augmentMethodName".
+    // The front end however should automatically be linked to the this part now though if you add what it's supposed to do and it should update within each scene to be the same now!
+    // If you want to see how the method calls occur, please debug selecting Speedboost and looking at the addAugment method in Augments.cs
     public class commonAugmentMethods
-    {}
+    {
+        public void speedBoost()
+        {
+            PlayerController player = getPlayer();
+            player.IncreaseSpeed(1); // I want this to be 10%, I don't know the math @voxelit
+        }
+    }
     public class rareAugmentMethods
     {}
     public class epicAugmentMethods
     {}
     public class legendaryAugmentMethods
     {}
-    
+
+    private static PlayerController getPlayer()
+    {
+        GameObject player = GameObject.Find("Player");
+        PlayerController playerController = player.GetComponent<PlayerController>();
+        return playerController;
+    }
 }

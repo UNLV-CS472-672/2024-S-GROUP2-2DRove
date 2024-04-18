@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerNeutralState : PlayerBaseState
 {
+    private float speedBoost = 1;
     public override void EnterState(PlayerStateManager Player)
     {
         //Idle and walking handled in this state
@@ -12,6 +13,7 @@ public class PlayerNeutralState : PlayerBaseState
         Player.animator.ResetTrigger("slash1");
         Player.animator.ResetTrigger("slash2");
         Player.animator.ResetTrigger("slash3");
+        speedBoost = Player.GetComponent<PlayerController>().getSpeed();
     }
 
     public override void UpdateState(PlayerStateManager Player)
@@ -21,7 +23,7 @@ public class PlayerNeutralState : PlayerBaseState
         //Multiplies the direction by the speed and applies it as a force. Default force type is ForceMode2D.Force
         Player.animator.SetFloat("yDir", Mathf.Abs(inputDirection.y)); //Sets the vertical direction parameter in the animator to the player's y velocity
         Player.animator.SetFloat("xDir", Mathf.Abs(inputDirection.x)); //Sets the velocity parameter in the animator to the absolute value of the player's x velocity. This is used to determine if the player is moving or not
-        Player.rb.AddForce(inputDirection * 5);
+        Player.rb.AddForce(inputDirection * 5 * speedBoost);
 
         if (inputDirection.x != 0){ //If the player is moving horizontally
             Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false

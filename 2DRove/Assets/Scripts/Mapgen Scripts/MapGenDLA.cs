@@ -69,7 +69,7 @@ namespace MapGenDLANamespace
                 return;
             }
             if(tileNum <= 0){
-                Debug.LogError("must create 1 or more tiles");
+                Debug.LogError("must create 1 or more tiifles");
                 return;
             }
             if(scale <= 0){

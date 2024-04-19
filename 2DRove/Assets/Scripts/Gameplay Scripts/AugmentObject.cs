@@ -29,11 +29,49 @@ public class AugmentMethods
     // If you want to see how the method calls occur, please debug selecting Speedboost and looking at the addAugment method in Augments.cs
     public class commonAugmentMethods
     {
+        public static int burnStackCounter = 0;
+        public void healthRegen()
+        {
+            PlayerController player = getPlayer();
+            player.IncreaseHealthRegen(1); // Increase health regen by 1.
+        }
+        // Increases player speed by 1
         public void speedBoost()
         {
             PlayerController player = getPlayer();
-            player.IncreaseSpeed(1); // I want this to be 10%, I don't know the math @voxelit
+            player.IncreaseSpeed(1); // Increase speed by 1. Not sure how this is scaled but will need to be scaled.
         }
+        //Increases base mana by 10
+        public void manaBoost()
+        {
+            PlayerController player = getPlayer();
+            player.IncreaseMana(10); // Increases players mana by 10.
+        }
+        public void damageBoost()
+        {
+            PlayerController player = getPlayer();
+            player.IncreaseDamage(1); // Increases players damage by 1.
+        }
+        public void criticalStrike()
+        {
+            PlayerController player = getPlayer();
+            player.IncreaseCrit(1); // Increases players crit chance by 1.
+        }
+        // Burning Damage method
+        public void burningDamage()
+        {
+            PlayerController player = getPlayer();
+            if(burnStackCounter == 0)
+            {
+                player.EnableBurning();
+                burnStackCounter++;
+            }
+            else
+            {
+                player.IncreaseBurn(1f);
+            }       
+        }
+
     }
     public class rareAugmentMethods
     {}

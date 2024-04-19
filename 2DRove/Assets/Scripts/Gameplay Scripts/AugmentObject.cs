@@ -39,7 +39,7 @@ public class AugmentMethods
         public void speedBoost()
         {
             PlayerController player = getPlayer();
-            player.IncreaseSpeed(1); // Increase speed by 1. Not sure how this is scaled but will need to be scaled.
+            player.IncreaseSpeed(0.75f); // Increase speed by 1. Not sure how this is scaled but will need to be scaled.
         }
         //Increases base mana by 10
         public void manaBoost()

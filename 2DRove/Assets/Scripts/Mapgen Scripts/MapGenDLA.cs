@@ -2,8 +2,10 @@ using System.Collections.Generic;
 using UnityEngine;
 // using CreateBorder;
 using EdgeTiles; 
+using EdgeTilesForest;
 using UnityEngine.Tilemaps;
 using UnityEngine.SceneManagement;
+
 
 
 namespace MapGenDLANamespace
@@ -30,6 +32,7 @@ namespace MapGenDLANamespace
 
         // private DrawBorder drawBorder;
         public AssignEdges assignEdges; 
+        public AssignEdgesForest assignEdgesForest; 
 
 
         [SerializeField] public float scale = 6.5f;
@@ -37,6 +40,7 @@ namespace MapGenDLANamespace
         [SerializeField] public float maxY = 5;
         [SerializeField] public float minX = -5;
         [SerializeField] public float minY = -5;
+        [SerializeField] public bool isForest  = false;
         // Dictionary to store positions of tiles
         // public static Dictionary<Vector2, GameObject> tilePositions = new();
         enum Direction { UpRight, DownLeft, UpLeft, DownRight };
@@ -111,10 +115,12 @@ namespace MapGenDLANamespace
                 Vector2 LeftDown = Vector2.left + Vector2.down;
 
                 //Check the neighboring tiles
-                CheckAndAddBorder(position + RightUp, tileObject);
-                CheckAndAddBorder(position + LeftUp, tileObject);
-                CheckAndAddBorder(position + RightDown, tileObject);
-                CheckAndAddBorder(position + LeftDown, tileObject);
+                if (!isForest) {
+                    CheckAndAddBorder(position + RightUp, tileObject);
+                    CheckAndAddBorder(position + LeftUp, tileObject);
+                    CheckAndAddBorder(position + RightDown, tileObject);
+                    CheckAndAddBorder(position + LeftDown, tileObject);
+                }
             }
 
             // //Add an exit
@@ -128,17 +134,31 @@ namespace MapGenDLANamespace
             // //todo: implement FillInEmptySpace to work for isometric
             // // FillInEmptySpace();
 
-            // After all tiles have been generated:
-            assignEdges = GetComponent<AssignEdges>();
-            if(assignEdges == null) {
-                Debug.LogError("AssignEdges component not found on the same GameObject.");
-            } else {
-                assignEdges.SetTileObjects(tileObjects);
-                assignEdges.SetScale(scale);
-                assignEdges.SetTilePositions(tilePositions); 
-                assignEdges.AssignAndSwapEdgeTiles();
+            if (!isForest) { 
+                // After all tiles have been generated:
+                assignEdges = GetComponent<AssignEdges>();
+                if(assignEdges == null) {
+                    Debug.LogError("AssignEdges component not found on the same GameObject.");
+                } else {
+                    assignEdges.SetTileObjects(tileObjects);
+                    assignEdges.SetScale(scale);
+                    assignEdges.SetTilePositions(tilePositions); 
+                    assignEdges.AssignAndSwapEdgeTiles();
+                }
             }
 
+            if (isForest) {
+                // After all tiles have been generated:
+                assignEdgesForest = GetComponent<AssignEdgesForest>();
+                if(assignEdgesForest == null) {
+                    Debug.LogError("AssignEdgesForest component not found on the same GameObject.");
+                } else {
+                    assignEdgesForest.SetTileObjects(tileObjects);
+                    assignEdgesForest.SetScale(scale);
+                    assignEdgesForest.SetTilePositions(tilePositions); 
+                    assignEdgesForest.AssignAndSwapEdgeTiles();
+                }
+            }
 
         }
 
@@ -275,7 +295,13 @@ namespace MapGenDLANamespace
         //Create a new tile where the previous tile was
         private void CreatePreviousTile(Vector2 previousPosition)
         {
-            GameObject newTile = Instantiate(getRandomTile(tile), new Vector3(previousPosition.x * scale * 10, previousPosition.y * scale * 5, 0), Quaternion.identity);
+            GameObject newTile = null;
+            if (isForest) {
+                newTile = Instantiate(getRandomTile(tile), new Vector3(previousPosition.x * scale * 4, previousPosition.y * scale * 2, 0), Quaternion.identity);
+            }
+            else {
+                newTile = Instantiate(getRandomTile(tile), new Vector3(previousPosition.x * scale * 10, previousPosition.y * scale * 5, 0), Quaternion.identity);
+            }
             //newTile.layer = LayerMask.NameToLayer("TileLayer");
             newTile.name = "Tile(" + previousPosition.x + ", " + previousPosition.y + ")";
             newTile.transform.localScale = new Vector3(scale, scale, 1);

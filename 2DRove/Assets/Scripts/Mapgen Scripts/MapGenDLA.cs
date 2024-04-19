@@ -134,6 +134,7 @@ namespace MapGenDLANamespace
             // //todo: implement FillInEmptySpace to work for isometric
             // // FillInEmptySpace();
 
+
             if (!isForest) { 
                 // After all tiles have been generated:
                 assignEdges = GetComponent<AssignEdges>();
@@ -145,6 +146,7 @@ namespace MapGenDLANamespace
                     assignEdges.SetTilePositions(tilePositions); 
                     assignEdges.AssignAndSwapEdgeTiles();
                 }
+
             }
 
             if (isForest) {
@@ -363,7 +365,7 @@ namespace MapGenDLANamespace
             if (tileObjects.TryGetValue(closestTile, out GameObject tileObject))
             {
                 // Use the tileObject's position, as it might have been adjusted for your game world
-                Vector3 exitPosition = tileObject.transform.position + new Vector3(0, 0, -1); // Adjust Z if necessary to ensure visibility
+                Vector3 exitPosition = tileObject.transform.position + new Vector3(0, 0, 1); // Adjust Z if necessary to ensure visibility
                 GameObject exit = Instantiate(exitPrefab, exitPosition, Quaternion.identity);
                 exit.name = "Exit(" + closestTile.x + ", " + closestTile.y + ")";
                 exit.transform.localScale = new Vector3(scale, scale, 1);

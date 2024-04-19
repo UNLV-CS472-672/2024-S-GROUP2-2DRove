@@ -91,7 +91,6 @@ namespace EdgeTilesForest
                     case TileType.EPeninsula:
                         SwapTile(tilePos, humpEastPrefab); // Replace with East Peninsula tile prefab
                         break;
-                    
                     case TileType.NSBridge:
                         SwapTile(tilePos, NSBridgePrefab); // Replace with East Peninsula tile prefab
                         break;

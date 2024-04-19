@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4629010802670694206}
   - component: {fileID: 8262264288234268305}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPoint
   m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 3438873517002540981}
   - component: {fileID: 4081635607117765796}
   - component: {fileID: -3699987137413277889}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Archer
   m_TagString: Enemy
   m_Icon: {fileID: 0}

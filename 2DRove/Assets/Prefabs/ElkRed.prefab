@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4633550635478953048}
   - component: {fileID: 4855716261266782918}
   - component: {fileID: 3416654283129974190}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: ElkRed
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1303528805845410779, guid: 41ff949cf37872d409ec051d598d0fa9, type: 3}
+  m_Sprite: {fileID: -1983061026127245800, guid: ea643b677b4831142ad78b24024ce958, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_Size: {x: 0.56, y: 0.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2727284571409584859
@@ -118,10 +118,10 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33, y: 0.36}
+  m_Size: {x: 0.29, y: 0.35}
   m_EdgeRadius: 0
 --- !u!50 &6195054016727995713
 Rigidbody2D:

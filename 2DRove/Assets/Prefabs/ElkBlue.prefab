@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1144814910068169308}
   - component: {fileID: 1650966963288276836}
   - component: {fileID: 5638597522792428165}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: ElkBlue
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -66,21 +66,21 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.56666666, y: 0}
-    oldSize: {x: 0.3, y: 0.34}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.56, y: 0.35}
     newSize: {x: 0.56, y: 0.35}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33, y: 0.36}
+  m_Size: {x: 0.28, y: 0.35}
   m_EdgeRadius: 0
 --- !u!212 &1087719703783805747
 SpriteRenderer:
@@ -123,7 +123,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -790786879709918208, guid: caf747eef54421842a33f1fc7fb9dfaa, type: 3}
+  m_Sprite: {fileID: -781943519381566179, guid: a58d50f6c50aea741b3247176746f12f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131,7 +131,7 @@ SpriteRenderer:
   m_Size: {x: 0.56, y: 0.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &596079816133628464

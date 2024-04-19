@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3578320336554610286}
   - component: {fileID: -3762193347483259035}
   - component: {fileID: 6966254371096463432}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: SpitterRangeAttack
   m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}

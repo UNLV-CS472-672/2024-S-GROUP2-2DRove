@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3183562254571699756}
   - component: {fileID: 7361319843905963864}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BombShadow
   m_TagString: Shadow
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 5605959815181131764}
   - component: {fileID: 7029340579710266121}
   - component: {fileID: 8190638973803224783}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: BomberDroid
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7022727250061143398}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7804762773561169063}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: AttackPointY
   m_TagString: Untagged
   m_Icon: {fileID: 0}

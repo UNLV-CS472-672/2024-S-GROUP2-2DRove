@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 3614290600010504197}
   - component: {fileID: 6450339269270138066}
   - component: {fileID: 4520340135058011062}
+  - component: {fileID: -4867194672602142345}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -262,6 +263,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   knockbackStrength: 5
+  speedBoost: 1
+  maxMana: 50
+  mana: 50
+  rangeMana: 5
+  healthRegen: 1
+  damageBoost: 1
+  critRate: 0
+  burning: 0
+  burnDamage: 0
 --- !u!114 &3614290600010504197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +372,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0.15, y: 0}
   m_Size: {x: 0.88, y: 0.18}
   m_Direction: 1
+--- !u!114 &-4867194672602142345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916207954854211963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecd48a0063bf124f8cc8e7dbc7f6165, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTypes:
+  - {fileID: 3475996137607520006, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
+  - {fileID: 6229290378130564962, guid: be179befa880d774ea3885548de8a42e, type: 3}
+  - {fileID: 5146096097140963350, guid: 9b858c8dd6cf16a449655a05c98f6909, type: 3}
+  spawnRate: 1.5
+  maxEnemies: 100
+  minSpawnDistance: 5
+  maxSpawnDistance: 15
+  maxPerType: 5a0000000800000002000000
 --- !u!1 &8064289160981386832
 GameObject:
   m_ObjectHideFlags: 0

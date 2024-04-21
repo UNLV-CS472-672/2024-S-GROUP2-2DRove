@@ -11,6 +11,7 @@ public class PlayerSlash1State : PlayerBaseState
     private float burnDamage;
     private float damageBoost;
     private float critRate;
+    private bool isVampire;
 
     private float playerAttackDamage = 3f;
     public override void EnterState(PlayerStateManager Player)
@@ -24,6 +25,7 @@ public class PlayerSlash1State : PlayerBaseState
         burnDamage = Player.GetComponent<PlayerController>().getBurnDamage();
         damageBoost = Player.GetComponent<PlayerController>().getDamageBoost();
         critRate = Player.GetComponent<PlayerController>().getCritRate();
+        isVampire = Player.GetComponent<PlayerController>().doesVampire();
     }
 
     public override void UpdateState(PlayerStateManager Player)
@@ -77,6 +79,9 @@ public class PlayerSlash1State : PlayerBaseState
                     totalDamage *= 1.5f;  // use random number to determine if player hits a crit or not
                 }
                 enemyScript.TakeDamage(totalDamage);
+                if(isVampire) {
+                     Player.GetComponent<PlayerController>().healPlayer(3f);
+                }
                 if(burning) {
                     //applies burning to enemies
                     enemyScript.EnableBurning();

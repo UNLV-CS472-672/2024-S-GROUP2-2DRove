@@ -4,7 +4,7 @@ public class FoxFleeState : FoxBaseState
 {
     private Transform player;
     private float fleeSpeed = 5.5f; // Speed at which the fox moves when fleeing
-    private float fleeDuration = 1.5f; // Duration of the flee action
+    private float fleeDuration = 3.0f; // Duration of the flee action
     private float fleeTimer;
 
     public override void EnterState(FoxStateManager fox)
@@ -39,6 +39,7 @@ public class FoxFleeState : FoxBaseState
             // Fleeing is over, switch to idle state
             Debug.Log("Fleeing ended, switching to Idle State");
             fox.animator.SetBool("isFleeing", false);
+            fox.animator.SetBool("isAlert", false);
             fox.SwitchState(fox.IdleState);
         }
     }

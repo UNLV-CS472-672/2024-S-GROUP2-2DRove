@@ -76,7 +76,6 @@ public class NewEnemy : MonoBehaviour
 
     private void burn()
     {
-        Debug.Log("burn!!!");
         TakeDamage(burnDamage);
         lastBurn = Time.time;
     }

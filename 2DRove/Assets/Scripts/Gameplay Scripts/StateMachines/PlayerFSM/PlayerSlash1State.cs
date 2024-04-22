@@ -80,7 +80,7 @@ public class PlayerSlash1State : PlayerBaseState
                 }
                 enemyScript.TakeDamage(totalDamage);
                 if(isVampire) {
-                     Player.GetComponent<PlayerController>().healPlayer(3f);
+                     Player.GetComponent<PlayerController>().healPlayer(1f);
                 }
                 if(burning) {
                     //applies burning to enemies

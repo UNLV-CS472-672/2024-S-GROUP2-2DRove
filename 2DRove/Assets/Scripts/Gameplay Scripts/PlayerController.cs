@@ -334,7 +334,7 @@ public class PlayerController : MonoBehaviour
                 }
                 enemyScript.TakeDamage(totalDamage);
                 if(isVampire) {
-                    healPlayer(3f);
+                    healPlayer(1f);
                 }
                 if(burning) {
                     //applies burning to enemies

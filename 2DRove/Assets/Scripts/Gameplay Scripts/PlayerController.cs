@@ -26,9 +26,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private TMP_Text healthText;
     private TMP_Text goldText;
-    [SerializeField] private Slider healthSlider; 
+    // [SerializeField] private Slider healthSlider; 
 
-    [SerializeField] private Slider manaSlider;
+    // [SerializeField] private Slider manaSlider;
     [SerializeField] private TMP_Text manaText;
 
     //To store component data
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
     private void Start(){
         health = maxHealth;
         mana = maxMana;
-        setHealthandMana();
+        // setHealthandMana();
         // Restore augments to the player
         if(Augments.chosenAugments != null)
         {
@@ -122,16 +122,16 @@ public class PlayerController : MonoBehaviour
         //     Slash();
         // }
 
-        if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
-            rangeAttack();
-        }
+        // if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
+        //     rangeAttack();
+        // }
         if(notOnCooldown(lastRegen, regenCooldown)) {
             regenHealth();
         }
         if(notOnCooldown(lastRegen, 1f)) {
             regenMana();
         }
-        setHealthandMana();
+        // setHealthandMana();
     }
 
     //Finds the direction given the positive/negative inputs. We add/subtract to a variable rather than directly outputting 1 or -1 because this allows to cancel movements when holding both inputs
@@ -270,14 +270,14 @@ public class PlayerController : MonoBehaviour
     public void dealDamage(float damage){
         health -= damage;
         checkDeath();
-        setHealthandMana();
+        // setHealthandMana();
     }
 
     //Geals the player's health value
     public void healPlayer(float heal){
         health += heal;
         checkOverheal();
-        setHealthandMana();
+        // setHealthandMana();
     }
 
     //Sets the player's health to their max health if it is over (Ex. if current health is 13 and max health is 10 it will set the current health = max health which in this case would be 10)
@@ -300,31 +300,31 @@ public class PlayerController : MonoBehaviour
     }
 
     //Updates the visible health bar/slider
-    private void setHealthandMana(){
-        // healthSlider.value = health / maxHealth; //Gets the % of health left
+    // private void setHealthandMana(){
+    //     // healthSlider.value = health / maxHealth; //Gets the % of health left
 
-        float healthPercentage = health/maxHealth;
+    //     float healthPercentage = health/maxHealth;
 
-        healthSlider.value = healthPercentage;
+    //     healthSlider.value = healthPercentage;
 
-        float manaPercentage = mana/maxMana;
+    //     float manaPercentage = mana/maxMana;
 
-        manaSlider.value = manaPercentage;
+    //     manaSlider.value = manaPercentage;
 
-        //Sets the color of the health bar based on the % of health left
-        // if (healthSlider.value > 0.3f){
-        //     healthSlider.fillRect.GetComponent<Image>().color = Color.green;
-        // }
-        // else{
-        //     healthSlider.fillRect.GetComponent<Image>().color = Color.red;
-        // }
+    //     //Sets the color of the health bar based on the % of health left
+    //     // if (healthSlider.value > 0.3f){
+    //     //     healthSlider.fillRect.GetComponent<Image>().color = Color.green;
+    //     // }
+    //     // else{
+    //     //     healthSlider.fillRect.GetComponent<Image>().color = Color.red;
+    //     // }
 
-        //Updates the player's health text
-        healthText.text = Mathf.Ceil(health).ToString() + "/" + Mathf.Ceil(maxHealth).ToString();
+    //     //Updates the player's health text
+    //     healthText.text = Mathf.Ceil(health).ToString() + "/" + Mathf.Ceil(maxHealth).ToString();
 
-        //Updates the player's mana text
-        manaText.text = Mathf.Ceil(mana).ToString() + "/" + Mathf.Ceil(maxMana).ToString();
-    }
+    //     //Updates the player's mana text
+    //     manaText.text = Mathf.Ceil(mana).ToString() + "/" + Mathf.Ceil(maxMana).ToString();
+    // }
 
     //Adds the coin's value to the player's coin count
     public void addCoin(int amount){

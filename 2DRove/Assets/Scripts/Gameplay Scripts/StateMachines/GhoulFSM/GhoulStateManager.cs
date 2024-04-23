@@ -29,6 +29,10 @@ public class GhoulStateManager : MonoBehaviour
     {
         currentState.UpdateState(this);
     }
+    
+    private void OnCollisionEnter2D(Collision2D other) {
+        currentState.OnCollisionEnter2D(this, other);
+    }
 
     private void OnTriggerStay2D(Collider2D other) {
         currentState.OnTriggerStay2D(this, other);
@@ -57,8 +61,6 @@ public class GhoulStateManager : MonoBehaviour
         Destroy(gameObject, waitDuration);
     }
 
-
-
     private void OnDrawGizmosSelected(){
         if (attackPoint == null){
             return;
@@ -66,40 +68,13 @@ public class GhoulStateManager : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
-    public void Testing()
+    public void CollisionTesting(Collision2D collision2D)
     {
-        GhoulBaseState[] states = {SpawnState, AggroState, AttackState, HitState, IdleState, DeathState};
-        // GhoulBaseState[] states = {SpawnState};//, AggroState, AttackState, HitState, IdleState, DeathState};
-        GameObject UIOverlay = new GameObject("UI Overlay");
-        UIOverlay.AddComponent<GameOverMenu>();
+        OnCollisionEnter2D(collision2D);
+    }
 
-        GameObject HealthText = new GameObject("Health Text");
-        HealthText.AddComponent<TMP_Text>();
-
-        GameObject GoldText = new GameObject("Gold Text");
-        HealthText.AddComponent<TMP_Text>();
-
-        // GameObject HealthSlider = new GameObject("Health Slider");
-        // HealthText.AddComponent<Slider>();
-
-        GameObject player = new GameObject();
-        player.gameObject.tag = "Player";
-        player.gameObject.layer = 7; //layer == player == 7
-        player.AddComponent<PlayerController>();
-        player.AddComponent<BoxCollider2D>();
-        player.AddComponent<Animator>();
-
-        foreach (GhoulBaseState state in states)
-        {
-            SwitchState(state);
-            OnTriggerStay2D(player.GetComponent<BoxCollider2D>());
-            EventTrigger();
-            TakeDamageAnimation();
-            // OnDrawGizmosSelected();
-            // if (state == DeathState)
-            // {
-            //     Destroy(.5f);
-            // }
-        }
+    public void TriggerTesting(Collider2D collider2D)
+    {
+        OnTriggerStay2D(collider2D);
     }
 }

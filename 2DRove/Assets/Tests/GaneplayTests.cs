@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameplayTests
 {
@@ -99,11 +100,62 @@ public class GameplayTests
     public IEnumerator GameplayTest()
     {
         GameObject enemy = new GameObject();
+        GameObject attackPoint = new GameObject("attackPoint");
+        attackPoint.AddComponent<Transform>();
+        attackPoint.GetComponent<Transform>().position = Vector3.zero;
+        enemy.AddComponent<Rigidbody2D>();
+        enemy.AddComponent<Transform>();
+        enemy.AddComponent<NewEnemy>();
+        enemy.AddComponent<Collider2D>();
+        enemy.GetComponent<NewEnemy>().maxHealth = 10;
+        enemy.AddComponent<Animator>();
+        enemy.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("CompletedControllers/Ghoul");
+        if (enemy.GetComponent<Animator>().runtimeAnimatorController == null)
+        {
+            // RuntimeAnimatorController exists
+            Debug.Log("RuntimeAnimatorController DNE.");
+        }
         enemy.AddComponent<GhoulStateManager>();
         GhoulStateManager stateManager = enemy.GetComponent<GhoulStateManager>();
-        stateManager.Testing();
+        stateManager.attackPoint = attackPoint.GetComponent<Transform>();
+        stateManager.attackRange = 10f;
 
-        // yield return new WaitForSeconds(.5f);
+        GhoulBaseState[] states = {stateManager.SpawnState, stateManager.AggroState, stateManager.AttackState, stateManager.HitState, stateManager.IdleState, stateManager.DeathState};
+        GameObject UIOverlay = new GameObject("UI Overlay");
+        UIOverlay.AddComponent<GameOverMenu>();
+
+        // GameObject HealthText = new GameObject("Health Text");
+        // HealthText.AddComponent<TMP_Text>();
+
+        GameObject GoldText = new GameObject("Gold Text");
+        GoldText.AddComponent<TMP_Text>();
+
+        // GameObject HealthSlider = new GameObject("Health Slider");
+        // HealthText.AddComponent<Slider>();
+
+        GameObject player = new GameObject();
+        player.gameObject.tag = "Player";
+        player.gameObject.layer = 7; //layer == player == 7
+        player.AddComponent<PlayerController>();
+        player.AddComponent<BoxCollider2D>();
+        player.AddComponent<Animator>();
+        player.GetComponent<Animator>().runtimeAnimatorController = Resources.Load<RuntimeAnimatorController>("CompletedControllers/Player");
+        player.AddComponent<Rigidbody2D>();
+
+        foreach (GhoulBaseState state in states)
+        {
+            stateManager.SwitchState(state);
+            yield return null;
+            stateManager.TriggerTesting(player.GetComponent<BoxCollider2D>());
+            stateManager.EventTrigger();
+            stateManager.CollisionTesting(new Collision2D());
+            stateManager.TakeDamageAnimation();
+            if (state == stateManager.DeathState)
+            {
+                stateManager.Destroy(.5f);
+            }
+        }
+
         yield return null;
     }
 }

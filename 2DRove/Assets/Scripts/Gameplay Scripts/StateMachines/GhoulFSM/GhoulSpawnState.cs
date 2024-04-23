@@ -23,7 +23,8 @@ public class GhoulSpawnState : GhoulBaseState
         
     } 
 
-    public override void OnTriggerStay2D(GhoulStateManager ghoul, Collider2D other) {
+    public override void OnTriggerStay2D(GhoulStateManager ghoul, Collider2D other) 
+    {
         
     }
 

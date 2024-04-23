@@ -64,6 +64,9 @@ public class PlayerController : MonoBehaviour
 
     //The Start function is called if the script is enabled before any update functions
     private void Start(){
+        health = maxHealth;
+        mana = maxMana;
+        setHealthandMana();
         // Restore augments to the player
         foreach(var augment in Augments.chosenAugments)
         {
@@ -90,10 +93,7 @@ public class PlayerController : MonoBehaviour
         //Find health slider
         // healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
 
-        //Starts the player with max health and initializes the health slider
-        health = maxHealth;
-        mana = maxMana;
-        setHealthandMana();
+        //Starts the player with max health and initializes the health slider   
     }
 
     // Method to reduce the player's movement speed

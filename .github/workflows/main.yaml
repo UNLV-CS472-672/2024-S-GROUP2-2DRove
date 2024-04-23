@@ -27,6 +27,7 @@ jobs:
       uses: wearerequired/lint-action@v2.3.0 #might just be @v2
       with:
         dotnet_format: true
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
     #there is is the slight possibility that there is more to this than i think
     #if that is the case, then i think it would come from the dotnet sectino
     #since that is what is used to check c# code.

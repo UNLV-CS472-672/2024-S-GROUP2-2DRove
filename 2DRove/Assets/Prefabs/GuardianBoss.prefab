@@ -205,37 +205,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2451128833012570120
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4220949984574667149}
-  m_Layer: 3
-  m_Name: Attack1Height
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4220949984574667149
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2451128833012570120}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05889, y: -0.13507, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4012842002547039159}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2997752484817874109
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,13 +316,12 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 44.7, y: -31.1, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 4}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 20, y: 20, z: 8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3676918177868209009}
   - {fileID: 7210264281584237184}
   - {fileID: 2842349094672134666}
-  - {fileID: 4220949984574667149}
   - {fileID: 3508278907231429021}
   - {fileID: 1518626657077464044}
   - {fileID: 3348602347492090209}
@@ -421,7 +389,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_Sprite: {fileID: -8296385383580801948, guid: bea6f1a9149a5a14e8586a4d0545060f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -445,14 +413,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa3b7aed17caf584794c3d844ab5323c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSpeed: 1
+  walkAnimSpeed: 1
+  attack1Speed: 1
+  attack2Speed: 1
+  vertDashSpeed: 1
+  horizontalDashSpeed: 1
+  AoESpeed: 1
+  AoEResetSpeed: 1
   afterImage: {fileID: 1680049920885591672}
-  animator: {fileID: 0}
-  attack1X: {fileID: 7210264281584237184}
-  attack1Y: {fileID: 4220949984574667149}
-  attack1Length: 5.67
-  attack1Height: 0.64
+  animator: {fileID: 878488624133352400}
+  attack1: {fileID: 7210264281584237184}
+  attack1Length: 6.5
   attack2: {fileID: 2842349094672134666}
-  attack2Range: 3
+  attack2Range: 6.1
 --- !u!114 &1680049920885591672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,10 +542,10 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 439
+    m_Bits: 311
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -603,10 +577,10 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 439
+    m_Bits: 311
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -638,7 +612,7 @@ PolygonCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -968,7 +942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7210264281584237184}
   m_Layer: 3
-  m_Name: Attack1Length
+  m_Name: Attack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

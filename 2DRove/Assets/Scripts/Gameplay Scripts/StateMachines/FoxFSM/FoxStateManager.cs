@@ -6,7 +6,6 @@ public class FoxStateManager : MonoBehaviour
 
 {
     public FoxIdleState IdleState = new FoxIdleState();
-    public FoxHitState HitState = new FoxHitState();
     public FoxEatState EatState = new FoxEatState();
     public FoxSpawnState SpawnState = new FoxSpawnState();
     public FoxDeathState DeathState = new FoxDeathState();

@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class PlayerSlash3State : PlayerBaseState
 {
-    private float cooldown = .5f;
     private float attackTime;
     private bool combo;
     private float damageBoost;
@@ -14,7 +13,7 @@ public class PlayerSlash3State : PlayerBaseState
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash3 State");
-        attackTime = cooldown;
+        attackTime = Player.slash3Time;
         combo = false;
         Player.Coroutine(DashDelay(Player));
         Player.animator.SetTrigger("slash3");
@@ -30,7 +29,7 @@ public class PlayerSlash3State : PlayerBaseState
             Player.animator.SetTrigger("neutral");
             Player.SwitchState(Player.NeutralState);
         }
-        else if(attackTime <= .05f && combo == true)
+        else if(attackTime <= (Player.slash3Time * .2f) && combo == true)
         {
             Player.SwitchState(Player.Slash1State);
         }
@@ -95,15 +94,24 @@ public class PlayerSlash3State : PlayerBaseState
 
     IEnumerator DashDelay(PlayerStateManager Player)
     {
-        yield return new WaitForSeconds(cooldown * (4/5));
-        Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up")).normalized;
-        inputDirection.Normalize();
-        Player.rb.AddForce(inputDirection * 500);
-
-        if (inputDirection.x != 0){ //If the player is moving horizontally
-            Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
+        yield return new WaitForSeconds(Player.slash3Time * (4/5));
+        Player.inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up"));
+        // Player.lastInput = (Player.inputDirection != Vector2.zero) ? ((Player.lastInput * .80f) + Player.inputDirection * .20f).normalized : Player.lastInput;
+        // Player.lastInput = inputDirection;
+        if (Player.inputDirection == Vector2.zero)
+        {
+            //already normalized
+            Vector2 direction = new(Player.transform.localEulerAngles.y < 90 ? 1 : -1, 0);
+            Player.rb.AddForce(100 * Player.slash3Lurch * direction);
         }
+        else
+        {
+            Player.rb.AddForce(100 * Player.slash3Lurch * Player.inputDirection.normalized);
+            if (Player.inputDirection.x != 0){ //If the player is moving horizontally
+                Player.flipped = Player.inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
+            }
 
-        Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
+            Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
+        }
     }
 }

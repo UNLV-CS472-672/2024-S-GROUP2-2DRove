@@ -3,21 +3,21 @@ using UnityEngine;
 
 public class RockBossAttackState : RockBossBaseState
 {
-    private float attackTime = 2.5f;
+    private float attackTime;
     private Animator animator;
     private int returnAttackType;
     public override void EnterState(RockBossStateManager RockBoss)
     {
         Debug.Log("Entering Attack State");
-        attackTime = 2.5f;
+        // attackTime = 20f;
         animator = RockBoss.GetComponent<Animator>();
         PerformRandomAttack(RockBoss);
     }
 
-    private IEnumerator AttackCoolDown()
-    {
-        yield return new WaitForSeconds(2.5f);
-    }
+    // private IEnumerator AttackCoolDown()
+    // {
+    //     yield return new WaitForSeconds(2.5f);
+    // }
 
     private void PerformRandomAttack(RockBossStateManager RockBoss)
     {
@@ -27,23 +27,27 @@ public class RockBossAttackState : RockBossBaseState
         {
             case 0:
                 animator.SetBool("Beaming", true);
+                attackTime = RockBoss.burstTime / RockBoss.burstSpeed;
                 Debug.Log("Beaming");
                 break;
             case 1:
                 animator.SetBool("Shooting", true);
+                attackTime = RockBoss.rangeAttackTime / RockBoss.rangeAttackSpeed;
                 Debug.Log("Shooting");
                 break;
             case 2:
                 animator.SetBool("Charging", true);
+                attackTime = RockBoss.buffTime / RockBoss.buffSpeed;
                 Debug.Log("Charging");
                 break;
             case 3:
                 animator.SetBool("Slamming", true);
+                attackTime = RockBoss.attackTime / RockBoss.attackSpeed;
                 Debug.Log("Slamming");
                 break; 
         }
         returnAttackType = attackType;
-        RockBoss.StartCoroutine(AttackCoolDown());
+        // RockBoss.StartCoroutine(AttackCoolDown());
     }
 
     public override void UpdateState(RockBossStateManager RockBoss)
@@ -53,9 +57,8 @@ public class RockBossAttackState : RockBossBaseState
             animator.SetBool("Beaming", false);
             animator.SetBool("Shooting", false);
             animator.SetBool("Charging", false);
-            animator.SetBool("Spinning", false);
             animator.SetBool("Slamming", false);
-            RockBoss.SwitchState(RockBoss.IdleState);
+            RockBoss.SwitchState(RockBoss.AggroState);
         }
 
         attackTime -= Time.deltaTime;

@@ -3,13 +3,12 @@ using UnityEngine;
 
 public class WidowAttackState : WidowBaseState
 {
-    private float attackTime = 2f;
+    private float attackTime;
     private Animator animator;
     private int returnAttackType;
     public override void EnterState(WidowStateManager Widow)
     {
         Debug.Log("Entering Attack State");
-        attackTime = 2f;
         animator = Widow.GetComponent<Animator>();
         PerformRandomAttack(Widow);
     }
@@ -22,14 +21,17 @@ public class WidowAttackState : WidowBaseState
         {
             case 0:
                 animator.SetBool("isJumping", true);
+                attackTime = Widow.jumpTime / Widow.jumpSpeed;
                 Debug.Log("Jumping");
                 break;
             case 1:
                 animator.SetBool("isSpitting", true);
+                attackTime = Widow.spitTime / Widow.spitSpeed;
                 Debug.Log("Spitting");
                 break;
             case 2:
                 animator.SetBool("isAttacking", true);
+                attackTime = Widow.attackTime / Widow.attackSpeed;
                 Debug.Log("Attacking");
                 break;
         }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GhoulStateManager : MonoBehaviour
@@ -56,10 +57,49 @@ public class GhoulStateManager : MonoBehaviour
         Destroy(gameObject, waitDuration);
     }
 
+
+
     private void OnDrawGizmosSelected(){
         if (attackPoint == null){
             return;
         }
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    public void Testing()
+    {
+        GhoulBaseState[] states = {SpawnState, AggroState, AttackState, HitState, IdleState, DeathState};
+        // GhoulBaseState[] states = {SpawnState};//, AggroState, AttackState, HitState, IdleState, DeathState};
+        GameObject UIOverlay = new GameObject("UI Overlay");
+        UIOverlay.AddComponent<GameOverMenu>();
+
+        GameObject HealthText = new GameObject("Health Text");
+        HealthText.AddComponent<TMP_Text>();
+
+        GameObject GoldText = new GameObject("Gold Text");
+        HealthText.AddComponent<TMP_Text>();
+
+        // GameObject HealthSlider = new GameObject("Health Slider");
+        // HealthText.AddComponent<Slider>();
+
+        GameObject player = new GameObject();
+        player.gameObject.tag = "Player";
+        player.gameObject.layer = 7; //layer == player == 7
+        player.AddComponent<PlayerController>();
+        player.AddComponent<BoxCollider2D>();
+        player.AddComponent<Animator>();
+
+        foreach (GhoulBaseState state in states)
+        {
+            SwitchState(state);
+            OnTriggerStay2D(player.GetComponent<BoxCollider2D>());
+            EventTrigger();
+            TakeDamageAnimation();
+            // OnDrawGizmosSelected();
+            // if (state == DeathState)
+            // {
+            //     Destroy(.5f);
+            // }
+        }
     }
 }

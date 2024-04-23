@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2431315357429599405}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DashDist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,17 +40,17 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784697184544801091}
-  - component: {fileID: 3558944411041303915}
   - component: {fileID: 4493224418580673698}
+  - component: {fileID: 8181783134252115575}
+  - component: {fileID: 4267805824024617611}
+  - component: {fileID: 3558944411041303915}
   - component: {fileID: 5703780555728966220}
   - component: {fileID: 2559233952916367734}
   - component: {fileID: 8418522537197053504}
-  - component: {fileID: 8181783134252115575}
   - component: {fileID: 3614290600010504197}
   - component: {fileID: 6450339269270138066}
   - component: {fileID: 4520340135058011062}
-  - component: {fileID: -4867194672602142345}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -74,6 +74,80 @@ Transform:
   - {fileID: 2431315357429599405}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4493224418580673698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916207954854211963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac7a54ddc38ba984cb046d8dd53cd6fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputDirection: {x: 0, y: 0}
+  MovementSpeed: 20
+  walkAnimSpeed: 1
+  slash1Speed: 1
+  slash2Speed: 1
+  slash3Speed: 1
+  hitStunSpeed: 1
+  idleAnimSpeed: 1
+  slash1Lurch: 6
+  slash2Lurch: 8
+  slash3Lurch: 10
+  dashDistance: 10
+  dashDuration: 0.05
+  dashCooldown: 1
+  animator: {fileID: 0}
+  attackPoint: {fileID: 8752092245281292779}
+  attackRange: 1.74
+  rb: {fileID: 8418522537197053504}
+  flipped: 0
+--- !u!114 &8181783134252115575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916207954854211963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65af4b292c6b6e4583fa4245458c416, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  coins: 0
+  speedFactor: 50
+  dashDistance: 4
+  dashDuration: 10
+  dashCooldown: 2
+  shootCooldown: 1
+  projectilePrefab: {fileID: 9032579860153729722, guid: fccb1090956a9804b86ef8c349819aeb, type: 3}
+  slashPoint: {fileID: 2431315357429599405}
+  slashRange: 4.41
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  knockbackStrength: 5
+--- !u!114 &4267805824024617611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6916207954854211963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef48a9d30487bb418ad8e25fe59f39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostDelay: 0.00005
+  ghostDuration: 0.25
+  ghost: {fileID: 5774922461701893199, guid: a5d92673d858142f39717304a5242fef, type: 3}
+  makeGhost: 0
 --- !u!95 &3558944411041303915
 Animator:
   serializedVersion: 5
@@ -95,23 +169,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4493224418580673698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6916207954854211963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac7a54ddc38ba984cb046d8dd53cd6fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  attackPoint: {fileID: 8752092245281292779}
-  attackRange: 1.74
-  rb: {fileID: 0}
-  flipped: 0
 --- !u!212 &5703780555728966220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -152,7 +209,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: -1570135069, guid: 24b34d243e5fc1c49a200094ae374fa4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -236,42 +293,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8181783134252115575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6916207954854211963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d65af4b292c6b6e4583fa4245458c416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
-  coins: 0
-  speedFactor: 50
-  blinkDistance: 5
-  blinkDuration: 0
-  blinkCooldown: 1
-  shootCooldown: 1
-  projectilePrefab: {fileID: 9032579860153729722, guid: fccb1090956a9804b86ef8c349819aeb, type: 3}
-  slashPoint: {fileID: 2431315357429599405}
-  slashRange: 4.41
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  knockbackStrength: 5
-  speedBoost: 1
-  maxMana: 50
-  mana: 50
-  rangeMana: 5
-  healthRegen: 1
-  damageBoost: 1
-  critRate: 0
-  burning: 0
-  burnDamage: 0
 --- !u!114 &3614290600010504197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8752092245281292779}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

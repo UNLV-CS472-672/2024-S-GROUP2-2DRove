@@ -17,10 +17,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int coins;
     [SerializeField] private float speedFactor;
     private float currentSpeed = 50;
-    [SerializeField] private float blinkDistance;
-    [SerializeField] private float blinkDuration;
-    [SerializeField] private float blinkCooldown;
-    private float lastBlinkedTime;
+    [SerializeField] private float dashDistance;
+    [SerializeField] private float dashDuration;
+    [SerializeField] private float dashCooldown;
+    private float lastDashedTime;
     [SerializeField] private float shootCooldown;
     private float lastShootTime;
     [SerializeField] private GameObject projectilePrefab;
@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         }
         rb = GetComponent<Rigidbody2D>();
 
-        speedFactor = currentSpeed * speedBoost;
+        // speedFactor = currentSpeed;
 
         //Find the game over menu
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
@@ -99,20 +99,16 @@ public class PlayerController : MonoBehaviour
     }
 
     //FixedUpdate unlike Update is called on an independant timer ignoring frame rate while Update is called each frame. Because of this, movement in FixedUpdate does not have to be multiplied by Time.deltaTime
-    private void FixedUpdate(){
-        //A Vector2 is a data type formatted like a coordinate (x, y) and is used by many things from position in the transform component to magitude of forces with physics
-
-        GetComponent<CapsuleCollider2D>().enabled = false;
+    private void Update(){
+        // Vector2 inputDirection = new Vector2(findDirectionFromInputs("Left", "Right"), findDirectionFromInputs("Down", "Up"));
         //Checks for the input and if the blink is on cooldown
-        if(input.actions["Blink"].IsPressed() && notOnCooldown(lastBlinkedTime, blinkCooldown)){
-            blinkDuration = .417f;
-            blink(blinkDistance);
-            GetComponent<CapsuleCollider2D>().enabled = true;
-        }
+        // if(input.actions["Blink"].IsPressed() && notOnCooldown(lastDashedTime, dashCooldown)){
+        //     blink(GetComponent<PlayerStateManager>().lastInput, dashDistance);
+        // }
 
-        if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
-            Slash();
-        }
+        // if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
+        //     Slash();
+        // }
 
         if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             rangeAttack();
@@ -135,32 +131,31 @@ public class PlayerController : MonoBehaviour
     }
 
     //Blinks the player based on the direction and distance inputted
-    private void blink(float distance){
+    private void blink(Vector2 direction, float distance){
         //First we raycast from the player in the direction and distance specified of the blink. The layermask is there so it only collides with colliders in the Default layer. We raycast to get collisions so the player cant teleport into/through walls or other objects.
-        // Debug.Log(this.transform.rotation);
-        Debug.Log("m_LocalRotation " + transform.localEulerAngles.y);
-        Vector2 direction = new Vector2(transform.localEulerAngles.y < 90 ? 1 : -1, 0);
-        animator.SetTrigger("dash");
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, LayerMask.GetMask("Default"));
+
         Debug.DrawRay(transform.position, direction * distance, Color.red, 10f);
         Debug.Log(hit.distance);
-        Vector2 endDist;
+        Vector2 dashLoc;
         if(hit){ //If the raycast collides with an object
-            // transform.position = (direction * (hit.distance - 1)) + (Vector2)transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block
-            endDist = (direction * (hit.distance - 1)) + (Vector2)transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block
+            // transform.position = (direction.normalized * hit.distance) + (Vector2)transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block
+            dashLoc = (direction.normalized * hit.distance) + (Vector2)transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block
         }else{//If the raycast doesnt collide with anything then there is nothing in the way of the player blinking
-            // transform.position = (direction * distance) + (Vector2)transform.position; //Teleports the player the full distance in the direction the player was moving
-            endDist = (direction * distance) + (Vector2)transform.position; //Teleports the player the full distance in the direction the player was moving
+            // transform.position = (direction.normalized * distance) + (Vector2)transform.position; //Teleports the player the full distance in the direction the player was moving
+            dashLoc = (direction.normalized * distance) + (Vector2)transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block
         }
+        
+        Vector2 startLoc = transform.position;
 
-        float timer = 0;
-        while(timer < blinkDuration)
+        float dashTimer = dashDuration;
+        while (dashTimer > 0)
         {
-            timer += Time.deltaTime;
-            transform.position = Vector2.Lerp(transform.position, endDist, timer/.417f);
+            transform.position = Vector2.Lerp(dashLoc, startLoc, dashTimer/dashDuration);
+            dashTimer -= Time.deltaTime;
         }
 
-        lastBlinkedTime = Time.time; //Updates when the player blinked last, putting the blink on cooldown
+        lastDashedTime = Time.time; //Updates when the player blinked last, putting the blink on cooldown
     }
 
     //Range Attack
@@ -184,15 +179,15 @@ public class PlayerController : MonoBehaviour
     }
 
     //Slash
-    private void Slash(){
+    // private void Slash(){
         
-        if(Time.time >= nextSlashTime){
-        animator.SetTrigger("Slash"); // Triggers the slash animation
-        StartCoroutine(stopMovement(1f));
-        nextSlashTime = Time.time + slashCooldown; // Cooldown management
-        // Damage application is now handled by the animation event
-    }
-    }
+    //     if(Time.time >= nextSlashTime){
+    //     animator.SetTrigger("Slash"); // Triggers the slash animation
+    //     StartCoroutine(stopMovement(1f));
+    //     nextSlashTime = Time.time + slashCooldown; // Cooldown management
+    //     // Damage application is now handled by the animation event
+    // }
+    // }
 
     //This function is called by the animation event at the end of the slash animation
     private void ApplyDamage() {

@@ -9,7 +9,6 @@ public class WardenStateManager : MonoBehaviour
     public Transform attackPointY;
     [SerializeField] public float attackRange;
     [SerializeField] public float attackHeight;
-    private Mesh attackHitbox;
     WardenBaseState currentState;
     public WardenAggroState AggroState = new WardenAggroState();
     public WardenAttackState AttackState = new WardenAttackState();

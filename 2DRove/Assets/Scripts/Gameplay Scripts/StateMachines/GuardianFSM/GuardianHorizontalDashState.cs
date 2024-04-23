@@ -3,7 +3,6 @@ using UnityEngine;
 public class GuardianHorizontalDashState : GuardianBaseState
 {
     private Transform player;
-    private float dashDuration = .417f;
     private float dashTime;
     private float xPos;
     private float yPos;
@@ -16,7 +15,7 @@ public class GuardianHorizontalDashState : GuardianBaseState
         xPos = Guardian.GetComponent<Transform>().position.x;
         yPos = Guardian.GetComponent<Transform>().position.y;
         Debug.Log("Entering Dash State");
-        dashTime = dashDuration;
+        dashTime = (Guardian.horizontalDashTime / Guardian.horizontalDashSpeed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("horizontalDash");
     }
@@ -28,7 +27,7 @@ public class GuardianHorizontalDashState : GuardianBaseState
             Guardian.SwitchState(Guardian.SpecialState);
         }
 
-        Guardian.GetComponent<Transform>().position = new Vector3(Mathf.SmoothStep(playerXPos, xPos, dashTime/dashDuration), yPos, 0);
+        Guardian.GetComponent<Transform>().position = new Vector3(Mathf.SmoothStep(playerXPos, xPos, dashTime/Guardian.horizontalDashTime), yPos, 0);
         dashTime -= Time.deltaTime;
     }
 

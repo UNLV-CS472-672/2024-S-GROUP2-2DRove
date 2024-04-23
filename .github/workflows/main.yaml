@@ -10,6 +10,30 @@ on:
       - main
 
 jobs:
+
+  runLinter:
+    name: Run Linter
+    runs-on: ubuntu-latest
+  
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3 #example code uses v3 but i noticed runTests uses v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: "6.0.x"
+
+    - name: Run Linter
+      uses: wearerequired/lint-action@v2.3.0 #might just be @v2
+      with:
+        dotnet_format: true
+    #there is is the slight possibility that there is more to this than i think
+    #if that is the case, then i think it would come from the dotnet sectino
+    #since that is what is used to check c# code.
+    #link to the tool: https://github.com/dotnet/format
+    #link to the linter from github: https://github.com/marketplace/actions/lint-action
+
   runTests:
     name: Run Tests
     runs-on: ubuntu-latest

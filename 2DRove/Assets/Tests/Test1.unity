@@ -615,6 +615,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204963298}
   m_CullTransparentMesh: 1
+--- !u!1 &1228174776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2296941007204669835, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+  m_PrefabInstance: {fileID: 2077576760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1414570959
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +809,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1510829029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3864653422150677610, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+  m_PrefabInstance: {fileID: 2077576760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1767975377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,6 +1095,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6791278275080760869, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: manaSlider
+      value: 
+      objectReference: {fileID: 1228174776}
+    - target: {fileID: 6791278275080760869, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 1510829029}
     - target: {fileID: 8424003937126082592, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_Name
       value: Player

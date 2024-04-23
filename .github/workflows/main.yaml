@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3 #example code uses v3 but i noticed runTests uses v2
+      uses: actions/checkout@v2 #example code uses v3 but i noticed runTests uses v2
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
@@ -24,7 +24,7 @@ jobs:
         dotnet-version: "6.0.x"
 
     - name: Run Linter
-      uses: wearerequired/lint-action@v2.3.0 #might just be @v2
+      uses: wearerequired/lint-action@v2 #might just be @v2
       with:
         dotnet_format: true
         github_token: ${{ secrets.GITHUB_TOKEN }}

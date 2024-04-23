@@ -5,8 +5,9 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Unity.InputSystem",
-        "GameTestAssembly",
-        "Unity.TextMeshPro"
+        "Unity.TextMeshPro",
+        "scriptsAsm",
+        "uiAsm"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

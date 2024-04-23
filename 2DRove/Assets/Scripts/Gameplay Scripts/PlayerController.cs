@@ -68,9 +68,12 @@ public class PlayerController : MonoBehaviour
         mana = maxMana;
         setHealthandMana();
         // Restore augments to the player
-        foreach(var augment in Augments.chosenAugments)
+        if(Augments.chosenAugments != null)
         {
-            AugmentInstantiator.callAugmentMethod(augment);
+            foreach(var augment in Augments.chosenAugments)
+            {
+                AugmentInstantiator.callAugmentMethod(augment);
+            }
         }
         //Assigning the component to the variables to prevent having to get the component at every instance where you need to edit the values
         input = GetComponent<PlayerInput>();

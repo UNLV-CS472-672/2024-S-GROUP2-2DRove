@@ -128,6 +128,9 @@ public class PlayerController : MonoBehaviour
         if(notOnCooldown(lastRegen, regenCooldown)) {
             regenHealth();
         }
+        if(notOnCooldown(lastRegen, 1f)) {
+            regenMana();
+        }
         setHealthandMana();
     }
 
@@ -410,6 +413,16 @@ public class PlayerController : MonoBehaviour
     {
         lastRegen = Time.time;
         healPlayer(healthRegen);
+    }
+
+    //Increase mana automatically
+    private void regenMana()
+    {
+        lastRegen = Time.time;
+        if(mana < maxMana)
+        {
+            mana += 1f;
+        }
     }
 
     //increases damage if selected in augment system

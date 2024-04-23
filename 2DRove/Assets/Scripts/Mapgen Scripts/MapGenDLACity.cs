@@ -47,8 +47,8 @@ namespace MapGenDLACityNamespace
 
         void Start()
         {
-            // GameObject uiOverlay = GameObject.Find("Augment Overlay");
-            // DontDestroyOnLoad(uiOverlay);
+            GameObject uiOverlay = GameObject.Find("Augment Overlay");
+            DontDestroyOnLoad(uiOverlay);
             //This may be inefficient but it is the only way to get the augments effects to persist between scenes without changing how the character itself loads into scenes using DontDestroyOnLoad and updating it's position. You may be able to potentially fix this I'm not sure @Haikp
             //Clear at the start of a scene being loaded
             tilePositions.Clear();

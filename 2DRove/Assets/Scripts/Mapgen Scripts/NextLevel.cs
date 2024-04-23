@@ -7,20 +7,20 @@ public class NextLevel : MonoBehaviour
 {
 
     [SerializeField] Collider2D col;
-    [SerializeField] int level;
-    // Start is called before the first frame update
-    void OnTriggerEnter2D (Collider2D col){
-        SceneManager.LoadScene(level);
-    }
+    public static LoadingScreenManager loadingScreenManager;
+    public int nextSceneIndex = 0;
 
-    // void Start()
-    // {
-        
-    // }
-
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-    //  OnTriggerEnterdadaNewLevel(col);   
+        loadingScreenManager = GameObject.Find("LoadingScreenManager").GetComponent<LoadingScreenManager>();
+    }
+    // Start is called before the first frame update
+    void OnTriggerEnter2D (Collider2D col)
+    {
+        if(col.gameObject.CompareTag("Player"))
+        {
+            nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+            loadingScreenManager.LoadScene(nextSceneIndex);
+        }
     }
 }

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GhoulIdle
+  m_Name: SpitterIdle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,15 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 8971459452723808961, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+      value: {fileID: 3606716678926024916, guid: 0aa0df3bddddb534c8336f3c99b6b87f, type: 3}
     - time: 0.1
-      value: {fileID: -2303596600196736807, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+      value: {fileID: -284935724036944885, guid: 0aa0df3bddddb534c8336f3c99b6b87f, type: 3}
     - time: 0.20000002
-      value: {fileID: 4683986765927646715, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+      value: {fileID: -9114768674061089162, guid: 0aa0df3bddddb534c8336f3c99b6b87f, type: 3}
     - time: 0.3
-      value: {fileID: -219120747425380158, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+      value: {fileID: -4590515666474898806, guid: 0aa0df3bddddb534c8336f3c99b6b87f, type: 3}
     - time: 0.4
-      value: {fileID: -219120747425380158, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+      value: {fileID: 6482085802873593028, guid: 0aa0df3bddddb534c8336f3c99b6b87f, type: 3}
+    - time: 0.5
+      value: {fileID: 3461506102233715770, guid: 0aa0df3bddddb534c8336f3c99b6b87f, type: 3}
+    - time: 0.6
+      value: {fileID: 3461506102233715770, guid: 0aa0df3bddddb534c8336f3c99b6b87f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,7 +52,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.41
+    m_StopTime: 0.61
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

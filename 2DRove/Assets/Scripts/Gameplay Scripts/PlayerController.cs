@@ -121,10 +121,10 @@ public class PlayerController : MonoBehaviour
         // if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
         //     Slash();
         // }
-
+/*
         if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             rangeAttack();
-        }
+        }*/
         if(notOnCooldown(lastRegen, regenCooldown)) {
             regenHealth();
         }

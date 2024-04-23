@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using System;
 
 //Generally a PlayerController class is used to contain most if not all player based stuff in one place. (Movement/Actions)
 
@@ -47,14 +48,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxMana = 50f;
     [SerializeField] private float mana = 50f;
     [SerializeField] private float rangeMana = 5f;
-    [SerializeField] private float healthRegen = 1f;
+    [SerializeField] private float healthRegen = 0f;
     private float lastRegen;
     private float regenCooldown = 5f;
     [SerializeField] private float damageBoost = 1f;
     [SerializeField] private float critRate = 0f;
     [SerializeField] private bool burning = false;
     [SerializeField] private float burnDamage = 0f;
-
+    [SerializeField] private bool isVampire = false;
+    [SerializeField] private bool resurrect = false;
 
 
     //The Start function is called if the script is enabled before any update functions
@@ -206,7 +208,7 @@ public class PlayerController : MonoBehaviour
             
             if (enemyScript != null) {
                 float totalDamage =  playerAttackDamage * damageBoost;
-                float crit = Random.Range(1, 100);
+                float crit = UnityEngine.Random.Range(1, 100);
                 if(crit <= (critRate * 100))
                 {
                     totalDamage *= 1.5f;
@@ -275,14 +277,20 @@ public class PlayerController : MonoBehaviour
     //Checks if the player is dead (health being at or below 0)
     private void checkDeath(){
         if (health <= 0){
-            gameOverMenu.EnableGameOverMenu(); //Opens the Game Over Menu
-            Destroy(gameObject); //Immediately destroys the player's gameobject
+            if(resurrect) {
+                resetHealth();
+                DisableResurrect();
+            }
+            else {
+                gameOverMenu.EnableGameOverMenu(); //Opens the Game Over Menu
+                Destroy(gameObject); //Immediately destroys the player's gameobject
+            }
         }
     }
 
     //Updates the visible health bar/slider
     private void setHealthUI(){
-        healthSlider.value = health / maxHealth; //Gets the % of health left
+        // healthSlider.value = health / maxHealth; //Gets the % of health left
 
         //Clamps the health between 0f and 1f (0% - 100%)
         healthSlider.value = Mathf.Clamp(healthSlider.value, 0f, 1f);
@@ -319,12 +327,15 @@ public class PlayerController : MonoBehaviour
             
             if (enemyScript != null) {
                 float totalDamage =  playerAttackDamage * damageBoost; // increase total damage by damageBoost
-                float crit = Random.Range(1, 100);
+                float crit = UnityEngine.Random.Range(1, 100);
                 if(crit <= (critRate * 100))
                 {
                     totalDamage *= 1.5f;    // use random number to determine if player hits a crit or not
                 }
                 enemyScript.TakeDamage(totalDamage);
+                if(isVampire) {
+                    healPlayer(1f);
+                }
                 if(burning) {
                     //applies burning to enemies
                     enemyScript.EnableBurning();
@@ -347,6 +358,7 @@ public class PlayerController : MonoBehaviour
     /*
         increaseSpeed: increases speed boost if selected in augment system
         params: addSpeed - float, increases speedboost by this value
+        @SwiftNemesis use this to connect to frontend
     */
     public void IncreaseSpeed(float addSpeed)
     {
@@ -363,6 +375,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //increases mana if selected in augment system
+    // @SwiftNemesis use this to connect to frontend
     public void IncreaseMana(float addMana)
     {
         maxMana += addMana;
@@ -370,6 +383,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //increases Health regen if selected in augment system
+    // @SwiftNemesis use this to connect to frontend
     public void IncreaseHealthRegen(float addHealthRegen)
     {
         healthRegen += addHealthRegen;
@@ -378,23 +392,26 @@ public class PlayerController : MonoBehaviour
     //increases health automatically
     private void regenHealth()
     {
-        healPlayer(healthRegen);
         lastRegen = Time.time;
+        healPlayer(healthRegen);
     }
 
     //increases damage if selected in augment system
+    // @SwiftNemesis use this to connect to frontend
     public void IncreaseDamage(float addDamage)
     {
         damageBoost += addDamage;
     }
 
     //increases crit rate if selected in augment system
+    // @SwiftNemisis use this to connect to frontend
     public void IncreaseCrit(float addCrit)
     {
         critRate += addCrit;
     }
 
     //enables burning if selected in augment system
+    // @SwiftNemisis use this to connect to frontend
     public void EnableBurning()
     {
         burning = true;
@@ -402,9 +419,38 @@ public class PlayerController : MonoBehaviour
     }
 
     //increases burn damage if selected in augment system, must enable burning to take effect
+    // @SwiftNemisis use this to connect to frontend
     public void IncreaseBurn(float addBurn)
     {
         burnDamage += addBurn;
+    }
+
+    //enables vampiric touch if selected in augment system
+    // player gains 3 hp for every enemy hit
+    // @SwiftNemisis use this to connect to frontend
+    public void EnableVampire()
+    {
+        isVampire = true;
+    }
+
+    //enables resurrection if selected in augment system
+    // player can recover from dying hit and return to full health
+    // @SwiftNemisis use this to connect to frontend
+    public void EnableResurrect()
+    {
+        resurrect = true;
+    }
+
+    //disables resurrection once dying
+    public void DisableResurrect()
+    {
+        resurrect = false;
+    }
+
+    // set health value to max health value
+    public void resetHealth()
+    {
+        health = maxHealth;
     }
 
     //returns whether player has burning enabled
@@ -429,5 +475,17 @@ public class PlayerController : MonoBehaviour
     public float getCritRate()
     {
         return critRate;
+    }
+
+     //returns whether player has vampiric touch enabled
+    public bool doesVampire()
+    {
+        return isVampire;
+    }
+
+     //returns whether player has resurrection enabled
+    public bool doesResurrect()
+    {
+        return resurrect;
     }
 }

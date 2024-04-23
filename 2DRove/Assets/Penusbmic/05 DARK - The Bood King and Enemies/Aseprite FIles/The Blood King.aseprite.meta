@@ -2,97 +2,7 @@ fileFormatVersion: 2
 guid: b4bb6366d95b03a4cb5f3ef33277340e
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: attack
-    second: {fileID: 7400000, guid: ec9d4039dfd498542a5911ad16f30235, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: attack 1
-    second: {fileID: 7400000, guid: a611d4c055b646440917bf26fd65b175, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: attack 3
-    second: {fileID: 7400000, guid: 63ec17c0222dab94e831b42f60e16d9b, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: blood gif
-    second: {fileID: 7400000, guid: 3640ecd334e1e88438b40f20c06c9582, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: blood teleport 2
-    second: {fileID: 7400000, guid: 1613fdff37fd2ab4cacd8076e741d457, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: charge
-    second: {fileID: 7400000, guid: 213b24fc3ee8d4444b3ceeab0c765715, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: death/blood teleport
-    second: {fileID: 7400000, guid: 2a9ff74f7c5b54248bf961cc8d8a7c07, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: double slash
-    second: {fileID: 7400000, guid: 76993c0a2dd839347b088176aa935b1e, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: fall
-    second: {fileID: 7400000, guid: 2f720dceeeb6276489e29a93bba9ff95, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: heart slam
-    second: {fileID: 7400000, guid: 796aed47af481104fb6fac412e2ed6fe, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: hit
-    second: {fileID: 7400000, guid: 34cf512b48d70f947a0355c47a66e890, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: idle
-    second: {fileID: 7400000, guid: 48498c85f90b2794db930424066d665e, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: jump
-    second: {fileID: 7400000, guid: 414ba237ee75511468777e963e4476b6, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: jump slam
-    second: {fileID: 7400000, guid: 9141b52f540e0b44c8b16064e302dbca, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: jump to fall trans
-    second: {fileID: 7400000, guid: ac59fc9b6a0b26a4cb11a17a39a805a8, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: run
-    second: {fileID: 7400000, guid: 022fba995da70b24a8a63e6c98e5a918, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: transition down
-    second: {fileID: 7400000, guid: 751d0d9dfb1013a42bfeb8b87d46fee7, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: transition to charge
-    second: {fileID: 7400000, guid: e36870ec833f5414f8c9444a87c18985, type: 2}
+  externalObjects: {}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -187,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638448591522507948
+  platformSettingsDirtyTick: 0
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -222,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 108
       height: 22
-    spriteID: d98b84e140513184c8877f48bc7f7db1
+    spriteID: 2d8d0d35a1f824d42a0db10cdde626ac
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -242,7 +152,7 @@ ScriptedImporter:
       y: 4
       width: 113
       height: 22
-    spriteID: 4f8aef30eee96b34d9e3d620d1451b47
+    spriteID: 3e608a293e91b2f4490642e699c659ae
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -262,7 +172,7 @@ ScriptedImporter:
       y: 4
       width: 110
       height: 20
-    spriteID: f5549f0ba9637fa4a8a6078a2eaff91a
+    spriteID: f72dc1c7db62ed04d88c1e128849afb8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -282,7 +192,7 @@ ScriptedImporter:
       y: 34
       width: 101
       height: 18
-    spriteID: f5c20e6fa39f60c49b6fb4d87ea3e1c8
+    spriteID: 378f0fae9e23ab0478c768eb41a71d85
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -302,7 +212,7 @@ ScriptedImporter:
       y: 97
       width: 80
       height: 16
-    spriteID: c26de011077c7874fb37a2c81d00746b
+    spriteID: 3a9c8b37330acba488e39a332dbce0b5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -322,7 +232,7 @@ ScriptedImporter:
       y: 34
       width: 83
       height: 17
-    spriteID: 4c014fb5aaaefcf43a8db40edbdf2b23
+    spriteID: 6a1a0ec4452a2a047bf20b09c58a7ad3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -342,7 +252,7 @@ ScriptedImporter:
       y: 34
       width: 84
       height: 17
-    spriteID: c27c0c557c1869948ad0a535ce44588d
+    spriteID: f6124dcffa0d5404bb2c49e5701cffc0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -362,7 +272,7 @@ ScriptedImporter:
       y: 97
       width: 79
       height: 16
-    spriteID: 2ac1913c509538c4293bbde8e8944023
+    spriteID: 41ed2dc478d78b641ad495177a12f7fa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -382,7 +292,7 @@ ScriptedImporter:
       y: 335
       width: 28
       height: 17
-    spriteID: a8250abcba75c5949b06016547fa8ddd
+    spriteID: 498d1322d8e553a4f91609f2d5dbf89b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -402,7 +312,7 @@ ScriptedImporter:
       y: 90
       width: 26
       height: 69
-    spriteID: a2a7778df67e6d94fba736bf968f866b
+    spriteID: b613d602660267b48989b0130fa2bf8d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -422,7 +332,7 @@ ScriptedImporter:
       y: 274
       width: 25
       height: 24
-    spriteID: 3b1c8c86a0758b9448307a1250b42aec
+    spriteID: 74d3c2cbb079a254b8b7887f315f59fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -442,7 +352,7 @@ ScriptedImporter:
       y: 244
       width: 28
       height: 22
-    spriteID: 2db20c8815801cd40a07a2c3a47e57f9
+    spriteID: 7eec0e8fa76ccdf47bac12bc62a12fec
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -462,7 +372,7 @@ ScriptedImporter:
       y: 244
       width: 30
       height: 22
-    spriteID: 7fd7ec1e90358734594891f09822ca2f
+    spriteID: 60fbe67e6b9b3124581fd4c42bf57b18
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -482,7 +392,7 @@ ScriptedImporter:
       y: 362
       width: 26
       height: 20
-    spriteID: 6900f14a982b7ed4e9ff43d7e5619932
+    spriteID: 13208265973e6ec45872e20b3c313d8d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -502,7 +412,7 @@ ScriptedImporter:
       y: 362
       width: 26
       height: 20
-    spriteID: b0aed6ab771903646bdc67fcc0207c4d
+    spriteID: 8d0df0b9abfc55041a6f7700c96198e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -522,7 +432,7 @@ ScriptedImporter:
       y: 362
       width: 26
       height: 20
-    spriteID: 7c145b13093d33344a0c3bcdadcefaeb
+    spriteID: 9415d0cff7dc0604fa2d178f1da9dd68
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -542,7 +452,7 @@ ScriptedImporter:
       y: 362
       width: 26
       height: 20
-    spriteID: 0a837a6bfa5e73446945084df445c3a5
+    spriteID: c5456332f16bb7d46a0e082c3bca61c1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -562,7 +472,7 @@ ScriptedImporter:
       y: 362
       width: 26
       height: 20
-    spriteID: 979c64c48dd98004aa96f2d46e5b88da
+    spriteID: 0d4d99d2db3e4f54abd47e042c9e5ecf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -582,7 +492,7 @@ ScriptedImporter:
       y: 362
       width: 26
       height: 20
-    spriteID: c7818df842e73494f8affdc9c3face99
+    spriteID: 6755d66d07f6f144ca1a850af24a9143
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -602,7 +512,7 @@ ScriptedImporter:
       y: 362
       width: 26
       height: 20
-    spriteID: 356d5c2b20be38447ba1907721b9a4fb
+    spriteID: 87d18309d3af20442b831a994b16aec3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -622,7 +532,7 @@ ScriptedImporter:
       y: 392
       width: 26
       height: 20
-    spriteID: 2e842c902dfc33b4fa9612cc5a0f5c6c
+    spriteID: 5cccb71eb86b59944a76771da8fff560
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -642,7 +552,7 @@ ScriptedImporter:
       y: 392
       width: 26
       height: 20
-    spriteID: de8d7e60589e27040bab199056692991
+    spriteID: 352cd74481551a841b5ee6d8a6d3d408
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -662,7 +572,7 @@ ScriptedImporter:
       y: 392
       width: 26
       height: 20
-    spriteID: 5c1f71ddd92e2a743b6312de01945dd8
+    spriteID: 45c15765d71d6624c98a5699c6f4f84c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -682,7 +592,7 @@ ScriptedImporter:
       y: 392
       width: 26
       height: 20
-    spriteID: e9fd2317dc8b11c4e8e3fb0cd4924dbe
+    spriteID: 3bc1224c90ed0af40bc2470b39943952
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -702,7 +612,7 @@ ScriptedImporter:
       y: 392
       width: 26
       height: 20
-    spriteID: e0c113e0137c31048842a4fce486bbe1
+    spriteID: c65fdc8385849e3438fa8991d7925a78
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -722,7 +632,7 @@ ScriptedImporter:
       y: 392
       width: 26
       height: 20
-    spriteID: f3b7890b063ea4e45a637d2345d9080a
+    spriteID: cae0c99ae67eeac47a7dec205133ad07
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -742,7 +652,7 @@ ScriptedImporter:
       y: 244
       width: 31
       height: 20
-    spriteID: 6e08cc5cd88932142a31ca1c30a4e230
+    spriteID: f20f63232144ee642875847b2ac40ce1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -762,7 +672,7 @@ ScriptedImporter:
       y: 274
       width: 30
       height: 20
-    spriteID: c91840a5b3797cf4e9a06f9d954c4a3e
+    spriteID: 6536c0f62a26eac46a1f699c5567ffea
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -782,7 +692,7 @@ ScriptedImporter:
       y: 216
       width: 34
       height: 20
-    spriteID: e774207e5202d1641afc40664c8507d3
+    spriteID: 04cb6195a81ede3428606d2884ce7940
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -802,7 +712,7 @@ ScriptedImporter:
       y: 174
       width: 37
       height: 20
-    spriteID: 73d857104e269a44b9134ef02186afdd
+    spriteID: fc869bff72a059443b1262d4ed6161fa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -822,7 +732,7 @@ ScriptedImporter:
       y: 216
       width: 33
       height: 20
-    spriteID: 63b67e039f6ba3240953257e5088ca10
+    spriteID: 4b61c58b576d3484ba488af0475b0539
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -842,7 +752,7 @@ ScriptedImporter:
       y: 216
       width: 34
       height: 20
-    spriteID: 6c59bf1307995dc4d81f8013f60fb2c0
+    spriteID: e1c00f872e9242a4fbf24574f80e6642
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -862,7 +772,7 @@ ScriptedImporter:
       y: 216
       width: 34
       height: 20
-    spriteID: bd5aac324453da84c96513816decae6c
+    spriteID: 334cda97a7cc4524d9f1362fa0f18865
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -882,7 +792,7 @@ ScriptedImporter:
       y: 216
       width: 36
       height: 20
-    spriteID: 1bae099d6bd37084eab3bba08c65aace
+    spriteID: df3d2d340f292f942b8de95f06736c2d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -902,7 +812,7 @@ ScriptedImporter:
       y: 274
       width: 30
       height: 20
-    spriteID: 1eb453cc62b705146b18e530e61a51ce
+    spriteID: 79ae55bb629fc9742ae921edd7c4dc37
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -922,7 +832,7 @@ ScriptedImporter:
       y: 244
       width: 31
       height: 20
-    spriteID: 983cfff5cf83b2d498802504f8c02b6b
+    spriteID: 9c55a81339337f440a1b5516937dbea5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -942,7 +852,7 @@ ScriptedImporter:
       y: 335
       width: 24
       height: 19
-    spriteID: a77dc25799fbd8247a4f46d2db85e2ee
+    spriteID: 46ac2ab774c7e5546b0e0792d463fb00
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -962,7 +872,7 @@ ScriptedImporter:
       y: 392
       width: 22
       height: 23
-    spriteID: fd56f103a68109348b05a4f20c7ba7c8
+    spriteID: e54ac4d8532dd6c468810f3dcac85366
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -982,7 +892,7 @@ ScriptedImporter:
       y: 274
       width: 26
       height: 22
-    spriteID: 0509fa0004cf06a4a8676a5b3f4d5bf9
+    spriteID: 40df6dcec51a97b4e9869b549b38c0cf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1002,7 +912,7 @@ ScriptedImporter:
       y: 274
       width: 27
       height: 21
-    spriteID: c3a3126d98bd49a4a9f9d89588d2106a
+    spriteID: cfe72466ce60746478974eec20394e8f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1022,7 +932,7 @@ ScriptedImporter:
       y: 451
       width: 19
       height: 19
-    spriteID: 836c3fbaa4341ee4b9b720ee216e9bd3
+    spriteID: 42d8df236b1716f42aea2bce1118fe7b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1042,7 +952,7 @@ ScriptedImporter:
       y: 451
       width: 17
       height: 23
-    spriteID: 2d90e409e61efb148a0dec96d875464a
+    spriteID: 2e2e3eb9df90ccc45821f8165f9f8fa6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1062,7 +972,7 @@ ScriptedImporter:
       y: 244
       width: 21
       height: 22
-    spriteID: e6309e3708eabc846b3e9476ac74b492
+    spriteID: b143e65253107624092cb9e242d32419
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1082,7 +992,7 @@ ScriptedImporter:
       y: 392
       width: 22
       height: 21
-    spriteID: 8e4fa56302c4f244cbec7f9498e08b41
+    spriteID: 8c331d0dbbdf8584491d6cfd557c2d97
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1102,7 +1012,7 @@ ScriptedImporter:
       y: 392
       width: 22
       height: 23
-    spriteID: 4646a82eb7932924d816c4a7e7361199
+    spriteID: a0fedff6e4c99744d9d298fccca556bd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1122,7 +1032,7 @@ ScriptedImporter:
       y: 392
       width: 23
       height: 23
-    spriteID: 94a381696b0624c41a4f3060f12a5e46
+    spriteID: fa8bc19500f841e468ddc9a1a16c8189
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1142,7 +1052,7 @@ ScriptedImporter:
       y: 392
       width: 23
       height: 23
-    spriteID: c19c90724172cec4bb8ee43b7d74abe8
+    spriteID: 3b35708140874e94688d4ad3ed29dc8a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1162,7 +1072,7 @@ ScriptedImporter:
       y: 274
       width: 24
       height: 23
-    spriteID: 73f9603c5a8948e4ca09f1be46d01c53
+    spriteID: cb7ec9058bb3f944a8d0a02992efd7a7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1182,7 +1092,7 @@ ScriptedImporter:
       y: 274
       width: 26
       height: 23
-    spriteID: d6fbc0fa2a8fb804b97ed8b774d86265
+    spriteID: aa44223b85a163d47b4fd6b5a10fd45e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1202,7 +1112,7 @@ ScriptedImporter:
       y: 274
       width: 26
       height: 22
-    spriteID: dab014a13fba0494883f7dd28f6ca84a
+    spriteID: f454098f0ea635347861da38a46cdf53
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1222,7 +1132,7 @@ ScriptedImporter:
       y: 274
       width: 27
       height: 21
-    spriteID: 4979d348a8677af4ab14c46b0a7d1ec0
+    spriteID: 1105284a6f7c3944e87201eaf49737c6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1242,7 +1152,7 @@ ScriptedImporter:
       y: 274
       width: 27
       height: 21
-    spriteID: a42c7b153423b6d4f9d9f4a6ec1cb4b9
+    spriteID: 85660115558566b41932ac8aff660a2f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1262,7 +1172,7 @@ ScriptedImporter:
       y: 244
       width: 29
       height: 21
-    spriteID: 13328791854fc6d4cb3b54c1a4af06e2
+    spriteID: 41a4c14b1ed0ffd48935baf5c8d89da5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1282,7 +1192,7 @@ ScriptedImporter:
       y: 244
       width: 29
       height: 21
-    spriteID: 6a2897fec7c7bc749b28e8d8160bdeba
+    spriteID: f606563f48d99974f9b2fd28951485ef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1302,7 +1212,7 @@ ScriptedImporter:
       y: 335
       width: 28
       height: 17
-    spriteID: 9073e2e0bbde7ff45b45a3d46d972e56
+    spriteID: 628453033cd13bd4d9438d18c885ba09
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1322,7 +1232,7 @@ ScriptedImporter:
       y: 335
       width: 28
       height: 17
-    spriteID: fa67f4fe435ebf243b9dbabe5a91e8d0
+    spriteID: fd6d26fba3926b346b28c8cb02f069e6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1342,7 +1252,7 @@ ScriptedImporter:
       y: 392
       width: 28
       height: 18
-    spriteID: 22cf9403adf395546b259d2735db068e
+    spriteID: d82a64e76428cc84291e8638fa6de91a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1362,7 +1272,7 @@ ScriptedImporter:
       y: 362
       width: 27
       height: 20
-    spriteID: 365d692d66c87304bb5cb7fe220e4431
+    spriteID: 7f9ba7626654b0d43afe4ac4310ed4fb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1382,7 +1292,7 @@ ScriptedImporter:
       y: 362
       width: 28
       height: 19
-    spriteID: 5cf6440f20dd8064d8fe3c04a166f5f3
+    spriteID: 342f4dcddc5cb6940b0abaf894ca4688
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1402,7 +1312,7 @@ ScriptedImporter:
       y: 392
       width: 28
       height: 18
-    spriteID: 9e69faedeb750bc45a1b238b110c3864
+    spriteID: 4a571c2ee5dbf2640863a313401b38b4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1422,7 +1332,7 @@ ScriptedImporter:
       y: 97
       width: 42
       height: 26
-    spriteID: 1d099c33970336247b45edec2000e02d
+    spriteID: 464e9d64683247c43a3472a2cc785ae2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1442,7 +1352,7 @@ ScriptedImporter:
       y: 60
       width: 58
       height: 27
-    spriteID: cdc01118a4c010248ae0e863f9a6e3a7
+    spriteID: 7fea42305385d184ca563972c266e286
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1462,7 +1372,7 @@ ScriptedImporter:
       y: 60
       width: 53
       height: 29
-    spriteID: b12745724e9000d42b8bab4303e96c60
+    spriteID: 1a9d00b1abe6d104bbc719906527432e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1482,7 +1392,7 @@ ScriptedImporter:
       y: 60
       width: 61
       height: 29
-    spriteID: 3fdaa52fc6522d44991aef34d22d5a83
+    spriteID: 23b71897f384be343942d76ee99ed16b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1502,7 +1412,7 @@ ScriptedImporter:
       y: 60
       width: 64
       height: 26
-    spriteID: c35abd76f1d29d645be28515e7784380
+    spriteID: a03ed474f96e94e4ebef136bdb5664e9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1522,7 +1432,7 @@ ScriptedImporter:
       y: 60
       width: 59
       height: 28
-    spriteID: 8111a4078dd062e4aa94783c0da605fe
+    spriteID: 200fa3428cc83c844ba25b00f73d74ed
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1542,7 +1452,7 @@ ScriptedImporter:
       y: 97
       width: 43
       height: 27
-    spriteID: a27e220101735ef4888c6d64269a1f8a
+    spriteID: 758fc528526fd5a4d81de6def8354fa7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1562,7 +1472,7 @@ ScriptedImporter:
       y: 60
       width: 50
       height: 27
-    spriteID: 53997c7aa393a9d4288798e405894e32
+    spriteID: 92765be7093fb634fae879583e868dad
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1582,7 +1492,7 @@ ScriptedImporter:
       y: 60
       width: 55
       height: 26
-    spriteID: c3dea874b54527749a30537511e5a890
+    spriteID: 630b779e9b487224c93d539ec7a4c08c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1602,7 +1512,7 @@ ScriptedImporter:
       y: 34
       width: 57
       height: 18
-    spriteID: 429187cccd84c3c4b9574a6ead33ebac
+    spriteID: 3c29b5cac75197040ae3c0c2d8cf4802
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1622,7 +1532,7 @@ ScriptedImporter:
       y: 135
       width: 57
       height: 18
-    spriteID: cbaeb6544d65bb04a864ceaef60c1703
+    spriteID: ffc52dc3a7c8bb248a4fc3c92cefa50e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1642,7 +1552,7 @@ ScriptedImporter:
       y: 306
       width: 25
       height: 20
-    spriteID: bdcb1a2a451f4a545a1c0e3d94f5549b
+    spriteID: 2e346d859e593154fb48d45202a74ec4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1662,7 +1572,7 @@ ScriptedImporter:
       y: 362
       width: 27
       height: 20
-    spriteID: 9888de6b6429c0e4098f71cdf84c579b
+    spriteID: 6258bed2c2eacbc43ab68829974da7ff
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1682,7 +1592,7 @@ ScriptedImporter:
       y: 274
       width: 30
       height: 20
-    spriteID: 0eb06cd5e4219cc4dbf4fcd3f7dfa0e5
+    spriteID: 2dc06afc7827c234da76a46d179dc464
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1702,7 +1612,7 @@ ScriptedImporter:
       y: 458
       width: 29
       height: 23
-    spriteID: 69106479416fb444b93961b921614012
+    spriteID: 7f8775b784ae1344485d94fb63455957
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1722,7 +1632,7 @@ ScriptedImporter:
       y: 451
       width: 17
       height: 24
-    spriteID: 6ed61fefc2c1ba84fa159f7126df8f7f
+    spriteID: 7505bb863f58b0c4cb5491cc450f9f09
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1742,7 +1652,7 @@ ScriptedImporter:
       y: 451
       width: 17
       height: 24
-    spriteID: 847e8cde816cb4945b165d3eee442eea
+    spriteID: e0150497eab0e9b48b61a2a456f76b3e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1762,7 +1672,7 @@ ScriptedImporter:
       y: 362
       width: 25
       height: 22
-    spriteID: 6f760aa2b2f52474eb17998a62699199
+    spriteID: fc864a2b142f8594a90ff29aa3c1cfdc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1782,7 +1692,7 @@ ScriptedImporter:
       y: 174
       width: 38
       height: 20
-    spriteID: 9ba54b744ba076a4da619b92b7f04bd0
+    spriteID: b83e97581a62fde4685f1d66cf823bd0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1802,7 +1712,7 @@ ScriptedImporter:
       y: 174
       width: 43
       height: 20
-    spriteID: cec5fb75ff4dcdc44bf00ccb0ea1f142
+    spriteID: 3be6e2be4a7a71444a08261d3edc32db
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1822,7 +1732,7 @@ ScriptedImporter:
       y: 135
       width: 47
       height: 19
-    spriteID: 97442d8c2715f4745b355b5ef326365c
+    spriteID: fde69b1013aaeec4eb5aa0665cfdf83f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1842,7 +1752,7 @@ ScriptedImporter:
       y: 135
       width: 55
       height: 19
-    spriteID: 0a9b09839ffb46c45997deeac5e29547
+    spriteID: 2a9023b960c03f348b44c96f1d445091
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1862,7 +1772,7 @@ ScriptedImporter:
       y: 335
       width: 35
       height: 14
-    spriteID: 1b38f495e32af2544b38a5c4704aaa06
+    spriteID: 576f6fc619b5a5a4fb6d7b3c3577df77
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1882,7 +1792,7 @@ ScriptedImporter:
       y: 392
       width: 36
       height: 14
-    spriteID: 09e4595c0a9fd0343a2c9b27737f9a6e
+    spriteID: 80cb4e9e02490524e929b9c4b35a89fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1902,7 +1812,7 @@ ScriptedImporter:
       y: 306
       width: 28
       height: 20
-    spriteID: 0f35feedc616bc445864c31e27e4880a
+    spriteID: f8d47317d62a3504192821ac834a2699
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1922,7 +1832,7 @@ ScriptedImporter:
       y: 362
       width: 28
       height: 19
-    spriteID: d932ced66c8d1e041ba58e36750080a1
+    spriteID: c532067348f48e64b8281415ee128d34
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1942,7 +1852,7 @@ ScriptedImporter:
       y: 489
       width: 29
       height: 19
-    spriteID: f8660337fac14ab408777a378497dd03
+    spriteID: 34374be3f5efddc4c9688007c7266dd7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1962,7 +1872,7 @@ ScriptedImporter:
       y: 216
       width: 44
       height: 16
-    spriteID: bc5855b76ee7ccb4893b37b1b8a918d2
+    spriteID: ca43136f28135b84299b41ba771c488f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1982,7 +1892,7 @@ ScriptedImporter:
       y: 135
       width: 45
       height: 21
-    spriteID: 4625208aed4b43540bb066ff78529ef9
+    spriteID: 2072adfd3c5ca1749ab597c2399eec18
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2002,7 +1912,7 @@ ScriptedImporter:
       y: 135
       width: 46
       height: 21
-    spriteID: 1a5ff14496883954b9ca6f2c2eb889b4
+    spriteID: 229a294444bf64b48a17c6447b261532
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2022,7 +1932,7 @@ ScriptedImporter:
       y: 97
       width: 49
       height: 21
-    spriteID: 1432403f115515c4994bbb93b18d46fb
+    spriteID: f16d5bf97809f0948bf6a90032487030
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2042,7 +1952,7 @@ ScriptedImporter:
       y: 306
       width: 27
       height: 21
-    spriteID: 9ac6d5172f910df448e5d731be961bbc
+    spriteID: 47c909e88d040ba4185941386bdefb2b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2062,7 +1972,7 @@ ScriptedImporter:
       y: 4
       width: 104
       height: 22
-    spriteID: 9a55d0af7a43c2e498325523ad3d0853
+    spriteID: 3943dbf25afb4ea47bf65fc7c936813e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2082,7 +1992,7 @@ ScriptedImporter:
       y: 244
       width: 37
       height: 17
-    spriteID: 8761e1af32764324dbac0b418659f9cc
+    spriteID: 9517655d2a357ea4b8de9b0f6a259748
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2102,7 +2012,7 @@ ScriptedImporter:
       y: 274
       width: 39
       height: 15
-    spriteID: 836929653c0bade44bc333e508be7827
+    spriteID: 70d1efd42aa886047a11dab6602e9d92
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2122,7 +2032,7 @@ ScriptedImporter:
       y: 216
       width: 43
       height: 15
-    spriteID: d238a0754571d2c42aa7bd963e5e021c
+    spriteID: 00f95f46291ee4e4e9303a86a5ed8076
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2142,7 +2052,7 @@ ScriptedImporter:
       y: 216
       width: 47
       height: 15
-    spriteID: fed5840086e71914eae7f6841d421e85
+    spriteID: ea4157afa40505643a023048add66abc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2162,7 +2072,7 @@ ScriptedImporter:
       y: 193
       width: 48
       height: 15
-    spriteID: e20908ef03e129c4691900e11d2ab2b6
+    spriteID: 2112236d7e24a9c44bbb9458445940f8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2182,7 +2092,7 @@ ScriptedImporter:
       y: 306
       width: 28
       height: 20
-    spriteID: 4f85ff33cc1b7fe46a8a4f2971c50be6
+    spriteID: 1bb5e16eb3c36a34eb9d4f3f393abc98
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2202,7 +2112,7 @@ ScriptedImporter:
       y: 274
       width: 29
       height: 20
-    spriteID: adc6718db70b16a40b158c962938c5d6
+    spriteID: 69cdb1e2ef1b24740ac80abf3fd3fa08
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2222,7 +2132,7 @@ ScriptedImporter:
       y: 335
       width: 29
       height: 19
-    spriteID: e47ad79aacc8f58439f470aa1367f4ca
+    spriteID: 70c91c80533dd7f428cffbac345828ce
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2242,7 +2152,7 @@ ScriptedImporter:
       y: 34
       width: 100
       height: 17
-    spriteID: c6ba9ede88d8da745bad0b49edbfb899
+    spriteID: 368f34bcded4f334a8767d3e1e70288b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2262,7 +2172,7 @@ ScriptedImporter:
       y: 97
       width: 73
       height: 17
-    spriteID: faf925188399fef4f95f444b788b04e9
+    spriteID: 5e2e6ce4da4b44d48ad90a40be729fc5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2282,7 +2192,7 @@ ScriptedImporter:
       y: 174
       width: 53
       height: 16
-    spriteID: 3b7dc716706bc1d4aa6cde7ea7a7b0dc
+    spriteID: 3b67e0aa6d06a76469b16bb803a5f815
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2302,7 +2212,7 @@ ScriptedImporter:
       y: 135
       width: 60
       height: 16
-    spriteID: 9632a46f7b1c8ad48a3acd8c0bd82d16
+    spriteID: af0e3cc371581c046a4bddb5ff9bd4b1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2322,7 +2232,7 @@ ScriptedImporter:
       y: 216
       width: 43
       height: 16
-    spriteID: ae118cdd191c777499fe83f99ecbd4a7
+    spriteID: 5e73a535cebd04c489b441ea9924d30b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2342,7 +2252,7 @@ ScriptedImporter:
       y: 174
       width: 47
       height: 16
-    spriteID: 6886f2390dbdf7540a53ca2d445de967
+    spriteID: 6554baff0b35f8d428924ad22abb8f6e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2362,7 +2272,7 @@ ScriptedImporter:
       y: 174
       width: 48
       height: 16
-    spriteID: 73ea5c160eb6e554da5dfae60aaf6487
+    spriteID: 5503b55752c603049a94b6b648c06548
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2382,7 +2292,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 78
-    spriteID: 4b2b8c2bf6b47f7408e3be8ff8881e1e
+    spriteID: 86a548a960c7d5c4a95497a9ebaaddc8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2402,7 +2312,7 @@ ScriptedImporter:
       y: 167
       width: 32
       height: 45
-    spriteID: 54fb9111e7f35d047b6127e2f23c0984
+    spriteID: b88064f60624b2d40a9ff5b563dfc6b4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2422,7 +2332,7 @@ ScriptedImporter:
       y: 174
       width: 38
       height: 34
-    spriteID: e6904dad46472c04fbc158e0ecd80f91
+    spriteID: f960995fe87cebd4b944c46f6b6c7393
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2442,7 +2352,7 @@ ScriptedImporter:
       y: 135
       width: 43
       height: 31
-    spriteID: 54bf183298a45cb4a9963266a5e9b1e9
+    spriteID: ba6e9667e933c42438062bb5a93c8e42
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2462,7 +2372,7 @@ ScriptedImporter:
       y: 97
       width: 47
       height: 30
-    spriteID: 1c7654168c670f3469585a67a2ea6ad0
+    spriteID: 57656da4a29953640a8dea175d24c83a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2482,7 +2392,7 @@ ScriptedImporter:
       y: 135
       width: 55
       height: 19
-    spriteID: ea68d040f12de9746b8f51390e7d5dce
+    spriteID: 775d9115779bd1a4b80bc888d385ceab
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2502,7 +2412,7 @@ ScriptedImporter:
       y: 335
       width: 35
       height: 14
-    spriteID: 471d0dcab5a5253418fcff3193c04081
+    spriteID: a2aa1553c53134b4fae953ecac319223
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2522,7 +2432,7 @@ ScriptedImporter:
       y: 335
       width: 36
       height: 14
-    spriteID: bff02f4d46a9bd84691fcdeab1dc51cf
+    spriteID: b431c0107473832448826cf5aa8d7cd0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2542,7 +2452,7 @@ ScriptedImporter:
       y: 451
       width: 19
       height: 19
-    spriteID: 6384b7319310cb6499d5e34b8beb266d
+    spriteID: 13dfdd53f85ad344d8f10b3ae59fa533
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2562,7 +2472,7 @@ ScriptedImporter:
       y: 451
       width: 19
       height: 19
-    spriteID: b6bfd444ea61a1d4998d10ca5623bc56
+    spriteID: 070a69ff77c7dda4b99a13afb843c8dc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2582,7 +2492,7 @@ ScriptedImporter:
       y: 335
       width: 29
       height: 17
-    spriteID: 640cde582e6dabf4fb91e13a9e33742f
+    spriteID: ef694d3c8f7489e469168c9199824821
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2602,7 +2512,7 @@ ScriptedImporter:
       y: 362
       width: 31
       height: 17
-    spriteID: e121a75c581f611488a9e8585f63e86e
+    spriteID: e03b4bd9c941c8e49a4697adfbcab547
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2622,7 +2532,7 @@ ScriptedImporter:
       y: 216
       width: 40
       height: 17
-    spriteID: 2a273ac7ba9ec504986a398a2cb11549
+    spriteID: d022913a8ceb48e41ba00366fb5d29c1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2642,7 +2552,7 @@ ScriptedImporter:
       y: 306
       width: 51
       height: 11
-    spriteID: fd655a572dec054489019fc290a20549
+    spriteID: 2a8d05ca12aec4f4985562cf217151e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2662,7 +2572,7 @@ ScriptedImporter:
       y: 335
       width: 55
       height: 10
-    spriteID: 12b5bdc4c25ac5a4b83580623eace069
+    spriteID: a6775d382c7331a4f86e6dc40f39195f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2682,7 +2592,7 @@ ScriptedImporter:
       y: 244
       width: 65
       height: 10
-    spriteID: eb72a24b5bcde19449abd01a53647835
+    spriteID: b30b45075e21c6d468817e9469723152
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2702,7 +2612,7 @@ ScriptedImporter:
       y: 122
       width: 73
       height: 5
-    spriteID: b07b7bba9a4769147976995b21a2b50c
+    spriteID: 23d8978bb37767947ad2b7a89520e64c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2722,7 +2632,7 @@ ScriptedImporter:
       y: 319
       width: 83
       height: 5
-    spriteID: 28e3d32cf737dfa4f910df7ff3e677ea
+    spriteID: d6431551b1a1c57438641dc9023a3e24
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2742,7 +2652,7 @@ ScriptedImporter:
       y: 469
       width: 88
       height: 1
-    spriteID: 7313c2fca6b13544f963cd5d12cd2ca5
+    spriteID: 030e7c8a021447145b75f3a149551255
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2762,7 +2672,7 @@ ScriptedImporter:
       y: 451
       width: 89
       height: 1
-    spriteID: 31d9a939e0160994cb25ab6006270e4b
+    spriteID: be659ebfc4ae6df44829d9e1cd06c4a9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2782,7 +2692,7 @@ ScriptedImporter:
       y: 460
       width: 89
       height: 1
-    spriteID: 18b4dcbf7849a9e47af480df03d62295
+    spriteID: 79d69e3502b3e6044b3ce80469b3987f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2802,7 +2712,7 @@ ScriptedImporter:
       y: 423
       width: 19
       height: 2
-    spriteID: 8ce14e94ded411e4e80fb99787e2e722
+    spriteID: fef1363a5add1f74194e66c8563b8f1f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2822,7 +2732,7 @@ ScriptedImporter:
       y: 202
       width: 19
       height: 2
-    spriteID: 4249e58dae7ee52448b45d3c82032817
+    spriteID: e85228f6c2f0a6141a18a0ea3c971924
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2842,7 +2752,7 @@ ScriptedImporter:
       y: 319
       width: 19
       height: 5
-    spriteID: 4d7921c4a7fd5204fa5120d85295af79
+    spriteID: 72eafc250aea72e4fb831b28e5d0ece3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2862,7 +2772,7 @@ ScriptedImporter:
       y: 451
       width: 19
       height: 24
-    spriteID: e109d367ff2ac77408cc88cd487f6f24
+    spriteID: da0d97dd9b2adb940ba5ebc7f9d59bd6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2882,7 +2792,7 @@ ScriptedImporter:
       y: 416
       width: 27
       height: 34
-    spriteID: c5842f6f67596da4eb20428ded2ed14b
+    spriteID: b6d751204dc9ae54da0f467857c26ac8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2902,7 +2812,7 @@ ScriptedImporter:
       y: 319
       width: 25
       height: 38
-    spriteID: 91555b9ac719ae043b268a0313fe2260
+    spriteID: 91241cdb2c7eefb4b8f9e48a6747f9bf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2922,7 +2832,7 @@ ScriptedImporter:
       y: 220
       width: 25
       height: 39
-    spriteID: c770bc32e5043fe46b128a05774b23eb
+    spriteID: a8cf7b40e02aad849b54d770df0018e8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2942,7 +2852,7 @@ ScriptedImporter:
       y: 365
       width: 22
       height: 43
-    spriteID: 0ce9aed0a3daccc41b24ab8b9f3e6d3d
+    spriteID: ac54611be4b9bab46b4c43a5f0e5d4b3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2962,7 +2872,7 @@ ScriptedImporter:
       y: 267
       width: 22
       height: 44
-    spriteID: 48c08f29240273649a22cf9241dffb31
+    spriteID: 113c5c82739f4614d99c1d4904d7552b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -2982,7 +2892,7 @@ ScriptedImporter:
       y: 174
       width: 16
       height: 34
-    spriteID: 70a655675300e4f488258e7e5e6621c2
+    spriteID: a1c8ffdbf161846489145de102526219
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3002,7 +2912,7 @@ ScriptedImporter:
       y: 306
       width: 37
       height: 15
-    spriteID: f23e55ece78cf6d48a164765a7536305
+    spriteID: a6ee32bee88f83e40af4803d8ec5ae13
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3022,7 +2932,7 @@ ScriptedImporter:
       y: 174
       width: 74
       height: 11
-    spriteID: 689f60182f247de429cb7c2f34b8a31d
+    spriteID: 481a029aaab1b14428adf471f9ce93e7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3042,7 +2952,7 @@ ScriptedImporter:
       y: 244
       width: 90
       height: 7
-    spriteID: 657b66889b886a040b719c43f0f4c5b2
+    spriteID: ded26622a7ab8fe4ca7703872ed58c8b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3062,7 +2972,7 @@ ScriptedImporter:
       y: 306
       width: 113
       height: 5
-    spriteID: fdc156d3ec993f848b438a632a4b61d6
+    spriteID: d716f107a1c982448af9150ee331edaa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3082,7 +2992,7 @@ ScriptedImporter:
       y: 423
       width: 132
       height: 3
-    spriteID: 563bdfe8e37ea1d4f82d082f8e01b133
+    spriteID: e38af128b71d98b458444409574509c6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3102,7 +3012,7 @@ ScriptedImporter:
       y: 451
       width: 135
       height: 1
-    spriteID: 947d8a0f4260aed49ae9a5dfe611a036
+    spriteID: 2a38da1297f87964b9a0aa6fa56ca75b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3122,7 +3032,7 @@ ScriptedImporter:
       y: 423
       width: 137
       height: 1
-    spriteID: 19ff119b93420974398c88be2d695412
+    spriteID: ed6c14978ed20c6439d1528f67da4b44
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3142,7 +3052,7 @@ ScriptedImporter:
       y: 202
       width: 1
       height: 1
-    spriteID: 92df51fda6c50764abc290f161d510a4
+    spriteID: 7d3ecfba131b14d40b45e5163d51fad7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3162,7 +3072,7 @@ ScriptedImporter:
       y: 460
       width: 89
       height: 1
-    spriteID: b17e63ca98ed3dc4ca7a9454bf8680ed
+    spriteID: 66ed9664638537249af819430ba77264
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3182,7 +3092,7 @@ ScriptedImporter:
       y: 469
       width: 89
       height: 1
-    spriteID: 832f02bf3457e244dae8186fa94c1f9e
+    spriteID: 5013eadd0da4acb44a6fc85b57e1937f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3202,7 +3112,7 @@ ScriptedImporter:
       y: 469
       width: 88
       height: 1
-    spriteID: aee93452b57ebd743832c4efe08e3de7
+    spriteID: 38e2ffd8f39d917428d697d9fd949739
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3222,7 +3132,7 @@ ScriptedImporter:
       y: 423
       width: 83
       height: 5
-    spriteID: 77b77df58ef215b41929674360e6887d
+    spriteID: cbeec3e38edd7a143853f96256866a8a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3242,7 +3152,7 @@ ScriptedImporter:
       y: 121
       width: 73
       height: 5
-    spriteID: e71f60041e7ec6842bf5c10e71f94b14
+    spriteID: b5fb33811c249e141aca2c9799cbc1cc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3262,7 +3172,7 @@ ScriptedImporter:
       y: 259
       width: 65
       height: 7
-    spriteID: 76931f4cebcf5484e9d821b271606eb6
+    spriteID: 271987c393124ce469dbb54b8d65738a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3282,7 +3192,7 @@ ScriptedImporter:
       y: 159
       width: 55
       height: 7
-    spriteID: c554d5d449afe51478cf4fc7e2da1f61
+    spriteID: 861953b1beb04f94f9500fd0624b8940
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3302,7 +3212,7 @@ ScriptedImporter:
       y: 306
       width: 51
       height: 11
-    spriteID: 3145a75c151d53c479f95ce867634d46
+    spriteID: c45dcbeae8b79ea4e9e408bcc896b360
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3322,7 +3232,7 @@ ScriptedImporter:
       y: 306
       width: 40
       height: 14
-    spriteID: 81115bc9ba83057419fedc24ebac4767
+    spriteID: b83eae48f5fb4d14b80af5bbe9033621
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3342,7 +3252,7 @@ ScriptedImporter:
       y: 335
       width: 31
       height: 15
-    spriteID: bd01cfd72b5a1d14788346e065266c6f
+    spriteID: 934fadb7895b90d4a8e65fc89626518d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3362,7 +3272,7 @@ ScriptedImporter:
       y: 423
       width: 25
       height: 17
-    spriteID: 02e235572035f2b4b9d7f94f0acf3438
+    spriteID: 799437ccb71cac64eb3735bd5464b3f5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3382,7 +3292,7 @@ ScriptedImporter:
       y: 423
       width: 23
       height: 20
-    spriteID: 973163d050782aa429bec2cad615345b
+    spriteID: cbc2dca935c808744a689b4f0e35440a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -3407,7 +3317,7 @@ ScriptedImporter:
         y: 0
         width: 108
         height: 22
-      spriteId: d98b84e140513184c8877f48bc7f7db1
+      spriteId: 2d8d0d35a1f824d42a0db10cdde626ac
     - name: The Blood King_Frame_81
       frameIndex: 81
       cellRect:
@@ -3415,7 +3325,7 @@ ScriptedImporter:
         y: 0
         width: 113
         height: 22
-      spriteId: 4f8aef30eee96b34d9e3d620d1451b47
+      spriteId: 3e608a293e91b2f4490642e699c659ae
     - name: The Blood King_Frame_82
       frameIndex: 82
       cellRect:
@@ -3423,7 +3333,7 @@ ScriptedImporter:
         y: 0
         width: 110
         height: 20
-      spriteId: f5549f0ba9637fa4a8a6078a2eaff91a
+      spriteId: f72dc1c7db62ed04d88c1e128849afb8
     - name: The Blood King_Frame_83
       frameIndex: 83
       cellRect:
@@ -3431,7 +3341,7 @@ ScriptedImporter:
         y: 0
         width: 101
         height: 18
-      spriteId: f5c20e6fa39f60c49b6fb4d87ea3e1c8
+      spriteId: 378f0fae9e23ab0478c768eb41a71d85
     - name: The Blood King_Frame_84
       frameIndex: 84
       cellRect:
@@ -3439,7 +3349,7 @@ ScriptedImporter:
         y: 0
         width: 80
         height: 16
-      spriteId: c26de011077c7874fb37a2c81d00746b
+      spriteId: 3a9c8b37330acba488e39a332dbce0b5
     - name: The Blood King_Frame_95
       frameIndex: 95
       cellRect:
@@ -3447,7 +3357,7 @@ ScriptedImporter:
         y: 0
         width: 83
         height: 17
-      spriteId: 4c014fb5aaaefcf43a8db40edbdf2b23
+      spriteId: 6a1a0ec4452a2a047bf20b09c58a7ad3
     - name: The Blood King_Frame_96
       frameIndex: 96
       cellRect:
@@ -3455,7 +3365,7 @@ ScriptedImporter:
         y: 0
         width: 84
         height: 17
-      spriteId: c27c0c557c1869948ad0a535ce44588d
+      spriteId: f6124dcffa0d5404bb2c49e5701cffc0
     - name: The Blood King_Frame_97
       frameIndex: 97
       cellRect:
@@ -3463,7 +3373,7 @@ ScriptedImporter:
         y: 0
         width: 79
         height: 16
-      spriteId: 2ac1913c509538c4293bbde8e8944023
+      spriteId: 41ed2dc478d78b641ad495177a12f7fa
     - name: The Blood King_Frame_103
       frameIndex: 103
       cellRect:
@@ -3471,7 +3381,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 17
-      spriteId: a8250abcba75c5949b06016547fa8ddd
+      spriteId: 498d1322d8e553a4f91609f2d5dbf89b
     - name: The Blood King_Frame_104
       frameIndex: 104
       cellRect:
@@ -3479,7 +3389,7 @@ ScriptedImporter:
         y: 9
         width: 26
         height: 69
-      spriteId: a2a7778df67e6d94fba736bf968f866b
+      spriteId: b613d602660267b48989b0130fa2bf8d
     - name: The Blood King_Frame_105
       frameIndex: 105
       cellRect:
@@ -3487,7 +3397,7 @@ ScriptedImporter:
         y: 54
         width: 25
         height: 24
-      spriteId: 3b1c8c86a0758b9448307a1250b42aec
+      spriteId: 74d3c2cbb079a254b8b7887f315f59fc
     - name: The Blood King_Frame_106
       frameIndex: 106
       cellRect:
@@ -3495,7 +3405,7 @@ ScriptedImporter:
         y: 56
         width: 28
         height: 22
-      spriteId: 2db20c8815801cd40a07a2c3a47e57f9
+      spriteId: 7eec0e8fa76ccdf47bac12bc62a12fec
     - name: The Blood King_Frame_107
       frameIndex: 107
       cellRect:
@@ -3503,7 +3413,7 @@ ScriptedImporter:
         y: 57
         width: 30
         height: 22
-      spriteId: 7fd7ec1e90358734594891f09822ca2f
+      spriteId: 60fbe67e6b9b3124581fd4c42bf57b18
     - name: The Blood King_Frame_0
       frameIndex: 0
       cellRect:
@@ -3511,7 +3421,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: 6900f14a982b7ed4e9ff43d7e5619932
+      spriteId: 13208265973e6ec45872e20b3c313d8d
     - name: The Blood King_Frame_1
       frameIndex: 1
       cellRect:
@@ -3519,7 +3429,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: b0aed6ab771903646bdc67fcc0207c4d
+      spriteId: 8d0df0b9abfc55041a6f7700c96198e6
     - name: The Blood King_Frame_2
       frameIndex: 2
       cellRect:
@@ -3527,7 +3437,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: 7c145b13093d33344a0c3bcdadcefaeb
+      spriteId: 9415d0cff7dc0604fa2d178f1da9dd68
     - name: The Blood King_Frame_3
       frameIndex: 3
       cellRect:
@@ -3535,7 +3445,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: 0a837a6bfa5e73446945084df445c3a5
+      spriteId: c5456332f16bb7d46a0e082c3bca61c1
     - name: The Blood King_Frame_4
       frameIndex: 4
       cellRect:
@@ -3543,7 +3453,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: 979c64c48dd98004aa96f2d46e5b88da
+      spriteId: 0d4d99d2db3e4f54abd47e042c9e5ecf
     - name: The Blood King_Frame_5
       frameIndex: 5
       cellRect:
@@ -3551,7 +3461,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: c7818df842e73494f8affdc9c3face99
+      spriteId: 6755d66d07f6f144ca1a850af24a9143
     - name: The Blood King_Frame_6
       frameIndex: 6
       cellRect:
@@ -3559,7 +3469,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: 356d5c2b20be38447ba1907721b9a4fb
+      spriteId: 87d18309d3af20442b831a994b16aec3
     - name: The Blood King_Frame_7
       frameIndex: 7
       cellRect:
@@ -3567,7 +3477,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: 2e842c902dfc33b4fa9612cc5a0f5c6c
+      spriteId: 5cccb71eb86b59944a76771da8fff560
     - name: The Blood King_Frame_8
       frameIndex: 8
       cellRect:
@@ -3575,7 +3485,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: de8d7e60589e27040bab199056692991
+      spriteId: 352cd74481551a841b5ee6d8a6d3d408
     - name: The Blood King_Frame_9
       frameIndex: 9
       cellRect:
@@ -3583,7 +3493,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: 5c1f71ddd92e2a743b6312de01945dd8
+      spriteId: 45c15765d71d6624c98a5699c6f4f84c
     - name: The Blood King_Frame_10
       frameIndex: 10
       cellRect:
@@ -3591,7 +3501,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: e9fd2317dc8b11c4e8e3fb0cd4924dbe
+      spriteId: 3bc1224c90ed0af40bc2470b39943952
     - name: The Blood King_Frame_11
       frameIndex: 11
       cellRect:
@@ -3599,7 +3509,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: e0c113e0137c31048842a4fce486bbe1
+      spriteId: c65fdc8385849e3438fa8991d7925a78
     - name: The Blood King_Frame_12
       frameIndex: 12
       cellRect:
@@ -3607,7 +3517,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 20
-      spriteId: f3b7890b063ea4e45a637d2345d9080a
+      spriteId: cae0c99ae67eeac47a7dec205133ad07
     - name: The Blood King_Frame_13
       frameIndex: 13
       cellRect:
@@ -3615,7 +3525,7 @@ ScriptedImporter:
         y: 0
         width: 31
         height: 20
-      spriteId: 6e08cc5cd88932142a31ca1c30a4e230
+      spriteId: f20f63232144ee642875847b2ac40ce1
     - name: The Blood King_Frame_14
       frameIndex: 14
       cellRect:
@@ -3623,7 +3533,7 @@ ScriptedImporter:
         y: 0
         width: 30
         height: 20
-      spriteId: c91840a5b3797cf4e9a06f9d954c4a3e
+      spriteId: 6536c0f62a26eac46a1f699c5567ffea
     - name: The Blood King_Frame_15
       frameIndex: 15
       cellRect:
@@ -3631,7 +3541,7 @@ ScriptedImporter:
         y: 0
         width: 34
         height: 20
-      spriteId: e774207e5202d1641afc40664c8507d3
+      spriteId: 04cb6195a81ede3428606d2884ce7940
     - name: The Blood King_Frame_16
       frameIndex: 16
       cellRect:
@@ -3639,7 +3549,7 @@ ScriptedImporter:
         y: 0
         width: 37
         height: 20
-      spriteId: 73d857104e269a44b9134ef02186afdd
+      spriteId: fc869bff72a059443b1262d4ed6161fa
     - name: The Blood King_Frame_17
       frameIndex: 17
       cellRect:
@@ -3647,7 +3557,7 @@ ScriptedImporter:
         y: 0
         width: 33
         height: 20
-      spriteId: 63b67e039f6ba3240953257e5088ca10
+      spriteId: 4b61c58b576d3484ba488af0475b0539
     - name: The Blood King_Frame_18
       frameIndex: 18
       cellRect:
@@ -3655,7 +3565,7 @@ ScriptedImporter:
         y: 0
         width: 34
         height: 20
-      spriteId: 6c59bf1307995dc4d81f8013f60fb2c0
+      spriteId: e1c00f872e9242a4fbf24574f80e6642
     - name: The Blood King_Frame_19
       frameIndex: 19
       cellRect:
@@ -3663,7 +3573,7 @@ ScriptedImporter:
         y: 0
         width: 34
         height: 20
-      spriteId: bd5aac324453da84c96513816decae6c
+      spriteId: 334cda97a7cc4524d9f1362fa0f18865
     - name: The Blood King_Frame_20
       frameIndex: 20
       cellRect:
@@ -3671,7 +3581,7 @@ ScriptedImporter:
         y: 0
         width: 36
         height: 20
-      spriteId: 1bae099d6bd37084eab3bba08c65aace
+      spriteId: df3d2d340f292f942b8de95f06736c2d
     - name: The Blood King_Frame_21
       frameIndex: 21
       cellRect:
@@ -3679,7 +3589,7 @@ ScriptedImporter:
         y: 0
         width: 30
         height: 20
-      spriteId: 1eb453cc62b705146b18e530e61a51ce
+      spriteId: 79ae55bb629fc9742ae921edd7c4dc37
     - name: The Blood King_Frame_22
       frameIndex: 22
       cellRect:
@@ -3687,7 +3597,7 @@ ScriptedImporter:
         y: 0
         width: 31
         height: 20
-      spriteId: 983cfff5cf83b2d498802504f8c02b6b
+      spriteId: 9c55a81339337f440a1b5516937dbea5
     - name: The Blood King_Frame_23
       frameIndex: 23
       cellRect:
@@ -3695,7 +3605,7 @@ ScriptedImporter:
         y: 0
         width: 24
         height: 19
-      spriteId: a77dc25799fbd8247a4f46d2db85e2ee
+      spriteId: 46ac2ab774c7e5546b0e0792d463fb00
     - name: The Blood King_Frame_24
       frameIndex: 24
       cellRect:
@@ -3703,7 +3613,7 @@ ScriptedImporter:
         y: 0
         width: 22
         height: 23
-      spriteId: fd56f103a68109348b05a4f20c7ba7c8
+      spriteId: e54ac4d8532dd6c468810f3dcac85366
     - name: The Blood King_Frame_25
       frameIndex: 25
       cellRect:
@@ -3711,7 +3621,7 @@ ScriptedImporter:
         y: 2
         width: 26
         height: 22
-      spriteId: 0509fa0004cf06a4a8676a5b3f4d5bf9
+      spriteId: 40df6dcec51a97b4e9869b549b38c0cf
     - name: The Blood King_Frame_26
       frameIndex: 26
       cellRect:
@@ -3719,7 +3629,7 @@ ScriptedImporter:
         y: 2
         width: 27
         height: 21
-      spriteId: c3a3126d98bd49a4a9f9d89588d2106a
+      spriteId: cfe72466ce60746478974eec20394e8f
     - name: The Blood King_Frame_27
       frameIndex: 27
       cellRect:
@@ -3727,7 +3637,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 19
-      spriteId: 836c3fbaa4341ee4b9b720ee216e9bd3
+      spriteId: 42d8df236b1716f42aea2bce1118fe7b
     - name: The Blood King_Frame_28
       frameIndex: 28
       cellRect:
@@ -3735,7 +3645,7 @@ ScriptedImporter:
         y: 0
         width: 17
         height: 23
-      spriteId: 2d90e409e61efb148a0dec96d875464a
+      spriteId: 2e2e3eb9df90ccc45821f8165f9f8fa6
     - name: The Blood King_Frame_29
       frameIndex: 29
       cellRect:
@@ -3743,7 +3653,7 @@ ScriptedImporter:
         y: 2
         width: 21
         height: 22
-      spriteId: e6309e3708eabc846b3e9476ac74b492
+      spriteId: b143e65253107624092cb9e242d32419
     - name: The Blood King_Frame_30
       frameIndex: 30
       cellRect:
@@ -3751,7 +3661,7 @@ ScriptedImporter:
         y: 2
         width: 22
         height: 21
-      spriteId: 8e4fa56302c4f244cbec7f9498e08b41
+      spriteId: 8c331d0dbbdf8584491d6cfd557c2d97
     - name: The Blood King_Frame_31
       frameIndex: 31
       cellRect:
@@ -3759,7 +3669,7 @@ ScriptedImporter:
         y: 0
         width: 22
         height: 23
-      spriteId: 4646a82eb7932924d816c4a7e7361199
+      spriteId: a0fedff6e4c99744d9d298fccca556bd
     - name: The Blood King_Frame_32
       frameIndex: 32
       cellRect:
@@ -3767,7 +3677,7 @@ ScriptedImporter:
         y: 0
         width: 23
         height: 23
-      spriteId: 94a381696b0624c41a4f3060f12a5e46
+      spriteId: fa8bc19500f841e468ddc9a1a16c8189
     - name: The Blood King_Frame_33
       frameIndex: 33
       cellRect:
@@ -3775,7 +3685,7 @@ ScriptedImporter:
         y: 0
         width: 23
         height: 23
-      spriteId: c19c90724172cec4bb8ee43b7d74abe8
+      spriteId: 3b35708140874e94688d4ad3ed29dc8a
     - name: The Blood King_Frame_34
       frameIndex: 34
       cellRect:
@@ -3783,7 +3693,7 @@ ScriptedImporter:
         y: 0
         width: 24
         height: 23
-      spriteId: 73f9603c5a8948e4ca09f1be46d01c53
+      spriteId: cb7ec9058bb3f944a8d0a02992efd7a7
     - name: The Blood King_Frame_35
       frameIndex: 35
       cellRect:
@@ -3791,7 +3701,7 @@ ScriptedImporter:
         y: 0
         width: 26
         height: 23
-      spriteId: d6fbc0fa2a8fb804b97ed8b774d86265
+      spriteId: aa44223b85a163d47b4fd6b5a10fd45e
     - name: The Blood King_Frame_36
       frameIndex: 36
       cellRect:
@@ -3799,7 +3709,7 @@ ScriptedImporter:
         y: 1
         width: 26
         height: 22
-      spriteId: dab014a13fba0494883f7dd28f6ca84a
+      spriteId: f454098f0ea635347861da38a46cdf53
     - name: The Blood King_Frame_37
       frameIndex: 37
       cellRect:
@@ -3807,7 +3717,7 @@ ScriptedImporter:
         y: 2
         width: 27
         height: 21
-      spriteId: 4979d348a8677af4ab14c46b0a7d1ec0
+      spriteId: 1105284a6f7c3944e87201eaf49737c6
     - name: The Blood King_Frame_38
       frameIndex: 38
       cellRect:
@@ -3815,7 +3725,7 @@ ScriptedImporter:
         y: 2
         width: 27
         height: 21
-      spriteId: a42c7b153423b6d4f9d9f4a6ec1cb4b9
+      spriteId: 85660115558566b41932ac8aff660a2f
     - name: The Blood King_Frame_39
       frameIndex: 39
       cellRect:
@@ -3823,7 +3733,7 @@ ScriptedImporter:
         y: 2
         width: 29
         height: 21
-      spriteId: 13328791854fc6d4cb3b54c1a4af06e2
+      spriteId: 41a4c14b1ed0ffd48935baf5c8d89da5
     - name: The Blood King_Frame_40
       frameIndex: 40
       cellRect:
@@ -3831,7 +3741,7 @@ ScriptedImporter:
         y: 2
         width: 29
         height: 21
-      spriteId: 6a2897fec7c7bc749b28e8d8160bdeba
+      spriteId: f606563f48d99974f9b2fd28951485ef
     - name: The Blood King_Frame_41
       frameIndex: 41
       cellRect:
@@ -3839,7 +3749,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 17
-      spriteId: 9073e2e0bbde7ff45b45a3d46d972e56
+      spriteId: 628453033cd13bd4d9438d18c885ba09
     - name: The Blood King_Frame_42
       frameIndex: 42
       cellRect:
@@ -3847,7 +3757,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 17
-      spriteId: fa67f4fe435ebf243b9dbabe5a91e8d0
+      spriteId: fd6d26fba3926b346b28c8cb02f069e6
     - name: The Blood King_Frame_43
       frameIndex: 43
       cellRect:
@@ -3855,7 +3765,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 18
-      spriteId: 22cf9403adf395546b259d2735db068e
+      spriteId: d82a64e76428cc84291e8638fa6de91a
     - name: The Blood King_Frame_44
       frameIndex: 44
       cellRect:
@@ -3863,7 +3773,7 @@ ScriptedImporter:
         y: 0
         width: 27
         height: 20
-      spriteId: 365d692d66c87304bb5cb7fe220e4431
+      spriteId: 7f9ba7626654b0d43afe4ac4310ed4fb
     - name: The Blood King_Frame_45
       frameIndex: 45
       cellRect:
@@ -3871,7 +3781,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 19
-      spriteId: 5cf6440f20dd8064d8fe3c04a166f5f3
+      spriteId: 342f4dcddc5cb6940b0abaf894ca4688
     - name: The Blood King_Frame_46
       frameIndex: 46
       cellRect:
@@ -3879,7 +3789,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 18
-      spriteId: 9e69faedeb750bc45a1b238b110c3864
+      spriteId: 4a571c2ee5dbf2640863a313401b38b4
     - name: The Blood King_Frame_47
       frameIndex: 47
       cellRect:
@@ -3887,7 +3797,7 @@ ScriptedImporter:
         y: 0
         width: 42
         height: 26
-      spriteId: 1d099c33970336247b45edec2000e02d
+      spriteId: 464e9d64683247c43a3472a2cc785ae2
     - name: The Blood King_Frame_48
       frameIndex: 48
       cellRect:
@@ -3895,7 +3805,7 @@ ScriptedImporter:
         y: 0
         width: 58
         height: 27
-      spriteId: cdc01118a4c010248ae0e863f9a6e3a7
+      spriteId: 7fea42305385d184ca563972c266e286
     - name: The Blood King_Frame_49
       frameIndex: 49
       cellRect:
@@ -3903,7 +3813,7 @@ ScriptedImporter:
         y: 0
         width: 53
         height: 29
-      spriteId: b12745724e9000d42b8bab4303e96c60
+      spriteId: 1a9d00b1abe6d104bbc719906527432e
     - name: The Blood King_Frame_50
       frameIndex: 50
       cellRect:
@@ -3911,7 +3821,7 @@ ScriptedImporter:
         y: 0
         width: 61
         height: 29
-      spriteId: 3fdaa52fc6522d44991aef34d22d5a83
+      spriteId: 23b71897f384be343942d76ee99ed16b
     - name: The Blood King_Frame_51
       frameIndex: 51
       cellRect:
@@ -3919,7 +3829,7 @@ ScriptedImporter:
         y: 0
         width: 64
         height: 26
-      spriteId: c35abd76f1d29d645be28515e7784380
+      spriteId: a03ed474f96e94e4ebef136bdb5664e9
     - name: The Blood King_Frame_52
       frameIndex: 52
       cellRect:
@@ -3927,7 +3837,7 @@ ScriptedImporter:
         y: 0
         width: 59
         height: 28
-      spriteId: 8111a4078dd062e4aa94783c0da605fe
+      spriteId: 200fa3428cc83c844ba25b00f73d74ed
     - name: The Blood King_Frame_53
       frameIndex: 53
       cellRect:
@@ -3935,7 +3845,7 @@ ScriptedImporter:
         y: 0
         width: 43
         height: 27
-      spriteId: a27e220101735ef4888c6d64269a1f8a
+      spriteId: 758fc528526fd5a4d81de6def8354fa7
     - name: The Blood King_Frame_54
       frameIndex: 54
       cellRect:
@@ -3943,7 +3853,7 @@ ScriptedImporter:
         y: 0
         width: 50
         height: 27
-      spriteId: 53997c7aa393a9d4288798e405894e32
+      spriteId: 92765be7093fb634fae879583e868dad
     - name: The Blood King_Frame_55
       frameIndex: 55
       cellRect:
@@ -3951,7 +3861,7 @@ ScriptedImporter:
         y: 0
         width: 55
         height: 26
-      spriteId: c3dea874b54527749a30537511e5a890
+      spriteId: 630b779e9b487224c93d539ec7a4c08c
     - name: The Blood King_Frame_56
       frameIndex: 56
       cellRect:
@@ -3959,7 +3869,7 @@ ScriptedImporter:
         y: 0
         width: 57
         height: 18
-      spriteId: 429187cccd84c3c4b9574a6ead33ebac
+      spriteId: 3c29b5cac75197040ae3c0c2d8cf4802
     - name: The Blood King_Frame_57
       frameIndex: 57
       cellRect:
@@ -3967,7 +3877,7 @@ ScriptedImporter:
         y: 0
         width: 57
         height: 18
-      spriteId: cbaeb6544d65bb04a864ceaef60c1703
+      spriteId: ffc52dc3a7c8bb248a4fc3c92cefa50e
     - name: The Blood King_Frame_58
       frameIndex: 58
       cellRect:
@@ -3975,7 +3885,7 @@ ScriptedImporter:
         y: 0
         width: 25
         height: 20
-      spriteId: bdcb1a2a451f4a545a1c0e3d94f5549b
+      spriteId: 2e346d859e593154fb48d45202a74ec4
     - name: The Blood King_Frame_59
       frameIndex: 59
       cellRect:
@@ -3983,7 +3893,7 @@ ScriptedImporter:
         y: 0
         width: 27
         height: 20
-      spriteId: 9888de6b6429c0e4098f71cdf84c579b
+      spriteId: 6258bed2c2eacbc43ab68829974da7ff
     - name: The Blood King_Frame_60
       frameIndex: 60
       cellRect:
@@ -3991,7 +3901,7 @@ ScriptedImporter:
         y: 0
         width: 30
         height: 20
-      spriteId: 0eb06cd5e4219cc4dbf4fcd3f7dfa0e5
+      spriteId: 2dc06afc7827c234da76a46d179dc464
     - name: The Blood King_Frame_61
       frameIndex: 61
       cellRect:
@@ -3999,7 +3909,7 @@ ScriptedImporter:
         y: 0
         width: 29
         height: 23
-      spriteId: 69106479416fb444b93961b921614012
+      spriteId: 7f8775b784ae1344485d94fb63455957
     - name: The Blood King_Frame_62
       frameIndex: 62
       cellRect:
@@ -4007,7 +3917,7 @@ ScriptedImporter:
         y: 0
         width: 17
         height: 24
-      spriteId: 6ed61fefc2c1ba84fa159f7126df8f7f
+      spriteId: 7505bb863f58b0c4cb5491cc450f9f09
     - name: The Blood King_Frame_63
       frameIndex: 63
       cellRect:
@@ -4015,7 +3925,7 @@ ScriptedImporter:
         y: 0
         width: 17
         height: 24
-      spriteId: 847e8cde816cb4945b165d3eee442eea
+      spriteId: e0150497eab0e9b48b61a2a456f76b3e
     - name: The Blood King_Frame_64
       frameIndex: 64
       cellRect:
@@ -4023,7 +3933,7 @@ ScriptedImporter:
         y: 0
         width: 25
         height: 22
-      spriteId: 6f760aa2b2f52474eb17998a62699199
+      spriteId: fc864a2b142f8594a90ff29aa3c1cfdc
     - name: The Blood King_Frame_65
       frameIndex: 65
       cellRect:
@@ -4031,7 +3941,7 @@ ScriptedImporter:
         y: 0
         width: 38
         height: 20
-      spriteId: 9ba54b744ba076a4da619b92b7f04bd0
+      spriteId: b83e97581a62fde4685f1d66cf823bd0
     - name: The Blood King_Frame_66
       frameIndex: 66
       cellRect:
@@ -4039,7 +3949,7 @@ ScriptedImporter:
         y: 0
         width: 43
         height: 20
-      spriteId: cec5fb75ff4dcdc44bf00ccb0ea1f142
+      spriteId: 3be6e2be4a7a71444a08261d3edc32db
     - name: The Blood King_Frame_67
       frameIndex: 67
       cellRect:
@@ -4047,7 +3957,7 @@ ScriptedImporter:
         y: 0
         width: 47
         height: 19
-      spriteId: 97442d8c2715f4745b355b5ef326365c
+      spriteId: fde69b1013aaeec4eb5aa0665cfdf83f
     - name: The Blood King_Frame_68
       frameIndex: 68
       cellRect:
@@ -4055,7 +3965,7 @@ ScriptedImporter:
         y: 0
         width: 55
         height: 19
-      spriteId: 0a9b09839ffb46c45997deeac5e29547
+      spriteId: 2a9023b960c03f348b44c96f1d445091
     - name: The Blood King_Frame_69
       frameIndex: 69
       cellRect:
@@ -4063,7 +3973,7 @@ ScriptedImporter:
         y: 0
         width: 35
         height: 14
-      spriteId: 1b38f495e32af2544b38a5c4704aaa06
+      spriteId: 576f6fc619b5a5a4fb6d7b3c3577df77
     - name: The Blood King_Frame_70
       frameIndex: 70
       cellRect:
@@ -4071,7 +3981,7 @@ ScriptedImporter:
         y: 0
         width: 36
         height: 14
-      spriteId: 09e4595c0a9fd0343a2c9b27737f9a6e
+      spriteId: 80cb4e9e02490524e929b9c4b35a89fc
     - name: The Blood King_Frame_71
       frameIndex: 71
       cellRect:
@@ -4079,7 +3989,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 20
-      spriteId: 0f35feedc616bc445864c31e27e4880a
+      spriteId: f8d47317d62a3504192821ac834a2699
     - name: The Blood King_Frame_72
       frameIndex: 72
       cellRect:
@@ -4087,7 +3997,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 19
-      spriteId: d932ced66c8d1e041ba58e36750080a1
+      spriteId: c532067348f48e64b8281415ee128d34
     - name: The Blood King_Frame_73
       frameIndex: 73
       cellRect:
@@ -4095,7 +4005,7 @@ ScriptedImporter:
         y: 0
         width: 29
         height: 19
-      spriteId: f8660337fac14ab408777a378497dd03
+      spriteId: 34374be3f5efddc4c9688007c7266dd7
     - name: The Blood King_Frame_74
       frameIndex: 74
       cellRect:
@@ -4103,7 +4013,7 @@ ScriptedImporter:
         y: 0
         width: 44
         height: 16
-      spriteId: bc5855b76ee7ccb4893b37b1b8a918d2
+      spriteId: ca43136f28135b84299b41ba771c488f
     - name: The Blood King_Frame_75
       frameIndex: 75
       cellRect:
@@ -4111,7 +4021,7 @@ ScriptedImporter:
         y: 0
         width: 45
         height: 21
-      spriteId: 4625208aed4b43540bb066ff78529ef9
+      spriteId: 2072adfd3c5ca1749ab597c2399eec18
     - name: The Blood King_Frame_76
       frameIndex: 76
       cellRect:
@@ -4119,7 +4029,7 @@ ScriptedImporter:
         y: 0
         width: 46
         height: 21
-      spriteId: 1a5ff14496883954b9ca6f2c2eb889b4
+      spriteId: 229a294444bf64b48a17c6447b261532
     - name: The Blood King_Frame_77
       frameIndex: 77
       cellRect:
@@ -4127,7 +4037,7 @@ ScriptedImporter:
         y: 0
         width: 49
         height: 21
-      spriteId: 1432403f115515c4994bbb93b18d46fb
+      spriteId: f16d5bf97809f0948bf6a90032487030
     - name: The Blood King_Frame_78
       frameIndex: 78
       cellRect:
@@ -4135,7 +4045,7 @@ ScriptedImporter:
         y: 0
         width: 27
         height: 21
-      spriteId: 9ac6d5172f910df448e5d731be961bbc
+      spriteId: 47c909e88d040ba4185941386bdefb2b
     - name: The Blood King_Frame_79
       frameIndex: 79
       cellRect:
@@ -4143,7 +4053,7 @@ ScriptedImporter:
         y: 0
         width: 104
         height: 22
-      spriteId: 9a55d0af7a43c2e498325523ad3d0853
+      spriteId: 3943dbf25afb4ea47bf65fc7c936813e
     - name: The Blood King_Frame_85
       frameIndex: 85
       cellRect:
@@ -4151,7 +4061,7 @@ ScriptedImporter:
         y: 0
         width: 37
         height: 17
-      spriteId: 8761e1af32764324dbac0b418659f9cc
+      spriteId: 9517655d2a357ea4b8de9b0f6a259748
     - name: The Blood King_Frame_86
       frameIndex: 86
       cellRect:
@@ -4159,7 +4069,7 @@ ScriptedImporter:
         y: 0
         width: 39
         height: 15
-      spriteId: 836929653c0bade44bc333e508be7827
+      spriteId: 70d1efd42aa886047a11dab6602e9d92
     - name: The Blood King_Frame_87
       frameIndex: 87
       cellRect:
@@ -4167,7 +4077,7 @@ ScriptedImporter:
         y: 0
         width: 43
         height: 15
-      spriteId: d238a0754571d2c42aa7bd963e5e021c
+      spriteId: 00f95f46291ee4e4e9303a86a5ed8076
     - name: The Blood King_Frame_88
       frameIndex: 88
       cellRect:
@@ -4175,7 +4085,7 @@ ScriptedImporter:
         y: 0
         width: 47
         height: 15
-      spriteId: fed5840086e71914eae7f6841d421e85
+      spriteId: ea4157afa40505643a023048add66abc
     - name: The Blood King_Frame_89
       frameIndex: 89
       cellRect:
@@ -4183,7 +4093,7 @@ ScriptedImporter:
         y: 0
         width: 48
         height: 15
-      spriteId: e20908ef03e129c4691900e11d2ab2b6
+      spriteId: 2112236d7e24a9c44bbb9458445940f8
     - name: The Blood King_Frame_90
       frameIndex: 90
       cellRect:
@@ -4191,7 +4101,7 @@ ScriptedImporter:
         y: 0
         width: 28
         height: 20
-      spriteId: 4f85ff33cc1b7fe46a8a4f2971c50be6
+      spriteId: 1bb5e16eb3c36a34eb9d4f3f393abc98
     - name: The Blood King_Frame_91
       frameIndex: 91
       cellRect:
@@ -4199,7 +4109,7 @@ ScriptedImporter:
         y: 0
         width: 29
         height: 20
-      spriteId: adc6718db70b16a40b158c962938c5d6
+      spriteId: 69cdb1e2ef1b24740ac80abf3fd3fa08
     - name: The Blood King_Frame_92
       frameIndex: 92
       cellRect:
@@ -4207,7 +4117,7 @@ ScriptedImporter:
         y: 0
         width: 29
         height: 19
-      spriteId: e47ad79aacc8f58439f470aa1367f4ca
+      spriteId: 70c91c80533dd7f428cffbac345828ce
     - name: The Blood King_Frame_93
       frameIndex: 93
       cellRect:
@@ -4215,7 +4125,7 @@ ScriptedImporter:
         y: 0
         width: 100
         height: 17
-      spriteId: c6ba9ede88d8da745bad0b49edbfb899
+      spriteId: 368f34bcded4f334a8767d3e1e70288b
     - name: The Blood King_Frame_94
       frameIndex: 94
       cellRect:
@@ -4223,7 +4133,7 @@ ScriptedImporter:
         y: 0
         width: 73
         height: 17
-      spriteId: faf925188399fef4f95f444b788b04e9
+      spriteId: 5e2e6ce4da4b44d48ad90a40be729fc5
     - name: The Blood King_Frame_98
       frameIndex: 98
       cellRect:
@@ -4231,7 +4141,7 @@ ScriptedImporter:
         y: 0
         width: 53
         height: 16
-      spriteId: 3b7dc716706bc1d4aa6cde7ea7a7b0dc
+      spriteId: 3b67e0aa6d06a76469b16bb803a5f815
     - name: The Blood King_Frame_99
       frameIndex: 99
       cellRect:
@@ -4239,7 +4149,7 @@ ScriptedImporter:
         y: 0
         width: 60
         height: 16
-      spriteId: 9632a46f7b1c8ad48a3acd8c0bd82d16
+      spriteId: af0e3cc371581c046a4bddb5ff9bd4b1
     - name: The Blood King_Frame_100
       frameIndex: 100
       cellRect:
@@ -4247,7 +4157,7 @@ ScriptedImporter:
         y: 0
         width: 43
         height: 16
-      spriteId: ae118cdd191c777499fe83f99ecbd4a7
+      spriteId: 5e73a535cebd04c489b441ea9924d30b
     - name: The Blood King_Frame_101
       frameIndex: 101
       cellRect:
@@ -4255,7 +4165,7 @@ ScriptedImporter:
         y: 0
         width: 47
         height: 16
-      spriteId: 6886f2390dbdf7540a53ca2d445de967
+      spriteId: 6554baff0b35f8d428924ad22abb8f6e
     - name: The Blood King_Frame_102
       frameIndex: 102
       cellRect:
@@ -4263,7 +4173,7 @@ ScriptedImporter:
         y: 0
         width: 48
         height: 16
-      spriteId: 73ea5c160eb6e554da5dfae60aaf6487
+      spriteId: 5503b55752c603049a94b6b648c06548
     - name: The Blood King_Frame_108
       frameIndex: 108
       cellRect:
@@ -4271,7 +4181,7 @@ ScriptedImporter:
         y: 1
         width: 32
         height: 78
-      spriteId: 4b2b8c2bf6b47f7408e3be8ff8881e1e
+      spriteId: 86a548a960c7d5c4a95497a9ebaaddc8
     - name: The Blood King_Frame_109
       frameIndex: 109
       cellRect:
@@ -4279,7 +4189,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 45
-      spriteId: 54fb9111e7f35d047b6127e2f23c0984
+      spriteId: b88064f60624b2d40a9ff5b563dfc6b4
     - name: The Blood King_Frame_110
       frameIndex: 110
       cellRect:
@@ -4287,7 +4197,7 @@ ScriptedImporter:
         y: 0
         width: 38
         height: 34
-      spriteId: e6904dad46472c04fbc158e0ecd80f91
+      spriteId: f960995fe87cebd4b944c46f6b6c7393
     - name: The Blood King_Frame_111
       frameIndex: 111
       cellRect:
@@ -4295,7 +4205,7 @@ ScriptedImporter:
         y: 0
         width: 43
         height: 31
-      spriteId: 54bf183298a45cb4a9963266a5e9b1e9
+      spriteId: ba6e9667e933c42438062bb5a93c8e42
     - name: The Blood King_Frame_112
       frameIndex: 112
       cellRect:
@@ -4303,7 +4213,7 @@ ScriptedImporter:
         y: 0
         width: 47
         height: 30
-      spriteId: 1c7654168c670f3469585a67a2ea6ad0
+      spriteId: 57656da4a29953640a8dea175d24c83a
     - name: The Blood King_Frame_113
       frameIndex: 113
       cellRect:
@@ -4311,7 +4221,7 @@ ScriptedImporter:
         y: 0
         width: 55
         height: 19
-      spriteId: ea68d040f12de9746b8f51390e7d5dce
+      spriteId: 775d9115779bd1a4b80bc888d385ceab
     - name: The Blood King_Frame_114
       frameIndex: 114
       cellRect:
@@ -4319,7 +4229,7 @@ ScriptedImporter:
         y: 0
         width: 35
         height: 14
-      spriteId: 471d0dcab5a5253418fcff3193c04081
+      spriteId: a2aa1553c53134b4fae953ecac319223
     - name: The Blood King_Frame_115
       frameIndex: 115
       cellRect:
@@ -4327,7 +4237,7 @@ ScriptedImporter:
         y: 0
         width: 36
         height: 14
-      spriteId: bff02f4d46a9bd84691fcdeab1dc51cf
+      spriteId: b431c0107473832448826cf5aa8d7cd0
     - name: The Blood King_Frame_116
       frameIndex: 116
       cellRect:
@@ -4335,7 +4245,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 19
-      spriteId: 6384b7319310cb6499d5e34b8beb266d
+      spriteId: 13dfdd53f85ad344d8f10b3ae59fa533
     - name: The Blood King_Frame_117
       frameIndex: 117
       cellRect:
@@ -4343,7 +4253,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 19
-      spriteId: b6bfd444ea61a1d4998d10ca5623bc56
+      spriteId: 070a69ff77c7dda4b99a13afb843c8dc
     - name: The Blood King_Frame_118
       frameIndex: 118
       cellRect:
@@ -4351,7 +4261,7 @@ ScriptedImporter:
         y: 0
         width: 29
         height: 17
-      spriteId: 640cde582e6dabf4fb91e13a9e33742f
+      spriteId: ef694d3c8f7489e469168c9199824821
     - name: The Blood King_Frame_119
       frameIndex: 119
       cellRect:
@@ -4359,7 +4269,7 @@ ScriptedImporter:
         y: 0
         width: 31
         height: 17
-      spriteId: e121a75c581f611488a9e8585f63e86e
+      spriteId: e03b4bd9c941c8e49a4697adfbcab547
     - name: The Blood King_Frame_120
       frameIndex: 120
       cellRect:
@@ -4367,7 +4277,7 @@ ScriptedImporter:
         y: 0
         width: 40
         height: 17
-      spriteId: 2a273ac7ba9ec504986a398a2cb11549
+      spriteId: d022913a8ceb48e41ba00366fb5d29c1
     - name: The Blood King_Frame_121
       frameIndex: 121
       cellRect:
@@ -4375,7 +4285,7 @@ ScriptedImporter:
         y: 0
         width: 51
         height: 11
-      spriteId: fd655a572dec054489019fc290a20549
+      spriteId: 2a8d05ca12aec4f4985562cf217151e2
     - name: The Blood King_Frame_122
       frameIndex: 122
       cellRect:
@@ -4383,7 +4293,7 @@ ScriptedImporter:
         y: 0
         width: 55
         height: 10
-      spriteId: 12b5bdc4c25ac5a4b83580623eace069
+      spriteId: a6775d382c7331a4f86e6dc40f39195f
     - name: The Blood King_Frame_123
       frameIndex: 123
       cellRect:
@@ -4391,7 +4301,7 @@ ScriptedImporter:
         y: 0
         width: 65
         height: 10
-      spriteId: eb72a24b5bcde19449abd01a53647835
+      spriteId: b30b45075e21c6d468817e9469723152
     - name: The Blood King_Frame_124
       frameIndex: 124
       cellRect:
@@ -4399,7 +4309,7 @@ ScriptedImporter:
         y: 0
         width: 73
         height: 5
-      spriteId: b07b7bba9a4769147976995b21a2b50c
+      spriteId: 23d8978bb37767947ad2b7a89520e64c
     - name: The Blood King_Frame_125
       frameIndex: 125
       cellRect:
@@ -4407,7 +4317,7 @@ ScriptedImporter:
         y: 0
         width: 83
         height: 5
-      spriteId: 28e3d32cf737dfa4f910df7ff3e677ea
+      spriteId: d6431551b1a1c57438641dc9023a3e24
     - name: The Blood King_Frame_126
       frameIndex: 126
       cellRect:
@@ -4415,7 +4325,7 @@ ScriptedImporter:
         y: 0
         width: 88
         height: 1
-      spriteId: 7313c2fca6b13544f963cd5d12cd2ca5
+      spriteId: 030e7c8a021447145b75f3a149551255
     - name: The Blood King_Frame_127
       frameIndex: 127
       cellRect:
@@ -4423,7 +4333,7 @@ ScriptedImporter:
         y: 0
         width: 89
         height: 1
-      spriteId: 31d9a939e0160994cb25ab6006270e4b
+      spriteId: be659ebfc4ae6df44829d9e1cd06c4a9
     - name: The Blood King_Frame_128
       frameIndex: 128
       cellRect:
@@ -4431,7 +4341,7 @@ ScriptedImporter:
         y: 0
         width: 89
         height: 1
-      spriteId: 18b4dcbf7849a9e47af480df03d62295
+      spriteId: 79d69e3502b3e6044b3ce80469b3987f
     - name: The Blood King_Frame_129
       frameIndex: 129
       cellRect:
@@ -4439,7 +4349,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 2
-      spriteId: 8ce14e94ded411e4e80fb99787e2e722
+      spriteId: fef1363a5add1f74194e66c8563b8f1f
     - name: The Blood King_Frame_130
       frameIndex: 130
       cellRect:
@@ -4447,7 +4357,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 2
-      spriteId: 4249e58dae7ee52448b45d3c82032817
+      spriteId: e85228f6c2f0a6141a18a0ea3c971924
     - name: The Blood King_Frame_131
       frameIndex: 131
       cellRect:
@@ -4455,7 +4365,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 5
-      spriteId: 4d7921c4a7fd5204fa5120d85295af79
+      spriteId: 72eafc250aea72e4fb831b28e5d0ece3
     - name: The Blood King_Frame_132
       frameIndex: 132
       cellRect:
@@ -4463,7 +4373,7 @@ ScriptedImporter:
         y: 0
         width: 19
         height: 24
-      spriteId: e109d367ff2ac77408cc88cd487f6f24
+      spriteId: da0d97dd9b2adb940ba5ebc7f9d59bd6
     - name: The Blood King_Frame_133
       frameIndex: 133
       cellRect:
@@ -4471,7 +4381,7 @@ ScriptedImporter:
         y: 0
         width: 27
         height: 34
-      spriteId: c5842f6f67596da4eb20428ded2ed14b
+      spriteId: b6d751204dc9ae54da0f467857c26ac8
     - name: The Blood King_Frame_134
       frameIndex: 134
       cellRect:
@@ -4479,7 +4389,7 @@ ScriptedImporter:
         y: 0
         width: 25
         height: 38
-      spriteId: 91555b9ac719ae043b268a0313fe2260
+      spriteId: 91241cdb2c7eefb4b8f9e48a6747f9bf
     - name: The Blood King_Frame_135
       frameIndex: 135
       cellRect:
@@ -4487,7 +4397,7 @@ ScriptedImporter:
         y: 0
         width: 25
         height: 39
-      spriteId: c770bc32e5043fe46b128a05774b23eb
+      spriteId: a8cf7b40e02aad849b54d770df0018e8
     - name: The Blood King_Frame_136
       frameIndex: 136
       cellRect:
@@ -4495,7 +4405,7 @@ ScriptedImporter:
         y: 0
         width: 22
         height: 43
-      spriteId: 0ce9aed0a3daccc41b24ab8b9f3e6d3d
+      spriteId: ac54611be4b9bab46b4c43a5f0e5d4b3
     - name: The Blood King_Frame_137
       frameIndex: 137
       cellRect:
@@ -4503,7 +4413,7 @@ ScriptedImporter:
         y: 0
         width: 22
         height: 44
-      spriteId: 48c08f29240273649a22cf9241dffb31
+      spriteId: 113c5c82739f4614d99c1d4904d7552b
     - name: The Blood King_Frame_138
       frameIndex: 138
       cellRect:
@@ -4511,7 +4421,7 @@ ScriptedImporter:
         y: 6
         width: 16
         height: 34
-      spriteId: 70a655675300e4f488258e7e5e6621c2
+      spriteId: a1c8ffdbf161846489145de102526219
     - name: The Blood King_Frame_139
       frameIndex: 139
       cellRect:
@@ -4519,7 +4429,7 @@ ScriptedImporter:
         y: 0
         width: 37
         height: 15
-      spriteId: f23e55ece78cf6d48a164765a7536305
+      spriteId: a6ee32bee88f83e40af4803d8ec5ae13
     - name: The Blood King_Frame_140
       frameIndex: 140
       cellRect:
@@ -4527,7 +4437,7 @@ ScriptedImporter:
         y: 0
         width: 74
         height: 11
-      spriteId: 689f60182f247de429cb7c2f34b8a31d
+      spriteId: 481a029aaab1b14428adf471f9ce93e7
     - name: The Blood King_Frame_141
       frameIndex: 141
       cellRect:
@@ -4535,7 +4445,7 @@ ScriptedImporter:
         y: 0
         width: 90
         height: 7
-      spriteId: 657b66889b886a040b719c43f0f4c5b2
+      spriteId: ded26622a7ab8fe4ca7703872ed58c8b
     - name: The Blood King_Frame_142
       frameIndex: 142
       cellRect:
@@ -4543,7 +4453,7 @@ ScriptedImporter:
         y: 0
         width: 113
         height: 5
-      spriteId: fdc156d3ec993f848b438a632a4b61d6
+      spriteId: d716f107a1c982448af9150ee331edaa
     - name: The Blood King_Frame_143
       frameIndex: 143
       cellRect:
@@ -4551,7 +4461,7 @@ ScriptedImporter:
         y: 0
         width: 132
         height: 3
-      spriteId: 563bdfe8e37ea1d4f82d082f8e01b133
+      spriteId: e38af128b71d98b458444409574509c6
     - name: The Blood King_Frame_144
       frameIndex: 144
       cellRect:
@@ -4559,7 +4469,7 @@ ScriptedImporter:
         y: 0
         width: 135
         height: 1
-      spriteId: 947d8a0f4260aed49ae9a5dfe611a036
+      spriteId: 2a38da1297f87964b9a0aa6fa56ca75b
     - name: The Blood King_Frame_145
       frameIndex: 145
       cellRect:
@@ -4567,7 +4477,7 @@ ScriptedImporter:
         y: 0
         width: 137
         height: 1
-      spriteId: 19ff119b93420974398c88be2d695412
+      spriteId: ed6c14978ed20c6439d1528f67da4b44
     - name: The Blood King_Frame_146
       frameIndex: 146
       cellRect:
@@ -4575,7 +4485,7 @@ ScriptedImporter:
         y: 0
         width: 1
         height: 1
-      spriteId: 92df51fda6c50764abc290f161d510a4
+      spriteId: 7d3ecfba131b14d40b45e5163d51fad7
     - name: The Blood King_Frame_147
       frameIndex: 147
       cellRect:
@@ -4583,7 +4493,7 @@ ScriptedImporter:
         y: 0
         width: 89
         height: 1
-      spriteId: b17e63ca98ed3dc4ca7a9454bf8680ed
+      spriteId: 66ed9664638537249af819430ba77264
     - name: The Blood King_Frame_148
       frameIndex: 148
       cellRect:
@@ -4591,7 +4501,7 @@ ScriptedImporter:
         y: 0
         width: 89
         height: 1
-      spriteId: 832f02bf3457e244dae8186fa94c1f9e
+      spriteId: 5013eadd0da4acb44a6fc85b57e1937f
     - name: The Blood King_Frame_149
       frameIndex: 149
       cellRect:
@@ -4599,7 +4509,7 @@ ScriptedImporter:
         y: 0
         width: 88
         height: 1
-      spriteId: aee93452b57ebd743832c4efe08e3de7
+      spriteId: 38e2ffd8f39d917428d697d9fd949739
     - name: The Blood King_Frame_150
       frameIndex: 150
       cellRect:
@@ -4607,7 +4517,7 @@ ScriptedImporter:
         y: 0
         width: 83
         height: 5
-      spriteId: 77b77df58ef215b41929674360e6887d
+      spriteId: cbeec3e38edd7a143853f96256866a8a
     - name: The Blood King_Frame_151
       frameIndex: 151
       cellRect:
@@ -4615,7 +4525,7 @@ ScriptedImporter:
         y: 0
         width: 73
         height: 5
-      spriteId: e71f60041e7ec6842bf5c10e71f94b14
+      spriteId: b5fb33811c249e141aca2c9799cbc1cc
     - name: The Blood King_Frame_152
       frameIndex: 152
       cellRect:
@@ -4623,7 +4533,7 @@ ScriptedImporter:
         y: 0
         width: 65
         height: 7
-      spriteId: 76931f4cebcf5484e9d821b271606eb6
+      spriteId: 271987c393124ce469dbb54b8d65738a
     - name: The Blood King_Frame_153
       frameIndex: 153
       cellRect:
@@ -4631,7 +4541,7 @@ ScriptedImporter:
         y: 0
         width: 55
         height: 7
-      spriteId: c554d5d449afe51478cf4fc7e2da1f61
+      spriteId: 861953b1beb04f94f9500fd0624b8940
     - name: The Blood King_Frame_154
       frameIndex: 154
       cellRect:
@@ -4639,7 +4549,7 @@ ScriptedImporter:
         y: 0
         width: 51
         height: 11
-      spriteId: 3145a75c151d53c479f95ce867634d46
+      spriteId: c45dcbeae8b79ea4e9e408bcc896b360
     - name: The Blood King_Frame_155
       frameIndex: 155
       cellRect:
@@ -4647,7 +4557,7 @@ ScriptedImporter:
         y: 0
         width: 40
         height: 14
-      spriteId: 81115bc9ba83057419fedc24ebac4767
+      spriteId: b83eae48f5fb4d14b80af5bbe9033621
     - name: The Blood King_Frame_156
       frameIndex: 156
       cellRect:
@@ -4655,7 +4565,7 @@ ScriptedImporter:
         y: 0
         width: 31
         height: 15
-      spriteId: bd01cfd72b5a1d14788346e065266c6f
+      spriteId: 934fadb7895b90d4a8e65fc89626518d
     - name: The Blood King_Frame_157
       frameIndex: 157
       cellRect:
@@ -4663,7 +4573,7 @@ ScriptedImporter:
         y: 0
         width: 25
         height: 17
-      spriteId: 02e235572035f2b4b9d7f94f0acf3438
+      spriteId: 799437ccb71cac64eb3735bd5464b3f5
     - name: The Blood King_Frame_158
       frameIndex: 158
       cellRect:
@@ -4671,46 +4581,10 @@ ScriptedImporter:
         y: 0
         width: 23
         height: 20
-      spriteId: 973163d050782aa429bec2cad615345b
+      spriteId: cbc2dca935c808744a689b4f0e35440a
     linkedCells: []
     parentIndex: -1
-  platformSettings:
-  - name: DefaultTexturePlatform
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Standalone
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
-  - name: Server
-    overridden: 0
-    ignorePlatformSupport: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
+  platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 

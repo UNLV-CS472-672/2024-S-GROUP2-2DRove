@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerSlash1State : PlayerBaseState
 {
-    private float cooldown = .417f;
     private float attackTime;
     private bool combo;
     private bool burning;
@@ -17,7 +16,7 @@ public class PlayerSlash1State : PlayerBaseState
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash1 State");
-        attackTime = cooldown;
+        attackTime = Player.slash1Time;
         combo = false;
         Player.Coroutine(DashDelay(Player));
         Player.animator.SetTrigger("slash1");
@@ -35,7 +34,7 @@ public class PlayerSlash1State : PlayerBaseState
             Player.animator.SetTrigger("neutral");
             Player.SwitchState(Player.NeutralState);
         }
-        else if(attackTime <= .05f && combo == true)
+        else if(attackTime <= (Player.slash1Time * .2f) && combo == true)
         {
             Player.SwitchState(Player.Slash2State);
         }
@@ -105,15 +104,18 @@ public class PlayerSlash1State : PlayerBaseState
 
     IEnumerator DashDelay(PlayerStateManager Player)
     {
-        yield return new WaitForSeconds(cooldown * (3/4));
-        Vector2 inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up"));
-        inputDirection.Normalize();
-        Player.rb.AddForce(inputDirection * 500);
+        yield return new WaitForSeconds(Player.slash1Time * (3/4));
+        Player.inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up"));
+        // Player.lastInput = (Player.inputDirection != Vector2.zero) ? ((Player.lastInput * .80f) + Player.inputDirection * .20f).normalized : Player.lastInput;
+        // Player.lastInput = inputDirection;
+        if (Player.inputDirection != Vector2.zero)
+        {
+            Player.rb.AddForce(100 * Player.slash1Lurch * Player.inputDirection.normalized);
+            if (Player.inputDirection.x != 0){ //If the player is moving horizontally
+                Player.flipped = Player.inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
+            }
 
-        if (inputDirection.x != 0){ //If the player is moving horizontally
-            Player.flipped = inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false
+            Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
         }
-
-        Player.transform.rotation = Quaternion.Euler(new Vector3(0f, Player.flipped ? 180f: 0f, 0f));
     }
 }

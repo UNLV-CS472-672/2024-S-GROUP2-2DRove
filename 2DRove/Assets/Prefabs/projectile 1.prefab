@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PlayerProjectile
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 07a31deda26b8994fad9b93b41030665, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 07a31deda26b8994fad9b93b41030665, type: 3}
       propertyPath: m_LocalScale.x
       value: 9

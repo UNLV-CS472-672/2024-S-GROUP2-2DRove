@@ -3,7 +3,6 @@ using UnityEngine.UIElements;
 
 public class SpiderIdleState : SpiderBaseState
 {
-    private bool idling = true;
     private Transform player;
     public override void EnterState(SpiderStateManager Spider)
     {

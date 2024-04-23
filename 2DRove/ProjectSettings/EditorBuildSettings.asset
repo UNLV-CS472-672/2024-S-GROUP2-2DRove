@@ -5,31 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Map & Scenes/(0) Main Menu.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Map & Scenes/Floor1.unity
+    path: Assets/Map & Scenes/(1) City Level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Map & Scenes/Floor2.unity
-    guid: 351e5204aae35334e9a01ead956c0135
+    path: Assets/Map & Scenes/(1-2) City Boss.unity
+    guid: 7592a2a5773b4bb40a81a527c840d829
   - enabled: 1
-    path: Assets/Map & Scenes/Underworld.unity
+    path: Assets/Map & Scenes/(2) Forest Level.unity
+    guid: a62f68f8af4a69e4d8036b28be985ab4
+  - enabled: 1
+    path: Assets/Map & Scenes/(3) Underworld Boss.unity
     guid: 470a0eb96881742f88c46e9e872489e1
   - enabled: 1
-    path: Assets/Map & Scenes/Victory Screen.unity
+    path: Assets/Map & Scenes/(4) Victory Screen.unity
     guid: 90d432eca7646274997eea96df5418e4
-  - enabled: 1
-    path: Assets/Tests/Test1.unity
-    guid: 97d8cf9253d65684db252ad7d887cb24
-  - enabled: 1
-    path: Assets/Tests/Test2.unity
-    guid: b1a324727a7481d4aaa78c2469afa212
-  - enabled: 1
-    path: Assets/Tests/Test3.unity
-    guid: 9a08983ee960268498f0b5a657143d4f
-  - enabled: 1
-    path: Assets/Tests/Test4.unity
-    guid: 2365c284512f1704a9550e0210f4802c
-  - enabled: 1
-    path: Assets/Tests/Test5.unity
-    guid: 3c00dcf3e65cd14438313ff277f00c27
   m_configObjects: {}

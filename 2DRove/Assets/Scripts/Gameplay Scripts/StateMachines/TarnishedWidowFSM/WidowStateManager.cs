@@ -4,12 +4,19 @@ using UnityEngine;
 
 public class WidowStateManager : MonoBehaviour
 {
+    public float MovementSpeed;
+    public float walkAnimSpeed;
+    public float attackSpeed;
+    public float spitSpeed;
+    public float jumpSpeed;
     public Animator animator;
     public Transform attackPointX;
     public Transform attackPointY;
+    [System.NonSerialized] public float attackTime;
+    [System.NonSerialized] public float spitTime;
+    [System.NonSerialized] public float jumpTime;
     [SerializeField] public float attackRange;
     [SerializeField] public float attackHeight;
-    private Mesh attackHitbox;
     WidowBaseState currentState;
     public WidowAggroState AggroState = new WidowAggroState();
     public WidowAttackState AttackState = new WidowAttackState();
@@ -24,11 +31,16 @@ public class WidowStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        findAnimationTimes();
     }
 
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("attackSpeed", attackSpeed);
+        animator.SetFloat("spitSpeed", spitSpeed);
+        animator.SetFloat("jumpSpeed", jumpSpeed);
+        animator.SetFloat("walkAnimSpeed", walkAnimSpeed);
         currentState.UpdateState(this);
     }
 
@@ -77,5 +89,28 @@ public class WidowStateManager : MonoBehaviour
         }
         Gizmos.DrawWireSphere(attackPointX.position, attackRange);
         Gizmos.DrawWireSphere(attackPointY.position, attackHeight);
+    }
+
+    private void findAnimationTimes()
+    {
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        foreach (AnimationClip clip in clips)
+        {
+            switch (clip.name)
+            {
+                case "attack":
+                    attackTime = clip.length;
+                    break;
+                case "spit":
+                    spitTime = clip.length;
+                    break;
+                case "jump":
+                    jumpTime = clip.length;
+                    break;
+                default:
+                    Debug.Log(clip.name + " is not accounted for.");
+                    break;
+            }
+        }
     }
 }

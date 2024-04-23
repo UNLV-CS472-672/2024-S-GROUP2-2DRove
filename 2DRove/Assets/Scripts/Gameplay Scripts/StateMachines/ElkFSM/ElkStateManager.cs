@@ -6,7 +6,6 @@ public class ElkStateManager : MonoBehaviour
 
 {
     public ElkIdleState IdleState = new ElkIdleState();
-    public ElkHitState HitState = new ElkHitState();
     public ElkEatState EatState = new ElkEatState();
     public ElkSpawnState SpawnState = new ElkSpawnState();
     public ElkDeathState DeathState = new ElkDeathState();

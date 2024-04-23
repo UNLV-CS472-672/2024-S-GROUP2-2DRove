@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GhoulStateManager : MonoBehaviour
@@ -27,6 +28,10 @@ public class GhoulStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other) {
+        currentState.OnCollisionEnter2D(this, other);
     }
 
     private void OnTriggerStay2D(Collider2D other) {
@@ -61,5 +66,15 @@ public class GhoulStateManager : MonoBehaviour
             return;
         }
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    public void CollisionTesting(Collision2D collision2D)
+    {
+        OnCollisionEnter2D(collision2D);
+    }
+
+    public void TriggerTesting(Collider2D collider2D)
+    {
+        OnTriggerStay2D(collider2D);
     }
 }

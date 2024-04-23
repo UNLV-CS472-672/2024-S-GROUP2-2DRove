@@ -44,9 +44,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UI Overlay
+    uniqueID: 2371582529
+    locked: 0
+  - name: Floor
+    uniqueID: 339407625
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI Overlay
-    uniqueID: 2371582529
+  - name: Buildings
+    uniqueID: 1552394835
     locked: 0

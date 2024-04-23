@@ -3,7 +3,6 @@ using UnityEngine.UIElements;
 
 public class GhoulIdleState : GhoulBaseState
 {
-    private bool idling = true;
     private Transform player;
     public override void EnterState(GhoulStateManager ghoul)
     {
@@ -24,7 +23,9 @@ public class GhoulIdleState : GhoulBaseState
         
     } 
 
-    public override void OnTriggerStay2D(GhoulStateManager ghoul, Collider2D other) {
+    public override void OnTriggerStay2D(GhoulStateManager ghoul, Collider2D other) 
+    {
+        
     }
 
     public override void EventTrigger(GhoulStateManager ghoul)

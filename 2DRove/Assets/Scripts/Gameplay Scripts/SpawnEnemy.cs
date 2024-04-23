@@ -1,3 +1,5 @@
+
+/*
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,3 +27,4 @@ public class SpawnEnemy : MonoBehaviour
         return new Vector2(Random.Range(-spawnXRange, spawnXRange), Random.Range(-spawnYRange, spawnYRange)) + (Vector2)transform.position;
     }
 }
+*/

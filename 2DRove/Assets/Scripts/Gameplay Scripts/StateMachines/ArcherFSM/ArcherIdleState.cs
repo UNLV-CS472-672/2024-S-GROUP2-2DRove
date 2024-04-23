@@ -3,7 +3,6 @@ using UnityEngine.UIElements;
 
 public class ArcherIdleState : ArcherBaseState
 {
-    private bool idling = true;
     private Transform player;
     public override void EnterState(ArcherStateManager archer)
     {

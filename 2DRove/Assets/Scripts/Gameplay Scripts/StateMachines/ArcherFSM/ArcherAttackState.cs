@@ -4,7 +4,6 @@ public class ArcherAttackState : ArcherBaseState
 {
     private float attackTime = 1.0f;
     private Animator animator;
-    private bool isSpecial = false;
     public override void EnterState(ArcherStateManager archer)
     {
         Debug.Log("Entering Attack State");

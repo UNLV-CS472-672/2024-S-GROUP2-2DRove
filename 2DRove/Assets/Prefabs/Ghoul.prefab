@@ -297,13 +297,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -6706870763059178733, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 6832731512408637252, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.14, y: 0.21}
+  m_Size: {x: 0.09, y: 0.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -346,7 +346,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.44444442, y: -0.04347826}
     oldSize: {x: 0.09, y: 0.23}
-    newSize: {x: 0.14, y: 0.21}
+    newSize: {x: 0.09, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -411,6 +411,10 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   animator: {fileID: 878488624133352400}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!70 &8365791941300477824
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

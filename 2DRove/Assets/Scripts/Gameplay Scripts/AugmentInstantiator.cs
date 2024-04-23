@@ -41,23 +41,14 @@ public class AugmentInstantiator : MonoBehaviour
 
     void populateRareAugmentDictionary()
     {
-        // Rare Augments
-        AugmentObject augment = rareAugments.placeholder();
-        rareAugmentDictionary.Add(augment.augmentName, augment);
     }
 
     void populateEpicAugmentDictionary()
-    {
-        // Epic Augments
-        AugmentObject augment = epicAugments.placeholder();
-        rareAugmentDictionary.Add(augment.augmentName, augment);
+    { 
     }
 
     void populateLegendaryAugmentDictionary()
     {
-        // Legendary Augments
-        AugmentObject augment = legendaryAugments.placeholder();
-        rareAugmentDictionary.Add(augment.augmentName, augment);
     }
 
     public static void callAugmentMethod(AugmentObject augment)
@@ -211,47 +202,8 @@ public class commonAugments
 }
 
 public class rareAugments
-{
-    public static AugmentObject placeholder()
-    {
-        AugmentObject augmentObject = new AugmentObject();
-        augmentObject.augmentName = "Placeholder1";
-        augmentObject.augmentDescription = "This is a placeholder augment.";
-        augmentObject.augmentType = "Utility";
-        augmentObject.augmentRarity = "Rare";
-        augmentObject.augmentMethodName = "placeholder";
-        augmentObject.AugmentImage = Resources.Load<Sprite>("Augments/placeholder");
-        AugmentInstantiator.rareAugmentDictionary.Add(augmentObject.augmentName, augmentObject);
-        return augmentObject;
-    }
-}
+{}
 public class epicAugments
-{
-    public static AugmentObject placeholder()
-    {
-        AugmentObject augmentObject = new AugmentObject();
-        augmentObject.augmentName = "Placeholder2";
-        augmentObject.augmentDescription = "This is a placeholder augment.";
-        augmentObject.augmentType = "Utility";
-        augmentObject.augmentRarity = "Rare";
-        augmentObject.augmentMethodName = "placeholder";
-        augmentObject.AugmentImage = Resources.Load<Sprite>("Augments/placeholder");
-        AugmentInstantiator.rareAugmentDictionary.Add(augmentObject.augmentName, augmentObject);
-        return augmentObject;
-    }
-}
+{}
 public class legendaryAugments
-{
-    public static AugmentObject placeholder()
-    {
-        AugmentObject augmentObject = new AugmentObject();
-        augmentObject.augmentName = "Placeholder3";
-        augmentObject.augmentDescription = "This is a placeholder augment.";
-        augmentObject.augmentType = "Utility";
-        augmentObject.augmentRarity = "Rare";
-        augmentObject.augmentMethodName = "placeholder";
-        augmentObject.AugmentImage = Resources.Load<Sprite>("Augments/placeholder");
-        AugmentInstantiator.rareAugmentDictionary.Add(augmentObject.augmentName, augmentObject);
-        return augmentObject;
-    }
-}
+{}

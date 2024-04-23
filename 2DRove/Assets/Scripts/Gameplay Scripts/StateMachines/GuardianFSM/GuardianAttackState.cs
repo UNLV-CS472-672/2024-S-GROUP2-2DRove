@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class GuardianAttackState : GuardianBaseState
 {
-    private float attackTime = .917f + .917f;
+    private float attackTime;
     private Animator animator;
     public override void EnterState(GuardianStateManager Guardian)
     {
         Debug.Log("Entering Attack State");
-        attackTime = .917f + .917f;
+        attackTime = (Guardian.attack1Time / Guardian.attack1Speed) + (Guardian.attack2Time / Guardian.attack2Speed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }
@@ -41,7 +41,7 @@ public class GuardianAttackState : GuardianBaseState
             //prepping hitbox for attack 2
             Guardian.GetComponent<CircleCollider2D>().enabled = true;
             LayerMask mask = LayerMask.GetMask("Player");
-            Collider2D[] colliders = Physics2D.OverlapCapsuleAll(Guardian.attack1X.position, new Vector2(Guardian.attack1Length, Guardian.attack1Height), CapsuleDirection2D.Vertical, mask);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(Guardian.attack1.position, Guardian.attack1Length, mask);
 
             foreach (Collider2D collider in colliders)
             {
@@ -77,7 +77,7 @@ public class GuardianAttackState : GuardianBaseState
         else if (attackID == 3)
         {
             LayerMask mask = LayerMask.GetMask("Player");
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(Guardian.attack1X.position, 8, mask);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(Guardian.attack1.position, 8, mask);
 
             foreach (Collider2D collider in colliders)
             {

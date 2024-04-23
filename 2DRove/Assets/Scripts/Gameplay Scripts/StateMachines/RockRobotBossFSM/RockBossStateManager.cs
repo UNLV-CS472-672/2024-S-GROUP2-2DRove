@@ -4,12 +4,21 @@ using UnityEngine;
 
 public class RockBossStateManager : MonoBehaviour
 {
+    public float MovementSpeed;
+    public float walkAnimSpeed;
+    public float rangeAttackSpeed;
+    public float attackSpeed;
+    public float burstSpeed;
+    public float buffSpeed;
     public Animator animator;
     public Transform attackPointX;
     public Transform attackPointY;
+    [System.NonSerialized] public float rangeAttackTime;
+    [System.NonSerialized] public float attackTime;
+    [System.NonSerialized] public float burstTime;
+    [System.NonSerialized] public float buffTime;
     [SerializeField] public float attackRange;
     [SerializeField] public float attackHeight;
-    private Mesh attackHitbox;
     RockBossBaseState currentState;
     public RockBossAggroState AggroState = new RockBossAggroState();
     public RockBossAttackState AttackState = new RockBossAttackState();
@@ -24,11 +33,17 @@ public class RockBossStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        findAnimationTimes();
     }
 
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("rangeAttackSpeed", rangeAttackSpeed);
+        animator.SetFloat("attackSpeed", attackSpeed);
+        animator.SetFloat("buffSpeed", buffSpeed);
+        animator.SetFloat("burstSpeed", burstSpeed);
+        animator.SetFloat("walkAnimSpeed", walkAnimSpeed);
         currentState.UpdateState(this);
     }
 
@@ -78,4 +93,32 @@ public class RockBossStateManager : MonoBehaviour
         Gizmos.DrawWireSphere(attackPointX.position, attackRange);
         Gizmos.DrawWireSphere(attackPointY.position, attackHeight);
     }
+
+    private void findAnimationTimes()
+    {
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        foreach (AnimationClip clip in clips)
+        {
+            switch (clip.name)
+            {
+                case "Range Attack":
+                    rangeAttackTime = clip.length;
+                    break;
+                case "Attack":
+                    attackTime = clip.length;
+                    break;
+                case "Burst":
+                    burstTime = clip.length;
+                    break;
+                case "Buff":
+                    buffTime = clip.length;
+                    break;
+                default:
+                    Debug.Log(clip.name + " is not accounted for.");
+                    break;
+            }
+        }
+    }
+
+    
 }

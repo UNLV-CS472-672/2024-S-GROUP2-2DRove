@@ -27,6 +27,7 @@ jobs:
       uses: wearerequired/lint-action@v2 #might just be @v2
       with:
         dotnet_format: true
+        dotnet_format_dir: 2DRove/
         github_token: ${{ secrets.GITHUB_TOKEN }}
     #there is is the slight possibility that there is more to this than i think
     #if that is the case, then i think it would come from the dotnet sectino

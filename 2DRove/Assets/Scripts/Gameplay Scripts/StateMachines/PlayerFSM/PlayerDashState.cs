@@ -21,7 +21,7 @@ public class PlayerDashState : PlayerBaseState
         dashCooldown = Player.dashCooldown;
 
         //First we raycast from the player in the direction and distance specified of the blink. The layermask is there so it only collides with colliders in the Default layer. We raycast to get collisions so the player cant teleport into/through walls or other objects.
-        hit = Physics2D.Raycast(Player.transform.position, Player.inputDirection, dashDistance, LayerMask.GetMask("Default"));
+        hit = Physics2D.Raycast(Player.transform.position, Player.inputDirection, dashDistance, LayerMask.GetMask("Tile Layer"));
 
         if(hit){ //If the raycast collides with an object
             dashLoc = (Player.inputDirection * (hit.distance - 1f)) + (Vector2)Player.transform.position; //Teleports the player to the object that the raycast collided with, we subtract 1 from hit.distance to prevent the player from teleporting into the block

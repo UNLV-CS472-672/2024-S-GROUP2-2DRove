@@ -51,8 +51,6 @@ namespace MapGenDLANamespace
 
         void Start()
         {
-            // Restore augments from previous level
-            restoreAugments();
             //Clear at the start of a scene being loaded
             tilePositions.Clear();
             borderPositions.Clear();
@@ -159,13 +157,6 @@ namespace MapGenDLANamespace
 
         }
 
-        private void restoreAugments()
-        {
-            foreach(var augment in Augments.chosenAugments)
-            {
-                AugmentInstantiator.callAugmentMethod(augment);
-            }
-        }
         // First tile: hard coding name and position because it should always start at 0.
         private void GenerateFirstTile(Vector2 currentPosition)
         {

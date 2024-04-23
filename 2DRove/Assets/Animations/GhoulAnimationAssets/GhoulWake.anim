@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SummonerSpawn
+  m_Name: GhoulWake
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -17,8 +17,25 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
-  m_SampleRate: 60
+  m_PPtrCurves:
+  - serializedVersion: 2
+    curve:
+    - time: 0
+      value: {fileID: -593170922936138035, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - time: 0.1
+      value: {fileID: 34915774451036933, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - time: 0.20000002
+      value: {fileID: -675020981258011645, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - time: 0.3
+      value: {fileID: -4259223790902345853, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    - time: 0.4
+      value: {fileID: -4259223790902345853, guid: dce3269edb161d8449c596d39fc459fc, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+    flags: 2
+  m_SampleRate: 100
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -31,7 +48,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.41
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -42,7 +59,7 @@ AnimationClip:
     m_LoopBlendPositionY: 0
     m_LoopBlendPositionXZ: 0
     m_KeepOriginalOrientation: 0
-    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionY: 0
     m_KeepOriginalPositionXZ: 0
     m_HeightFromFeet: 0
     m_Mirror: 0

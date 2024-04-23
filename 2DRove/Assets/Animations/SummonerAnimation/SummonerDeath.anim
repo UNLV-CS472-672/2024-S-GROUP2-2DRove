@@ -31,7 +31,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.8
+        time: 0.8000002
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -51,69 +51,42 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -323652854703530506, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - time: 0.1
-      value: {fileID: -8785815402559252401, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - time: 0.2
-      value: {fileID: -4278166038075112002, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - time: 0.3
-      value: {fileID: -8280898182797517107, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - time: 0.4
-      value: {fileID: -818428506299658130, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+      value: {fileID: 3833568725320520804, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    - time: 0.10000014
+      value: {fileID: 7979120255647144660, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    - time: 0.20000005
+      value: {fileID: 8193833212259317070, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    - time: 0.3000002
+      value: {fileID: -2774838690484262228, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    - time: 0.4000001
+      value: {fileID: 542378426273246114, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
     - time: 0.5
-      value: {fileID: -6927147218013704032, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - time: 0.6
-      value: {fileID: -2659780273995544907, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - time: 0.7
-      value: {fileID: -7634053428092709784, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - time: 0.8
-      value: {fileID: -7634053428092709784, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+      value: {fileID: -2683822137965506852, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    - time: 0.60000014
+      value: {fileID: 2014496080835608905, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    - time: 0.70000005
+      value: {fileID: 6326473166854954623, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    - time: 0.8000001
+      value: {fileID: 6326473166854954623, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 60
+  m_SampleRate: 100
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 3305885265
-      script: {fileID: 0}
-      typeID: 212
-      customType: 0
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    pptrCurveMapping:
-    - {fileID: -323652854703530506, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -8785815402559252401, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -4278166038075112002, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -8280898182797517107, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -818428506299658130, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -6927147218013704032, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -2659780273995544907, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -7634053428092709784, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
-    - {fileID: -7634053428092709784, guid: 468bc6ba239eac7479b34bf39262b8fc, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.81666666
+    m_StopTime: 0.81000006
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -124,7 +97,7 @@ AnimationClip:
     m_LoopBlendPositionY: 0
     m_LoopBlendPositionXZ: 0
     m_KeepOriginalOrientation: 0
-    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionY: 0
     m_KeepOriginalPositionXZ: 0
     m_HeightFromFeet: 0
     m_Mirror: 0
@@ -143,7 +116,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.8
+        time: 0.8000002
         value: 0
         inSlope: Infinity
         outSlope: Infinity

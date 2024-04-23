@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using System;
 
 //Generally a PlayerController class is used to contain most if not all player based stuff in one place. (Movement/Actions)
 
@@ -42,6 +43,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float knockbackStrength = 5f; // Adjust this value for knock back 
     private PlayerStateManager playerStateManager;
 
+    //Augment-affected fields
+    [SerializeField] private float speedBoost = 1f;
+    [SerializeField] private float maxMana = 50f;
+    [SerializeField] private float mana = 50f;
+    [SerializeField] private float rangeMana = 5f;
+    [SerializeField] private float healthRegen = 0f;
+    private float lastRegen;
+    private float regenCooldown = 5f;
+    [SerializeField] private float damageBoost = 1f;
+    [SerializeField] private float critRate = 0f;
+    [SerializeField] private bool burning = false;
+    [SerializeField] private float burnDamage = 0f;
+    [SerializeField] private bool isVampire = false;
+    [SerializeField] private bool resurrect = false;
+
 
     //The Start function is called if the script is enabled before any update functions
     private void Start(){
@@ -60,11 +76,11 @@ public class PlayerController : MonoBehaviour
         gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
 
         //Find text fields
-        healthText = GameObject.Find("Health Text").GetComponent<TMP_Text>();
+        healthText = GameObject.Find("TextSliderBar/Text (TMP)").GetComponent<TMP_Text>();
         goldText = GameObject.Find("Gold Text").GetComponent<TMP_Text>();
 
         //Find health slider
-        healthSlider = GameObject.Find("Health Slider").GetComponent<Slider>();
+        healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
 
         //Starts the player with max health and initializes the health slider
         health = maxHealth;
@@ -79,7 +95,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ResetMoveSpeed(float delay) {
         yield return new WaitForSeconds(delay);
-        speedFactor = currentSpeed; // Reset to the normal move speed
+        speedFactor = currentSpeed * speedBoost; // Reset to the normal move speed
     }
 
     //FixedUpdate unlike Update is called on an independant timer ignoring frame rate while Update is called each frame. Because of this, movement in FixedUpdate does not have to be multiplied by Time.deltaTime
@@ -96,6 +112,9 @@ public class PlayerController : MonoBehaviour
 
         if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             rangeAttack();
+        }
+        if(notOnCooldown(lastRegen, regenCooldown)) {
+            regenHealth();
         }
     }
 
@@ -141,17 +160,20 @@ public class PlayerController : MonoBehaviour
 
     //Range Attack
     private void rangeAttack(){
-        GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
-        Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
-        Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
+        if((mana - rangeMana) >= 0) {
+            mana -= rangeMana;
+            GameObject obj = Instantiate(projectilePrefab, transform.position, Quaternion.identity); //This Instantiates a new projectile from the prefab assigned in the editor then assigns it to obj so we can use it later
+            Projectile projectile = obj.GetComponent<Projectile>(); //We grab the Projectile component from the newly created projectile because thats how we can edit the direction (With a public function in the Projectile script)
+            Vector2 direction = (Vector2)(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized; //We find the direction the mouse is relative to the player's transform here. .normalized effectively converts the values in the Vector2 to -1, 0 or 1
 
-        projectile.setDirection(direction);
+            projectile.setDirection(direction);
 
-        lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
-        Collider2D projectileCollider = obj.GetComponent<Collider2D>();
-        Collider2D playerCollider = GetComponent<Collider2D>();
-        if (projectileCollider != null && playerCollider != null) {
-            Physics2D.IgnoreCollision(projectileCollider, playerCollider);
+            lastShootTime = Time.time; //Updates when the player shot last, putting the shoot function on cooldown
+            Collider2D projectileCollider = obj.GetComponent<Collider2D>();
+            Collider2D playerCollider = GetComponent<Collider2D>();
+            if (projectileCollider != null && playerCollider != null) {
+                Physics2D.IgnoreCollision(projectileCollider, playerCollider);
+            }
         }
         
     }
@@ -180,7 +202,18 @@ public class PlayerController : MonoBehaviour
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                enemyScript.TakeDamage(playerAttackDamage);
+                float totalDamage =  playerAttackDamage * damageBoost;
+                float crit = UnityEngine.Random.Range(1, 100);
+                if(crit <= (critRate * 100))
+                {
+                    totalDamage *= 1.5f;
+                }
+                enemyScript.TakeDamage(totalDamage);
+                if(burning) {
+                    //applies burning to enemies
+                    enemyScript.EnableBurning();
+                    enemyScript.setBurnDamage(burnDamage);
+                }
                 if (enemy.CompareTag("Enemy")){
                     Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
                     if (enemyRb != null) {
@@ -239,25 +272,31 @@ public class PlayerController : MonoBehaviour
     //Checks if the player is dead (health being at or below 0)
     private void checkDeath(){
         if (health <= 0){
-            gameOverMenu.EnableGameOverMenu(); //Opens the Game Over Menu
-            Destroy(gameObject); //Immediately destroys the player's gameobject
+            if(resurrect) {
+                resetHealth();
+                DisableResurrect();
+            }
+            else {
+                gameOverMenu.EnableGameOverMenu(); //Opens the Game Over Menu
+                Destroy(gameObject); //Immediately destroys the player's gameobject
+            }
         }
     }
 
     //Updates the visible health bar/slider
     private void setHealthUI(){
-        healthSlider.value = health / maxHealth; //Gets the % of health left
+        // healthSlider.value = health / maxHealth; //Gets the % of health left
 
         //Clamps the health between 0f and 1f (0% - 100%)
         healthSlider.value = Mathf.Clamp(healthSlider.value, 0f, 1f);
 
         //Sets the color of the health bar based on the % of health left
-        if (healthSlider.value > 0.3f){
-            healthSlider.fillRect.GetComponent<Image>().color = Color.green;
-        }
-        else{
-            healthSlider.fillRect.GetComponent<Image>().color = Color.red;
-        }
+        // if (healthSlider.value > 0.3f){
+        //     healthSlider.fillRect.GetComponent<Image>().color = Color.green;
+        // }
+        // else{
+        //     healthSlider.fillRect.GetComponent<Image>().color = Color.red;
+        // }
 
         //Updates the player's health text
         healthText.text = Mathf.Ceil(health).ToString() + "/" + Mathf.Ceil(maxHealth).ToString();
@@ -282,7 +321,21 @@ public class PlayerController : MonoBehaviour
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                enemyScript.TakeDamage(1);
+                float totalDamage =  playerAttackDamage * damageBoost; // increase total damage by damageBoost
+                float crit = UnityEngine.Random.Range(1, 100);
+                if(crit <= (critRate * 100))
+                {
+                    totalDamage *= 1.5f;    // use random number to determine if player hits a crit or not
+                }
+                enemyScript.TakeDamage(totalDamage);
+                if(isVampire) {
+                    healPlayer(1f);
+                }
+                if(burning) {
+                    //applies burning to enemies
+                    enemyScript.EnableBurning();
+                    enemyScript.setBurnDamage(burnDamage);
+                }
                 if (enemy.CompareTag("Enemy")){
                     Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
                     if (enemyRb != null) {
@@ -292,5 +345,142 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+
+
+    // *** AUGMENTS
+
+    /*
+        increaseSpeed: increases speed boost if selected in augment system
+        params: addSpeed - float, increases speedboost by this value
+        @SwiftNemesis use this to connect to frontend
+    */
+    public void IncreaseSpeed(float addSpeed)
+    {
+        speedBoost += addSpeed;
+    }
+
+    /*
+        increaseSpeed: increases speed boost if selected in augment system
+        params: addSpeed - float, increases speedboost by this value
+    */
+    public float getSpeed()
+    {
+        return speedBoost;
+    }
+
+    //increases mana if selected in augment system
+    // @SwiftNemesis use this to connect to frontend
+    public void IncreaseMana(float addMana)
+    {
+        maxMana += addMana;
+        mana = maxMana;
+    }
+
+    //increases Health regen if selected in augment system
+    // @SwiftNemesis use this to connect to frontend
+    public void IncreaseHealthRegen(float addHealthRegen)
+    {
+        healthRegen += addHealthRegen;
+    }
+
+    //increases health automatically
+    private void regenHealth()
+    {
+        lastRegen = Time.time;
+        healPlayer(healthRegen);
+    }
+
+    //increases damage if selected in augment system
+    // @SwiftNemesis use this to connect to frontend
+    public void IncreaseDamage(float addDamage)
+    {
+        damageBoost += addDamage;
+    }
+
+    //increases crit rate if selected in augment system
+    // @SwiftNemisis use this to connect to frontend
+    public void IncreaseCrit(float addCrit)
+    {
+        critRate += addCrit;
+    }
+
+    //enables burning if selected in augment system
+    // @SwiftNemisis use this to connect to frontend
+    public void EnableBurning()
+    {
+        burning = true;
+        burnDamage = 1f;
+    }
+
+    //increases burn damage if selected in augment system, must enable burning to take effect
+    // @SwiftNemisis use this to connect to frontend
+    public void IncreaseBurn(float addBurn)
+    {
+        burnDamage += addBurn;
+    }
+
+    //enables vampiric touch if selected in augment system
+    // player gains 3 hp for every enemy hit
+    // @SwiftNemisis use this to connect to frontend
+    public void EnableVampire()
+    {
+        isVampire = true;
+    }
+
+    //enables resurrection if selected in augment system
+    // player can recover from dying hit and return to full health
+    // @SwiftNemisis use this to connect to frontend
+    public void EnableResurrect()
+    {
+        resurrect = true;
+    }
+
+    //disables resurrection once dying
+    public void DisableResurrect()
+    {
+        resurrect = false;
+    }
+
+    // set health value to max health value
+    public void resetHealth()
+    {
+        health = maxHealth;
+    }
+
+    //returns whether player has burning enabled
+    public bool doesBurn()
+    {
+        return burning;
+    }
+
+    //returns the amount of burn damage
+    public float getBurnDamage()
+    {
+        return burnDamage;
+    }
+
+    //returns the damage boost
+    public float getDamageBoost()
+    {
+        return damageBoost;
+    }
+
+    //returns the crit rate
+    public float getCritRate()
+    {
+        return critRate;
+    }
+
+     //returns whether player has vampiric touch enabled
+    public bool doesVampire()
+    {
+        return isVampire;
+    }
+
+     //returns whether player has resurrection enabled
+    public bool doesResurrect()
+    {
+        return resurrect;
     }
 }

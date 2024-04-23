@@ -75,6 +75,7 @@ public class Augments : MonoBehaviour
                     AugmentInstantiator.legendaryAugmentDictionary.Remove(augmentClicked.augmentName);
                 break;
         }
+        AugmentInstantiator.callAugmentMethod(augmentClicked);
         Reroll();
         unpause();
     }

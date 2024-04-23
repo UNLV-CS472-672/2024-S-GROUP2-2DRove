@@ -1,10 +1,18 @@
 using System.Collections;
+using Codice.Client.Common.GameUI;
 using UnityEngine;
 
 public class PlayerSlash1State : PlayerBaseState
 {
     private float attackTime;
     private bool combo;
+    private bool burning;
+    private float burnDamage;
+    private float damageBoost;
+    private float critRate;
+    private bool isVampire;
+
+    private float playerAttackDamage = 3f;
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash1 State");
@@ -12,6 +20,11 @@ public class PlayerSlash1State : PlayerBaseState
         combo = false;
         Player.Coroutine(DashDelay(Player));
         Player.animator.SetTrigger("slash1");
+        burning = Player.GetComponent<PlayerController>().doesBurn();
+        burnDamage = Player.GetComponent<PlayerController>().getBurnDamage();
+        damageBoost = Player.GetComponent<PlayerController>().getDamageBoost();
+        critRate = Player.GetComponent<PlayerController>().getCritRate();
+        isVampire = Player.GetComponent<PlayerController>().doesVampire();
     }
 
     public override void UpdateState(PlayerStateManager Player)
@@ -58,7 +71,21 @@ public class PlayerSlash1State : PlayerBaseState
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                enemyScript.TakeDamage(1);
+                float totalDamage =  playerAttackDamage * damageBoost; // increase total damage by damageBoost
+                float crit = Random.Range(1, 100);
+                if(crit <= (critRate * 100))
+                {
+                    totalDamage *= 1.5f;  // use random number to determine if player hits a crit or not
+                }
+                enemyScript.TakeDamage(totalDamage);
+                if(isVampire) {
+                     Player.GetComponent<PlayerController>().healPlayer(1f);
+                }
+                if(burning) {
+                    //applies burning to enemies
+                    enemyScript.EnableBurning();
+                    enemyScript.setBurnDamage(burnDamage);
+                }
                 if (enemy.CompareTag("Enemy")){
                     Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
                     if (enemyRb != null) {

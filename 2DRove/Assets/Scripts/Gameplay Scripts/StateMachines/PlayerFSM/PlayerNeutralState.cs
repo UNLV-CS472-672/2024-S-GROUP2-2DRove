@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerNeutralState : PlayerBaseState
 {
+    private float speedBoost = 1;
     public override void EnterState(PlayerStateManager Player)
     {
         //Idle and walking handled in this state
@@ -13,6 +14,7 @@ public class PlayerNeutralState : PlayerBaseState
         Player.animator.ResetTrigger("slash1");
         Player.animator.ResetTrigger("slash2");
         Player.animator.ResetTrigger("slash3");
+        speedBoost = Player.GetComponent<PlayerController>().getSpeed();
     }
 
     public override void UpdateState(PlayerStateManager Player)

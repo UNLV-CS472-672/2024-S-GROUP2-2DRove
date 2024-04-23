@@ -1,6 +1,8 @@
+
 using System;
 using System.Collections.Generic;
-using UnityEngine;      
+using UnityEngine;  
+using Random=UnityEngine.Random;      
       
 namespace EdgeTiles
 {
@@ -9,30 +11,30 @@ namespace EdgeTiles
 
         enum TileType { None, NPeninsula, SPeninsula, WPeninsula, EPeninsula, NECorner, NWCorner, SECorner, SWCorner }
 
-        [SerializeField] private GameObject humpEastPrefab;
-        [SerializeField] private GameObject humpNorthPrefab;
-        [SerializeField] private GameObject humpSouthPrefab;
-        [SerializeField] private GameObject humpWestPrefab;
-        [SerializeField] private GameObject NEcornerPrefab;
-        [SerializeField] private GameObject NWcornerPrefab;
-        [SerializeField] private GameObject SEcornerPrefab;
-        [SerializeField] private GameObject SWcornerPrefab;
+        [SerializeField] private GameObject[] humpEastPrefab;
+        [SerializeField] private GameObject[] humpNorthPrefab;
+        [SerializeField] private GameObject[] humpSouthPrefab;
+        [SerializeField] private GameObject[] humpWestPrefab;
+        [SerializeField] private GameObject[] NEcornerPrefab;
+        [SerializeField] private GameObject[] NWcornerPrefab;
+        [SerializeField] private GameObject[] SEcornerPrefab;
+        [SerializeField] private GameObject[] SWcornerPrefab;
 
-        private Dictionary<Vector2Int, GameObject> tileObjects;
-        private int scale;
-        private HashSet<Vector2Int> tilePositions;
+        private Dictionary<Vector2, GameObject> tileObjects;
+        private float scale;
+        private HashSet<Vector2> tilePositions;
 
-        public void SetTilePositions(HashSet<Vector2Int> positions)
+        public void SetTilePositions(HashSet<Vector2> positions)
         {
-            tilePositions = new HashSet<Vector2Int>(positions); // Create a copy to avoid unintended modifications
+            tilePositions = new HashSet<Vector2>(positions); // Create a copy to avoid unintended modifications
         }
 
-        public void SetScale(int newScale)
+        public void SetScale(float newScale)
         {
             scale = newScale;
         }
 
-        public void SetTileObjects(Dictionary<Vector2Int, GameObject> objects)
+        public void SetTileObjects(Dictionary<Vector2, GameObject> objects)
         {
             tileObjects = objects;
         }
@@ -43,28 +45,28 @@ namespace EdgeTiles
                 TileType tileType = GetTileType(tilePos);
                 switch (tileType) {
                     case TileType.NECorner:
-                        SwapTile(tilePos, NEcornerPrefab); // Replace with North East Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(NEcornerPrefab)); // Replace with North East Corner tile prefab
                         break;
                     case TileType.NWCorner:
-                        SwapTile(tilePos, NWcornerPrefab); // Replace with North West Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(NWcornerPrefab)); // Replace with North West Corner tile prefab
                         break;
                     case TileType.SECorner:
-                        SwapTile(tilePos, SEcornerPrefab); // Replace with South East Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(SEcornerPrefab)); // Replace with South East Corner tile prefab
                         break;
                     case TileType.SWCorner:
-                        SwapTile(tilePos, SWcornerPrefab); // Replace with South West Corner tile prefab
+                        SwapTile(tilePos, getRandomTile(SWcornerPrefab)); // Replace with South West Corner tile prefab
                         break;
                     case TileType.NPeninsula:
-                        SwapTile(tilePos, humpNorthPrefab); // Replace with North Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpNorthPrefab)); // Replace with North Peninsula tile prefab
                         break;
                     case TileType.SPeninsula:
-                        SwapTile(tilePos, humpSouthPrefab); // Replace with South Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpSouthPrefab)); // Replace with South Peninsula tile prefab
                         break;
                     case TileType.WPeninsula:
-                        SwapTile(tilePos, humpWestPrefab); // Replace with West Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpWestPrefab)); // Replace with West Peninsula tile prefab
                         break;
                     case TileType.EPeninsula:
-                        SwapTile(tilePos, humpEastPrefab); // Replace with East Peninsula tile prefab
+                        SwapTile(tilePos, getRandomTile(humpEastPrefab)); // Replace with East Peninsula tile prefab
                         break;
                     case TileType.None:
                     default:
@@ -74,20 +76,23 @@ namespace EdgeTiles
             }
         }
 
+        private GameObject getRandomTile(GameObject[] tileSet){
+            return tileSet[Random.Range(0, tileSet.Length)];
+        }
 
         // Check the type of tile based on its neighbors.
-        TileType GetTileType(Vector2Int tilePos)
+        TileType GetTileType(Vector2 tilePos)
         {
-            Vector2Int isoUp = new Vector2Int(-1, 1);
-            Vector2Int isoDown = new Vector2Int(1, -1);
-            Vector2Int isoLeft = new Vector2Int(-1, -1);
-            Vector2Int isoRight = new Vector2Int(1, 1);
+            Vector2 isoUp = new Vector2(-1.0f, 1.0f);
+            Vector2 isoDown = new Vector2(1.0f, -1.0f);
+            Vector2 isoLeft = new Vector2(-1.0f, -1.0f);
+            Vector2 isoRight = new Vector2(1.0f, 1.0f);
             
             // Adjust for the scale of your grid if necessary
-            isoUp *= scale / 2;
-            isoDown *= scale / 2;
-            isoLeft *= scale / 2;
-            isoRight *= scale / 2;
+            //isoUp *= scale / 2;
+            //isoDown *= scale / 2;
+            //isoLeft *= scale / 2;
+            //isoRight *= scale / 2;
 
             bool up = tilePositions.Contains(tilePos + isoUp);
             bool down = tilePositions.Contains(tilePos + isoDown);
@@ -142,7 +147,7 @@ namespace EdgeTiles
         }
 
         // Swap the tile at the given position with a new tile based on type
-        void SwapTile(Vector2Int position, GameObject newTilePrefab) {
+        void SwapTile(Vector2 position, GameObject newTilePrefab) {
             if (tileObjects.TryGetValue(position, out GameObject oldTile)) {
                 Debug.Log("HERE: " + position);
                 // Destroy or disable the old tile

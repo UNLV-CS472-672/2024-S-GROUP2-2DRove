@@ -5,6 +5,11 @@ public class PlayerSlash3State : PlayerBaseState
 {
     private float attackTime;
     private bool combo;
+    private float damageBoost;
+    private float critRate;
+    private bool isVampire;
+
+    private float playerAttackDamage = 3f;
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash3 State");
@@ -12,6 +17,9 @@ public class PlayerSlash3State : PlayerBaseState
         combo = false;
         Player.Coroutine(DashDelay(Player));
         Player.animator.SetTrigger("slash3");
+        damageBoost = Player.GetComponent<PlayerController>().getDamageBoost();
+        critRate = Player.GetComponent<PlayerController>().getCritRate();
+        isVampire = Player.GetComponent<PlayerController>().doesVampire();
     }
 
     public override void UpdateState(PlayerStateManager Player)
@@ -58,7 +66,16 @@ public class PlayerSlash3State : PlayerBaseState
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                enemyScript.TakeDamage(1);
+                float totalDamage =  playerAttackDamage * damageBoost;  // increase total damage by damageBoost
+                float crit = Random.Range(1, 100);
+                if(crit <= (critRate * 100))
+                {
+                    totalDamage *= 1.5f;    // use random number to determine if player hits a crit or not
+                }
+                enemyScript.TakeDamage(totalDamage);
+                if(isVampire) {
+                     Player.GetComponent<PlayerController>().healPlayer(3f);
+                }
                 if (enemy.CompareTag("Enemy")){
                     Rigidbody2D enemyRb = enemy.GetComponent<Rigidbody2D>();
                     if (enemyRb != null) {

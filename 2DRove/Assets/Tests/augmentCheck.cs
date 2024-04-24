@@ -12,5 +12,6 @@ public class augmentCheck
     IEnumerator InitializeAugments()
     {
         GameObject augment = new GameObject();
+        yield return null;
     }
 }

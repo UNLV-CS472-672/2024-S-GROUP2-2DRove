@@ -226,12 +226,12 @@ public class GameplayTests
 
         foreach (BomberBaseState state in states)
         {
-            if (state == stateManager.AggroState)
+            if (state == stateManager.AggroState || state == stateManager.AttackState)
             {
                 stateManager.SwitchState(state);
-                yield return null;
-                stateManager.TriggerTesting(player.GetComponent<BoxCollider2D>());
                 stateManager.EventTrigger();
+                stateManager.TriggerTesting(player.GetComponent<BoxCollider2D>());
+                yield return new WaitForSeconds(3.5f);
                 stateManager.CollisionTesting(new Collision2D());
                 stateManager.TakeDamageAnimation();
             }
@@ -521,11 +521,11 @@ public class GameplayTests
             if (state == stateManager.AlertState || state == stateManager.FleeState)
             {
                 stateManager.SwitchState(state);
-                yield return null;
                 stateManager.TriggerTesting(player.GetComponent<BoxCollider2D>());
+                stateManager.TakeDamageAnimation();
+                yield return null;
                 stateManager.EventTrigger();
                 stateManager.CollisionTesting(new Collision2D());
-                stateManager.TakeDamageAnimation();
             }
             else
             {
@@ -593,11 +593,11 @@ public class GameplayTests
             if (state == stateManager.AlertState || state == stateManager.FleeState)
             {
                 stateManager.SwitchState(state);
-                yield return null;
                 stateManager.TriggerTesting(player.GetComponent<BoxCollider2D>());
-                stateManager.EventTrigger();
-                stateManager.CollisionTesting(new Collision2D());
                 stateManager.TakeDamageAnimation();
+                stateManager.CollisionTesting(new Collision2D());
+                yield return null;
+                stateManager.EventTrigger();
             }
             else
             {

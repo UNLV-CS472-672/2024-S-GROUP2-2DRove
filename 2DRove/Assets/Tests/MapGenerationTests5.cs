@@ -13,9 +13,9 @@ public class MapGenerationTests5
     public IEnumerator LoadForestMap()
     {
         // Load a proper scene that is like a scene we would load normally
-        SceneManager.LoadSceneAsync("Test5", LoadSceneMode.Single);
+        var load = SceneManager.LoadSceneAsync("Test5", LoadSceneMode.Single);
         // Yield next frame to scene
-        yield return null;
+        yield return load;
         // Unload the scene
     }
 }

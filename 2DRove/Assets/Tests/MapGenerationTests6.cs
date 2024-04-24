@@ -10,12 +10,12 @@ public class MapGenerationTests6
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     // `yield return null;` to skip a frame.
     [UnityTest]
-    public IEnumerator LoadForestMap()
+    public IEnumerator LoadCityMap()
     {
         // Load a proper scene that is like a scene we would load normally
-        SceneManager.LoadSceneAsync("Test6", LoadSceneMode.Single);
+        var load = SceneManager.LoadSceneAsync("Test6", LoadSceneMode.Single);
         // Yield next frame to scene
-        yield return null;
+        yield return load;
         // Unload the scene
     }
 }

@@ -686,7 +686,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1784697184210614169}
     m_Modifications:
     - target: {fileID: 2342707645792678203, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
       propertyPath: closeAugmentList
@@ -2063,5 +2063,4 @@ SceneRoots:
   - {fileID: 2053622603}
   - {fileID: 2094151165}
   - {fileID: 1767975380}
-  - {fileID: 1350270515}
   - {fileID: 2013444018}

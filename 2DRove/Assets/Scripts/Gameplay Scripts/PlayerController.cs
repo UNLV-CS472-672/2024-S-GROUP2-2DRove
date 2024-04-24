@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float rangeMana = 5f;
     [SerializeField] private float healthRegen = 0f;
     private float lastRegen;
-    private float regenCooldown = 5f;
+    private float regenCooldown = 1f;
     [SerializeField] private float damageBoost = 1f;
     [SerializeField] private float critRate = 0f;
     [SerializeField] private bool burning = false;
@@ -476,7 +476,11 @@ public class PlayerController : MonoBehaviour
     {
         resurrect = false;
     }
-
+    // Increase health
+    public void increaseHealth(int amount)
+    {
+        maxHealth += amount;
+    }
     // set health value to max health value
     public void resetHealth()
     {

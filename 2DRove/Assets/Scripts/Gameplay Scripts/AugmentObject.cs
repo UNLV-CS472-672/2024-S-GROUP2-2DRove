@@ -30,6 +30,11 @@ public class AugmentMethods
     public class commonAugmentMethods
     {
         public static int burnStackCounter = 0;
+        public void healthBoost()
+        {
+            PlayerController player = getPlayer();
+            player.increaseHealth(10); // Increase health by 10.
+        }
         public void healthRegen()
         {
             PlayerController player = getPlayer();

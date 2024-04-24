@@ -8,7 +8,7 @@ public class ElkDeathState : ElkBaseState
     {
         Debug.Log("Entering Death State...");
         elk.animator.SetBool("isDead", true);
-        elk.GetComponent<Collider2D>().enabled = false;
+        // elk.GetComponent<Collider2D>().enabled = false;
         elk.enabled = false;
 
         // wait for 1 second before destroy

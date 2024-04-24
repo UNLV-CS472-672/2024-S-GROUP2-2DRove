@@ -7,7 +7,7 @@ public class CagedShockerDeathState : CagedShockerBaseState
     {
         Debug.Log("Entering Death State...");
         CagedShocker.animator.SetBool("isDead", true);
-        CagedShocker.GetComponent<Collider2D>().enabled = false;
+        // CagedShocker.GetComponent<Collider2D>().enabled = false;
         // CagedShocker.GetComponent<CapsuleCollider2D>().enabled = false;
         CagedShocker.enabled = false;
         // wait for 1 second

@@ -7,7 +7,7 @@ public class ArcherDeathState : ArcherBaseState
     {
         Debug.Log("Entering Death State...");
         archer.animator.SetBool("isDead", true);
-        archer.GetComponent<Collider2D>().enabled = false;
+        // archer.GetComponent<Collider2D>().enabled = false;
         // archer.GetComponent<CapsuleCollider2D>().enabled = false;
         archer.enabled = false;
         // wait for 1 second

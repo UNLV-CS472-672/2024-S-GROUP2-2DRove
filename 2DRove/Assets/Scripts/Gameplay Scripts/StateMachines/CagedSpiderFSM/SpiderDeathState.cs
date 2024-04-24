@@ -7,7 +7,7 @@ public class SpiderDeathState : SpiderBaseState
     {
         Debug.Log("Entering Death State...");
         Spider.animator.SetBool("isDead", true);
-        Spider.GetComponent<Collider2D>().enabled = false;
+        // Spider.GetComponent<Collider2D>().enabled = false;
         // Spider.GetComponent<CapsuleCollider2D>().enabled = false;
         Spider.enabled = false;
         // wait for 1 second

@@ -8,7 +8,7 @@ public class FoxDeathState : FoxBaseState
     {
         Debug.Log("Entering Death State...");
         fox.animator.SetBool("isDead", true);
-        fox.GetComponent<Collider2D>().enabled = false;
+        // fox.GetComponent<Collider2D>().enabled = false;
         fox.enabled = false;
 
         // wait for 1 second before destroy

@@ -13,7 +13,7 @@ public class BomberDeathState : BomberBaseState
     {
         Debug.Log("Entering Death State...");
         bomber.animator.SetBool("isDead", true);
-        bomber.GetComponent<Collider2D>().enabled = false;
+        // bomber.GetComponent<Collider2D>().enabled = false;
         bomber.enabled = false;
 
         // wait for 1 second
@@ -27,7 +27,7 @@ public class BomberDeathState : BomberBaseState
         }
         else
         {   // Check that Shadow is not found
-            Debug.LogError("BombShadow not found as a child of the bomber!");
+            Debug.Log("BombShadow not found as a child of the bomber!");
         }
         // isdead wait 1 second
         isDead = true;

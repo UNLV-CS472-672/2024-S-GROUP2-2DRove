@@ -42,6 +42,7 @@ public class GuardianStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         afterImage = this.GetComponent<AfterImage>();
+        animator = this.GetComponent<Animator>();
         /*
 
             DO NOT DELETE
@@ -75,6 +76,10 @@ public class GuardianStateManager : MonoBehaviour
         animator.SetFloat("AoESpeed", AoESpeed);
         animator.SetFloat("AoEResetSpeed", AoEResetSpeed);
         currentState.UpdateState(this);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        currentState.OnCollisionEnter2D(this, other);
     }
 
     private void OnTriggerStay2D(Collider2D other) {
@@ -142,5 +147,15 @@ public class GuardianStateManager : MonoBehaviour
                     break;
             }
         }
+    }
+
+    public void CollisionTesting(Collision2D collision2D)
+    {
+        OnCollisionEnter2D(collision2D);
+    }
+
+    public void TriggerTesting(Collider2D collider2D)
+    {
+        OnTriggerStay2D(collider2D);
     }
 }

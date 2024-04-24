@@ -7,7 +7,7 @@ public class DaggerMushroomDeathState : DaggerMushroomBaseState
     {
         Debug.Log("Entering Death State...");
         mushroom.animator.SetBool("isDead", true);
-        mushroom.GetComponent<Collider2D>().enabled = false;
+        // mushroom.GetComponent<Collider2D>().enabled = false;
         // mushroom.GetComponent<CapsuleCollider2D>().enabled = false;
         mushroom.enabled = false;
         // wait for 1 second

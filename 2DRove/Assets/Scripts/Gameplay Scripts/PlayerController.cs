@@ -269,7 +269,7 @@ public class PlayerController : MonoBehaviour
     //Deals damage to the player's health value
     public void dealDamage(float damage){
         health -= damage;
-        checkDeath();
+        // checkDeath();
         //setHealthandMana();
     }
 

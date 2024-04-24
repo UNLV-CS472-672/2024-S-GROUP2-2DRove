@@ -20,6 +20,7 @@ public class augmentCheck
         var augmentInst = augment.AddComponent<AugmentInstantiator>();
         var augmentObj = new AugmentObject();
         var augmentTest = augment.AddComponent<Augments>();
+        var augmentMeth = new AugmentMethods();
         
         Button buttonObj = button.AddComponent<Button>();
 

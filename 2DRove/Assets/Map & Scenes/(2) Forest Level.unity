@@ -274,7 +274,7 @@ MonoBehaviour:
   bottomMost: 0
   assignEdges: {fileID: 602447686}
   assignEdgesForest: {fileID: 0}
-  scale: 6.5
+  scale: 2
   maxX: 10
   maxY: 10
   minX: -10

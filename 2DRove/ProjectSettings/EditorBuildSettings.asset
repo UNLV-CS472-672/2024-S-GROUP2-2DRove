@@ -23,4 +23,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Map & Scenes/(4) Victory Screen.unity
     guid: 90d432eca7646274997eea96df5418e4
+  - enabled: 1
+    path: Assets/Tests/Test1.unity
+    guid: 756200c229a8bc34f9e1e9c79ef9ee47
+  - enabled: 1
+    path: Assets/Tests/Test2.unity
+    guid: a43a395824da3d34299c75d6fd41331b
+  - enabled: 1
+    path: Assets/Tests/Test3.unity
+    guid: c20c357f6754b2e4386ed37ebc9d6fa2
+  - enabled: 1
+    path: Assets/Tests/Test4.unity
+    guid: 0463e412e2583f0488439651ab4900c7
+  - enabled: 1
+    path: Assets/Tests/Test5.unity
+    guid: 40d2227afae8cea4c9b665593bc7d8e7
+  - enabled: 1
+    path: Assets/Tests/Test6.unity
+    guid: 18b858e1f223c9849a78057ef78b47ef
+  - enabled: 1
+    path: Assets/Tests/Test7.unity
+    guid: 8e110a979e2976e4687e6f6bc1eee200
   m_configObjects: {}

@@ -121,8 +121,8 @@ public class PlayerController : MonoBehaviour
         // if(input.actions["Shoot"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
         //     Slash();
         // }
-/*
-        if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
+
+  /*      if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             rangeAttack();
         }*/
         if(notOnCooldown(lastRegen, regenCooldown)) {
@@ -269,7 +269,7 @@ public class PlayerController : MonoBehaviour
     //Deals damage to the player's health value
     public void dealDamage(float damage){
         health -= damage;
-        // checkDeath();
+        //checkDeath();
         //setHealthandMana();
     }
 
@@ -300,7 +300,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //Updates the visible health bar/slider
-    /*
+/*
     private void setHealthandMana(){
         // healthSlider.value = health / maxHealth; //Gets the % of health left
 
@@ -325,8 +325,8 @@ public class PlayerController : MonoBehaviour
 
         //Updates the player's mana text
         manaText.text = Mathf.Ceil(mana).ToString() + "/" + Mathf.Ceil(maxMana).ToString();
-    }*/
-
+    }
+*/
     //Adds the coin's value to the player's coin count
     public void addCoin(int amount){
         coins += amount;

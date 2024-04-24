@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D col)
     {
         GameObject target = col.gameObject; //Saves the game object the projectile collided with
         Vector2 knockbackDirection = (Vector2)(transform.position - target.transform.position).normalized;

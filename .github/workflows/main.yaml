@@ -14,9 +14,11 @@ jobs:
   runLinter:
     name: Run Linter
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2 #example code uses v3 but i noticed runTests uses v2
+
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
@@ -24,6 +26,7 @@ jobs:
         dotnet-version: "6.0.x"
 
     - name: Run Linter
+
       uses: wearerequired/lint-action@v2 #might just be @v2
       with:
         dotnet_format: true

@@ -338,25 +338,6 @@ namespace MapGenDLACityNamespace
             return closestTile;
         }
 
-
-
-
-        Vector2 FindFarthestTile(Vector2 startPoint)
-        {
-            Vector2 farthestTile = new Vector2(0, 0);
-            float maxDistance = 0;
-            foreach (var tile in tilePositions)
-            {
-                float distance = Vector2.Distance(startPoint, tile);
-                if (distance > maxDistance)
-                {
-                    maxDistance = distance;
-                    farthestTile = tile;
-                }
-            }
-            return farthestTile;
-        }
-
         Vector2 GenerateRandomBorderEndpoint()
         {
             int side = Random.Range(0, 4); // Randomly select one of the four sides

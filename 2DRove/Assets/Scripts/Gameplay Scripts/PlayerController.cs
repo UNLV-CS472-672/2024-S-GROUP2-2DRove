@@ -300,7 +300,7 @@ public class PlayerController : MonoBehaviour
     }
 
     //Updates the visible health bar/slider
-    /*
+
     private void setHealthandMana(){
         // healthSlider.value = health / maxHealth; //Gets the % of health left
 
@@ -325,7 +325,7 @@ public class PlayerController : MonoBehaviour
 
         //Updates the player's mana text
         manaText.text = Mathf.Ceil(mana).ToString() + "/" + Mathf.Ceil(maxMana).ToString();
-    }*/
+    }
 
     //Adds the coin's value to the player's coin count
     public void addCoin(int amount){

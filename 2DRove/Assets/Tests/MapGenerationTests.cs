@@ -13,9 +13,9 @@ public class MapGenerationTests
     public IEnumerator LoadProperMap()
     {
         // Load a proper scene that is like a scene we would load normally
-        SceneManager.LoadSceneAsync("Test1", LoadSceneMode.Single);
+        var load = SceneManager.LoadSceneAsync("Test1", LoadSceneMode.Single);
         // Yield next frame to scene
-        yield return null;
+        yield return load;
 
     }
 }

@@ -15,7 +15,7 @@ public class MapGenerationTests7
         // Load a proper scene that is like a scene we would load normally
         SceneManager.LoadSceneAsync("Test7", LoadSceneMode.Single);
         // Yield next frame to scene
-        yield return null;
+        yield return new WaitForSeconds(10f);
         // Unload the scene
     }
 }

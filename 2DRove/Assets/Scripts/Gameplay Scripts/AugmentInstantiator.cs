@@ -91,7 +91,7 @@ public class AugmentInstantiator : MonoBehaviour
                 break;
             }
         }
-    }
+    } 
 }
 
 public class commonAugments

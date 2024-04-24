@@ -10,6 +10,9 @@ public class PlayerSlash3State : PlayerBaseState
     private bool isVampire;
 
     private float playerAttackDamage = 3f;
+
+    private AudioSource attackSound;
+
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash3 State");
@@ -17,6 +20,8 @@ public class PlayerSlash3State : PlayerBaseState
         combo = false;
         Player.Coroutine(DashDelay(Player));
         Player.animator.SetTrigger("slash3");
+        AudioSource[] sources = Player.GetComponents<AudioSource>();
+        attackSound = sources[2];
         damageBoost = Player.GetComponent<PlayerController>().getDamageBoost();
         critRate = Player.GetComponent<PlayerController>().getCritRate();
         isVampire = Player.GetComponent<PlayerController>().doesVampire();
@@ -89,6 +94,7 @@ public class PlayerSlash3State : PlayerBaseState
 
     public override void TakeDamage(PlayerStateManager Player)
     {
+        attackSound.Stop();
         Player.SwitchState(Player.HitState);
     }
 
@@ -98,8 +104,10 @@ public class PlayerSlash3State : PlayerBaseState
         Player.inputDirection = new Vector2(Player.findDirectionFromInputs("Left", "Right"), Player.findDirectionFromInputs("Down", "Up"));
         // Player.lastInput = (Player.inputDirection != Vector2.zero) ? ((Player.lastInput * .80f) + Player.inputDirection * .20f).normalized : Player.lastInput;
         // Player.lastInput = inputDirection;
+        attackSound.Play();
         if (Player.inputDirection == Vector2.zero)
         {
+
             //already normalized
             Vector2 direction = new(Player.transform.localEulerAngles.y < 90 ? 1 : -1, 0);
             Player.rb.AddForce(100 * Player.slash3Lurch * direction);

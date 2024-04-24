@@ -10,13 +10,14 @@ public class SpitterAttackState : SpitterBaseState
     public float attackCooldown = 2.0f; // Cooldown between attacks
     private bool isAttackInitiated = false; // To control attack initiation
     private Coroutine attackCoroutine; // To keep track of the coroutine
-
+    private AudioSource attackSound;
     public override void EnterState(SpitterStateManager spitter)
     {
         this.spitter = spitter;
         playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform; // Use null-conditional to prevent error
         animator = spitter.GetComponent<Animator>();
-
+        AudioSource[] sources = spitter.GetComponents<AudioSource>();
+        attackSound = sources[0];
         if (playerTransform != null)
         {
             isAttackInitiated = false; // Reset attack initiation flag
@@ -82,7 +83,7 @@ public class SpitterAttackState : SpitterBaseState
     private void FireProjectile()
     {
         if (playerTransform == null) return; // Extra check to ensure player is not null
-
+        attackSound.Play();
         GameObject projectilePrefab = spitter.ProjectilePrefab;
         Transform projectileSpawnPoint = spitter.ProjectileSpawnPoint;
 

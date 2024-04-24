@@ -5,6 +5,7 @@ public class GuardianHitState : GuardianBaseState
     private float health;
     private Animator animator;
     private float hitStun = .167f;
+    private int hitSoundIdx;
     public override void EnterState(GuardianStateManager Guardian)
     {
         Debug.Log("Entering Hit State...");
@@ -12,6 +13,9 @@ public class GuardianHitState : GuardianBaseState
         //set animation bool hitstunn to true or smth
         // NO NEED TO SET TRIGGER bc its done in NewEnemy for now
         // animator.SetTrigger("hit");
+        AudioSource[] sources = Guardian.GetComponents<AudioSource>();
+        hitSoundIdx = Random.Range(3, 7);
+        sources[hitSoundIdx].Play();
 
         health = Guardian.GetComponent<NewEnemy>().CurrentHeath();
         Debug.Log("HP: " + health);

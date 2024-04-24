@@ -8,6 +8,7 @@ public class GuadianSpecialState : GuardianBaseState
     private float yPos;
     private float playerXPos;
     private Animator animator;
+    private AudioSource attackSound;
     public override void EnterState(GuardianStateManager Guardian)
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -17,6 +18,9 @@ public class GuadianSpecialState : GuardianBaseState
         Debug.Log("Entering Dash State");
         specialTime = (Guardian.AoETime / Guardian.AoESpeed) + (Guardian.AoEResetTime / Guardian.AoEResetSpeed);
         animator = Guardian.GetComponent<Animator>();
+        AudioSource[] sources = Guardian.GetComponents<AudioSource>();
+        attackSound = sources[1];
+        attackSound.Play();
         animator.SetTrigger("special");
         Guardian.afterImage.makeGhost = false;
     }

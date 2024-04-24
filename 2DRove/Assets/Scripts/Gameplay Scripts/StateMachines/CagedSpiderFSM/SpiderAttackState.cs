@@ -4,11 +4,14 @@ public class SpiderAttackState : SpiderBaseState
 {
     private float attackTime = 5.0f;
     private Animator animator;
+    private AudioSource attackSound;
     public override void EnterState(SpiderStateManager Spider)
     {
         Debug.Log("Entering Attack State");
         attackTime = 2.0f;
         animator = Spider.GetComponent<Animator>();
+        AudioSource[] sources = Spider.GetComponents<AudioSource>();
+        attackSound = sources[0];
         animator.SetBool("attacking", true);
     }
 
@@ -39,7 +42,7 @@ public class SpiderAttackState : SpiderBaseState
         Vector2 knockbackDirection = (Vector2)(Spider.transform.position - Spider.attackPoint.position).normalized;
         LayerMask mask = LayerMask.GetMask("Player");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(Spider.attackPoint.position, Spider.attackRange, mask);
-
+        attackSound.Play();
         foreach (Collider2D collider in colliders)
         {
             if (collider.CompareTag("Player"))
@@ -54,6 +57,7 @@ public class SpiderAttackState : SpiderBaseState
 
     public override void TakeDamage(SpiderStateManager Spider)
     {
+        attackSound.Stop();
         Spider.SwitchState(Spider.HitState);
     }
 }

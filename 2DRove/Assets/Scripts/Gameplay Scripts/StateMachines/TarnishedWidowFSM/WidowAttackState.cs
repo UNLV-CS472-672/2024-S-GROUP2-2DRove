@@ -6,10 +6,17 @@ public class WidowAttackState : WidowBaseState
     private float attackTime;
     private Animator animator;
     private int returnAttackType;
+    private AudioSource spitSound;
+    private AudioSource attackSound;
+    private AudioSource jumpSound;
     public override void EnterState(WidowStateManager Widow)
     {
         Debug.Log("Entering Attack State");
         animator = Widow.GetComponent<Animator>();
+        AudioSource[] sources = Widow.GetComponents<AudioSource>();
+        jumpSound = sources[0];
+        spitSound = sources[1];
+        attackSound = sources[2];
         PerformRandomAttack(Widow);
     }
 
@@ -75,18 +82,21 @@ public class WidowAttackState : WidowBaseState
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
                 if (returnAttackType == 1) //spitting attack
                 {
+                    spitSound.Play();
                     playerScript.dealDamage(15);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 25, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
                 else if (returnAttackType == 0) //jumping
                 {
+                    jumpSound.Play();
                     playerScript.dealDamage(10);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 40, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
                 else if (returnAttackType == 2) //melee
                 {
+                    attackSound.Play();
                     playerScript.dealDamage(10);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
@@ -99,6 +109,9 @@ public class WidowAttackState : WidowBaseState
     }
     public override void TakeDamage(WidowStateManager Widow)
     {
+        jumpSound.Stop();
+        spitSound.Stop();
+        attackSound.Stop();
         Widow.SwitchState(Widow.HitState);
     }
 }

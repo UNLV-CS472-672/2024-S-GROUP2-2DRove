@@ -15,9 +15,17 @@ public class DaggerMushroomStateManager : MonoBehaviour
     public DaggerMushroomIdleState IdleState = new DaggerMushroomIdleState();
     public DaggerMushroomSpawnState SpawnState = new DaggerMushroomSpawnState();
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        //new aduio part
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Dagger");
+        }
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

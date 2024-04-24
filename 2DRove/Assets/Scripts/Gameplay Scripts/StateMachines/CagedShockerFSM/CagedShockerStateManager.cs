@@ -19,10 +19,18 @@ public class CagedShockerStateManager : MonoBehaviour
     public CagedShockerSpawnState SpawnState = new CagedShockerSpawnState();
     public CagedShockerLurch1State Lurch1State = new CagedShockerLurch1State();
     public CagedShockerLurch2State Lurch2State = new CagedShockerLurch2State();
+    public AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        //new aduio part
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "CagedShocker");
+        }
+        
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

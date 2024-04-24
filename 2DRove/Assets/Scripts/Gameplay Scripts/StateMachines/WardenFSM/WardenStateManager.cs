@@ -17,9 +17,17 @@ public class WardenStateManager : MonoBehaviour
     public WardenIdleState IdleState = new WardenIdleState();
     public WardenSpawnState SpawnState = new WardenSpawnState();
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        //new aduio part
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Warden");
+        }
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

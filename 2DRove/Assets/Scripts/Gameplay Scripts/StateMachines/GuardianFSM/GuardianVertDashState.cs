@@ -8,6 +8,7 @@ public class GuardianVertDashState : GuardianBaseState
     private float yPos;
     private float playerYPos;
     private Animator animator;
+    private AudioSource moveSound;
     public override void EnterState(GuardianStateManager Guardian)
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -16,6 +17,9 @@ public class GuardianVertDashState : GuardianBaseState
         Debug.Log("Entering Dash State");
         dashTime = ((Guardian.vertDashTime * 2) / Guardian.vertDashSpeed);
         animator = Guardian.GetComponent<Animator>();
+        AudioSource[] sources = Guardian.GetComponents<AudioSource>();
+        moveSound = sources[0];
+        moveSound.Play();
         animator.SetTrigger("vertDash");
         Guardian.GetComponent<PolygonCollider2D>().enabled = true;
         Guardian.afterImage.makeGhost = true;

@@ -24,10 +24,15 @@ public class WidowStateManager : MonoBehaviour
     public WidowHitState HitState = new WidowHitState();
     public WidowIdleState IdleState = new WidowIdleState();
     public WidowSpawnState SpawnState = new WidowSpawnState();
-
+    public AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Widow");
+        }
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

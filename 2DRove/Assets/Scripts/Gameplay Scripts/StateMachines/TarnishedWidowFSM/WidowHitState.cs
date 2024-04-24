@@ -5,11 +5,16 @@ public class WidowHitState : WidowBaseState
     private float health;
     private Animator animator;
     private float hitStun = 0f;
+
+    private int soundIdx;
+
     public override void EnterState(WidowStateManager Widow)
     {
         Debug.Log("Entering Hit State...");
         animator = Widow.GetComponent<Animator>();
-
+        AudioSource[] sources = Widow.GetComponents<AudioSource>();
+        soundIdx = Random.Range(3, 6);
+        sources[soundIdx].Play();
         health = Widow.GetComponent<NewEnemy>().CurrentHeath();
         Debug.Log("HP: " + health);
         if (health <= 0)

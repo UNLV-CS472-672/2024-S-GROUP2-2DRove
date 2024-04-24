@@ -15,9 +15,19 @@ public class ArcherStateManager : MonoBehaviour
     public ArcherIdleState IdleState = new ArcherIdleState();
     public ArcherSpawnState SpawnState = new ArcherSpawnState();
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        //new aduio part
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Archer");
+        }
+        
+
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

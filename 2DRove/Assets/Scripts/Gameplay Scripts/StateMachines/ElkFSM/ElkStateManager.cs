@@ -22,9 +22,15 @@ public class ElkStateManager : MonoBehaviour
     public Transform Player => player; 
     public float PlayerRange => playerRange; 
 
+    public AudioManager audioManager;
 
     void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Animals");
+        }
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

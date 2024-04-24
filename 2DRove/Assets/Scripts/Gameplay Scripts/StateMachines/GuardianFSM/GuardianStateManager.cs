@@ -36,12 +36,20 @@ public class GuardianStateManager : MonoBehaviour
     public GuardianHorizontalDashState HorizontalDashState = new GuardianHorizontalDashState();
     public GuadianSpecialState SpecialState = new GuadianSpecialState();
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
         currentState = SpawnState;
         currentState.EnterState(this);
         afterImage = this.GetComponent<AfterImage>();
+        //new aduio part
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Guardian");
+        }
         /*
 
             DO NOT DELETE

@@ -23,13 +23,18 @@ public class SpitterStateManager : MonoBehaviour
     public GameObject ProjectilePrefab => projectilePrefab;
     public Transform ProjectileSpawnPoint => projectileSpawnPoint;
     public Transform attackPoint;
-
+    public AudioManager audioManager;
 
     void Start()
     {
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Spitter");
+        }
 
         // AttackState.Setup(this, projectilePrefab, projectileSpawnPoint);
         if (projectilePrefab == null || projectileSpawnPoint == null)

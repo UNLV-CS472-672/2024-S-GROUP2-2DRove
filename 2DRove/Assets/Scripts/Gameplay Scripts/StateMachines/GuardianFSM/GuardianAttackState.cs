@@ -4,10 +4,15 @@ public class GuardianAttackState : GuardianBaseState
 {
     private float attackTime;
     private Animator animator;
+    private AudioSource attackSound;
+    private AudioSource moveSound;
+    private AudioSource hitSound;
     public override void EnterState(GuardianStateManager Guardian)
     {
         Debug.Log("Entering Attack State");
         attackTime = (Guardian.attack1Time / Guardian.attack1Speed) + (Guardian.attack2Time / Guardian.attack2Speed);
+        AudioSource[] sources = Guardian.GetComponents<AudioSource>();
+        attackSound = sources[2];
         animator = Guardian.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }
@@ -42,6 +47,7 @@ public class GuardianAttackState : GuardianBaseState
             Guardian.GetComponent<CircleCollider2D>().enabled = true;
             LayerMask mask = LayerMask.GetMask("Player");
             Collider2D[] colliders = Physics2D.OverlapCircleAll(Guardian.attack1.position, Guardian.attack1Length, mask);
+            attackSound.Play();
 
             foreach (Collider2D collider in colliders)
             {
@@ -60,7 +66,7 @@ public class GuardianAttackState : GuardianBaseState
             Vector2 knockbackDirection = (Vector2)(Guardian.transform.position - Guardian.attack2.position).normalized;
             LayerMask mask = LayerMask.GetMask("Player");
             Collider2D[] colliders = Physics2D.OverlapCircleAll(Guardian.attack2.position, Guardian.attack2Range, mask);
-
+        
             foreach (Collider2D collider in colliders)
             {
                 if (collider.CompareTag("Player"))

@@ -7,7 +7,7 @@ public class GuardianDeathState : GuardianBaseState
     {
         Debug.Log("Entering Death State...");
         Guardian.animator.SetBool("isDead", true);
-        Guardian.GetComponent<Collider2D>().enabled = false;
+        // Guardian.GetComponent<Collider2D>().enabled = false;
         // Guardian.GetComponent<CapsuleCollider2D>().enabled = false;
         Guardian.enabled = false;
         // wait for 1 second

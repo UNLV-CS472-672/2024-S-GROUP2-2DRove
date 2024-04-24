@@ -8,8 +8,8 @@ public class SummonerDeathState : SummonerBaseState
         summoner.animator.SetBool("isDead", true);
 
         // Disabling the collider so it no longer interacts with other game objects
-        summoner.GetComponent<Collider2D>().enabled = false;
-        summoner.GetComponent<CapsuleCollider2D>().enabled = false;
+        // summoner.GetComponent<Collider2D>().enabled = false;
+        // summoner.GetComponent<CapsuleCollider2D>().enabled = false;
         
         summoner.enabled = false;
 

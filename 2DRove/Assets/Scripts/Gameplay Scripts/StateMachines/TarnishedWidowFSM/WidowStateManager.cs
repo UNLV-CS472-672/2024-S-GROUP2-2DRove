@@ -44,6 +44,10 @@ public class WidowStateManager : MonoBehaviour
         currentState.UpdateState(this);
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        currentState.OnCollisionEnter2D(this, other);
+    }
+
     private void OnTriggerStay2D(Collider2D other) {
         currentState.OnTriggerStay2D(this, other);
     }
@@ -113,4 +117,14 @@ public class WidowStateManager : MonoBehaviour
             }
         }
     }
+    
+    public void CollisionTesting(Collision2D collision2D)
+    {
+        OnCollisionEnter2D(collision2D);
+    }
+
+    public void TriggerTesting(Collider2D collider2D)
+    {
+        OnTriggerStay2D(collider2D);
+    } 
 }

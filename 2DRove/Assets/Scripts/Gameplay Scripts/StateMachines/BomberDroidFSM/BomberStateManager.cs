@@ -18,7 +18,7 @@ public class BomberStateManager : MonoBehaviour
     public int AttackDamage => attackDamage; // Public getter to access the damage value
     public float AttackTime => attackTime; // Public getter to access the attack time value
 
-    public Transform Player => player; // Public getter for the player's transform
+    public Transform Player;
     public float AttackHeight => attackHeight; // Public getter for the attack height
 
 
@@ -39,11 +39,16 @@ public class BomberStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        Player = GameObject.FindWithTag("Player").GetComponent<Transform>();
     }
 
     void Update()
     {
         currentState.UpdateState(this);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        currentState.OnCollisionEnter2D(this, other);
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -88,5 +93,15 @@ public class BomberStateManager : MonoBehaviour
         // Shows the attackRange, attackHeight
         Gizmos.DrawWireSphere(attackPointX.position, attackRange);
         Gizmos.DrawWireSphere(attackPointY.position, attackHeight);
+    }
+    
+    public void CollisionTesting(Collision2D collision2D)
+    {
+        OnCollisionEnter2D(collision2D);
+    }
+
+    public void TriggerTesting(Collider2D collider2D)
+    {
+        OnTriggerStay2D(collider2D);
     }
 }

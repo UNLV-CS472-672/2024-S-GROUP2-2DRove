@@ -7,7 +7,7 @@ public class WardenDeathState : WardenBaseState
     {
         Debug.Log("Entering Death State...");
         Warden.animator.SetBool("isDead", true);
-        Warden.GetComponent<Collider2D>().enabled = false;
+        // Warden.GetComponent<Collider2D>().enabled = false;
         // Warden.GetComponent<CapsuleCollider2D>().enabled = false;
         Warden.enabled = false;
         // wait for 1 second

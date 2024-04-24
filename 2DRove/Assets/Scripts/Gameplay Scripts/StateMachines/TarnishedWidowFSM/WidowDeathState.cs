@@ -7,7 +7,7 @@ public class WidowDeathState : WidowBaseState
     {
         Debug.Log("Entering Death State...");
         Widow.animator.SetBool("isDead", true);
-        Widow.GetComponent<Collider2D>().enabled = false;
+        // Widow.GetComponent<Collider2D>().enabled = false;
         // Widow.GetComponent<CapsuleCollider2D>().enabled = false;
         Widow.enabled = false;
         // wait for 1 second

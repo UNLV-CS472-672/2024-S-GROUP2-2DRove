@@ -7,7 +7,7 @@ public class RockBossDeathState : RockBossBaseState
     {
         Debug.Log("Entering Death State...");
         RockBoss.animator.SetBool("isDead", true);
-        RockBoss.GetComponent<Collider2D>().enabled = false;
+        // RockBoss.GetComponent<Collider2D>().enabled = false;
         // RockBoss.GetComponent<CapsuleCollider2D>().enabled = false;
         RockBoss.enabled = false;
         // wait for 1 second

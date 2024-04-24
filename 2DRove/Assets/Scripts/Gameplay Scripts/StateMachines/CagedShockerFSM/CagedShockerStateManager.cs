@@ -34,6 +34,10 @@ public class CagedShockerStateManager : MonoBehaviour
         currentState.UpdateState(this);
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        currentState.OnCollisionEnter2D(this, other);
+    }
+
     private void OnTriggerStay2D(Collider2D other) {
         currentState.OnTriggerStay2D(this, other);
     }
@@ -67,5 +71,15 @@ public class CagedShockerStateManager : MonoBehaviour
         }
         Gizmos.DrawWireSphere(attackPointX.position, attackRange);
         Gizmos.DrawWireSphere(attackPointY.position, attackHeight);
+    }
+
+    public void CollisionTesting(Collision2D collision2D)
+    {
+        OnCollisionEnter2D(collision2D);
+    }
+
+    public void TriggerTesting(Collider2D collider2D)
+    {
+        OnTriggerStay2D(collider2D);
     }
 }

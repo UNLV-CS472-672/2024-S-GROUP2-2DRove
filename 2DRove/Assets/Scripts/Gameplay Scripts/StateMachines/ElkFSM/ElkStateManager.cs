@@ -19,7 +19,7 @@ public class ElkStateManager : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] public float playerRange;
 
-    public Transform Player => player; 
+    public Transform Player;
     public float PlayerRange => playerRange; 
 
 
@@ -28,11 +28,16 @@ public class ElkStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        Player = GameObject.FindWithTag("Player").GetComponent<Transform>();
     }
 
     void Update()
     {
         currentState.UpdateState(this);
+    }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        currentState.OnCollisionEnter2D(this, other);
     }
 
     private void OnTriggerStay2D(Collider2D other)
@@ -74,5 +79,15 @@ public class ElkStateManager : MonoBehaviour
         // Gizmos.DrawWireSphere(playerRange)
         Gizmos.DrawWireSphere(transform.position, playerRange);
 
+    }
+
+    public void CollisionTesting(Collision2D collision2D)
+    {
+        OnCollisionEnter2D(collision2D);
+    }
+
+    public void TriggerTesting(Collider2D collider2D)
+    {
+        OnTriggerStay2D(collider2D);
     }
 }

@@ -16,8 +16,6 @@ public class augmentCheck
         yield return load;
 
         GameObject augment = new GameObject();
-<<<<<<< HEAD
-=======
         GameObject button = new GameObject();
         var augmentInst = augment.AddComponent<AugmentInstantiator>();
         var augmentObj = new AugmentObject();
@@ -31,7 +29,6 @@ public class augmentCheck
         augmentTest.augmentOverlayCloseButton = buttonObj;
         augmentTest.augmentCards[0] = buttonObj;
 
->>>>>>> 511d8e6086b328369ae923b7bea5d30bec300d3a
         yield return null;
     }
 }

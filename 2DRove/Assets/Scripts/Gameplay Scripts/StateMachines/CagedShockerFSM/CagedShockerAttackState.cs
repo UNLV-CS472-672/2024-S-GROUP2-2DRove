@@ -4,11 +4,16 @@ public class CagedShockerAttackState : CagedShockerBaseState
 {
     private float attackTime = 1.333f;
     private Animator animator;
+
+    private AudioSource attackSound;
+
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
         Debug.Log("Entering Attack State");
         attackTime = 1.333f;
         animator = CagedShocker.GetComponent<Animator>();
+        AudioSource[] sources = CagedShocker.GetComponents<AudioSource>();
+        attackSound = sources[0];
         animator.SetTrigger("attacking");
     }
 
@@ -39,7 +44,7 @@ public class CagedShockerAttackState : CagedShockerBaseState
         LayerMask mask = LayerMask.GetMask("Player");
         Collider2D[] colliders = Physics2D.OverlapCapsuleAll(CagedShocker.attackPointX.position, new Vector2(CagedShocker.attackRange * 2, CagedShocker.attackHeight), CapsuleDirection2D.Vertical, mask);
 
-        
+        attackSound.Play();
 
         foreach (Collider2D collider in colliders)
         {
@@ -55,6 +60,7 @@ public class CagedShockerAttackState : CagedShockerBaseState
 
     public override void TakeDamage(CagedShockerStateManager CagedShocker)
     {
+        attackSound.Stop();
         CagedShocker.SwitchState(CagedShocker.HitState);
     }
 }

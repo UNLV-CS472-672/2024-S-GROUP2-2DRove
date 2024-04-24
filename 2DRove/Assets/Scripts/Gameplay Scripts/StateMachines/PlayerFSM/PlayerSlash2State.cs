@@ -10,6 +10,8 @@ public class PlayerSlash2State : PlayerBaseState
     private float playerAttackDamage = 3f;
     private bool isVampire;
 
+    private AudioSource attackSound;
+
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash2 State");
@@ -17,6 +19,8 @@ public class PlayerSlash2State : PlayerBaseState
         combo = false;
         Player.Coroutine(DashDelay(Player));
         Player.animator.SetTrigger("slash2");
+        AudioSource[] sources = Player.GetComponents<AudioSource>();
+        attackSound = sources[1];
         damageBoost = Player.GetComponent<PlayerController>().getDamageBoost();
         critRate = Player.GetComponent<PlayerController>().getCritRate();
         isVampire = Player.GetComponent<PlayerController>().doesVampire();
@@ -58,7 +62,7 @@ public class PlayerSlash2State : PlayerBaseState
         Vector2 knockbackDirection = (Vector2)(Player.transform.position - Player.attackPoint.position).normalized;
         LayerMask mask = LayerMask.GetMask("Enemy");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(Player.attackPoint.position, Player.attackRange, mask);
-
+        attackSound.Play();
         foreach (Collider2D enemy in colliders)
         {
             if (enemy is not BoxCollider2D)
@@ -89,6 +93,7 @@ public class PlayerSlash2State : PlayerBaseState
 
     public override void TakeDamage(PlayerStateManager Player)
     {
+        attackSound.Stop();
         Player.SwitchState(Player.HitState);
     }
 

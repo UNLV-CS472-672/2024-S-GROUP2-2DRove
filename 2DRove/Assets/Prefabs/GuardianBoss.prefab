@@ -305,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4012842002547039159
 Transform:
   m_ObjectHideFlags: 0
@@ -421,12 +421,12 @@ MonoBehaviour:
   horizontalDashSpeed: 1
   AoESpeed: 1
   AoEResetSpeed: 1
-  afterImage: {fileID: 1680049920885591672}
   animator: {fileID: 878488624133352400}
   attack1: {fileID: 7210264281584237184}
   attack1Length: 6.5
   attack2: {fileID: 2842349094672134666}
   attack2Range: 6.1
+  audioManager: {fileID: 0}
 --- !u!114 &1680049920885591672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,6 +530,10 @@ MonoBehaviour:
   maxHealth: 50
   currentHealth: 0
   animator: {fileID: 878488624133352400}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!70 &6891807063455474922
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

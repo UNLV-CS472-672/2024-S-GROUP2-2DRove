@@ -5,11 +5,14 @@ public class WardenAttackState : WardenBaseState
 {
     private float attackTime = .9f;
     private Animator animator;
+    private AudioSource attackSound;
     public override void EnterState(WardenStateManager Warden)
     {
         Debug.Log("Entering Attack State");
         attackTime = .9f;
         animator = Warden.GetComponent<Animator>();
+        AudioSource[] sources = Warden.GetComponents<AudioSource>();
+        attackSound = sources[0];
         animator.SetBool("attacking", true);
     }
 
@@ -46,6 +49,8 @@ public class WardenAttackState : WardenBaseState
         LayerMask mask = LayerMask.GetMask("Player");
         Collider2D[] colliders = Physics2D.OverlapCapsuleAll(Warden.attackPointX.position, new Vector2(Warden.attackRange * 2, Warden.attackHeight), CapsuleDirection2D.Vertical, 0, mask);
 
+        attackSound.Play();
+
         foreach (Collider2D collider in colliders)
         {
             if (collider.CompareTag("Player"))
@@ -71,6 +76,7 @@ public class WardenAttackState : WardenBaseState
     }
     public override void TakeDamage(WardenStateManager Warden)
     {
+        attackSound.Stop();
         Warden.SwitchState(Warden.HitState);
     }
 }

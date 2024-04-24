@@ -8,6 +8,8 @@ public class GuardianHorizontalDashState : GuardianBaseState
     private float yPos;
     private float playerXPos;
     private Animator animator;
+    private AudioSource moveSound;
+
     public override void EnterState(GuardianStateManager Guardian)
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -17,6 +19,9 @@ public class GuardianHorizontalDashState : GuardianBaseState
         Debug.Log("Entering Dash State");
         dashTime = (Guardian.horizontalDashTime / Guardian.horizontalDashSpeed);
         animator = Guardian.GetComponent<Animator>();
+        AudioSource[] sources = Guardian.GetComponents<AudioSource>();
+        moveSound = sources[0];
+        moveSound.Play();
         animator.SetTrigger("horizontalDash");
     }
 

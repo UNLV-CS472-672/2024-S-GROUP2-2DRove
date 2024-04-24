@@ -4,11 +4,16 @@ public class GhoulAttackState : GhoulBaseState
 {
     private float attackTime = .9f;
     private Animator animator;
+    private AudioSource attackSound;
+    private AudioSource hitSound;
     public override void EnterState(GhoulStateManager ghoul)
     {
         Debug.Log("Entering Attack State");
         attackTime = .9f;
         animator = ghoul.GetComponent<Animator>();
+        AudioSource[] sources = ghoul.GetComponents<AudioSource>();
+        attackSound = sources[0];
+        hitSound = sources[1];
         animator.SetBool("attacking", true);
     }
 
@@ -40,6 +45,7 @@ public class GhoulAttackState : GhoulBaseState
         LayerMask mask = LayerMask.GetMask("Player");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(ghoul.attackPoint.position, ghoul.attackRange, mask);
 
+        attackSound.Play();
         foreach (Collider2D collider in colliders)
         {
             if (collider.CompareTag("Player"))
@@ -54,6 +60,8 @@ public class GhoulAttackState : GhoulBaseState
 
     public override void TakeDamage(GhoulStateManager ghoul)
     {
+        attackSound.Stop();
+        hitSound.Play();
         ghoul.SwitchState(ghoul.HitState);
     }
 }

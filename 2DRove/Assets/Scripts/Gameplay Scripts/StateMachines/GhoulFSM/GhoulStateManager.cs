@@ -16,9 +16,17 @@ public class GhoulStateManager : MonoBehaviour
     public GhoulIdleState IdleState = new GhoulIdleState();
     public GhoulSpawnState SpawnState = new GhoulSpawnState();
 
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
+        //new aduio part
+        audioManager = FindObjectOfType<AudioManager>();
+        if(this.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Ghoul");
+        }
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

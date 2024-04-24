@@ -40,6 +40,7 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerHitState HitState = new PlayerHitState();
     public PlayerSpawnState SpawnState = new PlayerSpawnState();
     public PlayerDashState DashState = new PlayerDashState();
+    public AudioManager audioManager;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,14 @@ public class PlayerStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+
+        //new aduio part
+        audioManager = FindObjectOfType<AudioManager>();
+        if(gameObject.GetComponent<AudioSource>() == null)
+        {
+            audioManager.AddAudioSourcesToEnemy(gameObject, "Player");
+        }
+
         rb = this.GetComponent<Rigidbody2D>();
         flipped = false;
         // lastInput = new Vector2(.9f, .1f);

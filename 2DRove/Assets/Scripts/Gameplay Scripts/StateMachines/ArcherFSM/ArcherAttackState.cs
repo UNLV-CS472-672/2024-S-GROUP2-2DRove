@@ -4,11 +4,17 @@ public class ArcherAttackState : ArcherBaseState
 {
     private float attackTime = 1.0f;
     private Animator animator;
+    private AudioSource attackSound;
+    private AudioSource hitSound;
     public override void EnterState(ArcherStateManager archer)
     {
         Debug.Log("Entering Attack State");
         attackTime = 1.0f;
         animator = archer.GetComponent<Animator>();
+        AudioSource[] sources = archer.GetComponents<AudioSource>();
+        attackSound = sources[0];
+        hitSound = sources[1];
+
         animator.SetBool("attacking", true);
     }
 
@@ -40,6 +46,8 @@ public class ArcherAttackState : ArcherBaseState
         LayerMask mask = LayerMask.GetMask("Player");
         Collider2D[] colliders = Physics2D.OverlapCircleAll(archer.attackPoint.position, archer.attackRange, mask);
 
+        attackSound.Play();
+
         foreach (Collider2D collider in colliders)
         {
             if (collider.CompareTag("Player"))
@@ -54,6 +62,8 @@ public class ArcherAttackState : ArcherBaseState
 
     public override void TakeDamage(ArcherStateManager archer)
     {
+        attackSound.Stop();
+        hitSound.Play();
         archer.SwitchState(archer.HitState);
     }
 }

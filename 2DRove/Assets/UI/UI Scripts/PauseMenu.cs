@@ -71,4 +71,8 @@ public class PauseMenu : MonoBehaviour
         }
         SceneManager.LoadScene(0); //This reloads the current level
     }
+    // Save the game
+    public void SaveGame(){
+       
+    }
 }

@@ -14,4 +14,9 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Exiting Game...");
         Application.Quit();
     }
+
+    //load the game
+    public void LoadGame(){
+        Debug.Log("Loading Game...");
+    }
 }

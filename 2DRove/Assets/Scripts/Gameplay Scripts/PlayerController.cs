@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maxMana = 50f;
     [SerializeField] private float mana = 50f;
     [SerializeField] private float rangeMana = 5f;
-    [SerializeField] private float healthRegen = 0f;
+    private float healthRegen = 1f;
     private float lastRegen;
     private float regenCooldown = 1f;
     [SerializeField] private float damageBoost = 1f;
@@ -127,8 +127,6 @@ public class PlayerController : MonoBehaviour
         }
         if(notOnCooldown(lastRegen, regenCooldown)) {
             regenHealth();
-        }
-        if(notOnCooldown(lastRegen, 1f)) {
             regenMana();
         }
         setHealthandMana();

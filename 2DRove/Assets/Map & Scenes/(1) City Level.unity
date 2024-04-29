@@ -1942,7 +1942,6 @@ MonoBehaviour:
   maxMana: 50
   mana: 50
   rangeMana: 5
-  healthRegen: 0
   damageBoost: 1
   critRate: 0
   burning: 0
@@ -1962,7 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputDirection: {x: 0, y: 0}
-  MovementSpeed: 20
+  MovementSpeed: 4
   walkAnimSpeed: 1
   slash1Speed: 1
   slash2Speed: 1
@@ -2041,12 +2040,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1350270519}
     - target: {fileID: 6136816129912976044, guid: e0cca80155750354588d2b55cfc1d0cc, type: 3}
+      propertyPath: healthRegen
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6136816129912976044, guid: e0cca80155750354588d2b55cfc1d0cc, type: 3}
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 1350270517}
     - target: {fileID: 7232168957210259056, guid: e0cca80155750354588d2b55cfc1d0cc, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451259438903978777, guid: e0cca80155750354588d2b55cfc1d0cc, type: 3}
+      propertyPath: MovementSpeed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

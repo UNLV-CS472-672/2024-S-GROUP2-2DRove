@@ -78,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3680375527322660632
 Transform:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputDirection: {x: 0, y: 0}
-  MovementSpeed: 20
+  MovementSpeed: 15
   walkAnimSpeed: 1
   slash1Speed: 1
   slash2Speed: 1
@@ -205,8 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65af4b292c6b6e4583fa4245458c416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 999
-  maxHealth: 999
+  health: 30
+  maxHealth: 30
   coins: 0
   speedFactor: 50
   dashDistance: 4
@@ -218,7 +218,7 @@ MonoBehaviour:
   healthSlider: {fileID: 3864653422150677615}
   manaSlider: {fileID: 2296941007204669838}
   manaText: {fileID: 2296941007924824819}
-  gameOverMenu: {fileID: 0}
+  gameOverMenu: {fileID: 6727682946938755896}
   slashPoint: {fileID: 4385648770207125721}
   slashRange: 4.41
   enemyLayer:
@@ -226,8 +226,8 @@ MonoBehaviour:
     m_Bits: 0
   knockbackStrength: 5
   speedBoost: 1
-  maxMana: 50
-  mana: 50
+  maxMana: 20
+  mana: 20
   rangeMana: 5
   damageBoost: 1
   critRate: 0
@@ -501,6 +501,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Overlay
       objectReference: {fileID: 0}
+    - target: {fileID: 3422571682178918247, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2036361279289652128, guid: 3e090bd80538d4f8780a45dec99ec833, type: 3}
+    - target: {fileID: 3422571682178918247, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3422571682178918247, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOverMenu, uiAsm
+      objectReference: {fileID: 0}
     - target: {fileID: 3991577271359147835, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -645,6 +657,18 @@ PrefabInstance:
       propertyPath: m_WholeNumbers
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5240750041011491469, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2036361279289652128, guid: 3e090bd80538d4f8780a45dec99ec833, type: 3}
+    - target: {fileID: 5240750041011491469, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5240750041011491469, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameOverMenu, uiAsm
+      objectReference: {fileID: 0}
     - target: {fileID: 5756721148599464599, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 662
@@ -695,9 +719,31 @@ PrefabInstance:
     - {fileID: 4013194075466973428, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
     - {fileID: 6756216736534916145, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
     - {fileID: 966036174551254482, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+    - {fileID: 7993507056446701661, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6982783669611882355, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6727682946938755896}
   m_SourcePrefab: {fileID: 100100000, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+--- !u!1 &2125514548825380808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6982783669611882355, guid: 448c680a159a89e4c94ce8138171547e, type: 3}
+  m_PrefabInstance: {fileID: 9050138448873402555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6727682946938755896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125514548825380808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b5bd3e07a734686b5ad5eaa5595bd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverMenuUI: {fileID: 2125514548825380808}
 --- !u!114 &2296941007204669838 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7095653575237462325, guid: 448c680a159a89e4c94ce8138171547e, type: 3}

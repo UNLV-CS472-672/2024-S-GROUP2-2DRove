@@ -17,6 +17,6 @@ public class GameOverMenu : MonoBehaviour
     }
 
     public void GoToMainMenu(){
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("(0) Main Menu");
     }
 }

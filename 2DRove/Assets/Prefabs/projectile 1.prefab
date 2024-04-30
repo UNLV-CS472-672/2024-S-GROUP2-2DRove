@@ -180,5 +180,5 @@ MonoBehaviour:
   projectileLifetime: 5
   velocity: 15
   damage: 0
-  rangedDamage: 15
+  rangedDamage: 5
   knockbackStrength: 2

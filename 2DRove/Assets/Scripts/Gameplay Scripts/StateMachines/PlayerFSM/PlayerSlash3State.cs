@@ -9,7 +9,6 @@ public class PlayerSlash3State : PlayerBaseState
     private float critRate;
     private bool isVampire;
 
-    private float playerAttackDamage = 3f;
     public override void EnterState(PlayerStateManager Player)
     {
         Debug.Log("Entering Slash3 State");
@@ -66,7 +65,7 @@ public class PlayerSlash3State : PlayerBaseState
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                float totalDamage =  playerAttackDamage * damageBoost;  // increase total damage by damageBoost
+                float totalDamage =  Player.slash3Damage * damageBoost;  // increase total damage by damageBoost
                 float crit = Random.Range(1, 100);
                 if(crit <= (critRate * 100))
                 {

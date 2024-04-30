@@ -7,7 +7,6 @@ public class PlayerSlash2State : PlayerBaseState
     private bool combo;
     private float damageBoost;
     private float critRate;
-    private float playerAttackDamage = 3f;
     private bool isVampire;
 
     public override void EnterState(PlayerStateManager Player)
@@ -66,7 +65,7 @@ public class PlayerSlash2State : PlayerBaseState
             NewEnemy enemyScript = enemy.GetComponent<NewEnemy>();
             
             if (enemyScript != null) {
-                float totalDamage =  playerAttackDamage * damageBoost;  // increase total damage by damageBoost
+                float totalDamage =  Player.slash2Damage * damageBoost;  // increase total damage by damageBoost
                 float crit = Random.Range(1, 100);
                 if(crit <= (critRate * 100))
                 {

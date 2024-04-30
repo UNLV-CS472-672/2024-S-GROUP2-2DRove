@@ -64,7 +64,7 @@ public class SpawnEnemy : MonoBehaviour
         {
             Vector2 randomDirection = Random.insideUnitCircle.normalized;
             float randomDistance = Random.Range(minSpawnDistance, maxSpawnDistance);
-            RaycastHit2D hit = Physics2D.Raycast(player.transform.position, randomDirection, randomDistance, LayerMask.GetMask("Default", "Tilemap")); // Include your Tilemap layer here
+            RaycastHit2D hit = Physics2D.Raycast(player.transform.position, randomDirection, randomDistance, LayerMask.GetMask("Tile Layer")); // Include your Tilemap layer here
 
             if (hit.collider == null) // If it didn't hit anything, it's a valid spawn position
             {

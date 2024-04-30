@@ -26,7 +26,7 @@ public class PlayerNeutralState : PlayerBaseState
         //Multiplies the direction by the speed and applies it as a force. Default force type is ForceMode2D.Force
         Player.animator.SetFloat("yDir", Mathf.Abs(Player.inputDirection.y)); //Sets the vertical direction parameter in the animator to the player's y velocity
         Player.animator.SetFloat("xDir", Mathf.Abs(Player.inputDirection.x)); //Sets the velocity parameter in the animator to the absolute value of the player's x velocity. This is used to determine if the player is moving or not
-        Player.rb.AddForce(Player.inputDirection * Player.MovementSpeed);
+        Player.rb.AddForce(Player.inputDirection * Player.MovementSpeed * speedBoost);
 
         if (Player.inputDirection.x != 0){ //If the player is moving horizontally
             Player.flipped = Player.inputDirection.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false

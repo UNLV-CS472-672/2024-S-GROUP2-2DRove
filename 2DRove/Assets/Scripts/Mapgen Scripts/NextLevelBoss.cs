@@ -10,7 +10,10 @@ public class NextLevelBoss : MonoBehaviour
     [SerializeField] GameObject boss2 = null;
     void Update(){
 
-        if (boss2 == null ? boss1.GetComponent<NewEnemy>().CurrentHeath() <= 0 : (boss1.GetComponent<NewEnemy>().CurrentHeath() <= 0  && boss2.GetComponent<NewEnemy>().CurrentHeath() <= 0))
+        if (boss2 == null ? boss1.GetComponent<NewEnemy>().CurrentHeath() <= 0 : (boss1.GetComponent<NewEnemy>().CurrentHeath() <= 0  && boss2.GetComponent<NewEnemy>().CurrentHeath() <= 0)){
             door.SetActive(true);
+            NextLevelBoss thing = GameObject.Find("BossLevel1").GetComponent<NextLevelBoss>();
+            thing.enabled = false;
+        }
     }
 }

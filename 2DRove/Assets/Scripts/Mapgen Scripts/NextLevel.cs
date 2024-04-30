@@ -8,7 +8,7 @@ public class NextLevel : MonoBehaviour
 
     [SerializeField] Collider2D col;
     public static LoadingScreenManager loadingScreenManager;
-    public int nextSceneIndex = 0;
+    public int nextSceneIndex;
 
     void Start()
     {

@@ -2299,7 +2299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   col: {fileID: 358105310088161629}
-  level: 7
+  nextSceneIndex: 0
 --- !u!4 &8998426302539286993 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1847407349984742568, guid: 88a5d389698aeda4bb597e76684bb77a, type: 3}

@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 public class NextLevelBoss : MonoBehaviour
 {
     [SerializeField] GameObject door;
-    [SerializeField] GameObject boss1 = null;
-    [SerializeField] GameObject boss2 = null;
-    void Update(){
+    int deathCount = 0;
 
-        if (boss2 == null ? boss1.GetComponent<NewEnemy>().CurrentHeath() <= 0 : (boss1.GetComponent<NewEnemy>().CurrentHeath() <= 0  && boss2.GetComponent<NewEnemy>().CurrentHeath() <= 0)){
+    void Start(){
+        deathCount = SceneManager.GetActiveScene().name == "(1-2) City Boss" ? 0 : 1;
+    }
+
+    public void deathCheck(){
+        deathCount++;
+        if(deathCount == 2)
             door.SetActive(true);
-            NextLevelBoss thing = GameObject.Find("BossLevel1").GetComponent<NextLevelBoss>();
-            thing.enabled = false;
-        }
     }
 }

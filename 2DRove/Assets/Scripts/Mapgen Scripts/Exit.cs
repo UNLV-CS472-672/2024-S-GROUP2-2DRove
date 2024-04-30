@@ -12,9 +12,8 @@ public class Exit : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player")) 
+        if (other.gameObject.CompareTag("Player") && other.isTrigger == true) 
         {
-            other.enabled = false;
             nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             loadingScreenManager.LoadScene(nextSceneIndex);
         }

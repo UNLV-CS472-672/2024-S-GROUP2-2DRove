@@ -9,6 +9,7 @@ public class NextLevel : MonoBehaviour
     [SerializeField] Collider2D col;
     public static LoadingScreenManager loadingScreenManager;
     public int nextSceneIndex;
+    
 
     void Start()
     {
@@ -17,9 +18,8 @@ public class NextLevel : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D (Collider2D col)
     {
-        if(col.gameObject.CompareTag("Player"))
+        if(col.gameObject.CompareTag("Player") && col.isTrigger == true)
         {
-            col.enabled = false;
             nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             loadingScreenManager.LoadScene(nextSceneIndex);
         }

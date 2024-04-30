@@ -177,6 +177,9 @@ MonoBehaviour:
   slash1Speed: 1
   slash2Speed: 1
   slash3Speed: 1
+  slash1Damage: 10
+  slash2Damage: 10
+  slash3Damage: 10
   hitStunSpeed: 1
   idleAnimSpeed: 1
   slash1Lurch: 6
@@ -202,8 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65af4b292c6b6e4583fa4245458c416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  maxHealth: 1
+  health: 999
+  maxHealth: 999
   coins: 0
   speedFactor: 50
   dashDistance: 4

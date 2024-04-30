@@ -254,6 +254,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8204070761296416533, guid: b8b161f2e131bf142bc8237c081ba2a5, type: 3}
+      propertyPath: buffSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204070761296416533, guid: b8b161f2e131bf142bc8237c081ba2a5, type: 3}
+      propertyPath: burstSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204070761296416533, guid: b8b161f2e131bf142bc8237c081ba2a5, type: 3}
+      propertyPath: attackSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204070761296416533, guid: b8b161f2e131bf142bc8237c081ba2a5, type: 3}
+      propertyPath: MovementSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204070761296416533, guid: b8b161f2e131bf142bc8237c081ba2a5, type: 3}
+      propertyPath: walkAnimSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204070761296416533, guid: b8b161f2e131bf142bc8237c081ba2a5, type: 3}
+      propertyPath: rangeAttackSpeed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

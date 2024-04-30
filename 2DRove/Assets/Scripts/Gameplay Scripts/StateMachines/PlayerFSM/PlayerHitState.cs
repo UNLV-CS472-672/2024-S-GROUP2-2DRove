@@ -13,7 +13,7 @@ public class PlayerHitState : PlayerBaseState
         // NO NEED TO SET TRIGGER bc its done in NewEnemy for now
         // animator.SetTrigger("hit");
 
-        health = Player.GetComponent<NewEnemy>().CurrentHeath();
+        health = Player.GetComponent<PlayerController>().CurrentHealth();
         if (health <= 0)
         {
             Player.SwitchState(Player.DeathState);

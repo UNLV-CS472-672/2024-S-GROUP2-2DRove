@@ -26,6 +26,7 @@ public class SummonerSummoningState : SummonerBaseState
     }
     private IEnumerator SummonGhoul(SummonerStateManager summoner)
     {
+        ghoulPrefab = Resources.Load<GameObject>("Mob Spawns/Ghoul");
         while (ghoulSummonCount < maxGhouls)
         {
             animator.SetBool("isSummoning", true);

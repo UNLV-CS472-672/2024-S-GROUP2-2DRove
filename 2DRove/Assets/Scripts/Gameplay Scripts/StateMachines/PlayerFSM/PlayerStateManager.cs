@@ -12,6 +12,9 @@ public class PlayerStateManager : MonoBehaviour
     public float slash1Speed;
     public float slash2Speed;
     public float slash3Speed;
+    public float slash1Damage;
+    public float slash2Damage;
+    public float slash3Damage;
     public float hitStunSpeed;
     public float idleAnimSpeed;
     public float slash1Lurch;

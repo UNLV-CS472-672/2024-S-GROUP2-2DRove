@@ -8,10 +8,11 @@ public class PlayerDeathState : PlayerBaseState
         Debug.Log("Entering Death State...");
         Player.animator.SetBool("isDead", true);
         Player.GetComponent<Collider2D>().enabled = false;
-        // Player.GetComponent<CapsuleCollider2D>().enabled = false;
+        Player.GetComponent<CircleCollider2D>().enabled = false;
         Player.enabled = false;
         // wait for 1 second
-        Player.Destroy(.81f);
+        //do not delete player until the reset button has been press, then you may 
+        // Player.Destroy(.81f);
     }
 
     public override void UpdateState(PlayerStateManager Player)

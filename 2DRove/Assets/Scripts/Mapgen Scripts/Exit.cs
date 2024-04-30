@@ -14,6 +14,7 @@ public class Exit : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player")) 
         {
+            other.enabled = false;
             nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             loadingScreenManager.LoadScene(nextSceneIndex);
         }

@@ -19,6 +19,7 @@ public class NextLevel : MonoBehaviour
     {
         if(col.gameObject.CompareTag("Player"))
         {
+            col.enabled = false;
             nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
             loadingScreenManager.LoadScene(nextSceneIndex);
         }

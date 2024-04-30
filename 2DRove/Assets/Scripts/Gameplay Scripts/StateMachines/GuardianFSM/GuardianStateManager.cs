@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GuardianStateManager : MonoBehaviour
 {
+    public int deathCount = 0;
     public float MovementSpeed;
     public float walkAnimSpeed;
     public float attack1Speed;

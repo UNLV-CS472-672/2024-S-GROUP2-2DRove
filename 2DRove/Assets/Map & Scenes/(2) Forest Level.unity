@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 602447686}
   - component: {fileID: 602447687}
   - component: {fileID: 602447688}
+  - component: {fileID: 602447689}
   m_Layer: 6
   m_Name: Start
   m_TagString: Untagged
@@ -258,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beea543b0de777d4ab12afa55f562645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginningTile: {fileID: 3052744401754954791, guid: 5186672c5f0654f409c092384f190a95, type: 3}
+  beginningTile: {fileID: 3052744401754954791, guid: a031f4e86afa0d34fb5e857595bc72ec, type: 3}
   tile:
   - {fileID: 3052744401754954791, guid: 5186672c5f0654f409c092384f190a95, type: 3}
   - {fileID: 3052744401754954791, guid: a031f4e86afa0d34fb5e857595bc72ec, type: 3}
@@ -266,7 +267,7 @@ MonoBehaviour:
   - {fileID: 3052744401754954791, guid: 7311ba118f0fd1a439e8610c4c1f1b48, type: 3}
   - {fileID: 3052744401754954791, guid: a1bedcff24ff5b94495eda5485101ff6, type: 3}
   borderPrefab: {fileID: 9148618936101596910, guid: ecc8ee7854454b7459ce990868a9d124, type: 3}
-  exitPrefab: {fileID: 923991240687089494, guid: e61882843c20b724b8a4998f498ece17, type: 3}
+  exitPrefab: {fileID: 923991240687089494, guid: 5e5897ca79106cd41bdcc8ca74a4c6cc, type: 3}
   tileNum: 70
   leftMost: 0
   rightMost: 0
@@ -366,6 +367,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008a5143ff3e5c24680d95c1ac180983, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &602447689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602447681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe966aa58ce5a4f3fb70efcfadc32eeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tile:
+  - {fileID: 9148618936101596910, guid: 0782699ad0b610845b181582b233c853, type: 3}
 --- !u!1 &813780448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,11 +1086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.z

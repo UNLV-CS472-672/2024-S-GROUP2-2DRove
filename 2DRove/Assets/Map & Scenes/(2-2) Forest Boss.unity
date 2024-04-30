@@ -428,6 +428,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8765802780526186355, guid: 10d477ee136386342b62c67221212c10, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 9148618936101596910, guid: 10d477ee136386342b62c67221212c10, type: 3}
       propertyPath: m_Name
       value: BossLevel2

@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: 3052744401754954791, guid: 7311ba118f0fd1a439e8610c4c1f1b48, type: 3}
   - {fileID: 3052744401754954791, guid: a1bedcff24ff5b94495eda5485101ff6, type: 3}
   borderPrefab: {fileID: 9148618936101596910, guid: ecc8ee7854454b7459ce990868a9d124, type: 3}
-  exitPrefab: {fileID: 923991240687089494, guid: e61882843c20b724b8a4998f498ece17, type: 3}
+  exitPrefab: {fileID: 923991240687089494, guid: 5e5897ca79106cd41bdcc8ca74a4c6cc, type: 3}
   tileNum: 70
   leftMost: 0
   rightMost: 0

@@ -27,13 +27,13 @@ public class SelectedAugmentList : MonoBehaviour
         GridLayoutGroup layoutGroup = augmentListTransform.GetComponent<GridLayoutGroup>();
 
         // Set the cell size
-        layoutGroup.cellSize = new Vector2(100, 100); // Adjust this to fit your needs
+        layoutGroup.cellSize = new Vector2(90, 90); // Adjust this to fit your needs
 
         // Set the spacing
         layoutGroup.spacing = new Vector2(10, 10);
 
         // Set the child alignment
-        layoutGroup.childAlignment = TextAnchor.UpperCenter;
+        layoutGroup.childAlignment = TextAnchor.UpperLeft;
 
         // Set the start axis to horizontal
         layoutGroup.startAxis = GridLayoutGroup.Axis.Horizontal;
@@ -95,8 +95,7 @@ public class SelectedAugmentList : MonoBehaviour
                 augmentName += " x" + augmentCounts[augment.augmentName].Item1;
             }
             augmentCard.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = augmentName;
-
-            // Rest of your code...
+            
             Button button = augmentCard.GetComponent<Button>();
             //Sprite newSprite = null;
             switch(augment.augmentRarity)

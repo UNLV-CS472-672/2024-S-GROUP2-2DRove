@@ -294,6 +294,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8618721323239054516, guid: c183f34a543eaf64fbd6a0e7707e3ce5, type: 3}
   m_PrefabInstance: {fileID: 8947149559706123070}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1586147920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7307834593817663091, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+  m_PrefabInstance: {fileID: 1848878401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3777317966c39145b2a1bbb54cdb752, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1767975377
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Augment Overlay
       objectReference: {fileID: 0}
+    - target: {fileID: 8980538670988358127, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
+      propertyPath: gridLayoutAugments
+      value: 
+      objectReference: {fileID: 1586147920}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

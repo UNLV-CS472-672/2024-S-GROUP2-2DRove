@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private PlayerInput input;
-    private GameOverMenu gameOverMenu;
+    [SerializeField] private GameOverMenu gameOverMenu;
     private bool flipped;
     [SerializeField]private Transform slashPoint;
     [SerializeField]private float slashRange;
@@ -87,7 +87,9 @@ public class PlayerController : MonoBehaviour
         // speedFactor = currentSpeed;
 
         //Find the game over menu
-        gameOverMenu = GameObject.Find("UI Overlay").GetComponent<GameOverMenu>();
+        //Serialized Field
+        // GameObject UIOverlay = GameObject.Find("UI Overlay");
+        // gameOverMenu = UIOverlay.transform.Find("GameOverMenu").GetComponent<GameOverMenu>();
 
         //Find text fields
         // healthText = GameObject.Find("TextSliderBar/Text (TMP)").GetComponent<TMP_Text>();
@@ -292,7 +294,7 @@ public class PlayerController : MonoBehaviour
             }
             else {
                 gameOverMenu.EnableGameOverMenu(); //Opens the Game Over Menu
-                Destroy(gameObject); //Immediately destroys the player's gameobject
+                // Destroy(gameObject); //Immediately destroys the player's gameobject
             }
         }
     }
@@ -519,5 +521,10 @@ public class PlayerController : MonoBehaviour
     public bool doesResurrect()
     {
         return resurrect;
+    }
+
+    public float CurrentHealth()
+    {
+        return health;
     }
 }

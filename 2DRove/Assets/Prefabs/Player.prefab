@@ -78,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3680375527322660632
 Transform:
   m_ObjectHideFlags: 0
@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 1083191273263714638}
   - component: {fileID: 4173211670092731783}
   - component: {fileID: 938152516062116337}
-  - component: {fileID: 4704106804637005300}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -203,8 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65af4b292c6b6e4583fa4245458c416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  health: 1
+  maxHealth: 1
   coins: 0
   speedFactor: 50
   dashDistance: 4
@@ -216,6 +215,7 @@ MonoBehaviour:
   healthSlider: {fileID: 3864653422150677615}
   manaSlider: {fileID: 2296941007204669838}
   manaText: {fileID: 2296941007924824819}
+  gameOverMenu: {fileID: 0}
   slashPoint: {fileID: 4385648770207125721}
   slashRange: 4.41
   enemyLayer:
@@ -458,41 +458,6 @@ CircleCollider2D:
   m_Offset: {x: 0.034, y: 0.035}
   serializedVersion: 2
   m_Radius: 0.18
---- !u!70 &4704106804637005300
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8424003937126082592}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.15, y: 0}
-  m_Size: {x: 0.88, y: 0.18}
-  m_Direction: 1
 --- !u!1001 &9050138448873402555
 PrefabInstance:
   m_ObjectHideFlags: 0

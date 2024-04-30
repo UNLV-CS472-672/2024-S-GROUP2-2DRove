@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GuardianDeathState : GuardianBaseState
 {
-    
+
     public override void EnterState(GuardianStateManager Guardian)
     {
         Debug.Log("Entering Death State...");
@@ -12,7 +12,10 @@ public class GuardianDeathState : GuardianBaseState
         Guardian.enabled = false;
         // wait for 1 second
         Guardian.Destroy(1.5f);
-    }
+
+        GameObject thing = GameObject.Find("BossLevel1");
+        thing.GetComponent<NextLevelBoss>().deathCheck();
+    }  
 
     public override void UpdateState(GuardianStateManager Guardian)
     {

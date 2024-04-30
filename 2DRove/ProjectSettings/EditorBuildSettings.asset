@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Map & Scenes/(0) Main Menu.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Map & Scenes/(1) City Level.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Map & Scenes/(1-2) City Boss NEW.unity
+    guid: 7592a2a5773b4bb40a81a527c840d829
+  - enabled: 1
+    path: Assets/Map & Scenes/(2) Forest Level.unity
+    guid: a62f68f8af4a69e4d8036b28be985ab4
+  - enabled: 1
+    path: Assets/Map & Scenes/(2-2) Forest Boss NEW.unity
+    guid: e014c50722b4db64eb501918bb392d76
+  - enabled: 1
     path: Assets/Map & Scenes/(3) Underworld Boss.unity
     guid: 470a0eb96881742f88c46e9e872489e1
+  - enabled: 1
+    path: Assets/Map & Scenes/(3-2) Underworld Boss NEW.unity
+    guid: e3279c82aa8b4d2438ffa3e20406a6a0
+  - enabled: 1
+    path: Assets/Map & Scenes/(4) Victory Screen.unity
+    guid: 90d432eca7646274997eea96df5418e4
   m_configObjects: {}

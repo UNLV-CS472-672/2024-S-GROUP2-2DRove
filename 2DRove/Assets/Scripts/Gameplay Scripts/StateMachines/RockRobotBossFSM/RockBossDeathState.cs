@@ -12,6 +12,9 @@ public class RockBossDeathState : RockBossBaseState
         RockBoss.enabled = false;
         // wait for 1 second
         RockBoss.Destroy(2f);
+
+        GameObject thing = GameObject.Find("BossLevel2");
+        thing.GetComponent<NextLevelBoss>().deathCheck();
     }
 
     public override void UpdateState(RockBossStateManager RockBoss)

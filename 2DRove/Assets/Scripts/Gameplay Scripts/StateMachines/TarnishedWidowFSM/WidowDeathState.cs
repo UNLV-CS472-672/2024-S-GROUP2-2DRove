@@ -12,6 +12,9 @@ public class WidowDeathState : WidowBaseState
         Widow.enabled = false;
         // wait for 1 second
         Widow.Destroy(2f);
+
+        GameObject thing = GameObject.Find("BossLevel3");
+        thing.GetComponent<NextLevelBoss>().deathCheck();
     }
 
     public override void UpdateState(WidowStateManager Widow)

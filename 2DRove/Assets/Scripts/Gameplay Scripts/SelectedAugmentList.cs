@@ -23,22 +23,39 @@ public class SelectedAugmentList : MonoBehaviour
     void ShowAugmentList()
     {
         pause();
-        // Get the VerticalLayoutGroup component
-        VerticalLayoutGroup layoutGroup = augmentListTransform.GetComponent<VerticalLayoutGroup>();
+        // Get the GridLayoutGroup component
+        GridLayoutGroup layoutGroup = augmentListTransform.GetComponent<GridLayoutGroup>();
+
+        // Set the cell size
+        layoutGroup.cellSize = new Vector2(100, 100); // Adjust this to fit your needs
 
         // Set the spacing
-        layoutGroup.spacing = 10f;
+        layoutGroup.spacing = new Vector2(10, 10);
 
         // Set the child alignment
         layoutGroup.childAlignment = TextAnchor.UpperCenter;
 
-        // Set the child controls size
-        layoutGroup.childControlHeight = false;
-        layoutGroup.childControlWidth = false;
+        // Set the start axis to horizontal
+        layoutGroup.startAxis = GridLayoutGroup.Axis.Horizontal;
 
-        // Set the child force expand
-        layoutGroup.childForceExpandHeight = false;
-        layoutGroup.childForceExpandWidth = false;
+        // Set the constraint to flexible for automatic wrapping
+        layoutGroup.constraint = GridLayoutGroup.Constraint.Flexible;
+        // // Get the VerticalLayoutGroup component
+        // VerticalLayoutGroup layoutGroup = augmentListTransform.GetComponent<VerticalLayoutGroup>();
+
+        // // Set the spacing
+        // layoutGroup.spacing = 10f;
+
+        // // Set the child alignment
+        // layoutGroup.childAlignment = TextAnchor.UpperCenter;
+
+        // // Set the child controls size
+        // layoutGroup.childControlHeight = false;
+        // layoutGroup.childControlWidth = false;
+
+        // // Set the child force expand
+        // layoutGroup.childForceExpandHeight = false;
+        // layoutGroup.childForceExpandWidth = false;
         //Closes other augment display if the other is active. Does so vice versa as well.
         if(augmentChooseDisplay.gameObject.activeSelf)
         {
@@ -50,40 +67,68 @@ public class SelectedAugmentList : MonoBehaviour
             Destroy(child.gameObject);
         }
 
+        Dictionary<string, (int, GameObject)> augmentCounts = new Dictionary<string, (int, GameObject)>();
+
         foreach(AugmentObject augment in Augments.chosenAugments)
         {
-            GameObject augmentCard = Instantiate(augmentPrefab, augmentListTransform);
-            augmentCard.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = augment.augmentName;
+            GameObject augmentCard;
+
+            // Increment the count for this augment
+            if (augmentCounts.ContainsKey(augment.augmentName))
+            {
+                var count = augmentCounts[augment.augmentName].Item1;
+                var gameObject = augmentCounts[augment.augmentName].Item2;
+                augmentCounts[augment.augmentName] = (count + 1, gameObject);
+                Destroy(gameObject); // Destroy the old GameObject
+                augmentCard = Instantiate(augmentPrefab, augmentListTransform);
+            }
+            else
+            {
+                augmentCard = Instantiate(augmentPrefab, augmentListTransform);
+                augmentCounts[augment.augmentName] = (1, augmentCard);
+            }
+
+            // Append the count to the augment name if it's greater than 1
+            string augmentName = augment.augmentName;
+            if (augmentCounts[augment.augmentName].Item1 > 1)
+            {
+                augmentName += " x" + augmentCounts[augment.augmentName].Item1;
+            }
+            augmentCard.GetComponentInChildren<TMPro.TextMeshProUGUI>().text = augmentName;
+
+            // Rest of your code...
             Button button = augmentCard.GetComponent<Button>();
-            Sprite newSprite = null;
+            //Sprite newSprite = null;
             switch(augment.augmentRarity)
             {
                 case "Common":
-                    augmentCard.GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/common");
-                    break;
-                    newSprite = Resources.Load<Sprite>("Augments/Rarity/common_clicked");
+                    augmentCard.GetComponent<Image>().sprite = augment.AugmentImage;
+                    //newSprite = Resources.Load<Sprite>("Augments/Rarity/common_clicked");
+                    break; 
                 case "Rare":
-                    augmentCard.GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/rare");
+                    augmentCard.GetComponent<Image>().sprite = augment.AugmentImage;
+                    //newSprite = Resources.Load<Sprite>("Augments/Rarity/rare_clicked");
                     break;
-                    newSprite = Resources.Load<Sprite>("Augments/Rarity/rare_clicked");
                 case "Epic":
-                    augmentCard.GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/epic");
+                    augmentCard.GetComponent<Image>().sprite = augment.AugmentImage;
+                    //newSprite = Resources.Load<Sprite>("Augments/Rarity/epic_clicked");
                     break;
-                    newSprite = Resources.Load<Sprite>("Augments/Rarity/epic_clicked");
                 case "Legendary":
-                    augmentCard.GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/legendary");
+                    augmentCard.GetComponent<Image>().sprite = augment.AugmentImage;
+                    //newSprite = Resources.Load<Sprite>("Augments/Rarity/legendary_clicked");
                     break;
-                    newSprite = Resources.Load<Sprite>("Augments/Rarity/legendary_clicked");
-                
             }
             SpriteState spriteState = new SpriteState();
-            spriteState.highlightedSprite = newSprite;
-            spriteState.pressedSprite = newSprite;
-            spriteState.selectedSprite = newSprite;
+            // spriteState.highlightedSprite = newSprite;
+            // spriteState.pressedSprite = newSprite;
+            // spriteState.selectedSprite = newSprite;
             button.spriteState = spriteState;
             button.onClick.AddListener(() => OpenDescriptionWindow(augment.augmentDescription));
+
+            // Update the GameObject in the dictionary
+            augmentCounts[augment.augmentName] = (augmentCounts[augment.augmentName].Item1, augmentCard);
         }
-        
+
         augmentListOverlay.gameObject.SetActive(true);
     }
 

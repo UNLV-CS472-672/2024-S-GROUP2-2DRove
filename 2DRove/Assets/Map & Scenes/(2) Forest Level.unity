@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: beea543b0de777d4ab12afa55f562645, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beginningTile: {fileID: 3052744401754954791, guid: 5186672c5f0654f409c092384f190a95, type: 3}
+  beginningTile: {fileID: 3052744401754954791, guid: a031f4e86afa0d34fb5e857595bc72ec, type: 3}
   tile:
   - {fileID: 3052744401754954791, guid: 5186672c5f0654f409c092384f190a95, type: 3}
   - {fileID: 3052744401754954791, guid: a031f4e86afa0d34fb5e857595bc72ec, type: 3}
@@ -1086,11 +1086,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.z

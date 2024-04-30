@@ -24,7 +24,7 @@ public class SpitterProjectile : MonoBehaviour
         rb.velocity = launchDirection;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if we hit a layer that we can damage
         if (hitLayers == (hitLayers | (1 << collision.gameObject.layer)))

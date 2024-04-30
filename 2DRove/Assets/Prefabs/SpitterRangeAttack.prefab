@@ -118,7 +118,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.07}
@@ -146,11 +146,11 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 8
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3578320336554610286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   damage: 1
-  lifetime: 3
+  lifetime: 10
   hitLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -181,9 +181,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7073c8e77611d24786a3ce051a15d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileLifetime: 3
+  projectileLifetime: 10
   velocity: 3
-  damage: 1
+  damage: 0
   rangedDamage: 1
   knockbackStrength: 0
 --- !u!95 &6966254371096463432

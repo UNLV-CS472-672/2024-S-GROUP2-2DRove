@@ -16,10 +16,9 @@ public class ElkStateManager : MonoBehaviour
     private ElkBaseState currentState;
 
     public Animator animator;
-    [SerializeField] private Transform player;
     [SerializeField] public float playerRange;
 
-    public Transform Player => player; 
+    public Transform Player;
     public float PlayerRange => playerRange; 
 
 
@@ -28,6 +27,7 @@ public class ElkStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        Player = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     void Update()

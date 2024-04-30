@@ -106,7 +106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9103084502511522577
 Transform:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 790257641, guid: d69259b852aea944b876cfdd15f8ff5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   moveSpeed: 3
   attackDamage: 3
   attackTime: 1
-  player: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!58 &8190638973803224783
 CircleCollider2D:
   m_ObjectHideFlags: 0

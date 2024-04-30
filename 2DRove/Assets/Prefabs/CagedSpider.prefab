@@ -93,6 +93,10 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   animator: {fileID: -4547627616058721799}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!1 &7451212315464198201
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +118,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8191069111030342767
 Transform:
   m_ObjectHideFlags: 0
@@ -192,7 +196,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -3946244612204140424, guid: 88de51f227c93e040875d5f2f12385b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -306,3 +310,7 @@ MonoBehaviour:
   maxHealth: 20
   currentHealth: 0
   animator: {fileID: -4547627616058721799}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0

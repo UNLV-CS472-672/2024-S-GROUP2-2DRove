@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -5200355280419556759, guid: 1589b123fd0806e48a7c021d6510f139, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -192,6 +192,10 @@ MonoBehaviour:
   maxHealth: 200
   currentHealth: 0
   animator: {fileID: 8124369384152152226}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!114 &8204070761296416533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +208,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3391e951397c3474a9974eb4d418feed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSpeed: 0
+  walkAnimSpeed: 0
+  rangeAttackSpeed: 0
+  attackSpeed: 0
+  burstSpeed: 0
+  buffSpeed: 0
   animator: {fileID: 0}
   attackPointX: {fileID: 130624589444498416}
   attackPointY: {fileID: 8624798509624551241}

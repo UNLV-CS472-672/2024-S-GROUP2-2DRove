@@ -36,9 +36,9 @@ public class ArcherAttackState : ArcherBaseState
     //done in animation events
     public override void EventTrigger(ArcherStateManager archer)
     {
-        Vector2 knockbackDirection = (Vector2)(archer.transform.position - archer.attackPoint.position).normalized;
+        Vector2 knockbackDirection = (Vector2)(archer.transform.position - archer.attackPointX.position).normalized;
         LayerMask mask = LayerMask.GetMask("Player");
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(archer.attackPoint.position, archer.attackRange, mask);
+        Collider2D[] colliders = Physics2D.OverlapCapsuleAll(archer.attackPointX.position, new Vector2(archer.attackRangeX * 2, archer.attackRangeY), CapsuleDirection2D.Horizontal, mask);
 
         foreach (Collider2D collider in colliders)
         {

@@ -189,7 +189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 119222983, guid: e2430cb1ea5e9f54197496b6557ef213, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -307,6 +307,10 @@ MonoBehaviour:
   maxHealth: 400
   currentHealth: 0
   animator: {fileID: 538003447031198666}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!114 &3512483014866713349
 MonoBehaviour:
   m_ObjectHideFlags: 0

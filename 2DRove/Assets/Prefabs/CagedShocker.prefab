@@ -299,7 +299,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: 7544549482488288242, guid: ef7865a2ec8b75e4184685569a91102a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -398,6 +398,10 @@ MonoBehaviour:
   maxHealth: 50
   currentHealth: 0
   animator: {fileID: 878488624133352400}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!70 &6891807063455474922
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

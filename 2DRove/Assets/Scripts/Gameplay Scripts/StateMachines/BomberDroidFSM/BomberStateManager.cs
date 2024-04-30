@@ -12,13 +12,11 @@ public class BomberStateManager : MonoBehaviour
     [SerializeField] private float moveSpeed = 3f; // Default speed
     [SerializeField] private int attackDamage = 5; // Default damage value    
     [SerializeField] private float attackTime = 2f; // Default damage value    
-    [SerializeField] private Transform player; // Reference to the player's transform
-
     public float MoveSpeed => moveSpeed; // Public getter for moveSpeed so it can be accessed but not directly modified by states
     public int AttackDamage => attackDamage; // Public getter to access the damage value
     public float AttackTime => attackTime; // Public getter to access the attack time value
 
-    public Transform Player => player; // Public getter for the player's transform
+    public Transform Player; // Public getter for the player's transform
     public float AttackHeight => attackHeight; // Public getter for the attack height
 
 
@@ -39,6 +37,7 @@ public class BomberStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        Player = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     void Update()

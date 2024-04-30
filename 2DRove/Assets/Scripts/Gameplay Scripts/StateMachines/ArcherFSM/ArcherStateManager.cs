@@ -5,8 +5,10 @@ using UnityEngine;
 public class ArcherStateManager : MonoBehaviour
 {
     public Animator animator;
-    public Transform attackPoint;
-    [SerializeField] public float attackRange;
+    public Transform attackPointX;
+    public Transform attackPointY;
+    [SerializeField] public float attackRangeX;
+    [SerializeField] public float attackRangeY;
     ArcherBaseState currentState;
     public ArcherAggroState AggroState = new ArcherAggroState();
     public ArcherAttackState AttackState = new ArcherAttackState();
@@ -57,9 +59,10 @@ public class ArcherStateManager : MonoBehaviour
     }
 
     private void OnDrawGizmosSelected(){
-        if (attackPoint == null){
+        if (attackPointX == null){
             return;
         }
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Gizmos.DrawWireSphere(attackPointX.position, attackRangeX);
+        Gizmos.DrawWireSphere(attackPointY.position, attackRangeY);
     }
 }

@@ -293,9 +293,9 @@ GameObject:
   - component: {fileID: 8710239744230377646}
   - component: {fileID: 1212220447984024971}
   - component: {fileID: 1680049920885591672}
+  - component: {fileID: 962467841880699752}
   - component: {fileID: 272362257799738756}
   - component: {fileID: -1127995572195980354}
-  - component: {fileID: 962467841880699752}
   - component: {fileID: 6891807063455474922}
   - component: {fileID: 5025483263379841698}
   - component: {fileID: 7483496902847619229}
@@ -305,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4012842002547039159
 Transform:
   m_ObjectHideFlags: 0
@@ -421,7 +421,6 @@ MonoBehaviour:
   horizontalDashSpeed: 1
   AoESpeed: 1
   AoEResetSpeed: 1
-  afterImage: {fileID: 1680049920885591672}
   animator: {fileID: 878488624133352400}
   attack1: {fileID: 7210264281584237184}
   attack1Length: 6.5
@@ -443,6 +442,25 @@ MonoBehaviour:
   ghostDuration: 0.25
   ghost: {fileID: 5560060911911527608, guid: dd8e4c737d1c3c3488e93ba0ea203354, type: 3}
   makeGhost: 0
+--- !u!114 &962467841880699752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3475996137607520006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  currentHealth: 0
+  animator: {fileID: 878488624133352400}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!61 &272362257799738756
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -515,21 +533,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &962467841880699752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475996137607520006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 50
-  currentHealth: 0
-  animator: {fileID: 878488624133352400}
 --- !u!70 &6891807063455474922
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     private float lastShootTime;
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private TMP_Text healthText;
-    private TMP_Text goldText;
+    public static TMP_Text goldText;
     [SerializeField] private Slider healthSlider; 
 
     [SerializeField] private Slider manaSlider;
@@ -340,7 +340,7 @@ public class PlayerController : MonoBehaviour
     //Adds the coin's value to the player's coin count
     public void addCoin(int amount){
         coins += amount;
-        goldText.text = "Gold: " + coins.ToString(); //Updates the visible health text
+        goldText.text = coins.ToString(); //Updates the visible health text
     }
 
     public void DashDamage()

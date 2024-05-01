@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Augments : MonoBehaviour
@@ -15,6 +17,26 @@ public class Augments : MonoBehaviour
     private List<AugmentObject> shufflePool;
     private List<AugmentObject> currentChoiceAugments;
     public GridLayoutAugments gridLayoutAugments;
+    [SerializeField] private TMP_Text errorGoldText;
+    private Coroutine errorGoldTextCoroutine;
+
+    IEnumerator ShowAndFadeErrorGoldText(float delay, float fadeTime)
+    {
+        errorGoldText.gameObject.SetActive(true); // Show the text
+        yield return new WaitForSecondsRealtime(delay); // Wait for the specified delay
+
+        // Fade out the text
+        Color originalColor = errorGoldText.color;
+        for (float t = 0.0f; t < fadeTime; t += Time.unscaledDeltaTime)
+        {
+            Color newColor = new Color(originalColor.r, originalColor.g, originalColor.b, Mathf.Lerp(originalColor.a, 0, t / fadeTime));
+            errorGoldText.color = newColor;
+            yield return null; // Wait for the next frame
+        }
+
+        errorGoldText.gameObject.SetActive(false); // Hide the text
+        errorGoldText.color = originalColor; // Reset the text color
+    }
 
     void Start()
     {
@@ -25,7 +47,23 @@ public class Augments : MonoBehaviour
         // List of augments chosen by the player
         chosenAugments = new List<AugmentObject>();
         //List of augments chosen by the player
-        rerollButton.onClick.AddListener(Reroll);
+        rerollButton.onClick.AddListener(() =>
+        {
+            if(PlayerController.coins < 3)
+            {
+                if (errorGoldTextCoroutine != null)
+                {
+                    StopCoroutine(errorGoldTextCoroutine);
+                    errorGoldText.color = Color.red;
+                    errorGoldText.gameObject.SetActive(false);
+                }
+                errorGoldTextCoroutine = StartCoroutine(ShowAndFadeErrorGoldText(2.0f, 1.0f));
+                return;
+            }
+            PlayerController.coins -= 3;
+            PlayerController.goldText.text = PlayerController.coins.ToString();
+            Reroll();
+        });
         // Augment debug button
         augmentDebugButton.onClick.AddListener(showAugmentOverlay);
         // Augment overlay close button
@@ -140,22 +178,31 @@ public class Augments : MonoBehaviour
         {
             currentChoiceAugments.Add(shufflePool[i]);
             Sprite newSprite = null;
+            int currentCost = 0;
             switch(currentChoiceAugments[i].augmentRarity)
             {
                 case "Common":
                     augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/common");
+                    currentCost = 10;
+                    augmentCards[i].transform.Find("Gold Cost").GetComponent<TMP_Text>().text = currentCost.ToString();
                     newSprite = Resources.Load<Sprite>("Augments/Rarity/common_clicked");
                     break;
                 case "Rare":
                     augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/rare");
+                    currentCost = 15;
+                    augmentCards[i].transform.Find("Gold Cost").GetComponent<TMP_Text>().text = currentCost.ToString();
                     newSprite = Resources.Load<Sprite>("Augments/Rarity/rare_clicked");
                     break;
                 case "Epic":
                     augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/epic");
+                    currentCost = 20;
+                    augmentCards[i].transform.Find("Gold Cost").GetComponent<TMP_Text>().text = currentCost.ToString();
                     newSprite = Resources.Load<Sprite>("Augments/Rarity/epic_clicked");
                     break;
                 case "Legendary":
                     augmentCards[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Augments/Rarity/legendary");
+                    currentCost = 25;
+                    augmentCards[i].transform.Find("Gold Cost").GetComponent<TMP_Text>().text = currentCost.ToString();
                     newSprite = Resources.Load<Sprite>("Augments/Rarity/legendary_clicked");
                     break;
             }
@@ -182,7 +229,23 @@ public class Augments : MonoBehaviour
             augmentCards[i].onClick.RemoveAllListeners();
             //Adds new listener to button
             int index = i;
-            augmentCards[i].onClick.AddListener(() => addAugment(shufflePool[index]));
+            augmentCards[i].onClick.AddListener(() => 
+            {
+                if(PlayerController.coins < currentCost)
+                {
+                    if (errorGoldTextCoroutine != null)
+                    {
+                        StopCoroutine(errorGoldTextCoroutine);
+                        errorGoldText.color = Color.red;
+                        errorGoldText.gameObject.SetActive(false);
+                    }
+                    errorGoldTextCoroutine = StartCoroutine(ShowAndFadeErrorGoldText(2.0f, 1.0f));
+                    return;
+                }
+                PlayerController.coins -= currentCost;
+                PlayerController.goldText.text = PlayerController.coins.ToString();
+                addAugment(shufflePool[index]);
+            });
         }
     }
 }

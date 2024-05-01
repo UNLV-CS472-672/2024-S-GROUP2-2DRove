@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     //[SerializeField] allows the variable to be edited/set in the editor without having to make it public and exposing it
     [SerializeField] private float health;
     [SerializeField] private float maxHealth;
-    public static int coins;
+    public static int coins = 1000;
     [SerializeField] private float speedFactor;
     private float currentSpeed = 50;
     [SerializeField] private float dashDistance;
@@ -95,6 +95,8 @@ public class PlayerController : MonoBehaviour
         //Find text fields
         // healthText = GameObject.Find("TextSliderBar/Text (TMP)").GetComponent<TMP_Text>();
         goldText = GameObject.Find("Gold Text").GetComponent<TMP_Text>();
+
+        goldText.text = coins.ToString(); //Sets the gold text to the player's current gold
 
         //Find health slider
         // healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
@@ -484,6 +486,8 @@ public class PlayerController : MonoBehaviour
     //disables resurrection once dying
     public void DisableResurrect()
     {
+        Augments.chosenAugments.Remove(Augments.chosenAugments.Find(x => x.augmentName == "Resurrection"));
+        augmentBottomBar.GetComponent<GridLayoutAugments>().updateBarUI();
         resurrect = false;
     }
     // Increase health

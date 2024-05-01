@@ -49,6 +49,11 @@ public class AugmentInstantiator : MonoBehaviour
 
     void populateLegendaryAugmentDictionary()
     {
+        // Legendary Augments
+        // Resurrection Augment
+        legendaryAugments.resurrection();
+        // Vampirism Augment
+        legendaryAugments.vampirism();
     }
 
     public static void callAugmentMethod(AugmentObject augment)
@@ -206,4 +211,33 @@ public class rareAugments
 public class epicAugments
 {}
 public class legendaryAugments
-{}
+{
+    public static AugmentObject resurrection()
+    {
+        //Resurrection augment
+        AugmentObject augmentObject = new AugmentObject();
+        augmentObject.augmentName = "Resurrection";
+        augmentObject.augmentDescription = "Upon death, the player is resurrected with 100% health. This effect can only occur once per run.";
+        augmentObject.augmentType = "Defensive";
+        augmentObject.augmentRarity = "Legendary";
+        augmentObject.augmentMethodName = "resurrection";
+        augmentObject.AugmentImage = Resources.Load<Sprite>("Augments/08_resurrection");
+        augmentObject.isStackable = false;
+        AugmentInstantiator.legendaryAugmentDictionary.Add(augmentObject.augmentName, augmentObject);
+        return augmentObject;
+    }
+    public static AugmentObject vampirism()
+    {
+        //Vampirism augment
+        AugmentObject augmentObject = new AugmentObject();
+        augmentObject.augmentName = "Vampirism";
+        augmentObject.augmentDescription = "Heals the player for 1 health per hit. This effect cannot stack.";
+        augmentObject.augmentType = "Defensive";
+        augmentObject.augmentRarity = "Legendary";
+        augmentObject.augmentMethodName = "vampirism";
+        augmentObject.AugmentImage = Resources.Load<Sprite>("Augments/09_vampirism");
+        augmentObject.isStackable = false;
+        AugmentInstantiator.legendaryAugmentDictionary.Add(augmentObject.augmentName, augmentObject);
+        return augmentObject;
+    }
+}

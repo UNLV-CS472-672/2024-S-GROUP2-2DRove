@@ -159,7 +159,7 @@ public class Augments : MonoBehaviour
         }
         foreach(var augment in AugmentInstantiator.legendaryAugmentDictionary.Values)
         {
-            if(rand.NextDouble() < 0.05) // 5% chance
+            if(rand.NextDouble() < 0.50) // 50% chance
             {
                 shufflePool.Add(augment);
             }

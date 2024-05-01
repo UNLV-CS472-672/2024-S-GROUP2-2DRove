@@ -83,7 +83,18 @@ public class AugmentMethods
     public class epicAugmentMethods
     {}
     public class legendaryAugmentMethods
-    {}
+    {
+        public void resurrection()
+        {
+            PlayerController player = getPlayer();
+            player.EnableResurrect();
+        }
+        public void vampirism()
+        {
+            PlayerController player = getPlayer();
+            player.EnableVampire();
+        }
+    }
 
     private static PlayerController getPlayer()
     {

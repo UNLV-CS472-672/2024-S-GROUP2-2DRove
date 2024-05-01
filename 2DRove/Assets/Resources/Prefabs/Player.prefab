@@ -1654,7 +1654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputDirection: {x: 0, y: 0}
-  MovementSpeed: 15
+  MovementSpeed: 60
   walkAnimSpeed: 1
   slash1Speed: 1
   slash2Speed: 1

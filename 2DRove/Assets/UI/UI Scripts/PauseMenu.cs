@@ -12,18 +12,20 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))         // If the escape key is pressed
+        if(GameObject.Find("Augment Selection Overlay") == null)
         {
-            if(GameIsPaused)                         // If the game is paused
+            if(Input.GetKeyDown(KeyCode.Escape))         // If the escape key is pressed
             {
-                Resume();                           // Resume the game
-            }
-            else
-            {
-                Pause();                            // Pause the game
+                if(GameIsPaused)                         // If the game is paused
+                {
+                    Resume();                           // Resume the game
+                }
+                else
+                {
+                    Pause();                            // Pause the game
+                }
             }
         }
-        
     }
 
     // Function to resume the game

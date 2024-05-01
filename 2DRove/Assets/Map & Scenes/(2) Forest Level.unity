@@ -1659,6 +1659,18 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: enemyTypes.Array.data[0]
+      value: 
+      objectReference: {fileID: 6093949500923056533, guid: 48ad5479045e3ba418dd933c113b03a2, type: 3}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: enemyTypes.Array.data[1]
+      value: 
+      objectReference: {fileID: 2381006408141876882, guid: c4b4a886db1698e4f8e5a50140cfcb02, type: 3}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: enemyTypes.Array.data[2]
+      value: 
+      objectReference: {fileID: 3416500892644624562, guid: c67d68b804916554abaf7280dea0c6e1, type: 3}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

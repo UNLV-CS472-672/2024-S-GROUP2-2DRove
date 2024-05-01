@@ -392,7 +392,7 @@ MonoBehaviour:
   bottomMost: 0
   assignEdges: {fileID: 0}
   assignEdgesForest: {fileID: 0}
-  scale: 6.5
+  scale: 2.6
   maxX: 10
   maxY: 10
   minX: -10
@@ -443,6 +443,7 @@ MonoBehaviour:
   - {fileID: 9148618936101596910, guid: 4d7641526bf4a1c43aaaaeb9aa37dab8, type: 3}
   - {fileID: 9148618936101596910, guid: a1cee68dcee124a4b936444dab41827e, type: 3}
   - {fileID: 9148618936101596910, guid: a803a87bf61570749bdb524b194a1b04, type: 3}
+  scale: 0
 --- !u!1 &1089212682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,10 +1649,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5111383724780374684, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       insertIndex: 0
       addedObject: {fileID: 282610141}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8424003937126082592, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2077576764}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
 --- !u!4 &2077576761 stripped
 Transform:
@@ -1663,24 +1661,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5111383724780374684, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
   m_PrefabInstance: {fileID: 2077576760}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2077576763 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8424003937126082592, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
-  m_PrefabInstance: {fileID: 2077576760}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2077576764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077576763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c7fd612f6a634e828b6378d09ba9e7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 282610140}
 --- !u!1001 &2133688882
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -306,6 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile:
   - {fileID: 9148618936101596910, guid: 0782699ad0b610845b181582b233c853, type: 3}
+  scale: 0
 --- !u!1 &619060787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,24 +1183,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
   m_PrefabInstance: {fileID: 2064768936}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1275814028 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8424003937126082592, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
-  m_PrefabInstance: {fileID: 2064768936}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1275814038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275814028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c7fd612f6a634e828b6378d09ba9e7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 1820388121}
 --- !u!1 &1440215481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,10 +1709,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5111383724780374684, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       insertIndex: 0
       addedObject: {fileID: 1820388122}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8424003937126082592, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1275814038}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
 --- !u!224 &2064768937 stripped
 RectTransform:

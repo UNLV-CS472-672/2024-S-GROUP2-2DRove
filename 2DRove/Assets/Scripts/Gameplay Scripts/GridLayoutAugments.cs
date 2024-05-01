@@ -16,6 +16,10 @@ public class GridLayoutAugments : MonoBehaviour
             Destroy(child.gameObject);
         }
 
+        if(Augments.chosenAugments.Count == 0)
+        {
+            return;
+        }
         // Add the augments to the grid
         Dictionary<string, (int, GameObject)> augmentCounts = new Dictionary<string, (int, GameObject)>();
         foreach(AugmentObject augment in Augments.chosenAugments)

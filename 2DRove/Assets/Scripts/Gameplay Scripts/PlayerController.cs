@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     //[SerializeField] allows the variable to be edited/set in the editor without having to make it public and exposing it
     [SerializeField] private float health;
     [SerializeField] private float maxHealth;
-    [SerializeField] private int coins;
+    public static int coins;
     [SerializeField] private float speedFactor;
     private float currentSpeed = 50;
     [SerializeField] private float dashDistance;

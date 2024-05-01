@@ -16,7 +16,7 @@ public class GridLayoutAugments : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        if(Augments.chosenAugments.Count == 0)
+        if(Augments.chosenAugments == null || Augments.chosenAugments.Count == 0)
         {
             return;
         }

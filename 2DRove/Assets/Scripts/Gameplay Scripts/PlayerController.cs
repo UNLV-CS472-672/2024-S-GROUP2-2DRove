@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float burnDamage = 0f;
     [SerializeField] private bool isVampire = false;
     [SerializeField] private bool resurrect = false;
+    public GridLayoutGroup augmentBottomBar;
 
 
     //The Start function is called if the script is enabled before any update functions
@@ -97,6 +98,10 @@ public class PlayerController : MonoBehaviour
 
         //Find health slider
         // healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
+
+        //Find Augment Grid Layout for Overlay
+        GridLayoutAugments gridLayoutAugments = augmentBottomBar.GetComponent<GridLayoutAugments>();
+        gridLayoutAugments.updateBarUI();
 
         //Starts the player with max health and initializes the health slider   
     }

@@ -577,6 +577,7 @@ MonoBehaviour:
   burnDamage: 0
   isVampire: 0
   resurrect: 0
+  augmentBottomBar: {fileID: 4347700814277456165}
 --- !u!114 &3836223700211908983
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -120,12 +120,12 @@ public class Augments : MonoBehaviour
         unpause();
     }
 
-    void pause()
+    public void pause()
     {
         Time.timeScale = 0;
     }
 
-    void unpause()
+    public void unpause()
     {
         Time.timeScale = 1;
     }

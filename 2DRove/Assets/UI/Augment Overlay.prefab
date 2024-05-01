@@ -2446,9 +2446,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2070337539219101059, guid: 001c794a6f6704dd3b789e8d093b2e46, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, uiAsm
-        m_MethodName: ResumeGame
+      - m_Target: {fileID: 8980538670988358127}
+        m_TargetAssemblyTypeName: Augments, scriptsAsm
+        m_MethodName: unpause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2911,9 +2911,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2070337539219101059, guid: 001c794a6f6704dd3b789e8d093b2e46, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, uiAsm
-        m_MethodName: ResumeGame
+      - m_Target: {fileID: 8980538670988358127}
+        m_TargetAssemblyTypeName: Augments, scriptsAsm
+        m_MethodName: unpause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3542,9 +3542,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2070337539219101059, guid: 001c794a6f6704dd3b789e8d093b2e46, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, uiAsm
-        m_MethodName: ResumeGame
+      - m_Target: {fileID: 8980538670988358127}
+        m_TargetAssemblyTypeName: Augments, scriptsAsm
+        m_MethodName: unpause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

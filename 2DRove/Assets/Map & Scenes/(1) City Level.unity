@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &109890554 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8980538670988358127, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
+  m_PrefabInstance: {fileID: 2013444018}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c1a81d778a64484eaa9ae3e9140aa5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &602447681
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,17 +517,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
   m_PrefabInstance: {fileID: 1848878401}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1848878403 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3165306229514663819, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
-  m_PrefabInstance: {fileID: 1848878401}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c7fd612f6a634e828b6378d09ba9e7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2013444018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -536,18 +536,18 @@ PrefabInstance:
     - target: {fileID: 1219390374491009895, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1848878403}
+      objectReference: {fileID: 109890554}
     - target: {fileID: 1219390374491009895, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1219390374491009895, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
+      value: unpause
       objectReference: {fileID: 0}
     - target: {fileID: 1219390374491009895, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, uiAsm
+      value: Augments, scriptsAsm
       objectReference: {fileID: 0}
     - target: {fileID: 1219390374491009895, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -644,18 +644,18 @@ PrefabInstance:
     - target: {fileID: 1926802033727077079, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1848878403}
+      objectReference: {fileID: 109890554}
     - target: {fileID: 1926802033727077079, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1926802033727077079, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
+      value: unpause
       objectReference: {fileID: 0}
     - target: {fileID: 1926802033727077079, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, uiAsm
+      value: Augments, scriptsAsm
       objectReference: {fileID: 0}
     - target: {fileID: 1926802033727077079, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -672,18 +672,18 @@ PrefabInstance:
     - target: {fileID: 3666457122604401438, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1848878403}
+      objectReference: {fileID: 109890554}
     - target: {fileID: 3666457122604401438, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3666457122604401438, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
+      value: unpause
       objectReference: {fileID: 0}
     - target: {fileID: 3666457122604401438, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, uiAsm
+      value: Augments, scriptsAsm
       objectReference: {fileID: 0}
     - target: {fileID: 3666457122604401438, guid: 05c56fdc2efa1454cbcf13c16442b3e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

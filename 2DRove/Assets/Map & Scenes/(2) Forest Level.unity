@@ -306,7 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile:
   - {fileID: 9148618936101596910, guid: 0782699ad0b610845b181582b233c853, type: 3}
-  scale: 0
+  scale: 2.6
 --- !u!1 &619060787
 GameObject:
   m_ObjectHideFlags: 0

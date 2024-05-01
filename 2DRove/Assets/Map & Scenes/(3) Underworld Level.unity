@@ -392,7 +392,7 @@ MonoBehaviour:
   bottomMost: 0
   assignEdges: {fileID: 0}
   assignEdgesForest: {fileID: 0}
-  scale: 2.6
+  scale: 4
   maxX: 10
   maxY: 10
   minX: -10
@@ -443,7 +443,7 @@ MonoBehaviour:
   - {fileID: 9148618936101596910, guid: 4d7641526bf4a1c43aaaaeb9aa37dab8, type: 3}
   - {fileID: 9148618936101596910, guid: a1cee68dcee124a4b936444dab41827e, type: 3}
   - {fileID: 9148618936101596910, guid: a803a87bf61570749bdb524b194a1b04, type: 3}
-  scale: 0
+  scale: 4
 --- !u!1 &1089212682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,6 +1598,10 @@ PrefabInstance:
     - target: {fileID: 3864653421371827618, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: spawnRate
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.x

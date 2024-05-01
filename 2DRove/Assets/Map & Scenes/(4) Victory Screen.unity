@@ -363,6 +363,7 @@ GameObject:
   - component: {fileID: 1311866406}
   - component: {fileID: 1311866405}
   - component: {fileID: 1311866404}
+  - component: {fileID: 1311866408}
   m_Layer: 8
   m_Name: BackToMainMenu
   m_TagString: Untagged
@@ -414,7 +415,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2036361279289652128, guid: 3e090bd80538d4f8780a45dec99ec833, type: 3}
+      - m_Target: {fileID: 1311866408}
         m_TargetAssemblyTypeName: GameOverMenu, uiAsm
         m_MethodName: GoToMainMenu
         m_Mode: 1
@@ -484,6 +485,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0.16845703, y: -88}
   m_SizeDelta: {x: 372.2808, y: 75.703}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1311866408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311866403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b5bd3e07a734686b5ad5eaa5595bd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverMenuUI: {fileID: 1311866403}
 --- !u!1 &1581581307
 GameObject:
   m_ObjectHideFlags: 0

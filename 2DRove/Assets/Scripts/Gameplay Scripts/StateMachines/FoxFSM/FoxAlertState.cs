@@ -9,7 +9,7 @@ public class FoxAlertState : FoxBaseState
 
     public override void EnterState(FoxStateManager fox)
     {
-        Debug.Log("Entering Alert State...");
+        //Debug.Log("Entering Alert State...");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = fox.GetComponent<Animator>();
 

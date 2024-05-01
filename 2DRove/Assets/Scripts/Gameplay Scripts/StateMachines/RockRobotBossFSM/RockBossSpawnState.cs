@@ -5,7 +5,7 @@ public class RockBossSpawnState : RockBossBaseState
     private float spawnTime = 1f;
     public override void EnterState(RockBossStateManager RockBoss)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(RockBossStateManager RockBoss)

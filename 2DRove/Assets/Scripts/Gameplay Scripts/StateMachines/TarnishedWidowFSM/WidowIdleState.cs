@@ -6,7 +6,7 @@ public class WidowIdleState : WidowBaseState
     private Transform player;
     public override void EnterState(WidowStateManager Widow)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

@@ -5,7 +5,7 @@ public class PlayerSpawnState : PlayerBaseState
     private float spawnTime = 1.017f;
     public override void EnterState(PlayerStateManager Player)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(PlayerStateManager Player)

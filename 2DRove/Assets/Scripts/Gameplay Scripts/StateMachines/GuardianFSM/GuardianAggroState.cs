@@ -12,7 +12,7 @@ public class GuardianAggroState : GuardianBaseState
 
     public override void EnterState(GuardianStateManager Guardian)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = Guardian.GetComponent<Rigidbody2D>();
         animator = Guardian.GetComponent<Animator>();

@@ -10,7 +10,7 @@ public class BomberAggroState : BomberBaseState
 
     public override void EnterState(BomberStateManager bomber)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = bomber.GetComponent<Rigidbody2D>();
         animator = bomber.GetComponent<Animator>();

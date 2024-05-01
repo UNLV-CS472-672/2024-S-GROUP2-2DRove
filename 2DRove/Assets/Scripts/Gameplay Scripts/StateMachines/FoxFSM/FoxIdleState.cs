@@ -6,7 +6,7 @@ public class FoxIdleState : FoxBaseState
     private Transform player;
     public override void EnterState(FoxStateManager fox)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();        
         fox.animator.SetFloat("velocity", 0); 
     }

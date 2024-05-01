@@ -9,7 +9,7 @@ public class ArcherAggroState : ArcherBaseState
 
     public override void EnterState(ArcherStateManager archer)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = archer.GetComponent<Rigidbody2D>();
         animator = archer.GetComponent<Animator>();

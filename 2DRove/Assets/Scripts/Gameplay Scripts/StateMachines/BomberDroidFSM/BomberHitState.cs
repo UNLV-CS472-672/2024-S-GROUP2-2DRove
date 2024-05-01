@@ -7,7 +7,7 @@ public class BomberHitState : BomberBaseState
     private float hitStun = 0.41f;
     public override void EnterState(BomberStateManager bomber)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = bomber.GetComponent<Animator>();
 
         health = bomber.GetComponent<NewEnemy>().CurrentHeath();

@@ -6,7 +6,7 @@ public class DaggerMushroomAttackState : DaggerMushroomBaseState
     private Animator animator;
     public override void EnterState(DaggerMushroomStateManager mush)
     {
-        Debug.Log("Entering Attack State");
+        //Debug.Log("Entering Attack State");
         attackTime = 4.0f;
         animator = mush.GetComponent<Animator>();
         animator.SetBool("attacking", true);

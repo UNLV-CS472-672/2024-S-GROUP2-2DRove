@@ -7,7 +7,7 @@ public class WardenAttackState : WardenBaseState
     private Animator animator;
     public override void EnterState(WardenStateManager Warden)
     {
-        Debug.Log("Entering Attack State");
+        //Debug.Log("Entering Attack State");
         attackTime = .9f;
         animator = Warden.GetComponent<Animator>();
         animator.SetBool("attacking", true);

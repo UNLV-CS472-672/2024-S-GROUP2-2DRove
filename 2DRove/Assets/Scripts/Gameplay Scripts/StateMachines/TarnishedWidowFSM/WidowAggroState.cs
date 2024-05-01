@@ -9,7 +9,7 @@ public class WidowAggroState : WidowBaseState
 
     public override void EnterState(WidowStateManager Widow)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = Widow.GetComponent<Rigidbody2D>();
         animator = Widow.GetComponent<Animator>();

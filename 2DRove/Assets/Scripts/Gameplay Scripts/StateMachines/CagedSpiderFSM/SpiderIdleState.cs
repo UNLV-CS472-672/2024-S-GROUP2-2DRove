@@ -6,7 +6,7 @@ public class SpiderIdleState : SpiderBaseState
     private Transform player;
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

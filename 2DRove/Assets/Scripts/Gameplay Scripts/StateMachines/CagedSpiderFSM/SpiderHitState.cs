@@ -7,7 +7,7 @@ public class SpiderHitState : SpiderBaseState
     private float hitStun = .41f;
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = Spider.GetComponent<Animator>();
         //set animation bool hitstunn to true or smth
         // NO NEED TO SET TRIGGER bc its done in NewEnemy for now

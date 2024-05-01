@@ -7,7 +7,7 @@ public class RockBossHitState : RockBossBaseState
     private float hitStun = 0f;
     public override void EnterState(RockBossStateManager RockBoss)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = RockBoss.GetComponent<Animator>();
 
         health = RockBoss.GetComponent<NewEnemy>().CurrentHeath();

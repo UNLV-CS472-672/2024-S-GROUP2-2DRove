@@ -14,7 +14,7 @@ public class PlayerSlash1State : PlayerBaseState
 
     public override void EnterState(PlayerStateManager Player)
     {
-        Debug.Log("Entering Slash1 State");
+        //Debug.Log("Entering Slash1 State");
         attackTime = Player.slash1Time;
         combo = false;
         Player.Coroutine(DashDelay(Player));

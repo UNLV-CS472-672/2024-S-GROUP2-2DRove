@@ -5,7 +5,7 @@ public class CagedShockerDeathState : CagedShockerBaseState
     
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         CagedShocker.playerController.addCoin(CagedShocker.goldDropped);
         CagedShocker.animator.SetBool("isDead", true);
         CagedShocker.GetComponent<Collider2D>().enabled = false;

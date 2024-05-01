@@ -8,7 +8,7 @@ public class CagedShockerIdleState : CagedShockerBaseState
 
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         idleTime = 2f;
     }

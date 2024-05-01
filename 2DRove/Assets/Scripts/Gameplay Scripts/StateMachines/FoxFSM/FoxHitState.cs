@@ -7,7 +7,7 @@ public class FoxHitState : FoxBaseState
 
     public override void EnterState(FoxStateManager fox)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = fox.GetComponent<Animator>();
         animator.SetBool("hit", true); // Trigger hit animation
 

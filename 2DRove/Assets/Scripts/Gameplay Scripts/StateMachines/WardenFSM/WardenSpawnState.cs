@@ -5,7 +5,7 @@ public class WardenSpawnState : WardenBaseState
     private float spawnTime = 1f;
     public override void EnterState(WardenStateManager Warden)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(WardenStateManager Warden)

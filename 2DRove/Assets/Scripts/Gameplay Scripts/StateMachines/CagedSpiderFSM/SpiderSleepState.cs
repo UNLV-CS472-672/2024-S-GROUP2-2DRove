@@ -5,7 +5,7 @@ public class SpiderSleepState : SpiderBaseState
     private float spawnTime = 1f;
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(SpiderStateManager Spider)

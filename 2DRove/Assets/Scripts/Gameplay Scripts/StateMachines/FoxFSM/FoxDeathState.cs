@@ -6,7 +6,7 @@ public class FoxDeathState : FoxBaseState
 {
     public override void EnterState(FoxStateManager fox)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         fox.playerController.addCoin(fox.goldDropped);
         fox.animator.SetBool("isDead", true);
         fox.GetComponent<Collider2D>().enabled = false;

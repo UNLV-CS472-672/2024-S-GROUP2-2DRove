@@ -6,7 +6,7 @@ public class ElkDeathState : ElkBaseState
 {
     public override void EnterState(ElkStateManager elk)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         elk.playerController.addCoin(elk.goldDropped);
         elk.animator.SetBool("isDead", true);
         elk.GetComponent<Collider2D>().enabled = false;

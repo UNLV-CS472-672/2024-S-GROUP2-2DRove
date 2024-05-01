@@ -5,7 +5,7 @@ public class DaggerMushroomDeathState : DaggerMushroomBaseState
     
     public override void EnterState(DaggerMushroomStateManager mushroom)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         mushroom.playerController.addCoin(mushroom.goldDropped);
         mushroom.animator.SetBool("isDead", true);
         mushroom.GetComponent<Collider2D>().enabled = false;

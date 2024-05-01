@@ -6,7 +6,7 @@ public class GuardianIdleState : GuardianBaseState
     private Transform player;
     public override void EnterState(GuardianStateManager Guardian)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

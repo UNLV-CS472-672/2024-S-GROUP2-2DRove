@@ -7,7 +7,7 @@ public class BomberIdleState : BomberBaseState
     private Transform player;
     public override void EnterState(BomberStateManager bomber)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

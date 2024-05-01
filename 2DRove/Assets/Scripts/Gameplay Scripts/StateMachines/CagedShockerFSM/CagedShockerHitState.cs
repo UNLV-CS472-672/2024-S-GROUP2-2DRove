@@ -7,7 +7,7 @@ public class CagedShockerHitState : CagedShockerBaseState
     private float hitStun = .167f;
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = CagedShocker.GetComponent<Animator>();
         //set animation bool hitstunn to true or smth
         // NO NEED TO SET TRIGGER bc its done in NewEnemy for now

@@ -5,7 +5,7 @@ public class SpiderDeathState : SpiderBaseState
     
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         Spider.playerController.addCoin(Spider.goldDropped);
         Spider.animator.SetBool("isDead", true);
         Spider.GetComponent<Collider2D>().enabled = false;

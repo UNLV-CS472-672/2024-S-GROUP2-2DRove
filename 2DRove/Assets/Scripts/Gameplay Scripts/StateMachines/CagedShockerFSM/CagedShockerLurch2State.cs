@@ -12,7 +12,7 @@ public class CagedShockerLurch2State : CagedShockerBaseState
 
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
-        Debug.Log("Entering Lurch2 State...");
+        //Debug.Log("Entering Lurch2 State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = CagedShocker.GetComponent<Rigidbody2D>();
         animator = CagedShocker.GetComponent<Animator>();

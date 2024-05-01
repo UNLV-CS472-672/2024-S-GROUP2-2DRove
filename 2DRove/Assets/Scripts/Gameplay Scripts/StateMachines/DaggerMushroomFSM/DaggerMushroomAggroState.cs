@@ -9,7 +9,7 @@ public class DaggerMushroomAggroState : DaggerMushroomBaseState
 
     public override void EnterState(DaggerMushroomStateManager mushroom)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = mushroom.GetComponent<Rigidbody2D>();
         animator = mushroom.GetComponent<Animator>();

@@ -9,7 +9,7 @@ public class CagedShockerAggroState : CagedShockerBaseState
 
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = CagedShocker.GetComponent<Rigidbody2D>();
         animator = CagedShocker.GetComponent<Animator>();

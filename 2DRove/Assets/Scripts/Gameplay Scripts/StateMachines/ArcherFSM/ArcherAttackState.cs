@@ -6,7 +6,7 @@ public class ArcherAttackState : ArcherBaseState
     private Animator animator;
     public override void EnterState(ArcherStateManager archer)
     {
-        Debug.Log("Entering Attack State");
+        //Debug.Log("Entering Attack State");
         attackTime = 1.0f;
         animator = archer.GetComponent<Animator>();
         animator.SetBool("attacking", true);

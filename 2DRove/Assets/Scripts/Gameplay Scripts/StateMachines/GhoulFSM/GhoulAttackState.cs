@@ -6,7 +6,7 @@ public class GhoulAttackState : GhoulBaseState
     private Animator animator;
     public override void EnterState(GhoulStateManager ghoul)
     {
-        Debug.Log("Entering Attack State");
+        //Debug.Log("Entering Attack State");
         attackTime = .9f;
         animator = ghoul.GetComponent<Animator>();
         animator.SetBool("attacking", true);

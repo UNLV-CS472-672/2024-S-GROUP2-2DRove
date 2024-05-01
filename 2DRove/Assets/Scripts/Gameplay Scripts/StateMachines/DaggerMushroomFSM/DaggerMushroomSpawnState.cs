@@ -5,7 +5,7 @@ public class DaggerMushroomSpawnState : DaggerMushroomBaseState
     private float spawnTime = 1f;
     public override void EnterState(DaggerMushroomStateManager mushroom)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(DaggerMushroomStateManager mushroom)

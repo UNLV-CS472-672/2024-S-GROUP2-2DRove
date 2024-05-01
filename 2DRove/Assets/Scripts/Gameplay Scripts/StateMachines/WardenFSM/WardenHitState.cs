@@ -7,7 +7,7 @@ public class WardenHitState : WardenBaseState
     private float hitStun = 0f;
     public override void EnterState(WardenStateManager Warden)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = Warden.GetComponent<Animator>();
 
         health = Warden.GetComponent<NewEnemy>().CurrentHeath();

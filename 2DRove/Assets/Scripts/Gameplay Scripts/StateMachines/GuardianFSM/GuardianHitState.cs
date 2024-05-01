@@ -7,7 +7,7 @@ public class GuardianHitState : GuardianBaseState
     private float hitStun = .167f;
     public override void EnterState(GuardianStateManager Guardian)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = Guardian.GetComponent<Animator>();
         //set animation bool hitstunn to true or smth
         // NO NEED TO SET TRIGGER bc its done in NewEnemy for now

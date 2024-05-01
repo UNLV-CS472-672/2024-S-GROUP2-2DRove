@@ -6,7 +6,7 @@ public class GhoulIdleState : GhoulBaseState
     private Transform player;
     public override void EnterState(GhoulStateManager ghoul)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

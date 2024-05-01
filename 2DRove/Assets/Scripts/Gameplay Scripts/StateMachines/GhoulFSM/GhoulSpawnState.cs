@@ -5,7 +5,7 @@ public class GhoulSpawnState : GhoulBaseState
     private float spawnTime = 1f;
     public override void EnterState(GhoulStateManager ghoul)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(GhoulStateManager ghoul)

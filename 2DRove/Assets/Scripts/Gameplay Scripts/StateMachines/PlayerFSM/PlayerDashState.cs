@@ -14,7 +14,7 @@ public class PlayerDashState : PlayerBaseState
     public override void EnterState(PlayerStateManager Player)
     {
         //Idle and walking handled in this state
-        Debug.Log("Entering Dash State...");
+        //Debug.Log("Entering Dash State...");
         Player.afterImage.makeGhost = true;
         dashDistance = Player.dashDistance;
         dashDuration = Player.dashDuration;

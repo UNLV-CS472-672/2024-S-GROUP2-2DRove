@@ -6,7 +6,7 @@ public class ArcherIdleState : ArcherBaseState
     private Transform player;
     public override void EnterState(ArcherStateManager archer)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

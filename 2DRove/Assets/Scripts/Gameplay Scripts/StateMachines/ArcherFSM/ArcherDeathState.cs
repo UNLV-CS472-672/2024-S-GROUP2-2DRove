@@ -5,7 +5,7 @@ public class ArcherDeathState : ArcherBaseState
     
     public override void EnterState(ArcherStateManager archer)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         archer.playerController.addCoin(archer.goldDropped);
         archer.animator.SetBool("isDead", true);
         archer.GetComponent<Collider2D>().enabled = false;

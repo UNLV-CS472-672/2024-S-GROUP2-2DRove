@@ -11,7 +11,7 @@ public class SummonerHitState : SummonerBaseState
 
     public override void EnterState(SummonerStateManager summoner)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = summoner.GetComponent<Animator>();
         //set animation bool hitstunn to true or smth
         // NO NEED TO SET TRIGGER bc its done in NewEnemy for now
@@ -27,7 +27,7 @@ public class SummonerHitState : SummonerBaseState
 
     public override void UpdateState(SummonerStateManager summoner)
     {
-        Debug.Log("Entering Hit Stun State...");
+        //Debug.Log("Entering Hit Stun State...");
         if (hitStun <= 0)
         {
             // After hit stun duration passes, return to previous state
@@ -57,7 +57,7 @@ public class SummonerHitState : SummonerBaseState
 
     public override void TakeDamage(SummonerStateManager summoner)
     {
-        Debug.Log("Entering Hit Take Damage...");
+        //Debug.Log("Entering Hit Take Damage...");
      //   animator.SetTrigger("hit");     // only current solution found take hit on Summoner 
 
         summoner.SwitchState(summoner.HitState);

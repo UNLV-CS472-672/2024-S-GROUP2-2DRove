@@ -5,7 +5,7 @@ public class GuardianSpawnState : GuardianBaseState
     private float spawnTime = 1f;
     public override void EnterState(GuardianStateManager Guardian)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(GuardianStateManager Guardian)

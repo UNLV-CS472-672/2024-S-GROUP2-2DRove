@@ -5,7 +5,7 @@ public class WidowSpawnState : WidowBaseState
     private float spawnTime = 1f;
     public override void EnterState(WidowStateManager Widow)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(WidowStateManager Widow)

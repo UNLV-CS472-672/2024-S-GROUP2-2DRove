@@ -9,7 +9,7 @@ public class WardenAggroState : WardenBaseState
 
     public override void EnterState(WardenStateManager Warden)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = Warden.GetComponent<Rigidbody2D>();
         animator = Warden.GetComponent<Animator>();

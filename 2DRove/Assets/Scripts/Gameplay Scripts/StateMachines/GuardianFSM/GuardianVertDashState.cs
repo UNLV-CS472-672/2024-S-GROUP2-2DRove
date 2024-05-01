@@ -13,7 +13,7 @@ public class GuardianVertDashState : GuardianBaseState
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         xPos = Guardian.GetComponent<Transform>().position.x;
         yPos = Guardian.GetComponent<Transform>().position.y;
-        Debug.Log("Entering Dash State");
+        //Debug.Log("Entering Dash State");
         dashTime = ((Guardian.vertDashTime * 2) / Guardian.vertDashSpeed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("vertDash");

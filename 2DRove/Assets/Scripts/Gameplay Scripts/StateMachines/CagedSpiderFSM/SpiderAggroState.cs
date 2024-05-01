@@ -9,7 +9,7 @@ public class SpiderAggroState : SpiderBaseState
 
     public override void EnterState(SpiderStateManager Spider)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = Spider.GetComponent<Rigidbody2D>();
         animator = Spider.GetComponent<Animator>();
@@ -18,7 +18,7 @@ public class SpiderAggroState : SpiderBaseState
     public override void UpdateState(SpiderStateManager Spider)
     {
         Vector2 Direction = (player.position - Spider.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        rb.AddForce(Direction * 2f);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

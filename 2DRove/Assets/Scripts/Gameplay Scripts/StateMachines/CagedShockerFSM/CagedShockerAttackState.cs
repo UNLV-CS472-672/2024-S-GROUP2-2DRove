@@ -6,7 +6,7 @@ public class CagedShockerAttackState : CagedShockerBaseState
     private Animator animator;
     public override void EnterState(CagedShockerStateManager CagedShocker)
     {
-        Debug.Log("Entering Attack State");
+        //Debug.Log("Entering Attack State");
         attackTime = 1.333f;
         animator = CagedShocker.GetComponent<Animator>();
         animator.SetTrigger("attacking");

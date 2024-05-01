@@ -14,7 +14,7 @@ public class GuadianSpecialState : GuardianBaseState
         playerXPos = player.transform.position.x;
         xPos = Guardian.GetComponent<Transform>().position.x;
         yPos = Guardian.GetComponent<Transform>().position.y;
-        Debug.Log("Entering Dash State");
+        //Debug.Log("Entering Dash State");
         specialTime = (Guardian.AoETime / Guardian.AoESpeed) + (Guardian.AoEResetTime / Guardian.AoEResetSpeed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("special");

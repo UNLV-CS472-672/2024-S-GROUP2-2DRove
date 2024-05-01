@@ -9,7 +9,7 @@ public class RockBossAggroState : RockBossBaseState
 
     public override void EnterState(RockBossStateManager RockBoss)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = RockBoss.GetComponent<Rigidbody2D>();
         animator = RockBoss.GetComponent<Animator>();

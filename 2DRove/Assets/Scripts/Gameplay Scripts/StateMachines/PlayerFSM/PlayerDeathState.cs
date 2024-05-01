@@ -5,7 +5,7 @@ public class PlayerDeathState : PlayerBaseState
     
     public override void EnterState(PlayerStateManager Player)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         Player.animator.SetBool("isDead", true);
         Player.GetComponent<Collider2D>().enabled = false;
         Player.GetComponent<CircleCollider2D>().enabled = false;

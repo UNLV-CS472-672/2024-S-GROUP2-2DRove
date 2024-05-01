@@ -14,7 +14,7 @@ public class GuardianHorizontalDashState : GuardianBaseState
         playerXPos = player.transform.position.x;
         xPos = Guardian.GetComponent<Transform>().position.x;
         yPos = Guardian.GetComponent<Transform>().position.y;
-        Debug.Log("Entering Dash State");
+        //Debug.Log("Entering Dash State");
         dashTime = (Guardian.horizontalDashTime / Guardian.horizontalDashSpeed);
         animator = Guardian.GetComponent<Animator>();
         animator.SetTrigger("horizontalDash");

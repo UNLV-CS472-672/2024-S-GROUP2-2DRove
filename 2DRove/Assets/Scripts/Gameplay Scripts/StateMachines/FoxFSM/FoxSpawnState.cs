@@ -5,7 +5,7 @@ public class FoxSpawnState : FoxBaseState
     private float spawnTime = 1f;
     public override void EnterState(FoxStateManager fox)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(FoxStateManager fox)

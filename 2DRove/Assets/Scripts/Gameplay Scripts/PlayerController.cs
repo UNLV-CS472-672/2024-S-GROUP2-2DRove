@@ -129,6 +129,11 @@ public class PlayerController : MonoBehaviour
         //     Slash();
         // }
 
+        if (Input.GetKeyDown(KeyCode.Semicolon))
+        {
+            this.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+
         if (input.actions["RangeAttack"].IsPressed() && notOnCooldown(lastShootTime, shootCooldown)){
             rangeAttack();
         }

@@ -9,7 +9,7 @@ public class FoxFleeState : FoxBaseState
 
     public override void EnterState(FoxStateManager fox)
     {
-        Debug.Log("Entering Flee State...");
+        //Debug.Log("Entering Flee State...");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         fleeTimer = fleeDuration; // Set the timer
 

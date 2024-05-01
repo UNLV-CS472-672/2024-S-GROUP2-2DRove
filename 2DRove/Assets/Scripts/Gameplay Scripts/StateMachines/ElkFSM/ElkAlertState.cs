@@ -9,7 +9,7 @@ public class ElkAlertState : ElkBaseState
 
     public override void EnterState(ElkStateManager elk)
     {
-        Debug.Log("Entering Alert State...");
+        //Debug.Log("Entering Alert State...");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = elk.GetComponent<Animator>();
 

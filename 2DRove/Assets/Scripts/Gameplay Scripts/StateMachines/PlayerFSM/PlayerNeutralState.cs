@@ -9,7 +9,7 @@ public class PlayerNeutralState : PlayerBaseState
     public override void EnterState(PlayerStateManager Player)
     {
         //Idle and walking handled in this state
-        Debug.Log("Entering Neutral State...");
+        //Debug.Log("Entering Neutral State...");
         // Player.animator.ResetTrigger("neutral");
         Player.animator.ResetTrigger("slash1");
         Player.animator.ResetTrigger("slash2");

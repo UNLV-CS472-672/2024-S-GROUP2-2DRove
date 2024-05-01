@@ -5,7 +5,7 @@ public class GuardianDeathState : GuardianBaseState
 
     public override void EnterState(GuardianStateManager Guardian)
     {
-        Debug.Log("Entering Death State...");
+        //Debug.Log("Entering Death State...");
         Guardian.playerController.addCoin(Guardian.goldDropped);
         Guardian.animator.SetBool("isDead", true);
         Guardian.GetComponent<Collider2D>().enabled = false;

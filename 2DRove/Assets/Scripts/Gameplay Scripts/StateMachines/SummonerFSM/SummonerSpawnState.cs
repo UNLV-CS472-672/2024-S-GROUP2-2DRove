@@ -6,7 +6,7 @@ public class SummonerSpawnState : SummonerBaseState
 
     public override void EnterState(SummonerStateManager summoner)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
         // Perform spawn state initialization for the Summoner
     }
 

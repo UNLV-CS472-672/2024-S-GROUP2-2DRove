@@ -6,7 +6,7 @@ public class WardenIdleState : WardenBaseState
     private Transform player;
     public override void EnterState(WardenStateManager Warden)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

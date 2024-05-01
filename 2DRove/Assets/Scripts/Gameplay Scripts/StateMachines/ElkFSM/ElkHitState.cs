@@ -6,7 +6,7 @@ public class ElkHitState : ElkBaseState
 
     public override void EnterState(ElkStateManager elk)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = elk.GetComponent<Animator>();
         animator.SetBool("hit", true); // Trigger hit animation
 

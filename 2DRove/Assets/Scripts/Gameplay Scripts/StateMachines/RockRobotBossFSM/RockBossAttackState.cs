@@ -8,7 +8,7 @@ public class RockBossAttackState : RockBossBaseState
     private int returnAttackType;
     public override void EnterState(RockBossStateManager RockBoss)
     {
-        Debug.Log("Entering Attack State");
+        //Debug.Log("Entering Attack State");
         // attackTime = 20f;
         animator = RockBoss.GetComponent<Animator>();
         PerformRandomAttack(RockBoss);

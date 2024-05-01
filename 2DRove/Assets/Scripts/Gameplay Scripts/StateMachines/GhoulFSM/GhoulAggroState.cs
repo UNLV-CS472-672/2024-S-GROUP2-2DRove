@@ -9,7 +9,7 @@ public class GhoulAggroState : GhoulBaseState
 
     public override void EnterState(GhoulStateManager ghoul)
     {
-        Debug.Log("Entering Aggro State...");
+        //Debug.Log("Entering Aggro State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = ghoul.GetComponent<Rigidbody2D>();
         animator = ghoul.GetComponent<Animator>();

@@ -7,7 +7,7 @@ public class SpitterIdleState : SpitterBaseState
 
     public override void EnterState(SpitterStateManager spitter)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
 
         // Use FindWithTag to get the Transform component of the Player GameObject
         GameObject playerObject = GameObject.FindWithTag("Player");

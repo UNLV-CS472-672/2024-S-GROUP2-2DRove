@@ -5,7 +5,7 @@ public class ElkSpawnState : ElkBaseState
     private float spawnTime = 1f;
     public override void EnterState(ElkStateManager elk)
     {
-        Debug.Log("Entering Spawn State...");
+        //Debug.Log("Entering Spawn State...");
     }
 
     public override void UpdateState(ElkStateManager elk)

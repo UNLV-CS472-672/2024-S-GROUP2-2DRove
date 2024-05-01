@@ -6,7 +6,7 @@ public class ElkIdleState : ElkBaseState
     private Transform player;
     public override void EnterState(ElkStateManager elk)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();        
         elk.animator.SetFloat("velocity", 0); 
     }

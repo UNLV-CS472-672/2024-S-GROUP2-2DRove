@@ -7,7 +7,7 @@ public class WidowHitState : WidowBaseState
     private float hitStun = 0f;
     public override void EnterState(WidowStateManager Widow)
     {
-        Debug.Log("Entering Hit State...");
+        //Debug.Log("Entering Hit State...");
         animator = Widow.GetComponent<Animator>();
 
         health = Widow.GetComponent<NewEnemy>().CurrentHeath();

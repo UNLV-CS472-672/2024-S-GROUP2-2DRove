@@ -6,7 +6,7 @@ public class SummonerIdleState : SummonerBaseState
     private Transform player;
     public override void EnterState(SummonerStateManager summoner)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

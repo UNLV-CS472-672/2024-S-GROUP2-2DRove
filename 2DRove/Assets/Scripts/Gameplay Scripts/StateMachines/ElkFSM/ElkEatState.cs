@@ -10,7 +10,7 @@ public class ElkEatState : ElkBaseState
     private float eatDuration = 5f; //Time elk eat before switch state
     public override void EnterState(ElkStateManager elk)
     {
-        Debug.Log("Entering Eat State...");
+        //Debug.Log("Entering Eat State...");
         animator = elk.GetComponent<Animator>();
         if (animator != null)
         {

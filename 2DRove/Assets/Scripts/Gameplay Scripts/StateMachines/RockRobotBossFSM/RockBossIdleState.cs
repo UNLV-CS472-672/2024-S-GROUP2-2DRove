@@ -6,7 +6,7 @@ public class RockBossIdleState : RockBossBaseState
     private Transform player;
     public override void EnterState(RockBossStateManager RockBoss)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

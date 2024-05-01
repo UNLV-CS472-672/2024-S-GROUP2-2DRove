@@ -9,7 +9,7 @@ public class ElkFleeState : ElkBaseState
 
     public override void EnterState(ElkStateManager elk)
     {
-        Debug.Log("Entering Flee State...");
+        //Debug.Log("Entering Flee State...");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         fleeTimer = fleeDuration; // Set the timer
 

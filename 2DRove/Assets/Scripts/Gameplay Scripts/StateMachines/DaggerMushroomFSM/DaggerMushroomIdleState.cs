@@ -6,7 +6,7 @@ public class DaggerMushroomIdleState : DaggerMushroomBaseState
     private Transform player;
     public override void EnterState(DaggerMushroomStateManager mushroom)
     {
-        Debug.Log("Entering Idle State...");
+        //Debug.Log("Entering Idle State...");
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 

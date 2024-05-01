@@ -10,7 +10,7 @@ public class FoxEatState : FoxBaseState
     private float eatDuration = 5f; //Time fox eat before switch state
     public override void EnterState(FoxStateManager fox)
     {
-        Debug.Log("Entering Eat State...");
+        //Debug.Log("Entering Eat State...");
         animator = fox.GetComponent<Animator>();
         if (animator != null)
         {

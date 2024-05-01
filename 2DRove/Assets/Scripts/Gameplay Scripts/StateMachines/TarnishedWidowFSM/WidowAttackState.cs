@@ -8,7 +8,7 @@ public class WidowAttackState : WidowBaseState
     private int returnAttackType;
     public override void EnterState(WidowStateManager Widow)
     {
-        Debug.Log("Entering Attack State");
+        //Debug.Log("Entering Attack State");
         animator = Widow.GetComponent<Animator>();
         PerformRandomAttack(Widow);
     }

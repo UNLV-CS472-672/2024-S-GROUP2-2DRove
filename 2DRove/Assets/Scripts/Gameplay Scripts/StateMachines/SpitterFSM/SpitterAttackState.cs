@@ -7,7 +7,7 @@ public class SpitterAttackState : SpitterBaseState
     private Transform playerTransform;
     private SpitterStateManager spitter;
 
-    public float attackCooldown = 2.0f; // Cooldown between attacks
+    public float attackCooldown = 0.7f; // Cooldown between attacks
     private bool isAttackInitiated = false; // To control attack initiation
     private Coroutine attackCoroutine; // To keep track of the coroutine
 

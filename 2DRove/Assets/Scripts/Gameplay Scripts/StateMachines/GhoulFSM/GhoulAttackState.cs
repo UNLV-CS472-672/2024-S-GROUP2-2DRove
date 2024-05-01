@@ -7,7 +7,7 @@ public class GhoulAttackState : GhoulBaseState
     public override void EnterState(GhoulStateManager ghoul)
     {
         //Debug.Log("Entering Attack State");
-        attackTime = .9f;
+        attackTime = .3f;
         animator = ghoul.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }
@@ -45,7 +45,7 @@ public class GhoulAttackState : GhoulBaseState
             if (collider.CompareTag("Player"))
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
-                playerScript.dealDamage(1);
+                playerScript.dealDamage(5);
                 collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                 collider.GetComponent<Animator>().SetTrigger("Hit");
             }

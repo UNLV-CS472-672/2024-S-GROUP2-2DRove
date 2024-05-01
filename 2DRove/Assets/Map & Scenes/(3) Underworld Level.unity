@@ -1605,15 +1605,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: maxPerType.Array.data[0]
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: maxPerType.Array.data[1]
-      value: 1
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: maxPerType.Array.data[2]
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.x

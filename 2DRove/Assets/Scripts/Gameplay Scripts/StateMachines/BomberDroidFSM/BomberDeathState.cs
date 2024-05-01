@@ -12,6 +12,7 @@ public class BomberDeathState : BomberBaseState
     public override void EnterState(BomberStateManager bomber)
     {
         Debug.Log("Entering Death State...");
+        bomber.playerController.addCoin(bomber.goldDropped);
         bomber.animator.SetBool("isDead", true);
         bomber.GetComponent<Collider2D>().enabled = false;
         bomber.enabled = false;

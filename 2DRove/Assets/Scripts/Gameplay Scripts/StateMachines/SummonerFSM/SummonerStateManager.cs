@@ -5,6 +5,8 @@ using UnityEngine;
 public class SummonerStateManager : MonoBehaviour
 {
     public Animator animator;
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     SummonerBaseState currentState;
     public SummonerAggroState AggroState = new SummonerAggroState();
     // public SummonerAttackState AttackState = new SummonerAttackState(); // Summoner does not Attack
@@ -21,6 +23,7 @@ public class SummonerStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
@@ -30,7 +33,6 @@ public class SummonerStateManager : MonoBehaviour
 
         SummoningState = new SummonerSummoningState();
         SummoningState.ghoulPrefab = ghoulPrefab;
-
         // Set the ghoulPrefab field in SummoningState
         if (SummoningState != null)
         {

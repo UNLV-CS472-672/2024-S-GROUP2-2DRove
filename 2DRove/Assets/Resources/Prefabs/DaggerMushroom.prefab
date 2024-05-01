@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7565989429211467913}
+  - component: {fileID: -1632550805101332209}
+  - component: {fileID: 7019547693065123624}
   - component: {fileID: 5647531904327362973}
   - component: {fileID: -7603900503571484592}
   - component: {fileID: 4603911836213799046}
   - component: {fileID: -6229564025797390920}
-  - component: {fileID: -1632550805101332209}
-  - component: {fileID: 7019547693065123624}
   m_Layer: 3
   m_Name: DaggerMushroom
   m_TagString: Enemy
@@ -38,6 +38,42 @@ Transform:
   - {fileID: 4380120501717380465}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1632550805101332209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2381006408141876882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266ea44be6287e648817baac7263abe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5647531904327362973}
+  playerController: {fileID: 0}
+  goldDropped: 1
+  attackPoint: {fileID: 4380120501717380465}
+  attackRange: 3
+--- !u!114 &7019547693065123624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2381006408141876882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  animator: {fileID: 5647531904327362973}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!95 &5647531904327362973
 Animator:
   serializedVersion: 5
@@ -183,40 +219,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-1632550805101332209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2381006408141876882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 266ea44be6287e648817baac7263abe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5647531904327362973}
-  attackPoint: {fileID: 4380120501717380465}
-  attackRange: 3
---- !u!114 &7019547693065123624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2381006408141876882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  animator: {fileID: 5647531904327362973}
-  isBurning: 0
-  lastBurn: 0
-  burnCoolDown: 5
-  burnDamage: 0
 --- !u!1 &6088977162542909604
 GameObject:
   m_ObjectHideFlags: 0

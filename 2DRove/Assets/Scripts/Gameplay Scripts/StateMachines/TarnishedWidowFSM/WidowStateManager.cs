@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WidowStateManager : MonoBehaviour
 {
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public float MovementSpeed;
     public float walkAnimSpeed;
     public float attackSpeed;
@@ -28,6 +30,7 @@ public class WidowStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

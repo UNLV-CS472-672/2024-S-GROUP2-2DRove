@@ -5,6 +5,8 @@ using UnityEngine;
 public class FoxStateManager : MonoBehaviour
 
 {
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public FoxIdleState IdleState = new FoxIdleState();
     public FoxEatState EatState = new FoxEatState();
     public FoxSpawnState SpawnState = new FoxSpawnState();
@@ -20,12 +22,14 @@ public class FoxStateManager : MonoBehaviour
     [SerializeField] public float playerRange;
 
 
-    public Transform Player => player;
+    public Transform Player;
     public float PlayerRange => playerRange;
 
 
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
+        Player = GameObject.Find("Player").GetComponent<Transform>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

@@ -93,12 +93,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9103084502511522577}
+  - component: {fileID: 7029340579710266121}
+  - component: {fileID: 5605959815181131764}
   - component: {fileID: 1572845370303554135}
   - component: {fileID: 3172939078098488337}
   - component: {fileID: 2917843822174796061}
   - component: {fileID: 5337510034192135019}
-  - component: {fileID: 5605959815181131764}
-  - component: {fileID: 7029340579710266121}
   - component: {fileID: 8190638973803224783}
   m_Layer: 3
   m_Name: BomberDroid
@@ -125,6 +125,48 @@ Transform:
   - {fileID: 3183562254571699756}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7029340579710266121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3416500892644624562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8fae358245cb624fa010e6824d209e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  playerController: {fileID: 0}
+  goldDropped: 1
+  attackPointX: {fileID: 7022727250061143398}
+  attackPointY: {fileID: 7804762773561169063}
+  attackRange: 4
+  attackHeight: 0
+  moveSpeed: 3
+  attackDamage: 3
+  attackTime: 1
+  Player: {fileID: 0}
+--- !u!114 &5605959815181131764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3416500892644624562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  animator: {fileID: 3172939078098488337}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!212 &1572845370303554135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -260,46 +302,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.25}
   m_Size: {x: 0.25, y: 0.4}
   m_Direction: 0
---- !u!114 &5605959815181131764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3416500892644624562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  animator: {fileID: 3172939078098488337}
-  isBurning: 0
-  lastBurn: 0
-  burnCoolDown: 5
-  burnDamage: 0
---- !u!114 &7029340579710266121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3416500892644624562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8fae358245cb624fa010e6824d209e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  attackPointX: {fileID: 7022727250061143398}
-  attackPointY: {fileID: 7804762773561169063}
-  attackRange: 4
-  attackHeight: 0
-  moveSpeed: 3
-  attackDamage: 3
-  attackTime: 1
-  Player: {fileID: 0}
 --- !u!58 &8190638973803224783
 CircleCollider2D:
   m_ObjectHideFlags: 0

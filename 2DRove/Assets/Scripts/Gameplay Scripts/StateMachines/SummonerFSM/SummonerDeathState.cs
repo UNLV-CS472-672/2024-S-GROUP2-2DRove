@@ -5,6 +5,7 @@ public class SummonerDeathState : SummonerBaseState
     public override void EnterState(SummonerStateManager summoner)
     {
         Debug.Log("Summoner: Entering Death State...");
+        summoner.playerController.addCoin(summoner.goldDropped);
         summoner.animator.SetBool("isDead", true);
 
         // Disabling the collider so it no longer interacts with other game objects

@@ -179,13 +179,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758016283059345825}
+  - component: {fileID: 5598037921612947105}
+  - component: {fileID: 7350636726140891444}
   - component: {fileID: -2934730531895897082}
   - component: {fileID: -6876232841833917303}
   - component: {fileID: 6102114280818583993}
   - component: {fileID: 3607408024131565962}
   - component: {fileID: 3925657958980297227}
-  - component: {fileID: 5598037921612947105}
-  - component: {fileID: 7350636726140891444}
   - component: {fileID: 9005955090540826374}
   m_Layer: 3
   m_Name: Spitter
@@ -211,6 +211,44 @@ Transform:
   - {fileID: 7220932494962270720}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5598037921612947105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6229290378130564962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaede9f121f542f498471114a9bec0aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  playerController: {fileID: 0}
+  goldDropped: 1
+  projectilePrefab: {fileID: 9167159287664988583, guid: 31f6e4179acf61f459f93f36fa29c62b, type: 3}
+  projectileSpawnPoint: {fileID: 928594411260537016}
+  attackRange: 8
+  attackPoint: {fileID: 7220932494962270720}
+--- !u!114 &7350636726140891444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6229290378130564962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  animator: {fileID: -2934730531895897082}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!95 &-2934730531895897082
 Animator:
   serializedVersion: 5
@@ -401,42 +439,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.17, y: 0.26}
   m_EdgeRadius: 0
---- !u!114 &5598037921612947105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6229290378130564962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaede9f121f542f498471114a9bec0aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
-  projectilePrefab: {fileID: 9167159287664988583, guid: 31f6e4179acf61f459f93f36fa29c62b, type: 3}
-  projectileSpawnPoint: {fileID: 928594411260537016}
-  attackRange: 8
-  attackPoint: {fileID: 7220932494962270720}
---- !u!114 &7350636726140891444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6229290378130564962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  animator: {fileID: -2934730531895897082}
-  isBurning: 0
-  lastBurn: 0
-  burnCoolDown: 5
-  burnDamage: 0
 --- !u!70 &9005955090540826374
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ public class RockBossDeathState : RockBossBaseState
     public override void EnterState(RockBossStateManager RockBoss)
     {
         Debug.Log("Entering Death State...");
+        RockBoss.playerController.addCoin(RockBoss.goldDropped);
         RockBoss.animator.SetBool("isDead", true);
         RockBoss.GetComponent<Collider2D>().enabled = false;
         // RockBoss.GetComponent<CapsuleCollider2D>().enabled = false;

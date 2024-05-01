@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElkStateManager : MonoBehaviour
 
 {
+    [SerializeField] public int goldDropped = 1;
     public ElkIdleState IdleState = new ElkIdleState();
     public ElkEatState EatState = new ElkEatState();
     public ElkSpawnState SpawnState = new ElkSpawnState();
@@ -19,11 +20,13 @@ public class ElkStateManager : MonoBehaviour
     [SerializeField] public float playerRange;
 
     public Transform Player;
+    public PlayerController playerController;
     public float PlayerRange => playerRange; 
 
 
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

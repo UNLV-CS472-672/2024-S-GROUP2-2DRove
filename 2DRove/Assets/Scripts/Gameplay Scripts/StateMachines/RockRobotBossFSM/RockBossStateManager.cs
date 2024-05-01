@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RockBossStateManager : MonoBehaviour
 {
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public float MovementSpeed;
     public float walkAnimSpeed;
     public float rangeAttackSpeed;
@@ -30,6 +32,7 @@ public class RockBossStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

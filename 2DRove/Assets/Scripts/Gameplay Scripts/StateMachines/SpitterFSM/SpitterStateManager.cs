@@ -6,7 +6,8 @@ public class SpitterStateManager : MonoBehaviour
 {
     SpitterBaseState currentState;
     public Animator animator;
-
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public SpitterSpawnState SpawnState = new SpitterSpawnState();
     public SpitterIdleState IdleState = new SpitterIdleState();
     public SpitterAggroState AggroState = new SpitterAggroState();
@@ -27,6 +28,7 @@ public class SpitterStateManager : MonoBehaviour
 
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

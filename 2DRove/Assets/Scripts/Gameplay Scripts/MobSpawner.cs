@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Random = UnityEngine.Random;
+using UnityEngine.SceneManagement;
 
 public class SpawnEnemy : MonoBehaviour
 {
@@ -20,6 +21,35 @@ public class SpawnEnemy : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
+        Debug.Log(sceneName == "(1) City Level");
+
+        if (sceneName == "(1) City Level")
+        {
+            enemyTypes[0] = Resources.Load<GameObject>("Prefabs/CagedShocker");
+            enemyTypes[1] = Resources.Load<GameObject>("Prefabs/CagedSpider");
+            enemyTypes[2] = Resources.Load<GameObject>("Prefabs/Warden");
+        }
+        else if (sceneName == "(2) Forest Level")
+        {
+            enemyTypes[0] = Resources.Load<GameObject>("Prefabs/DaggerMushroom");
+            enemyTypes[1] = Resources.Load<GameObject>("Prefabs/Archer");
+            enemyTypes[2] = Resources.Load<GameObject>("Prefabs/BomberDroid");
+        }
+        else if (sceneName == "(3) Underworld Level")
+        {
+            enemyTypes[0] = Resources.Load<GameObject>("Prefabs/Ghoul");
+            enemyTypes[1] = Resources.Load<GameObject>("Prefabs/Spitter");
+            enemyTypes[2] = Resources.Load<GameObject>("Prefabs/Summoner");
+        }
+        else
+        {
+            this.transform.gameObject.SetActive(false);
+            return;
+        }
 
         // Initialize the dictionary to track per type
         foreach (GameObject type in enemyTypes)

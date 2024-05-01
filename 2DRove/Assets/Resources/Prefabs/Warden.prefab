@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1128856879358443595}
+  - component: {fileID: -3450728954900394446}
+  - component: {fileID: -6383126755422583183}
   - component: {fileID: 7690815838344242234}
   - component: {fileID: -2207306870665849092}
   - component: {fileID: -1206455410480868686}
   - component: {fileID: -1511327841270403178}
-  - component: {fileID: -6383126755422583183}
   - component: {fileID: -3986995872299544415}
-  - component: {fileID: -3450728954900394446}
   m_Layer: 3
   m_Name: Warden
   m_TagString: Boss
@@ -41,6 +41,44 @@ Transform:
   - {fileID: 8061529373594328308}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-3450728954900394446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116265727041687676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f826439f74873429dc806763520c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: -2207306870665849092}
+  playerController: {fileID: 0}
+  goldDropped: 1
+  attackPointX: {fileID: 4394692168410877}
+  attackPointY: {fileID: 1393467185958728732}
+  attackRange: 5.5
+  attackHeight: 0
+--- !u!114 &-6383126755422583183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116265727041687676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  animator: {fileID: -2207306870665849092}
+  isBurning: 0
+  lastBurn: 0
+  burnCoolDown: 5
+  burnDamage: 0
 --- !u!212 &7690815838344242234
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -186,25 +224,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-6383126755422583183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116265727041687676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  animator: {fileID: -2207306870665849092}
-  isBurning: 0
-  lastBurn: 0
-  burnCoolDown: 5
-  burnDamage: 0
 --- !u!70 &-3986995872299544415
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -240,23 +259,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.38, y: -0.03}
   m_Size: {x: 0.69, y: 0.22}
   m_Direction: 1
---- !u!114 &-3450728954900394446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1116265727041687676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6f826439f74873429dc806763520c67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: -2207306870665849092}
-  attackPointX: {fileID: 4394692168410877}
-  attackPointY: {fileID: 1393467185958728732}
-  attackRange: 5.5
-  attackHeight: 0
 --- !u!1 &2994837427694764779
 GameObject:
   m_ObjectHideFlags: 0

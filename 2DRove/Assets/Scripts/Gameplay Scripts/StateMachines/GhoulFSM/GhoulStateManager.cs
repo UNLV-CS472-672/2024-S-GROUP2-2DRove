@@ -6,6 +6,8 @@ using UnityEngine;
 public class GhoulStateManager : MonoBehaviour
 {
     public Animator animator;
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public Transform attackPoint;
     [SerializeField] public float attackRange;
     GhoulBaseState currentState;
@@ -19,6 +21,7 @@ public class GhoulStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

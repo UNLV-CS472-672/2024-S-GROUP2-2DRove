@@ -4,6 +4,7 @@ public class SpitterDeathState : SpitterBaseState
     public override void EnterState(SpitterStateManager spitter)
     {
         Debug.Log("Entering Death State...");
+        spitter.playerController.addCoin(spitter.goldDropped);
 
         // Trigger the death animation
         spitter.animator.SetBool("isDead", true);

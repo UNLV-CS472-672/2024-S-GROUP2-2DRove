@@ -6,6 +6,7 @@ public class WidowDeathState : WidowBaseState
     public override void EnterState(WidowStateManager Widow)
     {
         Debug.Log("Entering Death State...");
+        Widow.playerController.addCoin(Widow.goldDropped);
         Widow.animator.SetBool("isDead", true);
         Widow.GetComponent<Collider2D>().enabled = false;
         // Widow.GetComponent<CapsuleCollider2D>().enabled = false;

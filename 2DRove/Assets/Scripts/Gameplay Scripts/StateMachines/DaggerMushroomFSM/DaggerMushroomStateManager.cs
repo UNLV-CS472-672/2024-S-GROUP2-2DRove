@@ -5,6 +5,8 @@ using UnityEngine;
 public class DaggerMushroomStateManager : MonoBehaviour
 {
     public Animator animator;
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public Transform attackPoint;
     [SerializeField] public float attackRange;
     DaggerMushroomBaseState currentState;
@@ -18,6 +20,7 @@ public class DaggerMushroomStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

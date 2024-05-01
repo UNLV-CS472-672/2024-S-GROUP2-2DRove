@@ -6,6 +6,7 @@ public class GhoulDeathState : GhoulBaseState
     public override void EnterState(GhoulStateManager ghoul)
     {
         Debug.Log("Entering Death State...");
+        ghoul.playerController.addCoin(ghoul.goldDropped);
         ghoul.animator.SetBool("isDead", true);
         ghoul.enabled = false;
         ghoul.Destroy(.81f);

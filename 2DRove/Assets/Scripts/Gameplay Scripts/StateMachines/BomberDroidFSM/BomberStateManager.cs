@@ -5,6 +5,8 @@ using UnityEngine;
 public class BomberStateManager : MonoBehaviour
 {
     public Animator animator;
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public Transform attackPointX;
     public Transform attackPointY;
     [SerializeField] public float attackRange; // Distance of the attack 
@@ -34,6 +36,7 @@ public class BomberStateManager : MonoBehaviour
 
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();

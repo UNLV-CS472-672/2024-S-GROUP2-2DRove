@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GuardianStateManager : MonoBehaviour
 {
+    public PlayerController playerController;
+    [SerializeField] public int goldDropped = 1;
     public int deathCount = 0;
     public float MovementSpeed;
     public float walkAnimSpeed;
@@ -40,6 +42,7 @@ public class GuardianStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerController = GameObject.Find("Player").GetComponent<PlayerController>();
         currentState = SpawnState;
         currentState.EnterState(this);
         afterImage = this.GetComponent<AfterImage>();

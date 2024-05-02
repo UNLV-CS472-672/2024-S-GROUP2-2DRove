@@ -13,11 +13,8 @@ public class BomberStateManager : MonoBehaviour
      [SerializeField] private float attackHeight = 3f; // The point from where bombs will be dropped
     [SerializeField] private float moveSpeed = 3f; // Default speed
     [SerializeField] private int attackDamage = 5; // Default damage value    
-    [SerializeField] private float attackTime = 2f; // Default damage value    
     public float MoveSpeed => moveSpeed; // Public getter for moveSpeed so it can be accessed but not directly modified by states
     public int AttackDamage => attackDamage; // Public getter to access the damage value
-    public float AttackTime => attackTime; // Public getter to access the attack time value
-
     public Transform Player; // Public getter for the player's transform
     public float AttackHeight => attackHeight; // Public getter for the attack height
 
@@ -32,7 +29,8 @@ public class BomberStateManager : MonoBehaviour
     public BomberIdleState IdleState = new BomberIdleState();
     public BomberHitState HitState = new BomberHitState();
     public BomberSpawnState SpawnState = new BomberSpawnState();
-
+    public float attackSpeed = 1f;
+    [System.NonSerialized] public float attackTime;
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -40,6 +38,8 @@ public class BomberStateManager : MonoBehaviour
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
         Player = GameObject.Find("Player").GetComponent<Transform>();
+        findAnimationTimes();
+        animator.SetFloat("attackSpeed", attackSpeed);
     }
 
     void Update()
@@ -93,5 +93,23 @@ public class BomberStateManager : MonoBehaviour
         // Shows the attackRange, attackHeight
         Gizmos.DrawWireSphere(attackPointX.position, attackRange);
         Gizmos.DrawWireSphere(attackPointY.position, attackHeight);
+    }
+
+    private void findAnimationTimes()
+    {
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        foreach (AnimationClip clip in clips)
+        {
+            switch (clip.name)
+            {
+                case "BomberAttack":
+                    attackTime = clip.length;
+                    Debug.Log(attackTime + " attackTime");
+                    break;
+                default:
+                    Debug.Log(clip.name + " is not accounted for.");
+                    break;
+            }
+        }
     }
 }

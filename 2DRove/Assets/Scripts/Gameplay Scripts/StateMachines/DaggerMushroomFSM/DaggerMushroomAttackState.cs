@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class DaggerMushroomAttackState : DaggerMushroomBaseState
 {
-    private float attackTime = 4.0f;
+    private float attackTime;
     private Animator animator;
     public override void EnterState(DaggerMushroomStateManager mush)
     {
         //Debug.Log("Entering Attack State");
-        attackTime = 4.0f;
+        attackTime = mush.attackTime / mush.attackSpeed;
         animator = mush.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }

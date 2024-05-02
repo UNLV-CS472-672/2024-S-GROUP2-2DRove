@@ -26,7 +26,8 @@ public class SpitterStateManager : MonoBehaviour
     public Transform attackPoint;
     private Transform player;
     public float movementSpeed = 1f;
-
+    public float attackSpeed = 1f;
+    [System.NonSerialized] public float attackTime;
 
     void Start()
     {
@@ -43,14 +44,15 @@ public class SpitterStateManager : MonoBehaviour
             return;
         }
 
-
+        findAnimationTimes();
+        animator.SetFloat("attackSpeed", attackSpeed);
     }
 
     // Update is called once per frame
     void Update()
     {
         currentState.UpdateState(this);
-        if((this.transform.position - player.position).magnitude > 50)
+        if((this.transform.position - player.position).magnitude > 26)
         {
             Destroy(gameObject);
         }
@@ -89,5 +91,22 @@ public class SpitterStateManager : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
 
+    }
+
+    private void findAnimationTimes()
+    {
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        foreach (AnimationClip clip in clips)
+        {
+            switch (clip.name)
+            {
+                case "SpitterAttack":
+                    attackTime = clip.length;
+                    break;
+                default:
+                    Debug.Log(clip.name + " is not accounted for.");
+                    break;
+            }
+        }
     }
 }

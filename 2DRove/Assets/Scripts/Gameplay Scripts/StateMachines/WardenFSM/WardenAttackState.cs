@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class WardenAttackState : WardenBaseState
 {
-    private float attackTime = .9f;
+    private float attackTime;
     private Animator animator;
     public override void EnterState(WardenStateManager Warden)
     {
         //Debug.Log("Entering Attack State");
-        attackTime = .9f;
+        attackTime = Warden.attackTime / Warden.attackSpeed;
         animator = Warden.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }
@@ -57,7 +57,7 @@ public class WardenAttackState : WardenBaseState
                 Rigidbody2D rb = collider.GetComponent<Rigidbody2D>();
                 if (rb != null)
                 {
-                    rb.AddForce(-knockbackDirection * 60, ForceMode2D.Impulse);
+                    rb.AddForce(-knockbackDirection * Warden.knockBackForce, ForceMode2D.Impulse);
                 }
 
                 Animator anim = collider.GetComponent<Animator>();

@@ -7,7 +7,7 @@ public class SpitterAttackState : SpitterBaseState
     private Transform playerTransform;
     private SpitterStateManager spitter;
 
-    public float attackCooldown = 0.7f; // Cooldown between attacks
+    public float attackCooldown;
     private bool isAttackInitiated = false; // To control attack initiation
     private Coroutine attackCoroutine; // To keep track of the coroutine
 
@@ -16,6 +16,7 @@ public class SpitterAttackState : SpitterBaseState
         this.spitter = spitter;
         playerTransform = GameObject.FindGameObjectWithTag("Player")?.transform; // Use null-conditional to prevent error
         animator = spitter.GetComponent<Animator>();
+        attackCooldown = spitter.attackTime/spitter.attackSpeed;
 
         if (playerTransform != null)
         {

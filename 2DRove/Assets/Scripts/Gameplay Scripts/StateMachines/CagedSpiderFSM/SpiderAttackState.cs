@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class SpiderAttackState : SpiderBaseState
 {
-    private float attackTime = 5.0f;
+    private float attackTime;
     private Animator animator;
     public override void EnterState(SpiderStateManager Spider)
     {
         //Debug.Log("Entering Attack State");
-        attackTime = 2.0f;
+        attackTime = Spider.attackTime / Spider.attackSpeed;
         animator = Spider.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }

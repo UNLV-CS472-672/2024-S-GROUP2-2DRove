@@ -2,14 +2,14 @@ using UnityEngine;
 
 public class BomberAttackState : BomberBaseState
 {
-    private float attackTime = 0.9f;
+    private float attackTime;
     private Animator animator;
     private bool isProperlyPositionedToAttack = false; 
 
     public override void EnterState(BomberStateManager bomber)
     {
         Debug.Log("Bomber Entering Attack State...");
-        attackTime = 1f; // Reset the attack timer
+        attackTime = bomber.attackTime / bomber.attackSpeed;
 
         animator = bomber.GetComponent<Animator>();
 
@@ -35,10 +35,8 @@ public class BomberAttackState : BomberBaseState
             bomber.SwitchState(bomber.IdleState); // Go back to Idle after attacking or if not properly positioned
             animator.SetBool("isAttacking", false);
         }
-        else
-        {
-            attackTime -= Time.deltaTime;
-        }
+
+        attackTime -= Time.deltaTime;
     }
 
     private void UpdateAttackPermission(BomberStateManager bomber)

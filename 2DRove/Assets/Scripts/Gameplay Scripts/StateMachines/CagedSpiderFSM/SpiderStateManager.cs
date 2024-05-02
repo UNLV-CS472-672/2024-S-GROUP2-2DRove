@@ -19,6 +19,8 @@ public class SpiderStateManager : MonoBehaviour
     private Transform player;
     public float attackDamage = 1f;
     public float movementSpeed = 1f;
+    public float attackSpeed = 1f;
+    [System.NonSerialized] public float attackTime;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,8 @@ public class SpiderStateManager : MonoBehaviour
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
         player = GameObject.Find("Player").GetComponent<Transform>();
+        findAnimationTimes();
+        animator.SetFloat("attackSpeed", attackSpeed);
     }
 
     // Update is called once per frame
@@ -72,5 +76,22 @@ public class SpiderStateManager : MonoBehaviour
             return;
         }
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    private void findAnimationTimes()
+    {
+        AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
+        foreach (AnimationClip clip in clips)
+        {
+            switch (clip.name)
+            {
+                case "Touch target":
+                    attackTime = clip.length;
+                    break;
+                default:
+                    Debug.Log(clip.name + " is not accounted for.");
+                    break;
+            }
+        }
     }
 }

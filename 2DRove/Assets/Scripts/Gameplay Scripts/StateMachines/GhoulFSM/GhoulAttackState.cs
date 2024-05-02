@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class GhoulAttackState : GhoulBaseState
 {
-    private float attackTime = .9f;
+    private float attackTime;
     private Animator animator;
     public override void EnterState(GhoulStateManager ghoul)
     {
-        //Debug.Log("Entering Attack State");
-        attackTime = .3f;
+        // Debug.Log("Entering Attack State");
+        attackTime = ghoul.attackTime / ghoul.attackSpeed;
         animator = ghoul.GetComponent<Animator>();
         animator.SetBool("attacking", true);
     }
@@ -16,7 +16,7 @@ public class GhoulAttackState : GhoulBaseState
     {
         if(attackTime <= 0)
         {
-            ghoul.SwitchState(ghoul.IdleState);
+            ghoul.SwitchState(ghoul.AggroState);
             animator.SetBool("attacking", false);
         }
 

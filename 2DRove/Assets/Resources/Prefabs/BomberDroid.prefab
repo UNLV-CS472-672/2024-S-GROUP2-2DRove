@@ -146,8 +146,8 @@ MonoBehaviour:
   attackHeight: 0
   moveSpeed: 3
   attackDamage: 3
-  attackTime: 1
   Player: {fileID: 0}
+  attackSpeed: 1
 --- !u!114 &5605959815181131764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 5
   currentHealth: 0
   animator: {fileID: 3172939078098488337}
   isBurning: 0

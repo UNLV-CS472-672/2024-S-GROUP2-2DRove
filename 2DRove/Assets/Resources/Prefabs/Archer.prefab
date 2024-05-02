@@ -121,6 +121,9 @@ MonoBehaviour:
   attackPointY: {fileID: 8327235717136800986}
   attackRangeX: 6.39
   attackRangeY: 0.89
+  attackDamage: 10
+  movementSpeed: 11
+  attackSpeed: 1.5
 --- !u!114 &-3699987137413277889
 MonoBehaviour:
   m_ObjectHideFlags: 0

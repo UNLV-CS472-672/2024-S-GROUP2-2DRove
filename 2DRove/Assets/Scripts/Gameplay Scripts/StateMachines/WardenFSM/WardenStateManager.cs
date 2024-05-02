@@ -40,7 +40,7 @@ public class WardenStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
-        if((this.transform.position - player.position).magnitude > 50)
+        if((this.transform.position - player.position).magnitude > 75)
         {
             Destroy(gameObject);
         }

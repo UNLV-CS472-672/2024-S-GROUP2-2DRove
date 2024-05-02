@@ -45,7 +45,7 @@ public class BomberStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
-        if((this.transform.position - Player.position).magnitude > 50)
+        if((this.transform.position - Player.position).magnitude > 75)
         {
             Destroy(gameObject);
         }

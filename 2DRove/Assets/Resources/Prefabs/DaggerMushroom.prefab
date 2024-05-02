@@ -55,6 +55,11 @@ MonoBehaviour:
   goldDropped: 1
   attackPoint: {fileID: 4380120501717380465}
   attackRange: 3
+  attackDamage: 7.5
+  movementSpeed: 50
+  attackSpeed: 1
+  lastAttack: 0
+  attackCD: 2
 --- !u!114 &7019547693065123624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 20
   currentHealth: 0
   animator: {fileID: 5647531904327362973}
   isBurning: 0

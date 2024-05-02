@@ -343,14 +343,17 @@ MonoBehaviour:
   playerController: {fileID: 0}
   goldDropped: 1
   deathCount: 0
-  MovementSpeed: 1
+  MovementSpeed: 10
   walkAnimSpeed: 1
-  attack1Speed: 1
-  attack2Speed: 1
+  attack1Speed: 2
+  attack2Speed: 0.75
   vertDashSpeed: 1
   horizontalDashSpeed: 1
-  AoESpeed: 1
-  AoEResetSpeed: 1
+  AoESpeed: 1.5
+  AoEResetSpeed: 0.75
+  attack1Damage: 2.5
+  attack2Damage: 5
+  AoEDamage: 3
   animator: {fileID: 878488624133352400}
   attack1: {fileID: 7210264281584237184}
   attack1Length: 6.5
@@ -368,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 200
   currentHealth: 0
   animator: {fileID: 878488624133352400}
   isBurning: 0

@@ -118,11 +118,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   goldDropped: 1
-  MovementSpeed: 1
-  walkAnimSpeed: 1
+  MovementSpeed: 50
+  walkAnimSpeed: 5
   attackSpeed: 1
-  spitSpeed: 1
+  spitSpeed: 1.1
   jumpSpeed: 1
+  attackDamage: 10
+  spitDamage: 3
+  jumpDamage: 100
   animator: {fileID: 0}
   attackPointX: {fileID: 6555135141237207722}
   attackPointY: {fileID: 4061516972465457001}
@@ -140,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 400
+  maxHealth: 800
   currentHealth: 0
   animator: {fileID: 538003447031198666}
   isBurning: 0

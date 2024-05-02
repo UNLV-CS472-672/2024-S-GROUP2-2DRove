@@ -23,6 +23,7 @@ public class ArcherStateManager : MonoBehaviour
     public float movementSpeed = 1f;
     public float attackSpeed = 1f;
     [System.NonSerialized] public float attackTime;
+    public MobSpawner 
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class ArcherStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
-        if((this.transform.position - player.position).magnitude > 50)
+        if((this.transform.position - player.position).magnitude > 75)
         {
             Destroy(gameObject);
         }

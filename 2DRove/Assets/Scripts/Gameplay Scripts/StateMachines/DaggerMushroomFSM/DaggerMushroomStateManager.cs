@@ -21,6 +21,8 @@ public class DaggerMushroomStateManager : MonoBehaviour
     public float movementSpeed = 1f;
     public float attackSpeed = 1f;
     [System.NonSerialized] public float attackTime;
+    public float lastAttack = 0f;
+    public float attackCD = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +40,7 @@ public class DaggerMushroomStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
-        if((this.transform.position - player.position).magnitude > 50)
+        if((this.transform.position - player.position).magnitude > 75)
         {
             Destroy(gameObject);
         }
@@ -77,7 +79,6 @@ public class DaggerMushroomStateManager : MonoBehaviour
         }
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-
     private void findAnimationTimes()
     {
         AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
@@ -85,7 +86,7 @@ public class DaggerMushroomStateManager : MonoBehaviour
         {
             switch (clip.name)
             {
-                case "attack":
+                case "airAttack":
                     attackTime = clip.length;
                     break;
                 default:

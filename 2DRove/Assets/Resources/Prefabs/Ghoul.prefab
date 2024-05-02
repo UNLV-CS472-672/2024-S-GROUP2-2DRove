@@ -253,6 +253,9 @@ MonoBehaviour:
   goldDropped: 1
   attackPoint: {fileID: 4976487937329907011}
   attackRange: 1.18
+  attackDamage: 1
+  movementSpeed: 35
+  attackSpeed: 3
 --- !u!114 &962467841880699752
 MonoBehaviour:
   m_ObjectHideFlags: 0

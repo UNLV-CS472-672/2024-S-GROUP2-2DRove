@@ -55,6 +55,7 @@ MonoBehaviour:
   playerController: {fileID: 0}
   goldDropped: 1
   ghoulPrefab: {fileID: 3475996137607520006, guid: a9092d72cc10e4343a152466830e5b3b, type: 3}
+  movementSpeed: 1
 --- !u!114 &8724349399916483158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,7 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 50
   currentHealth: 0
   animator: {fileID: 719559770693969259}
   isBurning: 0

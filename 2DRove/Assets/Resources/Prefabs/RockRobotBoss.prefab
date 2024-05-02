@@ -56,16 +56,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   goldDropped: 1
-  MovementSpeed: 3
+  MovementSpeed: 15
   walkAnimSpeed: 1.5
   rangeAttackSpeed: 1.5
   attackSpeed: 2
   burstSpeed: 1.5
   buffSpeed: 1
-  rangeAttackDamage: 10
-  attackDamage: 12
-  burstDamage: 15
-  buffDamage: 12
+  rangeAttackDamage: 5
+  attackDamage: 6
+  burstDamage: 7.5
+  buffDamage: 6
   animator: {fileID: 0}
   attackPointX: {fileID: 130624589444498416}
   attackPointY: {fileID: 8624798509624551241}
@@ -83,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b43570ef5a6be954593f82aebdc41df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  maxHealth: 500
   currentHealth: 0
   animator: {fileID: 8124369384152152226}
   isBurning: 0

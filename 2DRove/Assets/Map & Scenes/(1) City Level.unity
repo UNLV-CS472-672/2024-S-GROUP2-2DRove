@@ -436,6 +436,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: spawnRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: enemyTypes.Array.data[0]
       value: 
       objectReference: {fileID: -2253911629886400664, guid: 88de51f227c93e040875d5f2f12385b5, type: 3}
@@ -447,6 +451,18 @@ PrefabInstance:
       propertyPath: enemyTypes.Array.data[2]
       value: 
       objectReference: {fileID: 1116265727041687676, guid: af931f9c3e5cf254cb8961934d507f34, type: 3}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: maxPerType.Array.data[0]
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: maxPerType.Array.data[1]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3905683737044403577, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
+      propertyPath: maxPerType.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5590060527959298636, guid: 1544eb5e12b625e4fab2dc3069ec2daa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

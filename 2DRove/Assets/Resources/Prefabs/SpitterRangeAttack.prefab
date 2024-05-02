@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5688387028696294872}
   - component: {fileID: -8638587832704945628}
   - component: {fileID: 1981890846210388850}
-  - component: {fileID: -3762193347483259035}
   - component: {fileID: 6966254371096463432}
+  - component: {fileID: 1676569884997222874}
   m_Layer: 3
   m_Name: SpitterRangeAttack
   m_TagString: EnemyProjectile
@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  damage: 5
+  damage: 1
   lifetime: 10
   hitLayers:
     serializedVersion: 2
@@ -169,23 +169,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-3762193347483259035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9167159287664988583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7073c8e77611d24786a3ce051a15d82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileLifetime: 10
-  velocity: 5
-  damage: 0
-  rangedDamage: 10
-  knockbackStrength: 2
 --- !u!95 &6966254371096463432
 Animator:
   serializedVersion: 5
@@ -207,3 +190,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1676569884997222874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167159287664988583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 738667723dcd7e64e80b579104b7cabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileLifetime: 20
+  velocity: 10
+  damage: 0.001
+  rangedDamage: 0
+  knockbackStrength: 2

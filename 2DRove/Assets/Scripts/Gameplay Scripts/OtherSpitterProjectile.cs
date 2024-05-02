@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class OtherSpitterProjectile : MonoBehaviour
 {
     [SerializeField] private float projectileLifetime;
     [SerializeField] private float velocity;
@@ -28,18 +28,6 @@ public class Projectile : MonoBehaviour
         if (target.CompareTag("Player"))
         { //If it collided with a valid player or enemy, deals damage to them
             target.GetComponent<PlayerController>().dealDamage(damage);
-        }
-        else if (target.CompareTag("Enemy"))
-        {
-            target.GetComponent<NewEnemy>().TakeRangedDamage(rangedDamage);
-            Rigidbody2D rb = target.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                rb.AddForce(-knockbackDirection * knockbackStrength, ForceMode2D.Impulse); //Applies a force to the enemy based on the projectile's velocity
-            }
-        }
-        else if (target.CompareTag("Boss")){//boss don't take knockbacks
-            target.GetComponent<NewEnemy>().TakeRangedDamage(rangedDamage);
         }
         // wait for 1 second for animation
         Destroy(gameObject, 0.3f);

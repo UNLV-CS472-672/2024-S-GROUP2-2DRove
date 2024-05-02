@@ -16,8 +16,10 @@ public class DaggerMushroomAttackState : DaggerMushroomBaseState
     {
         if(attackTime <= 0)
         {
-            mush.SwitchState(mush.IdleState);
+            mush.lastAttack = Time.time + mush.attackCD;
             animator.SetBool("attacking", false);
+            mush.SwitchState(mush.IdleState);
+
         }
 
         attackTime -= Time.deltaTime;

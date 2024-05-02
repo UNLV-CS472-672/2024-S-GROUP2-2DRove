@@ -13,6 +13,7 @@ public class DaggerMushroomAggroState : DaggerMushroomBaseState
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         rb = mushroom.GetComponent<Rigidbody2D>();
         animator = mushroom.GetComponent<Animator>();
+
     }
 
     public override void UpdateState(DaggerMushroomStateManager mushroom)
@@ -34,7 +35,7 @@ public class DaggerMushroomAggroState : DaggerMushroomBaseState
     }
 
     public override void OnTriggerStay2D(DaggerMushroomStateManager mushroom, Collider2D other) {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && Time.time > mushroom.lastAttack)
         {
             mushroom.SwitchState(mushroom.AttackState);
         }

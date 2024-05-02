@@ -23,6 +23,7 @@ public class SpitterAttackState : SpitterBaseState
             isAttackInitiated = false; // Reset attack initiation flag
             animator.SetBool("isAttacking", true);
             Debug.Log("Enter Attack State");
+            spitter.StartCoroutine(pause());
             attackCoroutine = spitter.StartCoroutine(AttackRoutine()); // Store coroutine reference
         }
         else
@@ -102,7 +103,7 @@ public class SpitterAttackState : SpitterBaseState
             }
 
             GameObject projectileObject = GameObject.Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
-            Projectile projectile = projectileObject.GetComponent<Projectile>();
+            OtherSpitterProjectile projectile = projectileObject.GetComponent<OtherSpitterProjectile>();
             projectile.setDirection(direction);
             Debug.Log("[SpitterAttackState] Projectile fired.");
         }
@@ -149,5 +150,10 @@ public class SpitterAttackState : SpitterBaseState
     {
         CleanupAttack();
         spitter.SwitchState(spitter.HitState);
+    }
+
+    private IEnumerator pause()
+    {
+        yield return new WaitForSeconds(1f);
     }
 }

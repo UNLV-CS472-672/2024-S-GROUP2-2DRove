@@ -27,7 +27,7 @@ public class SpitterStateManager : MonoBehaviour
     private Transform player;
     public float movementSpeed = 1f;
     public float attackSpeed = 1f;
-    [System.NonSerialized] public float attackTime;
+    [System.NonSerialized] public float attackTime = .1f;
 
     void Start()
     {
@@ -100,7 +100,8 @@ public class SpitterStateManager : MonoBehaviour
         {
             switch (clip.name)
             {
-                case "SpitterAttack":
+                // case "SpitterAttack":
+                case "attack":
                     attackTime = clip.length;
                     break;
                 default:

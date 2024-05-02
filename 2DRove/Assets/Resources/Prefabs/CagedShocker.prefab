@@ -257,6 +257,10 @@ MonoBehaviour:
   attackPointY: {fileID: 4220949984574667149}
   attackRange: 4.55
   attackHeight: 0.8
+  attackDamage: 5
+  lurch1Dist: 8.5
+  lurch2Dist: 2.5
+  attackSpeed: 1.25
 --- !u!114 &962467841880699752
 MonoBehaviour:
   m_ObjectHideFlags: 0

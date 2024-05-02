@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1748425057307477591}
   - component: {fileID: 6701898147632833500}
   - component: {fileID: 605963729438096132}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42879,7 +42879,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 1, z: 0}
   m_MaxChunkCount: 16
@@ -65950,7 +65950,8 @@ GameObject:
   - component: {fileID: 5039196915434134696}
   - component: {fileID: -7782330968607924152}
   - component: {fileID: -8407291104085338163}
-  m_Layer: 0
+  - component: {fileID: 8103804323661284944}
+  m_Layer: 6
   m_Name: BossLevel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90255,7 +90256,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 1, z: 0}
   m_MaxChunkCount: 16
@@ -90264,6 +90265,19 @@ TilemapRenderer:
   m_Mode: 1
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!114 &8103804323661284944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9148618936101596910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa017444278f3643b36c53334817833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 0}
 --- !u!114 &6251852089163439153
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -179,6 +179,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileLifetime: 7
   velocity: 30
-  damage: 0
+  damage: 8
   rangedDamage: 5
   knockbackStrength: 2

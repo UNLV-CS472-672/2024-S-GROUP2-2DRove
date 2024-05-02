@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -3986995872299544415}
   m_Layer: 3
   m_Name: Warden
-  m_TagString: Boss
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,6 +60,7 @@ MonoBehaviour:
   attackPointY: {fileID: 1393467185958728732}
   attackRange: 5.5
   attackHeight: 0
+  attackDamage: 1
 --- !u!114 &-6383126755422583183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,7 +120,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 20
   m_Sprite: {fileID: -6295719499253207943, guid: fa0d1709a9cc2cd4d910b9f18ea2339c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -236,7 +237,7 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 439

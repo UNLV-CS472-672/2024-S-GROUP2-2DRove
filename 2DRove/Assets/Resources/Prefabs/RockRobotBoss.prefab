@@ -56,12 +56,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerController: {fileID: 0}
   goldDropped: 1
-  MovementSpeed: 0
-  walkAnimSpeed: 0
-  rangeAttackSpeed: 0
-  attackSpeed: 0
-  burstSpeed: 0
-  buffSpeed: 0
+  MovementSpeed: 3
+  walkAnimSpeed: 1.5
+  rangeAttackSpeed: 1.5
+  attackSpeed: 2
+  burstSpeed: 1.5
+  buffSpeed: 1
+  rangeAttackDamage: 10
+  attackDamage: 12
+  burstDamage: 15
+  buffDamage: 12
   animator: {fileID: 0}
   attackPointX: {fileID: 130624589444498416}
   attackPointY: {fileID: 8624798509624551241}
@@ -126,7 +130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 20
   m_Sprite: {fileID: -5200355280419556759, guid: 1589b123fd0806e48a7c021d6510f139, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

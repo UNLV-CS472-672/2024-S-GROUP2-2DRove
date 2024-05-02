@@ -11,6 +11,9 @@ public class WidowStateManager : MonoBehaviour
     public float attackSpeed;
     public float spitSpeed;
     public float jumpSpeed;
+    public float attackDamage = 1f;
+    public float spitDamage = 1f;
+    public float jumpDamage = 1f;
     public Animator animator;
     public Transform attackPointX;
     public Transform attackPointY;

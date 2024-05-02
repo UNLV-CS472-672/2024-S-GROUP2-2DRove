@@ -75,19 +75,19 @@ public class WidowAttackState : WidowBaseState
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
                 if (returnAttackType == 1) //spitting attack
                 {
-                    playerScript.dealDamage(15);
+                    playerScript.dealDamage(Widow.spitDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 25, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
                 else if (returnAttackType == 0) //jumping
                 {
-                    playerScript.dealDamage(10);
+                    playerScript.dealDamage(Widow.jumpDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 40, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
                 else if (returnAttackType == 2) //melee
                 {
-                    playerScript.dealDamage(10);
+                    playerScript.dealDamage(Widow.attackDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                     playerScript.ReduceMoveSpeed(35, 1.5f);

@@ -12,6 +12,10 @@ public class RockBossStateManager : MonoBehaviour
     public float attackSpeed;
     public float burstSpeed;
     public float buffSpeed;
+    public float rangeAttackDamage = 1f;
+    public float attackDamage = 1f;
+    public float burstDamage = 1f;
+    public float buffDamage = 1f;
     public Animator animator;
     public Transform attackPointX;
     public Transform attackPointY;

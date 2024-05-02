@@ -20,11 +20,9 @@ public class FoxStateManager : MonoBehaviour
     public Animator animator;
     [SerializeField] public Transform player;
     [SerializeField] public float playerRange;
-
-
     public Transform Player;
     public float PlayerRange => playerRange;
-
+    public float movementSpeed = 1f;
 
     void Start()
     {
@@ -38,6 +36,10 @@ public class FoxStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
+        if((this.transform.position - Player.position).magnitude > 50)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)

@@ -18,7 +18,7 @@ public class GhoulAggroState : GhoulBaseState
     public override void UpdateState(GhoulStateManager ghoul)
     {
         Vector2 Direction = (player.position - ghoul.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        rb.AddForce(Direction * ghoul.movementSpeed);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

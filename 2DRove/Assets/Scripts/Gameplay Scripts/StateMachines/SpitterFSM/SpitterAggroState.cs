@@ -31,7 +31,7 @@ public class SpitterAggroState : SpitterBaseState
         }
 
         Vector2 direction = (player.position - spitter.transform.position).normalized;
-        rb.AddForce(direction * 1f);
+        rb.AddForce(direction * spitter.movementSpeed);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         // If not attacking, flip the spitter to face the player

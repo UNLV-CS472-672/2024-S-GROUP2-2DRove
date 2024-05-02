@@ -33,7 +33,6 @@ public class BomberStateManager : MonoBehaviour
     public BomberHitState HitState = new BomberHitState();
     public BomberSpawnState SpawnState = new BomberSpawnState();
 
-
     void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -46,6 +45,10 @@ public class BomberStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
+        if((this.transform.position - Player.position).magnitude > 50)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other)

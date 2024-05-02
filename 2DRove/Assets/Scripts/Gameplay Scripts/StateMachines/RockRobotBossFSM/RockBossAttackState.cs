@@ -88,25 +88,25 @@ public class RockBossAttackState : RockBossBaseState
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
                 if (returnAttackType == 0) //beam attack
                 {
-                    playerScript.dealDamage(15);
+                    playerScript.dealDamage(RockBoss.burstDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 25, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
                 else if (returnAttackType == 1) //shooting attack
                 {
-                    playerScript.dealDamage(12);
+                    playerScript.dealDamage(RockBoss.rangeAttackDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 20, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
                 else if (returnAttackType == 2) //charging
                 {
-                    playerScript.dealDamage(10);
+                    playerScript.dealDamage(RockBoss.buffDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 40, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
                 else if (returnAttackType == 3) //slamming
                 {
-                    playerScript.dealDamage(10);
+                    playerScript.dealDamage(RockBoss.attackDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                     playerScript.ReduceMoveSpeed(35, 1.5f);

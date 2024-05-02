@@ -18,7 +18,7 @@ public class CagedShockerAggroState : CagedShockerBaseState
     public override void UpdateState(CagedShockerStateManager CagedShocker)
     {
         Vector2 Direction = (player.position - CagedShocker.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        // rb.AddForce(Direction * CagedShocker.movementSpeed);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

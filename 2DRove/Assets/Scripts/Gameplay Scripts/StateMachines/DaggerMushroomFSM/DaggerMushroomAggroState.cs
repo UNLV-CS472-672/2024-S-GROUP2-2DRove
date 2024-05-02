@@ -18,7 +18,7 @@ public class DaggerMushroomAggroState : DaggerMushroomBaseState
     public override void UpdateState(DaggerMushroomStateManager mushroom)
     {
         Vector2 Direction = (player.position - mushroom.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        rb.AddForce(Direction * mushroom.movementSpeed);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

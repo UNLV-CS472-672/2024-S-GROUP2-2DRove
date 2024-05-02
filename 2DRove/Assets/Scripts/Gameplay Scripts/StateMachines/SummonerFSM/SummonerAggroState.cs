@@ -8,7 +8,6 @@ public class SummonerAggroState : SummonerBaseState
     private bool flipped = false; 
 
     public float summoningDistance = 8f; // The distance at which the Summoner will stop and start summoning
-    public float moveSpeed = 1f; // Speed at which the Summoner moves towards the player
 
     public override void EnterState(SummonerStateManager summoner)
     {
@@ -37,7 +36,7 @@ public class SummonerAggroState : SummonerBaseState
         {
             // Move towards the player
             Vector2 direction = (player.position - summoner.transform.position).normalized;
-            rb.velocity = direction * moveSpeed; // Apply movement
+            rb.velocity = direction * summoner.movementSpeed; // Apply movement
             animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
             // Adjust the sprite orientation based on the player's position

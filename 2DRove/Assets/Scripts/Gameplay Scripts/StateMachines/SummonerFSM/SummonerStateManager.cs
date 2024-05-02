@@ -18,6 +18,8 @@ public class SummonerStateManager : MonoBehaviour
 
     private NewEnemy newEnemy; // Reference to NewEnemy component
     public GameObject ghoulPrefab;
+    private Transform player;
+    public float movementSpeed = 1f;
 
 
     // Start is called before the first frame update
@@ -28,6 +30,7 @@ public class SummonerStateManager : MonoBehaviour
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
         newEnemy = GetComponent<NewEnemy>(); // Assign NewEnemy component
+        player = GameObject.Find("Player").GetComponent<Transform>();
 
         // Create a new SummoningState 
 
@@ -50,6 +53,10 @@ public class SummonerStateManager : MonoBehaviour
         if (currentState != DeathState && newEnemy.CurrentHeath() <= 0)
         {
             SwitchState(DeathState);
+        }
+        if((this.transform.position - player.position).magnitude > 50)
+        {
+            Destroy(gameObject);
         }
     }
 

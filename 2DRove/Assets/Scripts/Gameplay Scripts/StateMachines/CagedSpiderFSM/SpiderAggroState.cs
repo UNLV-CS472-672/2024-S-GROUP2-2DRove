@@ -18,7 +18,7 @@ public class SpiderAggroState : SpiderBaseState
     public override void UpdateState(SpiderStateManager Spider)
     {
         Vector2 Direction = (player.position - Spider.transform.position).normalized;
-        rb.AddForce(Direction * 2f);
+        rb.AddForce(Direction * Spider.movementSpeed);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

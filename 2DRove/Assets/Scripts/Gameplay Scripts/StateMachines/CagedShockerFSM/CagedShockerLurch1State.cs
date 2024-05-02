@@ -27,7 +27,7 @@ public class CagedShockerLurch1State : CagedShockerBaseState
         if (!lurched)
         {
             Vector3 Direction = (player.position - CagedShocker.transform.position).normalized;
-            rb.AddForce(Direction * 250f);
+            rb.AddForce(Direction * 250f * CagedShocker.lurch1Dist);
 
             if (Direction.x != 0){ //If the player is moving horizontally
                 flipped = Direction.x < 0; //If the player is moving left, flipped is true, if the player is moving right, flipped is false

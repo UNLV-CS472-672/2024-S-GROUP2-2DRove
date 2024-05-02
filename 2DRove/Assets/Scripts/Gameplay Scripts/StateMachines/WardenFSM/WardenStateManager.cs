@@ -18,6 +18,8 @@ public class WardenStateManager : MonoBehaviour
     public WardenHitState HitState = new WardenHitState();
     public WardenIdleState IdleState = new WardenIdleState();
     public WardenSpawnState SpawnState = new WardenSpawnState();
+    private Transform player;
+    public float attackDamage = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,12 +28,17 @@ public class WardenStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
         currentState.UpdateState(this);
+        if((this.transform.position - player.position).magnitude > 50)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other) {

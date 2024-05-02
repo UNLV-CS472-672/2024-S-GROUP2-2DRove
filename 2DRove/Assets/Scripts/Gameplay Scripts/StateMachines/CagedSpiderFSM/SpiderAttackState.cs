@@ -45,7 +45,7 @@ public class SpiderAttackState : SpiderBaseState
             if (collider.CompareTag("Player"))
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
-                playerScript.dealDamage(1);
+                playerScript.dealDamage(Spider.attackDamage);
                 collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                 collider.GetComponent<Animator>().SetTrigger("Hit");
             }

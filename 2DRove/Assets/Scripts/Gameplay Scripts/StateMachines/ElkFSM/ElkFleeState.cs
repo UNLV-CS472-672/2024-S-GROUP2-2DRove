@@ -23,7 +23,7 @@ public class ElkFleeState : ElkBaseState
         {
             // Continue to move away from the player
             Vector3 fleeDirection = (elk.transform.position - player.position).normalized;
-            elk.transform.position += fleeDirection * fleeSpeed * Time.deltaTime;
+            elk.transform.position += fleeDirection * elk.movementSpeed * Time.deltaTime;
             fleeTimer -= Time.deltaTime;
 
             // Flip the elk to face the direction it's fleeing

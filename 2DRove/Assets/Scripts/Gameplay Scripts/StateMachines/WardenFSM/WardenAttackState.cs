@@ -51,7 +51,7 @@ public class WardenAttackState : WardenBaseState
             if (collider.CompareTag("Player"))
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
-                playerScript.dealDamage(1);
+                playerScript.dealDamage(Warden.attackDamage);
                 
                 // Apply the force using the adjusted knockbackDirection
                 Rigidbody2D rb = collider.GetComponent<Rigidbody2D>();

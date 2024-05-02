@@ -15,6 +15,9 @@ public class GuardianStateManager : MonoBehaviour
     public float horizontalDashSpeed;
     public float AoESpeed;
     public float AoEResetSpeed;
+    public float attack1Damage = 1f;
+    public float attack2Damage = 1f;
+    public float AoEDamage = 1f;
     [System.NonSerialized] public float attack1Time;
     [System.NonSerialized] public float attack2Time;
     [System.NonSerialized] public float vertDashTime;

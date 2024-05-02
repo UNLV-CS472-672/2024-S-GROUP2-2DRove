@@ -49,7 +49,7 @@ public class GuardianAttackState : GuardianBaseState
                 {
                     Vector2 knockbackDirection = (Vector2)(Guardian.transform.position - collider.transform.position);
                     PlayerController playerScript = collider.GetComponent<PlayerController>();
-                    playerScript.dealDamage(1);
+                    playerScript.dealDamage(Guardian.attack1Damage);
                     collider.GetComponent<Rigidbody2D>().AddForce(knockbackDirection, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
@@ -66,7 +66,7 @@ public class GuardianAttackState : GuardianBaseState
                 if (collider.CompareTag("Player"))
                 {
                     PlayerController playerScript = collider.GetComponent<PlayerController>();
-                    playerScript.dealDamage(1);
+                    playerScript.dealDamage(Guardian.attack2Damage);
                     collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }
@@ -85,7 +85,7 @@ public class GuardianAttackState : GuardianBaseState
                 {
                     Vector2 knockbackDirection = (Vector2)(Guardian.transform.position - collider.transform.position);
                     PlayerController playerScript = collider.GetComponent<PlayerController>();
-                    playerScript.dealDamage(1);
+                    playerScript.dealDamage(Guardian.AoEDamage);
                     collider.GetComponent<Rigidbody2D>().AddForce(knockbackDirection, ForceMode2D.Impulse);
                     collider.GetComponent<Animator>().SetTrigger("Hit");
                 }

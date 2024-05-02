@@ -24,6 +24,8 @@ public class SpitterStateManager : MonoBehaviour
     public GameObject ProjectilePrefab => projectilePrefab;
     public Transform ProjectileSpawnPoint => projectileSpawnPoint;
     public Transform attackPoint;
+    private Transform player;
+    public float movementSpeed = 1f;
 
 
     void Start()
@@ -32,6 +34,7 @@ public class SpitterStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
 
         // AttackState.Setup(this, projectilePrefab, projectileSpawnPoint);
         if (projectilePrefab == null || projectileSpawnPoint == null)
@@ -47,6 +50,10 @@ public class SpitterStateManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
+        if((this.transform.position - player.position).magnitude > 50)
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnTriggerStay2D(Collider2D other)
     {

@@ -46,7 +46,7 @@ public class CagedShockerAttackState : CagedShockerBaseState
             if (collider.CompareTag("Player"))
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
-                playerScript.dealDamage(1);
+                playerScript.dealDamage(CagedShocker.attackDamage);
                 collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                 collider.GetComponent<Animator>().SetTrigger("Hit");
             }

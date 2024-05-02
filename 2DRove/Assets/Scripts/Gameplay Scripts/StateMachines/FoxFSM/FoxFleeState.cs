@@ -23,7 +23,7 @@ public class FoxFleeState : FoxBaseState
         {
             // Continue to move away from the player
             Vector3 fleeDirection = (fox.transform.position - player.position).normalized;
-            fox.transform.position += fleeDirection * fleeSpeed * Time.deltaTime;
+            fox.transform.position += fleeDirection * fox.movementSpeed * Time.deltaTime;
             fleeTimer -= Time.deltaTime;
 
             // Flip the fox to face the direction it's fleeing

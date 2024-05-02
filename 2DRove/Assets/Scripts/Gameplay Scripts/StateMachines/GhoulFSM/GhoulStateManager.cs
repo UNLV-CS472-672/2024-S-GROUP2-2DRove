@@ -17,6 +17,9 @@ public class GhoulStateManager : MonoBehaviour
     public GhoulHitState HitState = new GhoulHitState();
     public GhoulIdleState IdleState = new GhoulIdleState();
     public GhoulSpawnState SpawnState = new GhoulSpawnState();
+    private Transform player;
+    public float attackDamage = 1f;
+    public float movementSpeed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,12 +28,17 @@ public class GhoulStateManager : MonoBehaviour
         currentState = SpawnState;
         currentState.EnterState(this);
         animator = this.GetComponent<Animator>();
+        player = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
         currentState.UpdateState(this);
+        if((this.transform.position - player.position).magnitude > 50)
+        {
+            Destroy(gameObject);
+        }
     }
     
     private void OnCollisionEnter2D(Collision2D other) {

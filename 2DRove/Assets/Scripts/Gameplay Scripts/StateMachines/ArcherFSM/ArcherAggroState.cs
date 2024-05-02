@@ -18,7 +18,7 @@ public class ArcherAggroState : ArcherBaseState
     public override void UpdateState(ArcherStateManager archer)
     {
         Vector2 Direction = (player.position - archer.transform.position).normalized;
-        rb.AddForce(Direction * 1f);
+        rb.AddForce(Direction * archer.movementSpeed);
         animator.SetFloat("velocity", Mathf.Abs(rb.velocity.x));
 
         if (Direction.x != 0){ //If the player is moving horizontally

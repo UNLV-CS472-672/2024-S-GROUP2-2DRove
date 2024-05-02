@@ -45,7 +45,7 @@ public class GhoulAttackState : GhoulBaseState
             if (collider.CompareTag("Player"))
             {
                 PlayerController playerScript = collider.GetComponent<PlayerController>();
-                playerScript.dealDamage(5);
+                playerScript.dealDamage(ghoul.attackDamage);
                 collider.GetComponent<Rigidbody2D>().AddForce(-knockbackDirection * 5, ForceMode2D.Impulse);
                 collider.GetComponent<Animator>().SetTrigger("Hit");
             }

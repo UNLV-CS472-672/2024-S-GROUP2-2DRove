@@ -16,7 +16,7 @@ public class Augments : MonoBehaviour
     public static List<AugmentObject> chosenAugments;
     private List<AugmentObject> shufflePool;
     private List<AugmentObject> currentChoiceAugments;
-    public GridLayoutAugments gridLayoutAugments;
+    //public GridLayoutAugments gridLayoutAugments;
     [SerializeField] private TMP_Text errorGoldText;
     private Coroutine errorGoldTextCoroutine;
 
@@ -116,7 +116,7 @@ public class Augments : MonoBehaviour
         }
         AugmentInstantiator.callAugmentMethod(augmentClicked);
         Reroll();
-        gridLayoutAugments.updateBarUI();
+        //gridLayoutAugments.updateBarUI();
         unpause();
     }
 

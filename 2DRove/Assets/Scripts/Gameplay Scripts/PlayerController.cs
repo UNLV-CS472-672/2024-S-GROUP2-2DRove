@@ -60,14 +60,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float burnDamage = 0f;
     [SerializeField] private bool isVampire = false;
     [SerializeField] private bool resurrect = false;
-    public GridLayoutGroup augmentBottomBar;
+    //public GridLayoutGroup augmentBottomBar;
 
 
     //The Start function is called if the script is enabled before any update functions
     private void Start(){
-        health = maxHealth;
-        mana = maxMana;
-        setHealthandMana();
+        
         // Restore augments to the player
         if(Augments.chosenAugments != null)
         {
@@ -76,7 +74,9 @@ public class PlayerController : MonoBehaviour
                 AugmentInstantiator.callAugmentMethod(augment);
             }
         }
-        //Assigning the component to the variables to prevent having to get the component at every instance where you need to edit the values
+        health = maxHealth;
+        mana = maxMana;
+        setHealthandMana();//Assigning the component to the variables to prevent having to get the component at every instance where you need to edit the values
         input = GetComponent<PlayerInput>();
         animator = GetComponent<Animator>();
         playerStateManager = GetComponent<PlayerStateManager>();
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         // speedFactor = currentSpeed;
 
         //Find the game over menu
-        //Serialized Field
+        //Serialized Fielda
         // GameObject UIOverlay = GameObject.Find("UI Overlay");
         // gameOverMenu = UIOverlay.transform.Find("GameOverMenu").GetComponent<GameOverMenu>();
 
@@ -102,8 +102,8 @@ public class PlayerController : MonoBehaviour
         // healthSlider = GameObject.Find("TextSliderBar").GetComponent<Slider>();
 
         //Find Augment Grid Layout for Overlay
-        GridLayoutAugments gridLayoutAugments = augmentBottomBar.GetComponent<GridLayoutAugments>();
-        gridLayoutAugments.updateBarUI();
+        //GridLayoutAugments gridLayoutAugments = augmentBottomBar.GetComponent<GridLayoutAugments>();
+        //gridLayoutAugments.updateBarUI();
 
         //Starts the player with max health and initializes the health slider   
     }
@@ -487,7 +487,7 @@ public class PlayerController : MonoBehaviour
     public void DisableResurrect()
     {
         Augments.chosenAugments.Remove(Augments.chosenAugments.Find(x => x.augmentName == "Resurrection"));
-        augmentBottomBar.GetComponent<GridLayoutAugments>().updateBarUI();
+        //augmentBottomBar.GetComponent<GridLayoutAugments>().updateBarUI();
         resurrect = false;
     }
     // Increase health

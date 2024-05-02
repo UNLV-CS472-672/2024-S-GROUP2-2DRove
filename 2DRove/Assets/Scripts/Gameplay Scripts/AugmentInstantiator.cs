@@ -156,6 +156,7 @@ public class commonAugments
         augmentObject.augmentRarity = "Common";
         augmentObject.augmentMethodName = "healthRegen";
         augmentObject.AugmentImage = Resources.Load<Sprite>("Augments/04_healthRegen");
+        augmentObject.isStackable = true;
         AugmentInstantiator.commonAugmentDictionary.Add(augmentObject.augmentName, augmentObject);
         return augmentObject;
     }
